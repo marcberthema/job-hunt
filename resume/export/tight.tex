@@ -1,0 +1,31 @@
+\usepackage{titlesec}
+\usepackage{parskip}
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{1a3c5e}
+
+% Remove all paragraph spacing
+\setlength{\parskip}{2pt}
+\setlength{\parindent}{0pt}
+
+% H1 — name
+\titleformat{\section}
+  {\fontsize{22pt}{24pt}\selectfont\bfseries\color{accent}}
+  {}{0em}{}
+\titlespacing{\section}{0pt}{0pt}{3pt}
+
+% H2 — section headings
+\titleformat{\subsection}
+  {\fontsize{12pt}{13pt}\selectfont\bfseries\color{accent}}
+  {}{0em}{}[\vspace{1pt}{\color{accent}\hrule height 0.5pt}\vspace{2pt}]
+\titlespacing{\subsection}{0pt}{9pt}{3pt}
+
+% H3 — role title
+\titleformat{\subsubsection}
+  {\normalsize\bfseries}
+  {}{0em}{}
+\titlespacing{\subsubsection}{0pt}{6pt}{1pt}
+
+% Tight bullets
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep, topsep=2pt, parsep=0pt, partopsep=0pt, leftmargin=1.2em}
+

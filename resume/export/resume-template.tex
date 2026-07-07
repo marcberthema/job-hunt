@@ -1,0 +1,64 @@
+% Resume LaTeX template — Marc Berthelette
+\documentclass[10.5pt, letterpaper]{article}
+
+\usepackage{fontspec}
+\setmainfont{DejaVu Sans}
+
+\usepackage[top=0.65in, bottom=0.65in, left=0.75in, right=0.75in]{geometry}
+
+\usepackage{xcolor}
+\definecolor{accent}{HTML}{1a3c5e}
+\definecolor{body}{HTML}{111111}
+\color{body}
+
+\usepackage[hidelinks, colorlinks=true, urlcolor=accent, linkcolor=accent]{hyperref}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+
+\setlength{\parskip}{0pt}
+\setlength{\parindent}{0pt}
+
+% H1 — name only
+\titleformat{\section}
+  {\fontsize{22pt}{26pt}\selectfont\bfseries\color{accent}}
+  {}{0em}{}
+\titlespacing{\section}{0pt}{0pt}{3pt}
+
+% H2 — section headings with underline rule
+\titleformat{\subsection}
+  {\fontsize{12pt}{14pt}\selectfont\bfseries\color{accent}}
+  {}{0em}{}[\vspace{1pt}{\color{accent}\hrule height 0.6pt}\vspace{3pt}]
+\titlespacing{\subsection}{0pt}{10pt}{4pt}
+
+% H3 — role title
+\titleformat{\subsubsection}
+  {\normalsize\bfseries\color{body}}
+  {}{0em}{}
+\titlespacing{\subsubsection}{0pt}{7pt}{1pt}
+
+% Tighter bullets
+\setlist[itemize]{
+  noitemsep,
+  topsep=3pt,
+  parsep=0pt,
+  partopsep=0pt,
+  leftmargin=1.3em
+}
+
+\hypersetup{colorlinks=true, urlcolor=accent, linkcolor=accent}
+
+\pagestyle{empty}
+
+% Make horizontal rules (from --- in markdown) invisible
+\AtBeginDocument{%
+  \let\oldrule\rule
+  \renewcommand{\rule}[2]{\vspace{-\parskip}}%
+}
+
+\begin{document}
+$body$
+\end{document}

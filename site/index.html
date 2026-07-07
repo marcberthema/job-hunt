@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Senior DevOps &amp; Platform Engineering Consultant — Azure, CI/CD, Kubernetes, IaC. Remote consulting and senior employment opportunities, worldwide.">
+  <title>Marc Berthelette — Senior DevOps &amp; Platform Engineering Consultant</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --bg: #ffffff;
+      --surface: #f8fafc;
+      --fg: #0f172a;
+      --body: #334155;
+      --muted: #64748b;
+      --accent: #0078d4;
+      --accent-light: #eff6ff;
+      --accent-border: #bfdbfe;
+      --border: #e2e8f0;
+      --tag-bg: #f1f5f9;
+      --tag-fg: #1e293b;
+      --max: 720px;
+    }
+
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #0f1117;
+        --surface: #161b27;
+        --fg: #f1f5f9;
+        --body: #cbd5e1;
+        --muted: #94a3b8;
+        --accent: #60a5fa;
+        --accent-light: #1e2d4a;
+        --accent-border: #1d4ed8;
+        --border: #1e293b;
+        --tag-bg: #1e293b;
+        --tag-fg: #e2e8f0;
+      }
+    }
+
+    html { scroll-behavior: smooth; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      background: var(--bg);
+      color: var(--body);
+      line-height: 1.65;
+      font-size: 1rem;
+    }
+
+    /* ── Layout ── */
+    .container {
+      max-width: var(--max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ── Nav ── */
+    nav {
+      position: sticky;
+      top: 0;
+      background: var(--bg);
+      border-bottom: 1px solid var(--border);
+      z-index: 100;
+      backdrop-filter: blur(8px);
+      background: color-mix(in srgb, var(--bg) 90%, transparent);
+    }
+
+    nav .container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-top: 0.9rem;
+      padding-bottom: 0.9rem;
+    }
+
+    .nav-name {
+      font-weight: 700;
+      font-size: 0.95rem;
+      color: var(--fg);
+      text-decoration: none;
+      letter-spacing: -0.01em;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 1.5rem;
+      list-style: none;
+    }
+
+    .nav-links a {
+      font-size: 0.875rem;
+      color: var(--muted);
+      text-decoration: none;
+      transition: color 0.15s;
+    }
+
+    .nav-links a:hover { color: var(--accent); }
+
+    /* ── Hero ── */
+    .hero {
+      padding: 5rem 0 4rem;
+    }
+
+    .hero-eyebrow {
+      font-size: 0.8rem;
+      font-weight: 600;
+      letter-spacing: 0.1em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.75rem;
+    }
+
+    .hero h1 {
+      font-size: clamp(2rem, 5vw, 2.75rem);
+      font-weight: 800;
+      letter-spacing: -0.03em;
+      color: var(--fg);
+      line-height: 1.15;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-title {
+      font-size: 1.1rem;
+      font-weight: 500;
+      color: var(--muted);
+      margin-bottom: 1.5rem;
+    }
+
+    .hero-desc {
+      font-size: 1.125rem;
+      line-height: 1.7;
+      max-width: 600px;
+      margin-bottom: 2rem;
+      color: var(--body);
+    }
+
+    .hero-ctas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.75rem;
+    }
+
+    .btn-primary {
+      display: inline-block;
+      background: var(--accent);
+      color: #fff;
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+
+    .btn-primary:hover { opacity: 0.88; }
+
+    .btn-secondary {
+      display: inline-block;
+      border: 1px solid var(--border);
+      color: var(--fg);
+      padding: 0.6rem 1.4rem;
+      border-radius: 6px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      text-decoration: none;
+      transition: border-color 0.15s;
+    }
+
+    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
+
+    /* ── Sections ── */
+    section {
+      padding: 3.5rem 0;
+      border-top: 1px solid var(--border);
+    }
+
+    .section-label {
+      font-size: 0.7rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 0.5rem;
+    }
+
+    section h2 {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--fg);
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+
+    section p {
+      margin-bottom: 0.85rem;
+    }
+
+    /* ── Services grid ── */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 1rem;
+      margin-top: 1.5rem;
+    }
+
+    .service-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1.25rem 1.25rem 1rem;
+    }
+
+    .service-icon {
+      font-size: 1.5rem;
+      margin-bottom: 0.6rem;
+    }
+
+    .service-card h3 {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--fg);
+      margin-bottom: 0.4rem;
+    }
+
+    .service-card p {
+      font-size: 0.8rem;
+      color: var(--muted);
+      line-height: 1.5;
+      margin: 0;
+    }
+
+    /* ── Experience ── */
+    .experience-list {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+      margin-top: 1rem;
+    }
+
+    .exp-item {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 0.25rem;
+    }
+
+    @media (min-width: 540px) {
+      .exp-item { grid-template-columns: auto 1fr; gap: 0 1.5rem; }
+      .exp-dot-col { display: flex; flex-direction: column; align-items: center; padding-top: 0.3rem; }
+    }
+
+    .exp-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: var(--accent);
+      flex-shrink: 0;
+      margin-top: 0.35rem;
+    }
+
+    .exp-line {
+      width: 2px;
+      flex: 1;
+      background: var(--border);
+      margin-top: 4px;
+    }
+
+    .exp-role {
+      font-size: 1rem;
+      font-weight: 700;
+      color: var(--fg);
+    }
+
+    .exp-company {
+      font-size: 0.875rem;
+      color: var(--accent);
+      font-weight: 600;
+      margin-bottom: 0.2rem;
+    }
+
+    .exp-meta {
+      font-size: 0.8rem;
+      color: var(--muted);
+      margin-bottom: 0.6rem;
+    }
+
+    .exp-bullets {
+      list-style: none;
+      display: flex;
+      flex-direction: column;
+      gap: 0.35rem;
+    }
+
+    .exp-bullets li {
+      font-size: 0.875rem;
+      color: var(--body);
+      padding-left: 1rem;
+      position: relative;
+    }
+
+    .exp-bullets li::before {
+      content: "—";
+      position: absolute;
+      left: 0;
+      color: var(--muted);
+    }
+
+    /* ── Skills ── */
+    .skill-groups {
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+      margin-top: 1rem;
+    }
+
+    .skill-group h3 {
+      font-size: 0.75rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 0.5rem;
+    }
+
+    .tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0.4rem;
+    }
+
+    .tag {
+      background: var(--tag-bg);
+      color: var(--tag-fg);
+      font-size: 0.8rem;
+      font-weight: 500;
+      padding: 0.25rem 0.65rem;
+      border-radius: 999px;
+      border: 1px solid var(--border);
+    }
+
+    .tag-accent {
+      background: var(--accent-light);
+      color: var(--accent);
+      border-color: var(--accent-border);
+    }
+
+    /* ── Engagement ── */
+    .engagement-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+      gap: 0.75rem;
+      margin-top: 1.5rem;
+    }
+
+    .eng-card {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      padding: 1rem;
+    }
+
+    .eng-card .eng-label {
+      font-size: 0.7rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--muted);
+      font-weight: 600;
+      margin-bottom: 0.3rem;
+    }
+
+    .eng-card .eng-value {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: var(--fg);
+    }
+
+    /* ── Contact ── */
+    .contact-box {
+      background: var(--accent-light);
+      border: 1px solid var(--accent-border);
+      border-radius: 10px;
+      padding: 2rem;
+      margin-top: 1.5rem;
+      text-align: center;
+    }
+
+    .contact-box p {
+      color: var(--body);
+      margin-bottom: 1.25rem;
+      font-size: 1rem;
+    }
+
+    .contact-links {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 0.75rem;
+    }
+
+    /* ── Footer ── */
+    footer {
+      padding: 2rem 0;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 0.8rem;
+      color: var(--muted);
+    }
+
+    /* ── Responsive ── */
+    @media (max-width: 480px) {
+      .hero { padding: 3.5rem 0 2.5rem; }
+      .hero-ctas { flex-direction: column; }
+      .btn-primary, .btn-secondary { text-align: center; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="#" class="nav-name">Marc Berthelette</a>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="/fr/">FR</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Hero -->
+    <div class="hero">
+      <p class="hero-eyebrow">Available for remote engagements · Worldwide</p>
+      <h1>Marc Berthelette</h1>
+      <p class="hero-title">Senior DevOps &amp; Platform Engineering Consultant · Nearly 20 years of experience</p>
+      <p class="hero-desc">
+        I build the pipelines that ship things reliably — Java applications, Salesforce workflows,
+        cloud infrastructure, data integrations. Whatever the payload, I design and automate the
+        delivery process end to end. Nearly 20 years of experience across financial services and
+        energy sectors. Bilingual (FR/EN). Incorporated in Canada, available worldwide.
+      </p>
+      <div class="hero-ctas">
+        <a href="#contact" class="btn-primary">Get in touch</a>
+        <a href="#experience" class="btn-secondary">View experience</a>
+      </div>
+    </div>
+
+    <!-- Services -->
+    <section id="services">
+      <p class="section-label">What I do</p>
+      <h2>Delivery Automation &amp; DevOps Consulting</h2>
+      <p>
+        My focus is automating how things get built, tested, and shipped — regardless of what "the thing"
+        is. Applications, integrations, infrastructure, data pipelines: I design the delivery process and
+        make it repeatable. I also build and maintain the platform that delivery runs on.
+        Engagements are remote, contract-first, and outcome-driven.
+      </p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🚀</div>
+          <h3>Application Delivery Pipelines</h3>
+          <p>End-to-end CI/CD for any workload — Java, .NET, Python, Salesforce, or custom — on Azure DevOps, GitHub Actions, and Jenkins.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🏗️</div>
+          <h3>Infrastructure as Code</h3>
+          <p>Terraform and Ansible-based provisioning to eliminate configuration drift and standardize environments across dev, staging, and production.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">☁️</div>
+          <h3>Cloud Modernization</h3>
+          <p>Migration planning and execution to Microsoft Azure — scalability, resilience, and cost optimization.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🔭</div>
+          <h3>Observability &amp; SRE</h3>
+          <p>Monitoring, alerting, and incident response frameworks using Dynatrace, Splunk, and the ELK Stack.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🚢</div>
+          <h3>Container &amp; GitOps Delivery</h3>
+          <p>Kubernetes, Docker, and ArgoCD — GitOps delivery pipelines from image build to production rollout.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📐</div>
+          <h3>Platform Standards &amp; Enablement</h3>
+          <p>Technical documentation, workshops, and DevEx improvements that raise the delivery baseline across teams.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience">
+      <p class="section-label">Experience</p>
+      <h2>Selected Work History</h2>
+      <div class="experience-list">
+
+        <div class="exp-item">
+          <div>
+            <p class="exp-role">DevOps Engineer</p>
+            <p class="exp-company">Énergir</p>
+            <p class="exp-meta">Montréal, QC · September 2021 – Present · Energy sector</p>
+            <ul class="exp-bullets">
+              <li>Architected enterprise-grade CI/CD pipelines on Azure DevOps, accelerating release velocity while maintaining high availability.</li>
+              <li>Led cloud modernization — migrated mission-critical services to Microsoft Azure with measurable gains in scalability and cost efficiency.</li>
+              <li>Implemented Terraform and Ansible IaC, standardizing environment provisioning across dev, staging, and production.</li>
+              <li>Drove RCA on critical production incidents; built proactive monitoring dashboards and automated remediation to reduce MTTR.</li>
+              <li>Evaluated emerging cloud technologies and delivered enablement workshops to accelerate cloud adoption across teams.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div>
+            <p class="exp-role">Senior DevOps Engineer <span style="font-weight:400;color:var(--muted);">(Contract)</span></p>
+            <p class="exp-company">Desjardins</p>
+            <p class="exp-meta">Montréal, QC (Remote) · October 2025 – March 2026 · Financial services</p>
+            <ul class="exp-bullets">
+              <li>Delivered a 6-month platform engineering engagement focused on hardening the enterprise JFrog Artifactory platform.</li>
+              <li>Built a Python/FastAPI health-monitoring service that tested all remote Artifactory repositories every 4 hours and published results to Dynatrace dashboards.</li>
+              <li>Automated on-demand Artifactory instance provisioning using Kubernetes and ArgoCD, enabling safe configuration testing without production risk.</li>
+              <li>Implemented artifact lifecycle policies and Splunk alerting to enforce retention standards and detect out-of-band configuration changes.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div>
+            <p class="exp-role">DevOps Engineer</p>
+            <p class="exp-company">Tink</p>
+            <p class="exp-meta">Montréal, QC · January 2018 – August 2021</p>
+            <ul class="exp-bullets">
+              <li>Designed and implemented Jenkins Pipeline as Code, improving team-wide CI/CD efficiency.</li>
+              <li>Built centralized log aggregation with the ELK Stack, enabling proactive anomaly detection and faster incident response.</li>
+              <li>Automated OS-level fleet patching, reducing manual overhead and improving security posture.</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="exp-item">
+          <div>
+            <p class="exp-role">Software Engineer &amp; Lead Technician</p>
+            <p class="exp-company">SOVO Technologies</p>
+            <p class="exp-meta">Montréal, QC · November 2008 – December 2018</p>
+            <ul class="exp-bullets">
+              <li>Designed voice recognition evaluation systems and multi-language dictionary infrastructure.</li>
+              <li>Managed IT infrastructure and led a zero-downtime server relocation project.</li>
+              <li>Developed production scheduling software covering the full planning cycle of the production department.</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+      <p class="section-label">Technical skills</p>
+      <h2>Core Competencies</h2>
+      <div class="skill-groups">
+
+        <div class="skill-group">
+          <h3>Cloud &amp; DevOps Platforms</h3>
+          <div class="tags">
+            <span class="tag tag-accent">Microsoft Azure</span>
+            <span class="tag tag-accent">Azure DevOps</span>
+            <span class="tag">GitHub Actions</span>
+            <span class="tag">Jenkins</span>
+            <span class="tag">JFrog Artifactory</span>
+            <span class="tag">Nexus</span>
+            <span class="tag">CloudFoundry</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Infrastructure as Code &amp; Configuration Management</h3>
+          <div class="tags">
+            <span class="tag tag-accent">Terraform</span>
+            <span class="tag">Ansible</span>
+            <span class="tag">Puppet</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Containers &amp; Orchestration</h3>
+          <div class="tags">
+            <span class="tag tag-accent">Kubernetes</span>
+            <span class="tag">Docker</span>
+            <span class="tag">ArgoCD</span>
+            <span class="tag">GitOps</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Monitoring, Observability &amp; Security</h3>
+          <div class="tags">
+            <span class="tag">Dynatrace</span>
+            <span class="tag">Splunk</span>
+            <span class="tag">ELK Stack</span>
+            <span class="tag">Elasticsearch</span>
+            <span class="tag">Kibana</span>
+            <span class="tag">Zero-trust networking</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Programming &amp; Scripting</h3>
+          <div class="tags">
+            <span class="tag">Python</span>
+            <span class="tag">FastAPI</span>
+            <span class="tag">Bash</span>
+            <span class="tag">SQL</span>
+            <span class="tag">C++</span>
+            <span class="tag">Java</span>
+          </div>
+        </div>
+
+        <div class="skill-group">
+          <h3>Methodologies &amp; Practices</h3>
+          <div class="tags">
+            <span class="tag">Site Reliability Engineering (SRE)</span>
+            <span class="tag">Agile / Scrum</span>
+            <span class="tag">DevSecOps</span>
+            <span class="tag">Platform Engineering</span>
+            <span class="tag">Cloud-native architecture</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Education & Certs -->
+    <section>
+      <p class="section-label">Education &amp; Certifications</p>
+      <h2>Credentials</h2>
+      <p>
+        <strong>Bachelor of Automated Manufacturing Engineering</strong><br>
+        École de Technologie Supérieure (ÉTS) — Montréal, QC · Specialty: Industrial Data Processing
+      </p>
+      <p style="margin-top:0.75rem;">
+        <strong>Microsoft Certified: Azure Administrator Associate (AZ-104)</strong> — In progress<br>
+        <strong>Microsoft Certified: Azure DevOps Engineer Expert (AZ-400)</strong> — In progress
+      </p>
+    </section>
+
+    <!-- Engagement -->
+    <section>
+      <p class="section-label">Engagement</p>
+      <h2>Working with me</h2>
+      <p>
+        I work as a senior individual contributor — remotely, worldwide. Whether you need fractional
+        DevOps leadership, a fixed-term platform engineering contract, or a senior DevOps hire, I'm
+        available to start quickly as an incorporated Canadian entity with no onboarding friction.
+      </p>
+      <p>
+        Fully bilingual in English and French — a meaningful advantage for Canadian, Quebec-based,
+        and federal engagements.
+      </p>
+      <div class="engagement-grid">
+        <div class="eng-card">
+          <p class="eng-label">Engagement types</p>
+          <p class="eng-value">Contract · Fractional · Employment</p>
+        </div>
+        <div class="eng-card">
+o          <p class="eng-label">Location</p>
+          <p class="eng-value">Remote · Worldwide</p>
+        </div>
+        <div class="eng-card">
+          <p class="eng-label">Languages</p>
+          <p class="eng-value">English · French</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <p class="section-label">Contact</p>
+      <h2>Let's talk</h2>
+      <div class="contact-box">
+        <p>
+          Available for new engagements now. Tell me about your platform engineering challenges
+          and we'll figure out if there's a fit.
+        </p>
+        <div class="contact-links">
+          <a href="mailto:marc@marcberthelette.com" class="btn-primary">marc@marcberthelette.com</a>
+          <a href="https://linkedin.com/in/marc-berthelette-3aba6917" class="btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>© 2026 Marc Berthelette · Senior DevOps &amp; Platform Engineering Consultant · Remote · Worldwide</p>
+  </footer>
+
+</body>
+</html>
