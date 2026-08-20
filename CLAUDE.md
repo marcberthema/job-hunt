@@ -6,12 +6,35 @@
 
 ---
 
+## Current Situation (as of 2026-08-19) — URGENT
+
+Marc's long-term consulting contract at Énergir will not be renewed — it ends in **just over 5
+weeks**. He is the main financial provider for his family and cannot afford a long gap between
+engagements. This changes priorities across the whole repo until he lands a new role:
+
+1. **First — external presence.** LinkedIn profile and resumes must be fully in sync with
+   `profile.md` and read well to a recruiter (headline, About, experience entries, skills). This
+   comes before any new outreach — a recruiter who clicks through from an application to a stale
+   or mismatched LinkedIn profile is a lost opportunity.
+2. **Then — active, high-frequency search.** Once the profile/resume sync is done, run the
+   `/check-*` skills and `/findjobs` aggressively (daily/every-other-day, not weekly) across all
+   working sources in `job_sources.md`, clear the `jobs/new/` review backlog quickly, and apply
+   broadly.
+3. **Scoring bar is temporarily lower.** Per the scoring notes in `profile.md`, treat 5+ (not just
+   8–10) as "apply" — urgency now outweighs strict selectivity. Do not relax the remote-only /
+   on-site red flag without asking first.
+
+Revisit this section once Marc lands a new role or the timeline changes.
+
+---
+
 ## Repository Structure
 
 ```
 job-hunt/
   CLAUDE.md               ← This file — project conventions and workflow
   profile.md              ← Source of truth: background, skills, rate, preferences, what "real consulting" looks like
+  job_sources.md          ← Every job board evaluated: working/blocked/manual, last-checked date per source
   specs/
     INDEX.md              ← Progress tracker for all automation stories
     <story>.md            ← Feature specs (written conversationally, one per automation capability)
@@ -27,6 +50,14 @@ job-hunt/
 ```
 
 ---
+
+## Job Sources
+
+`job_sources.md` tracks every job board evaluated for this search — which ones are automatable
+via a `/check-*` skill, which are blocked/broken, and which need manual checking. Each row has a
+`Last Checked` date. When the user asks for a status (e.g. "give me a status" any morning), read
+this file and recommend the oldest-checked source first. After running any `/check-*` command,
+update that row's date to today.
 
 ## Profile
 
@@ -83,6 +114,11 @@ This mirrors the Brayd workflow but without GitHub Projects or slash commands fo
 |--------------|--------------------------------------------------------------------------|
 | `/findjobs`  | Scrape/read sources, score postings against profile, draft letters, save to `jobs/new/` |
 | `/review`    | Walk through `jobs/new/` one by one — approve (move to `applied/`) or reject (move to `rejected/`) |
+| `/addjob`    | Manual intake: fetch/score/draft a single posting by URL into `jobs/new/` |
+| `/check-indeed` | Search Indeed, quick-score every result in a table, then file picks via `/addjob`'s logic |
+| `/check-dice`   | Search Dice, gate out clearance/US-work-authorization-only postings before scoring, then quick-score the rest |
+| `/check-jobbank` | Search Job Bank (Canada), quick-score every result in a table, then file picks via `/addjob`'s logic |
+| `/check-builtin` | Search BuiltIn, quick-score every result in a table, then file picks via `/addjob`'s logic |
 
 ---
 

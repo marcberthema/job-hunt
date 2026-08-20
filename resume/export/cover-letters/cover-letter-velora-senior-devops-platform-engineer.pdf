@@ -1,0 +1,97 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1764 >>
+stream
+BT
+/F1 11 Tf
+15 TL
+72 720 Td
+(Marc Berthelette) Tj
+T*
+(Smiths Falls, ON, Canada  |  marc.berthelette@gmail.com) Tj
+T*
+(linkedin.com/in/marc-berthelette-3aba6917) Tj
+T*
+T*
+(July 11, 2026) Tj
+T*
+T*
+(Velora) Tj
+T*
+(Re: Senior DevOps Engineer/Platform Engineer) Tj
+T*
+T*
+T*
+(Dear Velora Hiring Team,) Tj
+T*
+T*
+(I'm a Senior DevOps Engineer with nearly 18 years of experience building internal) Tj
+T*
+(platform capabilities that let engineering teams ship safely and independently --) Tj
+T*
+(most recently a 6-month engagement with Desjardins hardening the JFrog) Tj
+T*
+(Artifactory platform, where I built Kubernetes/ArgoCD-driven self-service) Tj
+T*
+(environment provisioning, governance tooling, and Splunk-based alerting to keep) Tj
+T*
+(changes pipeline-only and auditable. That focus on reducing DevOps bottlenecks) Tj
+T*
+(through self-service tooling is exactly the mandate described for this role.) Tj
+T*
+T*
+(At Energir, I standardized Infrastructure as Code with Terraform and Ansible, and) Tj
+T*
+(drove RCA-based incident response and reliability improvements to reduce MTTR --) Tj
+T*
+(directly relevant to the SLO ownership and on-call responsibilities here. My) Tj
+T*
+(deepest cloud platform experience is Microsoft Azure rather than GCP, but the) Tj
+T*
+(underlying platform engineering discipline -- Terraform, Kubernetes/Helm, self-) Tj
+T*
+(service tooling, and reliability engineering -- transfers directly, and I'm) Tj
+T*
+(genuinely energized by the opportunity to build GCP depth alongside AWS and) Tj
+T*
+(Azure.) Tj
+T*
+T*
+(I'm based in Smiths Falls, ON, incorporated, and available for remote work within) Tj
+T*
+(your eligible provinces. I'd welcome the opportunity to discuss fit further.) Tj
+T*
+T*
+(Best regards,) Tj
+T*
+T*
+(Marc Berthelette) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2127
+%%EOF

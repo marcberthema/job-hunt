@@ -25,4 +25,8 @@ plan in `plans/`. No slash commands needed — just conversation.
 
 | Story | Description | Status |
 |-------|-------------|--------|
-| _(none yet)_ | | |
+| [addjob](addjob.md) | Manual intake: `/addjob <url>` fetches, scores, and drafts a posting into `jobs/new/` | done |
+| [check-indeed](check-indeed.md) | Bulk discovery: `/check-indeed <terms> [location]` searches Indeed, quick-scores every result in a table, then offers the full `/addjob` treatment for picks | done |
+| [check-dice](check-dice.md) | Bulk discovery: `/check-dice <terms> [location]` searches Dice, gates out clearance/US-work-authorization-only postings before scoring, then quick-scores the rest | done |
+| [check-jobbank](check-jobbank.md) | Bulk discovery: `/check-jobbank [terms]` searches Job Bank (Canada), quick-scores every result in a table, then offers the full `/addjob` treatment for picks | done |
+| [check-builtin](check-builtin.md) | Bulk discovery: `/check-builtin [terms]` searches BuiltIn, quick-scores every result in a table, then offers the full `/addjob` treatment for picks | done |

@@ -86,7 +86,8 @@ Sections **MUST** appear in this order. Mandatory sections are marked **[REQUIRE
 2. **Professional Summary** — **[REQUIRED]**
 3. **Technical Skills** — **[REQUIRED]** (placed high — see §5)
 4. **Work Experience** — **[REQUIRED]**
-5. **Certifications** — **[REQUIRED]** (include even when all are In Progress — see §9)
+5. **Certifications** — **OPTIONAL.** Omit entirely while Marc has no completed or actively-pursued
+   certifications to list (see §9). Add back only once he resumes/finishes one.
 6. **Education** — **[REQUIRED]**
 7. **Languages** — **[REQUIRED]** if not already explicit in the header (bilingualism is a core
    differentiator and **MUST** be unmissable)
@@ -183,18 +184,18 @@ Every experience bullet **MUST** follow the formula:
 
 ## 9. Certifications, Including "In Progress"
 
-- The Certifications section is **[REQUIRED]** and **MUST** appear even when every certification is still
-  in progress — it signals active investment in Azure credentials, which matters for the Azure-first
-  positioning.
-- Format each as a row/line with an explicit **status**:
+- The Certifications section is **OPTIONAL** and currently **omitted**: Marc paused AZ-104/AZ-400 study
+  and has nothing completed or actively in progress worth listing as of 2026-08. Do not add a
+  Certifications section back until he resumes studying or earns one.
+- If/when reinstated, format each as a row/line with an explicit **status**:
   - Completed: `Microsoft Azure Administrator (AZ-104) — 2026` (name, issuer/code, year earned).
   - In progress: `Microsoft Azure Administrator (AZ-104) — In Progress` (or *En cours* in FR).
 - **MUST NOT** present an in-progress certification as if completed, and **MUST NOT** imply a pass date
   that has not happened. Honesty here is a procurement trust issue in regulated sectors.
 - **SHOULD** optionally add an expected/target date if the user provides one
   (`AZ-400 — In Progress (expected Q4 2026)`).
-- When a cert is earned, the skill updating this resume **MUST** also prompt to update `profile.md`
-  (per its "Update certifications" note) so the two stay in sync.
+- When a cert is earned, the skill updating this resume **MUST** also prompt to update `profile.md` so
+  the two stay in sync, and re-add the Certifications section to both resumes.
 
 ---
 

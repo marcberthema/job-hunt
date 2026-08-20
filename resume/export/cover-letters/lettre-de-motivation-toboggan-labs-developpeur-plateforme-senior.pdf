@@ -1,0 +1,101 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica /Encoding /WinAnsiEncoding >>
+endobj
+5 0 obj
+<< /Length 1959 >>
+stream
+BT
+/F1 11 Tf
+15 TL
+72 720 Td
+(Marc Berthelette) Tj
+T*
+(Smiths Falls, ON, Canada  |  marc.berthelette@gmail.com) Tj
+T*
+(linkedin.com/in/marc-berthelette-3aba6917) Tj
+T*
+T*
+(Le 14 juillet 2026) Tj
+T*
+T*
+(Toboggan Labs) Tj
+T*
+(Objet : Développeur·euse plateforme senior) Tj
+T*
+T*
+T*
+(Bonjour à l'équipe de Toboggan Labs,) Tj
+T*
+T*
+(Je suis ingénieur DevOps senior avec près de 18 ans d'expérience en livraison) Tj
+T*
+(d'infrastructure et de logiciels pour des client·e·s d'entreprise, incluant) Tj
+T*
+(plusieurs mandats de consultation distincts — plus récemment un mandat de 6 mois) Tj
+T*
+(chez Desjardins où j'ai automatisé le provisionnement d'environnements avec) Tj
+T*
+(Kubernetes et ArgoCD, développé un service de surveillance en Python/FastAPI, et) Tj
+T*
+(bâti des alertes Splunk pour assurer la conformité des changements de) Tj
+T*
+(configuration. Cette combinaison d'ingénierie de plateforme, de développement) Tj
+T*
+(backend et de travail direct avec les client·e·s correspond exactement à ce que) Tj
+T*
+(vous recherchez chez un·e développeur·euse plateforme.) Tj
+T*
+T*
+(Chez Énergir, j'ai architecturé des pipelines CI/CD sur Azure DevOps et) Tj
+T*
+(standardisé l'infrastructure avec Terraform et Ansible, tout en animant des) Tj
+T*
+(ateliers de sensibilisation pour favoriser l'adoption des meilleures pratiques de) Tj
+T*
+(plateforme — une expérience directement pertinente pour le mentorat et le soutien) Tj
+T*
+(à l'équipe décrits dans ce rôle. Mon expérience de mandat pour Desjardins, une) Tj
+T*
+(institution financière réglementée, se rapproche du contexte réglementé du) Tj
+T*
+(secteur de la santé que vous ciblez.) Tj
+T*
+T*
+(Je suis entièrement bilingue \(français natif, anglais courant\), basé à Smiths) Tj
+T*
+(Falls, ON — dans le fuseau horaire EST — et disponible pour un poste à distance à) Tj
+T*
+(temps plein. Ce serait un plaisir d'échanger davantage sur cette opportunité.) Tj
+T*
+T*
+(Cordialement,) Tj
+T*
+T*
+(Marc Berthelette) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000338 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+2349
+%%EOF

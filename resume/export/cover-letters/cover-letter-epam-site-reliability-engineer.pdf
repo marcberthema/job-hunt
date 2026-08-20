@@ -1,0 +1,91 @@
+%PDF-1.4
+1 0 obj
+<< /Type /Catalog /Pages 2 0 R >>
+endobj
+2 0 obj
+<< /Type /Pages /Kids [3 0 R] /Count 1 >>
+endobj
+3 0 obj
+<< /Type /Page /Parent 2 0 R /MediaBox [0 0 612 792] /Resources << /Font << /F1 4 0 R >> >> /Contents 5 0 R >>
+endobj
+4 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+5 0 obj
+<< /Length 1465 >>
+stream
+BT
+/F1 11 Tf
+15 TL
+72 720 Td
+(Marc Berthelette) Tj
+T*
+(Smiths Falls, ON, Canada  |  marc.berthelette@gmail.com) Tj
+T*
+(linkedin.com/in/marc-berthelette-3aba6917) Tj
+T*
+T*
+(July 14, 2026) Tj
+T*
+T*
+(EPAM) Tj
+T*
+(Re: Site Reliability Engineer \(SRE\)) Tj
+T*
+T*
+T*
+(Dear EPAM Hiring Team,) Tj
+T*
+T*
+(I'm a Senior DevOps Engineer with nearly 18 years of experience building and) Tj
+T*
+(operating reliable, observable infrastructure for enterprise clients -- most) Tj
+T*
+(recently a 6-month engagement with Desjardins where I built Dynatrace dashboards) Tj
+T*
+(and Splunk-based alerting to give real-time visibility into platform health and) Tj
+T*
+(catch configuration drift outside the CI/CD pipeline. That direct experience with) Tj
+T*
+(the exact observability stack this role calls for -- Dynatrace and Splunk -- is) Tj
+T*
+(what drew me to this posting specifically.) Tj
+T*
+T*
+(At Energir, I architected CI/CD pipelines on Azure DevOps and drove RCA-based) Tj
+T*
+(incident response to reduce MTTR and improve system reliability, while also) Tj
+T*
+(automating environment provisioning with Kubernetes and ArgoCD to support high-) Tj
+T*
+(availability production systems. My deepest cloud platform experience is) Tj
+T*
+(Microsoft Azure, which fits well within your flexible cloud-provider requirement.) Tj
+T*
+T*
+(I'm based remotely in Canada, incorporated, and available to discuss fit for this) Tj
+T*
+(role.) Tj
+T*
+T*
+(Best regards,) Tj
+T*
+T*
+(Marc Berthelette) Tj
+T*
+ET
+endstream
+endobj
+xref
+0 6
+0000000000 65535 f 
+0000000009 00000 n 
+0000000058 00000 n 
+0000000115 00000 n 
+0000000241 00000 n 
+0000000311 00000 n 
+trailer
+<< /Size 6 /Root 1 0 R >>
+startxref
+1828
+%%EOF
