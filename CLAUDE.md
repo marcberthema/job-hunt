@@ -119,6 +119,11 @@ This mirrors the Brayd workflow but without GitHub Projects or slash commands fo
 | `/check-dice`   | Search Dice, gate out clearance/US-work-authorization-only postings before scoring, then quick-score the rest |
 | `/check-jobbank` | Search Job Bank (Canada), quick-score every result in a table, then file picks via `/addjob`'s logic |
 | `/check-builtin` | Search BuiltIn, quick-score every result in a table, then file picks via `/addjob`'s logic |
+| `/check-linkedin` | Search LinkedIn Jobs via Claude in Chrome (your logged-in session, clears the auth wall), quick-score every result in a table, then file picks via `/addjob`'s logic |
+| `/check-wwr` | Search We Work Remotely via Claude in Chrome (clears the bot-block), gate out region-ineligible postings before scoring, then file picks via `/addjob`'s logic |
+| `/check-remoteok` | Search RemoteOK via Claude in Chrome (clears the bot-block), gate out region-ineligible postings before scoring using its reliable flag-emoji tags, then file picks via `/addjob`'s logic |
+| `/check-braintrust` | Search Braintrust via Claude in Chrome (clears the client-side-rendering block, no login needed), gate out region-ineligible postings before scoring, then file picks via `/addjob`'s logic |
+| `/check-eluta` | Search Eluta.ca via Claude in Chrome, open each posting's cached copy to work around JS-fragment links (no eligibility gate needed — Canada-only by construction), then file picks via `/addjob`'s logic |
 
 ---
 

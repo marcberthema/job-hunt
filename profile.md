@@ -26,8 +26,17 @@
 | **Open to** | Contract / fractional consulting AND full-time remote employment (short term) |
 | **Target consulting rate** | $110–130/hr CAD |
 | **Target employment salary** | $160,000 CAD/year |
-| **Work arrangement** | Remote only |
-| **Geography** | Worldwide remote — open to any country where services can be legally provided as a Canadian incorporated entity (no visa required; selling services internationally, not relocating) |
+| **Work arrangement** | Remote preferred, but open to on-site/hybrid within reach of Smiths Falls, ON — see Geographic Reachability below |
+| **Geography** | Worldwide remote — open to any country where services can be legally provided as a Canadian incorporated entity (no visa required; selling services internationally, not relocating). For on-site/hybrid roles, only reachable from Smiths Falls, ON: Ottawa, Kingston, Brockville, Cornwall, and Montréal (the furthest acceptable) |
+
+### Geographic Reachability for On-Site/Hybrid Roles
+
+Marc is now open to on-site/hybrid work, not just fully remote — but only within a commutable radius of Smiths Falls, ON. Reachable cities: **Ottawa, Kingston, Brockville, Cornwall, Montréal** (Montréal is the outer limit). Anything further is remote-only or a hard pass on the on-site component.
+
+Frequency tolerance:
+- **1 day/week on-site** — fine, no scoring penalty
+- **2 days/week on-site** — borderline; flag it, don't auto-reject
+- **3+ days/week on-site** — needs a great rate to be worth it; flag prominently and note the rate must be well above target to offset the commute burden
 
 ---
 
@@ -138,7 +147,7 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 
 ## What a Great Consulting Match Looks Like
 
-- Contract or fractional engagement, remote
+- Contract or fractional engagement, remote or low-frequency hybrid (1 day/week) in a reachable city (Ottawa, Kingston, Brockville, Cornwall, Montréal)
 - Azure-heavy or cloud modernization context
 - Platform engineering, CI/CD maturity, IaC standardization
 - Financial services, energy, or regulated industries (existing credibility)
@@ -149,7 +158,7 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 
 ## Red Flags (Auto-Score Lower)
 
-- On-site or hybrid requirement
+- **On-site/hybrid outside reachable range** — anywhere other than Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability above). Unlike other red flags below, this one **caps the score directly (0-4) rather than just being noted as a flag on top of a high skill score** — skill fit alone should never carry an unreachable on-site/hybrid role into the 5+ range, because it's not actually take-able. Within the reachable range: 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week is a flag unless the rate is well above target.
 - Single-client exclusive clause (corp-to-corp restriction)
 - Emphasis on benefits as a selling point (signals FTE)
 - Rate below $100/hr for consulting or salary below $130k for employment
@@ -161,9 +170,9 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 
 ## Scoring Notes for /findjobs
 
-- **8–10**: Remote contract/fractional, Azure context, financial or energy sector, autonomy, $110+/hr
-- **5–7**: Remote employment at target salary OR contract with minor red flags worth reviewing
-- **0–4**: On-site, below rate, FTE-only with no consulting path, or junior scope — skip
+- **8–10**: Remote (or reachable-city hybrid at ≤1 day/week) contract/fractional, Azure context, financial or energy sector, autonomy, $110+/hr
+- **5–7**: Remote employment at target salary OR contract with minor red flags worth reviewing OR reachable-city hybrid at 2 days/week
+- **0–4**: On-site/hybrid outside the reachable range (see Geographic Reachability), below rate, FTE-only with no consulting path, or junior scope — skip. A reachable-city role requiring 3+ days/week on-site also scores here unless the rate is well above target.
 
 ---
 
@@ -181,7 +190,7 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 
 - Primary title: **Senior DevOps Engineer** for job boards; **Senior DevOps & Platform Engineering Consultant** for website and direct outreach
 - Always lead with Azure as the primary cloud platform
-- Remote-only — never apply to on-site or hybrid roles without explicit user confirmation
+- Open to on-site/hybrid roles in Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability) — 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week needs a well-above-target rate. On-site/hybrid **outside** that reachable range is still a hard red flag — never apply without explicit user confirmation
 - Bilingualism is a competitive advantage — highlight for Canadian and Quebec roles
 - Desjardins is the most recent and most impressive contract — always mention for financial sector targets
 - Website copy frames Marc as a consultant first, open to employment second

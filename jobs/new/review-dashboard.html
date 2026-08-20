@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Job Review Dashboard — 2026-08-20</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  :root {
+    --bg: #f7f7f5;
+    --surface: #ffffff;
+    --border: #e2e0db;
+    --text: #26241f;
+    --text-dim: #6b6858;
+    --accent: #a8562c;
+    --accent-soft: #f1e3d8;
+    --score-hi: #3f7d4f;
+    --score-mid: #b9862f;
+    --row-hover: #f1efe9;
+    --tag-bg: #eeece5;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root {
+      --bg: #1b1a17;
+      --surface: #242320;
+      --border: #38362f;
+      --text: #ece9e1;
+      --text-dim: #a39d8c;
+      --accent: #e08a52;
+      --accent-soft: #3a2a1e;
+      --score-hi: #6fbf82;
+      --score-mid: #dcae5c;
+      --row-hover: #2c2a25;
+      --tag-bg: #322f28;
+    }
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    font-family: -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    padding: 2rem 1.5rem 4rem;
+  }
+  header { max-width: 1100px; margin: 0 auto 1.5rem; }
+  h1 { font-size: 1.5rem; margin: 0 0 0.25rem; }
+  .sub { color: var(--text-dim); font-size: 0.9rem; }
+
+  .status-bar {
+    max-width: 1100px;
+    margin: 1rem auto 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+  }
+  .status-pill {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 0.4rem 0.7rem;
+    font-size: 0.78rem;
+  }
+  .status-pill .dot {
+    width: 0.5rem;
+    height: 0.5rem;
+    border-radius: 50%;
+    background: var(--score-hi);
+    flex-shrink: 0;
+  }
+  .status-pill.stale .dot { background: var(--score-mid); }
+  .status-pill .site { font-weight: 600; color: var(--text); }
+  .status-pill .date { color: var(--text-dim); }
+
+  .controls {
+    max-width: 1100px;
+    margin: 1.25rem auto;
+    display: flex;
+    gap: 0.6rem;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .controls input[type="search"] {
+    flex: 1 1 220px;
+    padding: 0.5rem 0.75rem;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.9rem;
+  }
+  .chip {
+    padding: 0.4rem 0.8rem;
+    border-radius: 999px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text-dim);
+    font-size: 0.82rem;
+    cursor: pointer;
+    user-select: none;
+  }
+  .chip.active {
+    background: var(--accent-soft);
+    border-color: var(--accent);
+    color: var(--accent);
+    font-weight: 600;
+  }
+  select#sortBy {
+    padding: 0.5rem 0.6rem;
+    border-radius: 8px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.85rem;
+  }
+
+  .count { max-width: 1100px; margin: 0 auto 0.75rem; color: var(--text-dim); font-size: 0.85rem; }
+
+  .grid {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: grid;
+    gap: 0.9rem;
+  }
+  .card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    padding: 1rem 1.2rem;
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    gap: 0.9rem;
+    align-items: start;
+    transition: background 0.15s ease;
+  }
+  .card:hover { background: var(--row-hover); }
+  .card.hidden { display: none; }
+
+  .score-badge {
+    width: 2.6rem;
+    height: 2.6rem;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    font-size: 1.05rem;
+    color: #fff;
+  }
+  .score-7, .score-8, .score-9, .score-10 { background: var(--score-hi); }
+  .score-6 { background: var(--score-mid); }
+
+  .card h2 { font-size: 1.05rem; margin: 0 0 0.15rem; }
+  .card h2 a { color: var(--text); text-decoration: none; }
+  .card h2 a:hover { color: var(--accent); text-decoration: underline; }
+  .company { color: var(--text-dim); font-size: 0.85rem; margin-bottom: 0.5rem; }
+
+  .meta-row { display: flex; flex-wrap: wrap; gap: 0.4rem 0.6rem; font-size: 0.8rem; color: var(--text-dim); margin-bottom: 0.55rem; }
+  .meta-row strong { color: var(--text); font-weight: 600; }
+
+  .tags { display: flex; flex-wrap: wrap; gap: 0.35rem; margin-bottom: 0.5rem; }
+  .tag { background: var(--tag-bg); color: var(--text); border-radius: 6px; padding: 0.15rem 0.5rem; font-size: 0.76rem; }
+
+  .flags { font-size: 0.78rem; color: var(--text-dim); line-height: 1.4; }
+  .flags strong { color: var(--text); }
+
+  .source-badge {
+    font-size: 0.72rem;
+    font-weight: 600;
+    padding: 0.25rem 0.55rem;
+    border-radius: 6px;
+    white-space: nowrap;
+    text-align: center;
+  }
+  .src-BuiltIn { background: #dbeafe; color: #1e3a8a; }
+  .src-Indeed { background: #dcfce7; color: #14532d; }
+  .src-Dice { background: #fee2e2; color: #7f1d1d; }
+  .src-RemoteOK { background: #ede9fe; color: #4c1d95; }
+  .src-LinkedIn { background: #cfe4fb; color: #0a3a68; }
+  @media (prefers-color-scheme: dark) {
+    .src-BuiltIn { background: #1e3a5f; color: #bcd7fb; }
+    .src-Indeed { background: #1f3d29; color: #b6e6c5; }
+    .src-Dice { background: #4a1f1f; color: #f4b8b8; }
+    .src-RemoteOK { background: #3a2f5f; color: #d7c9fb; }
+    .src-LinkedIn { background: #1c3c5c; color: #b9dbfb; }
+  }
+
+  .actions { display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem; }
+  .btn {
+    font-size: 0.78rem;
+    padding: 0.35rem 0.7rem;
+    border-radius: 7px;
+    border: 1px solid var(--border);
+    background: var(--surface);
+    color: var(--text);
+    text-decoration: none;
+    white-space: nowrap;
+  }
+  .btn:hover { border-color: var(--accent); color: var(--accent); }
+
+  footer { max-width: 1100px; margin: 2rem auto 0; color: var(--text-dim); font-size: 0.78rem; }
+</style>
+</head>
+<body>
+<header>
+  <h1>Job Review Dashboard</h1>
+  <div class="sub">18 postings found 2026-08-19 to 2026-08-20 · filed from BuiltIn / Indeed / Dice / RemoteOK / LinkedIn runs · awaiting <code>/review</code></div>
+</header>
+
+<div class="status-bar" id="statusBar"></div>
+
+<div class="controls">
+  <input type="search" id="search" placeholder="Search title, company, or skill…">
+  <span class="chip active" data-filter="all">All sources</span>
+  <span class="chip" data-filter="BuiltIn">BuiltIn</span>
+  <span class="chip" data-filter="Indeed">Indeed</span>
+  <span class="chip" data-filter="Dice">Dice</span>
+  <span class="chip" data-filter="RemoteOK">RemoteOK</span>
+  <span class="chip" data-filter="LinkedIn">LinkedIn</span>
+  <select id="sortBy">
+    <option value="score-desc">Sort: Score (high→low)</option>
+    <option value="score-asc">Sort: Score (low→high)</option>
+    <option value="title">Sort: Title (A→Z)</option>
+  </select>
+</div>
+
+<div class="count" id="count"></div>
+
+<div class="grid" id="grid"></div>
+
+<footer>Data pulled from <code>jobs/new/*.md</code> · open the source file link to see full fit-score reasoning, resume delta, and draft cover letter.</footer>
+
+<script>
+const jobs = [
+  {
+    title: "DevOps/DevSecOps Developer",
+    company: "Alithya Group Inc.",
+    file: "2026-08-19-alithya-group-devops-devsecops-developer.md",
+    score: 6,
+    salary: "Not stated",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/devops-devsecops-developer/10305886",
+    skills: ["Azure", "Terraform", "GitHub Actions", "French fluency"],
+    flags: "Rate/salary not disclosed; engagement type not explicit."
+  },
+  {
+    title: "Sr. Cloud Platform Engineer (GCP, Azure)",
+    company: "Applied Systems",
+    file: "2026-08-19-applied-systems-sr-cloud-platform-engineer.md",
+    score: 7,
+    salary: "$100K–$160K CAD/yr",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/sr-cloud-platform-engineer/9787963",
+    skills: ["Terraform (multi-cloud)", "GitLab CI/Azure DevOps", "HashiCorp Vault", "Kubernetes (AKS/GKE)"],
+    flags: "Full-time only; GCP primary, Azure secondary; salary near but below target."
+  },
+  {
+    title: "Staff Site Reliability Engineer",
+    company: "Caseware",
+    file: "2026-08-19-caseware-staff-site-reliability-engineer.md",
+    score: 6,
+    salary: "$140K–$155K CAD/yr",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/staff-site-reliability-engineer/10735321",
+    skills: ["GitHub Actions CI/CD", "IaC", "Kubernetes/service-mesh", "Zero-trust security", "AWS"],
+    flags: "Full-time only; AWS-primary, no Azure; salary slightly below target."
+  },
+  {
+    title: "Manager, Cloud Engineer (Azure)",
+    company: "Deloitte Global Technology",
+    file: "2026-08-19-deloitte-manager-cloud-engineer-azure.md",
+    score: 7,
+    salary: "$85K–$156K CAD/yr",
+    source: "Indeed",
+    url: "https://ca.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0C5k5MMdpDb4Pv14IAMbzkPUie5HgsvsE3q_E2kBaGbFGW7B8Zr5AxBPLAYUKAsMI2sCB0Gjy3CiCUWBAVlJruvzMnIt8-H95Ew0EGz7G2zgNVoCUAi50tmxSbBdCNUX4Fssix9jPCgbjnlZg6Ub3XyW40oqgQ7WuGoIsKkkalVoJtr3ph8PjDy56ki82qGvA78u5ZvFnQrOfUOi0ZW4wi4ydIsVDlkxVnA2yrSCU3aiCD_KAhDbqSi1TYFFDezZ5VzFKL3ZfL4CKmzwu2XzRb16Cj4-Hxq4c49wsCos7y-SDitm1QM5N-gVpfcjDEvEZEtKJ6zwEo50yK2TYBrxPHkdlMmkk5RX7Trrn0rd3SOCYj4j50TM2lAVXHmU8spfsrViGceeZowttmPNFaEJGShpxrGu4bfmQrgETLFRuzhS08Dj87v27msGhZxTtcfzJZ17GqtaxMLRPFTnKnzH2WX9bEs_AMf7ggW0mp1TKs6acKynyQEZ1X1VLX4XeDS1cv3Rx0QuMJXb5eZFCG0-3qmB7gP0Y1XcdNADBCMav9bJkArqFgQN8NPtylHHw675BGq33EJ9hg26yqUFiCw2Z5DopENQXCJzAyWlbNJzGEExVdzIFsbVBSkMN0FZxA08C3WHxUw8j--w-CP2f5WTsflWhPhfNjdSE45vwm6aTTNoXSCy8HfBFl3QuvMyJ92H8NqxFt9g0xcivcEqEBFvL58kjrJNGwWVlBIzXyD6OXEsJwYdlKQ0vCjF51VzvONTB7lXyP7xhqxU9R6itAsuvTgvAOoiFwMrCahZeext0IeZwzAz3g22UkQca9YS0zAcbSLOVfnO_2VVLjkVjikFGtMpqU58vP1aOkZgfjz5hHS8w==&xkcb=SoDa6_M2fOu5qWQH150HbzkdCdPP",
+    skills: ["Azure", "GitHub Actions/Azure DevOps", "People management scope"],
+    flags: "\"Manager\" title suggests leadership scope beyond hands-on delivery — clarify in interview."
+  },
+  {
+    title: "Senior AI DevOps Developer [584]",
+    company: "D-Wave Systems",
+    file: "2026-08-19-d-wave-systems-senior-ai-devops-developer.md",
+    score: 7,
+    salary: "$150K–$206K CAD/yr",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/senior-ai-devops-developer-584/10601570",
+    skills: ["Kubernetes", "Terraform", "ArgoCD", "JFrog Artifactory", "Jenkins", "Python/Go/Groovy"],
+    flags: "Full-time role; AI/LLM platform framing layered on core DevOps."
+  },
+  {
+    title: "Lead DevOps Engineer - Observability & Monitoring",
+    company: "EPAM Systems, Inc.",
+    file: "2026-08-19-epam-systems-lead-devops-engineer-observability-monitoring.md",
+    score: 7,
+    salary: "CA$130K–CA$160K/yr",
+    source: "Indeed",
+    url: "https://ca.indeed.com/rc/clk?jk=6f872507b8bc5c79",
+    skills: ["Azure logging/monitoring", "Observability tooling", "On-call"],
+    flags: "Full-time only; salary below target at low end, reaches it at top."
+  },
+  {
+    title: "SRE, Intermediate to Senior Staff — Infrastructure Platforms",
+    company: "GitLab",
+    file: "2026-08-19-gitlab-sre-infrastructure-platforms.md",
+    score: 6,
+    salary: "$126,400–$314,400 USD/yr",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/site-reliability-engineer-intermediate-senior-staff-infrastructure-platforms/10145126",
+    skills: ["IaC", "Kubernetes/GitOps CI/CD", "Terraform modules", "Go (code-reading)"],
+    flags: "GCP/AWS preferred, not Azure; code-reading leans Go, outside core scripting languages."
+  },
+  {
+    title: "Site Reliability Engineer (Senior or Staff), Deployments",
+    company: "MongoDB",
+    file: "2026-08-19-mongodb-sre-deployments.md",
+    score: 6,
+    salary: "$127K–$249K USD/yr",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/site-reliability-engineer-senior-or-staff/9785615",
+    skills: ["ArgoCD/Argo Workflows", "Multi-cloud (AWS/GCP/Azure)", "On-call/reliability"],
+    flags: "Strong USD salary band; Azure is one of several supported clouds, not sole platform."
+  },
+  {
+    title: "Senior IT Cloud Engineer - Remote BC",
+    company: "Ontinue",
+    file: "2026-08-19-ontinue-senior-it-cloud-engineer.md",
+    score: 6,
+    salary: "Not stated",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/senior-it-cloud-engineer-remote-bc/10609334",
+    skills: ["Azure", "Terraform/Bicep/ARM", "Azure Automation runbooks", "Entra ID", "GitHub Actions", "PowerShell/Bash/Python"],
+    flags: "Full-time only; salary undisclosed; confirm no BC-residency hard requirement."
+  },
+  {
+    title: "AWS Security Automation/DevSecOps Engineer",
+    company: "SATCON Inc",
+    file: "2026-08-19-satcon-aws-security-automation-devsecops-engineer.md",
+    score: 6,
+    salary: "Not stated (DOE)",
+    source: "Dice",
+    url: "https://www.dice.com/job-detail/68748f27-4922-4cbe-bb81-5a7589d1bff9",
+    skills: ["AWS", "Terraform IaC", "Kubernetes/EKS", "GitOps"],
+    flags: "US-market posting — confirm Independent Contractor arrangement works for a Canadian-incorporated consultant."
+  },
+  {
+    title: "DevOps / Cloud Engineer (12-month contract)",
+    company: "Symbiotic Group Inc.",
+    file: "2026-08-19-symbiotic-group-devops-cloud-engineer.md",
+    score: 7,
+    salary: "Not stated",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/devops-cloud-engineer/10640107",
+    skills: ["AWS", "GitOps/ArgoCD", "Kubernetes CI/CD"],
+    flags: "Fixed-term contract format — matches preferred engagement type. Rate undisclosed; AWS-primary."
+  },
+  {
+    title: "Senior Staff Site Reliability Engineer",
+    company: "WEX Inc.",
+    file: "2026-08-19-wex-senior-staff-sre.md",
+    score: 6,
+    salary: "$160,100–$179,200 USD/yr",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/senior-staff-site-reliability-engineer/7861942",
+    skills: ["Multi-cloud (AWS/Azure/GCP)", "Dynatrace/Splunk/ELK", "Incident response", "Leadership"],
+    flags: "Leans strategic/leadership advisory (12+ yrs, C-level influence) rather than hands-on delivery."
+  },
+  {
+    title: "Senior Cloud Infrastructure Engineer, Kubernetes",
+    company: "Camunda",
+    file: "2026-08-20-camunda-senior-cloud-infrastructure-engineer.md",
+    score: 7,
+    salary: "$149.8K–$247.2K USD/yr (US range; location-adjusted elsewhere)",
+    source: "RemoteOK",
+    url: "https://remoteok.com/remote-jobs/remote-senior-cloud-infrastructure-engineer-kubernetes-camunda-1129637",
+    skills: ["Kubernetes (multi-cloud)", "Prometheus/Grafana/ELK/Datadog", "Terraform (nice-to-have)", "On-call/SRE"],
+    flags: "Full-time only; Azure/Terraform are \"nice to have,\" not required — AWS/GCP more central."
+  },
+  {
+    title: "Senior Software Development Engineer, DevOps",
+    company: "Equip Health",
+    file: "2026-08-20-equip-health-senior-devops-engineer.md",
+    score: 7,
+    salary: "$127K–$159K USD/yr",
+    source: "RemoteOK",
+    url: "https://remoteok.com/remote-jobs/remote-senior-software-development-engineer-devops-equip-health-1129690",
+    skills: ["Terraform/CloudFormation", "ECS/Fargate", "CI/CD", "NewRelic/DataDog", "AWS"],
+    flags: "Full-time only; AWS-only, no Azure; salary slightly below CAD-equivalent target."
+  },
+  {
+    title: "Senior DevOps Consultant (part-time contract)",
+    company: "Hilltop Partner Network",
+    file: "2026-08-20-hilltop-partner-network-senior-devops-consultant.md",
+    score: 8,
+    salary: "$100–$120 CAD/hr, capped at 8h/week",
+    source: "LinkedIn",
+    url: "https://www.linkedin.com/jobs/view/4455466516/",
+    skills: ["Azure PaaS", "Terraform IaC", "GitHub Actions", "DevSecOps", "Entra ID"],
+    flags: "Rate just under target; 8h/week cap limits total income from this role alone."
+  },
+  {
+    title: "Ingénieur(eure) Azure DevOps",
+    company: "LGS, an IBM Company",
+    file: "2026-08-20-lgs-ibm-ingenieur-azure-devops.md",
+    score: 8,
+    salary: "Not stated",
+    source: "LinkedIn",
+    url: "https://www.linkedin.com/jobs/view/4449673525/",
+    skills: ["Azure DevOps CI/CD", "Terraform/Bicep/Ansible", "AKS/Docker", "Azure Monitor", "Bilingual FR/EN"],
+    flags: "Full-time, hybrid Montréal; salary and hybrid frequency undisclosed."
+  },
+  {
+    title: "Senior DevOps, Software",
+    company: "Sherweb",
+    file: "2026-08-20-sherweb-senior-devops-software.md",
+    score: 9,
+    salary: "$95K–$135K CAD/yr",
+    source: "LinkedIn",
+    url: "https://www.linkedin.com/jobs/view/4456385797/",
+    skills: ["Terraform/Bicep", "Ansible/DSC", "AKS/Docker/Helm", "ArgoCD/GitOps", "Bilingual FR/EN"],
+    flags: "Full-time, salary below target; Microsoft certification \"required\" per posting — clarify which one."
+  },
+  {
+    title: "Senior DevOps Engineer",
+    company: "Solace",
+    file: "2026-08-20-solace-senior-devops-engineer.md",
+    score: 6,
+    salary: "$115K–$140K CAD/yr",
+    source: "LinkedIn",
+    url: "https://www.linkedin.com/jobs/view/4430715621/",
+    skills: ["Terraform IaC", "Kubernetes/Helm", "GitHub Actions/Jenkins", "AWS", "Platform engineering"],
+    flags: "No Azure — AWS-only; full-time only; hybrid Ottawa, days/week on-site unstated."
+  }
+];
+
+// Last-checked dates pulled from job_sources.md — updated whenever the update-dashboard skill runs.
+const sourceStatus = [
+  { site: "Indeed", lastChecked: "2026-08-19" },
+  { site: "Dice", lastChecked: "2026-08-19" },
+  { site: "Job Bank", lastChecked: "2026-08-19" },
+  { site: "BuiltIn", lastChecked: "2026-08-19" }
+];
+const STALE_AFTER_DAYS = 3;
+
+function renderStatusBar() {
+  const bar = document.getElementById("statusBar");
+  const today = new Date("2026-08-20T00:00:00");
+  bar.innerHTML = sourceStatus.map(s => {
+    const days = Math.round((today - new Date(s.lastChecked + "T00:00:00")) / 86400000);
+    const stale = days > STALE_AFTER_DAYS;
+    return `<div class="status-pill ${stale ? "stale" : ""}">
+      <span class="dot"></span>
+      <span class="site">${s.site}</span>
+      <span class="date">${s.lastChecked}${stale ? ` (${days}d ago)` : ""}</span>
+    </div>`;
+  }).join("");
+}
+renderStatusBar();
+
+const grid = document.getElementById("grid");
+const countEl = document.getElementById("count");
+const searchEl = document.getElementById("search");
+const sortEl = document.getElementById("sortBy");
+let activeSource = "all";
+
+function scoreClass(s) { return "score-" + s; }
+
+function render() {
+  const q = searchEl.value.trim().toLowerCase();
+  let filtered = jobs.filter(j => {
+    const matchesSource = activeSource === "all" || j.source === activeSource;
+    const haystack = (j.title + " " + j.company + " " + j.skills.join(" ")).toLowerCase();
+    const matchesQuery = !q || haystack.includes(q);
+    return matchesSource && matchesQuery;
+  });
+
+  const sortVal = sortEl.value;
+  filtered.sort((a, b) => {
+    if (sortVal === "score-desc") return b.score - a.score;
+    if (sortVal === "score-asc") return a.score - b.score;
+    if (sortVal === "title") return a.title.localeCompare(b.title);
+    return 0;
+  });
+
+  countEl.textContent = `Showing ${filtered.length} of ${jobs.length} postings`;
+
+  grid.innerHTML = filtered.map(j => `
+    <div class="card">
+      <div class="score-badge ${scoreClass(j.score)}">${j.score}</div>
+      <div>
+        <h2><a href="${j.url}" target="_blank" rel="noopener">${j.title}</a></h2>
+        <div class="company">${j.company}</div>
+        <div class="meta-row">
+          <span><strong>Salary:</strong> ${j.salary}</span>
+        </div>
+        <div class="tags">${j.skills.map(s => `<span class="tag">${s}</span>`).join("")}</div>
+        <div class="flags"><strong>Flags:</strong> ${j.flags}</div>
+      </div>
+      <div class="actions">
+        <span class="source-badge src-${j.source}">${j.source}</span>
+        <a class="btn" href="${j.file}" target="_blank" rel="noopener">Full posting →</a>
+      </div>
+    </div>
+  `).join("");
+}
+
+document.querySelectorAll(".chip").forEach(chip => {
+  chip.addEventListener("click", () => {
+    document.querySelectorAll(".chip").forEach(c => c.classList.remove("active"));
+    chip.classList.add("active");
+    activeSource = chip.dataset.filter;
+    render();
+  });
+});
+searchEl.addEventListener("input", render);
+sortEl.addEventListener("change", render);
+
+render();
+</script>
+</body>
+</html>
