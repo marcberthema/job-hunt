@@ -124,6 +124,11 @@ This mirrors the Brayd workflow but without GitHub Projects or slash commands fo
 | `/check-remoteok` | Search RemoteOK via Claude in Chrome (clears the bot-block), gate out region-ineligible postings before scoring using its reliable flag-emoji tags, then file picks via `/addjob`'s logic |
 | `/check-braintrust` | Search Braintrust via Claude in Chrome (clears the client-side-rendering block, no login needed), gate out region-ineligible postings before scoring, then file picks via `/addjob`'s logic |
 | `/check-eluta` | Search Eluta.ca via Claude in Chrome, open each posting's cached copy to work around JS-fragment links (no eligibility gate needed — Canada-only by construction), then file picks via `/addjob`'s logic |
+| `/check-sisystems` | Search S.i. Systems (Canada's largest IT staffing agency) via Claude in Chrome (WAF-block workaround), no eligibility gate needed (Canada-only by construction), then file picks via `/addjob`'s logic |
+| `/check-procom` | Search Procom's real jobs portal via Claude in Chrome, gate out US-only postings before scoring, then file picks via `/addjob`'s logic |
+| `/check-randstad` | Browse Randstad Canada's Technologies category via Claude in Chrome (site-side keyword search is broken, filters client-side instead), no eligibility gate needed, then file picks via `/addjob`'s logic |
+| `/check-roberthalf` | Search Robert Half Technology (Canada, Contract listings) via plain WebFetch — no Chrome workaround needed — then file picks via `/addjob`'s logic |
+| `/check-glassdoor` | Search Glassdoor Canada via Claude in Chrome, flag likely duplicates against other sources, then file picks via `/addjob`'s logic |
 
 ---
 

@@ -178,12 +178,14 @@
   .src-Dice { background: #fee2e2; color: #7f1d1d; }
   .src-RemoteOK { background: #ede9fe; color: #4c1d95; }
   .src-LinkedIn { background: #cfe4fb; color: #0a3a68; }
+  .src-SiSystems { background: #fde8d4; color: #7c3a0a; }
   @media (prefers-color-scheme: dark) {
     .src-BuiltIn { background: #1e3a5f; color: #bcd7fb; }
     .src-Indeed { background: #1f3d29; color: #b6e6c5; }
     .src-Dice { background: #4a1f1f; color: #f4b8b8; }
     .src-RemoteOK { background: #3a2f5f; color: #d7c9fb; }
     .src-LinkedIn { background: #1c3c5c; color: #b9dbfb; }
+    .src-SiSystems { background: #5a3616; color: #f7c893; }
   }
 
   .actions { display: flex; flex-direction: column; align-items: flex-end; gap: 0.4rem; }
@@ -205,7 +207,7 @@
 <body>
 <header>
   <h1>Job Review Dashboard</h1>
-  <div class="sub">18 postings found 2026-08-19 to 2026-08-20 · filed from BuiltIn / Indeed / Dice / RemoteOK / LinkedIn runs · awaiting <code>/review</code></div>
+  <div class="sub">26 postings found 2026-08-19 to 2026-08-20 · filed from BuiltIn / Indeed / Dice / RemoteOK / LinkedIn / S.i. Systems runs · awaiting <code>/review</code></div>
 </header>
 
 <div class="status-bar" id="statusBar"></div>
@@ -218,6 +220,7 @@
   <span class="chip" data-filter="Dice">Dice</span>
   <span class="chip" data-filter="RemoteOK">RemoteOK</span>
   <span class="chip" data-filter="LinkedIn">LinkedIn</span>
+  <span class="chip" data-filter="SiSystems">S.i. Systems</span>
   <select id="sortBy">
     <option value="score-desc">Sort: Score (high→low)</option>
     <option value="score-asc">Sort: Score (low→high)</option>
@@ -388,17 +391,6 @@ const jobs = [
     flags: "Full-time only; AWS-only, no Azure; salary slightly below CAD-equivalent target."
   },
   {
-    title: "Senior DevOps Consultant (part-time contract)",
-    company: "Hilltop Partner Network",
-    file: "2026-08-20-hilltop-partner-network-senior-devops-consultant.md",
-    score: 8,
-    salary: "$100–$120 CAD/hr, capped at 8h/week",
-    source: "LinkedIn",
-    url: "https://www.linkedin.com/jobs/view/4455466516/",
-    skills: ["Azure PaaS", "Terraform IaC", "GitHub Actions", "DevSecOps", "Entra ID"],
-    flags: "Rate just under target; 8h/week cap limits total income from this role alone."
-  },
-  {
     title: "Ingénieur(eure) Azure DevOps",
     company: "LGS, an IBM Company",
     file: "2026-08-20-lgs-ibm-ingenieur-azure-devops.md",
@@ -430,15 +422,117 @@ const jobs = [
     url: "https://www.linkedin.com/jobs/view/4430715621/",
     skills: ["Terraform IaC", "Kubernetes/Helm", "GitHub Actions/Jenkins", "AWS", "Platform engineering"],
     flags: "No Azure — AWS-only; full-time only; hybrid Ottawa, days/week on-site unstated."
+  },
+  {
+    title: "Site Reliability Engineer (Dynatrace) — Banking client",
+    company: "S.i. Systems",
+    file: "2026-08-20-sisystems-site-reliability-engineer-dynatrace.md",
+    score: 7,
+    salary: "Negotiable (not disclosed)",
+    source: "SiSystems",
+    url: "https://www.sisystems.com/jobs/site-reliability-engineer-with-strong-expertise-in-dynatrace-to-ensure-the-reliability-performance-and-observability-of-large-scale-distributed-systems-jp1345/330032003400300033003800/",
+    skills: ["Dynatrace (Davis AI/SRG)", "SRE golden signals", "SLO/SLI alerting", "Financial services"],
+    flags: "Rate not disclosed; Toronto hybrid but only ~2 days/month onsite, not a weekly commute; undisclosed banking client via staffing agency."
+  },
+  {
+    title: "Azure DevOps Engineer Bilingual",
+    company: "Experis Canada",
+    file: "2026-08-20-experis-azure-devops-engineer-bilingual.md",
+    score: 9,
+    salary: "Not stated",
+    source: "LinkedIn",
+    url: "https://www.linkedin.com/jobs/view/4456016671/",
+    skills: ["Terraform (AzureRM/Entra ID)", "Azure DevOps YAML", "Entra ID/RBAC", "DevSecOps/OPA", "Bilingual FR/EN"],
+    flags: "Rate not disclosed; Montréal hybrid 2 days/week (reachable, soft flag); contract to March 2027."
+  },
+  {
+    title: "Site Reliability Engineer (SRE)",
+    company: "EPAM Systems, Inc.",
+    file: "2026-08-20-epam-systems-site-reliability-engineer.md",
+    score: 8,
+    salary: "Not stated",
+    source: "Indeed",
+    url: "https://ca.indeed.com/rc/clk?jk=4a13df4624a74089",
+    skills: ["Dynatrace/Splunk/Grafana", "SLI/SLO", "Incident management", "Wealth Management client"],
+    flags: "Salary not disclosed; full-time only; possible overlap with a different EPAM SRE role already applied to 2026-07-14."
+  },
+  {
+    title: "Cloud Engineer (Azure Platform Engineer)",
+    company: "Smile Digital Health",
+    file: "2026-08-20-smile-digital-health-cloud-engineer-azure.md",
+    score: 8,
+    salary: "$115K–$130K CAD/yr",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/cloud-engineer-azure-platform-engineer-remote-ontario/10464451",
+    skills: ["Azure/AKS", "Terraform", "GitOps (Flux/ArgoCD)", "AZ-104 preferred"],
+    flags: "Full-time only; healthcare sector; salary below target."
+  },
+  {
+    title: "Senior Software Engineer, Backend (Reliability Platform)",
+    company: "Affirm",
+    file: "2026-08-20-affirm-senior-software-engineer-reliability-platform.md",
+    score: 7,
+    salary: "$153K–$213K CAD/yr",
+    source: "Indeed",
+    url: "https://ca.indeed.com/rc/clk?jk=16c52f11ae720ae3",
+    skills: ["Python/Kotlin", "AWS", "Kubernetes", "Platform reliability"],
+    flags: "Full-time only; province eligibility (Ontario) not confirmed; AWS not Azure."
+  },
+  {
+    title: "Forward Deployed Engineer (FDE)",
+    company: "3Pillar Global",
+    file: "2026-08-20-3pillar-forward-deployed-engineer.md",
+    score: 6,
+    salary: "Not stated",
+    source: "Indeed",
+    url: "https://ca.indeed.com/rc/clk?jk=52588cc2d5620eb6",
+    skills: ["Multi-cloud (AWS/Azure/GCP)", "Python", "Customer-facing delivery"],
+    flags: "Rate not disclosed; requires US client-site travel; full-time only."
+  },
+  {
+    title: "DevOps Engineer",
+    company: "StackAdapt",
+    file: "2026-08-20-stackadapt-devops-engineer.md",
+    score: 6,
+    salary: "$116K–$159.5K CAD/yr",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/devops-engineer/10318251",
+    skills: ["Terraform/Terrateam", "Kubernetes", "Prometheus/Grafana"],
+    flags: "Full-time only; AWS-focused, no Azure."
+  },
+  {
+    title: "AI-First DevOps Engineer",
+    company: "Jonas Software (Computrition)",
+    file: "2026-08-20-jonas-software-ai-first-devops-engineer.md",
+    score: 6,
+    salary: "$155K–$165K CAD/yr",
+    source: "BuiltIn",
+    url: "https://builtin.com/job/ai-first-devops-engineer/10670017",
+    skills: ["AWS", "Terraform", "CI/CD", "AI-agent tooling"],
+    flags: "Full-time only; AWS-only, no Azure; AI-agent component layered on core DevOps."
+  },
+  {
+    title: "Principal Cloud Engineer",
+    company: "Tekniforce",
+    file: "2026-08-20-tekniforce-principal-cloud-engineer.md",
+    score: 6,
+    salary: "Not stated",
+    source: "LinkedIn",
+    url: "https://www.linkedin.com/jobs/view/4448072134/",
+    skills: ["Azure + AWS", "Kubernetes", "Terraform/Docker"],
+    flags: "Rate not disclosed; staffing agency for an unnamed client; high experience bar."
   }
 ];
 
 // Last-checked dates pulled from job_sources.md — updated whenever the update-dashboard skill runs.
 const sourceStatus = [
-  { site: "Indeed", lastChecked: "2026-08-19" },
-  { site: "Dice", lastChecked: "2026-08-19" },
-  { site: "Job Bank", lastChecked: "2026-08-19" },
-  { site: "BuiltIn", lastChecked: "2026-08-19" }
+  { site: "Indeed", lastChecked: "2026-08-20" },
+  { site: "Dice", lastChecked: "2026-08-20" },
+  { site: "Job Bank", lastChecked: "2026-08-20" },
+  { site: "BuiltIn", lastChecked: "2026-08-20" },
+  { site: "LinkedIn", lastChecked: "2026-08-20" },
+  { site: "RemoteOK", lastChecked: "2026-08-20" },
+  { site: "S.i. Systems", lastChecked: "2026-08-20" }
 ];
 const STALE_AFTER_DAYS = 3;
 

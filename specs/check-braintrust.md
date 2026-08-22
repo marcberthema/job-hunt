@@ -85,7 +85,7 @@ filtering is built on clean, discoverable URL query parameters rather than a fre
 | Site Reliability Engineer | `8473` (Site Reliability Engineering) — confirmed the chip exists, but returned **0 open postings** as of 2026-08-20 |
 | Cloud Engineer | `10001` (Cloud Engineering) — confirmed the chip exists, but returned **0 open postings** as of 2026-08-20 |
 | DevSecOps Engineer | `6831` (DevSecOps) — confirmed the chip exists, but returned **0 open postings** as of 2026-08-20 |
-| Forward Deployed Engineer | not confirmed — UI lookup was interrupted by a stuck dropdown state during testing; "Forward Deployed Engineer" also appears as a literal **role title** already (e.g. Turing's posting under the DevOps skill search), so it may not need its own skill chip — worth re-testing next run |
+| Forward Deployed Engineer | **no matching skill chip exists** — confirmed "Skill not found" when searched 2026-08-20. It also appears as a literal **role title** in postings (e.g. Turing's "Senior Forward Deployed Engineer, Agentic AI & RAG"), so a dedicated chip isn't expected. Fall back to unfiltered `role=5,16` browsing + title-skim for this keyword. |
 
 **Important: combining multiple `skills=` IDs in one query ANDs them, not ORs** — confirmed
 during testing that `skills=8473,6831` (SRE + DevSecOps together) returned 0 results even though

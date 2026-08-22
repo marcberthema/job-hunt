@@ -165,6 +165,7 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 - Junior scope (ticket-taking, no architecture ownership)
 - No Azure or cloud component
 - **Explicit provincial/regional residency requirement** (e.g. "must reside in Quebec," "must currently reside in Alberta") — Marc is based in Smiths Falls, ON; treat this as a hard eligibility gate, not a soft preference, and flag it prominently even if skill fit scores high
+- **Indigenous-membership hiring requirement** — e.g. **PLATO (PLATO Testing)** is an Indigenous-owned staffing/recruitment firm whose roles require Indigenous identity to apply. Marc does not qualify. Treat any posting confirmed to carry this requirement as a hard eligibility gate (score 0-4, skip), not a soft skill-fit flag — same severity as the residency-requirement rule above. Watch for this specifically when "PLATO" or similarly Indigenous-owned staffing brands appear as the listed employer/recruiter on aggregator sites (Eluta, Indeed, etc.), since the requirement isn't always visible in a search snippet
 
 ---
 
