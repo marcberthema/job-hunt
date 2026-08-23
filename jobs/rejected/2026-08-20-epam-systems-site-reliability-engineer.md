@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time (implied by on-call rotation)
 - **Rate/Salary (stated):** Not stated
 - **Location/Remote:** Remote
+- **Days in Office:** 0 (Remote)
 - **Flags:** Salary not disclosed; full-time only, no contract path mentioned; a different EPAM SRE posting (careers.epam.com, direct link) was already applied to on 2026-07-14 — this is a different URL/req for a Wealth Management/Trading Platform client, likely a distinct or recurring EPAM opening, not confirmed identical
 
 ## Fit Score: 8
@@ -30,3 +31,7 @@ I'm incorporated in Canada, fully bilingual, and available to start on short not
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-23:** Confirmed duplicate — this Indeed listing (`jk=4a13df4624a74089`) redirects to the exact same EPAM career page URL/requisition (`bltwshooodc40mc0kqb_en`, Wealth Management/Broker-Dealer Trading Platform client) already applied to on 2026-07-14 (see `jobs/applied/2026-07-14-epam-site-reliability-engineer.md`). Same posting re-surfaced through Indeed's job feed a month later, not a distinct opening.

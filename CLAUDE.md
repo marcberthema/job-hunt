@@ -113,7 +113,7 @@ This mirrors the Brayd workflow but without GitHub Projects or slash commands fo
 | Command      | Purpose                                                                  |
 |--------------|--------------------------------------------------------------------------|
 | `/findjobs`  | Scrape/read sources, score postings against profile, draft letters, save to `jobs/new/` |
-| `/review`    | Walk through `jobs/new/` one by one — approve (move to `applied/`) or reject (move to `rejected/`) |
+| `/review`    | Walk `jobs/new/` one posting at a time (highest score first), pay/days-in-office/contract-type highlighted — reject/skip, or apply (cover letter + application-question help), moving to `applied/` once you confirm submission |
 | `/addjob`    | Manual intake: fetch/score/draft a single posting by URL into `jobs/new/` |
 | `/check-indeed` | Search Indeed, quick-score every result in a table, then file picks via `/addjob`'s logic |
 | `/check-dice`   | Search Dice, gate out clearance/US-work-authorization-only postings before scoring, then quick-score the rest |

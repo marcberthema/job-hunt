@@ -5,6 +5,7 @@
 - **Engagement type:** Unclear (not explicitly stated; likely full-time)
 - **Rate/Salary (stated):** not stated
 - **Location/Remote:** In-Office or Remote (2 Locations)
+- **Days in Office:** Not stated (candidate's choice of "In-Office or Remote" — day count not given)
 - **Flags:** Rate/salary not disclosed; engagement type not explicitly stated; requires fluent French (Marc's advantage, not a flag against him)
 
 ## Fit Score: 6

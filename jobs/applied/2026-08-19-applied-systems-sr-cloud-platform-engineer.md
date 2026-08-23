@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $100K–$160K CAD annually
 - **Location/Remote:** Remote or Hybrid (2 Locations)
+- **Days in Office:** Not stated (Remote or Hybrid option — day count not given)
 - **Flags:** Full-time only (no contract path stated); GCP is the primary cloud with Azure secondary; salary near but below the $160K target
 
 ## Fit Score: 7

@@ -80,6 +80,15 @@ Everything that needs to be done before `/findjobs` runs end-to-end without manu
 
 ---
 
+## 9. Resume & Profile Deep Pass (Opus)
+
+- [ ] Switch to Opus for this pass — higher-leverage than the per-job resume delta since these files get reused across every application
+- [ ] Go through `profile.md` and both resumes (`resume/marc-berthelette-resume-en.md`, `resume/marc-berthelette-resume-fr.md`) bullet by bullet for impact/quantification/ATS-friendliness
+- [ ] Add a genuine personal touch — Marc's own sense of the value he brings (confidence in his ability to deliver, judgment, ownership) doesn't come through in a skills list or a flat accomplishment bullet; find a way to showcase that voice without it reading as generic self-promotion
+- [ ] Carry any resulting changes through to `site/` (EN/FR) via `/buildsite` and to LinkedIn, per CLAUDE.md's priority #1 (external presence must stay in sync with `profile.md`)
+
+---
+
 ## Done when
 
 `/findjobs` runs without prompting you for anything, finds emails in the `job-alerts` label, scores them, drafts letters, and commits results to `jobs/new/` — all within your Claude Code subscription.

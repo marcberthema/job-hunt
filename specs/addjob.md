@@ -26,8 +26,9 @@ eventually produce, so `/review` and everything downstream needs no changes.
 2. **Read `profile.md` first** (per repo convention) — background, rate, preferences, red
    flags, scoring notes.
 3. **Extract** from the posting: role title, company, engagement type (contract / fractional /
-   FTE — infer from language), rate/salary if stated, location/remote policy, posting URL,
-   today's date as "found" date.
+   FTE — infer from language), rate/salary if stated, location/remote policy, days in office per
+   week (`0` remote, stated count for hybrid, `5` on-site, "Not stated" if hybrid with no count
+   given), posting URL, today's date as "found" date.
 4. **Score** 0–10 against `profile.md`'s scoring notes and red flags, with a short written
    rationale (2–4 sentences) referencing specific posting details. Should be mostly skill based.
    The pay and the remote vs hybrid vs on site will also be shown for each job. If I am a great fit but its a on site job, I want the score to high but mention its on site, same with pay.
@@ -53,6 +54,7 @@ eventually produce, so `/review` and everything downstream needs no changes.
 - **Engagement type:** Contract | Fractional | Full-time | Unclear
 - **Rate/Salary (stated):** <as posted, or "not stated">
 - **Location/Remote:** <as posted>
+- **Days in Office:** <e.g. "0 (Remote)"; "2/week (Hybrid)"; "5/week (On-site)"; "Not stated">
 
 ## Fit Score: <0-10>
 

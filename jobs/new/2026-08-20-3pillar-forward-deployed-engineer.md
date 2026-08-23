@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** Not stated
 - **Location/Remote:** Remote (with US travel requirement for client site visits)
+- **Days in Office:** 0 (Remote; periodic US client-site travel required, not a standing weekly office day)
 - **Flags:** Rate not disclosed; requires travel to US client sites — confirm feasibility for a Canadian-incorporated consultant before proceeding; full-time only
 
 ## Fit Score: 6

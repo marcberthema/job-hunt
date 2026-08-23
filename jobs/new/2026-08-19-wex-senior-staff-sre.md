@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $160,100–$179,200 USD annually
 - **Location/Remote:** In-Office or Remote (11 Locations)
+- **Days in Office:** Not stated (candidate's choice of "In-Office or Remote" — day count not given)
 - **Flags:** Full-time only (no contract path stated); requires 12+ years in SRE/DevOps/engineering leadership scope with strategic advisor-to-leadership responsibilities — heavier people/leadership emphasis than Marc's recent individual-contributor engagements; "In-Office or Remote" ambiguity worth confirming before applying
 
 ## Fit Score: 6

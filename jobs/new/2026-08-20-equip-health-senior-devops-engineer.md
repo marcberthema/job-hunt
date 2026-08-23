@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $127,000–$159,000 USD/year
 - **Location/Remote:** Fully remote (posting tagged "Probably worldwide," no explicit country restriction found in the body); requires availability during Eastern or Central time zone hours — Canada spans both, so this is compatible rather than a blocker
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only, no contract path stated; AWS-only stack, no Azure mentioned; salary in USD, slightly below the $160K CAD-equivalent target once converted; healthcare-adjacent company (virtual eating-disorder treatment platform) — HIPAA-aware environment worth noting positively
 
 ## Fit Score: 7

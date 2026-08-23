@@ -26,6 +26,7 @@ plan in `plans/`. No slash commands needed — just conversation.
 | Story | Description | Status |
 |-------|-------------|--------|
 | [addjob](addjob.md) | Manual intake: `/addjob <url>` fetches, scores, and drafts a posting into `jobs/new/` | done |
+| [review](review.md) | Backlog review: `/review` walks `jobs/new/` one posting at a time (highest score first), shows a detailed view with pay/days-in-office/contract-type highlighted, and rejects/skips or helps apply (cover letter + application questions) before moving the file to `jobs/applied/` on confirmed submission | done |
 | [check-indeed](check-indeed.md) | Bulk discovery: `/check-indeed <terms> [location]` searches Indeed, quick-scores every result in a table, then offers the full `/addjob` treatment for picks | done |
 | [check-dice](check-dice.md) | Bulk discovery: `/check-dice <terms> [location]` searches Dice, gates out clearance/US-work-authorization-only postings before scoring, then quick-scores the rest | done |
 | [check-jobbank](check-jobbank.md) | Bulk discovery: `/check-jobbank [terms]` searches Job Bank (Canada), quick-scores every result in a table, then offers the full `/addjob` treatment for picks | done |

@@ -5,6 +5,7 @@
 - **Engagement type:** Contract (12-month)
 - **Rate/Salary (stated):** not stated
 - **Location/Remote:** Remote (Toronto, ON)
+- **Days in Office:** 0 (Remote)
 - **Flags:** Rate not stated; AWS-primary, no Azure mentioned
 
 ## Fit Score: 7

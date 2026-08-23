@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $153,000–$213,000 CAD/yr
 - **Location/Remote:** Toronto, ON — Remote, but restricted to specific Canadian provinces (Ontario eligibility not explicitly confirmed in the posting — verify before proceeding)
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only; salary meets/exceeds target; province eligibility list not fully disclosed — confirm Ontario is included before applying; posting emphasizes "vibe coding"/AI-framework automation as part of the role
 
 ## Fit Score: 7

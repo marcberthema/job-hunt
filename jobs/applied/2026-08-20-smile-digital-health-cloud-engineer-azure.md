@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $115K–$130K CAD/yr
 - **Location/Remote:** Remote Ontario (Toronto, ON)
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only, no contract path mentioned; healthcare sector rather than financial/energy (no scoring penalty per profile.md, still noted); salary below the $160K target
 
 ## Fit Score: 8
@@ -13,7 +14,7 @@ Deep Azure skill match: production Azure Kubernetes Service (AKS) cluster archit
 
 ## Resume Delta
 
-- Lead with the Énergir Azure cloud modernization migrations (5-10 mission-critical services) — direct precedent for AKS cluster architecture and Azure-native operations.
+- Lead with the Énergir Azure cloud modernization migrations (5-10 mission-critical services) — relevant foundation for Azure-native operations; frame Kubernetes specifically as automation/application-level experience, not cluster architecture ownership, and position this role as a genuine step up into that.
 - Emphasize the Desjardins Kubernetes/ArgoCD environment provisioning and GitOps-style automation — matches this posting's Flux/ArgoCD GitOps requirement closely.
 - Highlight Terraform IaC practices from Énergir as evidence for this posting's infrastructure-as-code requirement.
 - Mention the paused AZ-104 study — signal genuine intent toward the certification this posting prefers, without overstating current cert status.
@@ -23,7 +24,7 @@ Deep Azure skill match: production Azure Kubernetes Service (AKS) cluster archit
 
 Hi Smile Digital Health team,
 
-I'm applying for the Cloud Engineer (Azure Platform Engineer) role. Azure has been my primary cloud platform for the past several years: at Énergir, I led cloud modernization initiatives migrating 5-10 mission-critical services to Azure, and at Desjardins I automated Kubernetes/ArgoCD provisioning for on-demand corporate environments — directly relevant to your AKS cluster architecture and GitOps (Flux/ArgoCD) requirements.
+I'm applying for the Cloud Engineer (Azure Platform Engineer) role. Azure has been my primary cloud platform for the past several years: at Énergir, I led cloud modernization initiatives migrating 5-10 mission-critical services to Azure, and at Desjardins I automated Kubernetes/ArgoCD provisioning for on-demand corporate environments and worked hands-on debugging applications running on Kubernetes — a strong foundation for stepping into deeper AKS cluster architecture ownership, and directly relevant to your Terraform IaC and GitOps (Flux/ArgoCD) requirements.
 
 I've also implemented Terraform-based Infrastructure as Code to standardize provisioning and reduce configuration drift, and built Dynatrace-based observability dashboards, both transferable to your Grafana-stack and Azure Monitor observability scope. I'm currently working toward the AZ-104 certification your posting prefers.
 

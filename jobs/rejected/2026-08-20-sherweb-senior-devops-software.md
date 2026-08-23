@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $95,000–$135,000 CAD/year
 - **Location/Remote:** Québec Province — Remote/Hybrid
+- **Days in Office:** Not stated (Remote/Hybrid option, day count not given)
 - **Flags:** Full-time only, no contract path stated; salary below the $160K target (within the lowered urgency-mode bar); Microsoft certification "required" per posting (none currently listed — worth clarifying which one during interview); excellent English *and* French required — plays directly to bilingual strength
 
 ## Fit Score: 9
@@ -31,3 +32,7 @@ Je suis incorporé au Canada, parfaitement bilingue (français natif, anglais co
 
 Cordialement,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-23:** Posting is no longer accepting applications.

@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $127,000–$249,000 USD annually
 - **Location/Remote:** Remote or Hybrid (7 Locations)
+- **Days in Office:** Not stated (Remote or Hybrid option — day count not given)
 - **Flags:** Full-time only (no contract path stated); multi-cloud role, Azure is one of three platforms rather than primary
 
 ## Fit Score: 6

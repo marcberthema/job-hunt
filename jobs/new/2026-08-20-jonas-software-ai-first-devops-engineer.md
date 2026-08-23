@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $155,000–$165,000 CAD/yr
 - **Location/Remote:** Remote, Ontario, Canada
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only, but salary meets target; AWS-focused, no Azure; AI-agent/MCP-integration component layered on core DevOps scope; this posting was also seen (unfiled) via a prior `/check-eluta` scan — confirmed via `grep` this is the first time it's actually being filed
 
 ## Fit Score: 6

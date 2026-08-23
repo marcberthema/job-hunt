@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** not stated
 - **Location/Remote:** Montréal, QC — Hybrid (days/week on-site not stated in posting)
+- **Days in Office:** Not stated (Hybrid, day count not given)
 - **Flags:** Full-time only, no contract path stated; salary not disclosed; hybrid frequency unstated — worth clarifying before applying; bilingual French/English explicitly required — plays directly to bilingual strength; export-control technology note in posting applies only to non-Canadian-citizens/permanent-residents, not applicable
 
 ## Fit Score: 8

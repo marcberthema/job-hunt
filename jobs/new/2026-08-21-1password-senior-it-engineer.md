@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** Canada-based: $103,000–$144,000 CAD base + equity/benefits
 - **Location/Remote:** Remote (Canada and US)
+- **Days in Office:** 0 (Remote)
 - **Flags:** Domain mismatch — this is corporate IT / endpoint management (Apple MDM, device trust, patch compliance), not cloud/platform engineering; salary below the $160k target; heavy benefits/equity/PTO emphasis (FTE signal); occasional 24/7 on-call for endpoint incidents
 
 ## Fit Score: 2/10 (skill/domain fit — logistics noted separately above)

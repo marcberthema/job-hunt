@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $126,400–$314,400 USD annually (US residents)
 - **Location/Remote:** All-remote (2 Locations)
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only (no contract path stated); GCP/AWS preferred over Azure; primary debugging language is Go, which is not part of Marc's documented stack
 
 ## Fit Score: 6

@@ -5,6 +5,7 @@
 - **Engagement type:** Contract (3 months, possibility of extension)
 - **Rate/Salary (stated):** Hourly: Negotiable (not disclosed)
 - **Location/Remote:** Downtown Toronto or Scarborough — Hybrid, currently ~2 days/month in office (subject to change)
+- **Days in Office:** ~2 days/month (Hybrid; unusually light for a "hybrid" listing, not a weekly cadence)
 - **Flags:** Rate not disclosed; Toronto is technically outside the strict reachable-city list (Ottawa, Kingston, Brockville, Cornwall, Montréal), but the on-site requirement is minimal (~2 days/month, not a weekly commute) — flagging for confirmation rather than auto-capping, since this is a fundamentally different burden than a regular hybrid schedule; staffing agency (S.i. Systems) sourcing for an undisclosed banking client
 
 ## Fit Score: 7
@@ -31,3 +32,7 @@ I'm incorporated in Canada, fully bilingual (French/English), and available to s
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-23:** Requires high ServiceNow integration depth Marc doesn't have, and the engagement is only 3 months (possibility of extension, but not guaranteed) — too short/risky a ramp-up for the skill gap involved.

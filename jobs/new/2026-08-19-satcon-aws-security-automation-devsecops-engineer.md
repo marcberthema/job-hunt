@@ -5,6 +5,7 @@
 - **Engagement type:** Contract (3–6 months, extendable); Independent Contractor or W2 options
 - **Rate/Salary (stated):** not stated (Depends on Experience)
 - **Location/Remote:** Remote (anywhere in US)
+- **Days in Office:** 0 (Remote)
 - **Flags:** Rate not stated; posting is US-market (Dice), so confirm the Independent Contractor arrangement can accommodate a Canadian-incorporated consultant before applying; AWS-focused, no Azure
 
 ## Fit Score: 6

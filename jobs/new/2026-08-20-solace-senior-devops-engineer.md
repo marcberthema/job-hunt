@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $115,000–$140,000 CAD/year
 - **Location/Remote:** Ottawa, ON — Hybrid (days/week on-site not stated in posting)
+- **Days in Office:** Not stated (Hybrid, day count not given)
 - **Flags:** No Azure — stack is AWS-only; full-time only, no contract path; salary below the $160K target; hybrid frequency unstated — worth clarifying before applying since tolerance depends on days/week on-site; culture-forward language ("balance matters," "keep it fun") is a minor FTE-emphasis signal, not disqualifying
 
 ## Fit Score: 6

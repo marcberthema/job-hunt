@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time (with on-call requirements)
 - **Rate/Salary (stated):** CA$130,000–CA$160,000/year
 - **Location/Remote:** Remote
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only, no contract path mentioned; salary is below the $160K CAD target at the low end but reaches it at the top
 
 ## Fit Score: 7

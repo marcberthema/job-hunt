@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time (permanent)
 - **Rate/Salary (stated):** $140,000–$155,000 CAD annually
 - **Location/Remote:** Remote (Toronto, ON — legally authorized to work in Canada)
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only (no contract path stated); AWS-primary, no Azure mentioned; salary slightly below the $160K target
 
 ## Fit Score: 6
@@ -30,3 +31,7 @@ I'm incorporated in Canada, based in Ontario, fully bilingual (French/English), 
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-23:** Heavier AWS/Kubernetes depth than the original score captured (posting references "Kubestronaut"-level Kubernetes expertise) — beyond Marc's actual hands-on depth, which is Azure-primary with Kubernetes mostly from the automation/provisioning side rather than deep cluster/CKA-tier expertise.

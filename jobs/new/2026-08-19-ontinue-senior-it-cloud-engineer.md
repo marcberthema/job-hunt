@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** not stated
 - **Location/Remote:** Remote (British Columbia, Canada)
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only (no contract path stated); rate/salary not disclosed; posting title specifies "Remote BC" — worth confirming there's no BC-residency hard requirement given the residency red-flag pattern seen on other Canadian postings
 
 ## Fit Score: 6

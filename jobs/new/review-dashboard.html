@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>Job Review Dashboard — 2026-08-20</title>
+<title>Job Review Dashboard — 2026-08-23</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
   :root {
@@ -15,6 +15,7 @@
     --accent-soft: #f1e3d8;
     --score-hi: #3f7d4f;
     --score-mid: #b9862f;
+    --score-lo: #b23b3b;
     --row-hover: #f1efe9;
     --tag-bg: #eeece5;
   }
@@ -29,6 +30,7 @@
       --accent-soft: #3a2a1e;
       --score-hi: #6fbf82;
       --score-mid: #dcae5c;
+      --score-lo: #e07a7a;
       --row-hover: #2c2a25;
       --tag-bg: #322f28;
     }
@@ -150,6 +152,7 @@
   }
   .score-7, .score-8, .score-9, .score-10 { background: var(--score-hi); }
   .score-6 { background: var(--score-mid); }
+  .score-0, .score-1, .score-2, .score-3, .score-4, .score-5 { background: var(--score-lo); }
 
   .card h2 { font-size: 1.05rem; margin: 0 0 0.15rem; }
   .card h2 a { color: var(--text); text-decoration: none; }
@@ -207,7 +210,7 @@
 <body>
 <header>
   <h1>Job Review Dashboard</h1>
-  <div class="sub">26 postings found 2026-08-19 to 2026-08-20 · filed from BuiltIn / Indeed / Dice / RemoteOK / LinkedIn / S.i. Systems runs · awaiting <code>/review</code></div>
+  <div class="sub">13 postings remaining · found 2026-08-19 to 2026-08-21 · filed from BuiltIn / Indeed / Dice / RemoteOK / LinkedIn runs · awaiting <code>/review</code> (13 of 26 already reviewed this session)</div>
 </header>
 
 <div class="status-bar" id="statusBar"></div>
@@ -237,6 +240,39 @@
 <script>
 const jobs = [
   {
+    title: "Ingénieur(eure) Azure DevOps",
+    company: "LGS, an IBM Company",
+    file: "2026-08-20-lgs-ibm-ingenieur-azure-devops.md",
+    score: 8,
+    salary: "Not stated",
+    source: "LinkedIn",
+    url: "https://www.linkedin.com/jobs/view/4449673525/",
+    skills: ["Azure DevOps CI/CD", "Terraform/Bicep/Ansible", "AKS/Docker", "Azure Monitor", "Bilingual FR/EN"],
+    flags: "Full-time, hybrid Montréal; salary and hybrid frequency undisclosed."
+  },
+  {
+    title: "Senior Cloud Infrastructure Engineer, Kubernetes",
+    company: "Camunda",
+    file: "2026-08-20-camunda-senior-cloud-infrastructure-engineer.md",
+    score: 7,
+    salary: "$149.8K–$247.2K USD/yr (US range; location-adjusted elsewhere)",
+    source: "RemoteOK",
+    url: "https://remoteok.com/remote-jobs/remote-senior-cloud-infrastructure-engineer-kubernetes-camunda-1129637",
+    skills: ["Kubernetes (multi-cloud)", "Prometheus/Grafana/ELK/Datadog", "Terraform (nice-to-have)", "On-call/SRE"],
+    flags: "Full-time only; Azure/Terraform \"nice to have,\" not required. TODO — confirm RemoteOK's apply flow doesn't need a premium account before applying."
+  },
+  {
+    title: "Senior Software Development Engineer, DevOps",
+    company: "Equip Health",
+    file: "2026-08-20-equip-health-senior-devops-engineer.md",
+    score: 7,
+    salary: "$127K–$159K USD/yr",
+    source: "RemoteOK",
+    url: "https://remoteok.com/remote-jobs/remote-senior-software-development-engineer-devops-equip-health-1129690",
+    skills: ["Terraform/CloudFormation", "ECS/Fargate", "CI/CD", "NewRelic/DataDog", "AWS"],
+    flags: "Full-time only; AWS-only, no Azure; salary slightly below CAD-equivalent target."
+  },
+  {
     title: "DevOps/DevSecOps Developer",
     company: "Alithya Group Inc.",
     file: "2026-08-19-alithya-group-devops-devsecops-developer.md",
@@ -246,72 +282,6 @@ const jobs = [
     url: "https://builtin.com/job/devops-devsecops-developer/10305886",
     skills: ["Azure", "Terraform", "GitHub Actions", "French fluency"],
     flags: "Rate/salary not disclosed; engagement type not explicit."
-  },
-  {
-    title: "Sr. Cloud Platform Engineer (GCP, Azure)",
-    company: "Applied Systems",
-    file: "2026-08-19-applied-systems-sr-cloud-platform-engineer.md",
-    score: 7,
-    salary: "$100K–$160K CAD/yr",
-    source: "BuiltIn",
-    url: "https://builtin.com/job/sr-cloud-platform-engineer/9787963",
-    skills: ["Terraform (multi-cloud)", "GitLab CI/Azure DevOps", "HashiCorp Vault", "Kubernetes (AKS/GKE)"],
-    flags: "Full-time only; GCP primary, Azure secondary; salary near but below target."
-  },
-  {
-    title: "Staff Site Reliability Engineer",
-    company: "Caseware",
-    file: "2026-08-19-caseware-staff-site-reliability-engineer.md",
-    score: 6,
-    salary: "$140K–$155K CAD/yr",
-    source: "BuiltIn",
-    url: "https://builtin.com/job/staff-site-reliability-engineer/10735321",
-    skills: ["GitHub Actions CI/CD", "IaC", "Kubernetes/service-mesh", "Zero-trust security", "AWS"],
-    flags: "Full-time only; AWS-primary, no Azure; salary slightly below target."
-  },
-  {
-    title: "Manager, Cloud Engineer (Azure)",
-    company: "Deloitte Global Technology",
-    file: "2026-08-19-deloitte-manager-cloud-engineer-azure.md",
-    score: 7,
-    salary: "$85K–$156K CAD/yr",
-    source: "Indeed",
-    url: "https://ca.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0C5k5MMdpDb4Pv14IAMbzkPUie5HgsvsE3q_E2kBaGbFGW7B8Zr5AxBPLAYUKAsMI2sCB0Gjy3CiCUWBAVlJruvzMnIt8-H95Ew0EGz7G2zgNVoCUAi50tmxSbBdCNUX4Fssix9jPCgbjnlZg6Ub3XyW40oqgQ7WuGoIsKkkalVoJtr3ph8PjDy56ki82qGvA78u5ZvFnQrOfUOi0ZW4wi4ydIsVDlkxVnA2yrSCU3aiCD_KAhDbqSi1TYFFDezZ5VzFKL3ZfL4CKmzwu2XzRb16Cj4-Hxq4c49wsCos7y-SDitm1QM5N-gVpfcjDEvEZEtKJ6zwEo50yK2TYBrxPHkdlMmkk5RX7Trrn0rd3SOCYj4j50TM2lAVXHmU8spfsrViGceeZowttmPNFaEJGShpxrGu4bfmQrgETLFRuzhS08Dj87v27msGhZxTtcfzJZ17GqtaxMLRPFTnKnzH2WX9bEs_AMf7ggW0mp1TKs6acKynyQEZ1X1VLX4XeDS1cv3Rx0QuMJXb5eZFCG0-3qmB7gP0Y1XcdNADBCMav9bJkArqFgQN8NPtylHHw675BGq33EJ9hg26yqUFiCw2Z5DopENQXCJzAyWlbNJzGEExVdzIFsbVBSkMN0FZxA08C3WHxUw8j--w-CP2f5WTsflWhPhfNjdSE45vwm6aTTNoXSCy8HfBFl3QuvMyJ92H8NqxFt9g0xcivcEqEBFvL58kjrJNGwWVlBIzXyD6OXEsJwYdlKQ0vCjF51VzvONTB7lXyP7xhqxU9R6itAsuvTgvAOoiFwMrCahZeext0IeZwzAz3g22UkQca9YS0zAcbSLOVfnO_2VVLjkVjikFGtMpqU58vP1aOkZgfjz5hHS8w==&xkcb=SoDa6_M2fOu5qWQH150HbzkdCdPP",
-    skills: ["Azure", "GitHub Actions/Azure DevOps", "People management scope"],
-    flags: "\"Manager\" title suggests leadership scope beyond hands-on delivery — clarify in interview."
-  },
-  {
-    title: "Senior AI DevOps Developer [584]",
-    company: "D-Wave Systems",
-    file: "2026-08-19-d-wave-systems-senior-ai-devops-developer.md",
-    score: 7,
-    salary: "$150K–$206K CAD/yr",
-    source: "BuiltIn",
-    url: "https://builtin.com/job/senior-ai-devops-developer-584/10601570",
-    skills: ["Kubernetes", "Terraform", "ArgoCD", "JFrog Artifactory", "Jenkins", "Python/Go/Groovy"],
-    flags: "Full-time role; AI/LLM platform framing layered on core DevOps."
-  },
-  {
-    title: "Lead DevOps Engineer - Observability & Monitoring",
-    company: "EPAM Systems, Inc.",
-    file: "2026-08-19-epam-systems-lead-devops-engineer-observability-monitoring.md",
-    score: 7,
-    salary: "CA$130K–CA$160K/yr",
-    source: "Indeed",
-    url: "https://ca.indeed.com/rc/clk?jk=6f872507b8bc5c79",
-    skills: ["Azure logging/monitoring", "Observability tooling", "On-call"],
-    flags: "Full-time only; salary below target at low end, reaches it at top."
-  },
-  {
-    title: "SRE, Intermediate to Senior Staff — Infrastructure Platforms",
-    company: "GitLab",
-    file: "2026-08-19-gitlab-sre-infrastructure-platforms.md",
-    score: 6,
-    salary: "$126,400–$314,400 USD/yr",
-    source: "BuiltIn",
-    url: "https://builtin.com/job/site-reliability-engineer-intermediate-senior-staff-infrastructure-platforms/10145126",
-    skills: ["IaC", "Kubernetes/GitOps CI/CD", "Terraform modules", "Go (code-reading)"],
-    flags: "GCP/AWS preferred, not Azure; code-reading leans Go, outside core scripting languages."
   },
   {
     title: "Site Reliability Engineer (Senior or Staff), Deployments",
@@ -347,17 +317,6 @@ const jobs = [
     flags: "US-market posting — confirm Independent Contractor arrangement works for a Canadian-incorporated consultant."
   },
   {
-    title: "DevOps / Cloud Engineer (12-month contract)",
-    company: "Symbiotic Group Inc.",
-    file: "2026-08-19-symbiotic-group-devops-cloud-engineer.md",
-    score: 7,
-    salary: "Not stated",
-    source: "BuiltIn",
-    url: "https://builtin.com/job/devops-cloud-engineer/10640107",
-    skills: ["AWS", "GitOps/ArgoCD", "Kubernetes CI/CD"],
-    flags: "Fixed-term contract format — matches preferred engagement type. Rate undisclosed; AWS-primary."
-  },
-  {
     title: "Senior Staff Site Reliability Engineer",
     company: "WEX Inc.",
     file: "2026-08-19-wex-senior-staff-sre.md",
@@ -367,116 +326,6 @@ const jobs = [
     url: "https://builtin.com/job/senior-staff-site-reliability-engineer/7861942",
     skills: ["Multi-cloud (AWS/Azure/GCP)", "Dynatrace/Splunk/ELK", "Incident response", "Leadership"],
     flags: "Leans strategic/leadership advisory (12+ yrs, C-level influence) rather than hands-on delivery."
-  },
-  {
-    title: "Senior Cloud Infrastructure Engineer, Kubernetes",
-    company: "Camunda",
-    file: "2026-08-20-camunda-senior-cloud-infrastructure-engineer.md",
-    score: 7,
-    salary: "$149.8K–$247.2K USD/yr (US range; location-adjusted elsewhere)",
-    source: "RemoteOK",
-    url: "https://remoteok.com/remote-jobs/remote-senior-cloud-infrastructure-engineer-kubernetes-camunda-1129637",
-    skills: ["Kubernetes (multi-cloud)", "Prometheus/Grafana/ELK/Datadog", "Terraform (nice-to-have)", "On-call/SRE"],
-    flags: "Full-time only; Azure/Terraform are \"nice to have,\" not required — AWS/GCP more central."
-  },
-  {
-    title: "Senior Software Development Engineer, DevOps",
-    company: "Equip Health",
-    file: "2026-08-20-equip-health-senior-devops-engineer.md",
-    score: 7,
-    salary: "$127K–$159K USD/yr",
-    source: "RemoteOK",
-    url: "https://remoteok.com/remote-jobs/remote-senior-software-development-engineer-devops-equip-health-1129690",
-    skills: ["Terraform/CloudFormation", "ECS/Fargate", "CI/CD", "NewRelic/DataDog", "AWS"],
-    flags: "Full-time only; AWS-only, no Azure; salary slightly below CAD-equivalent target."
-  },
-  {
-    title: "Ingénieur(eure) Azure DevOps",
-    company: "LGS, an IBM Company",
-    file: "2026-08-20-lgs-ibm-ingenieur-azure-devops.md",
-    score: 8,
-    salary: "Not stated",
-    source: "LinkedIn",
-    url: "https://www.linkedin.com/jobs/view/4449673525/",
-    skills: ["Azure DevOps CI/CD", "Terraform/Bicep/Ansible", "AKS/Docker", "Azure Monitor", "Bilingual FR/EN"],
-    flags: "Full-time, hybrid Montréal; salary and hybrid frequency undisclosed."
-  },
-  {
-    title: "Senior DevOps, Software",
-    company: "Sherweb",
-    file: "2026-08-20-sherweb-senior-devops-software.md",
-    score: 9,
-    salary: "$95K–$135K CAD/yr",
-    source: "LinkedIn",
-    url: "https://www.linkedin.com/jobs/view/4456385797/",
-    skills: ["Terraform/Bicep", "Ansible/DSC", "AKS/Docker/Helm", "ArgoCD/GitOps", "Bilingual FR/EN"],
-    flags: "Full-time, salary below target; Microsoft certification \"required\" per posting — clarify which one."
-  },
-  {
-    title: "Senior DevOps Engineer",
-    company: "Solace",
-    file: "2026-08-20-solace-senior-devops-engineer.md",
-    score: 6,
-    salary: "$115K–$140K CAD/yr",
-    source: "LinkedIn",
-    url: "https://www.linkedin.com/jobs/view/4430715621/",
-    skills: ["Terraform IaC", "Kubernetes/Helm", "GitHub Actions/Jenkins", "AWS", "Platform engineering"],
-    flags: "No Azure — AWS-only; full-time only; hybrid Ottawa, days/week on-site unstated."
-  },
-  {
-    title: "Site Reliability Engineer (Dynatrace) — Banking client",
-    company: "S.i. Systems",
-    file: "2026-08-20-sisystems-site-reliability-engineer-dynatrace.md",
-    score: 7,
-    salary: "Negotiable (not disclosed)",
-    source: "SiSystems",
-    url: "https://www.sisystems.com/jobs/site-reliability-engineer-with-strong-expertise-in-dynatrace-to-ensure-the-reliability-performance-and-observability-of-large-scale-distributed-systems-jp1345/330032003400300033003800/",
-    skills: ["Dynatrace (Davis AI/SRG)", "SRE golden signals", "SLO/SLI alerting", "Financial services"],
-    flags: "Rate not disclosed; Toronto hybrid but only ~2 days/month onsite, not a weekly commute; undisclosed banking client via staffing agency."
-  },
-  {
-    title: "Azure DevOps Engineer Bilingual",
-    company: "Experis Canada",
-    file: "2026-08-20-experis-azure-devops-engineer-bilingual.md",
-    score: 9,
-    salary: "Not stated",
-    source: "LinkedIn",
-    url: "https://www.linkedin.com/jobs/view/4456016671/",
-    skills: ["Terraform (AzureRM/Entra ID)", "Azure DevOps YAML", "Entra ID/RBAC", "DevSecOps/OPA", "Bilingual FR/EN"],
-    flags: "Rate not disclosed; Montréal hybrid 2 days/week (reachable, soft flag); contract to March 2027."
-  },
-  {
-    title: "Site Reliability Engineer (SRE)",
-    company: "EPAM Systems, Inc.",
-    file: "2026-08-20-epam-systems-site-reliability-engineer.md",
-    score: 8,
-    salary: "Not stated",
-    source: "Indeed",
-    url: "https://ca.indeed.com/rc/clk?jk=4a13df4624a74089",
-    skills: ["Dynatrace/Splunk/Grafana", "SLI/SLO", "Incident management", "Wealth Management client"],
-    flags: "Salary not disclosed; full-time only; possible overlap with a different EPAM SRE role already applied to 2026-07-14."
-  },
-  {
-    title: "Cloud Engineer (Azure Platform Engineer)",
-    company: "Smile Digital Health",
-    file: "2026-08-20-smile-digital-health-cloud-engineer-azure.md",
-    score: 8,
-    salary: "$115K–$130K CAD/yr",
-    source: "BuiltIn",
-    url: "https://builtin.com/job/cloud-engineer-azure-platform-engineer-remote-ontario/10464451",
-    skills: ["Azure/AKS", "Terraform", "GitOps (Flux/ArgoCD)", "AZ-104 preferred"],
-    flags: "Full-time only; healthcare sector; salary below target."
-  },
-  {
-    title: "Senior Software Engineer, Backend (Reliability Platform)",
-    company: "Affirm",
-    file: "2026-08-20-affirm-senior-software-engineer-reliability-platform.md",
-    score: 7,
-    salary: "$153K–$213K CAD/yr",
-    source: "Indeed",
-    url: "https://ca.indeed.com/rc/clk?jk=16c52f11ae720ae3",
-    skills: ["Python/Kotlin", "AWS", "Kubernetes", "Platform reliability"],
-    flags: "Full-time only; province eligibility (Ontario) not confirmed; AWS not Azure."
   },
   {
     title: "Forward Deployed Engineer (FDE)",
@@ -512,15 +361,26 @@ const jobs = [
     flags: "Full-time only; AWS-only, no Azure; AI-agent component layered on core DevOps."
   },
   {
-    title: "Principal Cloud Engineer",
-    company: "Tekniforce",
-    file: "2026-08-20-tekniforce-principal-cloud-engineer.md",
+    title: "Senior DevOps Engineer",
+    company: "Solace",
+    file: "2026-08-20-solace-senior-devops-engineer.md",
     score: 6,
-    salary: "Not stated",
+    salary: "$115K–$140K CAD/yr",
     source: "LinkedIn",
-    url: "https://www.linkedin.com/jobs/view/4448072134/",
-    skills: ["Azure + AWS", "Kubernetes", "Terraform/Docker"],
-    flags: "Rate not disclosed; staffing agency for an unnamed client; high experience bar."
+    url: "https://www.linkedin.com/jobs/view/4430715621/",
+    skills: ["Terraform IaC", "Kubernetes/Helm", "GitHub Actions/Jenkins", "AWS", "Platform engineering"],
+    flags: "No Azure — AWS-only; full-time only; hybrid Ottawa, days/week on-site unstated."
+  },
+  {
+    title: "Senior IT Engineer",
+    company: "1Password",
+    file: "2026-08-21-1password-senior-it-engineer.md",
+    score: 2,
+    salary: "Canada-based: $103K–$144K CAD base + equity/benefits",
+    source: "LinkedIn",
+    url: "https://www.linkedin.com/jobs/view/4446933360/",
+    skills: ["Apple MDM", "Device trust", "IT change management", "Bash/CI-CD (bridge)"],
+    flags: "Domain mismatch — corporate IT/endpoint management, not cloud/DevOps; salary below target; heavy benefits/equity emphasis (FTE signal)."
   }
 ];
 
@@ -538,7 +398,7 @@ const STALE_AFTER_DAYS = 3;
 
 function renderStatusBar() {
   const bar = document.getElementById("statusBar");
-  const today = new Date("2026-08-20T00:00:00");
+  const today = new Date("2026-08-23T00:00:00");
   bar.innerHTML = sourceStatus.map(s => {
     const days = Math.round((today - new Date(s.lastChecked + "T00:00:00")) / 86400000);
     const stale = days > STALE_AFTER_DAYS;

@@ -41,6 +41,9 @@ and scoring notes.
   contractor" / "day rate" → Contract; "W2 employee" / "full-time employee" → Full-time; etc.)
 - Rate/salary as stated verbatim, or "not stated"
 - Location/remote policy as stated (Remote / Hybrid / On-site + city)
+- Days in office per week — `0 (Remote)` for fully remote, the stated count for hybrid (e.g.
+  `2/week (Hybrid)`), `5/week (On-site)` for fully on-site, or `Not stated` when the posting says
+  "hybrid" with no day count given
 
 ## 6. Score (0–10) — skill/fit-based
 
@@ -81,6 +84,7 @@ Schema:
 - **Engagement type:** Contract | Fractional | Full-time | Unclear
 - **Rate/Salary (stated):** <as posted, or "not stated">
 - **Location/Remote:** <as posted>
+- **Days in Office:** <e.g. "0 (Remote)"; "2/week (Hybrid)"; "5/week (On-site)"; "Not stated">
 - **Flags:** <e.g. "On-site (Toronto)"; "Rate not stated"; "none">
 
 ## Fit Score: <0-10> (skill/domain fit — logistics noted separately above)

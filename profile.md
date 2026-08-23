@@ -100,11 +100,11 @@ Results-driven Senior DevOps Engineer with nearly 18 years of experience designi
 ## Education
 
 **Bachelor of Automated Manufacturing Engineering**
-École de Technologie Supérieure (ÉTS) — Montréal, QC
+École de Technologie Supérieure (ÉTS) — Montréal, QC | September 2005 – August 2016
 Specialty: Industrial Data Processing
 
 **DCS in Computer Science Technology (Administrative Data Processing)**
-Cégep André-Laurendeau — Montréal, QC | 2005–2006
+Cégep André-Laurendeau — Montréal, QC | September 2002 – June 2005
 
 ---
 

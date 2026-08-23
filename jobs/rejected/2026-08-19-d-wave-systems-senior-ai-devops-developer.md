@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $150,000–$206,000 CAD annually
 - **Location/Remote:** Remote, Canada
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only (no contract path stated); no explicit Azure mentioned
 
 ## Fit Score: 7
@@ -31,3 +32,7 @@ I'm incorporated in Canada, fully bilingual (French/English), and available to s
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-23:** Original scoring undersold the AI/LLM requirements as "a layer on top of standard DevOps fundamentals." Re-checked the full posting — required qualifications include hands-on production LLM application experience, RAG/embeddings/vector search, and AWS Bedrock/AgentCore/MCP/ACP. This is genuine, deep AI-engineering depth Marc doesn't have (his AI exposure is using AI-assisted tooling in his own workflow, not building production LLM/RAG systems) — a real gap, not a soft skill mismatch.

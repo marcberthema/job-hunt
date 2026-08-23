@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time (Permanent)
 - **Rate/Salary (stated):** $85,000–$156,000 CAD annually
 - **Location/Remote:** Remote (Toronto, ON; also Calgary, Ottawa, Vancouver)
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only, no contract path mentioned; "Manager" in the title suggests some leadership/people-management scope beyond pure hands-on delivery — worth clarifying in the interview process; salary caps below the $160K CAD target at the top end but is close
 
 ## Fit Score: 7
@@ -30,3 +31,7 @@ I'm incorporated in Canada, based within reach of Ottawa, fully bilingual (Frenc
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-23:** Source URL is a rotating Indeed ad-tracking link (`pagead/clk`), not a stable posting link — it now resolves to an unrelated job ("Blue Yonder Developer," Altis Recruitment). Can't verify or apply to the actual Deloitte posting; no stable `jk=` ID was captured to recover it.

@@ -5,6 +5,7 @@
 - **Engagement type:** Full-time
 - **Rate/Salary (stated):** $116,000–$159,500 CAD/yr
 - **Location/Remote:** Remote, Canada
+- **Days in Office:** 0 (Remote)
 - **Flags:** Full-time only; salary meets target at the top end; AWS-focused, no Azure component
 
 ## Fit Score: 6

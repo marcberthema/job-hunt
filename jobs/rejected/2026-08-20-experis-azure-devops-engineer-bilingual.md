@@ -5,6 +5,7 @@
 - **Engagement type:** Contract (until March 2027, renewable)
 - **Rate/Salary (stated):** Not stated
 - **Location/Remote:** Montreal / Quebec City / Toronto — Hybrid, 2 days onsite/week
+- **Days in Office:** 2/week (Hybrid)
 - **Flags:** Rate not disclosed; Montréal is within the reachable-city list, 2 days/week onsite is a soft flag per profile.md (not a hard cap); French and English both required — plays directly to bilingual strength
 
 ## Fit Score: 9
@@ -31,3 +32,7 @@ I'm fully bilingual (French native, English fluent), incorporated in Canada, and
 
 Cordialement / Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-23:** Posting is no longer accepting applications.
