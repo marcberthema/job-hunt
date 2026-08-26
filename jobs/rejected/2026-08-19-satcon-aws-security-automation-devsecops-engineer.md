@@ -31,3 +31,7 @@ I'm incorporated in Canada and available to start quickly as an independent cont
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-26** — Posting no longer available ("Sorry this job is no longer available.").

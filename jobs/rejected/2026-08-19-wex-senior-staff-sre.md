@@ -31,3 +31,7 @@ I'm incorporated in Canada, fully bilingual (French/English), and available to s
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-26** — Lacks a proven track record of leadership driving reliability improvements at the scale/formality this posting requires ("Exceptional leadership skills with a proven track record of driving reliability improvements").

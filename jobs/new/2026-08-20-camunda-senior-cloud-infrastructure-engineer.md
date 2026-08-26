@@ -6,7 +6,7 @@
 - **Rate/Salary (stated):** $149,800–$247,200 USD/year (US market range; company hires globally via Remote.com with location-adjusted total rewards for candidates outside the US/UK/Singapore major markets)
 - **Location/Remote:** Fully remote, worldwide — genuinely global company (confirmed via testing: candidates outside named major markets are hired through Remote.com, its global employer-of-record partner)
 - **Days in Office:** 0 (Remote)
-- **Flags:** Full-time only, no contract path stated; stated salary range is US-specific — actual compensation for a Canada-based hire would be set via Remote.com's location-adjusted calculator, not the range as posted; Azure and Terraform are listed as "nice to have," not required (AWS/GCP more central to the role); **TODO before applying — confirm whether RemoteOK's apply flow needs a premium/paid account** (couldn't verify: WebFetch blocked with 403, Chrome browser tools weren't enabled in the 2026-08-23 review session)
+- **Flags:** Full-time only, no contract path stated; stated salary range is US-specific — actual compensation for a Canada-based hire would be set via Remote.com's location-adjusted calculator, not the range as posted; Azure and Terraform are listed as "nice to have," not required (AWS/GCP more central to the role); **Confirmed 2026-08-26: RemoteOK's apply flow is paywalled** — Marc hit a paywall trying to apply directly; he may pay for RemoteOK access later if enough postings from this source justify it. Skipped for now, not rejected
 
 ## Fit Score: 7
 
