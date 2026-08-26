@@ -437,12 +437,14 @@
     <div class="hero">
       <p class="hero-eyebrow">Available for remote engagements · Worldwide</p>
       <h1>Marc Berthelette</h1>
-      <p class="hero-title">Senior DevOps &amp; Platform Engineering Consultant · Nearly 18 years of experience</p>
+      <p class="hero-title">Senior DevOps &amp; Platform Engineering Consultant · 18 years of experience</p>
       <p class="hero-desc">
-        I build the pipelines that ship things reliably — Java applications, Salesforce workflows,
-        cloud infrastructure, data integrations. Whatever the payload, I design and automate the
-        delivery process end to end. Nearly 18 years of experience across financial services and
-        energy sectors. Bilingual (FR/EN). Incorporated in Canada, available worldwide.
+        I get handed systems I've never seen and make them deliverable. At Énergir that meant nine
+        different runtimes — Java, Spark, Salesforce, Databricks and more — most of which I'd never
+        touched before I automated them. I also tend to come back with more than was asked for: given
+        a set of deployment scripts to port, I delivered the validation gate that stops broken code
+        from ever reaching the main branch. 18 years across financial services and energy.
+        Bilingual (FR/EN). Incorporated in Canada, available worldwide.
       </p>
       <div class="hero-ctas">
         <a href="#contact" class="btn-primary">Get in touch</a>
@@ -506,11 +508,12 @@
             <p class="exp-company">Énergir</p>
             <p class="exp-meta">Montréal, QC · September 2021 – Present · Energy sector</p>
             <ul class="exp-bullets">
-              <li>Owned CI/CD pipeline delivery for 12 application teams covering 70+ applications across Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, and Databricks.</li>
-              <li>Led cloud modernization — migrated several mission-critical services to Microsoft Azure with measurable gains in scalability and cost efficiency.</li>
-              <li>Implemented Terraform and Ansible IaC, standardizing environment provisioning across dev, staging, and production.</li>
-              <li>Drove RCA on critical production incidents; built proactive monitoring dashboards and automated remediation to reduce MTTR.</li>
-              <li>Delivered recurring team enablement sessions (~6/year), driving CI/CD adoption and transferring platform engineering knowledge.</li>
+              <li>Standardized CI/CD across nine distinct runtimes — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, Databricks — for 12 application teams and 70+ applications, entering most of those ecosystems with no prior experience.</li>
+              <li>Rebuilt Salesforce delivery from zero Salesforce experience: replaced legacy ANT scripts with the official CLI tooling, then proposed and built a validation-sandbox pipeline that tests every candidate merge — taking the team from missed deployment windows to a dependable every-other-Tuesday release.</li>
+              <li>Took the Oracle team from fully manual deployment to automated delivery, after an earlier attempt had failed.</li>
+              <li>Cut false-positive pipeline failures and made build results self-diagnosing, separating application-code errors from platform-pipeline errors so teams know at a glance whose problem it is.</li>
+              <li>Led cloud modernization to Microsoft Azure with Terraform and Ansible IaC; drove RCA on critical incidents and built the monitoring and automated remediation that reduced MTTR.</li>
+              <li>Drove CI/CD adoption across 12 teams outside any reporting line, running recurring enablement sessions (~6/year) that turned delivered tooling into actual usage.</li>
             </ul>
           </div>
         </div>
@@ -519,12 +522,13 @@
           <div>
             <p class="exp-role">Senior DevOps Engineer <span style="font-weight:400;color:var(--muted);">(Contract)</span></p>
             <p class="exp-company">Desjardins</p>
-            <p class="exp-meta">Montréal, QC (Remote) · October 2025 – March 2026 · Financial services</p>
+            <p class="exp-meta">Montréal, QC (Remote) · October 2025 – March 2026 · Financial services · Concurrent with the Énergir engagement</p>
             <ul class="exp-bullets">
               <li>Delivered a 6-month platform engineering engagement focused on hardening the enterprise JFrog Artifactory platform.</li>
               <li>Built a Python/FastAPI health-monitoring service testing the configuration of ~250 remote Artifactory repositories every 4 hours and published results to Dynatrace dashboards.</li>
               <li>Automated on-demand Artifactory instance provisioning using Kubernetes and ArgoCD, enabling safe configuration testing without production risk.</li>
               <li>Implemented artifact lifecycle policies and Splunk alerting to enforce retention standards and detect out-of-band configuration changes.</li>
+              <li>Extended the mandate well past its original scope — verifying repository configuration — by building the validation logic tool-agnostic rather than JFrog-specific and making the test set configurable; the same harness then de-risked the enterprise JFrog version upgrade.</li>
             </ul>
           </div>
         </div>
@@ -538,31 +542,20 @@
               <li>Centralized Jenkins Pipeline as Code across a team of 10–15 developers maintaining 80+ applications for 20+ clients.</li>
               <li>Automated OS-level patching across a fleet of 600+ servers, including automated kernel-update reboots.</li>
               <li>Built centralized log aggregation with the ELK Stack, enabling proactive anomaly detection and faster incident response.</li>
-              <li>Designed a stakeholder-facing inventory platform surfacing CVE exposure, EoL software, and SSL/TLS certificate scoring across the server fleet.</li>
+              <li>Built the compute, caching, and database layers of a client's full AWS migration target environment — EC2, S3, Route 53, VPC, self-managed memcached, serverless relational database — with no prior AWS experience; the client cancelled the migration before cutover.</li>
+              <li>Conceived and built, unprompted, a software inventory platform cataloguing every application and version across the 600+ server fleet — putting CVE exposure, end-of-life software, and SSL/TLS certificate scoring in front of product owners who had no such visibility.</li>
             </ul>
           </div>
         </div>
 
         <div class="exp-item">
           <div>
-            <p class="exp-role">Software Engineer</p>
+            <p class="exp-role">Lead Technician → Software Engineer</p>
             <p class="exp-company">SOVO Technologies</p>
-            <p class="exp-meta">Montréal, QC · May 2017 – December 2018</p>
+            <p class="exp-meta">Montréal, QC · November 2008 – December 2017</p>
             <ul class="exp-bullets">
-              <li>Designed a voice recognition evaluation system and multi-language dictionary infrastructure.</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="exp-item">
-          <div>
-            <p class="exp-role">Lead Technician</p>
-            <p class="exp-company">SOVO Technologies</p>
-            <p class="exp-meta">Montréal, QC · November 2008 – May 2017</p>
-            <ul class="exp-bullets">
-              <li>Oversaw all company IT infrastructure, including a zero-downtime server relocation project and eliminating single points of failure.</li>
-              <li>Managed a team of technicians and served as the final QA gate before any software release reached production.</li>
-              <li>Designed and programmed production scheduling software covering the full planning cycle of the production department.</li>
+              <li>Owned all company IT infrastructure — a zero-downtime server relocation, redundant core servers eliminating single points of failure — while managing a team of technicians and serving as the final QA gate before any release reached production.</li>
+              <li>Wrote production software alongside the infrastructure role for roughly seven years before the title formalized it: the production scheduling system used for the department's full planning cycle, then a voice recognition evaluation system and multi-language dictionary infrastructure.</li>
             </ul>
           </div>
         </div>
@@ -581,7 +574,7 @@
           <div class="tags">
             <span class="tag tag-accent">Microsoft Azure</span>
             <span class="tag tag-accent">Azure DevOps</span>
-            <span class="tag">AWS</span>
+            <span class="tag">AWS (EC2, S3, Route 53, VPC)</span>
             <span class="tag">GitHub Actions</span>
             <span class="tag">Jenkins</span>
             <span class="tag">JFrog Artifactory</span>
@@ -682,11 +675,11 @@
       <h2>Credentials</h2>
       <p>
         <strong>Bachelor of Automated Manufacturing Engineering</strong><br>
-        École de Technologie Supérieure (ÉTS) — Montréal, QC · Specialty: Industrial Data Processing
+        École de Technologie Supérieure (ÉTS) — Montréal, QC · 2005–2016 · Specialty: Industrial Data Processing
       </p>
       <p style="margin-top:0.75rem;">
         <strong>DCS in Computer Science Technology (Administrative Data Processing)</strong><br>
-        Cégep André-Laurendeau — Montréal, QC · 2005–2006
+        Cégep André-Laurendeau — Montréal, QC · 2002–2005
       </p>
     </section>
 

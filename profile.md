@@ -42,7 +42,7 @@ Frequency tolerance:
 
 ## Professional Summary
 
-Results-driven Senior DevOps Engineer with nearly 18 years of experience designing, automating, and optimizing enterprise-grade infrastructure across energy, financial services, and technology sectors. Deep expertise in Microsoft Azure, CI/CD pipeline architecture, Infrastructure as Code, and cloud modernization. Hands-on experience with Kubernetes, ArgoCD, GitHub Actions, JFrog Artifactory, and observability platforms including Dynatrace and Splunk. Proven track record delivering reliable, scalable systems, driving platform engineering standards, and enabling high-performing engineering teams. Fluent in English and French. Available for remote consulting engagements and senior employment opportunities across Canada and internationally.
+Senior DevOps and Platform Engineering consultant with 18 years spent making unfamiliar systems deliverable. At Énergir, standardized CI/CD across nine distinct runtimes — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, and Databricks — for 12 application teams and 70+ applications, entering most of those ecosystems with no prior experience and reverse-engineering each one before automating it. At Desjardins, delivered the Python/FastAPI monitoring service that gave 250 enterprise JFrog Artifactory repositories their first continuous health signal. Deep Microsoft Azure, Terraform, Kubernetes, and observability practice in regulated sectors (energy, financial services). Takes ownership of the whole problem — including the parts nobody assigned — and recommends the right answer rather than the cheapest one. Bilingual French/English, incorporated in Canada, available immediately.
 
 ---
 
@@ -51,20 +51,24 @@ Results-driven Senior DevOps Engineer with nearly 18 years of experience designi
 ### Énergir — Senior DevOps Engineer
 **Montréal, QC | September 2021 – Present**
 
-- Owned CI/CD pipeline delivery for 12 application teams covering 70+ applications across a wide technology footprint — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, and Databricks — moving teams from manual deployments to automated pipelines with built-in quality gates, improving both deployment speed and release reliability.
+- Standardized CI/CD delivery across nine distinct runtimes — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, and Databricks — for 12 application teams and 70+ applications, moving teams from manual deployments to automated pipelines with built-in quality gates. Entered most of those ecosystems with no prior experience and reverse-engineered each one before automating it.
+- Took the Oracle team from fully manual deployment to automated delivery — after an earlier attempt by another engineer had failed to deliver it.
+- Rebuilt Salesforce delivery with no prior Salesforce experience: replaced legacy ANT deployment scripts with the official Salesforce CLI tooling, then proposed and built a validation pipeline deploying every candidate merge into a dedicated validation sandbox and running the full test suite. The team moved from recurring uncertainty over whether a release would make its window to a dependable every-other-Tuesday deployment.
+- Cut false-positive pipeline failures and made build results self-diagnosing by separating application-code errors from platform-pipeline errors in reporting — so application teams could tell at a glance whether a failure was theirs to fix or the platform team's.
 - Led cloud modernization initiatives, migrating several (5–10) mission-critical services to Microsoft Azure with measurable improvements in scalability, resilience, and cost efficiency.
 - Implemented Infrastructure as Code (IaC) practices using Terraform and Ansible, standardizing environment provisioning and reducing configuration drift across dev, staging, and production.
 - Orchestrated integration between Salesforce and enterprise Data Lake platforms, enabling secure, automated data pipelines and supporting data-driven decision-making at scale.
 - Drove advanced root cause analysis (RCA) on critical production incidents; implemented proactive monitoring, observability dashboards, and automated remediation to reduce MTTR and increase system reliability.
 - Conducted technical evaluations and Proofs of Concept (PoCs) for emerging cloud and infrastructure technologies, directly influencing strategic roadmaps and vendor selection.
 - Partnered with Enterprise Architecture to design resilient, cost-optimized infrastructure aligned with cloud-native and zero-trust security principles.
-- Delivered recurring team enablement sessions (~6/year) — meeting with each application team after pipeline delivery to demonstrate capabilities, drive CI/CD adoption, and transfer platform engineering knowledge.
+- Drove CI/CD and platform-engineering adoption across 12 teams outside any reporting line, running recurring enablement sessions (~6/year) with each application team after pipeline delivery — turning delivered tooling into actual usage rather than shelfware.
 
 ### Desjardins — Senior DevOps Engineer (Contract)
-**Montréal, QC (Remote) | October 2025 – March 2026**
+**Montréal, QC (Remote) | October 2025 – March 2026** *(concurrent with the Énergir role)*
 
 - Delivered a 6-month engagement focused on hardening and operationalizing the enterprise JFrog Artifactory platform, spanning observability, environment automation, and governance.
 - Designed and built a Python/FastAPI health-monitoring service that automatically tested the configuration of ~250 remote Artifactory repositories (spanning Docker, Helm, Node.js, Maven, Python, NuGet, and Debian) every 4 hours, publishing results to Dynatrace — with technology-segmented dashboards providing real-time visibility into repository health across the organization.
+- Extended the engagement well past its original scope — verifying that repositories were correctly configured — by building most of the validation logic tool-agnostic rather than JFrog-specific, and making the artifact test set configurable so platform administrators could cover their own test cases. The same harness then served as the regression-safety net for the enterprise JFrog Artifactory version upgrade (version X to Y).
 - Automated the provisioning of on-demand Artifactory instances using Kubernetes and ArgoCD, enabling system administrators to spin up fully configured corporate environments for safe testing of configuration changes and upgrades.
 - Implemented artifact lifecycle policies to enforce retention standards and reduce storage overhead; built Splunk alerting to detect manual configuration changes made outside of the CI/CD pipeline, improving auditability and compliance.
 - Expanded hands-on expertise with Kubernetes, ArgoCD, and GitHub Actions in a large-scale financial services environment.
@@ -74,26 +78,21 @@ Results-driven Senior DevOps Engineer with nearly 18 years of experience designi
 
 - Centralized Jenkins Pipeline as Code across a team of 10–15 developers maintaining 80+ applications for 20+ clients, standardizing pipeline steps regardless of underlying tech stack — improving deployment speed and reliability, and adding visibility through Jira integration.
 - Automated OS-level patching and updates across a fleet of 600+ servers, including automated kernel-update reboots — reducing the process to a monthly verification check with near-zero downtime.
+- Managed fleet configuration as code: VMs were provisioned by hand, then enrolled in Puppet, with all subsequent configuration and package/patch state driven declaratively through Puppet and Spacewalk rather than hand-tuned per server. Partial IaC — configuration-as-code, not provisioning-as-code. Do not describe this as full Infrastructure as Code; the honest framing is configuration management at fleet scale.
 - Built centralized log aggregation using the ELK Stack, enabling proactive detection of production anomalies and reducing incident response times.
-- Designed and maintained a product-owner-facing platform inventorying every installed application and version across the server fleet — surfacing CVE exposure, end-of-life (EoL) software, SSL/TLS certificate scoring, and other operational metrics for stakeholder teams.
+- Conceived and built, unprompted and outside any assigned scope, a software inventory platform cataloguing every installed application and version across the 600+ server fleet — surfacing CVE exposure, end-of-life (EoL) software, SSL/TLS certificate scoring, and other operational metrics directly to product owners, who until then had no visibility into the fleet's security or obsolescence risk.
+- Built out the compute, caching, and database layers of a client's full AWS migration target environment — EC2, S3, Route 53, self-managed memcached on EC2, and a serverless relational database — and contributed to the VPC/network and Route 53 design, with no prior AWS experience. Roughly 6 months of work; the client cancelled the migration before cutover. Resources were provisioned by hand in the AWS console, not through Terraform or CloudFormation. Marc believes the EC2 instances were enrolled in the same Puppet configuration management used for the on-prem fleet, but is not certain — **do not assert Puppet-on-AWS in any resume, letter, or profile copy until he confirms it.**
 - Monitored automated build and continuous integration processes, driving fast resolution of build and release failures to maintain deployment cadence.
 - Collaborated with cross-functional teams to design and implement scalable infrastructure solutions.
 - Part of a 24/7 on-call rotation supporting all production systems and applications.
 
-### SOVO Technologies — Software Engineer
-**Montréal, QC | May 2017 – December 2018**
+### SOVO Technologies — Lead Technician → Software Engineer
+**Montréal, QC | November 2008 – December 2017**
 
-- Designed and developed a voice recognition evaluation system, improving accuracy and performance across multiple locales.
-- Built multi-language dictionary infrastructure to support internationalized voice recognition environments.
-
-### SOVO Technologies — Lead Technician
-**Montréal, QC | November 2008 – May 2017**
-
-- Oversaw all company IT infrastructure, including a zero-downtime server relocation project.
-- Made core servers redundant to eliminate single points of failure.
-- Served as the final QA gate before any software release reached production.
+- Oversaw all company IT infrastructure, including a zero-downtime server relocation project, and made core servers redundant to eliminate single points of failure.
 - Managed a team of technicians: scheduling, training, and task delegation.
-- Designed and programmed production scheduling software for the full planning cycle of the production department.
+- Served as the final QA gate before any software release reached production.
+- Wrote production software alongside the infrastructure role for roughly seven years before the title formalized it (title changed to Software Engineer in May 2017): designed and programmed the production scheduling software used for the full planning cycle of the production department, then built a voice recognition evaluation system and multi-language dictionary infrastructure supporting internationalized locales.
 
 ---
 
@@ -111,7 +110,7 @@ Cégep André-Laurendeau — Montréal, QC | September 2002 – June 2005
 ## Technical Skills
 
 ### Cloud & DevOps Platforms
-Microsoft Azure, AWS, Azure DevOps, CloudFoundry, Jenkins, Git, GitHub Actions, JFrog Artifactory, Nexus
+Microsoft Azure, AWS (EC2, S3, Route 53, VPC — greenfield build at Tink, see Work Experience), Azure DevOps, CloudFoundry, Jenkins, Git, GitHub Actions, JFrog Artifactory, Nexus
 
 ### Infrastructure as Code & Configuration Management
 Terraform, Ansible, Puppet, Spacewalk
@@ -163,7 +162,33 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 - Emphasis on benefits as a selling point (signals FTE)
 - Rate below $100/hr for consulting or salary below $130k for employment
 - Junior scope (ticket-taking, no architecture ownership)
-- No Azure or cloud component
+- **Cloud platform mismatch — graded, never a blanket refusal, and AWS ≠ GCP.** The test is whether the
+  cloud platform *is the job* or merely *the venue*. Note the two are no longer equivalent for Marc:
+  - **AWS — real but shallow and dated.** He spent ~6 months at Tink building a client's full AWS migration
+    target environment (EC2, S3, Route 53, VPC, self-managed memcached, serverless relational database),
+    with no prior AWS experience, provisioned by hand in the console rather than through Terraform or
+    CloudFormation; the client cancelled before cutover. That is genuine hands-on build experience across
+    the core service surface, roughly 2018–2021, never operated in production. Claim it plainly, with the
+    cancellation and the by-hand caveat stated — never inflate it into production operations, AWS
+    architecture ownership, or IaC on AWS. (Unconfirmed: the EC2s were probably Puppet-managed like the
+    rest of the fleet. If Marc confirms it, this upgrades to configuration-as-code on AWS — a materially
+    stronger claim. Until then it stays out of all written copy.)
+  - **GCP — zero.** No exposure of any kind. Never imply otherwise.
+  - **Hard gate (score 0–4, skip):** a deep years bar on AWS/GCP (4+ years hands-on), *any* GCP-primary
+    requirement, or roles where cloud-native architecture ownership at scale *is* the deliverable —
+    EKS/GKE multi-tenancy or cluster architecture, AWS/GCP-native FinOps, leading a large migration onto
+    AWS/GCP. Six dated months of greenfield build does not reach these, and the ATS drops the application
+    before a human reads the counter-argument.
+  - **Apply — and for AWS this is now a straightforward apply, not a stretch:** AWS is the operating
+    environment but the requirements read as general cloud/infrastructure competence, or AWS is
+    "preferred"/"a plus"/listed alongside Azure. The Tink build clears the ATS keyword filter (EC2, S3,
+    Route 53, VPC are literal tokens) and gives a concrete, checkable answer in interview. For a
+    GCP-flavoured version of the same posting, fall back to the learn-cold evidence instead.
+  - **No penalty:** "AWS, Azure, or GCP — any one", or cloud-agnostic. Azure depth is a straight asset.
+  - **Never deploy the learn-cold argument on a hard-gate posting.** It is persuasive precisely because it
+    is evidence rather than enthusiasm; used where deep AWS/GCP ownership genuinely is the deliverable, it
+    reads as talking around a gap and devalues the argument everywhere it does apply.
+- No cloud component at all
 - **Explicit provincial/regional residency requirement** (e.g. "must reside in Quebec," "must currently reside in Alberta") — Marc is based in Smiths Falls, ON; treat this as a hard eligibility gate, not a soft preference, and flag it prominently even if skill fit scores high
 - **Indigenous-membership hiring requirement** — e.g. **PLATO (PLATO Testing)** is an Indigenous-owned staffing/recruitment firm whose roles require Indigenous identity to apply. Marc does not qualify. Treat any posting confirmed to carry this requirement as a hard eligibility gate (score 0-4, skip), not a soft skill-fit flag — same severity as the residency-requirement rule above. Watch for this specifically when "PLATO" or similarly Indigenous-owned staffing brands appear as the listed employer/recruiter on aggregator sites (Eluta, Indeed, etc.), since the requirement isn't always visible in a search snippet
 
@@ -173,17 +198,45 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 
 - **8–10**: Remote (or reachable-city hybrid at ≤1 day/week) contract/fractional, Azure context, financial or energy sector, autonomy, $110+/hr
 - **5–7**: Remote employment at target salary OR contract with minor red flags worth reviewing OR reachable-city hybrid at 2 days/week
+- **Cloud platform**: apply the three-tier AWS/GCP rule in Red Flags above before scoring — hard-gate
+  postings cap at 0–4 regardless of how well the rest of the posting fits; "venue" postings score normally
+  with the mismatch noted as a flag.
 - **0–4**: On-site/hybrid outside the reachable range (see Geographic Reachability), below rate, FTE-only with no consulting path, or junior scope — skip. A reachable-city role requiring 3+ days/week on-site also scores here unless the rate is well above target.
 
 ---
 
 ## Competitive Advantages to Always Highlight
 
-1. **Bilingual (FR/EN)** — strong differentiator for Canadian roles, especially Quebec-based or federal
-2. **Recent Desjardins contract** — large-scale financial services, high-profile platform work
-3. **Énergir** — energy sector, enterprise Azure, long-term ownership
-4. **Incorporated** — ready to start immediately as a contractor, no onboarding friction
-5. **18 years breadth** — software engineering roots + DevOps depth = rare combination
+1. **The signature pattern — given a narrow scope, delivers something structurally larger.** This is the
+   single most differentiating thing about Marc and it is demonstrated three times, with three different
+   employers, over eight years. Lead with it wherever a posting values autonomy, ownership, or
+   "recommends approach rather than executes tickets":
+   - **Tink** — nobody asked for anything. He conceived and built a fleet-wide software inventory platform
+     that surfaced CVE exposure, EoL software, and SSL/TLS scoring to product owners who had no such visibility.
+   - **Énergir** — asked to port legacy Salesforce ANT deployment scripts. Delivered the official Salesforce
+     CLI migration *plus* a validation-sandbox merge gate that made undeployable code structurally unable to reach main.
+   - **Desjardins** — asked to verify repository configuration. Delivered a tool-agnostic, configurable
+     validation harness that also de-risked the enterprise JFrog version upgrade.
+2. **Learns unfamiliar platforms cold, under a delivery clock — repeatedly.** Salesforce, MuleSoft,
+   Databricks, Spark, CloudFoundry, Oracle at Énergir; Kubernetes, ArgoCD, GitHub Actions, and JFrog
+   Artifactory at Desjardins. His method is to reverse-engineer how the system actually works before
+   automating it. **And the most relevant instance is AWS itself**: he built a client's entire AWS
+   migration target environment at Tink over ~6 months having never used AWS before that project. So the
+   answer to "requires AWS" is not an analogy — it is direct experience, honestly bounded (see the cloud
+   platform rule in Red Flags). For GCP, where he has nothing, the learn-cold record is the whole answer.
+3. **Leads without authority.** Drove CI/CD and platform-engineering adoption across 12 teams outside any
+   reporting line (~6 enablement sessions/year). Use this against postings demanding people-management
+   tenure — a recurring blocker (Empire Life, Vancity, Servus, GoTo, LGS). He has the substance of the
+   leadership, just not the title.
+4. **Builds platforms with users, not scripts.** The Tink inventory platform and the Desjardins health
+   service are both internal products with a real audience — including non-technical stakeholders. Strong
+   evidence for platform-engineering and developer-experience framing.
+5. **Bilingual (FR/EN)** — strong differentiator for Canadian roles, especially Quebec-based or federal
+6. **Recent Desjardins contract** — large-scale financial services, high-profile platform work
+7. **Énergir** — energy sector, enterprise Azure, long-term ownership
+8. **Incorporated** — ready to start immediately as a contractor, no onboarding friction
+9. **18 years breadth** — software engineering roots (≈7 years writing production code at SOVO before the
+   title formalized it) + DevOps depth = rare combination
 
 ---
 
@@ -196,3 +249,22 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 - Desjardins is the most recent and most impressive contract — always mention for financial sector targets
 - Website copy frames Marc as a consultant first, open to employment second
 - Marc started AZ-104/AZ-400 study but paused — not currently listed anywhere (profile, resume, LinkedIn). If he finishes one, add a Certifications section back to profile.md and both resumes.
+- **Cover letters MUST reach for the signature pattern** (Competitive Advantage #1), not the skills list.
+  Pick whichever of the three instances is closest to the posting's domain and tell it as a short story:
+  what was asked, what was delivered, why the larger thing was the right call. Marc's own framing is
+  "what is best for the client, not necessarily the cheapest" — that sentence is his voice, use it.
+- **Never answer an AWS/GCP requirement with "willing to learn."** For **AWS**, answer with the Tink
+  build: ~6 months constructing a client's full AWS target environment (EC2, S3, Route 53, VPC,
+  self-managed memcached, serverless relational database) with no prior AWS experience, cancelled by the
+  client before cutover, provisioned by hand rather than with IaC. State the cancellation and the by-hand
+  caveat — the honesty is what makes it land, and Marc must be able to defend every word in interview.
+  Never inflate it into production AWS operations, AWS architecture ownership, or IaC on AWS.
+  For **GCP**, he has zero exposure: use the learn-cold evidence in Competitive Advantage #2, and never
+  imply any GCP experience.
+- Marc worked the Desjardins contract concurrently with the Énergir role (Oct 2025 – Mar 2026), originally
+  a 3-month contract that was extended to 6. Label the overlap on the resume so it never reads as
+  unexplained, but do not make a selling point of "two full-time jobs at once" in writing — it reads as
+  capacity to a consulting buyer and as moonlighting risk to an FTE employer. Save it for live conversation.
+- Metrics are still thin. Where a real number does not exist, use the concrete before/after states Marc
+  gave: Oracle went manual → automated where a prior attempt failed; the Salesforce team went from fearing
+  a missed deployment window to a dependable every-other-Tuesday release. Never invent figures.

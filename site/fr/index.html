@@ -395,12 +395,14 @@
     <div class="hero">
       <p class="hero-eyebrow">Disponible pour des mandats à distance · Partout dans le monde</p>
       <h1>Marc Berthelette</h1>
-      <p class="hero-title">Consultant senior en DevOps &amp; ingénierie de plateforme · Près de 18 ans d'expérience</p>
+      <p class="hero-title">Consultant senior en DevOps &amp; ingénierie de plateforme · 18 ans d&#39;expérience</p>
       <p class="hero-desc">
-        Je construis les pipelines qui livrent les choses de façon fiable — applications Java, flux Salesforce,
-        infrastructure infonuagique, intégrations de données. Quel que soit le contenu, je conçois et automatise
-        le processus de livraison de bout en bout. Près de 18 ans d'expérience dans les secteurs des services
-        financiers et de l'énergie. Bilingue (FR/EN). Société incorporée au Canada, disponible partout dans le monde.
+        On me confie des systèmes que je n'ai jamais vus et j'en fais des systèmes livrables. Chez Énergir,
+        cela a représenté neuf écosystèmes technologiques distincts — Java, Spark, Salesforce, Databricks et
+        d'autres — dont la plupart m'étaient inconnus avant que je les automatise. J'ai aussi tendance à livrer
+        plus que ce qui a été demandé : chargé de convertir des scripts de déploiement, j'ai livré le pipeline de
+        validation qui empêche le code défectueux d'atteindre la branche principale. 18 ans dans les services
+        financiers et l'énergie. Bilingue (FR/EN). Société incorporée au Canada, disponible partout dans le monde.
       </p>
       <div class="hero-ctas">
         <a href="#contact" class="btn-primary">Me contacter</a>
@@ -461,23 +463,25 @@
           <p class="exp-company">Énergir</p>
           <p class="exp-meta">Montréal, QC · Septembre 2021 – Présent · Secteur énergétique</p>
           <ul class="exp-bullets">
-            <li>Responsable de la livraison CI/CD pour 12 équipes applicatives couvrant plus de 70 applications — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce et Databricks.</li>
-            <li>Direction de la modernisation infonuagique — migration de plusieurs services critiques vers Microsoft Azure avec des gains mesurables en évolutivité et en efficacité des coûts.</li>
-            <li>Mise en œuvre de l'Infrastructure as Code avec Terraform et Ansible, standardisant le provisionnement à travers les environnements dev, staging et production.</li>
-            <li>Analyse de cause racine sur des incidents de production critiques; mise en place de tableaux de bord de surveillance proactive et de remédiation automatisée pour réduire le MTTR.</li>
-            <li>Animation de sessions de formation récurrentes (~6/an), favorisant l'adoption du CI/CD et le transfert des connaissances en ingénierie de plateforme.</li>
+            <li>Standardisation du CI/CD pour neuf écosystèmes technologiques distincts — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, Databricks — au profit de 12 équipes applicatives et de plus de 70 applications, en abordant la plupart d'entre eux sans expérience préalable.</li>
+            <li>Reconstruction de la livraison Salesforce sans expérience préalable de la plateforme : remplacement des anciens scripts ANT par l'outillage officiel, puis conception d'un pipeline de validation en bac à sable testant chaque fusion candidate — faisant passer l'équipe des fenêtres de déploiement ratées à une mise en production fiable un mardi sur deux.</li>
+            <li>Passage de l'équipe Oracle du déploiement entièrement manuel à la livraison automatisée, après l'échec d'une tentative antérieure.</li>
+            <li>Réduction des faux positifs des pipelines et résultats de build autodiagnostiques, distinguant les erreurs de code applicatif des erreurs de pipeline afin que chaque équipe sache d'un coup d'œil de qui relève la défaillance.</li>
+            <li>Direction de la modernisation infonuagique vers Microsoft Azure avec Terraform et Ansible; analyses de cause racine sur les incidents critiques et mise en place de la surveillance et de la remédiation automatisée ayant réduit le MTTR.</li>
+            <li>Adoption du CI/CD favorisée auprès de 12 équipes hors de tout lien hiérarchique, par des sessions récurrentes d'habilitation (~6/an) transformant l'outillage livré en usage réel.</li>
           </ul>
         </div>
 
         <div>
           <p class="exp-role">Ingénieur DevOps senior <span style="font-weight:400;color:var(--muted);">(Contrat)</span></p>
           <p class="exp-company">Desjardins</p>
-          <p class="exp-meta">Montréal, QC (À distance) · Octobre 2025 – Mars 2026 · Services financiers</p>
+          <p class="exp-meta">Montréal, QC (À distance) · Octobre 2025 – Mars 2026 · Services financiers · Mandat mené en parallèle du poste chez Énergir</p>
           <ul class="exp-bullets">
             <li>Mandat de 6 mois en ingénierie de plateforme axé sur la consolidation de la plateforme JFrog Artifactory d'entreprise.</li>
             <li>Développement d'un service de surveillance en Python/FastAPI testant la configuration d'environ 250 dépôts Artifactory toutes les 4 heures, avec publication des résultats vers des tableaux de bord Dynatrace segmentés par technologie.</li>
             <li>Automatisation du provisionnement d'instances Artifactory à la demande via Kubernetes et ArgoCD, permettant aux administrateurs de tester les changements de configuration en toute sécurité.</li>
             <li>Mise en place de politiques de cycle de vie des artefacts et d'alertes Splunk pour détecter les modifications manuelles effectuées hors du pipeline CI/CD.</li>
+            <li>Mandat étendu bien au-delà de sa portée initiale — vérifier la configuration des dépôts — en rendant la logique de validation agnostique de l'outil plutôt que spécifique à JFrog et l'ensemble des tests configurable; le même harnais a ensuite sécurisé la mise à niveau de la plateforme JFrog d'entreprise.</li>
           </ul>
         </div>
 
@@ -489,27 +493,18 @@
             <li>Centralisation de Jenkins Pipeline as Code pour une équipe de 10 à 15 développeurs maintenant plus de 80 applications pour plus de 20 clients.</li>
             <li>Automatisation des correctifs au niveau du système d'exploitation sur un parc de plus de 600 serveurs, incluant des redémarrages automatisés pour les mises à jour du noyau.</li>
             <li>Mise en place d'une agrégation centralisée des journaux avec la suite ELK, permettant la détection proactive d'anomalies en production.</li>
-            <li>Conception d'une plateforme d'inventaire destinée aux parties prenantes, mettant en lumière l'exposition aux CVE, les logiciels en fin de vie et le score des certificats SSL/TLS sur l'ensemble du parc.</li>
+            <li>Construction des couches de calcul, de cache et de base de données de l'environnement cible AWS d'un client en migration — EC2, S3, Route 53, VPC, memcached auto-géré, base de données relationnelle sans serveur — sans expérience préalable d'AWS; le client a annulé la migration avant la bascule.</li>
+            <li>Conception et développement, de sa propre initiative, d'une plateforme d'inventaire logiciel répertoriant chaque application et version du parc de plus de 600 serveurs — exposant les vulnérabilités CVE, les logiciels en fin de vie et le score des certificats SSL/TLS aux chargés de produit, qui n'avaient jusque-là aucune visibilité.</li>
           </ul>
         </div>
 
         <div>
-          <p class="exp-role">Ingénieur logiciel</p>
+          <p class="exp-role">Technicien en chef → Ingénieur logiciel</p>
           <p class="exp-company">SOVO Technologies</p>
-          <p class="exp-meta">Montréal, QC · Mai 2017 – Décembre 2018</p>
+          <p class="exp-meta">Montréal, QC · Novembre 2008 – Décembre 2017</p>
           <ul class="exp-bullets">
-            <li>Conception d'un système d'évaluation de la reconnaissance vocale et d'infrastructure de dictionnaires multilingues.</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="exp-role">Technicien en chef</p>
-          <p class="exp-company">SOVO Technologies</p>
-          <p class="exp-meta">Montréal, QC · Novembre 2008 – Mai 2017</p>
-          <ul class="exp-bullets">
-            <li>Gestion de l'infrastructure TI de l'entreprise, incluant un projet de relocalisation de serveurs sans interruption de service et l'élimination des points de défaillance uniques.</li>
-            <li>Gestion d'une équipe de techniciens et rôle de dernière porte de contrôle qualité avant toute mise en production.</li>
-            <li>Conception et programmation d'un logiciel de planification de production couvrant l'ensemble du cycle de planification du département.</li>
+            <li>Gestion de l'ensemble de l'infrastructure TI de l'entreprise — relocalisation de serveurs sans interruption de service, serveurs centraux redondants éliminant les points de défaillance uniques — tout en dirigeant une équipe de techniciens et en agissant comme dernière porte de contrôle qualité avant toute mise en production.</li>
+            <li>Développement de logiciels de production en parallèle du rôle d'infrastructure pendant environ sept ans avant que le titre ne l'officialise : le logiciel d'ordonnancement couvrant l'ensemble du cycle de planification du département, puis un système d'évaluation de la reconnaissance vocale et une infrastructure de dictionnaires multilingues.</li>
           </ul>
         </div>
 
@@ -526,7 +521,7 @@
           <div class="tags">
             <span class="tag tag-accent">Microsoft Azure</span>
             <span class="tag tag-accent">Azure DevOps</span>
-            <span class="tag">AWS</span>
+            <span class="tag">AWS (EC2, S3, Route 53, VPC)</span>
             <span class="tag">GitHub Actions</span>
             <span class="tag">Jenkins</span>
             <span class="tag">JFrog Artifactory</span>
@@ -626,11 +621,11 @@
       <h2>Diplômes &amp; accréditations</h2>
       <p>
         <strong>Baccalauréat en génie de la production automatisée</strong><br>
-        École de Technologie Supérieure (ÉTS) — Montréal, QC · Spécialité : Informatique industrielle
+        École de Technologie Supérieure (ÉTS) — Montréal, QC · 2005–2016 · Spécialité : Informatique industrielle
       </p>
       <p style="margin-top:0.75rem;">
         <strong>DEC en techniques de l'informatique (Informatique de gestion)</strong><br>
-        Cégep André-Laurendeau — Montréal, QC · 2005–2006
+        Cégep André-Laurendeau — Montréal, QC · 2002–2005
       </p>
     </section>
 
