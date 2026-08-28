@@ -249,6 +249,7 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 - Desjardins is the most recent and most impressive contract — always mention for financial sector targets
 - Website copy frames Marc as a consultant first, open to employment second
 - Marc started AZ-104/AZ-400 study but paused — not currently listed anywhere (profile, resume, LinkedIn). If he finishes one, add a Certifications section back to profile.md and both resumes.
+- **Certification goal: CKA (Certified Kubernetes Administrator).** Added 2026-08-27 after two postings (Sophos, Nango) were rejected specifically for lacking deep Kubernetes expertise — Marc confirmed he can live with the AWS gap but not the Kubernetes one. CKA is a hands-on practical exam that would directly close this gap and builds on existing ArgoCD/Kubernetes work at Desjardins and Énergir. Not started yet. If completed, add a Certifications section back to profile.md and both resumes.
 - **Cover letters MUST reach for the signature pattern** (Competitive Advantage #1), not the skills list.
   Pick whichever of the three instances is closest to the posting's domain and tell it as a short story:
   what was asked, what was delivered, why the larger thing was the right call. Marc's own framing is
