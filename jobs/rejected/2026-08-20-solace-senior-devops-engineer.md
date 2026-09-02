@@ -34,3 +34,7 @@ I'm based within commuting distance of Ottawa, incorporated in Canada, fully bil
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-31:** Auto-rejected — sat unreviewed in jobs/new/ for over 1 week (found 2026-08-20). No action taken in time; not pursuing.

@@ -29,3 +29,7 @@ I don't have direct Apple MDM or device-trust administration experience, so I'd 
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-31:** Auto-rejected — sat unreviewed in jobs/new/ for over 1 week (found 2026-08-21). Domain mismatch (endpoint/MDM, not cloud platform) also made this a weak candidate regardless of age.

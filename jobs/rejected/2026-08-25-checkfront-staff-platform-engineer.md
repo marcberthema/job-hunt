@@ -28,3 +28,7 @@ I'd welcome learning more about Manifest and where the platform currently stands
 
 Best,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-28:** Can't find the posting — no live listing to apply against.

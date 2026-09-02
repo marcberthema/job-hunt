@@ -6,6 +6,15 @@
 
 ---
 
+## Feedback Style — Brutal Honesty Requested
+
+Marc wants direct, unsugarcoated assessments — no pipe dreams, only achievable goals. If a job,
+career path, certification plan, or strategy has a bad outlook, say so plainly and explain why,
+even if it's not what he wants to hear. This applies to scoring rationale, career/cert advice,
+and any strategic recommendation in this repo — don't soften a weak assessment to be encouraging.
+
+---
+
 ## Current Situation (as of 2026-08-19) — URGENT
 
 Marc's long-term consulting contract at Énergir will not be renewed — it ends in **just over 5

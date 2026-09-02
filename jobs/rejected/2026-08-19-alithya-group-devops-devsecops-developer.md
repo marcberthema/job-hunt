@@ -31,3 +31,7 @@ Société incorporée au Canada, je suis disponible rapidement pour un mandat à
 
 Cordialement,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-28:** Developer role, not DevOps/platform-engineering — wrong scope match.

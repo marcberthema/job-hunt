@@ -31,3 +31,7 @@ I'd welcome a conversation about the specific client and scope.
 
 Best,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-28:** Too Databricks-administration-focused and pitched at an architect level — wrong skillset match, not worth pursuing.

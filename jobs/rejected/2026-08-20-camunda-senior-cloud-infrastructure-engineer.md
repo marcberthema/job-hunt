@@ -32,3 +32,7 @@ I'm incorporated in Canada, fully bilingual (French/English), and available to s
 
 Best regards,
 Marc Berthelette
+
+## Rejection Note
+
+**2026-08-31:** Auto-rejected — sat unreviewed in jobs/new/ for over 1 week (found 2026-08-20). No action taken in time; not pursuing.
