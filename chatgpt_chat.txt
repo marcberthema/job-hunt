@@ -1,0 +1,363 @@
+This is a copy of a shared ChatGPT chat. It won't be added to memory.
+
+Report conversation
+Wednesday 8:13 PM
+Uploaded a file
+Here's his resume
+
+Now we turn this from “we have a good resume” into an actual $175k+ job search.
+
+I’d do it in this order:
+
+1. Finalize the master resume
+
+We have the positioning now:
+
+Senior / Staff SRE | Platform Engineering | DevOps | Reliability
+
+And the story is:
+
+Own the system. Understand the failure modes. Monitor the right things. Prevent incidents. Automate the boring/repetitive recovery. Use AI aggressively where it makes sense, but govern it properly.
+
+I would make one master resume, then create targeted versions only when needed.
+
+2. Build his job-search targets
+
+I'd have him search primarily for:
+
+Tier 1 — best fit
+
+Staff SRE
+Senior Staff SRE
+Staff Platform Engineer
+Senior Staff Platform Engineer
+Senior SRE
+Senior Platform Engineer
+
+Tier 2 — very realistic
+
+Senior DevOps Engineer
+Staff DevOps Engineer
+Senior Infrastructure Engineer
+Senior Cloud Platform Engineer
+Senior Reliability Engineer
+
+Tier 3 — selective
+
+DevOps Architect
+Platform Architect
+Cloud Architect
+
+I would not make Architect the primary search. His experience supports architectural work, but his strongest evidence is operational ownership + reliability + platform engineering.
+
+3. Stop measuring success by applications/day
+
+This is probably the biggest change I'd make to what he's doing right now.
+
+If he's currently sending 3–8 applications every day, I'd rather see:
+
+2–4 excellent applications + 2–3 networking/recruiter contacts per day.
+
+For Staff/Senior Staff jobs, getting through the recruiter screen is often more valuable than piling up applications.
+
+And every application should answer:
+
+"Why is this company getting this particular version of Marc?"
+
+4. Create a killer LinkedIn profile
+
+His resume and LinkedIn should tell the same story.
+
+His current headline should eventually be something along the lines of:
+
+Senior / Staff SRE | Platform Engineering | DevOps | Reliability | CI/CD | Infrastructure Automation
+
+Not:
+
+Senior DevOps Engineer at Énergir
+
+That's leaving money on the table.
+
+5. Prepare his interview stories
+
+This is where I think Marc could be very strong.
+
+We already have several excellent stories:
+
+The Elasticsearch story
+Recurring failure → identify root cause → client doesn't fund permanent fix → build automated monitoring/remediation → humans stop getting paged.
+
+The Tink reliability story
+1–3 incidents/week → systematic RCA → eventually weeks could pass without an incident.
+
+The Salesforce story
+~80% reliability → ~90–95% → fewer manual steps → fewer false positives → predictable release cadence.
+
+The 600-server inventory story
+Nobody asked him to build it → identified a visibility/security problem → designed and built the tooling → product owners finally had actionable information.
+
+The Oracle story
+Previous automation attempt failed → he enters an unfamiliar ecosystem → figures it out → gets it automated.
+
+The Artifactory story
+Existing shell → takes ownership of implementation → makes it technology-agnostic → turns it into reusable validation infrastructure.
+
+Those are much better interview stories than "tell me about a time you used Terraform."
+
+6. Then we go hunting
+
+And this is where I'd suggest we use current job-market information rather than guessing.
+
+I can search the current Canadian + remote U.S. market for actual $175k+ roles that match his background, look at what companies are asking for, and identify:
+
+which titles are paying that range
+which skills they're actually demanding
+where Marc is already a strong match
+where he has gaps
+which roles he should not waste time applying to
+whether $175k is more realistic as CAD or USD
+companies that appear particularly compatible with his SRE/platform philosophy
+
+Then we can use those findings to make the resume match the market rather than just making it sound good.
+
+That's what I'd do next.
+
+So let's make a new master resume ?
+
+Absolutely. I think we have enough now to make the proper master resume rather than continuing to patch the old one.
+
+I’d build it as the one authoritative 2-page resume that we can later make targeted versions from.
+
+The positioning will be:
+
+Marc Berthelette
+Senior / Staff SRE | Platform Engineering | DevOps | Reliability
+
+And the resume will emphasize:
+
+18 years of engineering/operations experience
+~15 years of 24/7 production ownership
+reliability and incident prevention
+proactive monitoring/observability
+root-cause elimination and self-healing
+platform engineering and CI/CD
+Terraform/IaC
+Python automation
+technical leadership/mentoring
+enterprise scale
+Azure/Kubernetes experience without overstating him as an administrator/architect
+responsible AI-assisted development as a supporting skill, not a gimmick
+
+I'll also keep the claims defensible—particularly the Salesforce ~80% → 90–95% improvement and the Tink incident reduction story.
+
+One thing I want to do before producing the final file: I want to make sure we don't accidentally leave out something important from his older SOVO experience or education, and make sure the chronology is clean. The uploaded resume gives us the baseline for that.
+marc-berthelette-resume-en
+
+If there isn't anything else you'd like to add, yes—I'm ready to build the master.
+
+Sources
+I think im good.
+
+Totally fair 😂 You’ve got enough resume/job-search information to work with for now.
+
+And honestly, 3–8 applications a day + a properly positioned master resume is plenty. The next useful step is tailoring that master resume to the right $175k+ roles rather than endlessly tweaking it.
+
+Can you build the master resume
+
+Absolutely. I’ll make this the master resume—broad enough to support Senior/Staff SRE, Platform Engineering, and DevOps applications, but positioned around Marc’s strongest differentiator: reliability + ownership + automation, rather than just listing technologies.
+
+I’m keeping the experience and scale grounded in the original resume and the additional details you gave me.
+marc-berthelette-resume-en
+
+Marc Berthelette — Master Resume
+MARC BERTHELETTE
+
+Senior / Staff SRE · Platform Engineering · DevOps · Reliability Engineering
+
+Smiths Falls, Ontario, Canada · Remote
+marc.berthelette@gmail.com
+French — Native · English — Fluent · Canadian Incorporated · Available Immediately
+
+PROFESSIONAL SUMMARY
+
+Senior DevOps / Platform Engineer with 18 years of experience building, operating, and improving production systems across regulated and enterprise environments. Specializes in site reliability, platform engineering, CI/CD, infrastructure automation, observability, and production ownership.
+
+Known for taking ownership of complex systems, identifying what actually needs to be monitored, eliminating recurring failure modes, and replacing manual or fragile processes with controlled automation. Experienced across 24/7 production and on-call environments, including client-facing and mission-critical systems.
+
+Built and standardized delivery platforms supporting 12 teams and 70+ applications, automated infrastructure and operating-system maintenance across 600+ servers, and developed internal tooling supporting approximately 250 software repositories across seven technology ecosystems.
+
+Strong believer in engineering for prevention rather than repeatedly responding to the same incident: root-cause the problem, fix it permanently when possible, and automate reliable remediation when it is not.
+
+CORE EXPERTISE
+
+Reliability & Production Engineering
+
+SRE principles · Observability · Monitoring & alerting
+Incident response · Root-cause analysis · Preventative engineering
+Self-healing automation · Production troubleshooting
+24/7 on-call · Mission-critical/client-facing systems
+Reliability improvement · Operational ownership
+
+Platform Engineering & Developer Enablement
+
+CI/CD platform architecture and standardization
+Pipeline as Code · Release automation
+Internal developer tooling · Technical enablement
+Platform ownership · Engineering standards
+Shift-left practices · Code review · Technical mentoring
+
+Infrastructure & Cloud Automation
+
+Terraform · Ansible · Puppet
+Azure · Kubernetes · Docker · ArgoCD
+Infrastructure as Code · Configuration management
+Cloud platform usage and modernization
+Automated provisioning and lifecycle management
+
+CI/CD & DevOps Tooling
+
+Jenkins · Azure DevOps · GitHub Actions
+JFrog Artifactory · Nexus · HashiCorp Vault
+Salesforce CLI · CloudFoundry
+Deployment automation · Release management
+
+Observability
+
+Dynatrace · Splunk · ELK
+PRTG · Automated alerting
+Health monitoring · Failure detection
+Operational dashboards · Automated remediation
+
+Development & Systems
+
+Python · FastAPI · Bash
+C++ · Java · SQL · NoSQL
+Red Hat Linux · Ubuntu
+Apache · Nginx
+
+AI-Assisted Engineering
+
+AI-assisted development
+Human validation and code review
+Automated testing and quality gates
+Controlled promotion of generated code
+PROFESSIONAL EXPERIENCE
+ÉNERGIR — Montréal, QC
+Senior DevOps Engineer
+
+September 2021 – Present
+
+Own and evolve DevOps and delivery infrastructure supporting enterprise applications across multiple technology stacks. Provide technical leadership, platform engineering, reliability improvements, automation, and developer enablement across 12 teams and 70+ applications.
+
+Standardized CI/CD practices across 9 technology runtimes, including Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, and Databricks.
+Built reusable delivery patterns that allowed multiple development teams to adopt consistent deployment practices without independently reinventing pipelines.
+Own key DevOps software and delivery infrastructure, including Jenkins, Nexus, HashiCorp Vault, and Jenkins pipeline infrastructure.
+Re-engineered Oracle deployment automation after a previous automation attempt had failed, turning a manual and unreliable process into a dependable deployment workflow.
+Rebuilt Salesforce delivery using Salesforce CLI, replacing the previous ANT-based approach. Introduced sandbox validation and improved the observed deployment success rate from approximately 80% to 90–95%, while reducing manual deployment effort.
+Separated application-code failures from platform/pipeline failures, eliminating false-positive troubleshooting and making failures significantly easier to diagnose.
+Supported cloud modernization efforts and migration of 5–10 mission-critical services to Azure.
+Develop Terraform automation using reusable modules, extending infrastructure from bare virtual machines through system configuration and required plugins.
+Use Ansible and Infrastructure as Code practices to reduce configuration drift and make infrastructure changes repeatable.
+Design monitoring and observability around meaningful failure signals rather than simply collecting metrics; use Dynatrace, Splunk, and related tooling for operational visibility.
+Perform root-cause analysis and implement automated remediation to prevent recurring incidents and unnecessary manual intervention.
+Provide technical guidance, code reviews, mentoring, and best-practice support across development and DevOps teams.
+Led technical direction and acted as an informal technical lead during earlier years in the role, helping teams adopt cleaner engineering and shift-left practices.
+Conduct recurring enablement sessions to improve adoption of standardized DevOps practices.
+Use AI-assisted development as an engineering accelerator while applying strict human validation, testing, review, and controlled promotion of generated code.
+DESJARDINS — Montréal, QC / Remote
+Senior DevOps Engineer — Contract
+
+October 2025 – March 2026
+
+Full-time concurrent engagement focused on JFrog Artifactory reliability, automation, monitoring, and operational tooling. Contract initially planned for three months and extended to six months following the departure of another engineer.
+
+Hardened and operationalized JFrog Artifactory infrastructure and supporting processes.
+Designed and implemented a Python/FastAPI health-monitoring service covering approximately 250 remote repositories across seven technology ecosystems.
+Took an existing shell-based monitoring concept and implemented the broader solution, making the architecture more flexible, configurable, and technology-agnostic.
+Built configurable validation logic so the same monitoring framework could evaluate repositories without being tightly coupled to a particular technology or implementation.
+Integrated monitoring results with Dynatrace dashboards for operational visibility.
+Reused the validation framework to reduce risk during a JFrog upgrade by providing automated verification of repository health and expected behaviour.
+Automated on-demand Artifactory provisioning using Kubernetes and ArgoCD.
+Implemented repository lifecycle policies to control retention and reduce operational overhead.
+Added Splunk alerting for manual changes made outside approved CI/CD processes, improving visibility into configuration drift and unauthorized operational changes.
+TINK — Montréal, QC
+DevOps Engineer
+
+January 2018 – August 2021
+
+Owned client-facing production systems and DevOps infrastructure in a highly operational environment, with extensive 24/7 on-call responsibility. Focused heavily on eliminating recurring incidents through root-cause analysis, automation, monitoring, and preventative engineering.
+
+Centralized Jenkins Pipeline as Code across approximately 10–15 developers, 80+ applications, and 20+ clients, creating a consistent and maintainable delivery platform.
+Played a significant role in the architecture and technical design of internal tooling and centralized Jenkins infrastructure.
+Automated operating-system patching across 600+ servers, including kernel updates and reboots, with monthly verification and near-zero downtime.
+Built infrastructure automation using Puppet and Spacewalk, with operational visibility through ELK.
+Developed an internal software inventory platform covering the 600+ server fleet, using Python and Spacewalk APIs to automatically collect and expose software information.
+Connected inventory information to internal chat-based visibility, making it easier for teams to identify installed software, CVEs, end-of-life components, and SSL/TLS security concerns.
+Reduced recurring production incident volume substantially: an environment that initially generated approximately 1–3 incident calls per week reached periods where a week or more could pass without an incident.
+Applied root-cause analysis to recurring failures and either implemented permanent fixes or developed automated remediation when permanent remediation was outside the engagement scope.
+Built a self-healing response for an unstable Elasticsearch cluster: monitoring detected when Elasticsearch became unresponsive and triggered a Bash remediation script to restart the service automatically, avoiding unnecessary human paging for a known failure mode.
+Provided technical design and validation support for products and systems developed by other teams.
+Supported an AWS migration initiative involving EC2, S3, Route 53, VPC, managed/serverless database services, and self-managed caching infrastructure. The initiative was ultimately cancelled due to the projected operational cost of maintaining the target environment.
+Maintained extensive 24/7 production on-call responsibility, including troubleshooting incidents outside his immediate technology stack by applying broad systems knowledge and structured diagnosis.
+SOVO TECHNOLOGIES — Montréal, QC
+Lead Technician → Software Engineer
+
+November 2008 – December 2017
+
+Progressed from infrastructure leadership into software engineering while maintaining ownership of the company's IT infrastructure, production systems, and internal software.
+
+Owned the organization's IT infrastructure and production systems, including server infrastructure, networking, virtualization, backups, and recovery.
+Designed redundant infrastructure and executed a zero-downtime server relocation.
+Served as a final technical and QA gate for production changes and systems.
+Managed a team of technicians, including scheduling, training, delegation, and technical guidance.
+Developed production software for approximately seven years, including before the Software Engineer title was formally established.
+Built a scheduling system and software supporting voice-recognition evaluation and multilingual dictionary infrastructure.
+Developed software using C++, Java, and SQL.
+Administered Windows Server and Linux environments, Active Directory, VMware, Cisco routing/firewalls/VPN infrastructure, and backup/recovery systems.
+Combined software engineering with infrastructure ownership to deliver and support complete production solutions.
+EDUCATION
+École de technologie supérieure (ÉTS) — Montréal, QC
+
+Bachelor of Automated Manufacturing Engineering
+2005 – 2016
+
+Cégep André-Laurendeau — Montréal, QC
+
+DCS, Computer Science Technology
+2002 – 2005
+
+TECHNICAL TOOLKIT
+
+Cloud & Platforms: Azure · AWS · CloudFoundry · Kubernetes · Docker · ArgoCD
+
+CI/CD & DevOps: Jenkins · Azure DevOps · GitHub Actions · JFrog Artifactory · Nexus · Salesforce CLI · HashiCorp Vault
+
+Infrastructure as Code: Terraform · Ansible · Puppet · Spacewalk
+
+Observability & Operations: Dynatrace · Splunk · ELK · PRTG · Monitoring · Alerting · Incident Response · RCA
+
+Languages & Automation: Python · FastAPI · Bash · C++ · Java · SQL · NoSQL
+
+Operating Systems & Infrastructure: Red Hat Linux · Ubuntu · Windows Server · VMware · Active Directory · Apache · Nginx · Cisco
+
+Engineering Practices: SRE · Platform Engineering · CI/CD · Infrastructure as Code · Automation · Reliability Engineering · Technical Leadership · Code Review · Developer Enablement · AI-Assisted Development & Code Governance
+
+This is the version I’d keep as the master. The important thing is that we don't try to make this resume sound like every other DevOps guy on LinkedIn—it sells the reliability/ownership story, with the impressive numbers underneath it.
+
+Next, I’d make one targeted 2-page version for Staff/Senior SRE and Platform roles from this master, rather than changing the master every time Marc applies somewhere.
+
+Sources
+That's the master like a profile.md file ?
+
+Yes.please make a 2 page pdf version, in both languages (Fr and en)
+
+Yep — exactly. The master resume is the “source of truth”, basically the resume equivalent of a profile.md: all of Marc’s experience, accomplishments, technologies, metrics, and positioning live there. Then we pull targeted 2-page resumes from it for specific jobs.
+
+I made the polished 2-page versions in both languages:
+
+🇨🇦
+Download Marc’s English 2-page resume
+🇫🇷
+Download Marc’s French 2-page resume
+
+I also kept the English version aimed at Senior/Staff SRE + Platform Engineering + DevOps, rather than making him look like a generic DevOps applicant.

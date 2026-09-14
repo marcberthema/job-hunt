@@ -16,15 +16,16 @@ Implements `specs/check-dice.md`.
      Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward
      Deployed Engineer).
 
-2. **Build and fetch the search URL(s)**, one per keyword in play this run:
+2. **Build and fetch the search URL(s)**, one per keyword in play this run (**revised
+   2026-09-13**):
    ```
-   https://www.dice.com/jobs?q=<keyword, spaces as +>&location=Remote&countryCode2=CA&filters.postedDate=SEVEN&filters.employmentType=CONTRACTS&language=en
+   https://www.dice.com/jobs?filters.postedDate=SEVEN&filters.employmentType=FULLTIME%7CCONTRACTS&filters.workplaceTypes=Remote&filters.willingToSponsor=true&q=<keyword, spaces as +>&countryCode2=CA&language=en
    ```
    WebFetch each, asking for every `/job-detail/<id>` link with title, company, location, and
    rate/salary as shown on the results page. Cap at 15-20 links for a single custom query, or 8
-   per keyword in rotation mode. Note: `location=Canada&radius=30&radiusUnit=mi` tested cleaner
-   than plain `location=Remote` during development — revisit this combination first if results
-   get noisy.
+   per keyword in rotation mode. `filters.workplaceTypes=Remote` + `filters.willingToSponsor=true`
+   replace the old noisy `location=Remote` text param; `employmentType` now includes both
+   `FULLTIME` and `CONTRACTS` since Marc is open to TN-sponsored US full-time roles too.
 
 3. **Dedupe** (rotation mode only) — collapse the combined link list by company + title
    (case-insensitive) before running the eligibility gate, since the same posting commonly

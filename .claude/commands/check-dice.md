@@ -7,7 +7,7 @@ Implements `specs/check-dice.md` / `plans/check-dice.md`. Follow these steps in 
 
 ## 1. Parse input
 
-`$ARGUMENTS` is optional. Location is always `Remote` — not a user-supplied argument.
+`$ARGUMENTS` is optional. Location/sponsorship filters are fixed — not user-supplied arguments.
 
 - If `$ARGUMENTS` is non-empty, treat it as a single search-terms query and run step 2 once for
   it, same as before.
@@ -32,7 +32,7 @@ Update this list directly in this file; no need to touch the spec/plan for a wor
 
 For each keyword being searched this run, build:
 ```
-https://www.dice.com/jobs?q=<keyword, spaces as +>&location=Remote&countryCode2=CA&filters.postedDate=SEVEN&filters.employmentType=CONTRACTS&language=en
+https://www.dice.com/jobs?filters.postedDate=SEVEN&filters.employmentType=FULLTIME%7CCONTRACTS&filters.workplaceTypes=Remote&filters.willingToSponsor=true&q=<keyword, spaces as +>&countryCode2=CA&language=en
 ```
 Fetch with WebFetch, asking for every `/job-detail/<id>` link with title, company, location, and
 rate/salary as shown on the results page.
@@ -41,10 +41,11 @@ rate/salary as shown on the results page.
 - **Default rotation** (no arguments): cap at the first **8** links per keyword, to keep the
   total batch size reasonable across 6 keywords.
 
-Note: during testing, `location=Canada&radius=30&radiusUnit=mi` (rather than `location=Remote`)
-produced the cleanest Canada/remote-biased results — `radius` doesn't apply to a "Remote" text
-location, so it's dropped here. If `location=Remote` combined with `countryCode2=CA` starts
-returning noisy US-heavy results in practice, that's the first thing to revisit.
+**Revised 2026-09-13**: `filters.workplaceTypes=Remote` and `filters.willingToSponsor=true`
+replace the old `location=Remote` text param, which produced noisy US-onsite-heavy results.
+`filters.employmentType` now includes both `FULLTIME` and `CONTRACTS` — Marc is now open to
+TN-visa-sponsored US roles (Canadian citizens get fast/cheap sponsorship under USMCA), so
+sponsor-willing full-time US positions are in scope, not just contracts.
 
 If a keyword's search returns no job links, skip it and move to the next keyword — don't abort
 the whole rotation over one empty search. If every keyword comes back empty (or the single custom
@@ -66,14 +67,21 @@ Fetch each deduped posting. Before extracting full requirements or scoring, chec
 
 1. **Security clearance mentioned** (TS/SCI, Secret, Public Trust, etc.) → **INELIGIBLE**:
    clearance required — this requires US citizenship in practice even when not stated
-   explicitly.
-2. **Work authorization explicitly restricted to US statuses** (e.g. "US Citizen, H-1B,
-   OPT-EAD, GC-EAD", "must be authorized to work in the US without sponsorship") with no mention
-   of corp-to-corp or international-contractor arrangements → **INELIGIBLE**: US work
-   authorization required, not open to Canadian-incorporated contractors.
-3. **On-site/hybrid at a US location with no remote option** → **INELIGIBLE**: on-site in the
-   US.
-4. Otherwise → **ELIGIBLE**. If work-authorization language is simply absent (neither open nor
+   explicitly, and TN status doesn't change this.
+2. **Work authorization restricted to US statuses, WITH sponsorship mentioned** ("will sponsor,"
+   "able to sponsor," H-1B/TN/visa language) → **ELIGIBLE (revised 2026-09-13)**. Marc is a
+   Canadian citizen and TN-visa eligible under USMCA — fast, cheap sponsorship relative to other
+   nationalities. **Flag prominently: "TN-sponsorship path — likely W2 employment via the posting
+   company or a staffing intermediary, no corp-to-corp; confirm with the recruiter whether
+   sponsorship means a work visa (TN) or something else — do not assume green card."** This
+   distinction matters: "willing to sponsor" on a contract/FTE posting essentially always means a
+   work visa, not permanent residency sponsorship, which is a separate, far larger, rarely-offered
+   commitment.
+3. **Work authorization restricted to US statuses, NO sponsorship mentioned** (e.g. "must be
+   authorized to work in the US without sponsorship") → **INELIGIBLE**: hard closed door.
+4. **On-site (not hybrid/remote) at a US location with no remote option** → **INELIGIBLE**: TN
+   doesn't solve relocation — this is a separate logistics fail from work authorization.
+5. Otherwise → **ELIGIBLE**. If work-authorization language is simply absent (neither open nor
    restricted), still mark eligible but add the flag "confirm work authorization with recruiter
    before applying."
 
