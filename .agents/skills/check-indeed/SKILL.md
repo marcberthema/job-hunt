@@ -13,7 +13,9 @@ Before scoring, read `profile.md` and `resume/marc-berthelette-resume-en.md` com
 
 ## Search scope
 
-Unless narrowed by the user, search separately for `Site Reliability Engineer`, `Reliability Engineer`, `Platform Engineer`, `Infrastructure Engineer`, `Cloud Engineer`, `DevOps Engineer`, `DevSecOps Engineer`, `Azure DevOps Engineer`, and `Forward Deployed Engineer infrastructure`.
+Unless narrowed by the user, search separately for `Site Reliability Engineer`, `Reliability Engineer`, `Platform Engineer`, `Infrastructure Engineer`, `Cloud Engineer`, `DevOps Engineer`, `DevSecOps Engineer`, `Azure DevOps Engineer`, and `Forward Deployed Engineer`.
+
+Use the broad Forward Deployed Engineer query so discovery does not miss infrastructure-oriented roles whose titles omit an infrastructure qualifier. Evaluate the full description: retain roles with meaningful infrastructure, platform, reliability, cloud, or DevOps responsibilities, including weak fits with low scores; exclude roles that are purely application development or otherwise unrelated to the three target families.
 
 Run geography passes for remote work explicitly open to Canada or Ontario, plus hybrid work in Ottawa, Kingston, Cornwall, and Montréal. For Montréal, exclude confirmed requirements above two office days weekly. Retain undisclosed hybrid cadence as `Hybrid — days not stated; confirm <=2`. Exclude fully on-site roles and remote roles restricted to an ineligible region.
 

@@ -32,7 +32,9 @@ Use these queries so discovery extends beyond literal matches to the three targe
 - `DevOps Engineer`
 - `DevSecOps Engineer`
 - `Azure DevOps Engineer`
-- `Forward Deployed Engineer infrastructure`
+- `Forward Deployed Engineer`
+
+Use the broad Forward Deployed Engineer query so discovery does not miss infrastructure-oriented roles whose titles omit an infrastructure qualifier. Evaluate the full description: retain roles with meaningful infrastructure, platform, reliability, cloud, or DevOps responsibilities, including weak fits with low scores; exclude roles that are purely application development or otherwise unrelated to the three target families.
 
 Classify each retained posting into exactly one family based on its actual responsibilities, not merely its title:
 
