@@ -48,20 +48,28 @@ different titles. The list lives directly in `.claude/commands/check-indeed.md` 
 
 ## Behavior
 
+**Fetch mechanism (revised 2026-09-13):** Indeed started returning HTTP 403 to plain `WebFetch`
+as of 2026-09-08, confirmed again on a second consecutive run 2026-09-13 — no longer transient.
+This command now drives a real Chrome browser (`mcp__claude-in-chrome__*` tools) instead, the same
+workaround already used for RemoteOK/WWR/LinkedIn/S.i. Systems. No login required.
+
 1. **Determine query mode**: single custom query (arguments given) or full rotation (no
    arguments).
-2. **Build and fetch the search URL(s)** — `https://ca.indeed.com/jobs?q=<keyword>&l=Remote` for
+2. **Navigate to the search URL(s)** — `https://ca.indeed.com/jobs?q=<keyword>&l=Remote` for
    each keyword being searched this run (location is always `Remote`, not a user-supplied
-   argument). Extract every job-posting link (`pagead/clk`, `/viewjob?jk=`, `/rc/clk`) along with
-   the title/company shown on the results page. Discard non-job links (ads for courses, employer
-   resource pages, etc.). Cap per-keyword results lower in rotation mode (~8) than in single-query
-   mode (~15), to keep the total batch size reasonable across 6 keywords.
+   argument), via Chrome. Extract every job-posting link (`pagead/clk`, `/viewjob?jk=`, `/rc/clk`)
+   along with the title/company shown on the results page — use `find` on each result's title if
+   the link isn't present in `get_page_text`'s plain output. Discard non-job links (ads for
+   courses, employer resource pages, etc.). Cap per-keyword results lower in rotation mode (~8)
+   than in single-query mode (~15), to keep the total batch size reasonable across 6 keywords.
 3. **Dedupe** (rotation mode only) — the same posting often surfaces under multiple keywords
    (e.g. a role tagged both "DevOps Engineer" and "Platform Engineer"). Collapse by company +
    title before fetching full details, so nothing gets scored twice.
 4. **Read `profile.md` first** (per repo convention), same as `/addjob`.
-5. **For each deduped result**, fetch the individual posting (WebFetch) and extract: title,
-   company, location, remote/hybrid/onsite status, salary/rate if stated, engagement type.
+5. **For each deduped result**, open the individual posting via Chrome (`navigate`/click) and
+   extract: title, company, location, remote/hybrid/onsite status, salary/rate if stated,
+   engagement type. A CAPTCHA or blocking page stops the entire run immediately — report it,
+   don't attempt to solve it.
 6. **Quick-score each** 0–10 against `profile.md`'s scoring notes, skill/domain-first — same
    scoring philosophy as `/addjob` (logistics don't drag the score down, they're flagged
    instead). Keep the rationale to one sentence per posting, not the 2-4 sentence version

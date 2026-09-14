@@ -16,15 +16,16 @@ Implements `specs/check-dice.md`.
      Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward
      Deployed Engineer).
 
-2. **Build and fetch the search URL(s)**, one per keyword in play this run:
+2. **Build and fetch the search URL(s)**, one per keyword in play this run (**revised
+   2026-09-13**):
    ```
-   https://www.dice.com/jobs?q=<keyword, spaces as +>&location=Remote&countryCode2=CA&filters.postedDate=SEVEN&filters.employmentType=CONTRACTS&language=en
+   https://www.dice.com/jobs?filters.postedDate=SEVEN&filters.employmentType=FULLTIME%7CCONTRACTS&filters.workplaceTypes=Remote&filters.willingToSponsor=true&q=<keyword, spaces as +>&countryCode2=CA&language=en
    ```
    WebFetch each, asking for every `/job-detail/<id>` link with title, company, location, and
    rate/salary as shown on the results page. Cap at 15-20 links for a single custom query, or 8
-   per keyword in rotation mode. Note: `location=Canada&radius=30&radiusUnit=mi` tested cleaner
-   than plain `location=Remote` during development — revisit this combination first if results
-   get noisy.
+   per keyword in rotation mode. `filters.workplaceTypes=Remote` + `filters.willingToSponsor=true`
+   replace the old noisy `location=Remote` text param; `employmentType` now includes both
+   `FULLTIME` and `CONTRACTS` since Marc is open to TN-sponsored US full-time roles too.
 
 3. **Dedupe** (rotation mode only) — collapse the combined link list by company + title
    (case-insensitive) before running the eligibility gate, since the same posting commonly
@@ -33,14 +34,18 @@ Implements `specs/check-dice.md`.
 4. **Read `profile.md`** in full before doing anything else.
 
 5. **For each deduped posting, fetch it and run the eligibility gate first** (before extracting
-   full details for scoring):
+   full details for scoring) — **revised 2026-09-13**:
    - Security clearance mentioned (TS/SCI, Secret, Public Trust) → **INELIGIBLE: clearance
-     required (requires US citizenship in practice)**.
-   - Work authorization explicitly listed as US-only statuses (US Citizen / H-1B / OPT-EAD /
-     GC-EAD, or "must be authorized to work in the US without sponsorship") with no
-     corp-to-corp/international-contractor language → **INELIGIBLE: US work authorization
-     required, not open to Canadian-incorporated contractors**.
-   - On-site/hybrid at a US location, no remote option → **INELIGIBLE: on-site in the US**.
+     required (requires US citizenship in practice; TN status doesn't change this)**.
+   - Work authorization restricted to US statuses **with sponsorship mentioned** ("will sponsor,"
+     H-1B/TN/visa language) → **ELIGIBLE**. Marc is a Canadian citizen, TN-visa eligible under
+     USMCA. Flag prominently: "TN-sponsorship path — likely W2 employment, no corp-to-corp;
+     confirm with recruiter whether sponsorship means a work visa (TN) vs. green card — these are
+     very different commitments and shouldn't be assumed."
+   - Work authorization restricted to US statuses **with no sponsorship mentioned** (e.g. "must
+     be authorized to work in the US without sponsorship") → **INELIGIBLE**: hard closed door.
+   - On-site (not hybrid/remote) at a US location, no remote option → **INELIGIBLE**: TN doesn't
+     solve relocation logistics.
    - Otherwise → **ELIGIBLE** (if work-authorization language is simply absent, mark eligible
      but add a flag: "confirm work authorization with recruiter before applying").
    - **Do not extract full requirements/responsibilities or attempt scoring for INELIGIBLE

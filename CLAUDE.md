@@ -124,7 +124,7 @@ This mirrors the Brayd workflow but without GitHub Projects or slash commands fo
 | `/findjobs`  | Scrape/read sources, score postings against profile, draft letters, save to `jobs/new/` |
 | `/review`    | Walk `jobs/new/` one posting at a time (highest score first), pay/days-in-office/contract-type highlighted — reject/skip, or apply (cover letter + application-question help), moving to `applied/` once you confirm submission |
 | `/addjob`    | Manual intake: fetch/score/draft a single posting by URL into `jobs/new/` |
-| `/check-indeed` | Search Indeed, quick-score every result in a table, then file picks via `/addjob`'s logic |
+| `/check-indeed` | Search Indeed via Claude in Chrome (WebFetch blocked with HTTP 403 as of 2026-09-08), quick-score every result in a table, then file picks via `/addjob`'s logic |
 | `/check-dice`   | Search Dice, gate out clearance/US-work-authorization-only postings before scoring, then quick-score the rest |
 | `/check-jobbank` | Search Job Bank (Canada), quick-score every result in a table, then file picks via `/addjob`'s logic |
 | `/check-builtin` | Search BuiltIn, quick-score every result in a table, then file picks via `/addjob`'s logic |

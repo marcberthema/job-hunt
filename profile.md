@@ -22,12 +22,61 @@
 
 | Field | Details |
 |-------|---------|
-| **Primary positioning** | Senior DevOps / Platform Engineering Consultant |
-| **Open to** | Contract / fractional consulting AND full-time remote employment (short term) |
-| **Target consulting rate** | $110–130/hr CAD |
-| **Target employment salary** | $160,000 CAD/year |
+| **Primary positioning** | Senior/Staff SRE · Platform Engineering · DevOps · Reliability Consultant (broadened 2026-09-11 — see Notes for Claude) |
+| **Open to** | Three tracks, in no particular priority order (updated 2026-09-11): (1) full-time employment at $160k–175k CAD/year, (2) full-time consulting contract at $110–120/hr CAD, or (3) a monthly-retainer fractional/part-time arrangement doing operational work for a small company — see note below, this channel is unproven and has no sourcing plan yet |
+| **Target consulting rate** | $110–130/hr CAD for a full-time contract; retainer-fee structure for fractional/part-time work is undefined — figure out market rate when/if a real opportunity surfaces |
+| **Target employment salary** | Aspirational target $160,000–175,000 CAD/year. Scoring floor (updated 2026-09-11): **$140k+** worth considering for on-site/hybrid FTE; **$100k+** worth considering for 100% fully remote FTE (lower bar because remote removes commute/relocation cost entirely) |
 | **Work arrangement** | Remote preferred, but open to on-site/hybrid within reach of Smiths Falls, ON — see Geographic Reachability below |
 | **Geography** | Worldwide remote — open to any country where services can be legally provided as a Canadian incorporated entity (no visa required; selling services internationally, not relocating). For on-site/hybrid roles, only reachable from Smiths Falls, ON: Ottawa, Kingston, Brockville, Cornwall, and Montréal (the furthest acceptable) |
+
+### Retainer / Fractional Track (revised 2026-09-13 — end-goal reframe)
+
+**Long-term goal (2026-09-13):** Marc's actual end target is the "Million Dollar Consulting"
+fixed-price/value-based model (category 5 in `outreach/firm-comparison.md`'s engagement taxonomy)
+— but that requires a client base, case studies, and reputation he doesn't have yet. The path
+there: (1) land a full-time role (~$150K CAD/year) to end the acute financial pressure on his
+family and restore stability, (2) once stable in that role (a few months in, not immediately),
+deliberately build a roster of retainer/fractional consulting clients on the side through his
+corporation, targeting an additional $50-100K/year at $75+/hr or a retainer-fee structure, (3) use
+that client base as the foundation to eventually transition toward the value-based model.
+
+**Sequencing — do not blur these phases:**
+- **Right now (urgent 5-week runway, see Current Situation in CLAUDE.md):** FTE/contract search
+  stays the sole priority. Do not spend active search time chasing retainer/fractional leads
+  during this phase — trying to job-search and cultivate retainer clients simultaneously under
+  acute financial pressure risks doing both poorly.
+- **After landing the FTE, once stabilized:** re-activate active retainer/fractional sourcing —
+  this is no longer "parked, opportunistic only." **Before committing time to this, confirm the
+  FTE employment contract doesn't have a moonlighting/outside-employment or IP-assignment clause
+  that would prohibit or restrict outside consulting work in the same field** — ask the employer
+  directly if unclear, don't assume it's fine just because it's billed through the corporation.
+- **Reality check on the side-income target:** $50-100K/year at $75/hr is 640-1,300 hours/year —
+  roughly 12-25 hours/week on top of a full-time job, indefinitely. This is a real second
+  part-time commitment, not "a few hours here and there" — factor that into how many retainer
+  clients to actually take on.
+
+**Sourcing channels for retainer/fractional work (different from job-board postings)** — see
+`job_sources.md`'s Manual Only section for Business Talent Group, Catalant, GLG, and Coleman
+Research (expert-network/fractional platforms), plus Toptal and Braintrust already logged there.
+Referral/network-built retainer relationships (the original 2026-09-11 plan) remain the highest-
+quality channel but are slower to develop — worth cultivating in parallel with the marketplace
+platforms once the FTE-stabilization phase begins.
+
+The $100/hr consulting-rate floor does not apply to this track — see the flexible/low-commitment
+part-time gig exception below, which this retainer-building goal is a deliberate, larger-scale
+version of (not just opportunistic inbound gigs).
+
+**Exception confirmed 2026-09-11 — flexible/low-commitment part-time gig income:** the $100/hr
+consulting rate floor does NOT apply to genuinely flexible, low-hour, no-sourcing-effort part-time
+work (e.g. 5–20 hrs/week, own schedule, found via normal job scanning rather than chased) — Marc
+will consider these on pay-worth-having grounds even below the consulting floor, as long as skill
+fit is real and it doesn't require active outreach to find. This is distinct from the parked
+retainer/fractional track above, which is about actively sourcing recurring client relationships;
+this exception is about opportunistically taking inbound flexible gig work (e.g. expert-network /
+AI-training-data platforms like Ethos) that surfaces on its own. Do not auto-skip a posting purely
+for being below $100/hr if it is flexible part-time and the skill fit is otherwise strong — flag
+the rate plainly and let Marc decide, the way the Ethos DevOps posting (2026-09-11, $80/hr,
+5–20 hrs/week) was handled.
 
 ### Geographic Reachability for On-Site/Hybrid Roles
 
@@ -53,7 +102,7 @@ Senior DevOps and Platform Engineering consultant with 18 years spent making unf
 
 - Standardized CI/CD delivery across nine distinct runtimes — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, and Databricks — for 12 application teams and 70+ applications, moving teams from manual deployments to automated pipelines with built-in quality gates. Entered most of those ecosystems with no prior experience and reverse-engineered each one before automating it.
 - Took the Oracle team from fully manual deployment to automated delivery — after an earlier attempt by another engineer had failed to deliver it.
-- Rebuilt Salesforce delivery with no prior Salesforce experience: replaced legacy ANT deployment scripts with the official Salesforce CLI tooling, then proposed and built a validation pipeline deploying every candidate merge into a dedicated validation sandbox and running the full test suite. The team moved from recurring uncertainty over whether a release would make its window to a dependable every-other-Tuesday deployment.
+- Rebuilt Salesforce delivery with no prior Salesforce experience: replaced legacy ANT deployment scripts with the official Salesforce CLI tooling, then proposed and built a validation pipeline deploying every candidate merge into a dedicated validation sandbox and running the full test suite. The team moved from a recurring problem of missed deployment windows (exact pre-implementation count unknown, but clearly frequent) to just one missed window since the pipeline went live, with a dependable every-other-Tuesday deployment cadence.
 - Cut false-positive pipeline failures and made build results self-diagnosing by separating application-code errors from platform-pipeline errors in reporting — so application teams could tell at a glance whether a failure was theirs to fix or the platform team's.
 - Led cloud modernization initiatives, migrating several (5–10) mission-critical services to Microsoft Azure with measurable improvements in scalability, resilience, and cost efficiency.
 - Implemented Infrastructure as Code (IaC) practices using Terraform and Ansible, standardizing environment provisioning and reducing configuration drift across dev, staging, and production.
@@ -62,6 +111,7 @@ Senior DevOps and Platform Engineering consultant with 18 years spent making unf
 - Conducted technical evaluations and Proofs of Concept (PoCs) for emerging cloud and infrastructure technologies, directly influencing strategic roadmaps and vendor selection.
 - Partnered with Enterprise Architecture to design resilient, cost-optimized infrastructure aligned with cloud-native and zero-trust security principles.
 - Drove CI/CD and platform-engineering adoption across 12 teams outside any reporting line, running recurring enablement sessions (~6/year) with each application team after pipeline delivery — turning delivered tooling into actual usage rather than shelfware.
+- Introduced AI-assisted engineering practices into the team's tooling over the past 6–9 months (as of Sept 2026), researching and applying hard scope gates and human-validation checkpoints before any AI-generated code reaches production. Flagged to leadership that Énergir has no equivalent organizational safeguards for AI-assisted development; the concern has not been acted on. Marc applies the same disciplined practice (scoped tool use, human validation, controlled promotion) in his own engineering work outside this repo's job-search scope — do not name specific personal projects in resumes/cover letters/website copy (see Currently Building).
 
 ### Desjardins — Senior DevOps Engineer (Contract)
 **Montréal, QC (Remote) | October 2025 – March 2026** *(concurrent with the Énergir role)*
@@ -82,6 +132,7 @@ Senior DevOps and Platform Engineering consultant with 18 years spent making unf
 - Built centralized log aggregation using the ELK Stack, enabling proactive detection of production anomalies and reducing incident response times.
 - Conceived and built, unprompted and outside any assigned scope, a software inventory platform cataloguing every installed application and version across the 600+ server fleet — surfacing CVE exposure, end-of-life (EoL) software, SSL/TLS certificate scoring, and other operational metrics directly to product owners, who until then had no visibility into the fleet's security or obsolescence risk.
 - Built out the compute, caching, and database layers of a client's full AWS migration target environment — EC2, S3, Route 53, self-managed memcached on EC2, and a serverless relational database — and contributed to the VPC/network and Route 53 design, with no prior AWS experience. Roughly 6 months of work; the client cancelled the migration before cutover. Resources were provisioned by hand in the AWS console, not through Terraform or CloudFormation. Marc believes the EC2 instances were enrolled in the same Puppet configuration management used for the on-prem fleet, but is not certain — **do not assert Puppet-on-AWS in any resume, letter, or profile copy until he confirms it.**
+- Built a self-healing response for a recurring, unstable Elasticsearch cluster: monitoring detected when the service became unresponsive and automatically triggered a Bash remediation script to restart it — a known failure mode that no longer needed a human paged to fix it manually.
 - Monitored automated build and continuous integration processes, driving fast resolution of build and release failures to maintain deployment cadence.
 - Collaborated with cross-functional teams to design and implement scalable infrastructure solutions.
 - Part of a 24/7 on-call rotation supporting all production systems and applications.
@@ -159,8 +210,8 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 
 - **On-site/hybrid outside reachable range** — anywhere other than Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability above). Unlike other red flags below, this one **caps the score directly (0-4) rather than just being noted as a flag on top of a high skill score** — skill fit alone should never carry an unreachable on-site/hybrid role into the 5+ range, because it's not actually take-able. Within the reachable range: 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week is a flag unless the rate is well above target.
 - Single-client exclusive clause (corp-to-corp restriction)
-- Emphasis on benefits as a selling point (signals FTE)
-- Rate below $100/hr for consulting or salary below $130k for employment
+- Emphasis on benefits as a selling point (signals FTE culture-fit mismatch, not a disqualifier on its own now that FTE is a first-class target — see Engagement Preferences)
+- Rate below $100/hr for consulting; salary below $140k for on-site/hybrid employment or below $100k for 100% fully remote employment (updated 2026-09-11 — remote gets a lower floor because it removes commute/relocation cost entirely)
 - Junior scope (ticket-taking, no architecture ownership)
 - **Cloud platform mismatch — graded, never a blanket refusal, and AWS ≠ GCP.** The test is whether the
   cloud platform *is the job* or merely *the venue*. Note the two are no longer equivalent for Marc:
@@ -196,12 +247,19 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 
 ## Scoring Notes for /findjobs
 
-- **8–10**: Remote (or reachable-city hybrid at ≤1 day/week) contract/fractional, Azure context, financial or energy sector, autonomy, $110+/hr
-- **5–7**: Remote employment at target salary OR contract with minor red flags worth reviewing OR reachable-city hybrid at 2 days/week
+- **8–10**: Remote (or reachable-city hybrid at ≤1 day/week), Azure context, financial or energy sector,
+  autonomy, and either $110+/hr contract OR $160k+ FTE salary. **FTE-only postings (no consulting path)
+  are no longer auto-capped — updated 2026-09-11.** FTE at $160–175k is a first-class target alongside
+  contract, per the three-track engagement strategy (see Engagement Preferences).
+- **5–7**: Remote employment at or near target salary OR contract with minor red flags worth reviewing OR
+  reachable-city hybrid at 2 days/week OR FTE salary below $160k but above the scoring floor (updated
+  2026-09-11: **$140k+ for on-site/hybrid, $100k+ for 100% fully remote** — "worth considering," per Marc)
 - **Cloud platform**: apply the three-tier AWS/GCP rule in Red Flags above before scoring — hard-gate
   postings cap at 0–4 regardless of how well the rest of the posting fits; "venue" postings score normally
   with the mismatch noted as a flag.
-- **0–4**: On-site/hybrid outside the reachable range (see Geographic Reachability), below rate, FTE-only with no consulting path, or junior scope — skip. A reachable-city role requiring 3+ days/week on-site also scores here unless the rate is well above target.
+- **0–4**: On-site/hybrid outside the reachable range (see Geographic Reachability), below the salary/rate
+  floor ($100/hr consulting, $140k on-site/hybrid FTE, or $100k 100%-remote FTE), or junior scope — skip.
+  A reachable-city role requiring 3+ days/week on-site also scores here unless the rate is well above target.
 
 ---
 
@@ -242,7 +300,22 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 
 ## Notes for Claude
 
-- Primary title: **Senior DevOps Engineer** for job boards; **Senior DevOps & Platform Engineering Consultant** for website and direct outreach
+- **Title/positioning broadened 2026-09-11.** Marc confirmed he prefers Staff/Senior SRE and Platform Engineer
+  framing over plain "DevOps Engineer" — he'd rather be the person who steps in on "we have no idea how to
+  automate this, people have told us it's impossible" problems (the Oracle-at-Énergir story is his own
+  prime example) than a ticket-taking implementer. He has never formally held a "Staff" title — this is
+  target positioning/search-title strategy, not a claimed past title, same as "Platform Engineering
+  Consultant" already was. Caveat given to Marc directly: some employers gate "Staff" behind formal
+  scope/tenure a resume can't fake past, so expect it to get tested harder in interview than "Senior" would.
+  - Resume/LinkedIn headline: **"Senior / Staff SRE · Platform Engineering · DevOps · Reliability"**
+    (French: "Ingénieur SRE senior/principal · Ingénierie de plateforme · DevOps · Fiabilité")
+  - Job-board search titles to add alongside the existing DevOps search: Staff SRE, Senior Staff SRE,
+    Senior SRE, Senior Platform Engineer, Staff Platform Engineer, Senior Reliability Engineer, Staff
+    DevOps Engineer. Keep Senior DevOps Engineer / Senior Infrastructure Engineer in the mix too — don't
+    drop the DevOps search entirely, broaden it.
+  - Do NOT lead cover letters or resumes with "Architect" titles — Marc's strongest evidence is operational
+    ownership + reliability + platform engineering, not architecture-first scope.
+- Primary title: **Senior/Staff SRE · Platform Engineering · DevOps** for job boards, LinkedIn, and resumes (broadened 2026-09-11, see above); **Senior SRE & Platform Engineering Consultant** for website and direct outreach
 - Always lead with Azure as the primary cloud platform
 - Open to on-site/hybrid roles in Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability) — 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week needs a well-above-target rate. On-site/hybrid **outside** that reachable range is still a hard red flag — never apply without explicit user confirmation
 - Bilingualism is a competitive advantage — highlight for Canadian and Quebec roles
@@ -274,5 +347,15 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
   unexplained, but do not make a selling point of "two full-time jobs at once" in writing — it reads as
   capacity to a consulting buyer and as moonlighting risk to an FTE employer. Save it for live conversation.
 - Metrics are still thin. Where a real number does not exist, use the concrete before/after states Marc
-  gave: Oracle went manual → automated where a prior attempt failed; the Salesforce team went from fearing
-  a missed deployment window to a dependable every-other-Tuesday release. Never invent figures.
+  gave: Oracle went manual → automated where a prior attempt failed; the Salesforce team went from a
+  recurring problem of missed deployment windows (exact prior count unknown, but frequent) to just one
+  missed window since the validation pipeline launched, with a dependable every-other-Tuesday release
+  cadence — this is a real, defensible number, use it. Never invent figures beyond what Marc has confirmed.
+- **AI-assisted engineering at Énergir (confirmed 2026-09-11, ~6–9 months of work as of that date):** Marc
+  introduced AI-assisted engineering practices into the team's tooling, researching and applying hard scope
+  gates and human-validation checkpoints before any AI-generated code reaches production. He flagged to
+  leadership that Énergir has no equivalent organizational safeguards; the concern was not acted on. This
+  is a strong instance of the signature "recommends the right answer, not the cheapest" pattern — usable in
+  resumes/cover letters as an Énergir bullet. Marc also applies this discipline in his own engineering work
+  (personal projects, not job-search scope) — never name those projects in job-search copy, per Currently
+  Building above.

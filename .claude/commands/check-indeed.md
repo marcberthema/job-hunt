@@ -1,18 +1,33 @@
 ---
-description: Search Indeed, fetch every result, and produce a quick-score table — no files written until you pick which postings to file
+description: Search Indeed via Claude in Chrome, fetch every result, and produce a quick-score table — no files written until you pick which postings to file
 argument-hint: [search terms — optional, defaults to the full role rotation]
 ---
 
 Implements `specs/check-indeed.md` / `plans/check-indeed.md`. Follow these steps in order.
 
-## 1. Parse input
+This command drives your real Chrome browser (`mcp__claude-in-chrome__*` tools) instead of
+`WebFetch`, because Indeed started returning HTTP 403 to direct fetches as of 2026-09-08
+(confirmed again 2026-09-13, two consecutive runs — no longer a transient blip) but loads fine
+through a real browser session, same pattern as RemoteOK/WWR/LinkedIn/S.i. Systems. No login
+required.
+
+## 1. Load Chrome tools
+
+One `ToolSearch` call, before anything else:
+```
+select:mcp__claude-in-chrome__tabs_context_mcp,mcp__claude-in-chrome__navigate,mcp__claude-in-chrome__computer,mcp__claude-in-chrome__read_page,mcp__claude-in-chrome__tabs_create_mcp,mcp__claude-in-chrome__tabs_close_mcp,mcp__claude-in-chrome__get_page_text,mcp__claude-in-chrome__find
+```
+
+## 2. Open a tab
+
+Call `tabs_context_mcp`, then `tabs_create_mcp` a new tab. No login check needed.
+
+## 3. Parse input
 
 `$ARGUMENTS` is optional. Location is always `Remote` — not a user-supplied argument.
 
-- If `$ARGUMENTS` is non-empty, treat it as a single search-terms query and run steps 2-6 once
-  for it, same as before.
-- If `$ARGUMENTS` is empty, run steps 2-4 once per keyword in the **default role rotation**
-  below, then dedupe and continue to step 5 onward with the combined set.
+- Non-empty → single custom query, run steps 4–5 once for it.
+- Empty → run step 4 once per keyword in the default rotation below, then dedupe (step 5).
 
 ### Default role rotation
 
@@ -25,47 +40,72 @@ DevSecOps Engineer
 Forward Deployed Engineer
 ```
 
-This list represents Marc's core title (DevOps Engineer) plus the closest-adjacent titles his
-actual work also matches (platform engineering, SRE, cloud engineering, DevSecOps/compliance
-work, and forward-deployed/customer-facing engineering). Update this list directly in this file
-if Marc's positioning changes — no need to touch the spec/plan for a wording tweak.
+Bare titles, same rotation as `/check-dice`, `/check-jobbank`, `/check-builtin`, `/check-wwr`,
+`/check-remoteok`. Update this list directly in this file if Marc's positioning changes — no need
+to touch the spec/plan for a wording tweak.
 
-## 2. Search Indeed (per keyword)
+## 4. Search Indeed (per keyword)
 
-For each keyword being searched this run, build
-`https://ca.indeed.com/jobs?q=<keyword, spaces as +>&l=Remote` and fetch it with WebFetch, asking
-explicitly for every markdown hyperlink pointing at a job posting (URLs containing `pagead/clk`,
-`/viewjob?jk=`, or `/rc/clk`), each with its title and company, output as raw links — not
-summarized away.
+`navigate` to:
+```
+https://ca.indeed.com/jobs?q=<keyword, spaces as +>&l=Remote
+```
 
-- **Single custom query** (arguments given): cap at the first 15 job links.
-- **Default rotation** (no arguments): cap at the first **8** job links per keyword, to keep the
-  total batch size reasonable across 6 keywords.
+Client-side elements may lazy-load — after `navigate`, `wait` ~2 seconds before calling
+`get_page_text`, or you may get a partial/placeholder render.
 
-If a keyword's search returns no job links, skip it and move to the next keyword — don't abort
-the whole rotation over one empty search. If every keyword in the rotation comes back empty (or
-the single custom query does), tell the user and suggest a different query or `/addjob <url>`
-with a direct posting link instead. Stop.
+`get_page_text` should return each result's title, company, location, and snippet directly.
+Job-posting links (`/viewjob?jk=`, `/rc/clk`, or `pagead/clk` — treat bare `pagead/clk` links
+with no `jk=` param as unstable per the caveat below) are **not always present in the plain text
+output** — use `find` on each result's title to get a clickable element ref/URL for step 8.
+Discard non-job links (ads for courses, employer resource pages, etc.).
 
-## 3. Dedupe (rotation mode only)
+**Prefer links containing `/viewjob?jk=` or `/rc/clk?jk=` over bare `pagead/clk` links (no `jk=`
+param)** — a prior run found a filed posting's `Source` was an ad-tracking link that had already
+rotated to a completely unrelated job by review time. If only a bare `pagead/clk` link is
+available for a result, still open it via `find`-then-click to reach the real content (`navigate`
+follows the redirect to the actual posting), but record the final resolved URL in the table, not
+the ad-tracking one.
+
+- **Single custom query**: cap at first 15 results.
+- **Default rotation**: cap at first **8** results per keyword.
+
+If a keyword returns no relevant results, skip it and move to the next keyword. If every keyword
+(or the single custom query) comes back empty, tell the user and stop.
+
+## 5. Dedupe (rotation mode only)
 
 Postings often show up under more than one keyword (e.g. a "Platform Engineer" posting also
-surfaces under "DevOps Engineer"). Before fetching full details, dedupe the combined link list by
-company + title (case-insensitive, ignore minor punctuation differences) so each unique posting
-is only fetched and scored once, even if it matched multiple keywords.
+surfaces under "DevOps Engineer"). Before opening full postings, dedupe the combined result list
+by company + title (case-insensitive, ignore minor punctuation differences) so each unique
+posting is only opened and scored once.
 
-## 4. Read profile.md
+## 6. Read profile.md
 
 Read `profile.md` in full before scoring anything — same hard requirement as `/addjob`.
 
-## 5. Fetch each posting
+## 7. No eligibility gate
 
-WebFetch each deduped job link individually, extracting: title, company, location,
-remote/hybrid/onsite status, salary/rate if stated, engagement type, and enough of the
-responsibilities/requirements to score. If one fails to fetch, mark it "couldn't fetch" in the
-table below rather than dropping it or aborting the batch.
+Indeed's `l=Remote` param is scoped to `ca.indeed.com`, so results are Canada-market by
+construction — same reasoning as `/check-eluta`. Skip straight to opening postings and scoring,
+but stay alert for explicit provincial/regional residency requirements buried in posting body text
+(a hard-gate red flag in `profile.md`) — flag these when found rather than silently scoring past
+them.
 
-## 6. Quick-score each (0–10)
+## 8. Open each candidate posting
+
+Click the result (via the `find` ref from step 4) or `navigate` directly if you already have the
+resolved URL. Extract title, company, location, remote/hybrid/onsite status, salary/rate if
+stated, engagement type, and enough of the responsibilities/requirements to score.
+
+- **CAPTCHA or a blocking page appears instead of job content** → stop the entire run
+  immediately. Tell the user exactly what happened and which posting triggered it. Do not
+  continue, do not attempt to solve it.
+- **Posting fails to load** → mark "couldn't fetch," continue with the rest.
+- **Never click Apply or any other write-side button** — read-only navigation and text
+  extraction only, at every step of this command.
+
+## 9. Quick-score each (0–10)
 
 Score primarily on **skill and domain fit** against `profile.md`'s scoring notes: Azure depth,
 platform engineering/CI-CD/IaC scope, financial or energy sector relevance, autonomy vs.
@@ -73,25 +113,25 @@ ticket-taking. Logistics (on-site, below-target pay) don't drag the score down �
 instead. Keep the rationale to **one sentence** per posting — this is a scan, not the full
 `/addjob` writeup.
 
-## 7. Present the table
+## 10. Present the table
 
-Sorted highest score first. In rotation mode, note which keyword(s) surfaced each posting isn't
-necessary in the table itself — the dedupe in step 3 already collapsed that — but mention in the
-intro line how many keywords were searched and how many unique postings came back.
+Sorted highest score first. In rotation mode, note in the intro line how many keywords were
+searched and how many unique postings came back — no need to repeat which keyword(s) surfaced
+each posting, the dedupe in step 5 already collapsed that.
 
 | Role — Company | Score | Why | Flags |
 |---|---|---|---|
 
 No files are written at this step.
 
-## 8. Offer to go deeper
+## 11. Offer to go deeper
 
 Ask the user which posting(s), if any, should get the full `/addjob` treatment. For each one
 picked:
 
 - Run the duplicate check: `grep -ril "<company/role>" jobs/new/ jobs/applied/ jobs/rejected/`.
   Warn and confirm before proceeding if a match is found.
-- Reuse the posting content already fetched in step 5 — don't re-fetch.
+- Reuse the posting content already fetched in step 8 — don't re-navigate.
 - Produce the full resume delta, cover letter, and job file exactly per `/addjob`'s schema
   (`specs/addjob.md`), including the `Flags` field, written to
   `jobs/new/<YYYY-MM-DD>-<company-slug>-<role-slug>.md`.
@@ -99,3 +139,7 @@ picked:
 
 Never write directly to `jobs/applied/` or `jobs/rejected/` — those moves belong to `/review`
 only.
+
+## 12. Close the tab
+
+Close the Indeed tab at the end of the run — success, empty-result, or early-stop path alike.

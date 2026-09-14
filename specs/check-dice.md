@@ -33,14 +33,14 @@ the gate are marked ineligible with the reason and skipped for scoring, not sile
 
 1. **Determine query mode**: single custom query (arguments given) or full rotation (no
    arguments) — same rotation list as `/check-indeed`.
-2. **Build and fetch the search URL(s)** — location is always `Remote`, not a user-supplied
-   argument:
-   `https://www.dice.com/jobs?q=<keyword>&location=Remote&countryCode2=CA&filters.postedDate=SEVEN&filters.employmentType=CONTRACTS&language=en`
-   for each keyword in play this run.
-   Note: during testing, `location=Canada&radius=30&radiusUnit=mi` produced the cleanest
-   Canada/remote-biased results — a plain `location=Remote` text query on its own returned
-   noisier, more US-heavy results. `radius` doesn't apply to a "Remote" text location, so it's
-   dropped here. If results get noisy in practice, revisit this param combination first.
+2. **Build and fetch the search URL(s)** — **revised 2026-09-13**, given Marc is now open to
+   TN-visa-sponsored US roles (Canadian citizens get fast/cheap TN sponsorship under USMCA):
+   `https://www.dice.com/jobs?filters.postedDate=SEVEN&filters.employmentType=FULLTIME%7CCONTRACTS&filters.workplaceTypes=Remote&filters.willingToSponsor=true&q=<keyword>&countryCode2=CA&language=en`
+   for each keyword in play this run. `filters.willingToSponsor=true` and
+   `filters.workplaceTypes=Remote` replace the old `location=Remote` text param, which produced
+   noisy US-onsite-heavy results (see prior note, now superseded). `filters.employmentType`
+   includes both `FULLTIME` and `CONTRACTS` now, not just contracts — a sponsor-willing full-time
+   US role is now in scope too.
    Extract every `/job-detail/<id>` link with its title, company, location, and any rate/salary
    shown on the results page. Cap at 15-20 links for a single custom query, or 8 per keyword in
    rotation mode.
@@ -50,14 +50,20 @@ the gate are marked ineligible with the reason and skipped for scoring, not sile
 5. **For each deduped result, run the eligibility gate BEFORE scoring** — fetch the posting and
    check, in this order:
    - **Security clearance required** (TS/SCI, Secret, Public Trust, etc.) → ineligible. Clearance
-     eligibility requires US citizenship in practice even when not stated explicitly.
-   - **Work authorization explicitly restricted to US statuses** (e.g. "US Citizen, H-1B,
-     OPT-EAD, GC-EAD", "must be authorized to work in the US without sponsorship") with no
-     mention of corp-to-corp, 1099-any-country, or international contractor arrangements →
-     ineligible.
-   - **On-site/hybrid at a US location** with no remote option → ineligible (separate from the
-     work-authorization reason — this is a straightforward logistics fail, not worth a resume
-     delta either).
+     eligibility requires US citizenship in practice even when not stated explicitly, and TN
+     status doesn't change this.
+   - **Work authorization explicitly restricted to US statuses, WITH sponsorship mentioned**
+     (e.g. "will sponsor," "able to sponsor," H-1B/TN/visa sponsorship language) → **revised
+     2026-09-13: eligible**, not ineligible. Marc (Canadian citizen) is TN-visa eligible under
+     USMCA — fast/cheap sponsorship relative to other nationalities. **Flag prominently:
+     "TN-sponsorship path — likely W2 employment, no corp-to-corp; confirm sponsorship type
+     (TN vs. green card) with recruiter before proceeding — see feedback memory on TN vs. green
+     card distinction."** Do not silently treat "willing to sponsor" as a green-card offer.
+   - **Work authorization explicitly restricted to US statuses, with NO sponsorship mentioned**
+     (e.g. "must be authorized to work in the US without sponsorship") → still **ineligible** —
+     this is a hard closed door regardless of Marc's TN eligibility.
+   - **On-site (not hybrid/remote) at a US location** with no remote option → ineligible — TN
+     doesn't solve the relocation/logistics problem, this is a separate practical fail.
    - If none of the above apply (posting is silent on work authorization, or explicitly open to
      corp-to-corp/international contractors, or is Canada-based) → **eligible**, proceed to
      scoring.
