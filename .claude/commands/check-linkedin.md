@@ -12,8 +12,10 @@ This command drives your real Chrome browser (`mcp__claude-in-chrome__*` tools) 
 
 One `ToolSearch` call, before anything else:
 ```
-select:mcp__claude-in-chrome__tabs_context_mcp,mcp__claude-in-chrome__navigate,mcp__claude-in-chrome__computer,mcp__claude-in-chrome__read_page,mcp__claude-in-chrome__tabs_create_mcp,mcp__claude-in-chrome__tabs_close_mcp,mcp__claude-in-chrome__get_page_text,mcp__claude-in-chrome__find
+select:mcp__claude-in-chrome__tabs_context_mcp,mcp__claude-in-chrome__navigate,mcp__claude-in-chrome__computer,mcp__claude-in-chrome__read_page,mcp__claude-in-chrome__tabs_create_mcp,mcp__claude-in-chrome__tabs_close_mcp,mcp__claude-in-chrome__get_page_text,mcp__claude-in-chrome__find,WebSearch
 ```
+`WebSearch` is used later (step 7) to recover a canonical employer-page URL when a LinkedIn
+posting fails to load or is expired.
 
 ## 2. Open a tab and confirm login
 
@@ -104,7 +106,10 @@ enough of the description to score.
 - **Challenge/CAPTCHA/"verify it's you" page detected instead of job content** → stop the entire
   run immediately. Tell the user exactly what happened and which job ID triggered it. Do not
   continue to remaining postings, do not attempt to solve it.
-- **"No longer accepting applications" or failed load** → mark "couldn't fetch / expired,"
+- **"No longer accepting applications" or failed load** → before marking it expired, try a quick
+  web search for the exact title + company to find the employer's own careers page — if found,
+  prefer that as the canonical URL (LinkedIn listings frequently outlive their real application
+  window) and confirm the details still match. Otherwise mark "couldn't fetch / expired" and
   continue with the rest.
 - **Never click Easy Apply, Apply, Save, Follow, or any other write-side button** — read-only
   navigation and text extraction only, at every step of this command.

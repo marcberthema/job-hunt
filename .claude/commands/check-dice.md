@@ -5,6 +5,10 @@ argument-hint: [search terms — optional, defaults to the full role rotation]
 
 Implements `specs/check-dice.md` / `plans/check-dice.md`. Follow these steps in order.
 
+If `WebSearch` is deferred (not yet in your active tool list), load it via one `ToolSearch` call
+(`select:WebSearch`) before step 5 — it's used there to recover a canonical employer-page URL
+when a posting fails to fetch or looks stale.
+
 ## 1. Parse input
 
 `$ARGUMENTS` is optional. Location/sponsorship filters are fixed — not user-supplied arguments.
@@ -63,7 +67,11 @@ Read `profile.md` in full before doing anything else.
 
 ## 5. Eligibility gate — run this BEFORE scoring, for every posting
 
-Fetch each deduped posting. Before extracting full requirements or scoring, check in this order:
+Fetch each deduped posting. **If a posting fails to fetch or looks stale**, try a quick web
+search for the exact title + company before giving up — if the posting names a direct employer
+(not an anonymized staffing-agency client) and their own careers page turns up, prefer that as
+the canonical URL and confirm the details still match. Dice listings, like other aggregators,
+rotate and expire. Before extracting full requirements or scoring, check in this order:
 
 1. **Security clearance mentioned** (TS/SCI, Secret, Public Trust, etc.) → **INELIGIBLE**:
    clearance required — this requires US citizenship in practice even when not stated

@@ -15,8 +15,10 @@ required.
 
 One `ToolSearch` call, before anything else:
 ```
-select:mcp__claude-in-chrome__tabs_context_mcp,mcp__claude-in-chrome__navigate,mcp__claude-in-chrome__computer,mcp__claude-in-chrome__read_page,mcp__claude-in-chrome__tabs_create_mcp,mcp__claude-in-chrome__tabs_close_mcp,mcp__claude-in-chrome__get_page_text,mcp__claude-in-chrome__find
+select:mcp__claude-in-chrome__tabs_context_mcp,mcp__claude-in-chrome__navigate,mcp__claude-in-chrome__computer,mcp__claude-in-chrome__read_page,mcp__claude-in-chrome__tabs_create_mcp,mcp__claude-in-chrome__tabs_close_mcp,mcp__claude-in-chrome__get_page_text,mcp__claude-in-chrome__find,WebSearch
 ```
+`WebSearch` is used later (step 8) to recover a canonical employer-page URL when an Indeed
+posting fails to load or looks stale.
 
 ## 2. Open a tab
 
@@ -101,7 +103,12 @@ stated, engagement type, and enough of the responsibilities/requirements to scor
 - **CAPTCHA or a blocking page appears instead of job content** → stop the entire run
   immediately. Tell the user exactly what happened and which posting triggered it. Do not
   continue, do not attempt to solve it.
-- **Posting fails to load** → mark "couldn't fetch," continue with the rest.
+- **Posting fails to load, looks stale, or is a sponsored/expired listing** → before giving up,
+  try a quick web search for the exact title + company to find the employer's own careers page.
+  If found, treat the employer's page as the canonical source (use its URL in the results table
+  and any filed job, not the Indeed link) — employer pages don't rotate/expire the way aggregator
+  listings do, and confirm the same role/details still match before treating it as validated. If
+  no employer page turns up, mark "couldn't fetch" and continue with the rest.
 - **Never click Apply or any other write-side button** — read-only navigation and text
   extraction only, at every step of this command.
 

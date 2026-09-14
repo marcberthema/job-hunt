@@ -5,6 +5,10 @@ argument-hint: [search terms — optional, defaults to the full role rotation]
 
 Implements `specs/check-builtin.md` / `plans/check-builtin.md`. Follow these steps in order.
 
+If `WebSearch` is deferred (not yet in your active tool list), load it via one `ToolSearch` call
+(`select:WebSearch`) before step 5 — it's used there to recover a canonical employer-page URL
+when a posting fails to fetch or looks stale.
+
 ## 1. Parse input
 
 `$ARGUMENTS` is optional.
@@ -61,8 +65,11 @@ Read `profile.md` in full before scoring anything.
 
 WebFetch each deduped job link individually, extracting: title, company, location,
 remote/hybrid/onsite status, salary/rate if stated, engagement type, and enough of the
-responsibilities/requirements to score. If one fails to fetch, mark it "couldn't fetch" rather
-than dropping it or aborting the batch.
+responsibilities/requirements to score. If one fails to fetch, before marking it "couldn't
+fetch," try a quick web search for the exact title + company to find the employer's own careers
+page — if found, use that as the canonical URL (BuiltIn listings can be stale/expired) and confirm
+the details still match. Otherwise mark "couldn't fetch" rather than dropping it or aborting the
+batch.
 
 ## 6. Quick-score each (0–10)
 

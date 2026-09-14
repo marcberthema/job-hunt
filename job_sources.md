@@ -12,6 +12,16 @@ Claude to do it after you've pasted results from a manual visit.
 `Last Checked` date to today. If a source's access method changes (starts/stops working, gets a
 new skill), update the row rather than adding a duplicate.
 
+**Employer-canonical-URL convention (added 2026-09-14, ported from the parallel ChatGPT/Codex
+skill set in `.agents/skills/`):** when a posting fails to fetch, looks stale, or shows as
+expired/no-longer-accepting-applications, try a quick `WebSearch` for the exact title + company
+before giving up. If the employer's own careers page turns up with the same role, prefer that as
+the canonical URL (in the results table and in any filed job) over the aggregator link — employer
+pages don't rotate or expire the way Indeed/LinkedIn/Dice/BuiltIn listings do. Confirm the role
+details still match before treating it as validated. Currently implemented in `/check-indeed`,
+`/check-linkedin`, `/check-dice`, and `/check-builtin`; worth porting to other sources
+opportunistically as they're touched.
+
 ---
 
 ## Working — automated via skill
