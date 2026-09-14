@@ -16,13 +16,25 @@ Before scoring, read `profile.md` and `resume/marc-berthelette-resume-en.md` com
 If the user supplies a query, search that query only. Otherwise run the following LinkedIn-oriented phrase rotation:
 
 - `DevOps Consultant Remote`
+- `Senior DevOps Engineer Remote` 
+- `Staff DevOps Engineer Remote`
 - `Senior Site Reliability Engineer Remote`
-- `Platform Engineer Remote`
-- `Cloud Engineer Remote`
-- `DevSecOps Engineer Remote`
+- `Platform Engineer Remote` 
+- `Senior Platform Engineer Remote`
+- `Cloud Engineer Remote` 
+- `Infrastructure Engineer SRE Remote`
+- `DevSecOps Engineer Remote` 
+- `Deployment Engineer Remote` 
+- `Professional Services DevOps Engineer Remote`
 - `Forward Deployed Engineer Remote`
 
 Search for jobs posted in the past two days when the source exposes reliable dates. Target remote work explicitly open to Canada or Ontario and hybrid work in Ottawa, Kingston, Cornwall, and Montréal. For Montréal, exclude confirmed requirements above two office days weekly. Retain undisclosed hybrid cadence as `Hybrid — days not stated; confirm <=2`. Exclude fully on-site roles and remote roles restricted to an ineligible region.
+
+Run additional remote-only discovery passes using Canada's major employment hubs as the LinkedIn location: Toronto/GTA, Vancouver, Montréal, Calgary, Ottawa, Edmonton, Waterloo/Kitchener, Halifax, Winnipeg, Québec City, and Victoria. LinkedIn frequently indexes a Canada-remote position under an employer office or recruiting hub instead of labeling it Remote. These passes are discovery mechanisms, not permission to retain local on-site or hybrid roles outside Marc's reachable cities.
+
+Do not exclude a result based on LinkedIn's location label alone. Open the full description and retain it only when the posting itself explicitly permits remote work from Canada or Ontario, worldwide remote work compatible with a Canadian worker, or an equivalent eligible arrangement. Apply this validation to postings indexed under any Canadian city.
+
+Treat timezone language as a remote-eligibility signal worth validating. Phrases such as `USA or Canada (Eastern timezone)`, `Canada - Eastern time`, or `remote within Canada` qualify when the full posting does not impose an incompatible office requirement.
 
 Use public LinkedIn job pages and web searches targeting `linkedin.com/jobs/view/`. Because LinkedIn may restrict automated or logged-out access, supplement discovery with distinctive title/company searches and employer career sites. For a custom query, review up to 20 plausible results. For the default rotation, review up to 12 plausible results per phrase before deduplication. State the actual boundary when access or result volume prevents this.
 
