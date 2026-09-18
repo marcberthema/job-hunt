@@ -53,7 +53,7 @@ Close temporary cache and employer tabs after extracting the information. Stop u
 
 For every candidate, establish from an accessible full description the exact title and company, current availability, remote eligibility or hybrid cadence, location, stated compensation, and requirements needed for scoring. Treat removed employer pages and materially conflicting dates as stale.
 
-Deduplicate by employer canonical URL, then Eluta cache identity, then company plus exact title. Check `jobs/new/`, `jobs/applied/`, and `jobs/rejected/` for URL and company/title matches. Keep known roles in the table and label their pipeline status.
+Deduplicate by employer canonical URL, then Eluta cache identity, then company plus exact title. Check `applications.md` for a matching `Source` URL or `Company`+`Role` row. Keep known roles in the table and label their pipeline status from its `Status` column.
 
 ## Classification and scoring
 
@@ -71,7 +71,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output
 
-Before returning results, update only Eluta's board-specific report at `reports/eluta-job-search.html`. Refresh it on every invocation, including runs with no validated postings. Include all scored rows, current pipeline-status labels, direct accessible posting URLs, the run date, and search, validation, exclusion, employer-recovery, and inaccessible totals. Preserve useful filtering and sorting. Do not update `jobs/new/review-dashboard.html`.
+Before returning results, write this run's data to `reports/data/eluta.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py eluta` to regenerate `reports/eluta-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated postings. Include all scored rows, current pipeline-status labels, direct accessible posting URLs, the run date, and search, validation, exclusion, employer-recovery, and inaccessible totals.
 
 Lead with searches completed, unique postings reviewed, validated jobs, exclusions, employer-site recoveries, inaccessible postings, and known pipeline matches. Sort validated jobs by score descending using exactly:
 
@@ -80,8 +80,8 @@ Lead with searches completed, unique postings reviewed, validated jobs, exclusio
 
 Use only `SRE`, `Platform`, or `DevOps`. Prefer the employer's canonical URL; otherwise link the accessible Eluta cached copy. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores.
 
-After the table, list `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `jobs/new/`. Do not draft applications or write files other than the required board-specific report during discovery.
+After the table, list `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/eluta.json` during discovery.
 
 ## Follow-up filing
 
-For a selected posting, refresh it read-only, re-check duplicates, and follow `specs/addjob.md`. Write only to `jobs/new/`. Never submit an application, send an email, or change external or pipeline state through this skill.
+For a selected posting, refresh it read-only, re-check duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application, send an email, or change a row's status to `Applied` or `Rejected` through this skill.

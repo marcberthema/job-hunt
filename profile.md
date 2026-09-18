@@ -23,13 +23,13 @@
 | Field | Details |
 |-------|---------|
 | **Primary positioning** | Senior/Staff SRE · Platform Engineering · DevOps · Reliability Consultant (broadened 2026-09-11 — see Notes for Claude) |
-| **Open to** | Three tracks, in no particular priority order (updated 2026-09-11): (1) full-time employment at $160k–175k CAD/year, (2) full-time consulting contract at $110–120/hr CAD, or (3) a monthly-retainer fractional/part-time arrangement doing operational work for a small company — see note below, this channel is unproven and has no sourcing plan yet |
-| **Target consulting rate** | $110–130/hr CAD for a full-time contract; retainer-fee structure for fractional/part-time work is undefined — figure out market rate when/if a real opportunity surfaces |
+| **Open to** | Three tracks, in no particular priority order (updated 2026-09-14): (1) full-time employment at $160k–175k CAD/year, (2) full-time consulting contract at $110–130/hr CAD, or (3) fractional/part-time consulting, initially at $90+/hr CAD where hourly pricing is necessary and ultimately sold as a monthly retainer with no hours attached |
+| **Target consulting rate** | $110–130/hr CAD for a full-time contract; $90+/hr CAD floor for transitional hourly part-time work; end-state fractional model is a monthly retainer priced for access, responsibility, and outcomes—not a bundle of hours |
 | **Target employment salary** | Aspirational target $160,000–175,000 CAD/year. Scoring floor (updated 2026-09-11): **$140k+** worth considering for on-site/hybrid FTE; **$100k+** worth considering for 100% fully remote FTE (lower bar because remote removes commute/relocation cost entirely) |
 | **Work arrangement** | Remote preferred, but open to on-site/hybrid within reach of Smiths Falls, ON — see Geographic Reachability below |
 | **Geography** | Worldwide remote — open to any country where services can be legally provided as a Canadian incorporated entity (no visa required; selling services internationally, not relocating). For on-site/hybrid roles, only reachable from Smiths Falls, ON: Ottawa, Kingston, Brockville, Cornwall, and Montréal (the furthest acceptable) |
 
-### Retainer / Fractional Track (revised 2026-09-13 — end-goal reframe)
+### Retainer / Fractional Track (revised 2026-09-14 — pricing model clarified)
 
 **Long-term goal (2026-09-13):** Marc's actual end target is the "Million Dollar Consulting"
 fixed-price/value-based model (category 5 in `outreach/firm-comparison.md`'s engagement taxonomy)
@@ -37,8 +37,9 @@ fixed-price/value-based model (category 5 in `outreach/firm-comparison.md`'s eng
 there: (1) land a full-time role (~$150K CAD/year) to end the acute financial pressure on his
 family and restore stability, (2) once stable in that role (a few months in, not immediately),
 deliberately build a roster of retainer/fractional consulting clients on the side through his
-corporation, targeting an additional $50-100K/year at $75+/hr or a retainer-fee structure, (3) use
-that client base as the foundation to eventually transition toward the value-based model.
+corporation, using $90+/hr only as the floor for transitional hourly engagements, (3) move those
+services toward monthly retainers priced around access, responsibility, and outcomes, with no
+hours attached, and (4) use that client base as the foundation for the value-based model.
 
 **Sequencing — do not blur these phases:**
 - **Right now (urgent 5-week runway, see Current Situation in CLAUDE.md):** FTE/contract search
@@ -50,10 +51,10 @@ that client base as the foundation to eventually transition toward the value-bas
   FTE employment contract doesn't have a moonlighting/outside-employment or IP-assignment clause
   that would prohibit or restrict outside consulting work in the same field** — ask the employer
   directly if unclear, don't assume it's fine just because it's billed through the corporation.
-- **Reality check on the side-income target:** $50-100K/year at $75/hr is 640-1,300 hours/year —
-  roughly 12-25 hours/week on top of a full-time job, indefinitely. This is a real second
-  part-time commitment, not "a few hours here and there" — factor that into how many retainer
-  clients to actually take on.
+- **Capacity discipline still matters:** a no-hours-attached retainer is not unlimited labour.
+  Define the problems and responsibility covered, response expectations, communication cadence,
+  exclusions, and change process. Manage internal capacity without advertising or promising a
+  client a bank of hours.
 
 **Sourcing channels for retainer/fractional work (different from job-board postings)** — see
 `job_sources.md`'s Manual Only section for Business Talent Group, Catalant, GLG, and Coleman
@@ -62,21 +63,15 @@ Referral/network-built retainer relationships (the original 2026-09-11 plan) rem
 quality channel but are slower to develop — worth cultivating in parallel with the marketplace
 platforms once the FTE-stabilization phase begins.
 
-The $100/hr consulting-rate floor does not apply to this track — see the flexible/low-commitment
-part-time gig exception below, which this retainer-building goal is a deliberate, larger-scale
-version of (not just opportunistic inbound gigs).
+The normal $100/hr consulting-rate floor does not apply to this track. Transitional hourly
+part-time work has its own $90/hr CAD floor. A retainer is evaluated on scope, access, risk,
+effective economics, and capacity impact, but is never presented as prepaid hours.
 
-**Exception confirmed 2026-09-11 — flexible/low-commitment part-time gig income:** the $100/hr
-consulting rate floor does NOT apply to genuinely flexible, low-hour, no-sourcing-effort part-time
-work (e.g. 5–20 hrs/week, own schedule, found via normal job scanning rather than chased) — Marc
-will consider these on pay-worth-having grounds even below the consulting floor, as long as skill
-fit is real and it doesn't require active outreach to find. This is distinct from the parked
-retainer/fractional track above, which is about actively sourcing recurring client relationships;
-this exception is about opportunistically taking inbound flexible gig work (e.g. expert-network /
-AI-training-data platforms like Ethos) that surfaces on its own. Do not auto-skip a posting purely
-for being below $100/hr if it is flexible part-time and the skill fit is otherwise strong — flag
-the rate plainly and let Marc decide, the way the Ethos DevOps posting (2026-09-11, $80/hr,
-5–20 hrs/week) was handled.
+**Part-time floor confirmed 2026-09-14:** hourly fractional or part-time work must pay at least
+$90/hr CAD. This replaces the earlier below-$100 flexible-gig exception. Opportunities below
+$90/hr are a reject even when flexible or low commitment. Retainers do not have an hourly rate
+attached; assess whether the monthly fee is worthwhile for the defined responsibility, access,
+risk, and real capacity burden without quoting an hour allowance to the client.
 
 ### Geographic Reachability for On-Site/Hybrid Roles
 
@@ -211,7 +206,11 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 - **On-site/hybrid outside reachable range** — anywhere other than Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability above). Unlike other red flags below, this one **caps the score directly (0-4) rather than just being noted as a flag on top of a high skill score** — skill fit alone should never carry an unreachable on-site/hybrid role into the 5+ range, because it's not actually take-able. Within the reachable range: 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week is a flag unless the rate is well above target.
 - Single-client exclusive clause (corp-to-corp restriction)
 - Emphasis on benefits as a selling point (signals FTE culture-fit mismatch, not a disqualifier on its own now that FTE is a first-class target — see Engagement Preferences)
-- Rate below $100/hr for consulting; salary below $140k for on-site/hybrid employment or below $100k for 100% fully remote employment (updated 2026-09-11 — remote gets a lower floor because it removes commute/relocation cost entirely)
+- Rate below $100/hr for a full-time consulting contract or below $90/hr for hourly part-time/
+  fractional work; retainers are judged on the monthly fee relative to responsibility, access,
+  risk, and capacity burden rather than an advertised hourly equivalent. Salary below $140k for
+  on-site/hybrid employment or below $100k for 100% fully remote employment is also a red flag
+  (updated 2026-09-14).
 - Junior scope (ticket-taking, no architecture ownership)
 - **Cloud platform mismatch — graded, never a blanket refusal, and AWS ≠ GCP.** The test is whether the
   cloud platform *is the job* or merely *the venue*. Note the two are no longer equivalent for Marc:
@@ -258,7 +257,9 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
   postings cap at 0–4 regardless of how well the rest of the posting fits; "venue" postings score normally
   with the mismatch noted as a flag.
 - **0–4**: On-site/hybrid outside the reachable range (see Geographic Reachability), below the salary/rate
-  floor ($100/hr consulting, $140k on-site/hybrid FTE, or $100k 100%-remote FTE), or junior scope — skip.
+  floor ($100/hr full-time consulting, $90/hr hourly part-time/fractional, $140k on-site/hybrid
+  FTE, or $100k 100%-remote FTE), or junior scope — skip. Do not convert a monthly retainer into a
+  client-facing hour bundle; assess its economics against the defined responsibility and capacity burden.
   A reachable-city role requiring 3+ days/week on-site also scores here unless the rate is well above target.
 
 ---

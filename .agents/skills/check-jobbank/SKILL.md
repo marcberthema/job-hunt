@@ -55,7 +55,7 @@ Open every plausible result's direct `/jobsearch/jobposting/<id>` page. Establis
 
 Job Bank aggregates postings from other sources, including Indeed. Prefer the current originating employer posting as the canonical evidence and output URL when Job Bank links to it and it is accessible. If a full description cannot be validated, omit the role from the scored table and list it under `Could not validate` with the reason. Never score a search-result snippet.
 
-Deduplicate first by Job Bank identifier or canonical URL, then by company plus exact title. Check `jobs/new/`, `jobs/applied/`, and `jobs/rejected/` for URL, identifier, and company/title matches. Keep known roles in the table and label their pipeline status. Cross-source duplicates are expected; do not treat an Indeed-origin posting as new merely because Job Bank assigned it another URL.
+Deduplicate first by Job Bank identifier or canonical URL, then by company plus exact title. Check `applications.md` for a matching `Source` URL, identifier, or `Company`+`Role` row. Keep known roles in the table and label their pipeline status from its `Status` column. Cross-source duplicates are expected; do not treat an Indeed-origin posting as new merely because Job Bank assigned it another URL.
 
 ## Classification and scoring
 
@@ -75,7 +75,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output and report
 
-Before returning results, update only `reports/jobbank-job-search.html`. Refresh it on every invocation, including runs with no validated jobs. Include all scored rows, direct posting URLs, pipeline status, run date, and counts for results reviewed, plausible matches, eligible validated jobs, geographic or role exclusions, inaccessible postings, and known pipeline matches. Preserve useful filtering and sorting. Do not update `jobs/new/review-dashboard.html`.
+Before returning results, write this run's data to `reports/data/jobbank.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py jobbank` to regenerate `reports/jobbank-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated jobs. Include all scored rows, direct posting URLs, pipeline status, run date, and counts for results reviewed, plausible matches, eligible validated jobs, geographic or role exclusions, inaccessible postings, and known pipeline matches.
 
 Lead with the run totals and note that overlap with Indeed is expected. Sort validated roles by score descending using exactly:
 
@@ -84,8 +84,8 @@ Lead with the run totals and note that overlap with Indeed is expected. Sort val
 
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link to the employer's canonical posting when available; otherwise link directly to the Job Bank detail page. Preserve currency and pay period and use `Not stated` for unknown facts.
 
-After the table, list geographic and unrelated-role exclusions, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `jobs/new/`. Do not draft application material or write files other than the Job Bank report during discovery.
+After the table, list geographic and unrelated-role exclusions, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/jobbank.json` during discovery.
 
 ## Follow-up filing
 
-For a selected posting, refresh it read-only, re-check duplicates, and follow `specs/addjob.md`. Write only to `jobs/new/`. Never submit an application or move a job to `applied` or `rejected` without the user's explicit confirmation.
+For a selected posting, refresh it read-only, re-check duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied` or `Rejected` without the user's explicit confirmation.

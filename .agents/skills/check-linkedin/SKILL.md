@@ -50,7 +50,7 @@ Treat every LinkedIn interaction as read-only. Permitted actions are navigating,
 
 For every candidate, establish from an accessible full description the exact title/company, current availability, eligible location/arrangement, office cadence, stated compensation, and requirements needed for scoring. Do not score a search snippet or LinkedIn summary alone. Prefer the employer posting as the canonical URL and evidence source. If no current full description is accessible, omit the role from the scored table and list it under `Could not validate` with the reason.
 
-Deduplicate by employer canonical URL, then LinkedIn job ID, then company plus exact title. Check `jobs/new/`, `jobs/applied/`, and `jobs/rejected/` for URL and company/title matches. Keep known roles in the table but label their pipeline status beside the company.
+Deduplicate by employer canonical URL, then LinkedIn job ID, then company plus exact title. Check `applications.md` for a matching `Source` URL or `Company`+`Role` row. Keep known roles in the table but label their pipeline status beside the company from its `Status` column.
 
 ## Classification and scoring
 
@@ -68,7 +68,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output
 
-Before returning the result, update only LinkedIn's board-specific report at `reports/linkedin-job-search.html` so it reflects the current validated run. Include every scored row, current pipeline-status labels, direct posting URLs, the run date, and search/validation/exclusion totals. Preserve useful filtering and sorting. This report update is required on every invocation, including reruns with no new postings. Do not use or update `jobs/new/review-dashboard.html` for search-run reporting.
+Before returning the result, write this run's data to `reports/data/linkedin.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py linkedin` to regenerate `reports/linkedin-job-search.html` — never hand-author the HTML directly, so it reflects the current validated run. Include every scored row, current pipeline-status labels, direct posting URLs, the run date, and search/validation/exclusion totals. This data refresh is required on every invocation, including reruns with no new postings.
 
 Lead with search phrases completed, unique postings validated, exclusions, employer-site recoveries, inaccessible postings, and known pipeline matches. Sort every validated role by score descending using exactly:
 
@@ -77,8 +77,8 @@ Lead with search phrases completed, unique postings validated, exclusions, emplo
 
 Use only `SRE`, `Platform`, or `DevOps`. Link directly to the accessible full posting, preferring the employer page. Preserve currency and pay period; use `Not stated` for unknown facts. Include low scores.
 
-After the table, list `Could not validate` entries and material search limitations. Explicitly distinguish employer-validated roles from LinkedIn pages that were inaccessible. Ask which roles the user wants investigated or added to `jobs/new/`. Do not draft applications or write files other than the required board-specific report during discovery.
+After the table, list `Could not validate` entries and material search limitations. Explicitly distinguish employer-validated roles from LinkedIn pages that were inaccessible. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/linkedin.json` during discovery.
 
 ## Follow-up filing
 
-For a selected posting, refresh it read-only, re-check duplicates, and follow `specs/addjob.md`. Write only to `jobs/new/`. Never submit an application or change LinkedIn state through this skill; application submission belongs to a separate, explicitly requested workflow.
+For a selected posting, refresh it read-only, re-check duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change LinkedIn state through this skill; application submission belongs to a separate, explicitly requested workflow.
