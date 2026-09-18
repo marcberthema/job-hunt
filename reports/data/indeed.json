@@ -38,6 +38,18 @@
         "Haber's freshly indexed Forward Deployment Engineer role was excluded because it requires repeated 2–3 week on-site mill deployments and pulp/paper process expertise.",
         "Vista's Lead SRE page still could not be fetched and remains unvalidated. No eligible Kingston- or Cornwall-only posting surfaced."
       ]
+    },
+    {
+      "heading": "September 18 decisions",
+      "items": [
+        "<b>Aylo</b> (DevOps Engineer — Night Shift), <b>Sectigo</b> (Site Reliability Engineer, $80–100K), <b>Realign LLC</b> (Core SRE Engineer), <b>ALTEN Canada</b> (Production Reliability &amp; Support Expert), and <b>NTT DATA</b> (Site Reliability Engineer with Python): all skipped by Marc's explicit call — not pursued."
+      ]
+    },
+    {
+      "heading": "September 18 decisions (batch 2)",
+      "items": [
+        "<b>Assent</b> (Senior DevOps Engineer — Data & AI Platform), <b>Lightspeed</b> (Staff Site Reliability Engineer — Data), <b>Fiveonefour Labs</b> (Forward Deployed Engineer — Montréal), <b>Infostrux Solutions</b> (Forward Deployed Engineer), <b>Optable Technologies</b> (Site Reliability Engineer), <b>PPT</b> (DevOps Engineer), and <b>Carbon60 / OpsGuru</b> (Forward Deployed Engineer — Data, ML & AI): all skipped by Marc's explicit call — not pursued."
+      ]
     }
   ],
   "method": "Boundary: one public discovery pass for each of the nine required title families, with Canada-remote and eligible-city terms combined, supplemented by accessible full Indeed descriptions and employer pages. Forty-six scored records remain: 43 current/actionable and 3 confirmed expired. Freshness checked September 18, 2026. Indeed indexing does not expose a dependable two-day filter to public search; no sign-in, form submission or CAPTCHA bypass occurred.",
@@ -216,7 +228,7 @@
       "salary": "Not stated",
       "gap": "FinOps ownership and deeper Azure platform administration",
       "url": "https://ca.indeed.com/viewjob?jk=6da1ac91ddcbe921",
-      "status": ""
+      "status": "Expired — no longer accepting applications, confirmed by Marc Sep 18"
     },
     {
       "score": 7,
@@ -227,7 +239,7 @@
       "salary": "Not stated",
       "gap": "Depth with IIS, F5 BIG-IP and .NET delivery",
       "url": "https://ca.indeed.com/viewjob?jk=fe6a7f2d5c18c15e",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 7,
@@ -238,7 +250,7 @@
       "salary": "Not stated",
       "gap": "ServiceNow administration/development emphasis",
       "url": "https://ca.indeed.com/viewjob?jk=f6a2287e29c8d0cc",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 7,
@@ -249,7 +261,7 @@
       "salary": "CAD $100,000/year",
       "gap": "Advanced Sybase or DB2 SQL support",
       "url": "https://ca.indeed.com/viewjob?jk=e049f0eabd29239d",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 7,
@@ -260,7 +272,7 @@
       "salary": "CAD $68,000/year",
       "gap": "Enterprise middleware and BI platform support depth",
       "url": "https://emplois.ca.indeed.com/viewjob?jk=c62df83b51dfc1d2",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 7,
@@ -271,7 +283,7 @@
       "salary": "CAD $80,000–$100,000/year",
       "gap": "Internet-facing SaaS production ownership at Sectigo's scale",
       "url": "https://ca.indeed.com/viewjob?jk=59b0a8e73e5c1feb",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 6,
@@ -282,7 +294,7 @@
       "salary": "CAD $125,200–$132,500/year",
       "gap": "AI-agent workload reliability and formal error-budget ownership",
       "url": "https://ca.indeed.com/viewjob?jk=37af0e4e73fbfad1",
-      "status": "Current — checked September 16"
+      "status": "Expired — no longer accepting applications, confirmed by Marc Sep 18"
     },
     {
       "score": 6,
@@ -348,7 +360,7 @@
       "salary": "Not stated",
       "gap": "High-traffic multi-datacenter operations at billions-of-hits scale",
       "url": "https://ca.indeed.com/viewjob?jk=6d2f62f37ffa5741",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 5,
@@ -359,7 +371,7 @@
       "salary": "Not stated",
       "gap": "Strong production Go development is mandatory",
       "url": "https://ca.indeed.com/viewjob?jk=43e78e2772a60354",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 5,
@@ -392,7 +404,7 @@
       "salary": "Not stated",
       "gap": "Snowflake and data-platform specialization",
       "url": "https://ca.indeed.com/viewjob?jk=38721f59c913dddb",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 5,
@@ -425,7 +437,7 @@
       "salary": "Not stated",
       "gap": "Data-product engineering and production application delivery",
       "url": "https://ca.indeed.com/viewjob?jk=0e054fdd7a629d4b",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 5,
@@ -447,7 +459,7 @@
       "salary": "Not stated",
       "gap": "Deep GCP, BigQuery and Vertex AI platform ownership",
       "url": "https://ca.indeed.com/viewjob?jk=cf21fca2ccfa7dce",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 4,
@@ -480,7 +492,7 @@
       "salary": "CAD $135,000–$160,000/year",
       "gap": "Deep Snowflake, dbt and Airflow operational expertise",
       "url": "https://ca.indeed.com/viewjob?jk=53df5f9ca20084ea",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 4,
@@ -513,7 +525,7 @@
       "salary": "CAD $160,000–$200,000/year",
       "gap": "Production ML/AI and data-platform depth",
       "url": "https://ca.indeed.com/viewjob?jk=7de4f9bcc320d5de",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 3,

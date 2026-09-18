@@ -112,67 +112,103 @@
   ],
   "rows": [
     {
-      "title": "Cloud & Application Platform Engineer — Quantum Technologies",
       "score": 5,
-      "why": "Cloud migration, OpenShift, automation, platform services, certificates and production-readiness overlap.",
-      "flags": "$80–$90/hour, eight-month W-2 contract. Authorization list names USC/GC/H-1B/OPT-EAD; confirm TN support and Canada-based remote eligibility. Current — checked September 18.",
-      "url": "https://www.dice.com/job-detail/d57b98ba-d63f-40f4-add5-1e9c3dafe833"
+      "family": "Platform",
+      "title": "Cloud & Application Platform Engineer",
+      "company": "Quantum Technologies",
+      "location": "Remote — US authorization list (USC/GC/H-1B/OPT-EAD), no Canada/TN mention",
+      "salary": "$80-90/hour (~$108-126 CAD/hr)",
+      "gap": "OpenShift/certificate/ServiceNow overlap is strong, but reads as app-support/platform-ops hybrid (ongoing Java/.NET maintenance), not pure platform engineering; W-2 only, Canada/TN eligibility unconfirmed",
+      "url": "https://www.dice.com/job-detail/d57b98ba-d63f-40f4-add5-1e9c3dafe833",
+      "status": "Applied — Sep 18"
     },
     {
-      "title": "Forward-Deployed Engineer with Generative AI — Key Business Solutions",
       "score": 2,
-      "why": "Azure, Python, CI/CD, monitoring and customer-facing delivery are adjacent.",
-      "flags": "Deep RAG, prompt engineering, LLM evaluation and full-stack AI engineering required. Six-month contract; confirm TN and Canada-based remote eligibility. Current — checked September 18.",
-      "url": "https://www.dice.com/job-detail/b64fdd50-d372-40f7-b09e-fb32dadc6622"
+      "family": "Platform",
+      "title": "Forward-Deployed Engineer with Generative AI",
+      "company": "Key Business Solutions",
+      "location": "Remote — confirm TN and Canada-based eligibility",
+      "salary": "Not stated",
+      "gap": "Deep RAG, prompt engineering, LLM evaluation, and full-stack AI engineering required",
+      "url": "https://www.dice.com/job-detail/b64fdd50-d372-40f7-b09e-fb32dadc6622",
+      "status": "Current — checked September 18"
     },
     {
-      "title": "Platform Engineer — AI Systems / Infrastructure — Highbrow",
       "score": 3,
-      "why": "Terraform, Docker, CI/CD, Python and platform reliability overlap.",
-      "flags": "AWS-native distributed AI execution platform with advanced Python backend ownership; $60–$72/hour. Confirm TN and Canada-based remote eligibility. Current — checked September 16.",
-      "url": "https://www.dice.com/job-detail/dc4516b9-650d-442a-a08b-33ac8c0b6b11"
+      "family": "Platform",
+      "title": "Platform Engineer — AI Systems / Infrastructure",
+      "company": "Highbrow",
+      "location": "Remote — confirm TN and Canada-based eligibility",
+      "salary": "$60-72/hour",
+      "gap": "AWS-native distributed AI execution platform with advanced Python backend ownership required",
+      "url": "https://www.dice.com/job-detail/dc4516b9-650d-442a-a08b-33ac8c0b6b11",
+      "status": "Current — checked September 16"
     },
     {
-      "title": "Site Reliability Engineer — Esolvit",
       "score": 3,
-      "why": "Linux/Windows operations, CVE visibility, remediation coordination and regulated-environment experience overlap.",
-      "flags": "Eight years of hands-on application vulnerability remediation is required; $60–$70/hour. Confirm TN and Canada-based remote eligibility. Current — checked September 16.",
-      "url": "https://www.dice.com/job-detail/7d41153b-c415-45ad-a546-7610d018ad50"
+      "family": "SRE",
+      "title": "Site Reliability Engineer",
+      "company": "Esolvit",
+      "location": "Remote — confirm TN and Canada-based eligibility",
+      "salary": "$60-70/hour",
+      "gap": "Eight years of hands-on application vulnerability remediation required",
+      "url": "https://www.dice.com/job-detail/7d41153b-c415-45ad-a546-7610d018ad50",
+      "status": "Current — checked September 16"
     },
     {
-      "title": "Lead Site Reliability Engineer — IBOTIX",
       "score": 3,
-      "why": "Strong Terraform, GitHub Actions, Python and reliability overlap.",
-      "flags": "GCP-primary with 8+ years public-cloud administration; US-only remote; confirm TN and laptop-pickup logistics. Current — checked September 16.",
-      "url": "https://www.dice.com/job-detail/42464693-63fb-48f6-beb2-b52eb5ed749a"
+      "family": "SRE",
+      "title": "Lead Site Reliability Engineer",
+      "company": "IBOTIX",
+      "location": "US-only remote",
+      "salary": "Not stated",
+      "gap": "GCP-primary with 8+ years public-cloud administration required — hard-gate territory",
+      "url": "https://www.dice.com/job-detail/42464693-63fb-48f6-beb2-b52eb5ed749a",
+      "status": "Current — checked September 16"
     },
     {
-      "title": "DevOps Engineer / SRE Engineer — JC Corporations",
       "score": 2,
-      "why": "Terraform, Jenkins, Python/Bash and SRE responsibilities overlap.",
-      "flags": "Requires 10+ years deep production AWS/EKS; $50–$90/hour; confirm TN despite C2C/W-2 options. Current — checked September 16.",
-      "url": "https://www.dice.com/job-detail/d370bd8e-7ebc-412a-a006-836756e5c7c6"
+      "family": "DevOps",
+      "title": "DevOps Engineer / SRE Engineer",
+      "company": "JC Corporations",
+      "location": "Remote — confirm TN despite C2C/W-2 options",
+      "salary": "$50-90/hour",
+      "gap": "Requires 10+ years deep production AWS/EKS",
+      "url": "https://www.dice.com/job-detail/d370bd8e-7ebc-412a-a006-836756e5c7c6",
+      "status": "Current — checked September 16"
     },
     {
-      "title": "Agentic AI Forward Deployed Engineer — Photon",
       "score": 2,
-      "why": "Azure, Python, CI/CD and production-readiness skills overlap.",
-      "flags": "Requires 6+ years building AI/ML applications and production AI systems; confirm TN and US location eligibility. Current — checked September 16.",
-      "url": "https://www.dice.com/job-detail/ec02a127-8281-4b31-9087-2b0971e4dae6"
+      "family": "Platform",
+      "title": "Agentic AI Forward Deployed Engineer",
+      "company": "Photon",
+      "location": "Remote — confirm TN and US location eligibility",
+      "salary": "Not stated",
+      "gap": "Requires 6+ years building AI/ML applications and production AI systems",
+      "url": "https://www.dice.com/job-detail/ec02a127-8281-4b31-9087-2b0971e4dae6",
+      "status": "Current — checked September 16"
     },
     {
-      "title": "Forward Deployed Engineer — Ekcel Technologies",
       "score": 2,
-      "why": "Customer delivery, Python, Kubernetes, CI/CD and regulated-domain exposure overlap.",
-      "flags": "Palantir certification plus deep production AI/ML, RAG and full-stack engineering are mandatory; confirm TN. Freshness unconfirmed — checked September 16.",
-      "url": "https://www.dice.com/job-detail/21e37dd5-1c00-4fd7-bb06-89f930cacf6e"
+      "family": "Platform",
+      "title": "Forward Deployed Engineer",
+      "company": "Ekcel Technologies",
+      "location": "Remote — confirm TN",
+      "salary": "Not stated",
+      "gap": "Palantir certification plus deep production AI/ML, RAG and full-stack engineering mandatory",
+      "url": "https://www.dice.com/job-detail/21e37dd5-1c00-4fd7-bb06-89f930cacf6e",
+      "status": "Freshness unconfirmed — checked September 16"
     },
     {
-      "title": "Agentic AI Architect / FDE — Photon",
       "score": 2,
-      "why": "Azure, infrastructure as code, containers and customer engagement are adjacent.",
-      "flags": "Requires 12+ years AI focus and roughly 80% US travel; confirm TN and travel feasibility. Current — checked September 16.",
-      "url": "https://www.dice.com/job-detail/5e702aec-6861-49fd-9e8a-6aa09056f65d"
+      "family": "Platform",
+      "title": "Agentic AI Architect / FDE",
+      "company": "Photon",
+      "location": "Remote — confirm TN and travel feasibility",
+      "salary": "Not stated",
+      "gap": "Requires 12+ years AI focus and roughly 80% US travel",
+      "url": "https://www.dice.com/job-detail/5e702aec-6861-49fd-9e8a-6aa09056f65d",
+      "status": "Current — checked September 16"
     }
   ]
 }

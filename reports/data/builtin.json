@@ -46,6 +46,12 @@
         "<b>Could not validate regional eligibility:</b> GitLab Orbit and Very Good Security expose complete requirements, but their direct pages do not explicitly confirm that these specific openings accept a Canada-based worker.",
         "Zscaler's Ottawa role is fully in-office and excluded. ServiceNow's Montréal FDE is hybrid but the complete posting does not disclose cadence and is primarily GenAI/ML delivery; it remains excluded from the scored target-family table."
       ]
+    },
+    {
+      "heading": "September 18 decisions",
+      "items": [
+        "<b>Assent</b> (Senior DevOps Engineer: Data & AI Platform), <b>Banyan Software</b> (Forward Deployed Engineer), and <b>Veeva</b> (DevOps Engineer): all skipped by Marc's explicit call — not pursued."
+      ]
     }
   ],
   "method": "Latest search run: September 18, 2026. Twenty-five unique current postings retained after direct-page validation, geographic screening and deduplication. The complete first results page was reviewed across 45 role/geography passes. Fourteen retained roles match existing pipeline records.",
@@ -59,7 +65,7 @@
       "salary": "CAD $128,300–$203,000/year",
       "gap": "Production Go and Elastic Cloud orchestration depth are not established, although the remaining stack aligns unusually well",
       "url": "https://builtin.com/job/senior-site-reliability-engineer-observability-analytics-platform-infra/11250234",
-      "status": "New — posted September 18"
+      "status": "Applied — Sep 18"
     },
     {
       "score": 5,
@@ -70,7 +76,7 @@
       "salary": "CAD $125,000–$145,000/year",
       "gap": "Requires deep production AWS networking, EKS, Datadog and RDS/PostgreSQL operations",
       "url": "https://builtin.com/job/site-reliability-engineer/11211507",
-      "status": "New — posted September 16"
+      "status": "Applied — Sep 18"
     },
     {
       "score": 4,
@@ -81,7 +87,7 @@
       "salary": "CAD $170,000–$210,000/year",
       "gap": "Deep hands-on AWS architecture across ECS/EKS, RDS, Lambda, CloudFront, VPC and IAM",
       "url": "https://builtin.com/job/senior-infrastructure-engineer/10884006",
-      "status": "New"
+      "status": "Applied — Sep 18"
     },
     {
       "score": 3,
@@ -257,7 +263,7 @@
       "salary": "Not stated",
       "gap": "Requires launching and operating production Kubernetes plus AWS, MongoDB, Redis, Prometheus and Grafana",
       "url": "https://builtin.com/job/site-reliability-engineer/8601646",
-      "status": "New"
+      "status": "Applied — Sep 18"
     },
     {
       "score": 4,
@@ -290,7 +296,7 @@
       "salary": "Not stated",
       "gap": "Production AWS RDS/Aurora operations and AWS networking depth",
       "url": "https://builtin.com/job/devops-engineer/10598697",
-      "status": ""
+      "status": "Expired — no longer accepting applications, confirmed by Marc Sep 18"
     },
     {
       "score": 4,
@@ -301,7 +307,7 @@
       "salary": "Not stated",
       "gap": "Deep Snowflake, dbt, and Airflow operational expertise",
       "url": "https://builtin.com/job/senior-devops-engineer-data-ai-platform/10985149",
-      "status": ""
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 4,
@@ -312,7 +318,7 @@
       "salary": "CAD $145,000 base",
       "gap": "Full-stack application modernization and modern UI framework experience",
       "url": "https://builtin.com/job/forward-deployed-engineer/8535081",
-      "status": "Confirm location"
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 4,
@@ -323,7 +329,7 @@
       "salary": "CAD $90,000–$165,000/year",
       "gap": "Extensive AWS application design and programming is central to the role",
       "url": "https://builtin.com/job/devops-engineer/7708058",
-      "status": "New"
+      "status": "Skipped — Marc's call Sep 18"
     },
     {
       "score": 3,

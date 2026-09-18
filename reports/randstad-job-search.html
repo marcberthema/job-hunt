@@ -40,8 +40,8 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <input id="q" type="search" placeholder="Search title, company, location or gap…">
     <select id="family"><option value="">All families</option><option>SRE</option><option>Platform</option><option>DevOps</option></select>
     <select id="location"><option value="">All locations</option></select>
-    <select id="minimum"><option value="0">Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4">4+ stretch</option></select>
-    <label class="pill"><input id="hideDone" type="checkbox" checked> Hide applied &amp; rejected</label>
+    <select id="minimum"><option value="0">Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4" selected>4+ stretch</option></select>
+    <label class="pill"><input id="hideDone" type="checkbox" checked> Hide applied, rejected, skipped &amp; expired</label>
   </div>
   <p class="count" id="count"></p>
   <div class="table-shell"><table>
@@ -63,7 +63,7 @@ const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){
   const q=$("#q").value.toLowerCase(),family=$("#family").value,location=$("#location").value.toLowerCase(),minimum=+$("#minimum").value,hideDone=$("#hideDone").checked;
-  const list=jobs.filter(j=>(!hideDone||!/(applied|rejected)/i.test(j.status||""))&&(!family||j.family===family)&&(!location||(j.location||"").toLowerCase().includes(location))&&j.score>=minimum&&(!q||Object.values(j).join(" ").toLowerCase().includes(q))).sort((a,b)=>dir*(a[key]<b[key]?-1:a[key]>b[key]?1:0));
+  const list=jobs.filter(j=>(!hideDone||!/(applied|rejected|skipped|expired)/i.test(j.status||""))&&(!family||j.family===family)&&(!location||(j.location||"").toLowerCase().includes(location))&&j.score>=minimum&&(!q||Object.values(j).join(" ").toLowerCase().includes(q))).sort((a,b)=>dir*(a[key]<b[key]?-1:a[key]>b[key]?1:0));
   rowsEl.innerHTML=list.length?list.map(j=>`<tr><td><span class="score ${j.score>=8?"high":j.score<=4?"low":""}">${j.score}/10</span></td><td><span class="pill">${esc(j.family)}</span></td><td class="job">${esc(j.title)}${j.status?`<br><span class="pill">${esc(j.status)}</span>`:""}</td><td class="company">${esc(j.company)}</td><td>${esc(j.location||"")}</td><td>${esc(j.salary||"Not stated")}</td><td>${esc(j.gap||"")}</td><td><a class="posting" href="${esc(j.url)}" target="_blank" rel="noopener">View ↗</a></td></tr>`).join(""):`<tr><td class="empty" colspan="8">No postings match the current filters.</td></tr>`;
   $("#count").textContent=`Showing ${list.length} of ${jobs.length} validated postings`;
 }

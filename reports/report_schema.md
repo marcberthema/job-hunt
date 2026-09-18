@@ -8,6 +8,12 @@ HTML deterministically from that JSON — no AI-authored HTML, no per-board besp
 `linkedin`, `jobbank`, `eluta`, `randstad`, `remoteok`, `sisystems`, `braintrust`, `wwr`,
 `glassdoor`, `procom`, `roberthalf`).
 
+**`rows` uses the exact field names below for every board, no exceptions.** The renderer is one
+shared template — a board whose rows use different field names (e.g. `why`/`flags` instead of
+`gap`/`location`/`salary`/`status`) will render those columns as `undefined` in the browser,
+silently, since nothing errors at build time. If you're hand-editing or migrating a board's data
+file, verify against this schema, not against an older version of that board's own file.
+
 ## Fields
 
 ```json
@@ -70,9 +76,14 @@ HTML deterministically from that JSON — no AI-authored HTML, no per-board besp
 - `score` (0–10, required), `family` (`SRE` | `Platform` | `DevOps`, required), `title`,
   `company`, `url` (required).
 - `location`, `salary`, `gap` — optional, default to blank/"Not stated" in the rendered table.
-- `status` — the `applications.md` pipeline label for this posting (`New`, `Applied`, `Rejected`,
-  or omitted/blank when it isn't in `applications.md` yet). Drives the "hide applied & rejected"
-  toggle and the status pill under the job title.
+- `status` — this posting's pipeline label, starting with one of `New`, `Applied`, `Rejected`,
+  `Skipped`, or `Expired` (free text may follow, e.g. `Applied — Sep 18`), or omitted/blank when
+  it isn't decided yet. `Applied` and `Rejected` should mirror the matching `applications.md` row
+  when one exists; `Skipped` and `Expired` are report-only states (a skip or an expired posting
+  never gets an `applications.md` row). The status pill under the job title always shows this
+  text, and the "hide applied, rejected, skipped & expired" toggle hides any row whose status
+  starts with one of those five words — so when the user says "skip this one" or confirms a
+  posting is no longer accepting applications, set `status` accordingly, not just a note.
 
 ## Regenerating the HTML
 
