@@ -1,0 +1,120 @@
+{
+  "board": "Eluta",
+  "run_date": "2026-09-18",
+  "eyebrow": "Eluta · read-only search",
+  "title": "SRE, Platform & DevOps opportunities",
+  "lede": "Fresh Eluta results validated from accessible full postings. Scores measure technical and domain fit only.",
+  "latest_update": "Updated September 18, 2026",
+  "stats": [
+    {
+      "value": 25,
+      "label": "search passes"
+    },
+    {
+      "value": 16,
+      "label": "plausible candidates"
+    },
+    {
+      "value": 4,
+      "label": "validated"
+    },
+    {
+      "value": 8,
+      "label": "excluded"
+    },
+    {
+      "value": 4,
+      "label": "inaccessible"
+    },
+    {
+      "value": 2,
+      "label": "external recoveries"
+    },
+    {
+      "value": 4,
+      "label": "pipeline matches"
+    }
+  ],
+  "could_not_validate": [
+    "Senior Infrastructure Engineer (ML Inference) — Artificial.Agency: Eluta says remote may be possible only for exceptional candidates; no accessible full posting confirmed eligibility or requirements.",
+    "Lead Infrastructure Engineer — Electronic Arts: fresh remote-indexed result, but the accessible sources did not expose enough regional and role detail to score safely."
+  ],
+  "notes_sections": [
+    {
+      "heading": "Excluded or stale",
+      "items": [
+        "<b>PLATO DevOps Engineer (Azure ARO)</b> and <b>PLATO Infrastructure Engineer</b>: excluded under the profile's explicit PLATO eligibility hard gate; both also require current Secret clearance.",
+        "<b>Leap Tools DevOps Engineer</b>: Eluta labels it recent, but authoritative sources date the posting roughly two to three months earlier; preserved as <b>Likely expired — checked September 16</b>.",
+        "<b>Director, Cloud Engineering — Magnet Forensics</b>: people-management role rather than an individual-contributor platform position.",
+        "<b>Cloud Network Engineer — Clir</b>: junior scope and CAD $40,000–$45,000 salary.",
+        "<b>Zscaler SRE — DXC</b>: Ottawa role is exclusively on-site.",
+        "<b>Reliability Engineer — Galderma</b>: manufacturing reliability, unrelated to software SRE."
+      ]
+    },
+    {
+      "heading": "Run notes",
+      "items": [
+        "Completed 10 Canada-remote title searches and 15 reachable-city searches across Ottawa, Kingston, Brockville, Cornwall, and Montréal.",
+        "Orion Digital and Newfold Digital were recovered through current full descriptions after Eluta supplied discovery results.",
+        "No fresh eligible hybrid role was found. Kingston, Brockville, and Cornwall had no fresh target-family result.",
+        "Known pipeline matches: Case IQ is applied; BMO's Senior Cloud Engineer is rejected.",
+        "All browser activity was read-only. No Apply, Email, Notify Me, account, or form controls were used."
+      ]
+    },
+    {
+      "heading": "September 18 refresh delta",
+      "items": [
+        "<b>Senior DevOps Developer — Autodesk</b> and <b>Principal SRE / SRE Team Lead — Cerence</b> appeared as fresh remote-indexed results, but stable full descriptions and regional requirements were not exposed during this run, so neither was scored.",
+        "<b>Lead Site Reliability Engineer — Movable Ink</b> is fresh but matches the existing rejected pipeline role.",
+        "Case IQ and Orion Digital/Mogo remain visible at two days old; both are already represented in the pipeline and retained in the validated table.",
+        "The reachable-city pass encountered an Eluta UI timeout after confirming the city autocomplete path; no unvalidated snippet was promoted to the scored table."
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "score": 8,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Case IQ",
+      "status": "Applied — September 15",
+      "location": "Remote — Canada",
+      "salary": "CAD $115,000–$130,000/year",
+      "gap": "Production AWS infrastructure and AWS IaC depth",
+      "url": "https://dailyremote.com/remote-job/dev-ops-engineer-5610910"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer, AI Platform",
+      "company": "Newfold Digital / Web.com",
+      "status": "Applied — September 16",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Production Kubernetes administration and AI-platform workload depth",
+      "url": "https://builtin.com/job/senior-devops-engineer-ai-platform/10989047"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "DevOps Staff Platform Engineer",
+      "company": "Orion Digital",
+      "status": "Rejected — September 16",
+      "location": "Remote — Canada",
+      "salary": "CAD $135,000–$170,000/year + bonus + equity",
+      "gap": "Deep current production Kubernetes and AWS/OCI platform ownership",
+      "url": "https://ca.indeed.com/viewjob?jk=04d6596c6a8cdefc"
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "Senior Cloud Engineer",
+      "company": "BMO Financial Group",
+      "status": "Rejected — July 7",
+      "location": "Remote — Ontario",
+      "salary": "CAD $75,900–$141,900/year",
+      "gap": "Deep AWS-native infrastructure ownership",
+      "url": "https://ca.indeed.com/viewjob?jk=df3e9c62090477ba"
+    }
+  ]
+}

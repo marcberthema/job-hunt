@@ -65,7 +65,7 @@ For every eligible or unclear plausible posting, capture:
 
 If a canonical posting is inaccessible and the API description is insufficient, list it under `Could not validate` and do not score it.
 
-Check `jobs/new/`, `jobs/applied/`, and `jobs/rejected/` for RemoteOK ID, canonical URL, and company/title matches. Keep known eligible roles in the results and label their pipeline status.
+Check `applications.md` for a matching RemoteOK canonical URL or `Company`+`Role` row. Keep known eligible roles in the results and label their pipeline status from its `Status` column.
 
 ## Classification and scoring
 
@@ -85,7 +85,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output and report
 
-Before returning results, update only `reports/remoteok-job-search.html`. Refresh it on every invocation, including runs with no eligible jobs. Include every scored row, direct posting URLs, pipeline status, run date, API inventory size, plausible candidates, eligible, unclear, ineligible, inaccessible, stale, and known-pipeline counts. Preserve useful filtering and sorting. Do not update `jobs/new/review-dashboard.html`.
+Before returning results, write this run's data to `reports/data/remoteok.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py remoteok` to regenerate `reports/remoteok-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every scored row, direct posting URLs, pipeline status, run date, API inventory size, plausible candidates, eligible, unclear, ineligible, inaccessible, stale, and known-pipeline counts.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 
@@ -94,8 +94,8 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the canonical RemoteOK detail page. Preserve currency and pay period, use `Not stated` for unknown facts, and include low scores rather than hiding weak matches.
 
-After the table, list regional exclusions, unclear eligibility, `Could not validate` entries, stale postings, and material search limitations. Ask which eligible roles the user wants investigated or added to `jobs/new/`. Do not draft application material or write files other than the RemoteOK report during discovery.
+After the table, list regional exclusions, unclear eligibility, `Could not validate` entries, stale postings, and material search limitations. Ask which eligible roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/remoteok.json` during discovery.
 
 ## Follow-up filing
 
-For a selected posting, refresh it read-only, re-check regional eligibility and duplicates, and follow `specs/addjob.md`. Write only to `jobs/new/`. Never submit an application or move a role to `applied` or `rejected` without the user's explicit confirmation.
+For a selected posting, refresh it read-only, re-check regional eligibility and duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied` or `Rejected` without the user's explicit confirmation.

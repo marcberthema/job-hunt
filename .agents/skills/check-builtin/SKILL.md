@@ -81,7 +81,7 @@ If a posting cannot be opened or no longer contains a real job description, omit
 
 Deduplicate across every search pass. Prefer canonical URL identity; also collapse the same company plus exact title when Built In exposes multiple URLs for the same posting. Preserve genuinely different roles at the same company.
 
-Check `jobs/new/`, `jobs/applied/`, and `jobs/rejected/` for the direct URL and company/title. This does not remove the result from the table: label prior pipeline status beside the company name in parentheses, such as `already applied` or `already in new`, so reruns remain complete without disguising duplicates as new opportunities.
+Check `applications.md` for a matching `Source` URL or `Company`+`Role` row. This does not remove the result from the table: label prior pipeline status beside the company name in parentheses, such as `already applied` or `already new`, from that row's `Status` column, so reruns remain complete without disguising duplicates as new opportunities.
 
 ## Skill score and biggest gap
 
@@ -99,7 +99,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output
 
-Before returning the result, update only Built In's board-specific report at `reports/builtin-job-search.html` so it reflects the current validated run rather than a prior snapshot. Include every row from the scored table, current pipeline-status labels, direct posting URLs, the run date, and search/validation/exclusion totals. Preserve useful filtering and sorting. This report update is required on every invocation of this skill, including reruns with no new postings. Do not use or update `jobs/new/review-dashboard.html` for search-run reporting; that file serves the separate review queue.
+Before returning the result, write this run's data to `reports/data/builtin.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py builtin` to regenerate `reports/builtin-job-search.html` — never hand-author the HTML directly, so it reflects the current validated run rather than a prior snapshot. Include every row from the scored table, current pipeline-status labels, direct posting URLs, the run date, and search/validation/exclusion totals. This data refresh is required on every invocation of this skill, including reruns with no new postings.
 
 Lead with the number of searches completed, unique postings validated, exclusions, and previously known pipeline matches. Then return one Markdown table sorted by skill score descending, using exactly these columns:
 
@@ -116,8 +116,8 @@ Requirements:
 - Keep table cells concise, but make `Biggest gap` decision-useful.
 - Do not omit low-scoring jobs from the table.
 
-After the table, report `Could not validate` and material search limitations, if any. End by asking which postings the user wants to investigate or add to `jobs/new/`. Do not draft cover letters or write files other than the required dashboard refresh during this discovery run.
+After the table, report `Could not validate` and material search limitations, if any. End by asking which postings the user wants to investigate or add to `applications.md`. Do not draft cover letters or write files other than `reports/data/builtin.json` during this discovery run.
 
 ## Follow-up filing
 
-When the user selects a posting, reuse the already fetched description when still current, re-check for duplicates, and follow the schema in `specs/addjob.md`. Write only to `jobs/new/`; never submit an application or move it to `applied` or `rejected` without the user's explicit confirmation.
+When the user selects a posting, reuse the already fetched description when still current, re-check for duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied` or `Rejected` without the user's explicit confirmation.

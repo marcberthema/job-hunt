@@ -67,7 +67,7 @@ Open each retained posting's direct Randstad detail URL. Establish from the full
 
 When the client remains anonymous, use `Randstad client` as the company label. This is normal for an agency posting.
 
-Deduplicate by Randstad job identifier or canonical URL, then by disclosed company plus exact title. Check `jobs/new/`, `jobs/applied/`, and `jobs/rejected/` for URL, Randstad identifier, and company/title matches. Keep known roles in the result table and label their pipeline status.
+Deduplicate by Randstad job identifier or canonical URL, then by disclosed company plus exact title. Check `applications.md` for a matching `Source` URL, Randstad identifier, or `Company`+`Role` row. Keep known roles in the result table and label their pipeline status from its `Status` column.
 
 ## Classification and scoring
 
@@ -87,7 +87,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output and report
 
-Before returning results, update only `reports/randstad-job-search.html`. Refresh it on every invocation, including runs with no validated jobs. Include all scored rows, direct posting URLs, pipeline status, run date, and counts for category postings reviewed, plausible matches, eligible validated jobs, geographic exclusions, inaccessible postings, and known pipeline matches. Preserve useful filtering and sorting. Do not update `jobs/new/review-dashboard.html`.
+Before returning results, write this run's data to `reports/data/randstad.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py randstad` to regenerate `reports/randstad-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated jobs. Include all scored rows, direct posting URLs, pipeline status, run date, and counts for category postings reviewed, plausible matches, eligible validated jobs, geographic exclusions, inaccessible postings, and known pipeline matches.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 
@@ -96,8 +96,8 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Randstad job detail page. Preserve currency and pay period and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches.
 
-After the table, list geographic exclusions, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `jobs/new/`. Do not draft application material or write files other than the Randstad report during discovery.
+After the table, list geographic exclusions, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/randstad.json` during discovery.
 
 ## Follow-up filing
 
-For a selected posting, refresh it read-only, re-check duplicates, and follow `specs/addjob.md`. Write only to `jobs/new/`. When the client is anonymous, use `randstad` as the company slug unless the description reveals it. Never submit an application or move a job to `applied` or `rejected` without the user's explicit confirmation.
+For a selected posting, refresh it read-only, re-check duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. When the client is anonymous, use `randstad` as the company slug unless the description reveals it. Never submit an application or change a row's status to `Applied` or `Rejected` without the user's explicit confirmation.

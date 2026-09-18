@@ -1,0 +1,113 @@
+{
+  "board": "S.i. Systems",
+  "run_date": "2026-09-18",
+  "eyebrow": "S.i. Systems · read-only browser search",
+  "title": "SRE, Platform & DevOps opportunities",
+  "lede": "Public agency listings validated from their complete descriptions. Scores measure technical and domain fit only.",
+  "latest_update": "Updated September 18, 2026",
+  "stats": [
+    {
+      "value": 8,
+      "label": "searches"
+    },
+    {
+      "value": 15,
+      "label": "unique reviewed"
+    },
+    {
+      "value": 10,
+      "label": "plausible"
+    },
+    {
+      "value": 3,
+      "label": "eligible"
+    },
+    {
+      "value": 7,
+      "label": "geography exclusions"
+    },
+    {
+      "value": 0,
+      "label": "inaccessible"
+    },
+    {
+      "value": 3,
+      "label": "pipeline matches"
+    }
+  ],
+  "notes_sections": [
+    {
+      "heading": "Eligibility and geographic exclusions",
+      "items": [
+        "<b>Site Reliability Engineer — financial services client (Job 155055)</b>: posted 18 hours ago; Toronto is the only disclosed location and the full posting does not confirm remote eligibility or office cadence.",
+        "<b>Senior Manager, Technology Services (Job 154999)</b>: fully on-site in Ottawa. The role is also multidisciplinary people management rather than an SRE, Platform, or DevOps individual-contributor role; salary is CAD $110,000–$134,000/year.",
+        "<b>Senior Infrastructure Engineer — banking client (Job 154922)</b>: Toronto hybrid two days weekly, potentially increasing to four; outside the reachable-city list.",
+        "<b>Senior Systems Administrator — public-sector client (Job 155005)</b>: requires residence in Metro Vancouver and 50% on-site attendance.",
+        "<b>Senior Infrastructure Operations Lead — energy and resources client (Job 154962)</b>: Calgary office attendance starts at five days/week and later becomes four.",
+        "<b>Application Release Engineer III — financial-services client (Job 154805)</b>: Toronto hybrid two days weekly; outside the reachable-city list."
+      ]
+    },
+    {
+      "heading": "Scope exclusions",
+      "items": [
+        "Five of the 14 unique postings centered on network engineering, network design/operations, CyberArk systems support, or intermediate network automation rather than the target SRE, Platform, Infrastructure automation, or DevOps families."
+      ]
+    },
+    {
+      "heading": "Run notes",
+      "items": [
+        "Eight default searches were completed, with the first eight displayed results reviewed for each. The <code>q=</code> parameter remained a weak ranking signal and produced heavy overlap.",
+        "The Crown Corporation DevSecOps role matches an existing <code>applications.md</code> row. Its Secret-clearance residency requirement remains an eligibility item to confirm.",
+        "The Senior DevOps Specialist requires Toronto or Waterloo attendance once every two weeks. It is retained as occasional attendance, but the travel burden should be confirmed before proceeding.",
+        "The AWS Cloud Engineer is fully remote but hard-gated technically by its requirement for 5+ years of AWS infrastructure, networking, security, IAM, Landing Zone, CloudFormation, and CDK.",
+        "No posting was inaccessible. No CAPTCHA or verification challenge appeared, and no Apply, registration, alert, login, or form control was used."
+      ]
+    },
+    {
+      "heading": "September 18 refresh delta",
+      "items": [
+        "<b>Site Reliability Engineer — financial services client (Job 155055)</b>: now listed as posted two days ago. It is a strong Python, GitHub Actions, observability, RCA, MTTR and automation match, but Toronto is the only disclosed location and the complete posting still does not confirm remote eligibility or office cadence.",
+        "<b>Senior Cloud Platform Engineer — Azure &amp; Databricks (Job 154794)</b>: still an excellent Azure, Terraform, Ansible, Databricks, CI/CD and financial-services match, but the contract requires four days per week at 79 Wellington Street in Toronto.",
+        "All three retained postings remain active on September 18, 2026; none is currently flagged expired."
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Senior DevSecOps Engineer",
+      "company": "Crown Corporation client",
+      "status": "Applied September 16, 2026",
+      "location": "100% remote option in Canada; Ottawa on-site candidates preferred",
+      "salary": "Hourly — negotiable",
+      "engagement": "1-year contract; potential extension to 3 years · Posted 12 days ago · Job 154884",
+      "gap": "Limited depth administering and troubleshooting AKS/OpenShift clusters at the required level",
+      "url": "https://www.sisystems.com/jobs/senior-devsecops-engineer-to-develop-and-implement-initiatives-aimed-at-enhancing-operational-excellence-for-a-crown-corporation-client/330032003600340038003100/"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevOps Specialist — Jenkins, Terraform, Ansible & AWS",
+      "company": "S.i. Systems client",
+      "status": "Applied September 16, 2026",
+      "location": "Toronto or Waterloo; mandatory on-site once every two weeks",
+      "salary": "Hourly — negotiable",
+      "engagement": "Contract through December 31, 2026 · Posted 14 days ago · Job 154853",
+      "gap": "Requires 5+ years of hands-on AWS plus advanced Ansible Automation Platform and secrets-rotation depth",
+      "url": "https://www.sisystems.com/jobs/senior-devops-specialist-to-support-devops-automation-initiatives-using-jenkins-terraform-ansible-and-aws-1752/330032003600340032003000/"
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "AWS Cloud Engineer — Cloud Maturity",
+      "company": "Healthcare non-profit client",
+      "status": "Rejected September 16, 2026",
+      "location": "100% remote — Canada",
+      "salary": "Hourly — negotiable",
+      "engagement": "6-month contract; possible extension · Posted 12 days ago · Job 154899",
+      "gap": "Requires 5+ years of production AWS plus Landing Zone, CloudFormation, CDK, security and IAM depth",
+      "url": "https://www.sisystems.com/jobs/aws-cloud-engineer-5-years-to-refine-cloud-infrastructure-cloud-maturity-project-for-a-healthcare-non-profit-client/330032003600350030003800/"
+    }
+  ]
+}

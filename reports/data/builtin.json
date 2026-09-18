@@ -1,0 +1,395 @@
+{
+  "board": "BuiltIn",
+  "run_date": "2026-09-18",
+  "eyebrow": "Candidate intelligence · Built In",
+  "title": "SRE, Platform & DevOps opportunities",
+  "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Scores measure technical and domain fit; logistics and compensation are separate.",
+  "latest_update": "Latest update: September 18, 2026 — full role-family and eligible-city rerun completed.",
+  "stats": [
+    {
+      "value": 45,
+      "label": "search passes"
+    },
+    {
+      "value": 25,
+      "label": "current validated postings"
+    },
+    {
+      "value": 52,
+      "label": "excluded or stale results"
+    },
+    {
+      "value": 14,
+      "label": "pipeline matches"
+    }
+  ],
+  "notes_sections": [
+    {
+      "heading": "Validation notes",
+      "items": [
+        "H2 Analytics, both Newton roles, Caylent, Tailscale Infrastructure Engineer, and Movable Ink are already applied.",
+        "Caseware and StackAdapt are already rejected but remain visible so the search is complete.",
+        "CIRA is recorded as applied September 16. Its six-month Ottawa hybrid contract closely matches Marc's CI/CD standardization and enablement work; GitLab CI/CD depth is the main gap.",
+        "ClickHouse is confirmed expired, and Branch is no longer available on the employer site as of September 16. Both remain visible and labeled Expired.",
+        "Confirmed stale roles are excluded from the 25-current-posting count.",
+        "Could not validate: Desjardins, Programmer Analyst — DevOps and Platform Reliability. Built In's search result was current, but the direct posting returned an internal error, so it was not scored.",
+        "No eligible Cornwall-only posting survived validation. Montréal and Ottawa hybrid roles with unclear cadence remain flagged.",
+        "Banyan's description permits remote work in Canada while Built In labels the role Toronto in-office; confirm before applying."
+      ]
+    },
+    {
+      "heading": "September 18 refresh delta",
+      "items": [
+        "<b>Elastic — Senior SRE, Observability &amp; Analytics</b> is the strongest new match: Canada remote, CAD $128,300–$203,000, with unusually direct alignment across Terraform, Python, Linux, ELK, ArgoCD, Ansible, on-call, RCA and mentoring.",
+        "<b>Redwood Software — Senior SRE</b> is a plausible stretch, but the role expects substantially deeper production AWS networking, EKS, Datadog and RDS/PostgreSQL operations.",
+        "Kindred, Ciklum, Webflow and SecurityScorecard were retained with low-to-moderate scores because their full descriptions expose hard gaps in deep AWS ownership or shipped AI/full-stack customer solutions.",
+        "<b>Could not validate regional eligibility:</b> GitLab Orbit and Very Good Security expose complete requirements, but their direct pages do not explicitly confirm that these specific openings accept a Canada-based worker.",
+        "Zscaler's Ottawa role is fully in-office and excluded. ServiceNow's Montréal FDE is hybrid but the complete posting does not disclose cadence and is primarily GenAI/ML delivery; it remains excluded from the scored target-family table."
+      ]
+    }
+  ],
+  "method": "Latest search run: September 18, 2026. Twenty-five unique current postings retained after direct-page validation, geographic screening and deduplication. The complete first results page was reviewed across 45 role/geography passes. Fourteen retained roles match existing pipeline records.",
+  "rows": [
+    {
+      "score": 9,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer — Observability & Analytics",
+      "company": "Elastic",
+      "location": "Remote Canada",
+      "salary": "CAD $128,300–$203,000/year",
+      "gap": "Production Go and Elastic Cloud orchestration depth are not established, although the remaining stack aligns unusually well",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer-observability-analytics-platform-infra/11250234",
+      "status": "New — posted September 18"
+    },
+    {
+      "score": 5,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Redwood Software",
+      "location": "Remote Canada",
+      "salary": "CAD $125,000–$145,000/year",
+      "gap": "Requires deep production AWS networking, EKS, Datadog and RDS/PostgreSQL operations",
+      "url": "https://builtin.com/job/site-reliability-engineer/11211507",
+      "status": "New — posted September 16"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Infrastructure Engineer",
+      "company": "Kindred",
+      "location": "Remote Canada",
+      "salary": "CAD $170,000–$210,000/year",
+      "gap": "Deep hands-on AWS architecture across ECS/EKS, RDS, Lambda, CloudFront, VPC and IAM",
+      "url": "https://builtin.com/job/senior-infrastructure-engineer/10884006",
+      "status": "New"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Senior Forward Deployed Engineer",
+      "company": "Webflow",
+      "location": "Remote Ontario/BC; San Francisco onboarding",
+      "salary": "CAD $177,600–$208,600/year",
+      "gap": "Requires strong front-end/Webflow expertise and 4–6 years formal customer-facing delivery",
+      "url": "https://builtin.com/job/senior-forward-deployed-engineer/11065461",
+      "status": "New"
+    },
+    {
+      "score": 2,
+      "family": "DevOps",
+      "title": "Expert DevOps Engineer",
+      "company": "Ciklum",
+      "location": "Remote Canada",
+      "salary": "Not stated",
+      "gap": "Requires previously shipped agentic-AI infrastructure, SDN micro-segmentation and centralized agent policy planes",
+      "url": "https://builtin.com/job/expert-devops-engineer/11019366",
+      "status": "New"
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "Senior Forward Deployed Engineer",
+      "company": "SecurityScorecard",
+      "location": "Remote Canada; 30–40% travel",
+      "salary": "CAD $175,000–$240,000 total compensation",
+      "gap": "Requires shipped AI/LLM products, full-stack engineering and applied risk/data-science depth",
+      "url": "https://builtin.com/job/senior-forward-deployed-engineer/11074339",
+      "status": "New"
+    },
+    {
+      "score": 8,
+      "family": "DevOps",
+      "title": "DevOps Specialist (6 months)",
+      "company": "CIRA",
+      "location": "Ottawa hybrid — days not stated",
+      "salary": "Not stated",
+      "gap": "Requires hands-on GitLab CI/CD components, runners and rules; Marc's pipeline depth is on Azure DevOps, Jenkins and GitHub Actions",
+      "url": "https://builtin.com/job/devops-specialist-6-months/10356353",
+      "status": "Applied — September 16"
+    },
+    {
+      "score": 8,
+      "family": "Platform",
+      "title": "Infrastructure Engineer",
+      "company": "Tailscale",
+      "location": "Remote Canada",
+      "salary": "CAD $218,420–$273,360/year",
+      "gap": "Production Kubernetes operations are only a strong plus, but AWS managed-services depth is thinner than the role's environment",
+      "url": "https://builtin.com/job/infrastructure-engineer/9909455",
+      "status": "Already applied — July 7"
+    },
+    {
+      "score": 8,
+      "family": "Platform",
+      "title": "Forward Deployed Engineer",
+      "company": "H2 Analytics",
+      "location": "Ottawa or Kingston hybrid — days not stated",
+      "salary": "CAD $120,000–$170,000 + bonus",
+      "gap": "No stated experience deploying into defence or classified networks",
+      "url": "https://builtin.com/job/forward-deployed-engineer/9252600",
+      "status": "Already applied"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Senior AI DevOps & Reliability Engineer",
+      "company": "Branch",
+      "location": "Remote Canada",
+      "salary": "CAD $123,000–$160,000 + 10% bonus",
+      "gap": "Strong hands-on AWS and Kubernetes are core requirements; Marc's AWS production depth is limited",
+      "url": "https://builtin.com/job/ai-devops-reliability-engineer/10028204",
+      "status": "Expired — removed from employer site September 16"
+    },
+    {
+      "score": 7,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer — Remote",
+      "company": "ClickHouse",
+      "location": "Remote Canada",
+      "salary": "Not stated",
+      "gap": "Limited distributed-database operations depth; ClickHouse expects strong SQL/database understanding",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer-remote/8739016",
+      "status": "Expired — confirmed September 16"
+    },
+    {
+      "score": 7,
+      "family": "SRE",
+      "title": "Site Reliability Engineer",
+      "company": "Newton.co",
+      "location": "Remote Canada",
+      "salary": "Not stated",
+      "gap": "Limited production AWS depth; cloud experience is primarily Azure",
+      "url": "https://builtin.com/job/site-reliability-engineer-canada-wide-remote/8878389",
+      "status": "Already applied"
+    },
+    {
+      "score": 6,
+      "family": "Platform",
+      "title": "Forward Deployed Engineer",
+      "company": "Tailscale",
+      "location": "Remote Canada",
+      "salary": "CAD $201,000–$335,000 OTE",
+      "gap": "Requires 2+ years in a formal customer-facing SaaS role",
+      "url": "https://builtin.com/job/forward-deployed-engineer/10717342",
+      "status": "Rejected — September 16; SaaS ownership gap"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Newton.co",
+      "location": "Remote Canada",
+      "salary": "Not stated",
+      "gap": "Role expects detailed production AWS networking experience",
+      "url": "https://builtin.com/job/devops-engineer-canada-wide-remote/8878413",
+      "status": "Already applied"
+    },
+    {
+      "score": 5,
+      "family": "SRE",
+      "title": "Site Reliability Engineer",
+      "company": "Boson AI",
+      "location": "Remote from Toronto/Canada",
+      "salary": "CAD $125,000–$250,000/year",
+      "gap": "No GPU, CUDA, Ceph, SLURM or AI-training infrastructure operations experience",
+      "url": "https://builtin.com/job/site-reliability-engineer/10188140",
+      "status": "Rejected — September 16; CUDA/GPU infrastructure gap"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Leap Tools",
+      "location": "Remote Canada",
+      "salary": "CAD $65,000–$115,000/year",
+      "gap": "Salary ceiling is below target and the stack leans AWS/Kubernetes/GitLab",
+      "url": "https://builtin.com/job/devops-engineer/9766605",
+      "status": "Rejected — September 16; compensation too low"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Forward Deployed Engineer — AI Vision Systems",
+      "company": "Syndesus",
+      "location": "Remote; 25–50% Montréal/customer-site travel",
+      "salary": "CA$120,000–CA$180,000/year",
+      "gap": "No hands-on OPC-UA, Modbus, PLC, or NVIDIA Jetson experience",
+      "url": "https://builtin.com/job/forward-deployed-engineer-ai-vision-systems-quebec-canada/9423169",
+      "status": "Rejected — September 16; NVIDIA/industrial stack gap"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Forward Deployed Engineer",
+      "company": "Caylent",
+      "location": "Remote Canada; up to 50% travel",
+      "salary": "CAD $150,000–$235,000/year",
+      "gap": "Production LLM applications and AWS rather than Azure/platform depth",
+      "url": "https://builtin.com/job/forward-deployed-engineer/10801740",
+      "status": "Already applied"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Site Reliability Engineer",
+      "company": "Tyk",
+      "location": "Remote Canada/worldwide",
+      "salary": "Not stated",
+      "gap": "Requires launching and operating production Kubernetes plus AWS, MongoDB, Redis, Prometheus and Grafana",
+      "url": "https://builtin.com/job/site-reliability-engineer/8601646",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Staff Site Reliability Engineer",
+      "company": "Caseware",
+      "location": "Remote Canada",
+      "salary": "CAD $140,000–$155,000/year",
+      "gap": "Deep production AWS/EKS, Istio, and AWS CDK expertise",
+      "url": "https://builtin.com/job/staff-site-reliability-engineer/10735321",
+      "status": "Already rejected"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "DevOps Engineer (Kubernetes team)",
+      "company": "StackAdapt",
+      "location": "Remote Canada",
+      "salary": "CAD $116,000–$159,500/year",
+      "gap": "Strong production AWS infrastructure experience at scale",
+      "url": "https://builtin.com/job/devops-engineer/10318251",
+      "status": "Already rejected"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Pythian",
+      "location": "Remote — three locations not individually disclosed",
+      "salary": "Not stated",
+      "gap": "Production AWS RDS/Aurora operations and AWS networking depth",
+      "url": "https://builtin.com/job/devops-engineer/10598697",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer: Data & AI Platform",
+      "company": "Assent",
+      "location": "Ottawa hybrid — days not stated",
+      "salary": "Not stated",
+      "gap": "Deep Snowflake, dbt, and Airflow operational expertise",
+      "url": "https://builtin.com/job/senior-devops-engineer-data-ai-platform/10985149",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Forward Deployed Engineer",
+      "company": "Banyan Software",
+      "location": "Remote USA/Canada stated; Built In says Toronto in-office",
+      "salary": "CAD $145,000 base",
+      "gap": "Full-stack application modernization and modern UI framework experience",
+      "url": "https://builtin.com/job/forward-deployed-engineer/8535081",
+      "status": "Confirm location"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Veeva",
+      "location": "Remote Canada — AST/CST/EST",
+      "salary": "CAD $90,000–$165,000/year",
+      "gap": "Extensive AWS application design and programming is central to the role",
+      "url": "https://builtin.com/job/devops-engineer/7708058",
+      "status": "New"
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Movable Ink",
+      "location": "Remote Canada",
+      "salary": "CAD $140,000–$182,000/year",
+      "gap": "Requires 4+ years AWS/GCP and Kubernetes multi-tenancy across EKS/GKE",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer/10206540",
+      "status": "Already applied — August 25"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Forward Deployed Engineer",
+      "company": "Spellbook",
+      "location": "Remote Canada",
+      "salary": "Not stated",
+      "gap": "Production backend/full-stack development in Node.js and TypeScript",
+      "url": "https://builtin.com/job/forward-deployed-engineer/9287792",
+      "status": ""
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "DevOps Engineer (L2/L3)",
+      "company": "N3XT",
+      "location": "Remote Canada",
+      "salary": "CAD $130,000–$180,000/year",
+      "gap": "Google Workspace administration was a core responsibility",
+      "url": "https://builtin.com/job/devops-engineer-l2-l3/8916620",
+      "status": "Expired August 10 — already applied"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "TechInsights",
+      "location": "Remote Canada",
+      "salary": "CAD $125,000–$133,000/year",
+      "gap": "Deep AWS, Datadog and AI/ML infrastructure expertise",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer/9132197",
+      "status": "Expired July 17"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Senior SRE — Kubernetes",
+      "company": "Software Mind",
+      "location": "Remote/Hybrid Montréal",
+      "salary": "Not stated",
+      "gap": "Requires 3+ years production Kubernetes operations plus deep JVM/Node runtime troubleshooting",
+      "url": "https://builtin.com/job/8sn-senior-site-reliability-engineer-sre-kubernetes/10677620",
+      "status": "Expired August 31"
+    },
+    {
+      "score": 2,
+      "family": "SRE",
+      "title": "Senior SRE II — Infrastructure (AI Native)",
+      "company": "Life360",
+      "location": "Remote Canada",
+      "salary": "CAD $163,000–$194,000/year",
+      "gap": "Requires 5+ years AWS at roughly 5,000 instances and 3+ years Kubernetes at massive scale",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer-ii-infrastructure-ai-native/9749664",
+      "status": "Expired July 15"
+    }
+  ]
+}

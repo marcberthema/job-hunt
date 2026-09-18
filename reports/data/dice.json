@@ -1,0 +1,178 @@
+{
+  "board": "Dice",
+  "run_date": "2026-09-18",
+  "eyebrow": "Dice · remote · willing to sponsor",
+  "title": "DevOps, Platform and SRE results",
+  "lede": "Eligibility is checked before technical scoring. “Able to Sponsor” is treated as a lead requiring confirmation that TN work authorization is supported.",
+  "latest_update": "Updated September 18, 2026",
+  "stats": [
+    {
+      "value": 6,
+      "label": "queries"
+    },
+    {
+      "value": 15,
+      "label": "unique reviewed"
+    },
+    {
+      "value": 2,
+      "label": "eligible current"
+    },
+    {
+      "value": 1,
+      "label": "ineligible current"
+    },
+    {
+      "value": 12,
+      "label": "scope/unvalidated"
+    },
+    {
+      "value": 2,
+      "label": "expired"
+    },
+    {
+      "value": 0,
+      "label": "pipeline matches"
+    }
+  ],
+  "ineligible": [
+    {
+      "title": "Senior Cloud DevOps Engineer",
+      "company": "TechniPros",
+      "reason": "Dice marks the position on-site in US cities; W-2 only and no C2C.",
+      "url": "https://www.dice.com/job-detail/ab2a03f8-5b46-4179-9b52-1595d4b575ef"
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "company": "Empower",
+      "reason": "Must already be authorized for any US employer; sponsorship explicitly unavailable.",
+      "url": "https://www.dice.com/job-detail/166771cc-359e-438f-84b7-5707817ef2a9"
+    },
+    {
+      "title": "Senior Data and AI Platform Engineer",
+      "company": "Jellyfish",
+      "reason": "US authorization required; sponsorship explicitly unavailable.",
+      "url": "https://www.dice.com/job-detail/f96a8be7-28f7-4e4a-9345-606413d27969"
+    },
+    {
+      "title": "Site Reliability Engineer",
+      "company": "Integration Architects",
+      "reason": "On-site in Santa Clara, California.",
+      "url": "https://www.dice.com/job-detail/0527532c-7a04-4566-9b9d-6f1c73e3eabe"
+    },
+    {
+      "title": "Forward Deployed Engineer",
+      "company": "Reliable Software Resources",
+      "reason": "On-site in Lake Mary, Florida.",
+      "url": "https://www.dice.com/job-detail/280f96ac-c483-42f0-a769-117ed326db57"
+    },
+    {
+      "title": "Forward Deployed Engineer",
+      "company": "K-Tek Resourcing",
+      "reason": "Hybrid in San Jose, California or Bridgewater, New Jersey.",
+      "url": "https://www.dice.com/job-detail/22d8d88f-dab2-481b-8dd6-9a1fa5663775"
+    },
+    {
+      "title": "Forward Deployed Engineer",
+      "company": "Nestor Technologies",
+      "reason": "Austin-local candidates only; active Texas driver's licence required.",
+      "url": "https://www.dice.com/job-detail/bc31fd8d-f2e1-4f6b-acab-a565857b3f46"
+    }
+  ],
+  "could_not_validate": [
+    "DevSecOps results exposed sponsor-filter counts but no current remote candidate with a complete, clearly eligible description inside the review boundary.",
+    "Info Way Solutions — SRE Platform Engineering (FedRAMP High/DoD IL5): the complete citizenship, authorization and clearance requirements were not exposed, so the role was not scored."
+  ],
+  "notes_sections": [
+    {
+      "heading": "Expired",
+      "items": [
+        "<a href=\"https://www.dice.com/job-detail/b2d1df9e-88b6-4b31-a612-666edb98171c\">Senior DevOps &amp; Platform Engineer — Incorporan</a>: no longer accepting candidates. Confirmed by Marc September 16, 2026; removed from the actionable table.",
+        "<a href=\"https://www.dice.com/job-detail/fa5b0dac-5f57-4c61-a417-a1c5039284d0\">Site Reliability Engineer 100% Remote — Apetan Consulting</a>: Dice explicitly says the job is no longer available. Confirmed September 16, 2026; excluded from eligible-current totals."
+      ]
+    },
+    {
+      "heading": "Run notes",
+      "items": [
+        "All six default titles were searched. Boundary: first search-results page and up to eight plausible results per query, supplemented by direct Dice posting discovery.",
+        "“Able to Sponsor” roles require recruiter confirmation that TN support is real and that remote work can be performed from Canada.",
+        "No employer-site recovery was needed and no exact repository pipeline match was confirmed.",
+        "Dice's “Able to Sponsor” label does not override location, clearance, or authorization text inside a posting."
+      ]
+    },
+    {
+      "heading": "September 18 refresh delta",
+      "items": [
+        "<b>Cloud &amp; Application Platform Engineer — Quantum Technologies</b>: new eight-month W-2 remote contract at $80–$90/hour. Strong cloud migration, OpenShift, automation, certificate, access and platform-services scope; confirm TN support and Canada-based remote eligibility.",
+        "<b>Forward-Deployed Engineer with Generative AI — Key Business Solutions</b>: new six-month remote C2C/W-2/independent contract. Azure and delivery overlap, but deep production RAG/LLM evaluation and full-stack AI engineering are the largest gaps; confirm TN/Canada eligibility.",
+        "<b>TechniPros DevSecOps Engineer</b>: new sponsor-marked result, but the detail page says on-site in specified US cities and W-2 only, so it is ineligible.",
+        "Previously reported leads no longer surfaced inside the seven-day filtered boundary; they remain preserved below with their last confirmed status rather than being declared expired without direct evidence."
+      ]
+    }
+  ],
+  "rows": [
+    {
+      "title": "Cloud & Application Platform Engineer — Quantum Technologies",
+      "score": 5,
+      "why": "Cloud migration, OpenShift, automation, platform services, certificates and production-readiness overlap.",
+      "flags": "$80–$90/hour, eight-month W-2 contract. Authorization list names USC/GC/H-1B/OPT-EAD; confirm TN support and Canada-based remote eligibility. Current — checked September 18.",
+      "url": "https://www.dice.com/job-detail/d57b98ba-d63f-40f4-add5-1e9c3dafe833"
+    },
+    {
+      "title": "Forward-Deployed Engineer with Generative AI — Key Business Solutions",
+      "score": 2,
+      "why": "Azure, Python, CI/CD, monitoring and customer-facing delivery are adjacent.",
+      "flags": "Deep RAG, prompt engineering, LLM evaluation and full-stack AI engineering required. Six-month contract; confirm TN and Canada-based remote eligibility. Current — checked September 18.",
+      "url": "https://www.dice.com/job-detail/b64fdd50-d372-40f7-b09e-fb32dadc6622"
+    },
+    {
+      "title": "Platform Engineer — AI Systems / Infrastructure — Highbrow",
+      "score": 3,
+      "why": "Terraform, Docker, CI/CD, Python and platform reliability overlap.",
+      "flags": "AWS-native distributed AI execution platform with advanced Python backend ownership; $60–$72/hour. Confirm TN and Canada-based remote eligibility. Current — checked September 16.",
+      "url": "https://www.dice.com/job-detail/dc4516b9-650d-442a-a08b-33ac8c0b6b11"
+    },
+    {
+      "title": "Site Reliability Engineer — Esolvit",
+      "score": 3,
+      "why": "Linux/Windows operations, CVE visibility, remediation coordination and regulated-environment experience overlap.",
+      "flags": "Eight years of hands-on application vulnerability remediation is required; $60–$70/hour. Confirm TN and Canada-based remote eligibility. Current — checked September 16.",
+      "url": "https://www.dice.com/job-detail/7d41153b-c415-45ad-a546-7610d018ad50"
+    },
+    {
+      "title": "Lead Site Reliability Engineer — IBOTIX",
+      "score": 3,
+      "why": "Strong Terraform, GitHub Actions, Python and reliability overlap.",
+      "flags": "GCP-primary with 8+ years public-cloud administration; US-only remote; confirm TN and laptop-pickup logistics. Current — checked September 16.",
+      "url": "https://www.dice.com/job-detail/42464693-63fb-48f6-beb2-b52eb5ed749a"
+    },
+    {
+      "title": "DevOps Engineer / SRE Engineer — JC Corporations",
+      "score": 2,
+      "why": "Terraform, Jenkins, Python/Bash and SRE responsibilities overlap.",
+      "flags": "Requires 10+ years deep production AWS/EKS; $50–$90/hour; confirm TN despite C2C/W-2 options. Current — checked September 16.",
+      "url": "https://www.dice.com/job-detail/d370bd8e-7ebc-412a-a006-836756e5c7c6"
+    },
+    {
+      "title": "Agentic AI Forward Deployed Engineer — Photon",
+      "score": 2,
+      "why": "Azure, Python, CI/CD and production-readiness skills overlap.",
+      "flags": "Requires 6+ years building AI/ML applications and production AI systems; confirm TN and US location eligibility. Current — checked September 16.",
+      "url": "https://www.dice.com/job-detail/ec02a127-8281-4b31-9087-2b0971e4dae6"
+    },
+    {
+      "title": "Forward Deployed Engineer — Ekcel Technologies",
+      "score": 2,
+      "why": "Customer delivery, Python, Kubernetes, CI/CD and regulated-domain exposure overlap.",
+      "flags": "Palantir certification plus deep production AI/ML, RAG and full-stack engineering are mandatory; confirm TN. Freshness unconfirmed — checked September 16.",
+      "url": "https://www.dice.com/job-detail/21e37dd5-1c00-4fd7-bb06-89f930cacf6e"
+    },
+    {
+      "title": "Agentic AI Architect / FDE — Photon",
+      "score": 2,
+      "why": "Azure, infrastructure as code, containers and customer engagement are adjacent.",
+      "flags": "Requires 12+ years AI focus and roughly 80% US travel; confirm TN and travel feasibility. Current — checked September 16.",
+      "url": "https://www.dice.com/job-detail/5e702aec-6861-49fd-9e8a-6aa09056f65d"
+    }
+  ]
+}

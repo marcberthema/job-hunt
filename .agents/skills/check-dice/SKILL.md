@@ -65,7 +65,7 @@ Score each eligible posting from 0–10 against profile.md using technical and d
 
 Apply the profile's honesty rules for AWS, GCP, Kubernetes cluster administration, programming languages, people management, and other depth requirements. Give one concise rationale and identify the single biggest skill gap.
 
-Check jobs/new/, jobs/applied/, and jobs/rejected/ for URL and company/title matches. Keep known eligible roles and label their pipeline status.
+Check `applications.md` for a matching `Source` URL or `Company`+`Role` row. Keep known eligible roles and label their pipeline status from its `Status` column.
 
 ## Expiration status
 
@@ -73,9 +73,9 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output
 
-Before responding, update only reports/dice-job-search.html with the run date, queries completed, search boundary, unique results reviewed, eligible/ineligible/inaccessible totals, employer recoveries, pipeline matches, every scored eligible posting, every ineligible posting and reason, canonical links, and useful filtering and sorting.
+Before responding, write this run's data to `reports/data/dice.json` per `reports/report_schema.md` — run date, queries completed, search boundary, unique results reviewed, eligible/ineligible/inaccessible totals, employer recoveries, pipeline matches, every scored eligible posting, every ineligible posting and reason, canonical links — then run `python3 reports/build_report.py dice` to regenerate `reports/dice-job-search.html`. Never hand-author the HTML directly.
 
-Refresh this report on every invocation, including runs with no eligible results. Do not update jobs/new/review-dashboard.html.
+Refresh the data file on every invocation, including runs with no eligible results.
 
 Return two sections.
 
@@ -93,8 +93,8 @@ Do not score these:
 | Role — Company | Reason |
 |---|---|
 
-Then list Could not validate postings and material limitations. Ask which eligible postings the user wants investigated or added to jobs/new/. Do not draft applications or write files other than the Dice report during discovery.
+Then list Could not validate postings and material limitations. Ask which eligible postings the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/dice.json` during discovery.
 
 ## Follow-up filing
 
-For a selected eligible posting, reuse its fetched description when current, check duplicates again, and follow specs/addjob.md. Write only to jobs/new/. Never submit an application or move a job into applied or rejected without explicit confirmation.
+For a selected eligible posting, reuse its fetched description when current, check duplicates again, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied` or `Rejected` without explicit confirmation.

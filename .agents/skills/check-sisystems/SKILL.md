@@ -75,7 +75,7 @@ Open every plausible result through its `DETAILS` link. Detail URLs usually foll
 
 An anonymous client is normal for this agency and is not a negative signal. If a posting fails to load, list it under `Could not validate` and continue unless the failure is a site-wide challenge.
 
-Deduplicate by canonical S.i. Systems URL or encoded requisition identity, then by disclosed client plus exact title. Check `jobs/new/`, `jobs/applied/`, and `jobs/rejected/` for URL, requisition identity, and company/title matches. Keep known roles in the table and label their pipeline status.
+Deduplicate by canonical S.i. Systems URL or encoded requisition identity, then by disclosed client plus exact title. Check `applications.md` for a matching `Source` URL, requisition identity, or `Company`+`Role` row. Keep known roles in the table and label their pipeline status from its `Status` column.
 
 ## Classification and scoring
 
@@ -95,7 +95,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output and report
 
-Before returning results, update only `reports/sisystems-job-search.html`. Refresh it on every invocation, including runs with no validated jobs. Include every scored row, direct posting URLs, pipeline status, run date, and counts for searches completed, unique results reviewed, plausible candidates, eligible validated jobs, geographic or eligibility exclusions, inaccessible postings, and known pipeline matches. Preserve useful filtering and sorting. Do not update `jobs/new/review-dashboard.html`.
+Before returning results, write this run's data to `reports/data/sisystems.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py sisystems` to regenerate `reports/sisystems-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated jobs. Include every scored row, direct posting URLs, pipeline status, run date, and counts for searches completed, unique results reviewed, plausible candidates, eligible validated jobs, geographic or eligibility exclusions, inaccessible postings, and known pipeline matches.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 
@@ -104,8 +104,8 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the S.i. Systems detail page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches.
 
-After the table, list eligibility/geographic exclusions, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `jobs/new/`. Do not draft application material or write files other than the S.i. Systems report during discovery.
+After the table, list eligibility/geographic exclusions, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/sisystems.json` during discovery.
 
 ## Follow-up filing
 
-For a selected posting, refresh it read-only, re-check duplicates, and follow `specs/addjob.md`. Write only to `jobs/new/`. When the client remains anonymous, use `sisystems` as the company slug. Never submit an application or move a role to `applied` or `rejected` without the user's explicit confirmation.
+For a selected posting, refresh it read-only, re-check duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. When the client remains anonymous, use `sisystems` as the company slug. Never submit an application or change a row's status to `Applied` or `Rejected` without the user's explicit confirmation.

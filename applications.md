@@ -1,0 +1,215 @@
+# Applications
+
+The single ledger of every job posting found across all sources — replaces the old
+`jobs/new/` → `jobs/applied/` → `jobs/rejected/` folder-per-posting lifecycle. One row per
+posting, append-only.
+
+- **Status:** `New` (found and scored, awaiting a decision) · `Applied` (submitted) ·
+  `Rejected` (passed on, or it rejected Marc).
+- **Board:** which source found it — cross-reference `reports/<board>-job-search.html` for the
+  full scoring detail, tooling fit, and rationale behind the score. `Manual` means Marc pasted
+  the posting text directly (no board).
+- **Notes:** short flag or rejection reason, when one was recorded. Blank is normal.
+- Cover letters live in `resume/cover-letters/`; tailored resumes live in `resume/tailored/` —
+  both named after the company/role slug, not linked from this table.
+- Every skill in `.agents/skills/` checks this file (by `Source` URL or `Company`+`Role`) before
+  filing a new row, so a posting already `Applied` or `Rejected` is never re-surfaced as new.
+
+| Date Found | Status | Status Date | Score | Company | Role | Board | Source | Notes |
+|---|---|---|---:|---|---|---|---|---|
+| 2026-07-07 | Applied | 2026-07-07 | 8 | 4IR Solutions | Senior Reliability Engineer | Indeed | https://ca.indeed.com/viewjob?jk=0c017f572e2677b7 |  |
+| 2026-07-07 | Applied | 2026-07-07 | 8 | Clio | Systems Engineer, Azure Infrastructure | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Applied | 2026-07-07 | 6 | Cohere | Forward Deployed Engineer, Infrastructure Specialist (North America) | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Applied | 2026-07-07 | 7 | Consensys | Senior Staff DevOps Engineer - MetaMask | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Applied | 2026-07-07 | 8 | Empire Vie | Ingénieur DevSecOps (Infrastructure) | Manual | pasted text (no URL provided), French-language posting |  |
+| 2026-07-07 | Applied | 2026-07-07 | 5 | GlossGenius | Software Engineer, Infrastructure - All Levels | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Applied | 2026-07-07 | 9 | LeverageTek (Ottawa-based customer) | DevSecOps Platform Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Applied | 2026-07-07 | 9 | Nuclear Promise X (NPX) | Senior DevOps Developer (Coming Soon!) | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Applied | 2026-07-07 | 5 | Tailscale | Infrastructure Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Applied | 2026-07-07 | 5 | Vancity (Vancouver City Savings Credit Union) | DevOps Engineering Manager | Indeed | https://ca.indeed.com/viewjob?jk=aa62902d787c2f78 |  |
+| 2026-07-07 | Applied | 2026-07-07 | 8 | Talent To Hire Inc. | Senior DevOps Engineer (Azure & AWS) – Remote (Canada) | Indeed | https://ca.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0CPZY30LezeA_vm06fcttKYUzqKFAKPocjjyj2jdpt00OGKgRNYsnqVKYRJIdcT7ont3fzFz_We23bcsc5GNlwEfSjStl7LW4jhHlbdCmZEclF6C14ZEjj79Sre0drnInHXnu9F-iXOh7I-jDPtJnms6j8Iy4PYSTwtjTrrmwEFOtyH-cEmS5gWAS6d3F-B8sXdqW2c23Nn4XDfM4dPSnvQhKiHoAgyda9z7EiYq5BpcesiCOnRYRJioqCZ50RAr3mCBfvHKDERIdZkIicRDzo6_2BWNReT2NfoKbySufdMT9kTtwSEXfe-7YouSnbj7E_iklYWReWMudwJXSJnEsaxaX-MgPP3kicVkdqOp1h5SmY4UsT8IRmLQv0B0IJy-rlvrDlmbCRz15-A-9zhiWLtOE_-j4oETclaKuTWAMFMkRAVQP1DFCZDIbAJdS0fjjnF9QkXBenCe77hSGSDJd_wnM2Iv2mzCp6YGgZao6iESbWfKKfnAhH_o7xh5bt4SSLt5H4ajG9fGU0LyOKcJbqfLEpqmDEMyBEaF7H0gc8vbvoyxbR9LHcekWqiEBVpyQKJTi77G8kKJGxeF1d5Am_I8lq0ZRJZKYsTyUg3oebITVPTVO90RUsp4QKzJ5Mub6sNfXfbmQoQeLIaf-Y8gxrjFeimCzdYulXidc7XDTowtw==&xkcb=SoBG6_M3hf6t8V3zdR0HbzkdCdPP&p=12&camk=ethIe0s0heeVbpR4brc2GQ==&vjs=3 |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 9 | Aequilibrium Software Inc. | Azure DevOps & Infrastructure Lead | Indeed | https://ca.indeed.com/viewjob?jk=d82aac0244ee2844 |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 4 | Apptoza Inc. | Sr DevOps Engineer (GitLab CI/CD, Kubernetes, Docker, Observability, AWS) | Manual | pasted text (no URL provided) — LinkedIn posting, job poster Goutham Mangali (Canada/US IT Recruiter) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 3 | Astek | Senior DevOps & Python Platform Engineering | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 2 | Ateko (backed by Bell Canada) | DevOps Engineer (NetDevOps) | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 2 | BMO Financial Group | Senior Cloud Engineer | Indeed | https://ca.indeed.com/viewjob?jk=81cd0713f7b2efc9 |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 1 | Capgemini Engineering | Mainframe DevOps Migration Consultant | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 3 | CARET | Senior Infrastructure Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 2 | Crossing Hurdles | Software Engineer (AI Training Platform Contributor) | Manual | pasted text (no URL provided) — submitted via LinkedIn Easy Apply per posting |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 5 | Empire Life | Platform Engineering Manager | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 4 | GlobalLogic (Hitachi Group) | Senior DevOps Engineer (Lead DevOps, Multi-Cloud) | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 1 | Hatch | Senior Full Stack Engineer - Electronic Arts [EAFS260703] | Indeed | https://ca.indeed.com/viewjob?jk=37be2fd2ed567dbe |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 3 | Intuitive.ai | Staff Software Engineer (Infrastructure Automation Product) | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 4 | via Jobgether | DevOps Engineer (posted on behalf of undisclosed partner company) | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 7 | Kinaxis | Senior Cloud Engineer, Cloud Platform | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 4 | Lazer Technologies | Senior Infrastructure/DevOps Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 2 | Developer Infrastructure — Luxury Presence | Staff DevOps Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 8 | Medfar (Clinical Solutions) | Senior Cloud / DevOps Specialist | Indeed | https://ca.indeed.com/viewjob?jk=105fdc5f42baa1ed |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 4 | Modaxo | DevOps Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 2 | Oscilar | Senior SRE / Infrastructure Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-07 | Rejected | 2026-07-07 | 2 | Owl Practice Suite | Engineering Lead | Indeed | https://ca.indeed.com/viewjob?jk=2099f11fa4ed8086 |  |
+| 2026-07-11 | Applied | 2026-07-11 | 7 | Velora | Senior DevOps Engineer/Platform Engineer | Indeed | https://ca.indeed.com/viewjob?jk=a5bf4f4007135b55 |  |
+| 2026-07-14 | Applied | 2026-07-14 | 8 | EPAM | Site Reliability Engineer (SRE) | careers.epam.com | https://careers.epam.com/en/vacancy/bltwshooodc40mc0kqb_en?country=Canada |  |
+| 2026-07-14 | Applied | 2026-07-14 | 5 | Figment Inc. | Senior DevOps Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-14 | Applied | 2026-07-14 | 9 | InvestorCOM | IT Operations Principal Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-14 | Applied | 2026-07-14 | 5 | Litmus Automation Canada | Lead DevOps Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-14 | Applied | 2026-07-14 | 5 | N3XT | DevOps Engineer (L2/L3) | BuiltIn | https://builtin.com/job/devops-engineer-l2-l3/8916620 |  |
+| 2026-07-14 | Applied | 2026-07-14 | 5 | Newton.co | DevOps Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-14 | Applied | 2026-07-14 | 7 | Toboggan Labs | Développeur·euse plateforme senior / Senior Platform Developer | Manual | pasted text (bilingual FR/EN posting, no URL provided) |  |
+| 2026-07-14 | Rejected | 2026-07-14 | 6 | GoTo | Manager, NetDevOps | Manual | pasted text (bilingual FR/EN posting, no URL provided) |  |
+| 2026-07-14 | Rejected | 2026-07-14 | 1 | Invoice Simple | Software Engineering Operations Specialist (EverPro) | Manual | pasted text (no URL provided) — note: a second, unrelated posting ("Junior Product Manager" at EverCommerce Security & Alarm) was pasted alongside this one and appears to be accidental inclusion; not evaluated as it's clearly a different role entirely (junior product management, not DevOps) |  |
+| 2026-07-14 | Rejected | 2026-07-14 | 3 | SCIA Automation Platform — Merative | DevOps Engineer (Mid-Level) | Manual | pasted text (no URL provided) |  |
+| 2026-07-14 | Rejected | 2026-07-14 | 9 | Merge by Merative | DevOps / Cloud Engineer (SRE) | Manual | pasted text (no URL provided) |  |
+| 2026-07-14 | Rejected | 2026-07-14 | 6 | Servus Credit Union | Manager, DevOps & Systems Administration | Manual | pasted text (Indeed posting, Servus Credit Union job board redirect failed to load — see chat history for both links) |  |
+| 2026-07-14 | Rejected | 2026-07-14 | 2 | Tempo Software | Corporate IT Automation Engineer | Manual | pasted text (no URL provided) |  |
+| 2026-07-14 | Rejected | 2026-07-14 | 3 | Vancity (via Si Systems) | Senior Integration Engineer | Manual | pasted text (posting managed by Si Systems; apply link not provided in pasted text) |  |
+| 2026-07-14 | Rejected | 2026-07-14 | 1 | Zensurance Inc. | Senior Software Developer (Remote First) | Manual | pasted text (no URL provided) |  |
+| 2026-08-19 | Applied | 2026-08-19 | 7 | Applied Systems | Sr. Cloud Platform Engineer (GCP, Azure) | BuiltIn | https://builtin.com/job/sr-cloud-platform-engineer/9787963 |  |
+| 2026-08-19 | Applied | 2026-08-19 | 7 | EPAM Systems, Inc. | Lead DevOps Engineer - Observability & Monitoring | Indeed | https://ca.indeed.com/rc/clk?jk=6f872507b8bc5c79 |  |
+| 2026-08-19 | Applied | 2026-08-19 | 6 | Infrastructure Platforms — GitLab | Site Reliability Engineer, Intermediate to Senior Staff | BuiltIn | https://builtin.com/job/site-reliability-engineer-intermediate-senior-staff-infrastructure-platforms/10145126 |  |
+| 2026-08-19 | Applied | 2026-08-19 | 6 | MongoDB | Site Reliability Engineer (Senior or Staff), Deployments | BuiltIn | https://builtin.com/job/site-reliability-engineer-senior-or-staff/9785615 |  |
+| 2026-08-19 | Applied | 2026-08-19 | 6 | Ontinue | Senior IT Cloud Engineer - Remote BC | BuiltIn | https://builtin.com/job/senior-it-cloud-engineer-remote-bc/10609334 |  |
+| 2026-08-19 | Applied | 2026-08-19 | 7 | Symbiotic Group Inc. | DevOps / Cloud Engineer | BuiltIn | https://builtin.com/job/devops-cloud-engineer/10640107 |  |
+| 2026-08-19 | Rejected | 2026-08-28 | 6 | Alithya Group Inc. | DevOps/DevSecOps Developer | BuiltIn | https://builtin.com/job/devops-devsecops-developer/10305886 | **2026-08-28:** Developer role, not DevOps/platform-engineering — wrong scope match. |
+| 2026-08-19 | Rejected | 2026-08-23 | 6 | Caseware | Staff Site Reliability Engineer | BuiltIn | https://builtin.com/job/staff-site-reliability-engineer/10735321 | **2026-08-23:** Heavier AWS/Kubernetes depth than the original score captured (posting references "Kubestronaut"-level Kubernetes expertise) — beyond Marc's actual hands-on depth, which is Azure-prima… |
+| 2026-08-19 | Rejected | 2026-08-23 | 7 | D-Wave Systems | Senior AI DevOps Developer [584] | BuiltIn | https://builtin.com/job/senior-ai-devops-developer-584/10601570 | **2026-08-23:** Original scoring undersold the AI/LLM requirements as "a layer on top of standard DevOps fundamentals." Re-checked the full posting — required qualifications include hands-on productio… |
+| 2026-08-19 | Rejected | 2026-08-23 | 7 | Deloitte Global Technology | Manager, Cloud Engineer (Azure) | Indeed | https://ca.indeed.com/pagead/clk?mo=r&ad=-6NYlbfkN0C5k5MMdpDb4Pv14IAMbzkPUie5HgsvsE3q_E2kBaGbFGW7B8Zr5AxBPLAYUKAsMI2sCB0Gjy3CiCUWBAVlJruvzMnIt8-H95Ew0EGz7G2zgNVoCUAi50tmxSbBdCNUX4Fssix9jPCgbjnlZg6Ub3XyW40oqgQ7WuGoIsKkkalVoJtr3ph8PjDy56ki82qGvA78u5ZvFnQrOfUOi0ZW4wi4ydIsVDlkxVnA2yrSCU3aiCD_KAhDbqSi1TYFFDezZ5VzFKL3ZfL4CKmzwu2XzRb16Cj4-Hxq4c49wsCos7y-SDitm1QM5N-gVpfcjDEvEZEtKJ6zwEo50yK2TYBrxPHkdlMmkk5RX7Trrn0rd3SOCYj4j50TM2lAVXHmU8spfsrViGceeZowttmPNFaEJGShpxrGu4bfmQrgETLFRuzhS08Dj87v27msGhZxTtcfzJZ17GqtaxMLRPFTnKnzH2WX9bEs_AMf7ggW0mp1TKs6acKynyQEZ1X1VLX4XeDS1cv3Rx0QuMJXb5eZFCG0-3qmB7gP0Y1XcdNADBCMav9bJkArqFgQN8NPtylHHw675BGq33EJ9hg26yqUFiCw2Z5DopENQXCJzAyWlbNJzGEExVdzIFsbVBSkMN0FZxA08C3WHxUw8j--w-CP2f5WTsflWhPhfNjdSE45vwm6aTTNoXSCy8HfBFl3QuvMyJ92H8NqxFt9g0xcivcEqEBFvL58kjrJNGwWVlBIzXyD6OXEsJwYdlKQ0vCjF51VzvONTB7lXyP7xhqxU9R6itAsuvTgvAOoiFwMrCahZeext0IeZwzAz3g22UkQca9YS0zAcbSLOVfnO_2VVLjkVjikFGtMpqU58vP1aOkZgfjz5hHS8w==&xkcb=SoDa6_M2fOu5qWQH150HbzkdCdPP | **2026-08-23:** Source URL is a rotating Indeed ad-tracking link (`pagead/clk`), not a stable posting link — it now resolves to an unrelated job ("Blue Yonder Developer," Altis Recruitment). Can't ver… |
+| 2026-08-19 | Rejected | 2026-08-19 | 6 | Lancesoft | Site Reliability Engineer | Job Bank | https://www.jobbank.gc.ca/jobsearch/jobposting/50107335 |  |
+| 2026-08-19 | Rejected | 2026-08-26 | 6 | SATCON Inc | AWS Security Automation/DevSecOps Engineer | Dice | https://www.dice.com/job-detail/68748f27-4922-4cbe-bb81-5a7589d1bff9 | **2026-08-26** — Posting no longer available ("Sorry this job is no longer available."). |
+| 2026-08-19 | Rejected | 2026-08-26 | 6 | WEX Inc. | Senior Staff Site Reliability Engineer | BuiltIn | https://builtin.com/job/senior-staff-site-reliability-engineer/7861942 | **2026-08-26** — Lacks a proven track record of leadership driving reliability improvements at the scale/formality this posting requires ("Exceptional leadership skills with a proven track record of d… |
+| 2026-08-20 | Applied | 2026-08-20 | 6 | 3Pillar Global | Forward Deployed Engineer (FDE) | Indeed | https://ca.indeed.com/rc/clk?jk=52588cc2d5620eb6 |  |
+| 2026-08-20 | Applied | 2026-08-20 | 7 | Affirm | Senior Software Engineer, Backend (Reliability Platform) | Indeed | https://ca.indeed.com/rc/clk?jk=16c52f11ae720ae3 |  |
+| 2026-08-20 | Applied | 2026-08-20 | 8 | Hilltop Partner Network | Senior DevOps Consultant (part-time contract) | LinkedIn | https://www.linkedin.com/jobs/view/4455466516/ |  |
+| 2026-08-20 | Applied | 2026-08-20 | 6 | Jonas Software (Computrition, Inc.) | AI-First DevOps Engineer | BuiltIn | https://builtin.com/job/ai-first-devops-engineer/10670017 |  |
+| 2026-08-20 | Applied | 2026-08-20 | 8 | LGS, an IBM Company | Ingénieur(eure) Azure DevOps | LinkedIn | https://www.linkedin.com/jobs/view/4449673525/ |  |
+| 2026-08-20 | Applied | 2026-08-20 | 8 | Smile Digital Health | Cloud Engineer (Azure Platform Engineer) | BuiltIn | https://builtin.com/job/cloud-engineer-azure-platform-engineer-remote-ontario/10464451 |  |
+| 2026-08-20 | Applied | 2026-08-20 | 6 | Tekniforce | Principal Cloud Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4448072134/ |  |
+| 2026-08-20 | Rejected | 2026-08-31 | 7 | Camunda | Senior Cloud Infrastructure Engineer, Kubernetes | RemoteOK | https://remoteok.com/remote-jobs/remote-senior-cloud-infrastructure-engineer-kubernetes-camunda-1129637 | **2026-08-31:** Auto-rejected — sat unreviewed in jobs/new/ for over 1 week (found 2026-08-20). No action taken in time; not pursuing. |
+| 2026-08-20 | Rejected | 2026-08-23 | 8 | EPAM Systems, Inc. | Site Reliability Engineer (SRE) | Indeed | https://ca.indeed.com/rc/clk?jk=4a13df4624a74089 | **2026-08-23:** Confirmed duplicate — this Indeed listing (`jk=4a13df4624a74089`) redirects to the exact same EPAM career page URL/requisition (`bltwshooodc40mc0kqb_en`, Wealth Management/Broker-Deale… |
+| 2026-08-20 | Rejected | 2026-08-31 | 7 | Equip Health | Senior Software Development Engineer, DevOps | RemoteOK | https://remoteok.com/remote-jobs/remote-senior-software-development-engineer-devops-equip-health-1129690 | **2026-08-31:** Auto-rejected — sat unreviewed in jobs/new/ for over 1 week (found 2026-08-20). No action taken in time; not pursuing. |
+| 2026-08-20 | Rejected | 2026-08-23 | 9 | Experis Canada | Azure DevOps Engineer Bilingual | LinkedIn | https://www.linkedin.com/jobs/view/4456016671/ | **2026-08-23:** Posting is no longer accepting applications. |
+| 2026-08-20 | Rejected | 2026-08-23 | 9 | Sherweb | Senior DevOps, Software | LinkedIn | https://www.linkedin.com/jobs/view/4456385797/ | **2026-08-23:** Posting is no longer accepting applications. |
+| 2026-08-20 | Rejected | 2026-08-23 | 7 | S.i. Systems (Banking client) | Site Reliability Engineer (Dynatrace) | S.i. Systems | https://www.sisystems.com/jobs/site-reliability-engineer-with-strong-expertise-in-dynatrace-to-ensure-the-reliability-performance-and-observability-of-large-scale-distributed-systems-jp1345/330032003400300033003800/ | **2026-08-23:** Requires high ServiceNow integration depth Marc doesn't have, and the engagement is only 3 months (possibility of extension, but not guaranteed) — too short/risky a ramp-up for the ski… |
+| 2026-08-20 | Rejected | 2026-08-31 | 6 | Solace | Senior DevOps Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4430715621/ | **2026-08-31:** Auto-rejected — sat unreviewed in jobs/new/ for over 1 week (found 2026-08-20). No action taken in time; not pursuing. |
+| 2026-08-20 | Rejected | 2026-08-31 | 6 | StackAdapt | DevOps Engineer | BuiltIn | https://builtin.com/job/devops-engineer/10318251 | **2026-08-31:** Auto-rejected — sat unreviewed in jobs/new/ for over 1 week (found 2026-08-20). No action taken in time; not pursuing. |
+| 2026-08-21 | Applied | 2026-08-21 | 8 | Akkodis (client role, Montréal) | Lead DevOps | LinkedIn | https://www.linkedin.com/jobs/view/4451400938/ |  |
+| 2026-08-21 | Applied | 2026-08-21 | 4 | Applied Systems Canada | Sr. Cloud Platform Engineer (GCP, Azure) | LinkedIn | https://www.linkedin.com/jobs/view/4428762901/ |  |
+| 2026-08-21 | Rejected | 2026-08-31 | 2 | 1Password | Senior IT Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4446933360/ | **2026-08-31:** Auto-rejected — sat unreviewed in jobs/new/ for over 1 week (found 2026-08-21). Domain mismatch (endpoint/MDM, not cloud platform) also made this a weak candidate regardless of age. |
+| 2026-08-23 | Applied | 2026-08-23 | 7 | VistaPrint | Lead Site Reliability Engineer - Canada, Remote | LinkedIn | https://www.linkedin.com/jobs/view/4430744766/ |  |
+| 2026-08-23 | Rejected | 2026-08-23 | 3 | Movable Ink | Lead Site Reliability Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4372005660 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | AdientOne LLC | DevOps/DevSecOps Consultant | Dice | https://www.dice.com/job-detail/ff62d8f7-21b5-4cd7-a014-e1d79585ab76 |  |
+| 2026-08-25 | New | 2026-08-25 | 7 | Advent Global Solutions, Inc. | Senior Azure Cloud Engineer / Architect | Dice | https://www.dice.com/job-detail/e7e7a522-598b-420e-8fae-c66784fdb2c1 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | Akuity | Senior Backend Engineer | RemoteOK | https://remoteok.com/remote-jobs/remote-senior-backend-engineer-akuity-1131479 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | AWS & Infrastructure Automation — Athennian | Cloud DevOps Engineer | S.i. Systems | https://www.sisystems.com/jobs/cloud-devops-engineer-aws-infrastructure-automation/330032003400320030003400/ (staffing-agency posting for Athennian — same role also listed directly via Eluta with the employer name disclosed, cross-referenced 2026-08-25) |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | Blackpoint Cyber | Director of SRE | BuiltIn | https://builtin.com/job/director-sre/10227076 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | ClickHouse | Cloud Software Engineer - Observability Platform | BuiltIn | https://builtin.com/job/cloud-software-engineer-observability-platform/10784649 |  |
+| 2026-08-25 | New | 2026-08-25 | 5 | ClickHouse | Senior Cloud Data Infrastructure Engineer | BuiltIn | https://builtin.com/job/senior-cloud-data-infrastructure-engineer/10323632 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | ClubRunner | Cloud Platform Engineer | Eluta | https://www.eluta.ca/search?q=Cloud+Engineer&filter-remote_jobs=only (full posting not fetchable via cache — no cache link available on the listing; scored from the Eluta listing summary) |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | CoLab Software | Forward Deployed Engineer | Indeed | https://ca.indeed.com/rc/clk?jk=ab67e255c3483d17 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | Deloitte Global Technology | Manager - Cloud WAF & Security Automation Engineering | Indeed | https://ca.indeed.com/rc/clk?jk=2b5fcae75e4861f9 |  |
+| 2026-08-25 | New | 2026-08-25 | 7 | DoiT | Senior Cloud Architect, ML/AI | RemoteOK | https://remoteok.com/remote-jobs/remote-senior-cloud-architect-ml-ai-doit-1131089 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | AI Automation — Flextrack | Senior DevOps Engineer | Procom | https://myprocom-portal.procomservices.com/jobs/senior-devops-engineer-ai-automation-ea506134 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | General Dynamics Mission Systems–Canada | Solutions Engineering, IT | LinkedIn | https://www.linkedin.com/jobs/view/4459095198/ |  |
+| 2026-08-25 | New | 2026-08-25 | 5 | GoDaddy | Senior Site Reliability Engineer - Cloud Platform | BuiltIn | https://builtin.com/job/senior-site-reliability-engineer-cloud-platform/10834965 |  |
+| 2026-08-25 | New | 2026-08-25 | 5 | Kyndryl | Nutanix Infrastructure Architect | Indeed | https://ca.indeed.com/rc/clk?jk=c4fdabb3424af6ab |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | Lemon.io | Senior DevOps Engineer | RemoteOK | https://remoteok.com/remote-jobs/remote-senior-devops-engineer-lemon-io-1135562 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | Livepeer | Lead Site Reliability Engineer | RemoteOK | https://remoteok.com/remote-jobs/remote-lead-site-reliability-engineer-livepeer-1093843 |  |
+| 2026-08-25 | New | 2026-08-25 | 5 | Mozilla | Senior Software Engineer, Cloud Engineering | BuiltIn | https://builtin.com/job/senior-software-engineer-cloud-engineering/10033061 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | nesto | Développeur.euse en sécurité cloud (Cloud Security Developer) | Indeed | https://ca.indeed.com/rc/clk?jk=6b561a0053d1db5e |  |
+| 2026-08-25 | New | 2026-08-25 | 5 | Nue.io | Staff Security Engineer, DevSecOps | BuiltIn | https://builtin.com/job/staff-security-engineer-devsecops/10260613 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | Integration Operations — Randstad (client: "major national organization") | Senior Software Engineer | Randstad | https://www.randstad.ca/jobs/senior-software-engineer-integration-operations_ottawa_47334493/ |  |
+| 2026-08-25 | New | 2026-08-25 | 7 | Shakepay | Senior Platform Engineer, Internal Tooling | RemoteOK | https://remoteok.com/remote-jobs/remote-senior-platform-engineer-internal-tooling-shakepay-1128294 |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | Warner Music Canada | DevOps Engineer | Eluta | https://www.eluta.ca/search?q=DevOps+Engineer&filter-remote_jobs=only (full posting not fetchable via cache — no cache link available on the listing; scored from the Eluta listing summary) |  |
+| 2026-08-25 | New | 2026-08-25 | 6 | Xsolla Group / Xsolla | Site Reliability Engineer (Monetization) | Eluta | https://www.eluta.ca/search?q=Site+Reliability+Engineer&filter-remote_jobs=only (full posting not fetchable via cache — no cache link available on the listing; scored from the Eluta listing summary) |  |
+| 2026-08-25 | Applied | 2026-09-15 | 6 | Caylent | Forward Deployed Engineer | BuiltIn | https://builtin.com/job/forward-deployed-engineer/10801740 |  |
+| 2026-08-25 | Applied | 2026-09-15 | 5 | Cresta | Infrastructure Engineer/SRE | BuiltIn | https://builtin.com/job/infrastructure-engineer-sre/9005403 |  |
+| 2026-08-25 | Applied | 2026-08-25 | 7 | Deloitte Global Technology | Senior Manager, Azure Architect | Indeed | https://ca.indeed.com/rc/clk?jk=0ec9064e51bbf9c2 |  |
+| 2026-08-25 | Applied | 2026-08-25 | 7 | Enverus | Staff Site Reliability Engineer (26248) | Indeed | https://ca.indeed.com/rc/clk?jk=13d4e80d91c8a2cd |  |
+| 2026-08-25 | Applied | 2026-09-15 | 6 | Movable Ink | Senior Site Reliability Engineer | BuiltIn | https://builtin.com/job/senior-site-reliability-engineer/10206540 |  |
+| 2026-08-25 | Applied | 2026-08-25 | 8 | Vaco by Highspring | Platform Engineer (DevOps / CI/CD / Automation / Observability) (SS27) | Dice | https://www.dice.com/job-detail/7864169d-b793-4c5d-95e0-51ed84e24be0 |  |
+| 2026-08-25 | Applied | 2026-08-25 | 7 | Xsolla | Platform Engineer (DevOps Engineer) | BuiltIn | https://builtin.com/job/devops-engineer/6765028 |  |
+| 2026-08-25 | Rejected | 2026-08-28 | 7 | Checkfront Inc. | Staff Platform Engineer | Eluta | https://www.eluta.ca/search?q=Platform+Engineer&filter-remote_jobs=only (full posting not fetchable via cache — no cache link available on the listing; scored from the Eluta listing summary) | **2026-08-28:** Can't find the posting — no live listing to apply against. |
+| 2026-08-25 | Rejected | 2026-08-28 | 7 | Data Platform — Twine (client engagement) | Freelance Azure Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4453469273/ | **2026-08-28:** Too Databricks-administration-focused and pitched at an architect level — wrong skillset match, not worth pursuing. |
+| 2026-08-26 | New | 2026-08-26 | 2 | Akamai Technologies | Senior II Site Reliability Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4440095529/ |  |
+| 2026-08-26 | Applied | 2026-08-26 | 8 | Jane App | Senior Developer - Delivery Engineering | LinkedIn | https://www.linkedin.com/jobs/view/4459055691/ |  |
+| 2026-08-26 | Applied | 2026-08-26 | 8 | Lakeview Loan Servicing, LLC. | Lead Infrastructure Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4412403902/ |  |
+| 2026-08-26 | Rejected | 2026-08-26 | 3 | Ciena | Application Support Engineer, Service Reliability Engineering | LinkedIn | https://www.linkedin.com/jobs/view/4418769998/ |  |
+| 2026-08-27 | Rejected | 2026-08-27 | 2 | Nango | Staff Engineer, Platform & Infrastructure | LinkedIn | https://www.linkedin.com/jobs/view/4459309549 |  |
+| 2026-08-27 | Rejected | 2026-08-27 | 3 | Sophos | Senior Software Engineer 1 | LinkedIn | https://www.linkedin.com/jobs/view/4449026460 |  |
+| 2026-08-28 | New | 2026-08-28 | 7 | Aquatic Informatics (Veralto / Hach) | Sr. Engineer, Product InfraOps (Remote) | LinkedIn | https://www.linkedin.com/jobs/view/4444227143 |  |
+| 2026-08-28 | New | 2026-08-28 | 6 | Autodesk | Senior DevOps Developer | LinkedIn | https://www.linkedin.com/jobs/view/4451945559/ |  |
+| 2026-08-28 | New | 2026-08-28 | 6 | CoinMarketCap | DevOps Engineer - Contractor | BuiltIn | https://builtin.com/job/devops-engineer-contractor/8791015 |  |
+| 2026-08-28 | New | 2026-08-28 | 2 | Murex | Senior DevOps Engineer | Glassdoor | https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,20.htm (Murex posting) |  |
+| 2026-08-28 | New | 2026-08-28 | 3 | Scotiabank | Staff Cloud Platform Engineer | Glassdoor | https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,20.htm (Scotiabank posting, Requisition ID 266008) |  |
+| 2026-08-28 | New | 2026-08-28 | 4 | Visier | Staff DevOps Developer | Glassdoor | https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,20.htm (Visier posting) |  |
+| 2026-08-28 | New | 2026-08-28 | 4 | Wealthsimple Technologies | Staff Software Engineer, Observability Platform | jobs.ashbyhq.com | https://jobs.ashbyhq.com/wealthsimple/386772a5-f900-43f0-815b-4ab8b04ff708 |  |
+| 2026-08-28 | New | 2026-08-28 | 6 | Workiy | DevOps Engineer | BuiltIn | https://builtin.com/job/devops-engineer/9963598 |  |
+| 2026-08-28 | Applied | 2026-08-28 | 7 | BeyondTrust | Staff Site Reliability Engineer- Remote | LinkedIn | https://www.linkedin.com/jobs/view/4449482118/ |  |
+| 2026-08-28 | Rejected | 2026-08-28 | 7 | Veeva | Principal DevOps Engineer | BuiltIn | https://builtin.com/job/principal-devops-engineer/10570857 | **2026-08-28:** Requires deep Kubernetes expertise and is functionally an AWS developer role — mismatch against Marc's actual depth (Azure-primary, operational/provisioning-level Kubernetes rather tha… |
+| 2026-08-31 | New | 2026-08-31 | 7 | Apetan Consulting | DevOps / SRE Engineer | Dice | https://www.dice.com/job-detail/ad7ab82c-3ef5-4f18-af95-cae5f7ffae9c |  |
+| 2026-08-31 | New | 2026-08-31 | 5 | Axon | Site Reliability Engineer II | Indeed | https://job-boards.greenhouse.io/axon/jobs/7981629003 (via https://ca.indeed.com/rc/clk?jk=85e92e1807ddc5d1) |  |
+| 2026-08-31 | New | 2026-08-31 | 6 | Block | Senior Site Reliability Engineer | BuiltIn | https://builtin.com/job/senior-site-reliability-engineer/9008570 |  |
+| 2026-08-31 | New | 2026-08-31 | 6 | Broadridge | Lead DevOps Engineer | BuiltIn | https://builtin.com/job/lead-devops-engineer/10582710 |  |
+| 2026-08-31 | New | 2026-08-31 | 7 | Clio | Senior Data Platform Engineer | BuiltIn | https://builtin.com/job/senior-data-platform-engineer/10836218 |  |
+| 2026-08-31 | New | 2026-08-31 | 7 | Codeforce 360 | Senior SRE Engineer | Dice | https://www.dice.com/job-detail/10783752-94e6-45d6-b98e-814324517a00 |  |
+| 2026-08-31 | New | 2026-08-31 | 5 | Jitsu | Senior DevOps/Platform Engineer | BuiltIn | https://builtin.com/job/senior-devops-platform-engineer/10895885 |  |
+| 2026-08-31 | New | 2026-08-31 | 6 | Magnet Forensics | Senior Site Reliability Engineer (Cloud Networking & Infrastructure as Code) | BuiltIn | https://builtin.com/job/senior-site-reliability-engineer-cloud-networking-infrastructure-code/10693944 |  |
+| 2026-08-31 | New | 2026-08-31 | 6 | Newton Crypto Ltd. | DevOps Engineer - Canada Wide - Remote | Eluta | https://www.eluta.ca/search?q=DevOps+Engineer&filter-remote_jobs=only (Newton Crypto Ltd., Toronto ON — Work Remotely; full posting not fetched — Eluta cache link did not open this run, scored from search-results snippet only) |  |
+| 2026-08-31 | New | 2026-08-31 | 7 | Penn Interactive (Penn Entertainment) | Senior Site Reliability Engineer | Indeed | https://job-boards.greenhouse.io/penninteractive/jobs/6131766004 (via https://ca.indeed.com/rc/clk?jk=33a60aac95f0b636) |  |
+| 2026-08-31 | New | 2026-08-31 | 6 | Policy Reporter by Valeris | DevOps Developer II, Engineering | BuiltIn | https://builtin.com/job/devops-developer-ii-engineering/10324741 |  |
+| 2026-08-31 | New | 2026-08-31 | 8 | Shimento, Inc. | Azure DevOps Engineer | Dice | https://www.dice.com/job-detail/58d8a01b-7dfe-4bb1-bfa4-d96bfbbaea59 |  |
+| 2026-08-31 | New | 2026-08-31 | 5 | S.i. Systems (client undisclosed) | Infrastructure Domain Architect | S.i. Systems | https://www.sisystems.com/jobs/infrastructure-domain-architect-to-lead-infrastructure-architecture-and-digital-transformation-initiatives-using-cloud-identity-infrastructure-collaboration-and-security-platforms/330032003500370034003600/ |  |
+| 2026-08-31 | New | 2026-08-31 | 5 | Social Discovery Group | Site Reliability Engineer (SRE) | BuiltIn | https://builtin.com/job/site-reliability-engineer-sre/10798621 |  |
+| 2026-08-31 | New | 2026-08-31 | 7 | Software Mind | Senior Site Reliability Engineer (SRE) – Kubernetes | BuiltIn | https://builtin.com/job/8sn-senior-site-reliability-engineer-sre-kubernetes/10677620 |  |
+| 2026-08-31 | New | 2026-08-31 | 6 | Teqdata | DevOps Engineer – IAM (Identity & Access Management) | Dice | https://www.dice.com/job-detail/84886e68-0d18-4359-9e1c-9b813e60ceee |  |
+| 2026-08-31 | New | 2026-08-31 | 5 | Univerus Software Inc. | Product Support Platform Engineer | Eluta | https://www.eluta.ca/search?q=Platform+Engineer&filter-remote_jobs=only (Univerus Software Inc., Work Remotely; full posting not fetched — Eluta cache link did not open this run, scored from search-results snippet only) |  |
+| 2026-08-31 | New | 2026-08-31 | 6 | Valtech Digital Canada, Inc. | Site Reliability Expert | Eluta | https://www.eluta.ca/search?q=Site+Reliability+Engineer&filter-remote_jobs=only (Valtech Digital Canada, Inc., Work Remotely; full posting not fetched — Eluta cache link did not open this run, scored from search-results snippet only) |  |
+| 2026-08-31 | Applied | 2026-09-15 | 6 | BeyondTrust | Cloud Engineer | BuiltIn | https://builtin.com/job/cloud-engineer/10915515 |  |
+| 2026-08-31 | Applied | 2026-09-15 | 6 | Empire Life Insurance Company | DevSecOps Engineer (Infrastructure) | Eluta | https://www.eluta.ca/search?q=DevSecOps+Engineer&filter-remote_jobs=only (Empire Life Insurance Company, Work Remotely — Anywhere in Canada; full posting not fetched — Eluta cache link did not open this run, scored from search-results snippet only) |  |
+| 2026-08-31 | Applied | 2026-09-15 | 8 | JFrog | Senior Professional Services DevOps Engineer | Indeed | https://join.jfrog.com/job/?job=8157049 (via https://ca.indeed.com/rc/clk?jk=6d4602ce18cff5ee) |  |
+| 2026-09-01 | Applied | 2026-09-01 | 8 | ComPsych Corporation | Senior DevSecOps Engineer | Indeed | https://ca.indeed.com/viewjob?jk=f7352acd77c80189 |  |
+| 2026-09-08 | New | 2026-09-08 | 7 | Borrowell | Sr. DevOps Engineer | BuiltIn | https://builtin.com/job/sr-devops-engineer/11026798 |  |
+| 2026-09-08 | New | 2026-09-08 | 5 | CTO.ai | Senior Software Engineer (Platform - DevOps) | Eluta | https://www.eluta.ca/search?q=DevOps+Engineer&filter-remote_jobs=only (CTO.ai, Vancouver BC — Work Remotely; full posting not fetched — Eluta cache link unreliable this run due to a concurrent multi-source Chrome session, scored from search-results snippet only) |  |
+| 2026-09-08 | New | 2026-09-08 | 6 | Esvee Technologies Inc | Lead Site Reliability Engineer | Dice | https://www.dice.com/job-detail/09cf8d02-2793-4929-8c70-5fb55487d705 |  |
+| 2026-09-08 | New | 2026-09-08 | 7 | Huron | Cloud Engineer – AI Solutions (Manager) - Remote | BuiltIn | https://builtin.com/job/cloud-engineer-ai-solutions-manager-remote/11024737 |  |
+| 2026-09-08 | New | 2026-09-08 | 7 | Inviso Corporation | FDE Infrastructure SRE Engineer - Canada | BuiltIn | https://builtin.com/job/infrastructure-sre-engineer-canada/10971481 |  |
+| 2026-09-08 | New | 2026-09-08 | 6 | Merative | Principle SRE | BuiltIn | https://builtin.com/job/principle-sre/10964580 |  |
+| 2026-09-08 | New | 2026-09-08 | 5 | Non-Profit Client (via S.i. Systems) | Senior Azure Integration Developer | S.i. Systems | https://www.sisystems.com/jobs/senior-azure-integration-developer-to-support-maintain-and-enhance-integrations-built-with-logic-apps-functions-and-adf-with-external-stakeholders-for-a-non-profit-client/330032003400390030003200/ |  |
+| 2026-09-08 | New | 2026-09-08 | 5 | Smile Digital Health | Cloud Performance Engineering - Site Reliability Engineer (Remote Canada) | Eluta | https://www.eluta.ca/search?q=Site+Reliability+Engineer&filter-remote_jobs=only (Smile Digital Health, Toronto ON — Work Remotely; full posting not fetched — Eluta cache link unreliable this run due to a concurrent multi-source Chrome session, scored from search-results snippet only) |  |
+| 2026-09-08 | New | 2026-09-08 | 5 | Spadtek Solutions LLC | L3 DevOps Engineer | Dice | https://www.dice.com/job-detail/a24ca66b-ced7-4aac-91fe-bbb97865d73a |  |
+| 2026-09-08 | New | 2026-09-08 | 6 | Web.com Canada | Senior DevOps Engineer, AI Platform | Eluta | https://www.eluta.ca/search?q=DevOps+Engineer&filter-remote_jobs=only (Web.com Canada — Work Remotely; full posting not fetched — Eluta cache link unreliable this run due to a concurrent multi-source Chrome session, scored from search-results snippet only) |  |
+| 2026-09-08 | Applied | 2026-09-08 | 6 | Autodesk | Senior DevOps Developer | LinkedIn | https://www.linkedin.com/jobs/view/4451945559/ |  |
+| 2026-09-08 | Applied | 2026-09-08 | 8 | CIRA | DevOps Specialist, GitLab CI/CD (6 months) | LinkedIn | https://www.linkedin.com/jobs/view/4444060323/ |  |
+| 2026-09-08 | Applied | 2026-09-16 | 7 | Crown Corporation Client (via S.i. Systems) | Senior DevSecOps Engineer | S.i. Systems | https://www.sisystems.com/jobs/senior-devsecops-engineer-to-develop-and-implement-initiatives-aimed-at-enhancing-operational-excellence-for-a-crown-corporation-client/330032003600340038003100/ |  |
+| 2026-09-08 | Applied | 2026-09-08 | 6 | Solace | Senior DevOps Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4430715621/ |  |
+| 2026-09-08 | Rejected | 2026-09-08 | 3 | EllisDon | Sr. DevSecOps Analyst | LinkedIn | https://www.linkedin.com/jobs/view/4454818729/ | **2026-09-08:** Corrected after direct verification — Glassdoor's aggregated listing omitted the city, causing an incorrect "plausibly remote" read at filing time. LinkedIn's own listing and EllisDon'… |
+| 2026-09-09 | Applied | 2026-09-09 | 8 | CMHC (Canada Mortgage and Housing Corporation) | Principal, Software Engineering | careers.cmhc-schl.gc.ca | https://careers.cmhc-schl.gc.ca/job/Ottawa-Advisor%2C-Software-Engineering/604788517/ |  |
+| 2026-09-11 | Applied | 2026-09-11 | 8 | Cohere | Forward Deployed Engineer, Infrastructure Specialist (North America) | LinkedIn | https://www.linkedin.com/jobs/view/4301372605 |  |
+| 2026-09-11 | Applied | 2026-09-11 | 7 | Ethos | Expert Opportunity - DevOps Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4455153454 |  |
+| 2026-09-11 | Applied | 2026-09-11 | 7 | VeriPark | Senior Support and Azure Infra Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4464569717 |  |
+| 2026-09-13 | New | 2026-09-13 | 7 | Hunter Bond | Software Developer & DevOps Engineer (Elite FinTech Firm, via Hunter Bond) | LinkedIn | https://www.linkedin.com/jobs/view/4464755557/ |  |
+| 2026-09-13 | New | 2026-09-13 | 7 | Joblet-AI | Site Reliability Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4466788286/ |  |
+| 2026-09-13 | New | 2026-09-13 | 7 | Medinext Global LLC | DevOps / Cloud Engineer | Dice | https://www.dice.com/job-detail/8466fbb2-4478-4c05-aad6-b38079a8e072 |  |
+| 2026-09-13 | New | 2026-09-13 | 6 | MedirAI | Lead DevOps Engineer, Platform | Indeed | https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Remote&vjk=38b0681a67c10383 |  |
+| 2026-09-13 | Rejected | 2026-09-15 | 2 | Morson Talent | Senior Azure Cloud DevOps Specialist | Indeed | https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Remote&vjk=901dd763fd940ff1 |  |
+| 2026-09-14 | New | 2026-09-14 | 6 | Desjardins | Analyste-programmeur(euse) DevOps Senior | Manual | Recruiter outreach (name not provided in posting text), no URL — client confirmed as Desjardins |  |
+| 2026-09-14 | Applied | 2026-09-14 | 9 | Ateko (backed by Bell Canada) | DevOps Platform Engineer \| CI/CD, GitHub, Kubernetes & IA | LinkedIn | https://ca.linkedin.com/jobs/view/devops-platform-engineer-ci-cd-github-kubernetes-ia-at-ateko-backed-by-bell-canada-4464527062 |  |
+| 2026-09-14 | Applied | 2026-09-14 | 9 | AXON Networks | Site Reliability Engineer | Indeed | https://ca.indeed.com/viewjob?jk=dce0360d2a243250 |  |
+| 2026-09-14 | Applied | 2026-09-14 | 8 | H2 Analytics | Forward Deployed Engineer | BuiltIn | https://builtin.com/job/forward-deployed-engineer/9252600 |  |
+| 2026-09-14 | Applied | 2026-09-14 | 9 | Keyfactor | Senior DevOps Engineer | LinkedIn | https://ca.linkedin.com/jobs/view/senior-devops-engineer-at-keyfactor-4463879696 |  |
+| 2026-09-14 | Applied | 2026-09-14 | 8 | Mercury | Senior Software Engineer - SRE | LinkedIn | https://ca.linkedin.com/jobs/view/senior-software-engineer-sre-at-mercury-4462531669 |  |
+| 2026-09-14 | Applied | 2026-09-14 | 7 | Newton.co | Site Reliability Engineer | BuiltIn | https://builtin.com/job/site-reliability-engineer-canada-wide-remote/8878389 |  |
+| 2026-09-14 | Applied | 2026-09-14 | 8 | Systematix | Senior Site Reliability Engineer AI and Data Platform | LinkedIn | https://ca.linkedin.com/jobs/view/senior-site-reliability-engineer-%E2%80%93-ai-data-platform-at-systematix-4454788392 |  |
+| 2026-09-15 | Applied | 2026-09-15 | 9 | CARET | Senior DevOps Engineer | Indeed | https://ca.indeed.com/viewjob?jk=d045d1c5a3afef1c |  |
+| 2026-09-15 | Applied | 2026-09-15 | 9 | Case IQ | DevOps Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4466586111/ |  |
+| 2026-09-15 | Applied | 2026-09-15 | 5 | Midnite | Senior Platform Engineer | Indeed | https://ca.indeed.com/viewjob?jk=caa8e804a0aba8ee |  |
+| 2026-09-15 | Applied | 2026-09-15 | 9 | ThinkOn | Platform Engineer | Indeed | https://ca.indeed.com/viewjob?jk=4bb60af501523624 |  |
+| 2026-09-15 | Applied | 2026-09-16 | 8 | REMOTE — Randstad client | DevOps Specialist | Randstad | https://www.randstad.ca/jobs/devops-specialist-remote_toronto_47428866/ |  |
+| 2026-09-15 | Rejected | 2026-09-15 | 8 | ANVIL | Intermediate DevOps Engineer | Indeed | https://ca.indeed.com/viewjob?jk=e9ff04a76c689ac5 | Indeed posting expired |
+| 2026-09-15 | Rejected | 2026-09-15 | 8 | Senior/Principal — Sectigo | DevOps Engineer | Indeed | https://ca.indeed.com/viewjob?jk=9114b581556cae8c | Indeed posting expired |
+| 2026-09-15 | Rejected | 2026-09-15 | 6 | Semios Group | Senior Site Reliability Engineer | Indeed | https://ca.indeed.com/viewjob?jk=089ea05045ca021d | Indeed posting expired |
+| 2026-09-16 | Applied | 2026-09-16 | 7 | VPC & Network — OVHcloud | Senior SDE/SRE | careers.ovhcloud.com | https://careers.ovhcloud.com/job/MONTR%C3%89AL-%28QU%C3%89BEC%29-Site-Reliability-Engineer-QC-H3A-2N4/1436260233/ |  |
+| 2026-09-16 | Applied | 2026-09-16 | 6 | VMware — OVHcloud | Site Reliability Engineer | careers.ovhcloud.com | https://careers.ovhcloud.com/job/MONTR%C3%89AL-%28QU%C3%89BEC%29-Site-Reliability-Engineer-QC-H3A-2N4/1425859233/ |  |
+| 2026-09-16 | Applied | 2026-09-16 | 8 | Swim Recruiting client | DevOps Specialist | LinkedIn | https://www.linkedin.com/jobs/view/4466882673/ |  |
+| 2026-09-18 | Applied | 2026-09-18 | 7 | Syntax | Senior Platform Engineer (SRE), AI Solutions | LinkedIn | https://www.linkedin.com/jobs/view/4468320244/ | No Backstage experience; Kubernetes depth is provisioning/automation-side, not deep CNCF cluster admin |
+| 2026-09-18 | Applied | 2026-09-18 | 4 | StackAdapt | Senior DevOps Engineer (Kubernetes team) | LinkedIn | https://www.linkedin.com/jobs/view/4459389438/ | AWS is real but dated/by-hand/non-production (Tink); Kubernetes depth is provisioning-side, not deep node/cluster ops |
