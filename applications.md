@@ -49,7 +49,7 @@ posting, append-only.
 | 2026-07-07 | Rejected | 2026-07-07 | 2 | Oscilar | Senior SRE / Infrastructure Engineer | Manual | pasted text (no URL provided) |  |
 | 2026-07-07 | Rejected | 2026-07-07 | 2 | Owl Practice Suite | Engineering Lead | Indeed | https://ca.indeed.com/viewjob?jk=2099f11fa4ed8086 |  |
 | 2026-07-11 | Applied | 2026-07-11 | 7 | Velora | Senior DevOps Engineer/Platform Engineer | Indeed | https://ca.indeed.com/viewjob?jk=a5bf4f4007135b55 |  |
-| 2026-07-14 | Applied | 2026-07-14 | 8 | EPAM | Site Reliability Engineer (SRE) | careers.epam.com | https://careers.epam.com/en/vacancy/bltwshooodc40mc0kqb_en?country=Canada |  |
+| 2026-07-14 | Applied | 2026-09-18 | 9 | EPAM | Site Reliability Engineer (SRE) | careers.epam.com | https://careers.epam.com/en/vacancy/site-reliability-engineer-sre-bltwshooodc40mc0kqb_en | Corrected 2026-09-18, applied same day with tailored resume |
 | 2026-07-14 | Applied | 2026-07-14 | 5 | Figment Inc. | Senior DevOps Engineer | Manual | pasted text (no URL provided) |  |
 | 2026-07-14 | Applied | 2026-07-14 | 9 | InvestorCOM | IT Operations Principal Engineer | Manual | pasted text (no URL provided) |  |
 | 2026-07-14 | Applied | 2026-07-14 | 5 | Litmus Automation Canada | Lead DevOps Engineer | Manual | pasted text (no URL provided) |  |
@@ -65,7 +65,7 @@ posting, append-only.
 | 2026-07-14 | Rejected | 2026-07-14 | 3 | Vancity (via Si Systems) | Senior Integration Engineer | Manual | pasted text (posting managed by Si Systems; apply link not provided in pasted text) |  |
 | 2026-07-14 | Rejected | 2026-07-14 | 1 | Zensurance Inc. | Senior Software Developer (Remote First) | Manual | pasted text (no URL provided) |  |
 | 2026-08-19 | Applied | 2026-08-19 | 7 | Applied Systems | Sr. Cloud Platform Engineer (GCP, Azure) | BuiltIn | https://builtin.com/job/sr-cloud-platform-engineer/9787963 |  |
-| 2026-08-19 | Applied | 2026-08-19 | 7 | EPAM Systems, Inc. | Lead DevOps Engineer - Observability & Monitoring | Indeed | https://ca.indeed.com/rc/clk?jk=6f872507b8bc5c79 |  |
+| 2026-08-19 | Applied | 2026-09-18 | 9 | EPAM Systems, Inc. | Lead DevOps Engineer - Observability & Monitoring | Indeed | https://ca.indeed.com/viewjob?jk=6f872507b8bc5c79 | Corrected 2026-09-18, applied same day with tailored resume |
 | 2026-08-19 | Applied | 2026-08-19 | 6 | Infrastructure Platforms — GitLab | Site Reliability Engineer, Intermediate to Senior Staff | BuiltIn | https://builtin.com/job/site-reliability-engineer-intermediate-senior-staff-infrastructure-platforms/10145126 |  |
 | 2026-08-19 | Applied | 2026-08-19 | 6 | MongoDB | Site Reliability Engineer (Senior or Staff), Deployments | BuiltIn | https://builtin.com/job/site-reliability-engineer-senior-or-staff/9785615 |  |
 | 2026-08-19 | Applied | 2026-08-19 | 6 | Ontinue | Senior IT Cloud Engineer - Remote BC | BuiltIn | https://builtin.com/job/senior-it-cloud-engineer-remote-bc/10609334 |  |
@@ -133,7 +133,7 @@ posting, append-only.
 | 2026-08-26 | Applied | 2026-09-16 | 6 | Akamai Technologies | Senior II Site Reliability Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4440095529/ | Score/status reconciled 2026-09-18 against reports/data/linkedin.json — original row was stale (score 2, New) |
 | 2026-08-26 | Applied | 2026-08-26 | 8 | Jane App | Senior Developer - Delivery Engineering | LinkedIn | https://www.linkedin.com/jobs/view/4459055691/ |  |
 | 2026-08-26 | Applied | 2026-08-26 | 8 | Lakeview Loan Servicing, LLC. | Lead Infrastructure Engineer | LinkedIn | https://www.linkedin.com/jobs/view/4412403902/ |  |
-| 2026-08-26 | Rejected | 2026-08-26 | 3 | Ciena | Application Support Engineer, Service Reliability Engineering | LinkedIn | https://www.linkedin.com/jobs/view/4418769998/ |  |
+| 2026-08-26 | Applied | 2026-09-18 | 8 | Ciena | Application Support Engineer, Service Reliability Engineering | Indeed | https://ca.indeed.com/viewjob?jk=ee2b07876b3811bd | Reconsidered 2026-09-18 — same posting originally rejected at 3/10 via a thin LinkedIn read; full Indeed description shows real Salesforce/MuleSoft/ServiceNow overlap from Énergir, re-scored 8/10 and applied same day |
 | 2026-08-27 | Rejected | 2026-08-27 | 2 | Nango | Staff Engineer, Platform & Infrastructure | LinkedIn | https://www.linkedin.com/jobs/view/4459309549 |  |
 | 2026-08-27 | Rejected | 2026-08-27 | 3 | Sophos | Senior Software Engineer 1 | LinkedIn | https://www.linkedin.com/jobs/view/4449026460 |  |
 | 2026-08-28 | New | 2026-08-28 | 7 | Aquatic Informatics (Veralto / Hach) | Sr. Engineer, Product InfraOps (Remote) | LinkedIn | https://www.linkedin.com/jobs/view/4444227143 |  |
