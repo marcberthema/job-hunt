@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check S.i. Systems"
+  short_description: "Search S.i. Systems for Canadian DevOps, SRE, and platform jobs"
+  default_prompt: "Search S.i. Systems for current matching jobs and update the S.i. Systems HTML report."

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check Randstad"
+  short_description: "Search Randstad Canada for DevOps, SRE, and platform jobs"
+  default_prompt: "Search Randstad Canada for current matching jobs and update the Randstad HTML report."

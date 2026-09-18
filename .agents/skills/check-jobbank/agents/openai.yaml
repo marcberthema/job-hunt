@@ -1,0 +1,4 @@
+interface:
+  display_name: "Check Job Bank"
+  short_description: "Search Canada's Job Bank for DevOps, SRE, and platform jobs"
+  default_prompt: "Search Job Bank for current matching jobs and update the Job Bank HTML report."
