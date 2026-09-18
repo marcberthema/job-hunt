@@ -5,7 +5,7 @@ description: Search LinkedIn and employer career sites for recent Canada-eligibl
 
 # Check LinkedIn
 
-Discover recent LinkedIn-listed jobs through public web access, validate them using accessible LinkedIn pages or employer career sites, and compare every eligible posting with Marc's current profile. This workflow is read-only: do not sign in, use private cookies, evade access controls, solve CAPTCHAs, create job files, change pipeline state, or submit applications.
+Discover recent LinkedIn-listed jobs through Marc's authenticated LinkedIn session in the connected browser, validate them using full LinkedIn postings or employer career sites, compare every eligible posting with Marc's current profile, and update `reports/linkedin-job-search.html`. LinkedIn access is strictly read-only: never apply, save a job, follow, connect, react, comment, post, message, submit a form, change profile or account data, or perform any other action that writes to LinkedIn. Apart from the board-specific report refresh, do not create job files or change pipeline state.
 
 ## Source of truth
 
@@ -16,6 +16,8 @@ Before scoring, read `profile.md` and `resume/marc-berthelette-resume-en.md` com
 If the user supplies a query, search that query only. Otherwise run the following LinkedIn-oriented phrase rotation:
 
 - `DevOps Consultant Remote`
+- `DevOps Specialist Remote`
+- `DevOps Engineer Remote`
 - `Senior DevOps Engineer Remote` 
 - `Staff DevOps Engineer Remote`
 - `Senior Site Reliability Engineer Remote`
@@ -32,15 +34,19 @@ Search for jobs posted in the past two days when the source exposes reliable dat
 
 Run additional remote-only discovery passes using Canada's major employment hubs as the LinkedIn location: Toronto/GTA, Vancouver, Montréal, Calgary, Ottawa, Edmonton, Waterloo/Kitchener, Halifax, Winnipeg, Québec City, and Victoria. LinkedIn frequently indexes a Canada-remote position under an employer office or recruiting hub instead of labeling it Remote. These passes are discovery mechanisms, not permission to retain local on-site or hybrid roles outside Marc's reachable cities.
 
+Run a separate hybrid discovery pass for each reachable city: Ottawa, Kingston, Cornwall, and Montréal. Do not include `Remote` in these searches; run `Cloud Platform Engineer`, `Platform Engineer`, `DevOps Engineer`, `Site Reliability Engineer`, and `Infrastructure Engineer` as separate searches, with LinkedIn's Hybrid workplace filter and past-two-days filter when available. LinkedIn's Hybrid filter can incorrectly return an empty set; when that happens, rerun the city/title search without a workplace filter and inspect each result's work-arrangement label manually. Review up to 12 plausible results per city after combining the title families. Open each posting to establish its actual office cadence. Retain Montréal roles when the cadence is two days weekly or less, or when it is undisclosed and recorded as `Hybrid — days not stated; confirm <=2`.
+
 Do not exclude a result based on LinkedIn's location label alone. Open the full description and retain it only when the posting itself explicitly permits remote work from Canada or Ontario, worldwide remote work compatible with a Canadian worker, or an equivalent eligible arrangement. Apply this validation to postings indexed under any Canadian city.
 
 Treat timezone language as a remote-eligibility signal worth validating. Phrases such as `USA or Canada (Eastern timezone)`, `Canada - Eastern time`, or `remote within Canada` qualify when the full posting does not impose an incompatible office requirement.
 
-Use public LinkedIn job pages and web searches targeting `linkedin.com/jobs/view/`. Because LinkedIn may restrict automated or logged-out access, supplement discovery with distinctive title/company searches and employer career sites. For a custom query, review up to 20 plausible results. For the default rotation, review up to 12 plausible results per phrase before deduplication. State the actual boundary when access or result volume prevents this.
+Use the connected browser's existing authenticated LinkedIn session as the primary discovery path. Navigate LinkedIn Jobs, enter searches and filters, open result pages, scroll, paginate, and read posting details as needed. These are the only permitted LinkedIn interactions. Supplement discovery and validation with public web searches, distinctive title/company searches, and employer career sites when they improve coverage or provide a more authoritative posting. For a custom query, review up to 20 plausible results. For the default rotation, review up to 12 plausible results per phrase before deduplication. State the actual boundary when access or result volume prevents this.
 
-## Access and validation
+## Browser access and validation
 
-Never request or reuse the user's LinkedIn credentials, browser session, private cookies, or authentication tokens. Never evade bot protection or attempt CAPTCHA or verification bypass. If a LinkedIn page is blocked or login-gated, use it only as a discovery lead and look for the same role on the employer's official career site.
+Use only an already connected, authenticated browser session; never request, reveal, extract, copy, export, or otherwise handle credentials, cookies, authentication tokens, or session data. Do not sign in or sign out. Never evade bot protection or attempt CAPTCHA or verification bypass. If LinkedIn presents a CAPTCHA, verification prompt, security checkpoint, or access restriction, stop using that path and look for the role on the employer's official career site.
+
+Treat every LinkedIn interaction as read-only. Permitted actions are navigating, searching, filtering, opening results, scrolling, paginating, and reading. Do not click any control that applies, saves, follows, connects, reacts, comments, posts, messages, shares, subscribes, changes preferences, edits account/profile data, uploads a file, or submits information. Avoid controls when their effect is unclear. Reading the inbox or unrelated private account data is outside scope.
 
 For every candidate, establish from an accessible full description the exact title/company, current availability, eligible location/arrangement, office cadence, stated compensation, and requirements needed for scoring. Do not score a search snippet or LinkedIn summary alone. Prefer the employer posting as the canonical URL and evidence source. If no current full description is accessible, omit the role from the scored table and list it under `Could not validate` with the reason.
 
@@ -56,7 +62,13 @@ Classify each retained role by its actual center of gravity:
 
 Give every eligible job a 0–10 `Skill score` based only on technical/domain fit, seniority, autonomy, and demonstrated leadership. Keep pay and location out of the score. Apply the profile's honesty rules, particularly for AWS, GCP, Kubernetes cluster administration, languages, and people management. Under `Biggest gap`, name the single most consequential requirement mismatch; use `None material` only when justified.
 
+## Expiration status
+
+Check freshness from the canonical employer page, explicit closed/expired notices, and stated closing dates. In the HTML report, preserve previously reported or newly discovered stale roles and label them visibly as `Expired` when confirmed, `Likely expired` when the evidence is indirect, or `Freshness unconfirmed` when no reliable date or current canonical page is available. Do not present expired roles as actionable or include them in eligible-current counts. Record the evidence and check date; never infer expiration solely from age.
+
 ## Output
+
+Before returning the result, update only LinkedIn's board-specific report at `reports/linkedin-job-search.html` so it reflects the current validated run. Include every scored row, current pipeline-status labels, direct posting URLs, the run date, and search/validation/exclusion totals. Preserve useful filtering and sorting. This report update is required on every invocation, including reruns with no new postings. Do not use or update `jobs/new/review-dashboard.html` for search-run reporting.
 
 Lead with search phrases completed, unique postings validated, exclusions, employer-site recoveries, inaccessible postings, and known pipeline matches. Sort every validated role by score descending using exactly:
 
@@ -65,8 +77,8 @@ Lead with search phrases completed, unique postings validated, exclusions, emplo
 
 Use only `SRE`, `Platform`, or `DevOps`. Link directly to the accessible full posting, preferring the employer page. Preserve currency and pay period; use `Not stated` for unknown facts. Include low scores.
 
-After the table, list `Could not validate` entries and material search limitations. Explicitly distinguish employer-validated roles from LinkedIn pages that were inaccessible. Ask which roles the user wants investigated or added to `jobs/new/`. Do not draft or write applications during discovery.
+After the table, list `Could not validate` entries and material search limitations. Explicitly distinguish employer-validated roles from LinkedIn pages that were inaccessible. Ask which roles the user wants investigated or added to `jobs/new/`. Do not draft applications or write files other than the required board-specific report during discovery.
 
 ## Follow-up filing
 
-For a selected posting, refresh it, re-check duplicates, and follow `specs/addjob.md`. Write only to `jobs/new/`; do not apply or change pipeline status without explicit confirmation.
+For a selected posting, refresh it read-only, re-check duplicates, and follow `specs/addjob.md`. Write only to `jobs/new/`. Never submit an application or change LinkedIn state through this skill; application submission belongs to a separate, explicitly requested workflow.

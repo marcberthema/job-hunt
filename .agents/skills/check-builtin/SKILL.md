@@ -5,7 +5,7 @@ description: Search Built In broadly for Canada-eligible remote and selected Eas
 
 # Check Built In
 
-Search Built In, validate the full postings, and compare every eligible result with Marc's current profile. This is a read-only discovery workflow: do not create job files, change pipeline state, or submit applications unless the user subsequently asks.
+Search Built In, validate the full postings, compare every eligible result with Marc's current profile, and update `reports/builtin-job-search.html` with the completed run. Apart from that board-specific report refresh, this is a read-only discovery workflow: do not create job files, change pipeline state, or submit applications unless the user subsequently asks.
 
 ## Source of truth
 
@@ -56,6 +56,10 @@ For remote results, do not treat the word `remote` alone as proof of eligibility
 
 For city passes, retain hybrid roles in the named city. Exclude roles in nearby but different cities and exclude fully on-site roles. For Montréal, exclude a posting when it requires more than two office days per week. If a Montréal posting says hybrid but does not disclose the cadence, retain it and show `Hybrid — days not stated; confirm <=2` in the Location column. Do not infer office cadence from generic terms such as flexible or remote-friendly.
 
+Run additional remote-discovery passes using Canada's major employment hubs as the Built In location: Toronto/GTA, Vancouver, Montréal, Calgary, Ottawa, Edmonton, Waterloo/Kitchener, Halifax, Winnipeg, Québec City, and Victoria. Built In may index a Canada-remote position under an employer office or recruiting hub even when the worker can live elsewhere in Canada. Treat these city passes as discovery only: do not retain local on-site work or hybrid work outside Ottawa, Kingston, Cornwall, and Montréal.
+
+Do not reject a posting from a remote-discovery pass merely because Built In labels it with a city. Open the full description and retain it only when the posting explicitly permits remote work from Canada or Ontario, worldwide remote work compatible with a Canadian worker, or an equivalent eligible arrangement. A bare `Remote` or `In-Office or Remote` label without supporting eligibility language is insufficient.
+
 Search Built In's current filtered pages first. Because its URL taxonomy and filters can change, inspect the live site rather than assuming an old route remains valid. Supplement weak or empty internal results with domain-restricted web searches targeting `builtin.com/job/` and the same role/geography. Do not use search-result snippets as the final evidence when the posting itself is accessible.
 
 Review the complete first results page for every search pass; do not stop after the first few attractive jobs. If pagination or a large result set would materially expand the run, state the boundary used instead of silently truncating it.
@@ -89,7 +93,13 @@ Apply the profile's honesty rules to AWS, GCP, Kubernetes, people management, pr
 
 For `Biggest gap`, name the single requirement most likely to prevent an interview or successful performance. Be specific, for example `Requires 5+ years operating EKS; Marc's AWS work was a dated, non-production build`, rather than `AWS`. If there is no material gap, write `None material`.
 
+## Expiration status
+
+Check freshness from the canonical employer page, explicit closed/expired notices, and stated closing dates. In the HTML report, preserve previously reported or newly discovered stale roles and label them visibly as `Expired` when confirmed, `Likely expired` when the evidence is indirect, or `Freshness unconfirmed` when no reliable date or current canonical page is available. Do not present expired roles as actionable or include them in eligible-current counts. Record the evidence and check date; never infer expiration solely from age.
+
 ## Output
+
+Before returning the result, update only Built In's board-specific report at `reports/builtin-job-search.html` so it reflects the current validated run rather than a prior snapshot. Include every row from the scored table, current pipeline-status labels, direct posting URLs, the run date, and search/validation/exclusion totals. Preserve useful filtering and sorting. This report update is required on every invocation of this skill, including reruns with no new postings. Do not use or update `jobs/new/review-dashboard.html` for search-run reporting; that file serves the separate review queue.
 
 Lead with the number of searches completed, unique postings validated, exclusions, and previously known pipeline matches. Then return one Markdown table sorted by skill score descending, using exactly these columns:
 
@@ -106,7 +116,7 @@ Requirements:
 - Keep table cells concise, but make `Biggest gap` decision-useful.
 - Do not omit low-scoring jobs from the table.
 
-After the table, report `Could not validate` and material search limitations, if any. End by asking which postings the user wants to investigate or add to `jobs/new/`. Do not draft cover letters or write files during this discovery run.
+After the table, report `Could not validate` and material search limitations, if any. End by asking which postings the user wants to investigate or add to `jobs/new/`. Do not draft cover letters or write files other than the required dashboard refresh during this discovery run.
 
 ## Follow-up filing
 
