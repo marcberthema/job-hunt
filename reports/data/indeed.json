@@ -4,7 +4,7 @@
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "Rechecked September 19, 2026 (browser-driven, direct WebFetch still 403-blocked) — 1 new eligible candidate (Exaion, Montréal).",
+  "latest_update": "Rechecked September 19, 2026 (browser-driven pass) — ran 6 of 9 title families remote-Canada plus an Ottawa hybrid city pass; heavy overlap with today's earlier Indeed run and today's Glassdoor run (same employer pool — Octasic, BMO, Wissen, Codan/Buyerlink all reappeared), 0 new eligible (5+) candidates, 3 new low-score rows logged for completeness.",
   "stats": [
     {
       "value": 9,
@@ -19,7 +19,7 @@
       "label": "confirmed expired"
     },
     {
-      "value": 17,
+      "value": 20,
       "label": "excluded results"
     },
     {
@@ -67,6 +67,15 @@
         "<b>ALTEN Canada</b>'s \"Ingénieur.e de la fiabilité des sites / Site Reliability Engineer\" (Montréal, $100,000/year) surfaced again — same company and salary as the \"Production Reliability & Support Expert\" posting Marc explicitly skipped on 2026-09-18; treated as the same underlying req, not rescored.",
         "Scope-excluded without full scoring: Platform Support Engineer (Surrey BC — 60% fullstack dev, not target family), Tech Lead / Kaseya Senior Staff Network Software Engineer / Home Hardware Azure Cloud Architect / WISSEN Senior DevSecOps Engineer / LMI DevOps Team Lead / CARFAX Senior SW Engineer-DevOps / Buyerlink Senior Platform Engineer (all title-plausible but not opened this run — geography/remote status unconfirmed, backlog for a follow-up pass), Moneris \"Manager, SRE and DevOps\" (Toronto, formal 3+ years people-management scope), InfoTrack Canada \"Cloud Infrastructure & DevSecOps Engineer\" (same $130-150K Toronto posting already excluded today via the Job Bank run — cross-source duplicate, not rescored), several industrial/mining/rail \"Reliability Engineer\" postings entirely unrelated to IT (Alamos Gold, Conuma Resources, Heavy Metal Equipment, Adecco Asset Integrity ×3, Via Rail, Can-Tech) surfaced by the generic \"Site Reliability Engineer\" query matching on \"reliability\" alone.",
         "No CAPTCHA, verification prompt, or write-side action occurred."
+      ]
+    },
+    {
+      "heading": "September 19 (second pass) validation notes",
+      "items": [
+        "Ran Site Reliability Engineer, DevOps Engineer, Cloud Engineer, Platform Engineer, Azure DevOps Engineer, and Forward Deployed Engineer remote-Canada, plus a DevOps Engineer Ottawa city pass. Did not reach Infrastructure Engineer, Reliability Engineer, or DevSecOps Engineer keyword passes, or Montréal/Kingston/Cornwall city passes — boundary for a follow-up run.",
+        "\"Site Reliability Engineer\" and \"Forward Deployed Engineer\" are dominated by the same non-tech noise pattern already documented on Glassdoor (mechanical/electrical \"reliability\" roles; offshore/defense/AI-agent \"forward deployed\" roles).",
+        "Confirmed Morson Talent's \"Senior Azure Cloud DevOps Specialist\" (Ottawa, $89.30/hr) is still live and appears across three separate sources now (original Indeed filing Sep 15, this repo's Glassdoor run Sep 19, this Indeed re-run Sep 19) — same still-open req, not a new posting.",
+        "Remote-Canada broad search returned a near-identical result pool across all 6 keywords tried today — Octasic, BMO Financial Group, Wissen Technology (Calgary), Codan/Buyerlink (Victoria BC), CARFAX, and Moneris variants resurfaced under every query, reinforcing that Indeed's own ranking pools DevOps/Platform/Cloud/SRE title families into largely the same inventory rather than genuinely distinct result sets."
       ]
     }
   ],
@@ -587,6 +596,39 @@
       "salary": "Not stated",
       "gap": "OpenStack IaaS and HPC/GPU hardware environments are not established in the profile; core fit is otherwise strong — Ansible, Terraform, Kubernetes, Bash/Python/PowerShell scripting, incident RCA/postmortem practice, and monitoring/supervision all overlap directly with Marc's Desjardins/Énergir work",
       "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Canada (Exaion, Montréal — Ingénieur Expert Delivery F/H; full French posting read in full via browser)"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Systems Administrator (Lead)",
+      "company": "Rebel",
+      "location": "Ottawa, ON — hybrid, 4 days onsite/1 WFH",
+      "salary": "CAD $90,000–$130,000/year",
+      "gap": "Reachable city and real AWS/DevOps/platform-ownership scope, but 4 days/week onsite isn't offset by a well-above-target rate (bottom of range is at the Ottawa floor, not above it), it's direct people-management of a small team rather than the profile's usual lead-without-authority framing, and the employer's own Indeed rating is 1.4/5 — worth a gut-check before pursuing",
+      "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Ottawa&sort=date",
+      "status": "New"
+    },
+    {
+      "score": 2,
+      "family": "DevOps",
+      "title": "Solutions Developer, Applied Solutions",
+      "company": "CAA North & East Ontario",
+      "location": "Ottawa, ON — hybrid",
+      "salary": "CAD $65,000–$70,000/year",
+      "gap": "Below the $100k Ottawa on-site/hybrid salary floor; also a junior-leaning hardware/field-deployment role (Raspberry Pi fleet management, 1-5 years experience) rather than platform/cloud engineering",
+      "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Ottawa&sort=date",
+      "status": "New"
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "CIT Information Security Lead",
+      "company": "Perseus Group",
+      "location": "Remote",
+      "salary": "CAD $115,000/year",
+      "gap": "Domain mismatch — this is a cybersecurity leadership role (SIEM, incident response, forensics, ISO 27000/PCI compliance ownership) rather than infrastructure/platform engineering; Marc's security exposure is DevSecOps-adjacent, not a security-program-lead background",
+      "url": "https://ca.indeed.com/jobs?q=Cloud+Engineer&l=Canada&sort=date",
+      "status": "New"
     }
   ]
 }
