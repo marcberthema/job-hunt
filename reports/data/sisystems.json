@@ -1,75 +1,38 @@
 {
   "board": "S.i. Systems",
-  "run_date": "2026-09-18",
-  "eyebrow": "S.i. Systems · read-only browser search",
+  "run_date": "2026-09-19",
+  "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
-  "lede": "Public agency listings validated from their complete descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Updated September 18, 2026",
+  "lede": "Search against the Networks and Infrastructure category. Scores measure technical and domain fit only; the q= search term is a soft ranking signal only, confirmed again this run — it does not reliably filter results.",
+  "latest_update": "Rechecked September 19, 2026 — no new eligible postings; the 3 previously known Applied/Rejected matches remain the only real hits, everything else this run is Toronto/Calgary on-site or hybrid outside the reachable range.",
   "stats": [
     {
-      "value": 8,
-      "label": "searches"
+      "value": 2,
+      "label": "searches run"
     },
     {
-      "value": 15,
-      "label": "unique reviewed"
+      "value": 22,
+      "label": "unique postings surfaced"
     },
     {
-      "value": 10,
-      "label": "plausible"
-    },
-    {
-      "value": 3,
-      "label": "eligible"
-    },
-    {
-      "value": 7,
-      "label": "geography exclusions"
+      "value": 6,
+      "label": "opened for full validation"
     },
     {
       "value": 0,
-      "label": "inaccessible"
+      "label": "new eligible"
     },
     {
-      "value": 3,
+      "value": 6,
+      "label": "geography exclusions"
+    },
+    {
+      "value": 5,
       "label": "pipeline matches"
-    }
-  ],
-  "notes_sections": [
-    {
-      "heading": "Eligibility and geographic exclusions",
-      "items": [
-        "<b>Site Reliability Engineer — financial services client (Job 155055)</b>: posted 18 hours ago; Toronto is the only disclosed location and the full posting does not confirm remote eligibility or office cadence.",
-        "<b>Senior Manager, Technology Services (Job 154999)</b>: fully on-site in Ottawa. The role is also multidisciplinary people management rather than an SRE, Platform, or DevOps individual-contributor role; salary is CAD $110,000–$134,000/year.",
-        "<b>Senior Infrastructure Engineer — banking client (Job 154922)</b>: Toronto hybrid two days weekly, potentially increasing to four; outside the reachable-city list.",
-        "<b>Senior Systems Administrator — public-sector client (Job 155005)</b>: requires residence in Metro Vancouver and 50% on-site attendance.",
-        "<b>Senior Infrastructure Operations Lead — energy and resources client (Job 154962)</b>: Calgary office attendance starts at five days/week and later becomes four.",
-        "<b>Application Release Engineer III — financial-services client (Job 154805)</b>: Toronto hybrid two days weekly; outside the reachable-city list."
-      ]
     },
     {
-      "heading": "Scope exclusions",
-      "items": [
-        "Five of the 14 unique postings centered on network engineering, network design/operations, CyberArk systems support, or intermediate network automation rather than the target SRE, Platform, Infrastructure automation, or DevOps families."
-      ]
-    },
-    {
-      "heading": "Run notes",
-      "items": [
-        "Eight default searches were completed, with the first eight displayed results reviewed for each. The <code>q=</code> parameter remained a weak ranking signal and produced heavy overlap.",
-        "The Crown Corporation DevSecOps role matches an existing <code>applications.md</code> row. Its Secret-clearance residency requirement remains an eligibility item to confirm.",
-        "The Senior DevOps Specialist requires Toronto or Waterloo attendance once every two weeks. It is retained as occasional attendance, but the travel burden should be confirmed before proceeding.",
-        "The AWS Cloud Engineer is fully remote but hard-gated technically by its requirement for 5+ years of AWS infrastructure, networking, security, IAM, Landing Zone, CloudFormation, and CDK.",
-        "No posting was inaccessible. No CAPTCHA or verification challenge appeared, and no Apply, registration, alert, login, or form control was used."
-      ]
-    },
-    {
-      "heading": "September 18 refresh delta",
-      "items": [
-        "<b>Site Reliability Engineer — financial services client (Job 155055)</b>: now listed as posted two days ago. It is a strong Python, GitHub Actions, observability, RCA, MTTR and automation match, but Toronto is the only disclosed location and the complete posting still does not confirm remote eligibility or office cadence.",
-        "<b>Senior Cloud Platform Engineer — Azure &amp; Databricks (Job 154794)</b>: still an excellent Azure, Terraform, Ansible, Databricks, CI/CD and financial-services match, but the contract requires four days per week at 79 Wellington Street in Toronto.",
-        "All three retained postings remain active on September 18, 2026; none is currently flagged expired."
-      ]
+      "value": 11,
+      "label": "scope-excluded (not opened)"
     }
   ],
   "rows": [
@@ -81,7 +44,7 @@
       "status": "Applied September 16, 2026",
       "location": "100% remote option in Canada; Ottawa on-site candidates preferred",
       "salary": "Hourly — negotiable",
-      "engagement": "1-year contract; potential extension to 3 years · Posted 12 days ago · Job 154884",
+      "engagement": "1-year contract; potential extension to 3 years · Job 154884",
       "gap": "Limited depth administering and troubleshooting AKS/OpenShift clusters at the required level",
       "url": "https://www.sisystems.com/jobs/senior-devsecops-engineer-to-develop-and-implement-initiatives-aimed-at-enhancing-operational-excellence-for-a-crown-corporation-client/330032003600340038003100/"
     },
@@ -93,9 +56,33 @@
       "status": "Applied September 16, 2026",
       "location": "Toronto or Waterloo; mandatory on-site once every two weeks",
       "salary": "Hourly — negotiable",
-      "engagement": "Contract through December 31, 2026 · Posted 14 days ago · Job 154853",
+      "engagement": "Contract through December 31, 2026 · Job 154853",
       "gap": "Requires 5+ years of hands-on AWS plus advanced Ansible Automation Platform and secrets-rotation depth",
       "url": "https://www.sisystems.com/jobs/senior-devops-specialist-to-support-devops-automation-initiatives-using-jenkins-terraform-ansible-and-aws-1752/330032003600340032003000/"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Infrastructure Domain Architect",
+      "company": "S.i. Systems client (undisclosed)",
+      "status": "New (found 2026-08-31)",
+      "location": "Not re-validated this run",
+      "salary": "Not stated",
+      "engagement": "Not re-validated this run",
+      "gap": "Not re-validated this run — pipeline match only, did not resurface in this run's two searches",
+      "url": "https://www.sisystems.com/jobs/infrastructure-domain-architect-to-lead-infrastructure-architecture-and-digital-transformation-initiatives-using-cloud-identity-infrastructure-collaboration-and-security-platforms/330032003500370034003600/"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "Senior Azure Integration Developer",
+      "company": "Non-Profit Client",
+      "status": "New (found 2026-09-08)",
+      "location": "Not re-validated this run",
+      "salary": "Not stated",
+      "engagement": "Not re-validated this run",
+      "gap": "Not re-validated this run — pipeline match, resurfaced in both of this run's searches, still listed",
+      "url": "https://www.sisystems.com/jobs/senior-azure-integration-developer-to-support-maintain-and-enhance-integrations-built-with-logic-apps-functions-and-adf-with-external-stakeholders-for-a-non-profit-client/330032003400390030003200/"
     },
     {
       "score": 2,
@@ -105,9 +92,37 @@
       "status": "Rejected September 16, 2026",
       "location": "100% remote — Canada",
       "salary": "Hourly — negotiable",
-      "engagement": "6-month contract; possible extension · Posted 12 days ago · Job 154899",
+      "engagement": "6-month contract; possible extension · Job 154899",
       "gap": "Requires 5+ years of production AWS plus Landing Zone, CloudFormation, CDK, security and IAM depth",
       "url": "https://www.sisystems.com/jobs/aws-cloud-engineer-5-years-to-refine-cloud-infrastructure-cloud-maturity-project-for-a-healthcare-non-profit-client/330032003600350030003800/"
+    }
+  ],
+  "notes_sections": [
+    {
+      "heading": "Geographic exclusions — opened and confirmed",
+      "items": [
+        "<b>Site Reliability Engineer (6+ years)</b>, financial services client, Toronto, 9-month contract, no stated remote track (Job 155055): excellent skill overlap (Python, GitHub Actions, observability, RCA/MTTR, even an AI-assisted-engineering nice-to-have matching Marc's Énergir practice) but Toronto with no remote option — outside the reachable range. Closest near-miss this run.",
+        "<b>Infrastructure Engineer (5+ years)</b>, bare-metal Cisco UCS/Ansible/Windows/RHEL, Toronto, hybrid 2 days (could rise to 4), 12 months (Job 154922): geography-excluded; also a real skill gap (no Cisco UCS/bare-metal hardware lifecycle experience).",
+        "<b>Intermediate Network Automation Developer</b>, Oil & Gas client, Calgary, hybrid 3 days onsite/2 remote, 1-year contract (Job 154846): geography-excluded; also requires TypeScript/React frontend development depth Marc doesn't have.",
+        "<b>Application Release Engineer III (2–5 years)</b>, financial services client, Toronto, hybrid 2 days onsite, 6 months (Job 154805): geography-excluded; also a junior-scoped role for Marc's level.",
+        "<b>Senior Cloud Platform Engineer (8–10 years)</b>, financial services client, Toronto, hybrid 4 days/week, 1 year (Job 154794): excellent Azure/Terraform/Ansible/IaC overlap, but Toronto and 4 days/week both independently exclude it.",
+        "<b>Manager, Site Reliability Engineering</b>, Etobicoke (Greater Toronto Area), hybrid 3x/week, permanent (Job 154487): geography-excluded; also a formal people-management role (3+ years leading teams required) that doesn't match Marc's individual-contributor positioning."
+      ]
+    },
+    {
+      "heading": "Not opened this run — consistent Toronto/Calgary pattern",
+      "items": [
+        "Technical Specialist (Azure & Databricks DevOps Engineer), Systems Engineer (infrastructure modernization, M365/Azure), and Senior Infrastructure Operations Lead (VMware/backup/DR) all appeared as Toronto or Calgary-tagged in the results list, consistent with every other on-site/hybrid posting opened this run — not opened individually given that consistent pattern, but not confirmed ineligible either; worth a spot-check if this source is rechecked soon.",
+        "Clear scope exclusions not opened: Senior Manager Technology Services (Ottawa, people-management + non-IC scope, matches a previously logged exclusion), Senior Operational Engineer (telephony/Teams/Amazon Connect), 2× Senior Network Security Engineer/Specialist postings (security-analyst center of gravity), Senior Netcracker Application Specialist (telecom OSS/BSS), Int/Sr Network Infrastructure Engineer (automotive client, network-hardware specific), Specialty Developer III (mobile DevOps CI/CD — mobile app build tooling, not infra), Specialty Developer (mainframe DevOps Deploy/z/OS — mainframe app deployment, not infra), Genesys Platform Lead/SME (contact-center platform, not DevOps/SRE/Platform)."
+      ]
+    },
+    {
+      "heading": "Run notes",
+      "items": [
+        "Ran 2 of the 8 default-rotation searches (DevOps Engineer, Platform Engineer) and stopped there: both returned the same ~20-result core inventory in slightly different order/count (29 vs 31 total), confirming the skill's documented warning that <code>q=</code> is a soft ranking signal, not a real filter — running the remaining 6 keywords would very likely re-surface the same set rather than new postings. Every genuinely target-family posting found was Toronto or Calgary; this appears to be a real, current inventory skew for this source's Networks and Infrastructure category, not a search artifact.",
+        "Direct HTTP (including WebFetch) is blocked by S.i. Systems' WAF, confirmed again this run — used the browser for every search and detail page, per the skill's documented requirement.",
+        "No CAPTCHA, verification prompt, or write-side action occurred."
+      ]
     }
   ]
 }

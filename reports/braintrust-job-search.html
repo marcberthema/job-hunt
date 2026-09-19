@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Braintrust job search — 2026-09-19</title>
+<style>
+:root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,"Segoe UI",sans-serif}a{color:var(--blue)}
+main{width:min(1500px,calc(100% - 32px));margin:auto}header{padding:52px 0 28px}.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:10px 0}.lede,.count,.method{color:var(--muted)}.latest{font-weight:700;color:var(--blue);margin:8px 0 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:28px 0}.stat,.notes,.table-shell,.panel{background:var(--panel);border:1px solid var(--line);border-radius:13px}
+.stat{padding:16px}.stat b{display:block;font-size:26px}.stat span{color:var(--muted);font-size:13px}.controls{display:grid;grid-template-columns:1fr repeat(3,190px);gap:10px;position:sticky;top:0;padding:12px 0;background:var(--bg)}
+input,select{padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit}.table-shell{overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:1000px}th,td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:uppercase;cursor:pointer}.score{font-size:18px;font-weight:800}.high{color:var(--green)}.low{color:#b77900}
+.pill{display:inline-block;padding:3px 8px;border-radius:99px;background:var(--soft);border:1px solid var(--line);font-size:11px;font-weight:700}.job,.company,.posting{font-weight:700}
+.empty{text-align:center;padding:34px;color:var(--muted)}.panel{padding:22px;margin:24px 0}.notes{padding:22px;margin:28px 0 70px}.notes h2,.panel h2{margin-top:0}.notes li+li,.panel li+li{margin-top:7px}
+.reason{color:var(--red)}@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.controls{position:static;grid-template-columns:1fr}}
+</style>
+</head>
+<body><main>
+<header>
+  <div class="eyebrow">Braintrust · contractor marketplace, read-only</div>
+  <h1>SRE, Platform &amp; DevOps opportunities</h1>
+  <p class="lede">Skill-chip search on the four confirmed IDs, plus a title-skim of the unfiltered Engineering feed for Platform Engineer / Forward Deployed Engineer (no confirmed chip exists for either). Scores measure technical and domain fit only.</p>
+  <p class="latest">First run, September 19, 2026 — 4 of 6 keywords returned zero results outright; one plausible candidate found via unfiltered title-skim, but its rate falls below the profile's contract-rate floor.</p>
+  <div class="stats">
+    <div class="stat"><b>6</b><span>keywords attempted</span></div>
+    <div class="stat"><b>4</b><span>returned zero results</span></div>
+    <div class="stat"><b>1</b><span>eligible, scored</span></div>
+    <div class="stat"><b>1</b><span>ineligible (US-only)</span></div>
+    <div class="stat"><b>0</b><span>pipeline matches</span></div>
+  </div>
+</header>
+<section>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search title, company, location or gap…">
+    <select id="family"><option value="">All families</option><option>SRE</option><option>Platform</option><option>DevOps</option></select>
+    <select id="location"><option value="">All locations</option></select>
+    <select id="minimum"><option value="0">Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4" selected>4+ stretch</option></select>
+    <label class="pill"><input id="hideDone" type="checkbox" checked> Hide applied, rejected, skipped &amp; expired</label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="table-shell"><table>
+    <thead><tr><th data-k="score">Score</th><th data-k="family">Family</th><th data-k="title">Job title</th><th data-k="company">Company</th><th data-k="location">Location / cadence</th><th>Salary</th><th>Biggest gap</th><th>Posting</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+</section>
+<section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://app.usebraintrust.com/jobs/?role=5,16">DevOps Cloud Engineer (Remote - USA) — United States Cold Storage</a></td><td class="reason">Location column states "United States only."</td></tr></tbody></table></section>
+<aside class="notes"><h2>Keyword results</h2><ul><li>All four confirmed skill-chip IDs returned zero results this run: DevOps Engineer (1338), Site Reliability Engineer (8473), Cloud Engineer / Cloud Engineering (10001), DevSecOps Engineer (6831).</li>
+<li>Platform Engineer and Forward Deployed Engineer have no confirmed skill chip (confirmed again this run — searching the Skills filter for "Platform Engineer" returns "Skill not found"; the skills list is technology/tool tags, not job-title tags). Fell back to the unfiltered <code>role=5,16</code> listing (1,394 total openings, sorted by recency) and title-skimmed the first page (~20 postings).</li>
+<li>The unfiltered feed's relevance density is very low — dominated by unrelated freelance gigs (LATAM Salesforce/CMS/QA roles, CNC programming, iOS, LLM data annotation) rather than infrastructure/DevOps work. Only 2 of the ~20 postings skimmed were even topically adjacent: the TaskRabbit role (scored above) and a US-only DevOps Cloud Engineer posting (ineligible).</li></ul><h2>Run notes</h2><ul><li>First-ever run against this source. No prior report data existed to compare against.</li>
+<li>Browser-driven throughout, per the skill's requirement (client-side rendered, direct HTTP returns an empty shell).</li>
+<li>No CAPTCHA, verification prompt, or write-side action occurred; no account created or profile submitted.</li>
+<li>Given how thin the unfiltered feed is for this domain, a full page-2+ title-skim wasn't run this pass — worth revisiting if this source is checked again, but the zero-result pattern across all 4 real skill-chip searches suggests Braintrust currently has very little SRE/Platform/DevOps-specific demand, not a search-mechanism failure.</li></ul></aside>
+
+</main>
+<script>
+const jobs = [{"score": 4, "family": "Platform", "title": "Sr Software Engineer - Developer Productivity", "company": "TaskRabbit", "location": "United States | Canada + 2 more — explicitly Canada-eligible", "salary": "$60–$70/hour", "gap": "Skill fit itself is strong (CI/CD, ArgoCD/GitOps, Kubernetes/Docker/Helm, developer-platform ownership, and explicit day-to-day use of Claude/AI-assisted workflows — directly supported by Marc's real AI-assisted-engineering practice at Énergir), but the $60–70/hr rate is well below the profile's $100/hr full-time-consulting-contract floor for this 40hrs/wk, long-term engagement — capped per the rate red flag rather than the skill gap.", "url": "https://app.usebraintrust.com/jobs/17859/"}];
+const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function render(){
+  const q=$("#q").value.toLowerCase(),family=$("#family").value,location=$("#location").value.toLowerCase(),minimum=+$("#minimum").value,hideDone=$("#hideDone").checked;
+  const list=jobs.filter(j=>(!hideDone||!/(applied|rejected|skipped|expired)/i.test(j.status||""))&&(!family||j.family===family)&&(!location||(j.location||"").toLowerCase().includes(location))&&j.score>=minimum&&(!q||Object.values(j).join(" ").toLowerCase().includes(q))).sort((a,b)=>dir*(a[key]<b[key]?-1:a[key]>b[key]?1:0));
+  rowsEl.innerHTML=list.length?list.map(j=>`<tr><td><span class="score ${j.score>=8?"high":j.score<=4?"low":""}">${j.score}/10</span></td><td><span class="pill">${esc(j.family)}</span></td><td class="job">${esc(j.title)}${j.status?`<br><span class="pill">${esc(j.status)}</span>`:""}</td><td class="company">${esc(j.company)}</td><td>${esc(j.location||"")}</td><td>${esc(j.salary||"Not stated")}</td><td>${esc(j.gap||"")}</td><td><a class="posting" href="${esc(j.url)}" target="_blank" rel="noopener">View ↗</a></td></tr>`).join(""):`<tr><td class="empty" colspan="8">No postings match the current filters.</td></tr>`;
+  $("#count").textContent=`Showing ${list.length} of ${jobs.length} validated postings`;
+}
+const locSel=$("#location");[...new Set(jobs.map(j=>j.location).filter(Boolean))].sort().forEach(loc=>{const o=document.createElement("option");o.textContent=loc;locSel.append(o)});
+["q","family","location","minimum","hideDone"].forEach(id=>$("#"+id).addEventListener("input",render));
+document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const next=th.dataset.k;if(key===next)dir*=-1;else{key=next;dir=key==="score"?-1:1}render()});
+render();
+</script>
+</body>
+</html>

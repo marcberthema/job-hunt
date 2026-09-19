@@ -1,214 +1,156 @@
 {
   "board": "Dice",
-  "run_date": "2026-09-18",
+  "run_date": "2026-09-19",
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
-  "lede": "Eligibility is checked before technical scoring. “Able to Sponsor” is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Updated September 18, 2026",
+  "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
+  "latest_update": "Rechecked September 19, 2026.",
   "stats": [
     {
       "value": 6,
       "label": "queries"
     },
     {
-      "value": 15,
+      "value": 32,
       "label": "unique reviewed"
     },
     {
-      "value": 2,
-      "label": "eligible current"
+      "value": 7,
+      "label": "eligible, scored"
     },
     {
       "value": 1,
-      "label": "ineligible current"
+      "label": "pipeline match"
     },
     {
-      "value": 12,
-      "label": "scope/unvalidated"
+      "value": 1,
+      "label": "hard-gated"
     },
     {
-      "value": 2,
-      "label": "expired"
+      "value": 1,
+      "label": "ineligible (on-site)"
     },
     {
-      "value": 0,
-      "label": "pipeline matches"
+      "value": 22,
+      "label": "scope-excluded"
     }
   ],
   "ineligible": [
     {
-      "title": "Senior Cloud DevOps Engineer",
-      "company": "TechniPros",
-      "reason": "Dice marks the position on-site in US cities; W-2 only and no C2C.",
-      "url": "https://www.dice.com/job-detail/ab2a03f8-5b46-4179-9b52-1595d4b575ef"
-    },
-    {
-      "title": "Site Reliability Engineer",
-      "company": "Empower",
-      "reason": "Must already be authorized for any US employer; sponsorship explicitly unavailable.",
-      "url": "https://www.dice.com/job-detail/166771cc-359e-438f-84b7-5707817ef2a9"
-    },
-    {
-      "title": "Senior Data and AI Platform Engineer",
-      "company": "Jellyfish",
-      "reason": "US authorization required; sponsorship explicitly unavailable.",
-      "url": "https://www.dice.com/job-detail/f96a8be7-28f7-4e4a-9345-606413d27969"
-    },
-    {
-      "title": "Site Reliability Engineer",
-      "company": "Integration Architects",
-      "reason": "On-site in Santa Clara, California.",
-      "url": "https://www.dice.com/job-detail/0527532c-7a04-4566-9b9d-6f1c73e3eabe"
-    },
-    {
       "title": "Forward Deployed Engineer",
-      "company": "Reliable Software Resources",
-      "reason": "On-site in Lake Mary, Florida.",
-      "url": "https://www.dice.com/job-detail/280f96ac-c483-42f0-a769-117ed326db57"
-    },
-    {
-      "title": "Forward Deployed Engineer",
-      "company": "K-Tek Resourcing",
-      "reason": "Hybrid in San Jose, California or Bridgewater, New Jersey.",
-      "url": "https://www.dice.com/job-detail/22d8d88f-dab2-481b-8dd6-9a1fa5663775"
-    },
-    {
-      "title": "Forward Deployed Engineer",
-      "company": "Nestor Technologies",
-      "reason": "Austin-local candidates only; active Texas driver's licence required.",
-      "url": "https://www.dice.com/job-detail/bc31fd8d-f2e1-4f6b-acab-a565857b3f46"
+      "company": "Kforce Technology Staffing",
+      "reason": "On-site in Armonk, NY with no remote option stated (contradicts the workplaceTypes=Remote search filter); also an LLM/RAG/prompt-engineering AI-application role, not infrastructure/DevOps.",
+      "url": "https://www.dice.com/job-detail/8a5018c6-c4a1-4af2-bc46-0990851dfd50"
     }
   ],
-  "could_not_validate": [
-    "DevSecOps results exposed sponsor-filter counts but no current remote candidate with a complete, clearly eligible description inside the review boundary.",
-    "Info Way Solutions — SRE Platform Engineering (FedRAMP High/DoD IL5): the complete citizenship, authorization and clearance requirements were not exposed, so the role was not scored."
+  "rows": [
+    {
+      "score": 7,
+      "family": "SRE",
+      "title": "DevOps Engineer (content reads as SRE)",
+      "company": "TechniPros, LLC",
+      "location": "Remote in Kansas City, KS, US area — on-site \"depends on experience\"",
+      "salary": "Not stated; Contract W-2, 12+ months",
+      "gap": "None material — strong direct overlap (Kubernetes, Terraform, AWS/Azure, Docker, Prometheus, Grafana, GitHub Actions, incident response/runbooks). Flag: \"Able to Sponsor\", W-2 only, explicitly \"No C2C\" — TN-sponsorship path, confirm remote-from-Canada support with recruiter before pursuing.",
+      "url": "https://www.dice.com/job-detail/3d6389da-5200-4f80-942b-403485234765"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "TechniPros, LLC",
+      "location": "Remote (Columbus OH / Chicago IL / Minneapolis MN / Detroit MI / Madison WI rotation) — on-site \"depends on experience\"",
+      "salary": "Not stated; Contract W-2, 12 months",
+      "gap": "Security-scanning tooling (SonarQube, Snyk, Prisma Cloud, Checkmarx) is new but adjacent to existing CI/CD and observability work. Flag: \"Able to Sponsor\", W-2 only, explicitly \"No C2C\" — TN-sponsorship path, confirm remote-from-Canada support.",
+      "url": "https://www.dice.com/job-detail/a0acae92-9fd1-4865-a46f-dcf4f46f1a41"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "Salesforce DevOps Architect",
+      "company": "Shiro Technologies",
+      "location": "Remote, occasional travel",
+      "salary": "Depends on Experience; Full Time",
+      "gap": "Requires hands-on Flosum, Copado, or Gearset (Marc's real Salesforce delivery work at Énergir used native Salesforce CLI plus a custom validation pipeline, not these commercial release-management tools) and some Apex/LWC/Health Cloud/Experience Cloud development depth Marc doesn't have. Posting also references IL4/IL5 federal compliance environments as a plus — confirm how hard that requirement actually is. Flag: \"Able to Sponsor\" on an FTE role — confirm authorization path.",
+      "url": "https://www.dice.com/job-detail/f094cb31-ef6c-46e4-b51c-b2231c0c435c"
+    },
+    {
+      "score": 5,
+      "family": "SRE",
+      "title": "Staff Site Reliability Engineer",
+      "company": "Ping Identity",
+      "location": "Remote (fully distributed)",
+      "salary": "$136,000–$181,000 USD/year; Full Time",
+      "gap": "Requires Go programming proficiency, which Marc doesn't have. Flag: USD-denominated salary and no sponsorship language anywhere in the posting — likely a US-only role; confirm Canada/remote-international eligibility with the recruiter before pursuing.",
+      "url": "https://www.dice.com/job-detail/26f9de27-a424-413c-ae9a-07fb1e4f4b81"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Migration Solution Architect – Azure",
+      "company": "Turing IT Labs",
+      "location": "Remote, no travel",
+      "salary": "$170,000–$220,000/year; Full Time",
+      "gap": "Requires 8–12+ years specifically in a Solution Architect title/scope; Marc's architecture-adjacent work is real but not formally titled at this tenure (profile deliberately avoids leading with \"Architect\" framing for this reason). Strong Azure/AWS/Terraform/DevSecOps overlap otherwise. Flag: no sponsorship/clearance language stated — confirm Canada eligibility before pursuing given the high US-typical salary band.",
+      "url": "https://www.dice.com/job-detail/d65bb710-2e7d-4e78-9b12-40725da96e7a"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "RH OpenShift Container Platform 4 – Platform Deployment Senior Consultant",
+      "company": "Job.com, LLC",
+      "location": "Remote, no travel",
+      "salary": "Depends on Experience; Contract W-2, 4 months",
+      "gap": "Requires 4+ years of hands-on Red Hat OpenShift Container Platform 4.x administration specifically (IPI/UPI cluster installs, OVN-Kubernetes, RBAC/SCC) — Marc's Kubernetes/ArgoCD work at Desjardins is real but not OpenShift-specific. Flag: no sponsorship/authorization language stated — confirm Canada eligibility.",
+      "url": "https://www.dice.com/job-detail/99e22c95-f644-4618-bf85-6d135c1ad02e"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior DevOps / Data Platform Engineer",
+      "company": "GlobalLogic Inc.",
+      "location": "Remote",
+      "salary": "~$120,000–$130,000/year equivalent; Contract (C2C or W-2), 12 months",
+      "gap": "Real AWS/Terraform/CI-CD overlap, but the role's actual center of gravity is data-platform engineering (Snowflake, Parquet/S3 data lake patterns, Fivetran CDC, database replication) rather than core infrastructure DevOps — the profile's scope rule excludes data-engineering-centered roles even when infra keywords are present. A different GlobalLogic posting was rejected 2026-07-07 (score 4, multi-cloud lead scope gap) — same employer, consistent pattern.",
+      "url": "https://www.dice.com/job-detail/93ff84f7-42cd-4c47-a43c-714d3842643b"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "AWS Cloud Migration Architect",
+      "company": "Quantiphi Inc.",
+      "location": "Remote (Canada/USA) — explicitly Canada-eligible",
+      "salary": "Not stated; Full Time",
+      "gap": "Hard-gated: AWS migration-architecture ownership at scale is literally the deliverable (Migration Hub, MGN, Landing Zone, Control Tower, 10+ years) — this exceeds what the ~6-month, non-production, by-hand Tink AWS build supports per the profile's AWS/GCP hard-gate rule. Capped regardless of the genuinely Canada-open arrangement.",
+      "url": "https://www.dice.com/job-detail/722f0276-32dd-45d2-ac94-bf49a7e93f2a"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Cloud & Application Platform Engineer",
+      "company": "Quantum Technologies LLC",
+      "location": "Remote — US authorization list (USC/GC/H-1B/OPT-EAD), no Canada/TN mention",
+      "salary": "$80–90/hour",
+      "gap": "OpenShift/certificate/ServiceNow overlap is real but the role reads as app-support/platform-ops hybrid (ongoing Java/.NET maintenance), not pure platform engineering; W-2 only, Canada/TN eligibility unconfirmed.",
+      "url": "https://www.dice.com/job-detail/d57b98ba-d63f-40f4-add5-1e9c3dafe833",
+      "status": "New — already in applications.md (found 2026-09-18), not refiled"
+    }
   ],
   "notes_sections": [
     {
-      "heading": "Expired",
+      "heading": "Scope exclusions — not opened for full validation",
       "items": [
-        "<a href=\"https://www.dice.com/job-detail/b2d1df9e-88b6-4b31-a612-666edb98171c\">Senior DevOps &amp; Platform Engineer — Incorporan</a>: no longer accepting candidates. Confirmed by Marc September 16, 2026; removed from the actionable table.",
-        "<a href=\"https://www.dice.com/job-detail/fa5b0dac-5f57-4c61-a417-a1c5039284d0\">Site Reliability Engineer 100% Remote — Apetan Consulting</a>: Dice explicitly says the job is no longer available. Confirmed September 16, 2026; excluded from eligible-current totals."
+        "22 of the 32 unique postings reviewed were screened out by title alone as off-topic for the SRE/Platform/DevOps family, per the skill's skim-before-fetch guidance: 2× Business Analyst, 2× Quality Assurance Engineer, 5× Salesforce Developer/Architect/Tech Lead (non-DevOps app-dev flavor), 3× Oracle Cloud/EPM/Fusion functional consultant, 1× SAP Commerce Solutions Architect, 1× Cloud Security analyst role, 1× Senior Google Cloud Architect (GCP-primary — would hit the GCP hard gate on sight), and 5× AI/Generative-AI-flavored roles (Senior AI Agent Platform Engineer, AI Platform Engineer, Principal Generative AI Engineer, and two more Forward Deployed Engineer postings centered on LLM/RAG/agentic-AI work rather than infrastructure)."
       ]
     },
     {
       "heading": "Run notes",
       "items": [
-        "All six default titles were searched. Boundary: first search-results page and up to eight plausible results per query, supplemented by direct Dice posting discovery.",
-        "“Able to Sponsor” roles require recruiter confirmation that TN support is real and that remote work can be performed from Canada.",
-        "No employer-site recovery was needed and no exact repository pipeline match was confirmed.",
-        "Dice's “Able to Sponsor” label does not override location, clearance, or authorization text inside a posting."
+        "All six default titles were searched (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer); up to 8 results reviewed per query, deduplicated to 32 unique postings by Dice job GUID.",
+        "Direct HTTP retrieval worked cleanly for both search results and individual job-detail pages this run — no browser fallback needed.",
+        "\"Able to Sponsor\" appears on several postings without naming TN specifically — flagged per-posting for recruiter confirmation rather than assumed eligible, per the skill's TN-sponsorship-path rule. Several roles carry no sponsorship/authorization language at all rather than an explicit unsponsored-authorization-required statement, so per the eligibility gate's ordering they were scored with a confirm-authorization flag rather than excluded outright.",
+        "No CAPTCHA, verification prompt, or write-side action occurred."
       ]
-    },
-    {
-      "heading": "September 18 refresh delta",
-      "items": [
-        "<b>Cloud &amp; Application Platform Engineer — Quantum Technologies</b>: new eight-month W-2 remote contract at $80–$90/hour. Strong cloud migration, OpenShift, automation, certificate, access and platform-services scope; confirm TN support and Canada-based remote eligibility.",
-        "<b>Forward-Deployed Engineer with Generative AI — Key Business Solutions</b>: new six-month remote C2C/W-2/independent contract. Azure and delivery overlap, but deep production RAG/LLM evaluation and full-stack AI engineering are the largest gaps; confirm TN/Canada eligibility.",
-        "<b>TechniPros DevSecOps Engineer</b>: new sponsor-marked result, but the detail page says on-site in specified US cities and W-2 only, so it is ineligible.",
-        "Previously reported leads no longer surfaced inside the seven-day filtered boundary; they remain preserved below with their last confirmed status rather than being declared expired without direct evidence."
-      ]
-    }
-  ],
-  "rows": [
-    {
-      "score": 5,
-      "family": "Platform",
-      "title": "Cloud & Application Platform Engineer",
-      "company": "Quantum Technologies",
-      "location": "Remote — US authorization list (USC/GC/H-1B/OPT-EAD), no Canada/TN mention",
-      "salary": "$80-90/hour (~$108-126 CAD/hr)",
-      "gap": "OpenShift/certificate/ServiceNow overlap is strong, but reads as app-support/platform-ops hybrid (ongoing Java/.NET maintenance), not pure platform engineering; W-2 only, Canada/TN eligibility unconfirmed",
-      "url": "https://www.dice.com/job-detail/d57b98ba-d63f-40f4-add5-1e9c3dafe833",
-      "status": "Applied — Sep 18"
-    },
-    {
-      "score": 2,
-      "family": "Platform",
-      "title": "Forward-Deployed Engineer with Generative AI",
-      "company": "Key Business Solutions",
-      "location": "Remote — confirm TN and Canada-based eligibility",
-      "salary": "Not stated",
-      "gap": "Deep RAG, prompt engineering, LLM evaluation, and full-stack AI engineering required",
-      "url": "https://www.dice.com/job-detail/b64fdd50-d372-40f7-b09e-fb32dadc6622",
-      "status": "Current — checked September 18"
-    },
-    {
-      "score": 3,
-      "family": "Platform",
-      "title": "Platform Engineer — AI Systems / Infrastructure",
-      "company": "Highbrow",
-      "location": "Remote — confirm TN and Canada-based eligibility",
-      "salary": "$60-72/hour",
-      "gap": "AWS-native distributed AI execution platform with advanced Python backend ownership required",
-      "url": "https://www.dice.com/job-detail/dc4516b9-650d-442a-a08b-33ac8c0b6b11",
-      "status": "Current — checked September 16"
-    },
-    {
-      "score": 3,
-      "family": "SRE",
-      "title": "Site Reliability Engineer",
-      "company": "Esolvit",
-      "location": "Remote — confirm TN and Canada-based eligibility",
-      "salary": "$60-70/hour",
-      "gap": "Eight years of hands-on application vulnerability remediation required",
-      "url": "https://www.dice.com/job-detail/7d41153b-c415-45ad-a546-7610d018ad50",
-      "status": "Current — checked September 16"
-    },
-    {
-      "score": 3,
-      "family": "SRE",
-      "title": "Lead Site Reliability Engineer",
-      "company": "IBOTIX",
-      "location": "US-only remote",
-      "salary": "Not stated",
-      "gap": "GCP-primary with 8+ years public-cloud administration required — hard-gate territory",
-      "url": "https://www.dice.com/job-detail/42464693-63fb-48f6-beb2-b52eb5ed749a",
-      "status": "Current — checked September 16"
-    },
-    {
-      "score": 2,
-      "family": "DevOps",
-      "title": "DevOps Engineer / SRE Engineer",
-      "company": "JC Corporations",
-      "location": "Remote — confirm TN despite C2C/W-2 options",
-      "salary": "$50-90/hour",
-      "gap": "Requires 10+ years deep production AWS/EKS",
-      "url": "https://www.dice.com/job-detail/d370bd8e-7ebc-412a-a006-836756e5c7c6",
-      "status": "Current — checked September 16"
-    },
-    {
-      "score": 2,
-      "family": "Platform",
-      "title": "Agentic AI Forward Deployed Engineer",
-      "company": "Photon",
-      "location": "Remote — confirm TN and US location eligibility",
-      "salary": "Not stated",
-      "gap": "Requires 6+ years building AI/ML applications and production AI systems",
-      "url": "https://www.dice.com/job-detail/ec02a127-8281-4b31-9087-2b0971e4dae6",
-      "status": "Current — checked September 16"
-    },
-    {
-      "score": 2,
-      "family": "Platform",
-      "title": "Forward Deployed Engineer",
-      "company": "Ekcel Technologies",
-      "location": "Remote — confirm TN",
-      "salary": "Not stated",
-      "gap": "Palantir certification plus deep production AI/ML, RAG and full-stack engineering mandatory",
-      "url": "https://www.dice.com/job-detail/21e37dd5-1c00-4fd7-bb06-89f930cacf6e",
-      "status": "Freshness unconfirmed — checked September 16"
-    },
-    {
-      "score": 2,
-      "family": "Platform",
-      "title": "Agentic AI Architect / FDE",
-      "company": "Photon",
-      "location": "Remote — confirm TN and travel feasibility",
-      "salary": "Not stated",
-      "gap": "Requires 12+ years AI focus and roughly 80% US travel",
-      "url": "https://www.dice.com/job-detail/5e702aec-6861-49fd-9e8a-6aa09056f65d",
-      "status": "Current — checked September 16"
     }
   ]
 }
