@@ -1,17 +1,17 @@
 {
   "board": "Indeed",
-  "run_date": "2026-09-18",
+  "run_date": "2026-09-19",
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "Latest update: September 18, 2026 — discovery and freshness refresh completed.",
+  "latest_update": "Rechecked September 19, 2026 (browser-driven, direct WebFetch still 403-blocked) — 1 new eligible candidate (Exaion, Montréal).",
   "stats": [
     {
       "value": 9,
-      "label": "fresh title-family passes"
+      "label": "fresh title-family passes (lifetime)"
     },
     {
-      "value": 43,
+      "value": 44,
       "label": "current actionable"
     },
     {
@@ -55,6 +55,18 @@
       "heading": "September 18 decisions (batch 3)",
       "items": [
         "<b>Caseware</b> (Staff Site Reliability Engineer), <b>Tyk Technologies</b> (Site Reliability Engineer), <b>Origin</b> (Forward Deployed Engineer), and <b>Kinaxis</b> (Forward Deployed Engineer): all skipped by Marc's explicit call — not pursued."
+      ]
+    },
+    {
+      "heading": "September 19 run — browser-driven (WebFetch still blocked)",
+      "items": [
+        "Confirmed WebFetch/direct HTTP is still 403-blocked for this source (2nd+ consecutive confirmation per job_sources.md); switched to the Claude-in-Chrome browser workaround, which loaded every search and detail page cleanly with no CAPTCHA or block encountered — worth updating check-indeed's Access section to recommend the browser path by default rather than re-discovering this each run.",
+        "Ran 3 of the 9 default title-family passes (DevOps Engineer, Site Reliability Engineer, Cloud Engineer) against l=Canada broad search; did not run Reliability Engineer, Platform Engineer, Infrastructure Engineer, DevSecOps Engineer, Azure DevOps Engineer, or Forward Deployed Engineer, nor any of the city-specific passes (Ottawa, Kingston, Montréal, etc.) — a boundary worth closing in a follow-up run.",
+        "The three passes run returned heavily overlapping result sets (same ~15 postings resurfacing across DevOps Engineer and Cloud Engineer searches).",
+        "<b>Exaion</b> (Montréal, two listings — \"Senior Cloud & Infrastructure Delivery Lead\" and \"Private Cloud Infrastructure Administrator F/H\", same team/environment) is the one new eligible candidate — scored from the first, the second was not opened this run (backlog).",
+        "<b>ALTEN Canada</b>'s \"Ingénieur.e de la fiabilité des sites / Site Reliability Engineer\" (Montréal, $100,000/year) surfaced again — same company and salary as the \"Production Reliability & Support Expert\" posting Marc explicitly skipped on 2026-09-18; treated as the same underlying req, not rescored.",
+        "Scope-excluded without full scoring: Platform Support Engineer (Surrey BC — 60% fullstack dev, not target family), Tech Lead / Kaseya Senior Staff Network Software Engineer / Home Hardware Azure Cloud Architect / WISSEN Senior DevSecOps Engineer / LMI DevOps Team Lead / CARFAX Senior SW Engineer-DevOps / Buyerlink Senior Platform Engineer (all title-plausible but not opened this run — geography/remote status unconfirmed, backlog for a follow-up pass), Moneris \"Manager, SRE and DevOps\" (Toronto, formal 3+ years people-management scope), InfoTrack Canada \"Cloud Infrastructure & DevSecOps Engineer\" (same $130-150K Toronto posting already excluded today via the Job Bank run — cross-source duplicate, not rescored), several industrial/mining/rail \"Reliability Engineer\" postings entirely unrelated to IT (Alamos Gold, Conuma Resources, Heavy Metal Equipment, Adecco Asset Integrity ×3, Via Rail, Can-Tech) surfaced by the generic \"Site Reliability Engineer\" query matching on \"reliability\" alone.",
+        "No CAPTCHA, verification prompt, or write-side action occurred."
       ]
     }
   ],
@@ -565,6 +577,16 @@
       "gap": "Requires recent real-world Palantir Foundry experience",
       "url": "https://ca.indeed.com/viewjob?jk=a4931108310d06df",
       "status": ""
+    },
+    {
+      "score": 6,
+      "family": "Platform",
+      "title": "Senior Cloud & Infrastructure Delivery Lead (Ingénieur Expert Delivery)",
+      "company": "Exaion",
+      "location": "Montréal, QC — Hybrid, days not stated; confirm <=2",
+      "salary": "Not stated",
+      "gap": "OpenStack IaaS and HPC/GPU hardware environments are not established in the profile; core fit is otherwise strong — Ansible, Terraform, Kubernetes, Bash/Python/PowerShell scripting, incident RCA/postmortem practice, and monitoring/supervision all overlap directly with Marc's Desjardins/Énergir work",
+      "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Canada (Exaion, Montréal — Ingénieur Expert Delivery F/H; full French posting read in full via browser)"
     }
   ]
 }

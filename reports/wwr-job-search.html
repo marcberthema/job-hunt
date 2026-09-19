@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>We Work Remotely job search — 2026-09-19</title>
+<style>
+:root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,"Segoe UI",sans-serif}a{color:var(--blue)}
+main{width:min(1500px,calc(100% - 32px));margin:auto}header{padding:52px 0 28px}.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
+h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:10px 0}.lede,.count,.method{color:var(--muted)}.latest{font-weight:700;color:var(--blue);margin:8px 0 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:12px;margin:28px 0}.stat,.notes,.table-shell,.panel{background:var(--panel);border:1px solid var(--line);border-radius:13px}
+.stat{padding:16px}.stat b{display:block;font-size:26px}.stat span{color:var(--muted);font-size:13px}.controls{display:grid;grid-template-columns:1fr repeat(3,190px);gap:10px;position:sticky;top:0;padding:12px 0;background:var(--bg)}
+input,select{padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit}.table-shell{overflow:auto}
+table{border-collapse:collapse;width:100%;min-width:1000px}th,td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
+th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:uppercase;cursor:pointer}.score{font-size:18px;font-weight:800}.high{color:var(--green)}.low{color:#b77900}
+.pill{display:inline-block;padding:3px 8px;border-radius:99px;background:var(--soft);border:1px solid var(--line);font-size:11px;font-weight:700}.job,.company,.posting{font-weight:700}
+.empty{text-align:center;padding:34px;color:var(--muted)}.panel{padding:22px;margin:24px 0}.notes{padding:22px;margin:28px 0 70px}.notes h2,.panel h2{margin-top:0}.notes li+li,.panel li+li{margin-top:7px}
+.reason{color:var(--red)}@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.controls{position:static;grid-template-columns:1fr}}
+</style>
+</head>
+<body><main>
+<header>
+  <div class="eyebrow">We Work Remotely · region-gated read-only search</div>
+  <h1>SRE, Platform &amp; DevOps opportunities</h1>
+  <p class="lede">Single broad terms (DevOps, Cloud, Platform, Infrastructure) plus a spot-check of two multi-word default-rotation terms. Per this source's documented history, multi-word phrases like "Site Reliability Engineer" and "DevSecOps" reliably return zero results here — confirmed again this run.</p>
+  <p class="latest">First data-file run, September 19, 2026 — no new eligible postings; the source's real per-posting flag tags are now visible directly in search results, which is new since the last documented check.</p>
+  <div class="stats">
+    <div class="stat"><b>6</b><span>search terms tried</span></div>
+    <div class="stat"><b>2</b><span>returned zero results outright</span></div>
+    <div class="stat"><b>21</b><span>unique postings reviewed</span></div>
+    <div class="stat"><b>0</b><span>new eligible</span></div>
+    <div class="stat"><b>2</b><span>pipeline matches</span></div>
+    <div class="stat"><b>19</b><span>ineligible or off-scope</span></div>
+  </div>
+</header>
+<section>
+  <div class="controls">
+    <input id="q" type="search" placeholder="Search title, company, location or gap…">
+    <select id="family"><option value="">All families</option><option>SRE</option><option>Platform</option><option>DevOps</option></select>
+    <select id="location"><option value="">All locations</option></select>
+    <select id="minimum"><option value="0">Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4" selected>4+ stretch</option></select>
+    <label class="pill"><input id="hideDone" type="checkbox" checked> Hide applied, rejected, skipped &amp; expired</label>
+  </div>
+  <p class="count" id="count"></p>
+  <div class="table-shell"><table>
+    <thead><tr><th data-k="score">Score</th><th data-k="family">Family</th><th data-k="title">Job title</th><th data-k="company">Company</th><th data-k="location">Location / cadence</th><th>Salary</th><th>Biggest gap</th><th>Posting</th></tr></thead>
+    <tbody id="rows"></tbody>
+  </table></div>
+</section>
+<section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://weworkremotely.com/remote-jobs/search?term=DevOps">Professional Services DevOps Engineer — JFrog</a></td><td class="reason">"Remote, US" with the decorative "Anywhere in the World" tag; a same-titled Senior version explicitly flagged Canada separately, so this non-senior one is presumed US-only per prior-run confirmation.</td></tr>
+<tr><td><a href="https://weworkremotely.com/remote-jobs/search?term=DevOps">Principal Cloud Architect — ZoomInfo Technologies LLC</a></td><td class="reason">"Remote-US-NY" with the decorative "Anywhere in the World" tag — a specific US location despite the tag.</td></tr>
+<tr><td><a href="https://weworkremotely.com/remote-jobs/search?term=DevOps">Senior SRE - Networks — Fastly</a></td><td class="reason">"San Francisco, California" — a single non-Canada city named directly, excluded per the gate rule without opening the full posting despite a strong title match.</td></tr>
+<tr><td><a href="https://weworkremotely.com/remote-jobs/search?term=DevOps">Senior Application Security Engineer — Temporal Technologies</a></td><td class="reason">"United States or Canada" — genuinely eligible on location, but the role is a security-engineering position, not SRE/Platform/DevOps center of gravity.</td></tr></tbody></table></section>
+<aside class="notes"><h2>Pipeline matches — not rescored/refiled</h2><ul><li><b>Senior Professional Services DevOps Engineer — JFrog</b> (Remote, Canada — real 🇨🇦 flag tag shown directly in results): already <code>Applied</code> in applications.md (2026-08-31, score 8, via Indeed).</li>
+<li><b>Senior DevOps Engineer — Lemon.io</b> (flag list of ~30 countries including 🇨🇦 Canada, Contract): already <code>New</code> in applications.md (2026-08-25, score 6, via RemoteOK).</li></ul><h2>Search-term results</h2><ul><li><b>DevOps</b> (23 results reviewed): the only two Canada-eligible target-family postings were the JFrog and Lemon.io pipeline matches above. Everything else was either region-restricted (UK, Ireland, Australia, various EU-only), a specific non-Canada US city despite the decorative "Anywhere in the World" tag (ZoomInfo, Fastly, CircleCI, Discord roles), or off-scope by role (sales, customer support, security engineering, account management).</li>
+<li><b>Cloud</b> (2 results): both Sales/Marketing category, not tech roles at all — this term's yield has degraded sharply from the "32 results" documented in the 2026-08-20 follow-up run in job_sources.md.</li>
+<li><b>Platform</b> (4 results): none Canada-relevant (Mexico, Sweden locations under the decorative tag; one data-analytics-adjacent management role, not target family).</li>
+<li><b>Infrastructure</b> (4 results): Pinterest Data Scientist roles (San Francisco, despite the decorative tag) — off-scope by role and likely off-scope by region.</li>
+<li><b>Site Reliability Engineer</b> and <b>DevSecOps</b> (bare default-rotation terms): both returned zero results outright, reconfirming the persistent multi-word-phrase gap documented across every prior run of this source.</li></ul><h2>Run notes</h2><ul><li>This is the first run where <code>reports/data/wwr.json</code> was actually written — prior WWR runs were tracked only in job_sources.md's narrative notes, not in the structured per-board data file this repo's other boards use. This file now exists going forward.</li>
+<li>A genuine change from prior documented behavior: several results now show real per-country flag tags directly in the search-results list (not just the decorative "Anywhere in the World" tag), which made the eligibility gate faster to apply this run without needing to open every candidate individually.</li>
+<li>The previously-recommended single-broad-term approach ("DevOps", "Cloud", "Platform", "Infrastructure") no longer yields much for this specific domain — "Cloud", "Platform", and "Infrastructure" returned almost nothing relevant this run, a notable degradation from the 2026-09-08 run's documented results. "DevOps" alone remains the only consistently useful term.</li>
+<li>No CAPTCHA, verification prompt, or write-side action occurred.</li></ul></aside>
+
+</main>
+<script>
+const jobs = [];
+const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
+const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+function render(){
+  const q=$("#q").value.toLowerCase(),family=$("#family").value,location=$("#location").value.toLowerCase(),minimum=+$("#minimum").value,hideDone=$("#hideDone").checked;
+  const list=jobs.filter(j=>(!hideDone||!/(applied|rejected|skipped|expired)/i.test(j.status||""))&&(!family||j.family===family)&&(!location||(j.location||"").toLowerCase().includes(location))&&j.score>=minimum&&(!q||Object.values(j).join(" ").toLowerCase().includes(q))).sort((a,b)=>dir*(a[key]<b[key]?-1:a[key]>b[key]?1:0));
+  rowsEl.innerHTML=list.length?list.map(j=>`<tr><td><span class="score ${j.score>=8?"high":j.score<=4?"low":""}">${j.score}/10</span></td><td><span class="pill">${esc(j.family)}</span></td><td class="job">${esc(j.title)}${j.status?`<br><span class="pill">${esc(j.status)}</span>`:""}</td><td class="company">${esc(j.company)}</td><td>${esc(j.location||"")}</td><td>${esc(j.salary||"Not stated")}</td><td>${esc(j.gap||"")}</td><td><a class="posting" href="${esc(j.url)}" target="_blank" rel="noopener">View ↗</a></td></tr>`).join(""):`<tr><td class="empty" colspan="8">No postings match the current filters.</td></tr>`;
+  $("#count").textContent=`Showing ${list.length} of ${jobs.length} validated postings`;
+}
+const locSel=$("#location");[...new Set(jobs.map(j=>j.location).filter(Boolean))].sort().forEach(loc=>{const o=document.createElement("option");o.textContent=loc;locSel.append(o)});
+["q","family","location","minimum","hideDone"].forEach(id=>$("#"+id).addEventListener("input",render));
+document.querySelectorAll("th[data-k]").forEach(th=>th.onclick=()=>{const next=th.dataset.k;if(key===next)dir*=-1;else{key=next;dir=key==="score"?-1:1}render()});
+render();
+</script>
+</body>
+</html>

@@ -1,0 +1,89 @@
+{
+  "board": "We Work Remotely",
+  "run_date": "2026-09-19",
+  "eyebrow": "We Work Remotely · region-gated read-only search",
+  "title": "SRE, Platform & DevOps opportunities",
+  "lede": "Single broad terms (DevOps, Cloud, Platform, Infrastructure) plus a spot-check of two multi-word default-rotation terms. Per this source's documented history, multi-word phrases like \"Site Reliability Engineer\" and \"DevSecOps\" reliably return zero results here — confirmed again this run.",
+  "latest_update": "First data-file run, September 19, 2026 — no new eligible postings; the source's real per-posting flag tags are now visible directly in search results, which is new since the last documented check.",
+  "stats": [
+    {
+      "value": 6,
+      "label": "search terms tried"
+    },
+    {
+      "value": 2,
+      "label": "returned zero results outright"
+    },
+    {
+      "value": 21,
+      "label": "unique postings reviewed"
+    },
+    {
+      "value": 0,
+      "label": "new eligible"
+    },
+    {
+      "value": 2,
+      "label": "pipeline matches"
+    },
+    {
+      "value": 19,
+      "label": "ineligible or off-scope"
+    }
+  ],
+  "ineligible": [
+    {
+      "title": "Professional Services DevOps Engineer",
+      "company": "JFrog",
+      "reason": "\"Remote, US\" with the decorative \"Anywhere in the World\" tag; a same-titled Senior version explicitly flagged Canada separately, so this non-senior one is presumed US-only per prior-run confirmation.",
+      "url": "https://weworkremotely.com/remote-jobs/search?term=DevOps"
+    },
+    {
+      "title": "Principal Cloud Architect",
+      "company": "ZoomInfo Technologies LLC",
+      "reason": "\"Remote-US-NY\" with the decorative \"Anywhere in the World\" tag — a specific US location despite the tag.",
+      "url": "https://weworkremotely.com/remote-jobs/search?term=DevOps"
+    },
+    {
+      "title": "Senior SRE - Networks",
+      "company": "Fastly",
+      "reason": "\"San Francisco, California\" — a single non-Canada city named directly, excluded per the gate rule without opening the full posting despite a strong title match.",
+      "url": "https://weworkremotely.com/remote-jobs/search?term=DevOps"
+    },
+    {
+      "title": "Senior Application Security Engineer",
+      "company": "Temporal Technologies",
+      "reason": "\"United States or Canada\" — genuinely eligible on location, but the role is a security-engineering position, not SRE/Platform/DevOps center of gravity.",
+      "url": "https://weworkremotely.com/remote-jobs/search?term=DevOps"
+    }
+  ],
+  "rows": [],
+  "notes_sections": [
+    {
+      "heading": "Pipeline matches — not rescored/refiled",
+      "items": [
+        "<b>Senior Professional Services DevOps Engineer — JFrog</b> (Remote, Canada — real 🇨🇦 flag tag shown directly in results): already <code>Applied</code> in applications.md (2026-08-31, score 8, via Indeed).",
+        "<b>Senior DevOps Engineer — Lemon.io</b> (flag list of ~30 countries including 🇨🇦 Canada, Contract): already <code>New</code> in applications.md (2026-08-25, score 6, via RemoteOK)."
+      ]
+    },
+    {
+      "heading": "Search-term results",
+      "items": [
+        "<b>DevOps</b> (23 results reviewed): the only two Canada-eligible target-family postings were the JFrog and Lemon.io pipeline matches above. Everything else was either region-restricted (UK, Ireland, Australia, various EU-only), a specific non-Canada US city despite the decorative \"Anywhere in the World\" tag (ZoomInfo, Fastly, CircleCI, Discord roles), or off-scope by role (sales, customer support, security engineering, account management).",
+        "<b>Cloud</b> (2 results): both Sales/Marketing category, not tech roles at all — this term's yield has degraded sharply from the \"32 results\" documented in the 2026-08-20 follow-up run in job_sources.md.",
+        "<b>Platform</b> (4 results): none Canada-relevant (Mexico, Sweden locations under the decorative tag; one data-analytics-adjacent management role, not target family).",
+        "<b>Infrastructure</b> (4 results): Pinterest Data Scientist roles (San Francisco, despite the decorative tag) — off-scope by role and likely off-scope by region.",
+        "<b>Site Reliability Engineer</b> and <b>DevSecOps</b> (bare default-rotation terms): both returned zero results outright, reconfirming the persistent multi-word-phrase gap documented across every prior run of this source."
+      ]
+    },
+    {
+      "heading": "Run notes",
+      "items": [
+        "This is the first run where <code>reports/data/wwr.json</code> was actually written — prior WWR runs were tracked only in job_sources.md's narrative notes, not in the structured per-board data file this repo's other boards use. This file now exists going forward.",
+        "A genuine change from prior documented behavior: several results now show real per-country flag tags directly in the search-results list (not just the decorative \"Anywhere in the World\" tag), which made the eligibility gate faster to apply this run without needing to open every candidate individually.",
+        "The previously-recommended single-broad-term approach (\"DevOps\", \"Cloud\", \"Platform\", \"Infrastructure\") no longer yields much for this specific domain — \"Cloud\", \"Platform\", and \"Infrastructure\" returned almost nothing relevant this run, a notable degradation from the 2026-09-08 run's documented results. \"DevOps\" alone remains the only consistently useful term.",
+        "No CAPTCHA, verification prompt, or write-side action occurred."
+      ]
+    }
+  ]
+}

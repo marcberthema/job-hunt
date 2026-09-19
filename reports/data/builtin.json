@@ -4,7 +4,7 @@
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Four-keyword rotation (DevOps Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer) against the /jobs/remote/dev-ops?search= endpoint. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 19, 2026 — 7 new eligible candidates, best fit Mogo/StackAdapt/Branch at score 7.",
+  "latest_update": "Rechecked September 19, 2026 — 6 new eligible candidates, best fit Branch/Vistex at score 6-7. Correction: the Mogo/Orion Digital posting initially scored here is already a Rejected pipeline match, not new — see Pipeline matches note.",
   "stats": [
     {
       "value": 78,
@@ -15,11 +15,11 @@
       "label": "opened for full validation"
     },
     {
-      "value": 7,
+      "value": 6,
       "label": "new eligible, scored"
     },
     {
-      "value": 2,
+      "value": 3,
       "label": "pipeline matches"
     },
     {
@@ -32,16 +32,6 @@
     }
   ],
   "rows": [
-    {
-      "score": 7,
-      "family": "Platform",
-      "title": "DevOps Staff Platform Engineer",
-      "company": "Mogo (Orion Digital Corp)",
-      "location": "Remote — Canada",
-      "salary": "$135,000–$170,000 CAD/year + bonus + equity",
-      "gap": "OCI is unfamiliar (AWS/multi-cloud accepted); the role's AI-agent-tooling framing (Claude Code/Cursor daily use, MCP gateways, agent identity/audit) is genuinely supported by Marc's real AI-assisted-engineering practice at Énergir, not a cold stretch",
-      "url": "https://builtin.com/job/devops-staff-platform-engineer/11186361"
-    },
     {
       "score": 7,
       "family": "SRE",
@@ -107,6 +97,7 @@
     {
       "heading": "Pipeline matches — not rescored/refiled",
       "items": [
+        "<b>Correction — DevOps Staff Platform Engineer — Mogo (Orion Digital Corp)</b> (<a href=\"https://builtin.com/job/devops-staff-platform-engineer/11186361\">11186361</a>, $135,000–$170,000 CAD/year): initially scored 7 and presented as a top new pick in this run, but this is the same posting already logged in applications.md as <code>Rejected</code> on 2026-09-16 (score 4, via Eluta/Indeed, company recorded there as \"Orion Digital\" rather than the \"Mogo\" consumer brand — a company-name-alias dedup miss). Marc already reviewed and passed on this one 3 days before this run; not a fresh recommendation. Flagging prominently rather than quietly dropping it, since it was reported as a top pick earlier today.",
         "<b>Senior DevOps Engineer (Kubernetes team) — StackAdapt</b>: this BuiltIn posting (<a href=\"https://builtin.com/job/senior-devops-engineer-kubernetes-team/10882772\">10882772</a>) validated at score 7 on a full read, but the same role is already <code>Applied</code> in applications.md via a LinkedIn posting (2026-09-18, scored only 4 there — \"AWS dated/by-hand, Kubernetes provisioning-side\"). Same company + exact title = the same underlying req cross-posted; not refiled, but worth noting the scoring gap between a thin LinkedIn read and BuiltIn's fuller description — the LinkedIn score may have undersold it.",
         "<b>Senior or Staff Site Reliability Engineer (26248) — Enverus</b>: same job code (26248) as the already-<code>Applied</code> Indeed posting from 2026-08-25 (score 7). Confirmed duplicate, not refiled."
       ]
