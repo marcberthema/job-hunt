@@ -1,21 +1,21 @@
 {
   "board": "Job Bank",
-  "run_date": "2026-09-18",
+  "run_date": "2026-09-19",
   "eyebrow": "Job Bank Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default rotation validated against full Job Bank detail pages. Scores measure technical and domain fit only; ineligible arrangements are excluded before scoring.",
-  "latest_update": "Rechecked September 18, 2026",
+  "latest_update": "Rechecked September 19, 2026 — no eligible target-family postings this run.",
   "stats": [
     {
       "value": 3,
       "label": "queries"
     },
     {
-      "value": 6,
+      "value": 7,
       "label": "results reviewed"
     },
     {
-      "value": 6,
+      "value": 7,
       "label": "plausible matches"
     },
     {
@@ -27,8 +27,8 @@
       "label": "geographic exclusions"
     },
     {
-      "value": 0,
-      "label": "role exclusions"
+      "value": 1,
+      "label": "unrelated-role exclusions"
     },
     {
       "value": 0,
@@ -43,32 +43,27 @@
     {
       "heading": "Geographic exclusions",
       "items": [
-        "<b>Cloud &amp; AI Engineer - Lancesoft</b> (posted August 27): <b>Expired — advertised until September 13; checked September 16.</b> Montréal, in office three days per week from day one; $65.52-$80.00/hour, full time. Strong Azure, Terraform, GitHub Actions, Kubernetes, Python, and observability overlap, but the cadence exceeds the skill's Montréal limit. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50277730\">Job Bank #50277730</a>.",
-        "<b>Cloud Infrastructure &amp; DevSecOps Engineer - InfoTrack Canada</b> (posted August 31): Toronto hybrid; $130,000-$150,000/year, permanent full time. The description does not permit Canada-wide remote work, so Toronto hybrid is outside the reachable-city list. It is also explicitly GCP-primary. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50191510\">Job Bank #50191510</a>.",
-        "<b>DevOps/Cloud Engineer - Senior, RQ00768 - Source Code</b> (posted September 14): Toronto, three days on-site; $93.60-$112.32/hour incorporated, six-month contract with possible extension. The Toronto office requirement is ineligible. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50298477\">Job Bank #50298477</a>.",
-        "<b>DevOps/Cloud Engineer - Senior, RQ11363 - Source Code</b> (posted September 14): Toronto, fully on-site; $90.37-$108.45/hour incorporated, one-year contract. The role is AWS/ROSA-primary and geographically ineligible. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50286990\">Job Bank #50286990</a>.",
-        "<b>DevOps/Cloud Engineer - Senior, RQ11264 - Source Code</b> (posted September 14): Toronto, five days on-site; $90.37-$108.45/hour incorporated, 11-month contract. The role has strong Azure DevOps/Terraform/Ansible overlap but is geographically ineligible. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50290511\">Job Bank #50290511</a>.",
-        "<b>DevOps Engineer - Bluth Company</b> (posted September 8): Toronto, fully on-site; $80,000-$140,000/year, permanent full time. The Toronto arrangement is ineligible. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50248702\">Job Bank #50248702</a>.",
-        "<b>DevOps Engineer - LYNKED Inc.</b> (posted September 15): London, Ontario, fully on-site; $58,000-$69,000/year, permanent full time. The role is junior (2-4 years), AWS-centered, and geographically ineligible. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50293995\">Job Bank #50293995</a>."
+        "<b>DevOps Engineer — Bluth Company</b> (Toronto, ON, Permanent, $80,000–$140,000/year, posted September 8): confirmed <b>On site</b> in the Job Bank listing itself. Toronto is outside the reachable-city list. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50248702\">View posting</a>.",
+        "<b>DevOps Engineer — LYNKED Inc.</b> (London, ON, Permanent, $58,000–$69,000/year, posted September 15): confirmed <b>On site</b>. London is outside the reachable-city list; pay is also well below the $100k FTE floor. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50293995\">View posting</a>.",
+        "<b>DevOps Engineer — InfoTrack Canada</b> (Toronto, ON, $130,000–$150,000/year, posted August 31): tagged <b>Hybrid</b>, but Toronto is outside the reachable-city list regardless of office cadence. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50317282\">View posting</a>.",
+        "<b>Cloud Engineer — Lancesoft</b> (Montréal, QC, contract, $65.52–$80.00/hour, posted August 27): real Platform/Cloud center of gravity (hybrid connectivity, cloud governance, platform observability) but the posting states Day-1 onboarding with in-office presence <b>3x/week</b> — exceeds the 2-day/week Montréal cap in this skill's geography rule. A different Lancesoft SRE posting (job ID 50107335) was rejected 2026-08-19 per applications.md; this is a distinct posting at the same employer, not a duplicate. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50277730\">View posting</a>.",
+        "<b>DevOps/Cloud Engineer, Senior — Source Code</b> (Toronto, ON, contract, $93.60/hour, posted September 14): 3 days/week onsite at a named Toronto office address. Toronto is outside the reachable-city list. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50298477\">View posting</a>.",
+        "<b>Cloud Engineer — Source Code</b> (Toronto, ON, contract, $90.37/hour, posted September 14): 5 days/week onsite at a named Toronto office address. Toronto is outside the reachable-city list. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50290511\">View posting</a>."
       ]
     },
     {
-      "heading": "Search limitations",
+      "heading": "Unrelated-role exclusion",
       "items": [
-        "The default queries returned 3 DevOps results, 4 Cloud results, and 0 Site Reliability Engineer results. All available results were reviewed; the per-query cap was not reached.",
-        "Job Bank's <code>locationstring=Remote</code> parameter returned on-site and hybrid work, so every arrangement was verified from the detail page.",
-        "One of the seven retained exclusion records is now confirmed expired from its stated closing date; it is preserved for auditability and is not counted as actionable.",
-        "Six of seven postings originated on partner boards (Indeed, Talent.com, or CareerBeacon). Job Bank's embedded full descriptions were used because the source links were sufficient for validation and no application action was taken.",
-        "Overlap with Indeed is expected. Repository checks found no exact URL, identifier, or company/title pipeline match for these seven postings.",
-        "No CAPTCHA, verification challenge, inaccessible posting, account action, or external write occurred."
+        "<b>\"DevOps Engineer\" — Ides Canada Inc.</b> (Stouffville, ON, posted September 18): Job Bank's occupation-code match is wrong — the actual linked posting is for a Mechatronics Engineer role at Scentroid, unrelated to DevOps/SRE/Platform work. Not scored."
       ]
     },
     {
-      "heading": "September 18 refresh delta",
+      "heading": "Run notes",
       "items": [
-        "The live boundary contains six current search results: three DevOps, three Cloud, and no SRE results. All remain geographically ineligible.",
-        "<b>Source Code RQ11363</b> no longer appears in the current Cloud Engineer result set. It is preserved in the historical exclusions above with freshness unconfirmed rather than being declared expired without direct evidence.",
-        "All six current detail pages were accessible; no CAPTCHA, verification challenge, or write-side action occurred."
+        "Ran the default 3-query rotation only (DevOps Engineer, Cloud Engineer, Site Reliability Engineer), per SKILL.md — Platform Engineer, Forward Deployed Engineer, and DevSecOps Engineer are deliberately excluded from the default rotation due to historically unrelated occupation-code matches.",
+        "<b>Site Reliability Engineer</b> returned zero results this run.",
+        "<b>DevOps Engineer</b> returned 4 results, <b>Cloud Engineer</b> returned 3 — all 7 reviewed and validated against full detail pages; none were eligible after the geography and role-relevance gates.",
+        "No CAPTCHA, verification prompt, or write-side action occurred. All retrieval was read-only, via direct HTTP."
       ]
     }
   ],

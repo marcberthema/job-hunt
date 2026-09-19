@@ -1,17 +1,17 @@
 {
   "board": "RemoteOK",
-  "run_date": "2026-09-18",
+  "run_date": "2026-09-19",
   "eyebrow": "RemoteOK · read-only API search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 18, 2026",
+  "latest_update": "Rechecked September 19, 2026 — no eligible target-family postings this run.",
   "stats": [
     {
       "value": 99,
       "label": "API jobs"
     },
     {
-      "value": 20,
+      "value": 19,
       "label": "recent ≤14d"
     },
     {
@@ -31,7 +31,7 @@
       "label": "ineligible"
     },
     {
-      "value": 0,
+      "value": 1,
       "label": "inaccessible"
     },
     {
@@ -47,22 +47,29 @@
     {
       "heading": "Regional exclusions",
       "items": [
-        "<b>Engineering Manager/TLM, Platform — Harper</b> (posted September 11): the role owns infrastructure, developer productivity, SRE, and production support, but requires relocation to San Francisco and attendance in the office five days each week. It was not scored. <a href=\"https://remoteok.com/remote-jobs/remote-engineering-manager-tlm-platform-harper-1137380\">View posting</a>."
+        "<b>Engineering Manager/TLM, Platform — Harper</b> (posted September 11): owns infrastructure, developer productivity, SRE, and production support, but requires relocation to San Francisco and 5 days/week on-site — outside Marc's reachable range. Not scored. <a href=\"https://remoteok.com/remote-jobs/remote-engineering-manager-tlm-platform-harper-1137380\">View posting</a>. (Repeat exclusion from the 2026-09-18 run — still present in the current inventory window.)"
+      ]
+    },
+    {
+      "heading": "Could not validate",
+      "items": [
+        "<b>Golang Kubernetes Engineer — Arango</b> (posted September 16, plausible Platform-family fit): the API description is truncated to marketing boilerplate and an anti-spam instruction with no real requirements; the canonical detail page also would not expose full requirements or confirmed regional eligibility without a Premium unlock. Not scored per the validation rule — a snippet is not sufficient. <a href=\"https://remoteok.com/remote-jobs/remote-golang-kubernetes-engineer-arango-1137400\">View posting</a>."
       ]
     },
     {
       "heading": "Scope exclusions",
       "items": [
-        "<b>Software Engineer — Mirantis</b> (posted September 12): worldwide, but the disclosed position is Golang product engineering rather than SRE, Platform, DevOps, or infrastructure automation.",
-        "The other 97 API jobs were unrelated roles such as sales, finance, customer support, application development, data engineering, and general operations."
+        "<b>Operations Engineer II — AWeber</b> (posted August 4, tagged 'ops'/'sys admin'): the listing content is templated marketing copy for AWeber's own email-marketing product with no technical requirements resembling an infrastructure/operations role — treated as a corrupted or mismatched listing, not a genuine target-family posting.",
+        "The remaining 96 API jobs were unrelated roles: sales, finance, customer support, application/product development, data entry, HR, and general operations."
       ]
     },
     {
       "heading": "Search limitations",
       "items": [
-        "The refreshed public API again returned 99 job objects; 20 were dated within the preferred 14-day window.",
-        "The API is a latest-inventory feed rather than a dedicated keyword-search endpoint. The full returned inventory was reviewed for target titles, tags, and description signals.",
-        "No eligible, unclear, inaccessible, stale, or known-pipeline target-family role surfaced. No CAPTCHA, verification page, or write-side action occurred."
+        "The public API returned 99 job objects; 19 were dated within the preferred 14-day window (since 2026-09-05).",
+        "The API is a latest-inventory feed, not a dedicated keyword-search endpoint — the full returned inventory was reviewed for target titles, tags, and description signals.",
+        "No eligible, unclear, or known-pipeline target-family role surfaced this run. No CAPTCHA, verification page, or write-side action occurred.",
+        "Several RemoteOK postings scored in the 2026-08-25 run (Akuity, DoiT, Lemon.io, Livepeer, Shakepay — all still <code>New</code> in applications.md) have since rolled off the API's ~100-item latest-inventory window and could not be rechecked for freshness this run; they remain in applications.md pending user review via the review skill, not this discovery pass."
       ]
     }
   ],
