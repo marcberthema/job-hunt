@@ -4,26 +4,36 @@
   "eyebrow": "LinkedIn · authenticated read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Full descriptions validated on LinkedIn. Scores measure skill and domain fit.",
-  "latest_update": "Updated September 18, 2026",
+  "latest_update": "Latest update: September 18, 2026 — 14 title-family searches completed; 10 fresh postings fully validated.",
   "stats": [
     {
-      "value": 15,
-      "label": "fresh discovery passes"
+      "value": 14,
+      "label": "title-family searches"
     },
     {
-      "value": 29,
+      "value": 35,
       "label": "validated postings"
     },
     {
-      "value": 22,
+      "value": 4,
       "label": "excluded results"
     },
     {
-      "value": "8+",
+      "value": 2,
       "label": "pipeline matches"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "September 18 latest run",
+      "items": [
+        "<b>Best new match: Hunter Bond — Platform Engineer.</b> Montréal hybrid with CAD $180K base, strong Linux/Python/Terraform/Ansible/Puppet/Kubernetes alignment; office cadence is not disclosed and must be confirmed at two days/week or less.",
+        "<b>Strong Azure contract lead: Raas Infotek — DevOps Architect.</b> Excellent Azure, Terraform, Ansible, CI/CD and reliability alignment; the poster-added 8+ years Terraform and 6+ years Python requirements are the main risk, and no rate was stated.",
+        "<b>CANARIE</b> is a strong senior platform role in Ottawa, but the CAD $125K–$169K range partly falls below the hybrid floor and the cadence is undisclosed.",
+        "<b>Elastic</b> is an exact pipeline match already applied through Built In on Sep 18; the fresh LinkedIn posting confirms CAD $138.3K–$185.9K and active hiring.",
+        "Excluded after full validation: Alpen Labs (must be based in the United States), QUANTEAM (four Montréal office days/week), Aptiv/Wind River (CAD $95K–$120K hybrid), and TELUS Health (CAD $49K–$89.7K). Chainlink remains scored low because deep Kubernetes internals/Operators, production AWS and Go are core requirements."
+      ]
+    },
     {
       "heading": "September 18 rerun",
       "items": [
@@ -51,7 +61,79 @@
       ]
     }
   ],
+  "could_not_validate": [
+    "Braze — Senior Lead Systems Engineer: surfaced repeatedly, but was not shortlisted for full-description validation because the Toronto hybrid arrangement is outside the reachable-city scope.",
+    "Clutch — Founding Staff Platform Engineer: Toronto hybrid result; full requirements and cadence were not validated.",
+    "Questrade — Senior Principal Site Reliability Engineer: North York hybrid result; full requirements and cadence were not validated.",
+    "KPMG Canada — Bilingual Senior AWS Platform Engineer: Montréal listing was marked on-site; full requirements were not validated after the work-arrangement screen."
+  ],
   "rows": [
+    {
+      "score": 9,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer (Observability and Analytics) Platform Infra",
+      "company": "Elastic",
+      "status": "Applied — Sep 18 (pipeline match via Built In)",
+      "location": "Remote — Canada",
+      "salary": "CAD $138,300–$185,900/year",
+      "gap": "Go is only a plus; no material required-skill gap",
+      "url": "https://www.linkedin.com/jobs/view/4469190473/"
+    },
+    {
+      "score": 9,
+      "family": "Platform",
+      "title": "Platform Engineer",
+      "company": "Hunter Bond client — fintech trading",
+      "status": "New",
+      "location": "Montréal — hybrid; days not stated, confirm ≤2",
+      "salary": "CAD $180,000/year + bonus and benefits",
+      "gap": "Hybrid office cadence is not disclosed",
+      "url": "https://www.linkedin.com/jobs/view/4466903500/"
+    },
+    {
+      "score": 8,
+      "family": "Platform",
+      "title": "DevOps Architect",
+      "company": "Raas Infotek",
+      "status": "New",
+      "location": "Remote — Canada; contract",
+      "salary": "Not stated",
+      "gap": "Poster asks for 8+ years Terraform and 6+ years Python",
+      "url": "https://www.linkedin.com/jobs/view/4469188710/"
+    },
+    {
+      "score": 7,
+      "family": "Platform",
+      "title": "Senior Platform Engineering Specialist",
+      "company": "CANARIE",
+      "status": "New",
+      "location": "Ottawa — hybrid; days not stated",
+      "salary": "CAD $125,000–$169,000/year",
+      "gap": "Advanced Kubernetes/Rancher/OpenShift and CNCF depth",
+      "url": "https://www.linkedin.com/jobs/view/4468397921/"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Gestionnaire Infrastructure Cloud & DevOps (Gouvernance & Conformité)",
+      "company": "Micrologic",
+      "status": "New",
+      "location": "Remote — Québec, Canada",
+      "salary": "Not stated",
+      "gap": "Requires two years of formal technical-team management",
+      "url": "https://www.linkedin.com/jobs/view/4469181399/"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Platform Engineer",
+      "company": "Infotree Global Solutions",
+      "status": "New",
+      "location": "Remote — Canada; contract",
+      "salary": "Not stated",
+      "gap": "Slack bot ownership and production Go/Node.js/TypeScript",
+      "url": "https://www.linkedin.com/jobs/view/4467590177/"
+    },
     {
       "score": 7,
       "family": "Platform",
@@ -371,5 +453,6 @@
       "gap": "Pulsar/Kafka/ScyllaDB and EKS/GKE",
       "url": "https://www.linkedin.com/jobs/view/4372005660/"
     }
-  ]
+  ],
+  "method": "Authenticated, read-only LinkedIn search completed September 18, 2026. All 14 default title families were searched with LinkedIn's past-two-days parameter and Canada location. The first visible result set (up to seven postings per phrase in this interface) was reviewed and deduplicated by LinkedIn job ID, then shortlisted postings were opened and scored only from accessible full descriptions. Ten fresh postings received full-description validation; four failed location or compensation gates, six were retained in the scored table, and one retained posting (Elastic) matched an existing Applied pipeline row. No employer-site recovery was required. The additional hub-by-hub and reachable-city hybrid grids were not exhaustively run in this invocation, so coverage is broad but not exhaustive."
 }
