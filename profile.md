@@ -25,7 +25,7 @@
 | **Primary positioning** | Senior/Staff SRE · Platform Engineering · DevOps · Reliability Consultant (broadened 2026-09-11 — see Notes for Claude) |
 | **Open to** | Three tracks, in no particular priority order (updated 2026-09-14): (1) full-time employment at $160k–175k CAD/year, (2) full-time consulting contract at $110–130/hr CAD, or (3) fractional/part-time consulting, initially at $90+/hr CAD where hourly pricing is necessary and ultimately sold as a monthly retainer with no hours attached |
 | **Target consulting rate** | $110–130/hr CAD for a full-time contract; $90+/hr CAD floor for transitional hourly part-time work; end-state fractional model is a monthly retainer priced for access, responsibility, and outcomes—not a bundle of hours |
-| **Target employment salary** | Aspirational target $160,000–175,000 CAD/year. Scoring floor (updated 2026-09-11): **$140k+** worth considering for on-site/hybrid FTE; **$100k+** worth considering for 100% fully remote FTE (lower bar because remote removes commute/relocation cost entirely) |
+| **Target employment salary** | Aspirational target $160,000–175,000 CAD/year. Scoring floor (updated 2026-09-19): **$100k+** hard floor for on-site/hybrid FTE in Ottawa, Kingston, Brockville, or Cornwall (lowered from $140k — Marc is deliberately opening himself to FTE search in these cities, no longer holding out for a premium over remote); **$140k+** hard floor for on-site/hybrid FTE in Montréal (unchanged — the longer commute still needs a premium); **$100k+** hard floor for 100% fully remote FTE. Below the applicable floor is a reject regardless of skill fit, same treatment as the remote floor. |
 | **Work arrangement** | Remote preferred, but open to on-site/hybrid within reach of Smiths Falls, ON — see Geographic Reachability below |
 | **Geography** | Worldwide remote — open to any country where services can be legally provided as a Canadian incorporated entity (no visa required; selling services internationally, not relocating). For on-site/hybrid roles, only reachable from Smiths Falls, ON: Ottawa, Kingston, Brockville, Cornwall, and Montréal (the furthest acceptable) |
 
@@ -208,9 +208,10 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 - Emphasis on benefits as a selling point (signals FTE culture-fit mismatch, not a disqualifier on its own now that FTE is a first-class target — see Engagement Preferences)
 - Rate below $100/hr for a full-time consulting contract or below $90/hr for hourly part-time/
   fractional work; retainers are judged on the monthly fee relative to responsibility, access,
-  risk, and capacity burden rather than an advertised hourly equivalent. Salary below $140k for
-  on-site/hybrid employment or below $100k for 100% fully remote employment is also a red flag
-  (updated 2026-09-14).
+  risk, and capacity burden rather than an advertised hourly equivalent. Salary below $100k for
+  on-site/hybrid employment in Ottawa, Kingston, Brockville, or Cornwall, below $140k for
+  on-site/hybrid employment in Montréal, or below $100k for 100% fully remote employment is also
+  a red flag (updated 2026-09-19).
 - Junior scope (ticket-taking, no architecture ownership)
 - **Cloud platform mismatch — graded, never a blanket refusal, and AWS ≠ GCP.** The test is whether the
   cloud platform *is the job* or merely *the venue*. Note the two are no longer equivalent for Marc:
@@ -252,15 +253,17 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
   contract, per the three-track engagement strategy (see Engagement Preferences).
 - **5–7**: Remote employment at or near target salary OR contract with minor red flags worth reviewing OR
   reachable-city hybrid at 2 days/week OR FTE salary below $160k but above the scoring floor (updated
-  2026-09-11: **$140k+ for on-site/hybrid, $100k+ for 100% fully remote** — "worth considering," per Marc)
+  2026-09-19: **$100k+ for on-site/hybrid in Ottawa/Kingston/Brockville/Cornwall, $140k+ for on-site/hybrid
+  in Montréal, $100k+ for 100% fully remote** — "worth considering," per Marc)
 - **Cloud platform**: apply the three-tier AWS/GCP rule in Red Flags above before scoring — hard-gate
   postings cap at 0–4 regardless of how well the rest of the posting fits; "venue" postings score normally
   with the mismatch noted as a flag.
 - **0–4**: On-site/hybrid outside the reachable range (see Geographic Reachability), below the salary/rate
-  floor ($100/hr full-time consulting, $90/hr hourly part-time/fractional, $140k on-site/hybrid
-  FTE, or $100k 100%-remote FTE), or junior scope — skip. Do not convert a monthly retainer into a
-  client-facing hour bundle; assess its economics against the defined responsibility and capacity burden.
-  A reachable-city role requiring 3+ days/week on-site also scores here unless the rate is well above target.
+  floor ($100/hr full-time consulting, $90/hr hourly part-time/fractional, $100k on-site/hybrid FTE in
+  Ottawa/Kingston/Brockville/Cornwall, $140k on-site/hybrid FTE in Montréal, or $100k 100%-remote FTE), or
+  junior scope — skip. Do not convert a monthly retainer into a client-facing hour bundle; assess its
+  economics against the defined responsibility and capacity burden. A reachable-city role requiring 3+
+  days/week on-site also scores here unless the rate is well above target.
 
 ---
 
@@ -318,7 +321,7 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
     ownership + reliability + platform engineering, not architecture-first scope.
 - Primary title: **Senior/Staff SRE · Platform Engineering · DevOps** for job boards, LinkedIn, and resumes (broadened 2026-09-11, see above); **Senior SRE & Platform Engineering Consultant** for website and direct outreach
 - Always lead with Azure as the primary cloud platform
-- Open to on-site/hybrid roles in Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability) — 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week needs a well-above-target rate. On-site/hybrid **outside** that reachable range is still a hard red flag — never apply without explicit user confirmation
+- Open to on-site/hybrid roles in Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability) — 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week needs a well-above-target rate. On-site/hybrid **outside** that reachable range is still a hard red flag — never apply without explicit user confirmation. Salary floor for on-site/hybrid FTE differs by city (updated 2026-09-19): **$100k+ in Ottawa/Kingston/Brockville/Cornwall**, **$140k+ in Montréal** — see Engagement Preferences.
 - Bilingualism is a competitive advantage — highlight for Canadian and Quebec roles
 - Desjardins is the most recent and most impressive contract — always mention for financial sector targets
 - Website copy frames Marc as a consultant first, open to employment second
