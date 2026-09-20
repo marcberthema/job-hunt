@@ -1,71 +1,71 @@
 # Marc Berthelette
 
-**Observability & DevOps Advisor · Terraform CI/CD · Dynatrace**
+**Senior DevOps Engineer · Observability · AI-Assisted Engineering**
 
 Smiths Falls, ON, Canada · Remote · marc.berthelette@gmail.com\
-[linkedin.com/in/marc-berthelette-3aba6917](https://linkedin.com/in/marc-berthelette-3aba6917) · Bilingual French and English · Incorporated in Canada · Available immediately
+[linkedin.com/in/marc-berthelette-3aba6917](https://linkedin.com/in/marc-berthelette-3aba6917) · Bilingual: French (native) · English (fluent) · Incorporated in Canada · Available immediately
 
 ---
 
 ## Professional Summary
 
-Senior DevOps engineer with 18 years of observability and CI/CD experience in regulated financial-services and energy environments. At Desjardins, built Dynatrace-integrated health monitoring for ~250 enterprise repositories and Splunk alerting for unauthorized configuration changes; at Énergir, drove RCA and built proactive monitoring across 70+ applications. Deep Terraform CI/CD practice and current AI-in-enterprise experience (scoped AI-assisted engineering practices with human-validation gates). Bilingual French/English.
+Senior DevOps engineer with deep observability practice (Dynatrace, Splunk, ELK Stack) and current, disciplined AI-assisted engineering experience — scoped tool use with human-validation checkpoints before any AI-generated code reaches production. Takes ownership of production systems other people are hesitant to touch, learning them cold under a delivery deadline. Regulated-sector experience in energy and financial services; fully bilingual French/English.
 
-## Technical Skills
+## Core Expertise
 
-| Category | Technologies and Practices |
+| Category | Focus |
 |---|---|
-| **Observability & SRE** | Dynatrace, Splunk, ELK Stack (Elasticsearch), root-cause analysis, MTTR reduction, incident response |
-| **CI/CD & IaC** | Terraform, Ansible, pipeline design and governance |
-| **AI-Assisted Engineering** | Scoped/gated AI-assisted development, human-validation checkpoints — direct match for this role's AI-enablement scope |
-| **Cloud Platforms** | Microsoft Azure (production), AWS (EC2, S3, Route 53, VPC — hands-on build) |
-| **Containers** | Kubernetes, Docker, ArgoCD |
-| **Programming** | Python, FastAPI, Bash, SQL |
+| **Observability** | Dynatrace, Splunk, ELK Stack (Elasticsearch, Logstash, Kibana) |
+| **AI-Assisted Engineering** | Scoped/gated AI-assisted development, human-validation checkpoints, risk assessment of generated-code promotion |
+| **Platform Engineering & Enablement** | CI/CD standardization across heterogeneous stacks, pipeline-as-code, cross-team enablement without reporting authority |
+| **Infrastructure & Cloud Automation** | Microsoft Azure, Terraform, Ansible, Kubernetes, Docker, ArgoCD |
+| **Reliability & Production Engineering** | Root cause analysis, MTTR reduction, incident response, automated remediation |
+| **Programming & Systems** | Python, FastAPI, Bash, C++, Java, SQL, NoSQL, Red Hat Linux |
 
 ## Work Experience
+
+### Desjardins — Senior DevOps Engineer *(Contract)*
+
+**Montréal, QC (Remote) | October 2025 – March 2026** — *concurrent engagement, delivered alongside the Énergir role*
+
+- Designed and built a Python/FastAPI health-monitoring service that automatically tested the configuration of ~250 remote Artifactory repositories every 4 hours, publishing results to Dynatrace with technology-segmented dashboards providing real-time visibility into repository health.
+- Built Splunk alerting to detect manual configuration changes made outside the CI/CD pipeline, improving auditability and compliance.
+- Automated provisioning of on-demand Artifactory instances using Kubernetes and ArgoCD.
+
+**Key technologies:** JFrog Artifactory, Dynatrace, Splunk, Python, FastAPI, Kubernetes, ArgoCD, GitHub Actions
 
 ### Énergir — Senior DevOps Engineer
 
 **Montréal, QC | September 2021 – Present**
 
-- Drove root-cause analysis on critical production incidents and built proactive monitoring, dashboards, alerts, and automated remediation that reduced MTTR across 12 application teams and 70+ applications.
-- Led cloud modernization migrating several mission-critical services to Microsoft Azure, implementing Terraform and Ansible IaC practices that standardized environment provisioning and reduced configuration drift.
-- Standardized CI/CD delivery across nine distinct runtimes, entering most ecosystems with no prior experience and reverse-engineering each before automating it.
+- Introduced AI-assisted engineering practices over the past 6–9 months with researched scope gates and human-validation checkpoints before any AI-generated code ships — and flagged to leadership that the organization has no equivalent safeguards.
+- Owned CI/CD standardization for 12 application teams and 70+ applications across nine distinct runtimes.
+- Drove root cause analysis on critical production incidents and built proactive monitoring and automated remediation that reduced MTTR across the application estate.
+- Led cloud modernization migrating 5–10 mission-critical services to Microsoft Azure with Terraform/Ansible IaC.
 
-**Key technologies:** Microsoft Azure, Terraform, Ansible, Python, Dynatrace, Splunk, Azure DevOps, GitHub Actions
-
-### Desjardins — Senior DevOps Engineer *(Contract)*
-
-**Montréal, QC (Remote) | October 2025 – March 2026** — *concurrent engagement alongside the Énergir role*
-
-- Designed and built a Python/FastAPI service that tested the configuration of ~250 enterprise Artifactory repositories every 4 hours, publishing results to Dynatrace for real-time visibility.
-- Built Splunk alerting to detect manual configuration changes made outside the CI/CD pipeline, improving auditability.
-- Automated provisioning of on-demand Artifactory environments using Kubernetes and ArgoCD.
-
-**Key technologies:** Kubernetes, ArgoCD, Python, FastAPI, Dynatrace, Splunk, Docker, Helm
+**Key technologies:** Microsoft Azure, Terraform, Ansible, Azure DevOps, GitHub Actions, Python
 
 ### Tink — DevOps Engineer
 
 **Montréal, QC | January 2018 – August 2021**
 
-- Drove down 24/7 on-call paging frequency through root-cause analysis and prevention — from roughly one page every 2 rotations to one every 4–5 by the end.
-- Built a self-healing response for a recurring, unstable Elasticsearch cluster — monitoring triggered an automated Bash remediation script instead of paging a human.
-- Built the compute, caching, and database layers of a client's AWS migration target environment — EC2, S3, Route 53, VPC, self-managed memcached, serverless database — with no prior AWS experience; the client cancelled before cutover.
-- Centralized Jenkins Pipeline as Code across a team of 10–15 developers maintaining 80+ applications for 20+ clients; added centralized ELK log aggregation for proactive anomaly detection.
+- Built centralized log aggregation using the ELK Stack, enabling proactive detection of production anomalies and reducing incident response times.
+- Drove down 24/7 on-call frequency via RCA and prevention; built a self-healing response for an unstable Elasticsearch cluster.
+- Centralized Jenkins Pipeline as Code across a team of 10–15 developers maintaining 80+ applications for 20+ clients.
 
-**Key technologies:** ELK Stack, AWS (EC2, S3, Route 53, VPC), Jenkins, Puppet, Bash, PRTG
+**Key technologies:** ELK Stack, Jenkins, Bash, Linux, Puppet, AWS (EC2, S3, Route 53, VPC)
 
-### SOVO Technologies — Lead Technician to Software Engineer
+### SOVO Technologies — Lead Technician → Software Engineer
 
 **Montréal, QC | November 2008 – December 2017**
 
-- Owned company IT infrastructure, delivered a zero-downtime server relocation, and introduced redundancy that eliminated single points of failure.
-- Wrote production software for approximately seven years before the title formalized it.
+- Owned all company IT infrastructure, including a zero-downtime server relocation and a redundant architecture eliminating single points of failure.
+- Wrote production software alongside infrastructure work for roughly seven years before the title formalized it.
 
-**Key technologies:** C++, Java, SQL, Windows Server, VMware vSphere, Active Directory
+**Key technologies:** C++, Java, SQL, Windows Server, Linux, Active Directory, VMware vSphere
 
 ## Education
 
-**Bachelor of Automated Manufacturing Engineering** — École de Technologie Supérieure, Montréal, QC | 2005 – 2016
+**Bachelor of Automated Manufacturing Engineering** — École de Technologie Supérieure (ÉTS), Montréal, QC | 2005 – 2016
 
 **DCS in Computer Science Technology** — Cégep André-Laurendeau, Montréal, QC | 2002 – 2005

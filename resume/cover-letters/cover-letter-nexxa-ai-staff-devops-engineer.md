@@ -1,20 +1,12 @@
-Marc Berthelette
-Smiths Falls, ON, Canada | marc.berthelette@gmail.com
-linkedin.com/in/marc-berthelette-3aba6917
-
-September 19, 2026
-
-Nexxa.ai
-Re: Staff DevOps Engineer
-
 Dear Nexxa.ai Hiring Team,
 
-I'm applying for the Staff DevOps Engineer role. Standardizing CI/CD and Kubernetes practice across teams that don't report to me is what I do at Énergir today — 12 application teams, 70+ applications, nine distinct runtimes, most of which I entered with no prior experience and reverse-engineered before automating.
+I'm applying for the Staff DevOps Engineer role. Owning infrastructure end-to-end, across cloud, on-prem, and edge, for a small and fast-moving team is the kind of scope I've consistently taken on throughout my career, even when it meant learning unfamiliar territory under a delivery deadline.
 
-At Desjardins I automated Kubernetes/ArgoCD provisioning for on-demand Artifactory environments in a large financial-services platform, and built a Python/FastAPI health-monitoring service tested against ~250 repositories every 4 hours. I don't have production ML/AI infrastructure experience specifically (GPU scheduling, training-cluster operations), but I do have a track record of learning unfamiliar platforms cold under a delivery clock — most notably an AWS migration build at Tink with zero prior AWS exposure.
+At Énergir, I led cloud modernization work migrating several mission-critical services onto Microsoft Azure, building Terraform and Ansible infrastructure as code that eliminated configuration drift across environments, and drove the root-cause analysis and automated remediation that reduced MTTR across the application estate. At Desjardins, I automated on-demand infrastructure provisioning using Kubernetes and ArgoCD and built a Python-based service that continuously validated infrastructure configuration at scale, extending the engagement past its original scope by making the underlying logic reusable rather than one-off. Earlier at Tink, I conceived and built, unprompted, a fleet-wide software inventory platform surfacing security and obsolescence risk to product owners who had no prior visibility into it — the kind of independent project leadership this role asks for.
 
-I'm incorporated in Canada, bilingual, and available immediately on a remote basis.
+I want to be direct about two specific gaps: I haven't worked with GPU workload scheduling or ML/AI infrastructure (model training and serving pipelines, feature stores), and my production language experience is Python, Bash, C++, and Java rather than Go. What I bring instead is a demonstrated pattern of learning unfamiliar platforms cold and fast — Salesforce, Kubernetes, and a full AWS build environment, each with no prior experience going in — and I'd apply that same approach to closing the GPU/ML-infrastructure gap quickly.
 
-Best regards,
+I'd welcome the opportunity to discuss how this background applies to Nexxa's infrastructure needs. Thank you for your consideration.
 
+Sincerely,
 Marc Berthelette

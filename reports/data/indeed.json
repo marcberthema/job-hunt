@@ -178,7 +178,7 @@
       "salary": "CAD $89.30/hour; one-year contract",
       "gap": "Requires an active Secret, CGP, or Trade clearance",
       "url": "https://ca.indeed.com/viewjob?jk=ba2d9a8c722fc02d",
-      "status": "Rejected — active clearance required"
+      "status": "Skipped — active clearance required"
     },
     {
       "score": 8,

@@ -1,20 +1,12 @@
-Marc Berthelette
-Smiths Falls, ON, Canada | marc.berthelette@gmail.com
-linkedin.com/in/marc-berthelette-3aba6917
+Dear Ravi,
 
-September 19, 2026
+I'm writing about the DevOps Architect contract opportunity (Remote, Canada). My background is a close match for the core of this role: five years of hands-on Microsoft Azure work, deep Terraform infrastructure-as-code practice, and the automation scripting (Python, Bash) and CI/CD pipeline experience the posting calls for.
 
-Raas Infotek
-Re: DevOps Architect
+At Énergir, I led cloud modernization work migrating several mission-critical services onto Microsoft Azure, building the Terraform and Ansible IaC that eliminated configuration drift across dev, staging, and production — the same shared-platform, reusable-module approach this role describes. I also standardized CI/CD delivery for 12 application teams across nine different runtimes, working with GitHub Actions and Azure DevOps pipelines daily, and drove Kubernetes-based automation at Desjardins (ArgoCD-provisioned, on-demand Artifactory environments) alongside a Python/FastAPI service that continuously validated infrastructure configuration at scale. I understand the discipline that compliance-sensitive environments demand, having delivered this work inside regulated energy and financial-services organizations.
 
-Dear Raas Infotek Hiring Team,
+One area I'd want to be upfront about: my Kubernetes experience is strong on the provisioning and automation side but I haven't operated AKS clusters at deep administrative depth — I'm currently working through CKA certification to close that specific gap. Everything else in the posting — Azure, Terraform, Ansible, scripting, CI/CD, Windows/Linux administration — is squarely in my day-to-day experience.
 
-I'm applying for the DevOps Architect role. My Terraform practice is current and production-proven — I run Terraform and Ansible IaC at Énergir to standardize provisioning and eliminate configuration drift across dev, staging, and production — though I'd note my tenure with Terraform specifically is a few years, not the 8+ years stated; the underlying infrastructure-automation experience spans 18 years across multiple IaC and configuration-management tools (Puppet, Ansible, Terraform).
+I'd welcome a conversation about the role and the client it supports. Thank you for considering my application.
 
-My Python background is strong and production-focused — I built a Python/FastAPI health-monitoring service at Desjardins tested against ~250 repositories every 4 hours — though again, direct Python tenure is a few years within a broader automation career, not 6+ years as a primary language. I bring a demonstrated pattern of learning unfamiliar platforms cold under a delivery deadline, including a full AWS build at Tink with no prior AWS experience.
-
-I'm incorporated in Canada, bilingual, and available for this remote contract role.
-
-Best regards,
-
+Sincerely,
 Marc Berthelette

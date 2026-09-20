@@ -45,7 +45,7 @@ job-hunt/
   CLAUDE.md               ← This file — project conventions and workflow
   profile.md              ← Source of truth: background, skills, rate, preferences, what "real consulting" looks like
   job_sources.md          ← Every job board evaluated: working/blocked/manual, last-checked date per source
-  applications.md         ← The ledger: one row per posting, Status = New | Applied | Rejected
+  applications.md         ← The ledger: one row per posting, Status = New | Applied | Skipped | Rejected
   specs/
     INDEX.md              ← Progress tracker for all automation stories
     <story>.md            ← Feature specs (written conversationally, one per automation capability)
@@ -54,7 +54,7 @@ job-hunt/
   .agents/skills/
     check-<board>/SKILL.md ← One per job board — discover, validate, score, refresh that board's report
     addjob/SKILL.md        ← Shared filing step: fetch a URL, score it, draft, append a New row
-    review/SKILL.md        ← Walk New rows, apply/reject/skip, update Status
+    review/SKILL.md        ← Walk New rows, apply/skip/decline, update Status
   reports/
     build_report.py        ← Deterministic renderer: data/<board>.json → <board>-job-search.html (no AI-authored HTML)
     report_schema.md        ← The JSON schema every check-* skill writes to
@@ -98,8 +98,14 @@ Every posting is one row in `applications.md`, moving through one `Status` colum
 
 ```
 New  →  Applied   (you confirmed submission)
-     →  Rejected  (you passed, or it passed on Marc)
+     →  Skipped   (you decided not to pursue it — skill gap, duplicate, expired, etc.)
+
+Applied  →  Rejected  (the employer passed on you — only reachable from Applied)
 ```
+
+`Skipped` and `Rejected` look similar but mean opposite things: `Skipped` is Marc's own call, made
+before ever applying; `Rejected` means he applied and the employer said no. Never set `Rejected`
+directly from `New` — that transition always passes through `Applied` first.
 
 A row carries: date found, score, company, role, the board it came from, its source URL, and any
 flags in `Notes`. Full scoring detail and rationale live in that board's

@@ -1,26 +1,25 @@
 # Marc Berthelette
 
-**Senior DevOps Engineer · Developer Productivity · AI-Assisted Platform Tooling**
+**Senior DevOps Engineer · Developer Productivity · AI-Assisted Engineering**
 
 Smiths Falls, ON, Canada · Remote · marc.berthelette@gmail.com\
-[linkedin.com/in/marc-berthelette-3aba6917](https://linkedin.com/in/marc-berthelette-3aba6917) · Bilingual French and English · Incorporated in Canada · Available immediately
+[linkedin.com/in/marc-berthelette-3aba6917](https://linkedin.com/in/marc-berthelette-3aba6917) · Bilingual: French (native) · English (fluent) · Incorporated in Canada · Available immediately
 
 ---
 
 ## Professional Summary
 
-Senior DevOps engineer with 18 years of experience building the CI/CD, GitOps, and Kubernetes tooling that developer teams rely on day to day. At Énergir, standardized CI/CD across 12 application teams and 70+ applications, and introduced AI-assisted engineering practices with scoped gates and human-validation checkpoints — the same disciplined, AI-tool-fluent workflow this developer-productivity role is built around. Deep Terraform, Docker, and Kubernetes/ArgoCD practice, plus a demonstrated pattern of delivering structurally larger platform improvements than what was originally asked.
+Senior DevOps engineer who builds platforms with users, not scripts — internal developer tooling paired with enablement, so it gets real adoption rather than sitting unused. Introduced disciplined, scoped AI-assisted engineering practices into daily production work, with hard scope gates and human-validation checkpoints before any AI-generated code ships. Deep Kubernetes, ArgoCD/GitOps, and CI/CD practice built while standardizing delivery for 12 application teams.
 
-## Technical Skills
+## Core Expertise
 
-| Category | Technologies and Practices |
+| Category | Focus |
 |---|---|
-| **Developer Platform & CI/CD** | GitOps, ArgoCD, Kubernetes, Docker, Helm, pipeline standardization across heterogeneous stacks |
-| **AI-Assisted Engineering** | Scoped/gated AI-assisted development, human-validation checkpoints, day-to-day use of Claude and AI coding tools |
-| **Infrastructure as Code** | Terraform, Ansible, Puppet, environment standardization |
-| **Cloud Platforms** | Microsoft Azure (production), AWS (EC2, S3, Route 53, VPC — hands-on build, see Work Experience) |
-| **Observability** | Dynatrace, Splunk, ELK Stack, root-cause analysis, MTTR reduction |
-| **Programming & Automation** | Python, FastAPI, Bash, Java, SQL, NoSQL |
+| **Platform Engineering & Enablement** | CI/CD standardization across heterogeneous stacks, pipeline-as-code, internal developer tooling, cross-team enablement without reporting authority |
+| **AI-Assisted Engineering** | Scoped/gated AI-assisted development, human-validation checkpoints, risk assessment of generated-code promotion |
+| **Infrastructure & Cloud Automation** | Microsoft Azure, Terraform, Ansible, Kubernetes, Docker, ArgoCD |
+| **CI/CD & Artifact Management** | Azure DevOps, GitHub Actions, Jenkins, JFrog Artifactory |
+| **Programming & Systems** | Python, FastAPI, Bash, C++, Java, SQL, NoSQL, Red Hat Linux |
 
 ## Work Experience
 
@@ -28,44 +27,42 @@ Senior DevOps engineer with 18 years of experience building the CI/CD, GitOps, a
 
 **Montréal, QC | September 2021 – Present**
 
-- Led cloud modernization migrating several mission-critical services to Microsoft Azure, implementing Terraform and Ansible IaC practices that standardized environment provisioning and eliminated configuration drift across dev, staging, and production.
-- Drove CI/CD and platform-engineering adoption across 12 application teams outside any reporting line, running recurring enablement sessions (~6/year) that turned delivered tooling into actual usage.
-- Standardized CI/CD delivery across nine distinct runtimes for 12 application teams and 70+ applications, entering most ecosystems with no prior experience and reverse-engineering each before automating it.
+- Owned CI/CD standardization for 12 application teams and 70+ applications across nine distinct runtimes, entering most of those ecosystems with no prior experience.
+- Drove CI/CD and platform-engineering adoption across 12 teams outside any reporting line, running recurring enablement sessions (~6/year) — turning delivered tooling into actual usage rather than shelfware.
+- Introduced AI-assisted engineering practices over the past 6–9 months with researched scope gates and human-validation checkpoints before any AI-generated code ships.
+- Led cloud modernization migrating 5–10 mission-critical services to Microsoft Azure with Terraform/Ansible IaC.
 
-**Key technologies:** Microsoft Azure, Terraform, Ansible, Azure DevOps, GitHub Actions, Python, IaC
+**Key technologies:** Microsoft Azure, Azure DevOps, GitHub Actions, Terraform, Ansible, Python
 
 ### Desjardins — Senior DevOps Engineer *(Contract)*
 
-**Montréal, QC (Remote) | October 2025 – March 2026** — *concurrent engagement alongside the Énergir role*
+**Montréal, QC (Remote) | October 2025 – March 2026** — *concurrent engagement, delivered alongside the Énergir role*
 
-- Automated provisioning of on-demand Artifactory environments using Kubernetes and ArgoCD, giving administrators repeatable, isolated environments for safely testing configuration changes and upgrades — internal developer tooling built for a real audience.
-- Extended the engagement past its original scope by building the validation logic tool-agnostic and the test set configurable, so administrators could cover their own cases.
-- Designed and built a Python/FastAPI service that tested the configuration of ~250 enterprise Artifactory repositories every 4 hours.
+- Automated provisioning of on-demand Artifactory instances using Kubernetes and ArgoCD, letting administrators spin up fully configured environments for safe testing.
+- Delivered a 6-month engagement building a Python/FastAPI service that tested the configuration of ~250 remote repositories every 4 hours, publishing to Dynatrace — extending the engagement past scope by making the logic reusable.
 
-**Key technologies:** Kubernetes, ArgoCD, Python, FastAPI, GitHub Actions, Docker, Helm
+**Key technologies:** Kubernetes, ArgoCD, JFrog Artifactory, Python, FastAPI, GitHub Actions, Dynatrace, Docker
 
 ### Tink — DevOps Engineer
 
 **Montréal, QC | January 2018 – August 2021**
 
-- Built the compute, caching, and database layers of a client's full AWS migration target environment — EC2, S3, Route 53, self-managed memcached on EC2, and a serverless relational database — and contributed to VPC/network and Route 53 design, with no prior AWS experience. Roughly 6 months of work; provisioned by hand in the AWS console, not through Terraform or CloudFormation; the client cancelled the migration before cutover.
+- Conceived and built, unprompted, a software inventory platform cataloguing every application and version across a 600+ server fleet, surfacing CVE exposure and SSL/TLS certificate scoring to product owners.
 - Centralized Jenkins Pipeline as Code across a team of 10–15 developers maintaining 80+ applications for 20+ clients.
-- Conceived and built, unprompted, a software inventory platform cataloguing every application and version across a 600+ server fleet — surfacing CVE exposure, end-of-life software, and SSL/TLS certificate scoring to product owners who previously had no such visibility.
-- Managed fleet configuration as code via Puppet and Spacewalk.
 
-**Key technologies:** AWS (EC2, S3, Route 53, VPC), Jenkins, Puppet, Spacewalk, Bash
+**Key technologies:** Jenkins, ELK Stack, Bash, Linux, Puppet, AWS (EC2, S3, Route 53, VPC)
 
-### SOVO Technologies — Lead Technician to Software Engineer
+### SOVO Technologies — Lead Technician → Software Engineer
 
 **Montréal, QC | November 2008 – December 2017**
 
-- Owned company IT infrastructure, delivered a zero-downtime server relocation, and introduced redundancy that eliminated single points of failure.
-- Wrote production software for approximately seven years before the title formalized it.
+- Owned all company IT infrastructure, including a zero-downtime server relocation and a redundant architecture eliminating single points of failure.
+- Wrote production software alongside infrastructure work for roughly seven years before the title formalized it.
 
-**Key technologies:** C++, Java, SQL, Windows Server, VMware vSphere, Active Directory
+**Key technologies:** C++, Java, SQL, Windows Server, Linux, Active Directory, VMware vSphere
 
 ## Education
 
-**Bachelor of Automated Manufacturing Engineering** — École de Technologie Supérieure, Montréal, QC | 2005 – 2016
+**Bachelor of Automated Manufacturing Engineering** — École de Technologie Supérieure (ÉTS), Montréal, QC | 2005 – 2016
 
 **DCS in Computer Science Technology** — Cégep André-Laurendeau, Montréal, QC | 2002 – 2005

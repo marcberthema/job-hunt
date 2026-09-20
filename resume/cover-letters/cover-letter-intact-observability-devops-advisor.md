@@ -1,20 +1,12 @@
-Marc Berthelette
-Smiths Falls, ON, Canada | marc.berthelette@gmail.com
-linkedin.com/in/marc-berthelette-3aba6917
-
-September 19, 2026
-
-Intact
-Re: Observability / DevOps Advisor
-
 Dear Intact Hiring Team,
 
-Je pose ma candidature pour le poste d'Observability / DevOps Advisor. Chez Desjardins, j'ai conçu et développé un service Python/FastAPI qui teste la configuration de ~250 dépôts Artifactory d'entreprise toutes les 4 heures et publie les résultats vers Dynatrace — offrant une visibilité en temps réel sur la santé de la plateforme. Chez Énergir, je pilote l'analyse des causes profondes (RCA) sur les incidents de production critiques et j'ai bâti la surveillance proactive, les tableaux de bord et la remédiation automatisée qui ont réduit le MTTR pour 12 équipes applicatives.
+I'm applying for the Observability / DevOps Advisor role on your SRE & Operational Intelligence team. Supporting production teams through observability platforms, CI/CD discipline, and a genuine, hands-on use of AI in engineering work is exactly the combination I've built over the last several years.
 
-Votre mention explicite de l'utilisation de l'intelligence artificielle en entreprise correspond directement à mon expérience récente : j'ai introduit des pratiques d'ingénierie assistée par IA chez Énergir, avec des portées limitées et des points de validation humaine avant tout déploiement de code généré par IA. Mon expérience Terraform pour les pipelines CI/CD et ma pratique en observabilité (Dynatrace, Splunk, ELK) s'alignent directement avec les besoins de ce rôle.
+At Desjardins, I designed and built a Python/FastAPI health-monitoring service that automatically tested the configuration of roughly 250 remote Artifactory repositories every four hours, publishing results to Dynatrace with technology-segmented dashboards — direct, recent experience with the observability tooling your posting names. At Énergir, I standardized CI/CD delivery for 12 application teams across nine distinct runtimes using Terraform-driven infrastructure as code, and drove the root-cause analysis and automated remediation work that reduced MTTR across the application estate. Over the past several months, I also introduced AI-assisted engineering practices into the team's tooling — researching and applying hard scope gates and human-validation checkpoints before any AI-generated code reaches production, and flagging to leadership that the organization had no equivalent safeguards of its own. That disciplined, practical approach to AI in an enterprise engineering context is something I can bring to your team immediately, not something I'd need to learn on the job.
 
-Je suis incorporé au Canada, parfaitement bilingue, et disponible immédiatement pour ce poste hybride à Montréal.
+As a bilingual French/English professional based in Ontario, I'm comfortable working across both languages with colleagues and stakeholders, and I understand the operational discipline that a regulated financial services environment requires, having delivered this kind of work inside both energy and financial-services organizations.
 
-Best regards,
+I'd welcome the opportunity to discuss how this experience applies to Intact's observability platform. Thank you for your consideration.
 
+Sincerely,
 Marc Berthelette

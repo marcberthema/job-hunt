@@ -76,14 +76,19 @@ file, verify against this schema, not against an older version of that board's o
 - `score` (0–10, required), `family` (`SRE` | `Platform` | `DevOps`, required), `title`,
   `company`, `url` (required).
 - `location`, `salary`, `gap` — optional, default to blank/"Not stated" in the rendered table.
-- `status` — this posting's pipeline label, starting with one of `New`, `Applied`, `Rejected`,
-  `Skipped`, or `Expired` (free text may follow, e.g. `Applied — Sep 18`), or omitted/blank when
-  it isn't decided yet. `Applied` and `Rejected` should mirror the matching `applications.md` row
-  when one exists; `Skipped` and `Expired` are report-only states (a skip or an expired posting
-  never gets an `applications.md` row). The status pill under the job title always shows this
-  text, and the "hide applied, rejected, skipped & expired" toggle hides any row whose status
-  starts with one of those five words — so when the user says "skip this one" or confirms a
-  posting is no longer accepting applications, set `status` accordingly, not just a note.
+- `status` — this posting's pipeline label, starting with one of `New`, `Applied`, `Skipped`,
+  `Rejected`, or `Expired` (free text may follow, e.g. `Applied — Sep 18`), or omitted/blank when
+  it isn't decided yet. `Skipped` means Marc decided not to pursue it (skill gap, duplicate, bad
+  rate, etc.); `Rejected` means he applied and the employer passed on him — only reachable from
+  `Applied`, never set directly on a fresh discovery row. `Applied`, `Skipped`, and `Rejected`
+  should mirror the matching `applications.md` row when one exists — a `check-*` skill's own
+  discovery pass typically only ever produces `New` rows, since it never files anything on its
+  own (see `CLAUDE.md`'s Conventions). `Expired` is report-only (an expired posting never gets an
+  `applications.md` row of its own — see the `review` skill for how a posting's expiry gets
+  recorded there instead, as a `Skipped` row with a reason). The status pill under the job title
+  always shows this text, and the "hide applied, rejected, skipped & expired" toggle hides any
+  row whose status starts with one of those four words — so when the user confirms a decision on
+  a posting, set `status` accordingly, not just a note.
 
 ## Regenerating the HTML
 

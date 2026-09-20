@@ -24,10 +24,37 @@
 |-------|---------|
 | **Primary positioning** | Senior/Staff SRE · Platform Engineering · DevOps · Reliability Consultant (broadened 2026-09-11 — see Notes for Claude) |
 | **Open to** | Three tracks, in no particular priority order (updated 2026-09-14): (1) full-time employment at $160k–175k CAD/year, (2) full-time consulting contract at $110–130/hr CAD, or (3) fractional/part-time consulting, initially at $90+/hr CAD where hourly pricing is necessary and ultimately sold as a monthly retainer with no hours attached |
-| **Target consulting rate** | $110–130/hr CAD for a full-time contract; $90+/hr CAD floor for transitional hourly part-time work; end-state fractional model is a monthly retainer priced for access, responsibility, and outcomes—not a bundle of hours |
-| **Target employment salary** | Aspirational target $160,000–175,000 CAD/year. Scoring floor (updated 2026-09-19): **$100k+** hard floor for on-site/hybrid FTE in Ottawa, Kingston, Brockville, or Cornwall (lowered from $140k — Marc is deliberately opening himself to FTE search in these cities, no longer holding out for a premium over remote); **$140k+** hard floor for on-site/hybrid FTE in Montréal (unchanged — the longer commute still needs a premium); **$100k+** hard floor for 100% fully remote FTE. Below the applicable floor is a reject regardless of skill fit, same treatment as the remote floor. |
+| **Target consulting rate** | $110–130/hr CAD for a full-time contract; $90+/hr CAD floor for transitional hourly part-time work; end-state fractional model is a monthly retainer priced for access, responsibility, and outcomes—not a bundle of hours. For long-term (~1yr, 35–37.5hr/wk guaranteed) contracts specifically, see the real survival/comfortable floors below — grounded in actual take-home math, not aspiration. |
+| **Target employment salary** | Aspirational target $160,000–175,000 CAD/year. Scoring floor (updated 2026-09-19): **$100k+** hard floor for on-site/hybrid FTE in Ottawa, Kingston, Brockville, or Cornwall (lowered from $140k — Marc is deliberately opening himself to FTE search in these cities, no longer holding out for a premium over remote); **$120k+** hard floor for on-site/hybrid FTE in Montréal (lowered from $140k same day — still carries a premium over the other reachable cities for the longer commute, but no longer double the take-home-need gap); **$100k+** hard floor for 100% fully remote FTE. Below the applicable floor is a reject regardless of skill fit, same treatment as the remote floor. |
 | **Work arrangement** | Remote preferred, but open to on-site/hybrid within reach of Smiths Falls, ON — see Geographic Reachability below |
 | **Geography** | Worldwide remote — open to any country where services can be legally provided as a Canadian incorporated entity (no visa required; selling services internationally, not relocating). For on-site/hybrid roles, only reachable from Smiths Falls, ON: Ottawa, Kingston, Brockville, Cornwall, and Montréal (the furthest acceptable) |
+
+### Long-Term Contract Rate Floor — Real Take-Home Math (added 2026-09-19)
+
+Marc's preferred consulting shape is a **long-term contract (ideally ~1 year) that somewhat
+guarantees ~35hr/week**, not sporadic short gigs. He has an actual calculation behind his rate
+floors for this shape — 37.5hr/week, 6 weeks vacation/holidays unpaid (i.e. ~46 billable weeks/
+year, ~1,725 billable hours), $15k/year of corp overhead, and CPP maxed out. Against his real
+household need (**$7k/month bare minimum, $9k/month comfortable** — see household budget context
+from 2026-09-19 conversation):
+
+| Rate | Net monthly (approx.) | Net annual (approx.) |
+|---|---|---|
+| $80/hr | ~$7,000 | ~$84,000 |
+| $90/hr | ~$8,000 | ~$96,000 |
+| $105/hr | ~$9,100 | ~$109,200 |
+
+**So the real numbers are: ~$80/hr is the survival floor, ~$105/hr clears "comfortable."** This is
+lower than the general $110–130/hr target and $90/hr hourly-part-time floor stated above — those
+numbers were aspirational/generic, not derived from this specific long-term guaranteed-hours
+shape. If working 40hr/week with only 4 weeks vacation instead, these numbers drop further (more
+billable hours to cover the same fixed $15k + CPP overhead).
+
+**This floor only applies to contracts that actually look like this shape** — long-term
+(~1 year), guaranteed ~35–37.5hr/week. A short or uncertain-hours gig at the same hourly rate is
+worth less in practice (gaps between contracts erode the annual average), so don't apply this
+$80/hr survival floor to short/sporadic hourly work — the existing $90/hr hourly-part-time floor
+still governs those.
 
 ### Retainer / Fractional Track (revised 2026-09-14 — pricing model clarified)
 
@@ -63,7 +90,7 @@ Referral/network-built retainer relationships (the original 2026-09-11 plan) rem
 quality channel but are slower to develop — worth cultivating in parallel with the marketplace
 platforms once the FTE-stabilization phase begins.
 
-The normal $100/hr consulting-rate floor does not apply to this track. Transitional hourly
+The normal long-term-contract $80/hr rate floor does not apply to this track. Transitional hourly
 part-time work has its own $90/hr CAD floor. A retainer is evaluated on scope, access, risk,
 effective economics, and capacity impact, but is never presented as prepaid hours.
 
@@ -72,6 +99,31 @@ $90/hr CAD. This replaces the earlier below-$100 flexible-gig exception. Opportu
 $90/hr are a reject even when flexible or low commitment. Retainers do not have an hourly rate
 attached; assess whether the monthly fee is worthwhile for the defined responsibility, access,
 risk, and real capacity burden without quoting an hour allowance to the client.
+
+### Bridge Roles (Out-of-Field) — In Scope (added 2026-09-19)
+
+Given the urgent runway (see Current Situation in `CLAUDE.md`), Marc is now open to a **bridge
+role outside his primary field** (not SRE/Platform/DevOps) if an in-field offer hasn't landed by
+the time his current contract ends. This is a fallback, not a replacement for the in-field search
+— the `check-*` boards should keep prioritizing in-field postings first.
+
+**What counts as an acceptable bridge role:**
+- Pays the bills — no fixed floor below in-field targets, but should not be exploitative (well
+  below regional minimum for the role type).
+- Does not trap him out of the job search — no long/rigid onboarding, no non-compete or
+  moonlighting clause that would block continuing to search or eventually returning to
+  consulting.
+- Prefer IT-adjacent work (help desk, IT ops generalist, technical support) over fully unrelated
+  fields where possible — it reads better on a resume later and keeps skills warm — but this is
+  a preference, not a hard gate at this stage.
+- Still run the existing Red Flags below as a gut-check (single-client exclusivity, benefits-as-
+  selling-point culture mismatch, etc.) even for bridge roles — a bad-fit bridge job solves this
+  month's problem and creates next year's.
+
+**Do not do this automatically.** `check-*` skills should keep scoring against the primary
+positioning above by default. Only widen to explicitly out-of-field postings when Marc asks for
+it directly (e.g. "check for bridge roles too") — this section documents that the door is open,
+not that every board run should now include unrelated postings.
 
 ### Geographic Reachability for On-Site/Hybrid Roles
 
@@ -206,12 +258,15 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 - **On-site/hybrid outside reachable range** — anywhere other than Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability above). Unlike other red flags below, this one **caps the score directly (0-4) rather than just being noted as a flag on top of a high skill score** — skill fit alone should never carry an unreachable on-site/hybrid role into the 5+ range, because it's not actually take-able. Within the reachable range: 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week is a flag unless the rate is well above target.
 - Single-client exclusive clause (corp-to-corp restriction)
 - Emphasis on benefits as a selling point (signals FTE culture-fit mismatch, not a disqualifier on its own now that FTE is a first-class target — see Engagement Preferences)
-- Rate below $100/hr for a full-time consulting contract or below $90/hr for hourly part-time/
-  fractional work; retainers are judged on the monthly fee relative to responsibility, access,
-  risk, and capacity burden rather than an advertised hourly equivalent. Salary below $100k for
-  on-site/hybrid employment in Ottawa, Kingston, Brockville, or Cornwall, below $140k for
-  on-site/hybrid employment in Montréal, or below $100k for 100% fully remote employment is also
-  a red flag (updated 2026-09-19).
+- Rate below $80/hr for a long-term (~1yr, ~35-37.5hr/wk guaranteed) full-time consulting
+  contract (lowered from $100/hr on 2026-09-19 — see Long-Term Contract Rate Floor in Engagement
+  Preferences for the real survival-math derivation) or below $90/hr for hourly part-time/
+  fractional work (short/sporadic gigs still use this higher floor — gaps between contracts erode
+  the annual average, so the same $80/hr long-term floor doesn't apply); retainers are judged on
+  the monthly fee relative to responsibility, access, risk, and capacity burden rather than an
+  advertised hourly equivalent. Salary below $100k for on-site/hybrid employment in Ottawa,
+  Kingston, Brockville, or Cornwall, below $120k for on-site/hybrid employment in Montréal, or
+  below $100k for 100% fully remote employment is also a red flag (updated 2026-09-19).
 - Junior scope (ticket-taking, no architecture ownership)
 - **Cloud platform mismatch — graded, never a blanket refusal, and AWS ≠ GCP.** The test is whether the
   cloud platform *is the job* or merely *the venue*. Note the two are no longer equivalent for Marc:
@@ -253,14 +308,15 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
   contract, per the three-track engagement strategy (see Engagement Preferences).
 - **5–7**: Remote employment at or near target salary OR contract with minor red flags worth reviewing OR
   reachable-city hybrid at 2 days/week OR FTE salary below $160k but above the scoring floor (updated
-  2026-09-19: **$100k+ for on-site/hybrid in Ottawa/Kingston/Brockville/Cornwall, $140k+ for on-site/hybrid
+  2026-09-19: **$100k+ for on-site/hybrid in Ottawa/Kingston/Brockville/Cornwall, $120k+ for on-site/hybrid
   in Montréal, $100k+ for 100% fully remote** — "worth considering," per Marc)
 - **Cloud platform**: apply the three-tier AWS/GCP rule in Red Flags above before scoring — hard-gate
   postings cap at 0–4 regardless of how well the rest of the posting fits; "venue" postings score normally
   with the mismatch noted as a flag.
 - **0–4**: On-site/hybrid outside the reachable range (see Geographic Reachability), below the salary/rate
-  floor ($100/hr full-time consulting, $90/hr hourly part-time/fractional, $100k on-site/hybrid FTE in
-  Ottawa/Kingston/Brockville/Cornwall, $140k on-site/hybrid FTE in Montréal, or $100k 100%-remote FTE), or
+  floor ($80/hr for a long-term ~1yr/35-37.5hr-wk-guaranteed full-time consulting contract, $90/hr hourly
+  part-time/fractional or any shorter/sporadic contract, $100k on-site/hybrid FTE in
+  Ottawa/Kingston/Brockville/Cornwall, $120k on-site/hybrid FTE in Montréal, or $100k 100%-remote FTE), or
   junior scope — skip. Do not convert a monthly retainer into a client-facing hour bundle; assess its
   economics against the defined responsibility and capacity burden. A reachable-city role requiring 3+
   days/week on-site also scores here unless the rate is well above target.
@@ -321,7 +377,7 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
     ownership + reliability + platform engineering, not architecture-first scope.
 - Primary title: **Senior/Staff SRE · Platform Engineering · DevOps** for job boards, LinkedIn, and resumes (broadened 2026-09-11, see above); **Senior SRE & Platform Engineering Consultant** for website and direct outreach
 - Always lead with Azure as the primary cloud platform
-- Open to on-site/hybrid roles in Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability) — 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week needs a well-above-target rate. On-site/hybrid **outside** that reachable range is still a hard red flag — never apply without explicit user confirmation. Salary floor for on-site/hybrid FTE differs by city (updated 2026-09-19): **$100k+ in Ottawa/Kingston/Brockville/Cornwall**, **$140k+ in Montréal** — see Engagement Preferences.
+- Open to on-site/hybrid roles in Ottawa, Kingston, Brockville, Cornwall, or Montréal (see Geographic Reachability) — 1 day/week is fine, 2 days/week is a soft flag, 3+ days/week needs a well-above-target rate. On-site/hybrid **outside** that reachable range is still a hard red flag — never apply without explicit user confirmation. Salary floor for on-site/hybrid FTE differs by city (updated 2026-09-19): **$100k+ in Ottawa/Kingston/Brockville/Cornwall**, **$120k+ in Montréal** — see Engagement Preferences.
 - Bilingualism is a competitive advantage — highlight for Canadian and Quebec roles
 - Desjardins is the most recent and most impressive contract — always mention for financial sector targets
 - Website copy frames Marc as a consultant first, open to employment second

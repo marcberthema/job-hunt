@@ -120,4 +120,4 @@ After the table, report `Could not validate` and material search limitations, if
 
 ## Follow-up filing
 
-When the user selects a posting, reuse the already fetched description when still current, re-check for duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied` or `Rejected` without the user's explicit confirmation.
+When the user selects a posting, reuse the already fetched description when still current, re-check for duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied`, `Skipped`, or `Rejected` without the user's explicit confirmation.

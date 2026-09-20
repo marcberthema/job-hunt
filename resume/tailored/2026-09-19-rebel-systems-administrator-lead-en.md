@@ -1,71 +1,70 @@
 # Marc Berthelette
 
-**Senior Systems & Platform Engineer · AWS · Linux · Team Leadership**
+**Senior Systems Administrator · Team Lead · Infrastructure & Cloud Automation**
 
 Smiths Falls, ON, Canada · Remote · marc.berthelette@gmail.com\
-[linkedin.com/in/marc-berthelette-3aba6917](https://linkedin.com/in/marc-berthelette-3aba6917) · Bilingual French and English · Incorporated in Canada · Available immediately
+[linkedin.com/in/marc-berthelette-3aba6917](https://linkedin.com/in/marc-berthelette-3aba6917) · Bilingual: French (native) · English (fluent) · Incorporated in Canada · Available immediately
 
 ---
 
 ## Professional Summary
 
-Senior DevOps and infrastructure engineer with 18 years of experience owning IT operations, cloud infrastructure, and hosting platforms. At SOVO Technologies, managed a team of technicians while owning all company IT infrastructure, including a zero-downtime server relocation and redundancy design. Current AWS (hands-on build), Terraform/Ansible, and DevOps automation practice, plus a demonstrated pattern of driving CI/CD and platform-engineering adoption across teams outside any direct reporting line.
+Senior infrastructure engineer with real team-leadership experience — managed a team of technicians (scheduling, training, task delegation) at SOVO Technologies while owning company-wide IT infrastructure — paired with deep hands-on server-fleet automation from Puppet-driven configuration management of 600+ servers at Tink. Deep Microsoft Azure and AWS build experience, Terraform, and Linux/Windows systems administration.
 
-## Technical Skills
+## Core Expertise
 
-| Category | Technologies and Practices |
+| Category | Focus |
 |---|---|
-| **Systems Administration & Leadership** | Team leadership/mentorship (SOVO), IT operations ownership, incident readiness |
-| **Cloud Infrastructure** | AWS (EC2, S3, Route 53, VPC, IAM — hands-on build), Microsoft Azure |
-| **Infrastructure as Code & Automation** | Terraform, Ansible, Puppet, DevOps deployment workflows |
-| **Linux & Windows Systems** | Red Hat Linux, CentOS, Ubuntu, Windows Server |
-| **Observability & Incident Response** | Dynatrace, Splunk, ELK Stack, on-call/incident response |
-| **Version Control & CI/CD** | Git, GitHub Actions, Azure DevOps |
+| **Infrastructure & Cloud Automation** | Microsoft Azure, AWS, Terraform, Ansible, Puppet, Kubernetes, Docker |
+| **Systems Administration** | Windows Server, Linux (Red Hat, CentOS, RockyOS, Ubuntu), Active Directory, VMware vSphere |
+| **CI/CD & Artifact Management** | Azure DevOps, GitHub Actions, Jenkins |
+| **Reliability & Production Engineering** | Root cause analysis, MTTR reduction, incident response, automated remediation, 24/7 on-call |
+| **Programming & Systems** | Python, FastAPI, Bash, C++, Java, SQL, NoSQL |
 
 ## Work Experience
 
-### Énergir — Senior DevOps Engineer
+### SOVO Technologies — Lead Technician → Software Engineer
 
-**Montréal, QC | September 2021 – Present**
+**Montréal, QC | November 2008 – December 2017**
 
-- Led cloud modernization migrating several mission-critical services to Microsoft Azure, implementing Terraform and Ansible IaC practices that standardized environment provisioning and eliminated configuration drift across dev, staging, and production.
-- Drove CI/CD and platform-engineering adoption across 12 application teams outside any reporting line, running recurring enablement sessions (~6/year) that turned delivered tooling into actual usage.
-- Standardized CI/CD delivery across nine distinct runtimes for 12 application teams and 70+ applications, entering most ecosystems with no prior experience and reverse-engineering each before automating it.
+- Managed a team of technicians: scheduling, training, and task delegation.
+- Owned all company IT infrastructure — including a zero-downtime server relocation project — and made core servers redundant to eliminate single points of failure.
+- Served as the final QA gate before any software release reached production.
+- Wrote production software alongside the infrastructure role for roughly seven years before the title formalized it.
 
-**Key technologies:** Microsoft Azure, Terraform, Ansible, Azure DevOps, GitHub Actions, Python, IaC
-
-### Desjardins — Senior DevOps Engineer *(Contract)*
-
-**Montréal, QC (Remote) | October 2025 – March 2026** — *concurrent engagement alongside the Énergir role*
-
-- Automated provisioning of on-demand Artifactory environments using Kubernetes and ArgoCD, giving administrators repeatable, isolated environments for safely testing configuration changes and upgrades — internal developer tooling built for a real audience.
-- Extended the engagement past its original scope by building the validation logic tool-agnostic and the test set configurable, so administrators could cover their own cases.
-- Designed and built a Python/FastAPI service that tested the configuration of ~250 enterprise Artifactory repositories every 4 hours.
-
-**Key technologies:** Kubernetes, ArgoCD, Python, FastAPI, GitHub Actions, Docker, Helm
+**Key technologies:** C++, Java, SQL, Windows Server, Linux, Active Directory, VMware vSphere, Cisco routing, firewall/VPN, backup & recovery
 
 ### Tink — DevOps Engineer
 
 **Montréal, QC | January 2018 – August 2021**
 
-- Built the compute, caching, and database layers of a client's full AWS migration target environment — EC2, S3, Route 53, self-managed memcached on EC2, and a serverless relational database — and contributed to VPC/network and Route 53 design, with no prior AWS experience. Roughly 6 months of work; provisioned by hand in the AWS console, not through Terraform or CloudFormation; the client cancelled the migration before cutover.
+- Managed fleet configuration as code for 600+ Windows and Linux servers, with all subsequent configuration and package/patch state driven declaratively through Puppet and Spacewalk rather than hand-tuned per server.
+- Automated OS-level patching and updates, including automated kernel-update reboots, reducing the process to a monthly verification check with near-zero downtime.
+- Built the compute, caching, and database layers of a client's AWS migration target environment — EC2, S3, Route 53, VPC, self-managed memcached, serverless database — with no prior AWS experience; the client cancelled before cutover.
 - Centralized Jenkins Pipeline as Code across a team of 10–15 developers maintaining 80+ applications for 20+ clients.
-- Conceived and built, unprompted, a software inventory platform cataloguing every application and version across a 600+ server fleet — surfacing CVE exposure, end-of-life software, and SSL/TLS certificate scoring to product owners who previously had no such visibility.
-- Managed fleet configuration as code via Puppet and Spacewalk.
 
-**Key technologies:** AWS (EC2, S3, Route 53, VPC), Jenkins, Puppet, Spacewalk, Bash
+**Key technologies:** Puppet, Spacewalk, AWS (EC2, S3, Route 53, VPC), Jenkins, Bash, Linux, CentOS, RockyOS
 
-### SOVO Technologies — Lead Technician to Software Engineer
+### Énergir — Senior DevOps Engineer
 
-**Montréal, QC | November 2008 – December 2017**
+**Montréal, QC | September 2021 – Present**
 
-- Owned company IT infrastructure, delivered a zero-downtime server relocation, and introduced redundancy that eliminated single points of failure.
-- Wrote production software for approximately seven years before the title formalized it.
+- Led cloud modernization migrating 5–10 mission-critical services to Microsoft Azure, implementing Terraform and Ansible IaC practices that standardized environment provisioning and eliminated configuration drift.
+- Owned CI/CD standardization for 12 application teams and 70+ applications across nine distinct runtimes.
 
-**Key technologies:** C++, Java, SQL, Windows Server, VMware vSphere, Active Directory
+**Key technologies:** Microsoft Azure, Terraform, Ansible, Azure DevOps, GitHub Actions
+
+### Desjardins — Senior DevOps Engineer *(Contract)*
+
+**Montréal, QC (Remote) | October 2025 – March 2026** — *concurrent engagement, delivered alongside the Énergir role*
+
+- Automated provisioning of on-demand Artifactory instances using Kubernetes and ArgoCD.
+- Delivered a Python/FastAPI service testing the configuration of ~250 remote repositories every 4 hours, publishing to Dynatrace.
+
+**Key technologies:** Kubernetes, ArgoCD, Python, FastAPI, Dynatrace, Docker
 
 ## Education
 
-**Bachelor of Automated Manufacturing Engineering** — École de Technologie Supérieure, Montréal, QC | 2005 – 2016
+**Bachelor of Automated Manufacturing Engineering** — École de Technologie Supérieure (ÉTS), Montréal, QC | 2005 – 2016
 
 **DCS in Computer Science Technology** — Cégep André-Laurendeau, Montréal, QC | 2002 – 2005

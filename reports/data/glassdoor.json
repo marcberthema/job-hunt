@@ -77,7 +77,7 @@
       "salary": "CAD $89.30/hour (employer stated)",
       "gap": "Confirmed duplicate of the Morson Talent posting already filed and Rejected via Indeed on 2026-09-15 (score 2) — same title, same rate range, same recruiter family. Also requires Secret/CGP/Trade clearance (unconfirmed) and the rate is below target for a 3-days/week on-site cadence.",
       "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Remote&vjk=901dd763fd940ff1",
-      "status": "Rejected — duplicate of 2026-09-15 Indeed filing"
+      "status": "Skipped — duplicate of 2026-09-15 Indeed filing"
     },
     {
       "score": 2,

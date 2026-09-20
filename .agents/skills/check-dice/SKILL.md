@@ -97,4 +97,4 @@ Then list Could not validate postings and material limitations. Ask which eligib
 
 ## Follow-up filing
 
-For a selected eligible posting, reuse its fetched description when current, check duplicates again, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied` or `Rejected` without explicit confirmation.
+For a selected eligible posting, reuse its fetched description when current, check duplicates again, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied`, `Skipped`, or `Rejected` without explicit confirmation.

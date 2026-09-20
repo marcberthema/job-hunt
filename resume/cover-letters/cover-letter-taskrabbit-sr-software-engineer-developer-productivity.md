@@ -1,20 +1,12 @@
-Marc Berthelette
-Smiths Falls, ON, Canada | marc.berthelette@gmail.com
-linkedin.com/in/marc-berthelette-3aba6917
-
-September 19, 2026
-
-TaskRabbit
-Re: Sr Software Engineer - Developer Productivity
-
 Dear TaskRabbit Hiring Team,
 
-I'm applying for the Sr Software Engineer, Developer Productivity role. Building the CI/CD and GitOps tooling that other engineering teams depend on is core to how I've worked for 18 years: at Énergir I standardized CI/CD delivery across 12 application teams and 70+ applications spanning nine distinct runtimes, and built Kubernetes/ArgoCD automation at Desjardins that gave administrators self-service, repeatable environments instead of manual setup.
+I'm applying for the Sr Software Engineer - Developer Productivity role. Building the tooling and platform practices that make other engineers faster — CI/CD, GitOps, and container orchestration — is core to how I've worked throughout my career, and the ArgoCD/GitOps and Kubernetes/Docker/Helm scope in this posting is squarely in my day-to-day experience.
 
-Your posting's emphasis on day-to-day use of AI coding tools is a direct match rather than a stretch: I introduced AI-assisted engineering practices into my team's tooling at Énergir, researching and applying hard scope gates and human-validation checkpoints before any AI-generated code reaches production. I bring that same disciplined approach to developer-platform work.
+At Énergir, I standardized CI/CD delivery for 12 application teams across nine distinct runtimes, entering most of them with no prior experience and reverse-engineering how each one actually worked before automating it. I ran recurring enablement sessions with each team after delivering pipeline tooling, turning delivered automation into real adoption rather than shelfware — the same developer-productivity mindset this role describes. At Desjardins, I automated on-demand infrastructure provisioning using Kubernetes and ArgoCD, and built a Python/FastAPI service that continuously validated infrastructure configuration at scale, extending the engagement past its original scope by making the underlying logic reusable.
 
-I'm incorporated in Canada, fully bilingual (French/English), and available to start quickly on a remote or contract basis.
+I also want to highlight direct, current experience with disciplined AI-assisted development: over the past several months at Énergir, I introduced AI-assisted engineering practices into the team's tooling, researching and applying hard scope gates and human-validation checkpoints before any AI-generated code reaches production. That's not theoretical for me — it's a practice I use daily, which maps directly onto the kind of AI-assisted workflows a developer productivity role increasingly needs to support.
 
-Best regards,
+I'd welcome the opportunity to discuss how this experience applies to TaskRabbit's platform. Thank you for your consideration.
 
+Sincerely,
 Marc Berthelette

@@ -1,20 +1,12 @@
-Marc Berthelette
-Smiths Falls, ON, Canada | marc.berthelette@gmail.com
-linkedin.com/in/marc-berthelette-3aba6917
+Dear Bindu,
 
-September 19, 2026
+I'm writing about the DevSecOps Engineer contract opportunity at TechniPros. Integrating security into CI/CD and infrastructure automation has been a consistent part of my DevOps practice, and the Terraform, Docker, Kubernetes, and CI/CD requirements in this posting match my day-to-day work closely.
 
-TechniPros, LLC
-Re: DevOps Engineer
+At Desjardins, I built Splunk alerting to detect manual configuration changes made outside the CI/CD pipeline and implemented artifact lifecycle policies to enforce retention standards across an enterprise JFrog Artifactory platform — security and governance built into the pipeline itself, not bolted on after. At Énergir, I standardized CI/CD delivery for 12 application teams across nine runtimes and led cloud modernization onto Microsoft Azure with Terraform and Ansible infrastructure as code. Earlier at Tink, I built a fleet-wide software inventory platform, unprompted, that surfaced CVE exposure and SSL/TLS certificate risk to product owners who previously had no visibility into it — a direct precedent for the vulnerability-monitoring and cloud-security work this role asks for.
 
-Dear TechniPros, LLC Hiring Team,
+I want to be direct about two specific tools named in the posting that I haven't used: SonarQube and Snyk. My container and code security practice has been built around Splunk-based alerting and artifact lifecycle governance rather than these particular scanning platforms, though the underlying discipline — catching problems before they reach production — is the same.
 
-I'm applying for the DevOps Engineer role at TechniPros. My CI/CD work has consistently included a security and governance layer, not just pipeline speed: at Desjardins I built Splunk alerting specifically to detect manual configuration changes made outside the CI/CD pipeline, improving auditability for a large financial-services Artifactory platform.
+I'd welcome a conversation about the role and the sponsorship/work-arrangement details. Thank you for your consideration.
 
-I don't have hands-on experience with SonarQube, Snyk, Prisma Cloud, or Checkmarx specifically, but I have a demonstrated pattern of learning unfamiliar tooling quickly under a delivery clock — most notably a full AWS build at Tink with zero prior AWS experience. Current Terraform, Kubernetes, and GitHub Actions practice round out the CI/CD side. I understand this is a W-2, no-C2C contract with sponsorship available; I'm a Canadian citizen and would confirm remote-from-Canada eligibility with the recruiter first.
-
-I'm incorporated in Canada, bilingual, and available immediately.
-
-Best regards,
-
+Sincerely,
 Marc Berthelette

@@ -1,20 +1,12 @@
-Marc Berthelette
-Smiths Falls, ON, Canada | marc.berthelette@gmail.com
-linkedin.com/in/marc-berthelette-3aba6917
-
-September 19, 2026
-
-Vistex
-Re: Senior Cloud Engineer
-
 Dear Vistex Hiring Team,
 
-I'm applying for the Senior Cloud Engineer role. Standardizing infrastructure provisioning and configuration management across heterogeneous environments is where I've spent 18 years: I manage fleet configuration as code with Puppet and Spacewalk (600+ servers at Tink), and currently run Terraform and Ansible IaC practices at Énergir that eliminated configuration drift across development, staging, and production.
+I'm applying for the Senior Cloud Engineer role on your Cloud Infrastructure Team. The combination of Puppet configuration management, Terraform infrastructure as code, and production Kubernetes ownership in this posting matches a career built around exactly that kind of infrastructure work.
 
-I bring hands-on Kubernetes and Docker experience from Desjardins, where I automated on-demand Artifactory environment provisioning with ArgoCD, plus deep Linux systems administration and networking fundamentals from a career that started in infrastructure. My Azure depth is current and production-proven, and my AWS experience — a full migration-target build at Tink with no prior AWS exposure — shows I can pick up a new cloud platform quickly and honestly represent what I've actually done with it.
+At Tink, I managed fleet configuration as code for 600+ servers, driving all subsequent configuration and package/patch state declaratively through Puppet and Spacewalk rather than by hand — including automating OS-level patching and kernel-update reboots down to a monthly verification check with near-zero downtime. That same fleet also carried a full AWS migration target environment I built from scratch — EC2, S3, Route 53, VPC, self-managed memcached, a serverless relational database — with no prior AWS experience going in. More recently at Énergir, I led cloud modernization onto Microsoft Azure, building Terraform and Ansible IaC that eliminated configuration drift across dev, staging, and production, and at Desjardins I automated on-demand infrastructure provisioning using Kubernetes and ArgoCD.
 
-I'm incorporated in Canada, bilingual, and available to start immediately on a remote basis.
+I want to be upfront about OpenStack specifically: I haven't operated a private OpenStack cloud, though I've built and maintained production infrastructure across AWS, Azure, and on-prem VMware/Puppet-managed fleets. Given the pattern of learning unfamiliar platforms cold that runs through my career — Salesforce and Kubernetes at Énergir and Desjardins, AWS at Tink — I'm confident I can get productive on OpenStack quickly, and I'd rather say that plainly than imply experience I don't have.
 
-Best regards,
+I'd welcome the opportunity to discuss how this background applies to Vistex's cloud infrastructure. Thank you for your consideration.
 
+Sincerely,
 Marc Berthelette

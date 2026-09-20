@@ -5,7 +5,7 @@ description: Manually add a single job posting by URL — fetch it, score it aga
 
 # Add Job
 
-Take a single job posting URL (or pasted posting text when a URL can't be fetched), score it against Marc's profile, produce a cover letter and tailored resume, and record it in `applications.md` with `Status: New`. This is the shared filing step every `check-*` skill calls once the user picks a posting to pursue — it never submits an application and never sets a row's status to `Applied` or `Rejected`.
+Take a single job posting URL (or pasted posting text when a URL can't be fetched), score it against Marc's profile, produce a cover letter and tailored resume, and record it in `applications.md` with `Status: New`. This is the shared filing step every `check-*` skill calls once the user picks a posting to pursue — it never submits an application and never sets a row's status to `Applied`, `Skipped`, or `Rejected`.
 
 ## 1. Duplicate check
 
@@ -53,7 +53,7 @@ Add one row to the table in `applications.md`:
 - `Status`: `New`.
 - `Notes`: any logistics flags surfaced in step 5 (on-site, below-target rate, unstated details), or blank.
 
-Never set `Status` to `Applied` or `Rejected` from this skill — those transitions belong to the `review` skill only, once the user confirms a decision.
+Never set `Status` to `Applied`, `Skipped`, or `Rejected` from this skill — those transitions belong to the `review` skill only, once the user confirms a decision.
 
 ## 8. Low-score handling
 

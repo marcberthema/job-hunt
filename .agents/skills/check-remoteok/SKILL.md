@@ -98,4 +98,4 @@ After the table, list regional exclusions, unclear eligibility, `Could not valid
 
 ## Follow-up filing
 
-For a selected posting, refresh it read-only, re-check regional eligibility and duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied` or `Rejected` without the user's explicit confirmation.
+For a selected posting, refresh it read-only, re-check regional eligibility and duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application or change a row's status to `Applied`, `Skipped`, or `Rejected` without the user's explicit confirmation.

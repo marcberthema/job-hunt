@@ -84,4 +84,4 @@ After the table, list `Could not validate` entries and material search limitatio
 
 ## Follow-up filing
 
-For a selected posting, refresh it read-only, re-check duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application, send an email, or change a row's status to `Applied` or `Rejected` through this skill.
+For a selected posting, refresh it read-only, re-check duplicates, and follow the `addjob` skill: append one row to `applications.md` with `Status: New`. Never submit an application, send an email, or change a row's status to `Applied`, `Skipped`, or `Rejected` through this skill.
