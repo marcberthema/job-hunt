@@ -37,7 +37,7 @@ For a default run, review the API inventory for these target families:
 - DevSecOps Engineer
 - Infrastructure Engineer
 
-Prefer postings from the past 14 days. Review every plausible target-family posting within the latest 100 API jobs, not merely exact title matches. Retain roles centered on production reliability, observability, cloud foundations, CI/CD, deployment automation, infrastructure as code, platform enablement, systems infrastructure, or DevSecOps. Exclude application development, data engineering, sales/solutions architecture, QA, support, and unrelated operations unless the description's actual center of gravity belongs to a target family.
+Prefer postings from the past 14 days. Review every plausible target-family posting within the latest 100 API jobs, not merely exact title matches. Retain roles centered on production reliability, observability, cloud foundations, CI/CD, deployment automation, infrastructure as code, platform enablement, systems infrastructure, or DevSecOps. Exclude application development, data engineering, sales/solutions architecture, QA, support, and unrelated operations unless the description's actual center of gravity belongs to a target family. A posting you open and read in full, then rule out for this reason, is still a scored row — give it `score: 0` and `status: "Out of scope"` per `reports/report_schema.md`, with `gap` stating what the role actually is.
 
 Deduplicate by RemoteOK job `id` or canonical URL, then by company plus exact title.
 
@@ -50,6 +50,8 @@ RemoteOK is worldwide and many postings are not open to Canadians. Apply this ga
 - Unclear: `location` is blank, says only `Remote`, or uses vague wording without confirming Canada. Inspect the full description and canonical page. If still unclear, retain it with `Confirm Canada eligibility` rather than presenting it as confirmed.
 
 Never rely on `Remote`, `Worldwide`, tags, flag icons, or title text alone. The description may contain a narrower residency, citizenship, time-zone, or language requirement. List ineligible roles separately and do not score them.
+
+This gate — and the ineligible list it produces — is for postings ruled out from `location` and a skim of the description for eligibility language alone, before the full "Validation and extraction" pass below. A posting that goes through full validation/extraction (responsibilities, requirements, salary, etc. captured for scoring) and only then turns out ineligible is not recorded this way — score it `-1` with `status: "Ineligible"` as a normal row in `rows` instead, per `reports/report_schema.md`.
 
 ## Validation and extraction
 
@@ -92,9 +94,9 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 | Skill score | Family | Job title | Company | Region / time zone | Salary / rate | Engagement | Biggest gap | Posting |
 |---:|---|---|---|---|---|---|---|---|
 
-Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the canonical RemoteOK detail page. Preserve currency and pay period, use `Not stated` for unknown facts, and include low scores rather than hiding weak matches.
+Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the canonical RemoteOK detail page. Preserve currency and pay period, use `Not stated` for unknown facts, and include low scores rather than hiding weak matches. Include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
-After the table, list regional exclusions, unclear eligibility, `Could not validate` entries, stale postings, and material search limitations. Ask which eligible roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/remoteok.json` during discovery.
+After the table, list regional exclusions from the pre-review location gate, unclear eligibility, `Could not validate` entries, stale postings, and material search limitations. Ask which eligible roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/remoteok.json` during discovery.
 
 ## Follow-up filing
 

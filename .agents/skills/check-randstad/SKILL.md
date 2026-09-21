@@ -37,7 +37,7 @@ If the user provides a filter term, use it alone. Otherwise retain titles or sum
 - Infrastructure engineering
 - Release engineering, CI/CD, infrastructure as code, cloud foundations, or closely related automation
 
-Do not require a literal title match. Exclude unrelated business analysis, project management, data engineering, QA, Salesforce administration, application development, and support roles unless the description's actual center of gravity is SRE, Platform, or DevOps.
+Do not require a literal title match. Exclude unrelated business analysis, project management, data engineering, QA, Salesforce administration, application development, and support roles unless the description's actual center of gravity is SRE, Platform, or DevOps. A posting you open and read in full, then rule out for this reason, is still a scored row — give it `score: 0` and `status: "Out of scope"` per `reports/report_schema.md`, with `gap` stating what the role actually is.
 
 Prefer postings from the past two days using Randstad's `datePosted` or displayed date, but include every matching current posting found on the reviewed page and report its date. Daily reruns depend on repository deduplication rather than silently omitting older live roles.
 
@@ -50,6 +50,8 @@ Randstad Canada listings are Canadian-market postings, but that alone does not e
 - A remote role tied to another city when the description permits work from Canada and any required travel is occasional; state the travel requirement plainly.
 
 Exclude fully on-site roles and hybrid roles outside those cities. For Montréal, exclude confirmed requirements above two office days weekly. When Montréal cadence is undisclosed, retain the role and write `Hybrid — days not stated; confirm <=2`.
+
+A posting you open and read in full, then rule out for location or remote-eligibility, is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. Do not drop it silently or move it to a footer list.
 
 Do not trust a title containing `REMOTE` or a location field alone. Confirm the arrangement in the description or structured posting data. For example, a posting may be indexed under Toronto while explicitly allowing remote work anywhere in Canada.
 
@@ -94,9 +96,9 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 | Skill score | Family | Job title | Company | Location / office cadence | Salary / rate | Engagement | Biggest gap | Posting |
 |---:|---|---|---|---|---|---|---|---|
 
-Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Randstad job detail page. Preserve currency and pay period and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches.
+Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Randstad job detail page. Preserve currency and pay period and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
-After the table, list geographic exclusions, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/randstad.json` during discovery.
+After the table, list `Could not validate` entries and material search limitations — geographic and scope exclusions are scored `0`/`-1` rows in the table above, not a separate prose list. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/randstad.json` during discovery.
 
 ## Follow-up filing
 

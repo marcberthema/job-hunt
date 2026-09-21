@@ -43,6 +43,8 @@ Procom is a Canadian staffing agency, but some US postings mix in. Use the locat
 - A Canadian city/province, or "Remote" with no US-specific qualifier: eligible.
 - A US city/state shown: open the full posting first to check for an explicit "open to Canada-based remote candidates" line before excluding. If silent or explicitly US-only: ineligible — record title, company, and reason ("US-based posting, no stated Canada eligibility").
 
+This gate — and the ineligible entries it produces — is for postings ruled out from a quick location check, at most a one-line skim of the full posting for the Canada-eligibility line above. A posting that goes on to full "Validate and extract" review (full description, pay rate, job type) and only then turns out ineligible is not recorded this way — score it `-1` with `status: "Ineligible"` as a normal row in `rows` instead, per `reports/report_schema.md`.
+
 ## Validate and extract
 
 Open each eligible posting. Extract exact title, disclosed client/company (often anonymized as "Procom" — the client name may or may not be disclosed; this is normal for a staffing agency, not a red flag), full description, pay rate, job type (remote/hybrid/onsite), and location. If a posting fails to load, mark it "Could not validate" and continue.
@@ -59,6 +61,8 @@ Classify each eligible posting by its actual center of gravity:
 
 Give every eligible job a 0–10 `Skill score` based only on technical/domain fit, seniority, autonomy, and demonstrated leadership. Keep pay, job type, and location outside the skill score while reporting them plainly. Apply the profile's honesty rules for AWS, GCP, Kubernetes administration, programming languages, architecture ownership, and people management. Under `Biggest gap`, name the single most consequential mismatch; use `None material` only when justified.
 
+An eligible posting whose actual work is outside the SRE/Platform/DevOps center of gravity still gets a row — score it `0` with `status: "Out of scope"` per `reports/report_schema.md`, with the gap stating what the role actually is, rather than dropping it from the results.
+
 ## Expiration status
 
 Check freshness from the canonical employer page, explicit closed/expired notices, and stated closing dates. In the HTML report, preserve previously reported or newly discovered stale roles and label them visibly as `Expired` when confirmed, `Likely expired` when the evidence is indirect, or `Freshness unconfirmed` when no reliable date or current canonical page is available. Do not present expired roles as actionable or include them in eligible-current counts. Record the evidence and check date; never infer expiration solely from age.
@@ -74,7 +78,7 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Procom job detail page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches.
 
-After the table, list ineligible entries with reasons, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/procom.json` during discovery.
+After the table, list ineligible entries (location-gated before full review) with reasons, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/procom.json` during discovery.
 
 ## Follow-up filing
 

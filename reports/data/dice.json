@@ -4,7 +4,7 @@
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Updated September 21, 2026 — all six required browser-rendered queries completed; 17 unique first-page postings reviewed within the eight-result-per-query boundary, with no new inventory since the corrected browser pass.",
+  "latest_update": "Updated September 21, 2026 (re-run) — all six required browser-rendered queries completed a second time same-day; identical 17 unique postings and identical per-query counts to the prior corrected browser pass, confirming no new Dice inventory in the past 7 days.",
   "stats": [
     {"value": 6, "label": "queries attempted"},
     {"value": 6, "label": "queries completed"},
@@ -146,13 +146,14 @@
     {
       "heading": "Run notes",
       "items": [
-        "All six default titles were searched in a rendered Brave browser against dice.com. This is the required method for Dice's JavaScript-driven search UI; WebFetch is not used as a substitute.",
-        "No new top-level inventory appeared since the corrected browser pass. TechniPros \"Senior DevOps Engineer\" (job-detail/715868bc) remains a strong direct skill match, scored 7, but has the same employer/on-site-rotation pattern Marc skipped twice before (2026-09-19).",
-        "TechniPros' DevSecOps Engineer posting (job-detail/06ab958a) is still live and unchanged from 2026-09-19's scoring; it has not yet been added to applications.md.",
-        "Quantum Technologies, Shiro Technologies, and GlobalLogic postings are carried forward from 2026-09-19 with pipeline status pulled directly from applications.md — not re-scored.",
+        "All six default titles were searched in a rendered Chrome browser against dice.com, logged in as Marc's account. This is the required method for Dice's JavaScript-driven search UI; WebFetch is not used as a substitute.",
+        "This is a same-day re-run requested after the prior corrected browser pass. Every per-query rendered count, every job ID under every query, and the full deduplicated candidate set are byte-for-byte identical to the prior run: no new postings appeared, none of the prior 9 candidates disappeared.",
+        "TechniPros \"Senior DevOps Engineer\" (job-detail/715868bc) remains a strong direct skill match, scored 7, but has the same employer/on-site-rotation pattern Marc skipped twice before (2026-09-19). Not yet in applications.md.",
+        "TechniPros' DevSecOps Engineer posting (job-detail/06ab958a) is still live and unchanged, scored 6. Not yet in applications.md.",
+        "Checked applications.md fresh this run: Quantum Technologies (d57b98ba) is Applied — 2026-09-19; Shiro Technologies (f094cb31) and GlobalLogic (93ff84f7) are Skipped — 2026-09-19. All three statuses unchanged from the prior run.",
         "No CAPTCHA or write-side action occurred."
       ]
     }
   ],
-  "method": "All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor filters visibly active. Counts were 4, 10, 0, 5, 3, and 1. Up to eight results per query were audited, producing 23 appearances and 17 unique Dice IDs after cross-query deduplication: 2 new eligible postings scored, 3 known pipeline postings preserved with applications.md status, 4 fully reviewed out-of-scope postings retained, and 8 off-domain titles screened out. Similar Jobs sidebar entries were excluded."
+  "method": "All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor filters visibly active, as a same-day confirmation re-run. Counts were 4, 10, 0, 5, 3, and 1 — identical to the prior pass. Up to eight results per query were audited, producing 23 appearances and 17 unique Dice IDs after cross-query deduplication: 2 new eligible postings scored (unchanged), 3 known pipeline postings preserved with current applications.md status, 4 fully reviewed out-of-scope postings retained, and 8 off-domain titles screened out. Similar Jobs sidebar entries were excluded. No new Dice inventory in the past 7 days beyond what the prior run already found."
 }

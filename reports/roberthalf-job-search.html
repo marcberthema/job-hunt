@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Robert Half job search — 2026-09-19</title>
+<title>Robert Half job search — 2026-09-21</title>
 <style>
 :root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
@@ -24,15 +24,13 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 <header>
   <div class="eyebrow">Robert Half Technology · Canada</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
-  <p class="lede">Robert Half Technology (Canada) inventory searched across six target-family keywords. Scores measure technical and domain fit only.</p>
-  <p class="latest">First run, September 19, 2026 — no eligible target-family postings found; the documented query-param search is broken, see Search limitations.</p>
+  <p class="lede">Robert Half Technology (Canada) inventory searched across six target-family keywords, scoped to Contract / Temporary to Hire only. Scores measure technical and domain fit only.</p>
+  <p class="latest">Re-run September 21, 2026 — confirms the 2026-09-19 finding: no eligible target-family contract postings. Refined workaround this run (see Search limitations) narrows results to Contract/Temp-to-Hire directly, rather than reviewing every fuzzy match.</p>
   <div class="stats">
     <div class="stat"><b>6</b><span>searches completed</span></div>
-    <div class="stat"><b>17</b><span>unique postings reviewed</span></div>
-    <div class="stat"><b>0</b><span>plausible target-family</span></div>
+    <div class="stat"><b>1</b><span>unique contract postings found</span></div>
     <div class="stat"><b>0</b><span>eligible validated</span></div>
-    <div class="stat"><b>15</b><span>geographic exclusions</span></div>
-    <div class="stat"><b>1</b><span>scope exclusions</span></div>
+    <div class="stat"><b>1</b><span>geographic exclusions</span></div>
     <div class="stat"><b>0</b><span>inaccessible</span></div>
     <div class="stat"><b>0</b><span>pipeline matches</span></div>
   </div>
@@ -51,15 +49,19 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<aside class="notes"><h2>Search limitations — the documented retrieval method is broken</h2><ul><li>The SKILL.md-documented URL pattern <code>https://www.roberthalf.com/ca/en/jobs?jobType=CONTRACT&specialty=TECHNOLOGY&keywords=&lt;term&gt;</code> no longer filters results — all six keyword fetches (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer) returned the identical, unfiltered default listing (payroll, HR, and accounting roles), confirmed both via direct HTTP and in a live browser with the same URL.</li>
-<li>Working workaround found this run: submitting a search through the on-page search box redirects to a path-based URL, <code>https://www.roberthalf.com/ca/en/jobs/all/&lt;keyword-slug&gt;</code> (spaces as hyphens), which does return keyword-matched results via direct HTTP. This URL does not carry the <code>jobType=CONTRACT&specialty=TECHNOLOGY</code> scoping — results included Permanent roles and non-Technology specialties, so each result was individually screened rather than trusting the URL to pre-filter.</li>
-<li>This is a skill-maintenance item: <code>.agents/skills/check-roberthalf/SKILL.md</code>'s Access section should be updated to the path-based pattern; flagged here rather than edited directly since it wasn't asked for.</li></ul><h2>Geographic exclusions</h2><ul><li>All on-site/hybrid postings outside the reachable range (Ottawa, Kingston, Brockville, Cornwall, Montréal), regardless of title-level plausibility: Systems Engineer (Edmonton, AB, Permanent, $80-100k), Software Developer ×2 (Edmonton AB / Windsor ON), Senior Director Engineering (Toronto, contract, $123.50-143/hr), Application Developer Team Lead (Mississauga, Permanent, $125-150k), Laptop Deployment Technician (Toronto, Temporary), Sr. SAP ABAP Developer (Calgary, Temporary), Cloud Systems Analyst (North York, Temporary, $25-35/hr — junior scope in addition to geography), Senior Desktop Application Developer (Calgary, Permanent, $120-150k), Quality Engineer (Calgary, Permanent), Enterprise Architect (Toronto, Temporary, $85-100/hr), Project Manager ×2 (Langley BC / Edmonton), Network Security Consultant (Enoch AB, Temporary), Director of Cybersecurity (Toronto, Permanent, $165-185k).</li></ul><h2>Scope exclusion</h2><ul><li><b>Cyber Security Analyst</b> (Ottawa, ON, remote, Temporary, $80-90/hr): the one remote/reachable-geography result found — but its center of gravity is security-analyst work (SOC-style, threat/vuln analysis), not SRE, Platform, or DevOps. Not scored. The same posting has surfaced on other boards this month.</li></ul><h2>Run notes</h2><ul><li>None of the 17 unique postings reviewed across the six searches had a genuine SRE/Platform/DevOps/Cloud-engineering/DevSecOps center of gravity — the site's own keyword matching is broad and fuzzy (matches any 'Engineer'/'Developer'/'Analyst' title loosely related to the search term), not semantic.</li>
-<li>No CAPTCHA or blocking challenge was encountered; the reCAPTCHA loader script present on every page is a generic form-protection component, not an active challenge on the search results.</li>
+<aside class="notes"><h2>Search limitations — documented retrieval method still broken, refined workaround</h2><ul><li>The SKILL.md-documented URL pattern <code>https://www.roberthalf.com/ca/en/jobs?jobType=CONTRACT&specialty=TECHNOLOGY&keywords=&lt;term&gt;</code> still does not filter results as of this run — all six keyword fetches (direct HTTP and a live browser on the identical URL) returned the same unfiltered default listing (payroll, HR, and accounting roles). Confirmed again this run.</li>
+<li>Refined workaround: submit each keyword through the on-page search box (redirects to <code>https://www.roberthalf.com/ca/en/jobs/all/&lt;keyword-slug&gt;</code>), then apply the page's own <b>Job Type</b> filter chip and select <b>Contract / Temporary to Hire</b> before reviewing results. This reliably scopes to contract-only postings client-side and avoids reviewing dozens of Permanent/Temporary fuzzy matches that the skill's contract-only mandate excludes anyway.</li>
+<li>This is a skill-maintenance item: <code>.agents/skills/check-roberthalf/SKILL.md</code>'s Access section should be updated to this UI-driven workaround; flagged here rather than edited directly since it wasn't asked for.</li></ul><h2>Per-keyword audit (Contract / Temporary to Hire only)</h2><ul><li><b>DevOps Engineer</b> — 11 total results, 1 under Contract/Temp-to-Hire: Senior Director Engineering (Toronto, ON).</li>
+<li><b>Platform Engineer</b> — 6 total results, 0 under Contract/Temp-to-Hire (only Permanent/Temporary options offered).</li>
+<li><b>Site Reliability Engineer</b> — 2 total results, 0 under Contract/Temp-to-Hire.</li>
+<li><b>Cloud Engineer</b> — 6 total results, 0 under Contract/Temp-to-Hire.</li>
+<li><b>DevSecOps Engineer</b> — 8 total results, 1 under Contract/Temp-to-Hire: the same Senior Director Engineering posting (deduplicated).</li>
+<li><b>Forward Deployed Engineer</b> — 2 total results, 0 under Contract/Temp-to-Hire.</li></ul><h2>Run notes</h2><ul><li>No CAPTCHA or blocking challenge encountered.</li>
 <li>All retrieval was read-only; no application, account, or form action was used.</li></ul></aside>
 
 </main>
 <script>
-const jobs = [];
+const jobs = [{"score": -1, "family": "DevOps", "title": "Senior Director Engineering", "company": "Robert Half client (undisclosed)", "location": "Toronto, ON — on-site/hybrid implied (\"local engineering presence,\" \"represent the Toronto development centre\")", "salary": "CAD $123.50–$143.00/hour (Contract / Temporary to Hire)", "gap": "Toronto is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal) — hard geography gate on its own. Separately, the role requires formal budget and headcount ownership across engineering/QA/DevOps/SRE functions (10+ years progressive engineering leadership) — a genuine mismatch against Marc's 'leads without authority' positioning, which has the substance of cross-team technical leadership but no formal management title, tenure, or P&L/headcount authority at director scale.", "url": "https://www.roberthalf.com/ca/en/job/toronto-on/senior-director-engineering/05090-0013492132-caen", "status": "Ineligible"}];
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){

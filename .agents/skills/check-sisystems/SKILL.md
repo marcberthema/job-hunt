@@ -44,7 +44,7 @@ Use URLs shaped as:
 
 Do not include `Forward Deployed Engineer` by default because current market results for that title are usually AI implementation or application-engineering roles. It remains available as a custom query.
 
-Because keyword filtering is unreliable, inspect titles and summaries rather than trusting the result count. Retain roles plausibly centered on production reliability, observability, cloud foundations, CI/CD, deployment automation, infrastructure as code, platform enablement, systems infrastructure, or DevSecOps. Exclude unrelated business analysis, project management, application development, QA, data engineering, and support work unless the description's actual center of gravity belongs to one of the target families.
+Because keyword filtering is unreliable, inspect titles and summaries rather than trusting the result count. Retain roles plausibly centered on production reliability, observability, cloud foundations, CI/CD, deployment automation, infrastructure as code, platform enablement, systems infrastructure, or DevSecOps. Exclude unrelated business analysis, project management, application development, QA, data engineering, and support work unless the description's actual center of gravity belongs to one of the target families. A posting you open and read in full, then rule out for this reason, is still a scored row — give it `score: 0` and `status: "Out of scope"` per `reports/report_schema.md`, with `gap` stating what the role actually is.
 
 Prefer postings from the past two days using the displayed age or authoritative detail-page date. Include every matching current posting found within the stated result boundary and report its date or `Freshness unconfirmed`.
 
@@ -59,6 +59,8 @@ S.i. Systems serves the Canadian market, but each posting still needs work-arran
 Exclude fully on-site roles and hybrid roles outside those cities. For Montréal, exclude confirmed requirements above two office days weekly. When Montréal cadence is undisclosed, retain it as `Hybrid — days not stated; confirm <=2`.
 
 Do not infer remote eligibility merely because S.i. Systems is Canadian or a listing names multiple cities. Confirm it in the full description. A Toronto posting requiring only occasional attendance may be materially different from weekly hybrid work; retain it only when the burden is genuinely occasional and flag it for confirmation.
+
+A posting you open and read in full, then rule out for location or remote-eligibility, is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. Do not drop it silently or move it to a footer list.
 
 ## Validate and deduplicate
 
@@ -102,9 +104,9 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 | Skill score | Family | Job title | Company | Location / office cadence | Salary / rate | Engagement | Biggest gap | Posting |
 |---:|---|---|---|---|---|---|---|---|
 
-Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the S.i. Systems detail page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches.
+Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the S.i. Systems detail page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
-After the table, list eligibility/geographic exclusions, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/sisystems.json` during discovery.
+After the table, list `Could not validate` entries and material search limitations — eligibility and geographic exclusions are scored `0`/`-1` rows in the table above, not a separate prose list. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/sisystems.json` during discovery.
 
 ## Follow-up filing
 

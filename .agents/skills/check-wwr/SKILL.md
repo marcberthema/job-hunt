@@ -46,6 +46,8 @@ We Work Remotely shows "Anywhere in the World" on nearly every posting regardles
 - Names a single non-Canada country/city, or a region list that excludes Canada: ineligible. Do not open the full posting; record title, company, and reason (e.g. "region-restricted to India, excludes Canada").
 - Names a broad multi-country descriptor that plausibly includes Canada (e.g. "North America Only," a flag list containing Canada): eligible.
 
+This gate — and the ineligible list it produces — applies only when the region-restricted location line rules a posting out without opening its full posting page. A posting that does get opened (e.g. under "Validate and extract" below) and only then turns out region-ineligible is not recorded this way — score it `-1` with `status: "Ineligible"` as a normal row in `rows` instead, per `reports/report_schema.md`.
+
 ## Validate and extract
 
 Open each eligible posting's own page. The generic page-text extraction on this site's detail pages can grab the wrong `<article>` element (a related-jobs sidebar rather than the real description) — confirm you're reading the actual Role Purpose/Responsibilities/Qualifications sections, not sidebar content, before extracting salary, engagement type, and requirements needed for scoring. If a posting fails to load, mark it "Could not validate" and continue.
@@ -62,6 +64,8 @@ Classify each eligible posting by its actual center of gravity:
 
 Give every eligible job a 0–10 `Skill score` based only on technical/domain fit, seniority, autonomy, and demonstrated leadership. Keep pay and location outside the skill score while reporting them plainly. Apply the profile's honesty rules for AWS, GCP, Kubernetes administration, programming languages, architecture ownership, and people management. Under `Biggest gap`, name the single most consequential mismatch; use `None material` only when justified.
 
+An eligible posting whose actual work is outside the SRE/Platform/DevOps center of gravity still gets a row — score it `0` with `status: "Out of scope"` per `reports/report_schema.md`, with the gap stating what the role actually is, rather than dropping it from the results.
+
 ## Expiration status
 
 Check freshness from the canonical employer page, explicit closed/expired notices, and stated closing dates. In the HTML report, preserve previously reported or newly discovered stale roles and label them visibly as `Expired` when confirmed, `Likely expired` when the evidence is indirect, or `Freshness unconfirmed` when no reliable date or current canonical page is available. Do not present expired roles as actionable or include them in eligible-current counts. Record the evidence and check date; never infer expiration solely from age.
@@ -75,9 +79,9 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 | Skill score | Family | Job title | Company | Location / office cadence | Salary / rate | Engagement | Biggest gap | Posting |
 |---:|---|---|---|---|---|---|---|---|
 
-Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the We Work Remotely job page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches.
+Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the We Work Remotely job page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
-After the table, list ineligible entries with reasons, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/wwr.json` during discovery.
+After the table, list ineligible entries from the pre-review region gate with reasons, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/wwr.json` during discovery.
 
 ## Follow-up filing
 

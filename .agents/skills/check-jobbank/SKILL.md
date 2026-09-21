@@ -27,7 +27,7 @@ For each query, use:
 
 Review up to the first eight results per query in the default rotation. State when fewer were available. The `locationstring=Remote` parameter does not reliably restrict results to remote work, so treat it as discovery rather than proof of eligibility. Do not paginate unless the user requests a deeper search or the first page has too few plausible results to test the source meaningfully.
 
-Retain roles whose actual responsibilities center on SRE, platform engineering, cloud infrastructure, DevOps, DevSecOps, release engineering, CI/CD, infrastructure as code, observability, or closely related automation. Exclude results that merely carry a matching occupation label while their title and description are unrelated.
+Retain roles whose actual responsibilities center on SRE, platform engineering, cloud infrastructure, DevOps, DevSecOps, release engineering, CI/CD, infrastructure as code, observability, or closely related automation. Exclude results that merely carry a matching occupation label while their title and description are unrelated. A posting you open and read in full, then rule out for this reason, is still a scored row — give it `score: 0` and `status: "Out of scope"` per `reports/report_schema.md`, with `gap` stating what the role actually is.
 
 Prefer postings from the past two days when Job Bank provides a reliable date, but include every matching current posting found within the stated review boundary and report its date.
 
@@ -40,6 +40,8 @@ Job Bank is Canada-specific, but that does not establish an acceptable work arra
 - Remote roles tied to another city when the description permits work from Canada and any required travel is occasional.
 
 Exclude fully on-site roles and hybrid roles outside those cities. For Montreal, exclude confirmed requirements above two office days weekly. When Montreal cadence is undisclosed, retain the role and write `Hybrid - days not stated; confirm <=2`. Check for explicit provincial or regional residence restrictions.
+
+A posting you open and read in full, then rule out for location or remote-eligibility, is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. Do not drop it silently or move it to a footer list.
 
 ## Access, validation, and deduplication
 
@@ -82,9 +84,9 @@ Lead with the run totals and note that overlap with Indeed is expected. Sort val
 | Skill score | Family | Job title | Company | Location / office cadence | Salary / rate | Engagement | Biggest gap | Posting |
 |---:|---|---|---|---|---|---|---|---|
 
-Use only `SRE`, `Platform`, or `DevOps` for Family. Link to the employer's canonical posting when available; otherwise link directly to the Job Bank detail page. Preserve currency and pay period and use `Not stated` for unknown facts.
+Use only `SRE`, `Platform`, or `DevOps` for Family. Link to the employer's canonical posting when available; otherwise link directly to the Job Bank detail page. Preserve currency and pay period and use `Not stated` for unknown facts. Include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
-After the table, list geographic and unrelated-role exclusions, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/jobbank.json` during discovery.
+After the table, list `Could not validate` entries and material search limitations — geographic and unrelated-role exclusions are scored `0`/`-1` rows in the table above, not a separate prose list. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/jobbank.json` during discovery.
 
 ## Follow-up filing
 

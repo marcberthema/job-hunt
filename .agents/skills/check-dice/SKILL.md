@@ -76,13 +76,15 @@ Apply these rules in order before detailed extraction or scoring:
 4. Fully on-site US role without a remote option: ineligible.
 5. Otherwise: eligible. If authorization language is absent, flag: Confirm work authorization with recruiter before applying.
 
-For an ineligible posting, stop detailed review and record only title, company, direct URL, and one-line reason. Do not score it.
+For an ineligible posting, stop detailed review and record only title, company, direct URL, and one-line reason. Do not score it. This gate — and the `Ineligible` table it feeds — applies only to postings ruled out from the clearance/authorization language visible before detailed review. A posting that gets opened and read in full (e.g. while extracting responsibilities for scoring) and only then turns out ineligible is not moved to this table — score it `-1` with `status: "Ineligible"` as a normal row in `rows` instead, per `reports/report_schema.md`.
 
 ## Score eligible postings
 
 Score each eligible posting from 0–10 against profile.md using technical and domain fit, seniority, autonomy, and demonstrated leadership. Give appropriate weight to Azure, platform engineering, CI/CD, infrastructure as code, and financial or energy experience. Treat logistics and authorization as flags rather than skill-score inputs.
 
 Apply the profile's honesty rules for AWS, GCP, Kubernetes cluster administration, programming languages, people management, and other depth requirements. Give one concise rationale and identify the single biggest skill gap.
+
+An eligible posting whose actual work is outside the SRE/Platform/DevOps center of gravity (e.g. application development, GRC/audit dressed up as DevSecOps) still gets a row — score it `0` with `status: "Out of scope"` per `reports/report_schema.md`, with the gap stating what the role actually is, rather than dropping it from the results.
 
 Check `applications.md` for a matching `Source` URL or `Company`+`Role` row. Keep known eligible roles and label their pipeline status from its `Status` column.
 
@@ -117,7 +119,7 @@ Sort by score descending:
 
 ### Ineligible
 
-Do not score these:
+Postings gated out by clearance/authorization language before detailed review — do not score these:
 
 | Role — Company | Reason |
 |---|---|

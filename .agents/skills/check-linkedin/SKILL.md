@@ -32,6 +32,8 @@ If the user supplies a query, search that query only. Otherwise run the followin
 
 Search for jobs posted in the past two days when the source exposes reliable dates. Target remote work explicitly open to Canada or Ontario and hybrid work in Ottawa, Kingston, Cornwall, and Montréal. For Montréal, exclude confirmed requirements above two office days weekly. Retain undisclosed hybrid cadence as `Hybrid — days not stated; confirm <=2`. Exclude fully on-site roles and remote roles restricted to an ineligible region.
 
+A posting you open and read in full, then rule out for location or remote-eligibility, is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. A posting ruled out because its actual work is outside the SRE/Platform/DevOps center of gravity gets `score: 0` and `status: "Out of scope"` instead. Neither is dropped silently or moved to a footer list.
+
 Run additional remote-only discovery passes using Canada's major employment hubs as the LinkedIn location: Toronto/GTA, Vancouver, Montréal, Calgary, Ottawa, Edmonton, Waterloo/Kitchener, Halifax, Winnipeg, Québec City, and Victoria. LinkedIn frequently indexes a Canada-remote position under an employer office or recruiting hub instead of labeling it Remote. These passes are discovery mechanisms, not permission to retain local on-site or hybrid roles outside Marc's reachable cities.
 
 Run a separate hybrid discovery pass for each reachable city: Ottawa, Kingston, Cornwall, and Montréal. Do not include `Remote` in these searches; run `Cloud Platform Engineer`, `Platform Engineer`, `DevOps Engineer`, `Site Reliability Engineer`, and `Infrastructure Engineer` as separate searches, with LinkedIn's Hybrid workplace filter and past-two-days filter when available. LinkedIn's Hybrid filter can incorrectly return an empty set; when that happens, rerun the city/title search without a workplace filter and inspect each result's work-arrangement label manually. Review up to 12 plausible results per city after combining the title families. Open each posting to establish its actual office cadence. Retain Montréal roles when the cadence is two days weekly or less, or when it is undisclosed and recorded as `Hybrid — days not stated; confirm <=2`.
@@ -75,7 +77,7 @@ Lead with search phrases completed, unique postings validated, exclusions, emplo
 | Skill score | Family | Job title | Company | Location / office cadence | Salary / rate | Biggest gap | Posting |
 |---:|---|---|---|---|---|---|---|
 
-Use only `SRE`, `Platform`, or `DevOps`. Link directly to the accessible full posting, preferring the employer page. Preserve currency and pay period; use `Not stated` for unknown facts. Include low scores.
+Use only `SRE`, `Platform`, or `DevOps`. Link directly to the accessible full posting, preferring the employer page. Preserve currency and pay period; use `Not stated` for unknown facts. Include low scores, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
 After the table, list `Could not validate` entries and material search limitations. Explicitly distinguish employer-validated roles from LinkedIn pages that were inaccessible. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/linkedin.json` during discovery.
 

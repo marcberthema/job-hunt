@@ -36,6 +36,8 @@ Do not add `l=Canada`; Eluta rejects it as an unknown location. Eluta indexes Ca
 
 Run additional hybrid discovery for Ottawa, Kingston, Brockville, Cornwall, and Montréal. Use Eluta's visible location field and confirm the site accepts the city value; do not guess location URL parameters. Do not enable the Remote-only filter for these city passes. Retain only genuinely hybrid target-family roles. For Montréal, exclude confirmed requirements above two office days weekly. Record an undisclosed cadence as `Hybrid — days not stated; confirm <=2`. Exclude fully on-site roles.
 
+A posting you open and read in full, then rule out for location/remote-eligibility (on-site, or hybrid outside the reachable cities), is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. A posting ruled out because its actual work is outside the SRE/Platform/DevOps center of gravity gets `score: 0` and `status: "Out of scope"` instead. Neither is dropped silently or moved to a footer list.
+
 Prefer postings from the past two days using Eluta's displayed posted age or an authoritative employer date. When the source exposes no reliable date, retain the posting but mark freshness as unconfirmed. Review the first 10 results per query and state when fewer were available. Do not paginate unless the user requests a deeper search.
 
 ## Browser access and validation
@@ -78,7 +80,7 @@ Lead with searches completed, unique postings reviewed, validated jobs, exclusio
 | Skill score | Family | Job title | Company | Location / office cadence | Salary / rate | Biggest gap | Posting |
 |---:|---|---|---|---|---|---|---|
 
-Use only `SRE`, `Platform`, or `DevOps`. Prefer the employer's canonical URL; otherwise link the accessible Eluta cached copy. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores.
+Use only `SRE`, `Platform`, or `DevOps`. Prefer the employer's canonical URL; otherwise link the accessible Eluta cached copy. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
 After the table, list `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/eluta.json` during discovery.
 
