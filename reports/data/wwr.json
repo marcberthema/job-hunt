@@ -19,11 +19,11 @@
       "label": "pipeline matches"
     },
     {
-      "value": 2,
+      "value": 1,
       "label": "new scored (in-scope)"
     },
     {
-      "value": 1,
+      "value": 2,
       "label": "ineligible (reviewed)"
     },
     {
@@ -48,15 +48,15 @@
       "status": "Applied — Sep 15"
     },
     {
-      "score": 7,
+      "score": -1,
       "family": "DevOps",
       "title": "Professional Services DevOps Engineer",
       "company": "JFrog",
-      "location": "Remote, Anywhere in the World (Atlanta-based team, open outside commuting distance)",
+      "location": "\"Open to remote within the East Coast only\" — explicit US East Coast region restriction, stated at the top of the full posting; excludes Canada. Distinct from JFrog's Senior req (already Applied), which is explicitly Canada-GeoLocked.",
       "salary": "USD $135,000–$145,000/year",
-      "gap": "Same customer-facing CI/CD/DevOps profile as JFrog's Senior req Marc already applied to (5–7+ yrs vs 7+ yrs) — a distinct, separately postable requisition, not a duplicate listing. None material.",
+      "gap": "Same customer-facing CI/CD/DevOps profile as JFrog's Senior req Marc already applied to, but this req's own posting text restricts remote work to the US East Coast — not take-able from Ontario. Corrected 2026-09-21: the initial run's location field missed this line and scored it 7/New; re-verified directly on the posting before filing.",
       "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-      "status": "New"
+      "status": "Ineligible"
     },
     {
       "score": 5,
@@ -132,6 +132,7 @@
       "items": [
         "No CAPTCHA or blocking challenge encountered.",
         "Confirmed the skill's warning about wrong-<article>-element extraction on detail pages: a naive page-text read grabs the \"Related Jobs\" sidebar instead of the real description on at least one JFrog listing. Located and read the actual job-description region for every posting instead.",
+        "Correction (2026-09-21, during addjob filing): JFrog's non-Senior Professional Services DevOps Engineer req was re-verified before filing and found to state \"Open to remote within the East Coast only\" at the top of its full posting — a US-only region restriction the original run's location field missed. Re-scored from 7/New to -1/Ineligible; not filed to applications.md.",
         "All retrieval was read-only; no application, account, \"AI Auto-Apply,\" or form action was used."
       ]
     }
