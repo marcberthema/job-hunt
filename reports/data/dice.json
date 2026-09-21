@@ -10,7 +10,7 @@
     {"value": 20, "label": "unique real search results"},
     {"value": 1, "label": "new eligible, scored"},
     {"value": 4, "label": "known pipeline postings shown"},
-    {"value": 0, "label": "ineligible in actual results"},
+    {"value": 1, "label": "ineligible (location), scored -1, reviewed in full"},
     {"value": 4, "label": "out of scope, scored 0, reviewed in full"},
     {"value": 11, "label": "screened out by title"}
   ],
@@ -114,6 +114,17 @@
       "gap": "GCP-primary cloud-transformation architecture ownership at scale is the explicit deliverable — hits the profile's hard AWS/GCP gate outright. Rate is also below target regardless. Reviewed in full, not screened by title alone.",
       "url": "https://www.dice.com/job-detail/80d0c919-ad39-4d11-acf2-5f9bf3404018",
       "status": "Out of scope"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Forward Deployed Engineer",
+      "company": "Kforce Technology Staffing",
+      "location": "On-site in Armonk, NY — Dice's own listing tag confirms \"On-site\", no remote option; not reachable from Smiths Falls, ON and not a remote arrangement",
+      "salary": "$130–150/hour, Contract W-2",
+      "gap": "Hard location gate, confirmed on the live posting (Dice tags: Contract W2, On-site, $130-150 hourly — no Remote tag): fully on-site in a US city with no remote option. Also LLM/RAG/agentic-AI application engineering, not infrastructure/DevOps, but the location gate alone is sufficient to exclude it. Found via a job-detail \"Similar Jobs\" sidebar during this run, not one of the 20 top-level query hits — opened and read in full to confirm before listing.",
+      "url": "https://www.dice.com/job-detail/8a5018c6-c4a1-4af2-bc46-0990851dfd50",
+      "status": "Ineligible"
     }
   ],
   "notes_sections": [
@@ -123,7 +134,7 @@
         "An earlier 2026-09-21 run used WebFetch (anonymous HTML fetch + summarization) against Dice's search URLs and reported 22 \"unique\" postings including 5 that turned out to be wrong: Kforce Technology Staffing's Forward Deployed Engineer (Armonk, NY), High Bridge Consulting's Senior AI FDE, Cencora's FDE, a Kanshe Infotech Salesforce Financial Services Cloud Architect, and TechniPros' Principal Generative AI Engineer.",
         "This browser-based re-run, done logged in as Marc's actual Dice account, confirms those 5 were never real search-result hits — they were entries from the \"Similar Jobs\" sidebar shown on a job-detail page, which WebFetch's markdown conversion flattened into the same list as genuine search results. Dice's own on-page result counters (e.g. \"1 results (0 new)\" for Forward Deployed Engineer) confirm the true, much smaller result sets used here.",
         "Real per-query result counts this run: DevOps Engineer 4, Platform Engineer 10 (11 raw links; Dice's own count says 10, likely a dedupe on their side), Site Reliability Engineer 0, Cloud Engineer 5, DevSecOps Engineer 3, Forward Deployed Engineer 1 — 20 unique postings total after cross-query dedupe by job ID.",
-        "Net effect: the earlier run's \"ineligible\" entry (Kforce) is retracted — it was never actually returned by this rotation's queries, so it isn't scored or listed as ineligible here. If Marc wants it checked anyway (it may still be a live posting reachable by direct search), that would need a standalone lookup, not this rotation."
+        "Net effect: the earlier run's \"ineligible\" entry (Kforce) is not one of this rotation's 20 top-level query hits, so it's kept out of that count — but it is a real, still-live posting (confirmed via its own detail page, Dice tags: Contract W2, On-site, $130-150 hourly), so it's listed in the main table below scored -1 / \"Ineligible\" rather than silently dropped."
       ]
     },
     {
@@ -143,5 +154,5 @@
       ]
     }
   ],
-  "method": "Six-query default rotation against Dice's remote + willing-to-sponsor + Canada country-code filter, past 7 days, full-time or contract, run via logged-in browser session (Claude in Chrome) rather than anonymous WebFetch after WebFetch was found to conflate real search results with job-detail \"Similar Jobs\" sidebar suggestions. 20 unique real search results after dedup; 1 new eligible posting scored, 1 known-but-unfiled posting carried forward, 3 known pipeline postings carried forward with current applications.md status, 4 opened and read in full then scored 0 / \"Out of scope\" (cloud-security-specialist, ML/AI-infrastructure, application-layer-AI, and GCP-hard-gate roles), 11 screened out by title alone as off-domain (Salesforce, Oracle, SAP, further AI/GenAI-flavored)."
+  "method": "Six-query default rotation against Dice's remote + willing-to-sponsor + Canada country-code filter, past 7 days, full-time or contract, run via logged-in browser session (Claude in Chrome) rather than anonymous WebFetch after WebFetch was found to conflate real search results with job-detail \"Similar Jobs\" sidebar suggestions. 20 unique real search results after dedup; 1 new eligible posting scored, 1 known-but-unfiled posting carried forward, 3 known pipeline postings carried forward with current applications.md status, 4 opened and read in full then scored 0 / \"Out of scope\" (cloud-security-specialist, ML/AI-infrastructure, application-layer-AI, and GCP-hard-gate roles), 1 opened and read in full then scored -1 / \"Ineligible\" (confirmed on-site, no remote option, in a non-reachable US city), 11 screened out by title alone as off-domain (Salesforce, Oracle, SAP, further AI/GenAI-flavored)."
 }
