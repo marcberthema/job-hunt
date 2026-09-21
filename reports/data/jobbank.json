@@ -1,71 +1,90 @@
 {
   "board": "Job Bank",
-  "run_date": "2026-09-19",
+  "run_date": "2026-09-21",
   "eyebrow": "Job Bank Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
-  "lede": "Default rotation validated against full Job Bank detail pages. Scores measure technical and domain fit only; ineligible arrangements are excluded before scoring.",
-  "latest_update": "Rechecked September 19, 2026 — no eligible target-family postings this run.",
+  "lede": "Default rotation validated against full Job Bank detail pages. Scores measure technical and domain fit only; excluded-but-reviewed postings are scored 0 (out of scope) or -1 (ineligible) rows rather than a separate list.",
+  "latest_update": "Rechecked September 21, 2026 — no eligible target-family postings this run; 5 fully-reviewed postings scored -1 (Ineligible) on geography, none newly out of scope on domain.",
   "stats": [
+    {"value": 3, "label": "queries"},
+    {"value": 5, "label": "results reviewed"},
+    {"value": 5, "label": "plausible matches"},
+    {"value": 0, "label": "eligible"},
+    {"value": 5, "label": "geographic exclusions"},
+    {"value": 0, "label": "unrelated-role exclusions"},
+    {"value": 0, "label": "inaccessible"},
+    {"value": 0, "label": "pipeline matches"}
+  ],
+  "rows": [
     {
-      "value": 3,
-      "label": "queries"
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps/Cloud Engineer, Senior (RQ8)",
+      "company": "Source Code",
+      "location": "Toronto, ON — 3 days/week onsite (Metro Hall, 55 John St)",
+      "salary": "CAD $93.60–$112.32/hr (incorporated rate), 6+ month contract",
+      "gap": "Real DevOps/cloud skill overlap (AWS/OpenShift, Linux, Docker/K8s, GitLab CI/CD), but Toronto is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal) — hard geography gate regardless of the otherwise-decent rate.",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50298477",
+      "status": "Ineligible"
     },
     {
-      "value": 7,
-      "label": "results reviewed"
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps/Cloud Engineer, Senior (RQ4)",
+      "company": "Source Code",
+      "location": "Toronto, ON — 5 days/week onsite (87 Sir William Hearst Ave)",
+      "salary": "CAD $90.37–$108.45/hr (incorporated rate), 11-month contract",
+      "gap": "Toronto onsite 5 days/week is outside the reachable-city range — hard geography gate on its own. Separately, the actual required depth (WebLogic, WebSphere, Informatica, Mainframe IMS Connect, UNIX Solaris) is legacy enterprise-middleware administration, not the DevOps/cloud/platform work the title suggests — a real domain mismatch too.",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50290511",
+      "status": "Ineligible"
     },
     {
-      "value": 7,
-      "label": "plausible matches"
+      "score": -1,
+      "family": "Platform",
+      "title": "Cloud Infrastructure & DevSecOps Engineer",
+      "company": "InfoTrack Canada",
+      "location": "Toronto, ON — Hybrid",
+      "salary": "CAD $130,000–$150,000/year",
+      "gap": "Toronto hybrid is outside the reachable-city range regardless of cadence — hard geography gate. Independently, the role also requires 5+ years hands-on GCP as the primary cloud (Azure/AWS only \"a plus\") — hits the profile's hard AWS/GCP gate on its own.",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50317282",
+      "status": "Ineligible"
     },
     {
-      "value": 0,
-      "label": "eligible"
+      "score": -1,
+      "family": "Platform",
+      "title": "Cloud & AI Engineer",
+      "company": "Lancesoft",
+      "location": "Montréal, QC — onsite/in-office 3x/week from Day 1",
+      "salary": "CAD $65.52–$80.00/hour",
+      "gap": "Real Platform/Cloud center of gravity (Azure/AWS Landing Zones, Terraform, Kubernetes, GitHub Actions), but 3+ days/week onsite in Montréal needs a rate well above target to offset the commute burden per the profile's geography rule — this rate sits at or below the $80/hr long-term survival floor instead, well short of \"well above target.\" A different Lancesoft posting (Site Reliability Engineer, job ID 50107335) was already Skipped 2026-08-19 per applications.md — this is a distinct req at the same employer, not a duplicate.",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50277730",
+      "status": "Ineligible"
     },
     {
-      "value": 6,
-      "label": "geographic exclusions"
-    },
-    {
-      "value": 1,
-      "label": "unrelated-role exclusions"
-    },
-    {
-      "value": 0,
-      "label": "inaccessible"
-    },
-    {
-      "value": 0,
-      "label": "pipeline matches"
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "LYNKED Inc.",
+      "location": "London, ON — onsite",
+      "salary": "CAD $58,000–$69,000/year",
+      "gap": "London is outside the reachable-city range — hard geography gate. Also well below the $100k on-site/hybrid FTE salary floor, and scoped junior (2–4 years experience) regardless.",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50293995",
+      "status": "Ineligible"
     }
   ],
+  "could_not_validate": [],
   "notes_sections": [
-    {
-      "heading": "Geographic exclusions",
-      "items": [
-        "<b>DevOps Engineer — Bluth Company</b> (Toronto, ON, Permanent, $80,000–$140,000/year, posted September 8): confirmed <b>On site</b> in the Job Bank listing itself. Toronto is outside the reachable-city list. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50248702\">View posting</a>.",
-        "<b>DevOps Engineer — LYNKED Inc.</b> (London, ON, Permanent, $58,000–$69,000/year, posted September 15): confirmed <b>On site</b>. London is outside the reachable-city list; pay is also well below the $100k FTE floor. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50293995\">View posting</a>.",
-        "<b>DevOps Engineer — InfoTrack Canada</b> (Toronto, ON, $130,000–$150,000/year, posted August 31): tagged <b>Hybrid</b>, but Toronto is outside the reachable-city list regardless of office cadence. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50317282\">View posting</a>.",
-        "<b>Cloud Engineer — Lancesoft</b> (Montréal, QC, contract, $65.52–$80.00/hour, posted August 27): real Platform/Cloud center of gravity (hybrid connectivity, cloud governance, platform observability) but the posting states Day-1 onboarding with in-office presence <b>3x/week</b> — exceeds the 2-day/week Montréal cap in this skill's geography rule. A different Lancesoft SRE posting (job ID 50107335) was rejected 2026-08-19 per applications.md; this is a distinct posting at the same employer, not a duplicate. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50277730\">View posting</a>.",
-        "<b>DevOps/Cloud Engineer, Senior — Source Code</b> (Toronto, ON, contract, $93.60/hour, posted September 14): 3 days/week onsite at a named Toronto office address. Toronto is outside the reachable-city list. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50298477\">View posting</a>.",
-        "<b>Cloud Engineer — Source Code</b> (Toronto, ON, contract, $90.37/hour, posted September 14): 5 days/week onsite at a named Toronto office address. Toronto is outside the reachable-city list. <a href=\"https://www.jobbank.gc.ca/jobsearch/jobposting/50290511\">View posting</a>."
-      ]
-    },
-    {
-      "heading": "Unrelated-role exclusion",
-      "items": [
-        "<b>\"DevOps Engineer\" — Ides Canada Inc.</b> (Stouffville, ON, posted September 18): Job Bank's occupation-code match is wrong — the actual linked posting is for a Mechatronics Engineer role at Scentroid, unrelated to DevOps/SRE/Platform work. Not scored."
-      ]
-    },
     {
       "heading": "Run notes",
       "items": [
         "Ran the default 3-query rotation only (DevOps Engineer, Cloud Engineer, Site Reliability Engineer), per SKILL.md — Platform Engineer, Forward Deployed Engineer, and DevSecOps Engineer are deliberately excluded from the default rotation due to historically unrelated occupation-code matches.",
         "<b>Site Reliability Engineer</b> returned zero results this run.",
-        "<b>DevOps Engineer</b> returned 4 results, <b>Cloud Engineer</b> returned 3 — all 7 reviewed and validated against full detail pages; none were eligible after the geography and role-relevance gates.",
+        "<b>DevOps Engineer</b> returned 2 results (LYNKED Inc., InfoTrack Canada — both persist from the 2026-09-19 run); <b>Cloud Engineer</b> returned 3 results (Lancesoft persists from 2026-09-19; two new Source Code reqs, RQ8 and RQ4, first seen this run).",
+        "The 2026-09-19 run's <b>Bluth Company</b> DevOps Engineer posting (Toronto) and <b>Ides Canada Inc.</b> unrelated-occupation-match posting have rotated out of today's result set — not carried forward since they were not seen live this run.",
+        "All 5 plausible postings this run were opened and read in full via direct HTTP, then excluded — all on geography, none purely on domain mismatch (though the Source Code RQ4 posting has a domain mismatch too, noted in its row).",
         "No CAPTCHA, verification prompt, or write-side action occurred. All retrieval was read-only, via direct HTTP."
       ]
     }
   ],
-  "rows": []
+  "method": "Direct HTTP retrieval against jobbank.gc.ca's search and detail pages for the 3-query default rotation (locationstring=Remote, discovery-only, not proof of eligibility). 5 plausible postings opened and read in full via their Job Bank detail pages; all 5 excluded on the geography gate (reachable-city range: Ottawa, Kingston, Brockville, Cornwall, Montréal) and scored -1/Ineligible as rows per reports/report_schema.md, rather than a separate footer list. 0 eligible, 0 pipeline matches, 0 inaccessible."
 }

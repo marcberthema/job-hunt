@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Braintrust job search — 2026-09-19</title>
+<title>Braintrust job search — 2026-09-21</title>
 <style>
 :root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
@@ -25,13 +25,13 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
   <div class="eyebrow">Braintrust · contractor marketplace, read-only</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
   <p class="lede">Skill-chip search on the four confirmed IDs, plus a title-skim of the unfiltered Engineering feed for Platform Engineer / Forward Deployed Engineer (no confirmed chip exists for either). Scores measure technical and domain fit only.</p>
-  <p class="latest">First run, September 19, 2026 — 4 of 6 keywords returned zero results outright; one plausible candidate found via unfiltered title-skim, but its rate falls below the profile's contract-rate floor.</p>
+  <p class="latest">Re-run September 21, 2026 — identical outcome to the 2026-09-19 run: all four confirmed skill-chip searches return zero results, and the same TaskRabbit posting (now Applied) and the same US-only ineligible posting remain the only two topically relevant listings on the unfiltered feed.</p>
   <div class="stats">
     <div class="stat"><b>6</b><span>keywords attempted</span></div>
     <div class="stat"><b>4</b><span>returned zero results</span></div>
     <div class="stat"><b>1</b><span>eligible, scored</span></div>
     <div class="stat"><b>1</b><span>ineligible (US-only)</span></div>
-    <div class="stat"><b>0</b><span>pipeline matches</span></div>
+    <div class="stat"><b>1</b><span>pipeline matches</span></div>
   </div>
 </header>
 <section>
@@ -49,16 +49,16 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
   </table></div>
 </section>
 <section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://app.usebraintrust.com/jobs/?role=5,16">DevOps Cloud Engineer (Remote - USA) — United States Cold Storage</a></td><td class="reason">Location column states "United States only."</td></tr></tbody></table></section>
-<aside class="notes"><h2>Keyword results</h2><ul><li>All four confirmed skill-chip IDs returned zero results this run: DevOps Engineer (1338), Site Reliability Engineer (8473), Cloud Engineer / Cloud Engineering (10001), DevSecOps Engineer (6831).</li>
-<li>Platform Engineer and Forward Deployed Engineer have no confirmed skill chip (confirmed again this run — searching the Skills filter for "Platform Engineer" returns "Skill not found"; the skills list is technology/tool tags, not job-title tags). Fell back to the unfiltered <code>role=5,16</code> listing (1,394 total openings, sorted by recency) and title-skimmed the first page (~20 postings).</li>
-<li>The unfiltered feed's relevance density is very low — dominated by unrelated freelance gigs (LATAM Salesforce/CMS/QA roles, CNC programming, iOS, LLM data annotation) rather than infrastructure/DevOps work. Only 2 of the ~20 postings skimmed were even topically adjacent: the TaskRabbit role (scored above) and a US-only DevOps Cloud Engineer posting (ineligible).</li></ul><h2>Run notes</h2><ul><li>First-ever run against this source. No prior report data existed to compare against.</li>
+<aside class="notes"><h2>Keyword results</h2><ul><li>All four confirmed skill-chip IDs returned zero results this run, same as 2026-09-19: DevOps Engineer (1338), Site Reliability Engineer (8473), Cloud Engineer / Cloud Engineering (10001), DevSecOps Engineer (6831).</li>
+<li>Platform Engineer and Forward Deployed Engineer still have no confirmed skill chip. Fell back to the unfiltered <code>role=5,16</code> listing (1,394 total openings, sorted by recency) and title-skimmed the first page (~20 postings).</li>
+<li>The unfiltered feed's relevance density remains very low — dominated by unrelated freelance gigs (LATAM Salesforce/CMS/QA roles, CNC programming, iOS, LLM data annotation, AI benchmarking) rather than infrastructure/DevOps work. Only the same 2 postings from the prior run were topically adjacent: the TaskRabbit role (now Applied, carried forward from applications.md) and the same US-only DevOps Cloud Engineer posting (ineligible, pre-review location gate — not reopened).</li></ul><h2>Run notes</h2><ul><li>Second run against this source; confirms the 2026-09-19 finding rather than surfacing anything new — Braintrust currently has very little SRE/Platform/DevOps-specific demand for the target titles.</li>
 <li>Browser-driven throughout, per the skill's requirement (client-side rendered, direct HTTP returns an empty shell).</li>
 <li>No CAPTCHA, verification prompt, or write-side action occurred; no account created or profile submitted.</li>
-<li>Given how thin the unfiltered feed is for this domain, a full page-2+ title-skim wasn't run this pass — worth revisiting if this source is checked again, but the zero-result pattern across all 4 real skill-chip searches suggests Braintrust currently has very little SRE/Platform/DevOps-specific demand, not a search-mechanism failure.</li></ul></aside>
+<li>Checked applications.md fresh this run: TaskRabbit (https://app.usebraintrust.com/jobs/17859/) is Applied — 2026-09-19. Status carried forward, not re-scored.</li></ul></aside>
 
 </main>
 <script>
-const jobs = [{"score": 4, "family": "Platform", "title": "Sr Software Engineer - Developer Productivity", "company": "TaskRabbit", "location": "United States | Canada + 2 more — explicitly Canada-eligible", "salary": "$60–$70/hour", "gap": "Skill fit itself is strong (CI/CD, ArgoCD/GitOps, Kubernetes/Docker/Helm, developer-platform ownership, and explicit day-to-day use of Claude/AI-assisted workflows — directly supported by Marc's real AI-assisted-engineering practice at Énergir), but the $60–70/hr rate is well below the profile's $100/hr full-time-consulting-contract floor for this 40hrs/wk, long-term engagement — capped per the rate red flag rather than the skill gap.", "url": "https://app.usebraintrust.com/jobs/17859/"}];
+const jobs = [{"score": 4, "family": "Platform", "title": "Sr Software Engineer - Developer Productivity", "company": "TaskRabbit", "location": "United States | Canada + 2 more — explicitly Canada-eligible", "salary": "$60–$70/hour", "gap": "Skill fit itself is strong (CI/CD, ArgoCD/GitOps, Kubernetes/Docker/Helm, developer-platform ownership, and explicit day-to-day use of Claude/AI-assisted workflows — directly supported by Marc's real AI-assisted-engineering practice at Énergir), but the $60–70/hr rate is well below the profile's $100/hr full-time-consulting-contract floor for this 40hrs/wk, long-term engagement — capped per the rate red flag rather than the skill gap.", "url": "https://app.usebraintrust.com/jobs/17859/", "status": "Applied — 2026-09-19"}];
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){

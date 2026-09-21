@@ -1,61 +1,72 @@
 {
   "board": "Procom",
-  "run_date": "2026-09-19",
+  "run_date": "2026-09-21",
   "eyebrow": "Procom contractor portal · read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.",
-  "latest_update": "First run, September 19, 2026 — no eligible target-family postings; inventory currently skews heavily toward Salesforce, AI/ML, embedded, and data-center hardware roles.",
+  "latest_update": "Re-run September 21, 2026 — no eligible target-family postings; inventory still skews heavily toward Salesforce, AI/ML, embedded, and data-center hardware roles. The prior run's one genuinely target-family posting (Senior Systems Engineer, Cloud & Infrastructure, Toronto) is no longer live.",
   "stats": [
+    {"value": 6, "label": "keywords searched"},
+    {"value": 4, "label": "unique postings reviewed"},
+    {"value": 0, "label": "eligible, scored"},
+    {"value": 1, "label": "pipeline match"},
+    {"value": 3, "label": "out of scope, reviewed"}
+  ],
+  "rows": [
     {
-      "value": 6,
-      "label": "keywords searched"
+      "score": 6,
+      "family": "DevOps",
+      "title": "Senior Salesforce DevOps Engineer – AI Automation",
+      "company": "Flextrack",
+      "location": "Canada · Remote",
+      "salary": "Not stated (Permanent)",
+      "gap": "Real CI/CD, automation, and delivery-velocity center of gravity (though Salesforce-ecosystem-specific) — appeared in 3 of the 4 keyword searches that returned results. Already known in applications.md (found 2026-08-25, score 6, Procom board) and Skipped there 2026-09-19 (auto-marked expired at that review). Still live on Procom as of this run.",
+      "url": "https://myprocom-portal.procomservices.com/jobs/senior-devops-engineer-ai-automation-ea506134",
+      "status": "Skipped"
     },
     {
-      "value": 19,
-      "label": "unique postings reviewed"
+      "score": 0,
+      "family": "Platform",
+      "title": "Salesforce Integration Architect",
+      "company": "Flextrack",
+      "location": "Canada/US · Remote",
+      "salary": "Not stated (Permanent)",
+      "gap": "Salesforce integration architecture and platform ownership specifically (VMS integration patterns, endpoint/data-flow design) — real infrastructure and reliability language throughout, but the actual deliverable is Salesforce-ecosystem architecture, not general SRE/Platform/DevOps.",
+      "url": "https://myprocom-portal.procomservices.com/jobs/salesforce-integration-architect-8fd62e89",
+      "status": "Out of scope"
     },
     {
-      "value": 0,
-      "label": "eligible, scored"
+      "score": 0,
+      "family": "DevOps",
+      "title": "QA Automation Engineer",
+      "company": "Procom client (Richmond, BC)",
+      "location": "Richmond, British Columbia · Hybrid",
+      "salary": "$53–$70/hr CAD (Contract, 12 months)",
+      "gap": "QA/test-automation engineering (functional, regression, performance testing, Robot Framework/JMeter) integrated with CI/CD pipelines — quality engineering, not infrastructure/platform/reliability engineering.",
+      "url": "https://myprocom-portal.procomservices.com/jobs/qa-automation-engineer-richmond-2bd34f90",
+      "status": "Out of scope"
     },
     {
-      "value": 1,
-      "label": "geographic/rate exclusion"
-    },
-    {
-      "value": 1,
-      "label": "pipeline match"
-    },
-    {
-      "value": 17,
-      "label": "scope-excluded"
+      "score": 0,
+      "family": "Platform",
+      "title": "Data Center Field Service Engineer (Transformer-Specific)",
+      "company": "Procom client — Energy (Raleigh, NC)",
+      "location": "Raleigh, North Carolina, US · Remote with on-site travel",
+      "salary": "Not stated (Permanent)",
+      "gap": "Physical field-service work — transformer hardware installation, relay testing, firmware upgrades for utility/data-center electrical infrastructure. Hands-on hardware/electrical engineering, not IT/software platform engineering.",
+      "url": "https://myprocom-portal.procomservices.com/jobs/data-center-field-service-engineer-transformer-specific-raleigh-3ef64a1b",
+      "status": "Out of scope"
     }
   ],
-  "rows": [],
   "notes_sections": [
-    {
-      "heading": "Geographic and rate exclusion",
-      "items": [
-        "<b>Senior Systems Engineer (Cloud & Infrastructure)</b> (Toronto, ON, hybrid, $53–$70/hr CAD, posted July 10, 2026 — the only genuinely target-family title found this run): excluded on three grounds at once — Toronto is outside the reachable-city range, $53–70/hr is well below the $100/hr full-time-consulting-contract floor, and a July 10 post date (over two months old against a September 19 run) makes it likely stale/expired even before the other two gates apply."
-      ]
-    },
-    {
-      "heading": "Pipeline match — not rescored/refiled",
-      "items": [
-        "<b>Senior Salesforce DevOps Engineer – AI Automation</b> (client: AI Automation — Flextrack): appeared in 3 of the 4 keyword searches that returned results (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer). Already <code>New</code> in applications.md (found 2026-08-25, score 6, Procom). Not refiled."
-      ]
-    },
-    {
-      "heading": "Scope exclusions",
-      "items": [
-        "The remaining 17 unique postings had no SRE/Platform/DevOps center of gravity: QA Automation Engineer, Senior Salesforce Integration Engineer, Senior AI Engineer, Embedded C++ Software Engineer (Android Automotive/AOSP), Senior Embedded Software Engineer - Automotive, Network Engineer, Programmer Analyst - Senior, AI Engineer / Solution Lead, Junior Analytics Engineer, Principal Data Architect, Infrastructure Early Life Support (Desktop Engineer — end-user support, not infrastructure platform work), Commissioning Engineer-Data Centers, Data Center Field Service Engineer (Transformer-Specific) (both hardware/facilities roles, not IT infrastructure), Senior Python/SQL Engineer - Risk Division, Unified Communication Voice Specialist III, Senior Project/Solutions Engineer, Lead Machine Learning Engineer."
-      ]
-    },
     {
       "heading": "Run notes",
       "items": [
-        "DevSecOps Engineer and Forward Deployed Engineer both returned zero results outright (\"We're unable to find any jobs matching your search\").",
-        "Browser-driven throughout, per the skill's requirement — the public marketing site dead-ends, but the real contractor portal (<code>myprocom-portal.procomservices.com</code>) loaded cleanly with no login needed. Used the <code>find</code> tool to enumerate all result cards per search, since a naive text extraction only surfaces the first visible card.",
+        "DevOps Engineer (3 results), Platform Engineer (11 results, 8 reviewed), Site Reliability Engineer (2 results), and Cloud Engineer (12 results, 8 reviewed) all returned candidates; DevSecOps Engineer and Forward Deployed Engineer both returned zero results outright (\"We're unable to find any jobs matching your search\").",
+        "Platform Engineer and Cloud Engineer searches exceeded the 8-result review cap (11 and 12 total respectively) — the unreviewed remainder were screened by title alone (Principal Data Architect duplicate window items, additional embedded/data/network titles) and were not plausibly SRE/Platform/DevOps given the pattern already established across the 8 opened.",
+        "Browser-driven throughout, per the skill's requirement — the public marketing site dead-ends, but the real contractor portal (<code>myprocom-portal.procomservices.com</code>) loaded cleanly with no login needed. Confirmed the documented naive-text-extraction trap (only the first visible card's full content renders) and used screenshots plus the <code>find</code> tool to read each card and detail pane instead.",
+        "The prior run's one target-family posting, Senior Systems Engineer (Cloud & Infrastructure) in Toronto, did not reappear in any of this run's searches — likely expired/rotated out of inventory.",
+        "This run's browser session ran concurrently with two other agents (WWR, Braintrust) sharing the same Chrome tab group — worked around by opening a dedicated tab rather than reusing the shared one, after an initial text-extraction call returned WWR content from a tab another agent had navigated.",
         "No CAPTCHA, verification prompt, or write-side action occurred."
       ]
     }

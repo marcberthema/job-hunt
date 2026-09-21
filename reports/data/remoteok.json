@@ -1,21 +1,21 @@
 {
   "board": "RemoteOK",
-  "run_date": "2026-09-19",
+  "run_date": "2026-09-21",
   "eyebrow": "RemoteOK · read-only API search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 19, 2026 — no eligible target-family postings this run.",
+  "latest_update": "Rechecked September 21, 2026 — no eligible target-family postings this run; full-review exclusions (Harper, KPI Solutions) are now scored rows in the table below instead of a footer list, per the updated report_schema.md convention.",
   "stats": [
     {
       "value": 99,
       "label": "API jobs"
     },
     {
-      "value": 19,
+      "value": 24,
       "label": "recent ≤14d"
     },
     {
-      "value": 1,
+      "value": 3,
       "label": "plausible"
     },
     {
@@ -45,33 +45,44 @@
   ],
   "notes_sections": [
     {
-      "heading": "Regional exclusions",
-      "items": [
-        "<b>Engineering Manager/TLM, Platform — Harper</b> (posted September 11): owns infrastructure, developer productivity, SRE, and production support, but requires relocation to San Francisco and 5 days/week on-site — outside Marc's reachable range. Not scored. <a href=\"https://remoteok.com/remote-jobs/remote-engineering-manager-tlm-platform-harper-1137380\">View posting</a>. (Repeat exclusion from the 2026-09-18 run — still present in the current inventory window.)"
-      ]
-    },
-    {
       "heading": "Could not validate",
       "items": [
-        "<b>Golang Kubernetes Engineer — Arango</b> (posted September 16, plausible Platform-family fit): the API description is truncated to marketing boilerplate and an anti-spam instruction with no real requirements; the canonical detail page also would not expose full requirements or confirmed regional eligibility without a Premium unlock. Not scored per the validation rule — a snippet is not sufficient. <a href=\"https://remoteok.com/remote-jobs/remote-golang-kubernetes-engineer-arango-1137400\">View posting</a>."
-      ]
-    },
-    {
-      "heading": "Scope exclusions",
-      "items": [
-        "<b>Operations Engineer II — AWeber</b> (posted August 4, tagged 'ops'/'sys admin'): the listing content is templated marketing copy for AWeber's own email-marketing product with no technical requirements resembling an infrastructure/operations role — treated as a corrupted or mismatched listing, not a genuine target-family posting.",
-        "The remaining 96 API jobs were unrelated roles: sales, finance, customer support, application/product development, data entry, HR, and general operations."
+        "<b>Golang Kubernetes Engineer — Arango</b> (posted September 16, plausible Platform-family fit): the API description is truncated to marketing boilerplate and an anti-spam instruction with no real requirements; the canonical detail page also would not expose full requirements, employment type, or confirmed regional eligibility without a Premium unlock (salary shown as “Upgrade to Premium to see salary”). Not scored per the validation rule — a snippet is not sufficient. <a href=\"https://remoteok.com/remote-jobs/remote-golang-kubernetes-engineer-arango-1137400\">View posting</a>. (Repeat unresolved case from the 2026-09-19 run — still incomplete in the current inventory window.)"
       ]
     },
     {
       "heading": "Search limitations",
       "items": [
-        "The public API returned 99 job objects; 19 were dated within the preferred 14-day window (since 2026-09-05).",
+        "The public API returned 99 job objects; 24 were dated within the preferred 14-day window (since 2026-09-07).",
         "The API is a latest-inventory feed, not a dedicated keyword-search endpoint — the full returned inventory was reviewed for target titles, tags, and description signals.",
+        "Three additional postings carried a bare 'devops' tag (DESARROLLADOR FULL STACK — Kruger NearShore/Rekluti; Staff Software Development Engineer SDM — Delinea; Staff Software Engineer — unnamed) but their titles and full tag sets read as generalist full-stack/software-engineering roles, not DevOps/Platform/SRE center of gravity — screened out by title, not opened in full.",
         "No eligible, unclear, or known-pipeline target-family role surfaced this run. No CAPTCHA, verification page, or write-side action occurred.",
-        "Several RemoteOK postings scored in the 2026-08-25 run (Akuity, DoiT, Lemon.io, Livepeer, Shakepay — all still <code>New</code> in applications.md) have since rolled off the API's ~100-item latest-inventory window and could not be rechecked for freshness this run; they remain in applications.md pending user review via the review skill, not this discovery pass."
+        "Several RemoteOK postings scored in the 2026-08-25 run (Akuity, DoiT, Lemon.io, Livepeer, Shakepay — all Skipped in applications.md as of 2026-09-19) have rolled off the API's ~100-item latest-inventory window and were not part of today's inventory."
       ]
     }
   ],
-  "rows": []
+  "rows": [
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Engineering Manager, TLM Platform",
+      "company": "Harper",
+      "location": "San Francisco — “Based in SF or willing to relocate,” fully on-site, no remote option",
+      "salary": "USD $225,000–$275,000/year",
+      "gap": "Real substance — owns infrastructure, developer productivity, and SRE/production support, with hands-on AWS/GCP, Kubernetes, and Docker requirements — but on-site San Francisco with no remote option is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal), a hard geography gate on its own. Separately it's a formal Engineering Manager role (flexible on tenure but still people-management scope), a different shape than Marc's ‘leads without authority’ positioning. Reviewed in full via the canonical detail page. Repeat posting from the 2026-09-18/09-19 runs, still live.",
+      "url": "https://remoteok.com/remote-jobs/remote-engineering-manager-tlm-platform-harper-1137380",
+      "status": "Ineligible"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Software Deployment Engineer",
+      "company": "KPI Solutions",
+      "location": "Cincinnati, OH (on-site delivery, plus remote/office phases)",
+      "salary": "Not stated",
+      "gap": "Despite the ‘Deployment Engineer’ title, the actual work is warehouse-automation hardware/software commissioning — pick-to-light systems, overhead illuminators, AutoStore/T-sort integration, on-site installation and IQ/UAT sign-off for a supply-chain systems integrator. Not a software CI/CD or infrastructure deployment role; no cloud, IaC, or platform-engineering component. Reviewed in full.",
+      "url": "https://remoteok.com/remote-jobs/remote-software-deployment-engineer-kpi-solutions-1137408",
+      "status": "Out of scope"
+    }
+  ]
 }
