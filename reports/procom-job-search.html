@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Procom job search — 2026-09-21</title>
+<title>Procom job search — 2026-09-19</title>
 <style>
 :root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
@@ -22,16 +22,17 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 </head>
 <body><main>
 <header>
-  <div class="eyebrow">Procom - Canadian jobs portal</div>
+  <div class="eyebrow">Procom contractor portal · read-only</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
-  <p class="lede">Current Canadian jobs-portal results validated from full job descriptions. Scores measure technical fit only.</p>
-  <p class="latest">Updated September 21, 2026 - one exceptional remote match remains live and is already in the pipeline.</p>
+  <p class="lede">Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.</p>
+  <p class="latest">First run, September 19, 2026 — no eligible target-family postings; inventory currently skews heavily toward Salesforce, AI/ML, embedded, and data-center hardware roles.</p>
   <div class="stats">
-    <div class="stat"><b>6</b><span>queries</span></div>
-    <div class="stat"><b>14</b><span>unique results reviewed</span></div>
-    <div class="stat"><b>1</b><span>eligible target role</span></div>
-    <div class="stat"><b>0</b><span>ineligible</span></div>
+    <div class="stat"><b>6</b><span>keywords searched</span></div>
+    <div class="stat"><b>19</b><span>unique postings reviewed</span></div>
+    <div class="stat"><b>0</b><span>eligible, scored</span></div>
+    <div class="stat"><b>1</b><span>geographic/rate exclusion</span></div>
     <div class="stat"><b>1</b><span>pipeline match</span></div>
+    <div class="stat"><b>17</b><span>scope-excluded</span></div>
   </div>
 </header>
 <section>
@@ -39,7 +40,7 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <input id="q" type="search" placeholder="Search title, company, location or gap…">
     <select id="family"><option value="">All families</option><option>SRE</option><option>Platform</option><option>DevOps</option></select>
     <select id="location"><option value="">All locations</option></select>
-    <select id="minimum"><option value="0">Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4" selected>4+ stretch</option></select>
+    <select id="minimum"><option value="-1">Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4" selected>4+ stretch</option></select>
     <label class="pill"><input id="hideDone" type="checkbox" checked> Hide applied, rejected, skipped &amp; expired</label>
   </div>
   <p class="count" id="count"></p>
@@ -48,13 +49,13 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<aside class="notes"><h2>Validation notes</h2><ul><li>The Flextrack posting remains accessible and explicitly open to Canada-based candidates. It is permanent, remote, and was posted July 31, 2026.</li>
-<li>Platform searches also surfaced QA, embedded software, data/AI and infrastructure-support noise; those roles were outside the target families.</li></ul></aside>
-<p class="method">All six default title queries were run through Procom's live jobs portal. Visible cards were deduplicated and plausible target roles were opened and validated.</p>
+<aside class="notes"><h2>Geographic and rate exclusion</h2><ul><li><b>Senior Systems Engineer (Cloud & Infrastructure)</b> (Toronto, ON, hybrid, $53–$70/hr CAD, posted July 10, 2026 — the only genuinely target-family title found this run): excluded on three grounds at once — Toronto is outside the reachable-city range, $53–70/hr is well below the $100/hr full-time-consulting-contract floor, and a July 10 post date (over two months old against a September 19 run) makes it likely stale/expired even before the other two gates apply.</li></ul><h2>Pipeline match — not rescored/refiled</h2><ul><li><b>Senior Salesforce DevOps Engineer – AI Automation</b> (client: AI Automation — Flextrack): appeared in 3 of the 4 keyword searches that returned results (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer). Already <code>New</code> in applications.md (found 2026-08-25, score 6, Procom). Not refiled.</li></ul><h2>Scope exclusions</h2><ul><li>The remaining 17 unique postings had no SRE/Platform/DevOps center of gravity: QA Automation Engineer, Senior Salesforce Integration Engineer, Senior AI Engineer, Embedded C++ Software Engineer (Android Automotive/AOSP), Senior Embedded Software Engineer - Automotive, Network Engineer, Programmer Analyst - Senior, AI Engineer / Solution Lead, Junior Analytics Engineer, Principal Data Architect, Infrastructure Early Life Support (Desktop Engineer — end-user support, not infrastructure platform work), Commissioning Engineer-Data Centers, Data Center Field Service Engineer (Transformer-Specific) (both hardware/facilities roles, not IT infrastructure), Senior Python/SQL Engineer - Risk Division, Unified Communication Voice Specialist III, Senior Project/Solutions Engineer, Lead Machine Learning Engineer.</li></ul><h2>Run notes</h2><ul><li>DevSecOps Engineer and Forward Deployed Engineer both returned zero results outright ("We're unable to find any jobs matching your search").</li>
+<li>Browser-driven throughout, per the skill's requirement — the public marketing site dead-ends, but the real contractor portal (<code>myprocom-portal.procomservices.com</code>) loaded cleanly with no login needed. Used the <code>find</code> tool to enumerate all result cards per search, since a naive text extraction only surfaces the first visible card.</li>
+<li>No CAPTCHA, verification prompt, or write-side action occurred.</li></ul></aside>
 
 </main>
 <script>
-const jobs = [{"score": 9, "family": "DevOps", "title": "Senior Salesforce DevOps Engineer - AI Automation", "company": "Flextrack", "location": "Remote Canada or US", "salary": "Not stated", "gap": "Four to eight years of AI experience is stated as required, although the practical AI-governance, Salesforce, Azure, CI/CD and cross-team influence scope is unusually close.", "url": "https://myprocom-portal.procomservices.com/jobs/senior-devops-engineer-ai-automation-ea506134", "status": "New - in pipeline since Aug 25"}];
+const jobs = [];
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){

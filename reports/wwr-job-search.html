@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>We Work Remotely job search — 2026-09-21</title>
+<title>We Work Remotely job search — 2026-09-19</title>
 <style>
 :root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
@@ -22,16 +22,17 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 </head>
 <body><main>
 <header>
-  <div class="eyebrow">We Work Remotely - read-only browser search</div>
+  <div class="eyebrow">We Work Remotely · region-gated read-only search</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
-  <p class="lede">Current WWR target-family listings checked against their actual detail-page regions. Scores measure technical fit only.</p>
-  <p class="latest">Updated September 21, 2026 - one eligible role, already applied.</p>
+  <p class="lede">Single broad terms (DevOps, Cloud, Platform, Infrastructure) plus a spot-check of two multi-word default-rotation terms. Per this source's documented history, multi-word phrases like "Site Reliability Engineer" and "DevSecOps" reliably return zero results here — confirmed again this run.</p>
+  <p class="latest">First data-file run, September 19, 2026 — no new eligible postings; the source's real per-posting flag tags are now visible directly in search results, which is new since the last documented check.</p>
   <div class="stats">
-    <div class="stat"><b>6</b><span>queries</span></div>
-    <div class="stat"><b>9</b><span>results reviewed</span></div>
-    <div class="stat"><b>1</b><span>eligible</span></div>
-    <div class="stat"><b>2</b><span>ineligible</span></div>
-    <div class="stat"><b>1</b><span>pipeline match</span></div>
+    <div class="stat"><b>6</b><span>search terms tried</span></div>
+    <div class="stat"><b>2</b><span>returned zero results outright</span></div>
+    <div class="stat"><b>21</b><span>unique postings reviewed</span></div>
+    <div class="stat"><b>0</b><span>new eligible</span></div>
+    <div class="stat"><b>2</b><span>pipeline matches</span></div>
+    <div class="stat"><b>19</b><span>ineligible or off-scope</span></div>
   </div>
 </header>
 <section>
@@ -39,7 +40,7 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <input id="q" type="search" placeholder="Search title, company, location or gap…">
     <select id="family"><option value="">All families</option><option>SRE</option><option>Platform</option><option>DevOps</option></select>
     <select id="location"><option value="">All locations</option></select>
-    <select id="minimum"><option value="0">Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4" selected>4+ stretch</option></select>
+    <select id="minimum"><option value="-1">Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4" selected>4+ stretch</option></select>
     <label class="pill"><input id="hideDone" type="checkbox" checked> Hide applied, rejected, skipped &amp; expired</label>
   </div>
   <p class="count" id="count"></p>
@@ -48,15 +49,23 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://weworkremotely.com/remote-jobs/proxify-ab-senior-devops-engineer-azure-8">Senior DevOps Engineer (Azure) — Proxify AB</a></td><td class="reason">Requires CET timezone +/-3 hours; Eastern Time is outside that range.</td></tr>
-<tr><td><a href="https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer">Professional Services DevOps Engineer — JFrog</a></td><td class="reason">Detail/listing location is Remote US rather than Canada.</td></tr></tbody></table></section>
-<aside class="notes"><h2>Validation notes</h2><ul><li>JFrog is current, posted 13 days ago, and lists an October 8, 2026 apply-by date.</li>
-<li>The generic Anywhere in the World badge was not used as eligibility evidence; each retained candidate's specific location or body restriction was checked.</li></ul></aside>
-<p class="method">Six bare-title searches were run in a real browser. Visible results were title-skimmed and deduplicated; plausible candidates were validated on their own posting pages.</p>
+<section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://weworkremotely.com/remote-jobs/search?term=DevOps">Professional Services DevOps Engineer — JFrog</a></td><td class="reason">"Remote, US" with the decorative "Anywhere in the World" tag; a same-titled Senior version explicitly flagged Canada separately, so this non-senior one is presumed US-only per prior-run confirmation.</td></tr>
+<tr><td><a href="https://weworkremotely.com/remote-jobs/search?term=DevOps">Principal Cloud Architect — ZoomInfo Technologies LLC</a></td><td class="reason">"Remote-US-NY" with the decorative "Anywhere in the World" tag — a specific US location despite the tag.</td></tr>
+<tr><td><a href="https://weworkremotely.com/remote-jobs/search?term=DevOps">Senior SRE - Networks — Fastly</a></td><td class="reason">"San Francisco, California" — a single non-Canada city named directly, excluded per the gate rule without opening the full posting despite a strong title match.</td></tr>
+<tr><td><a href="https://weworkremotely.com/remote-jobs/search?term=DevOps">Senior Application Security Engineer — Temporal Technologies</a></td><td class="reason">"United States or Canada" — genuinely eligible on location, but the role is a security-engineering position, not SRE/Platform/DevOps center of gravity.</td></tr></tbody></table></section>
+<aside class="notes"><h2>Pipeline matches — not rescored/refiled</h2><ul><li><b>Senior Professional Services DevOps Engineer — JFrog</b> (Remote, Canada — real 🇨🇦 flag tag shown directly in results): already <code>Applied</code> in applications.md (2026-08-31, score 8, via Indeed).</li>
+<li><b>Senior DevOps Engineer — Lemon.io</b> (flag list of ~30 countries including 🇨🇦 Canada, Contract): already <code>New</code> in applications.md (2026-08-25, score 6, via RemoteOK).</li></ul><h2>Search-term results</h2><ul><li><b>DevOps</b> (23 results reviewed): the only two Canada-eligible target-family postings were the JFrog and Lemon.io pipeline matches above. Everything else was either region-restricted (UK, Ireland, Australia, various EU-only), a specific non-Canada US city despite the decorative "Anywhere in the World" tag (ZoomInfo, Fastly, CircleCI, Discord roles), or off-scope by role (sales, customer support, security engineering, account management).</li>
+<li><b>Cloud</b> (2 results): both Sales/Marketing category, not tech roles at all — this term's yield has degraded sharply from the "32 results" documented in the 2026-08-20 follow-up run in job_sources.md.</li>
+<li><b>Platform</b> (4 results): none Canada-relevant (Mexico, Sweden locations under the decorative tag; one data-analytics-adjacent management role, not target family).</li>
+<li><b>Infrastructure</b> (4 results): Pinterest Data Scientist roles (San Francisco, despite the decorative tag) — off-scope by role and likely off-scope by region.</li>
+<li><b>Site Reliability Engineer</b> and <b>DevSecOps</b> (bare default-rotation terms): both returned zero results outright, reconfirming the persistent multi-word-phrase gap documented across every prior run of this source.</li></ul><h2>Run notes</h2><ul><li>This is the first run where <code>reports/data/wwr.json</code> was actually written — prior WWR runs were tracked only in job_sources.md's narrative notes, not in the structured per-board data file this repo's other boards use. This file now exists going forward.</li>
+<li>A genuine change from prior documented behavior: several results now show real per-country flag tags directly in the search-results list (not just the decorative "Anywhere in the World" tag), which made the eligibility gate faster to apply this run without needing to open every candidate individually.</li>
+<li>The previously-recommended single-broad-term approach ("DevOps", "Cloud", "Platform", "Infrastructure") no longer yields much for this specific domain — "Cloud", "Platform", and "Infrastructure" returned almost nothing relevant this run, a notable degradation from the 2026-09-08 run's documented results. "DevOps" alone remains the only consistently useful term.</li>
+<li>No CAPTCHA, verification prompt, or write-side action occurred.</li></ul></aside>
 
 </main>
 <script>
-const jobs = [{"score": 8, "family": "DevOps", "title": "Senior Professional Services DevOps Engineer", "company": "JFrog", "location": "Remote Canada; East Coast", "salary": "CAD $130,000-150,000/year plus bonus/equity", "gap": "Formal customer-facing professional-services depth is less explicit than the exceptionally strong JFrog, CI/CD, artifact, enablement and regulated-enterprise match.", "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer", "status": "Applied - Sep 15"}];
+const jobs = [];
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){

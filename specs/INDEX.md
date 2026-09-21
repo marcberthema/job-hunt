@@ -21,6 +21,14 @@ plan in `plans/`. No slash commands needed — just conversation.
 
 ---
 
+## Parked Ideas
+
+| Story | Description | Status |
+|-------|-------------|--------|
+| [local-smb-consulting](local-smb-consulting.md) | Local SMB consulting practice (free assessment → paid remediation, DevOps principles for non-IT small businesses) — parked until urgent job search resolves | parked |
+
+---
+
 ## Job Flow Commands
 
 | Story | Description | Status |

@@ -1,1 +1,73 @@
-{"board":"Robert Half","run_date":"2026-09-21","eyebrow":"Robert Half Canada - Contract Technology","title":"SRE, Platform & DevOps opportunities","lede":"Canada contract-technology listings checked across the six target title families.","latest_update":"Updated September 21, 2026 - no validated target-family posting found.","stats":[{"value":6,"label":"queries"},{"value":25,"label":"visible listings reviewed"},{"value":0,"label":"validated target roles"},{"value":0,"label":"inaccessible"},{"value":0,"label":"pipeline matches"}],"rows":[],"notes_sections":[{"heading":"Search notes","items":["The current Canada inventory exposed no DevOps, SRE, Platform, DevSecOps, Cloud Engineer or Forward Deployed title in the reviewed result boundary.","Nearby technology inventory consisted mainly of software development, systems administration, data, support, networking and security-management roles rather than the requested target families."]}],"method":"The six default searches retained Contract and Technology scope. The complete first visible result set was reviewed and no plausible target-family detail page was available to score."}
+{
+  "board": "Robert Half",
+  "run_date": "2026-09-19",
+  "eyebrow": "Robert Half Technology · Canada",
+  "title": "SRE, Platform & DevOps opportunities",
+  "lede": "Robert Half Technology (Canada) inventory searched across six target-family keywords. Scores measure technical and domain fit only.",
+  "latest_update": "First run, September 19, 2026 — no eligible target-family postings found; the documented query-param search is broken, see Search limitations.",
+  "stats": [
+    {
+      "value": 6,
+      "label": "searches completed"
+    },
+    {
+      "value": 17,
+      "label": "unique postings reviewed"
+    },
+    {
+      "value": 0,
+      "label": "plausible target-family"
+    },
+    {
+      "value": 0,
+      "label": "eligible validated"
+    },
+    {
+      "value": 15,
+      "label": "geographic exclusions"
+    },
+    {
+      "value": 1,
+      "label": "scope exclusions"
+    },
+    {
+      "value": 0,
+      "label": "inaccessible"
+    },
+    {
+      "value": 0,
+      "label": "pipeline matches"
+    }
+  ],
+  "notes_sections": [
+    {
+      "heading": "Search limitations — the documented retrieval method is broken",
+      "items": [
+        "The SKILL.md-documented URL pattern <code>https://www.roberthalf.com/ca/en/jobs?jobType=CONTRACT&specialty=TECHNOLOGY&keywords=&lt;term&gt;</code> no longer filters results — all six keyword fetches (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer) returned the identical, unfiltered default listing (payroll, HR, and accounting roles), confirmed both via direct HTTP and in a live browser with the same URL.",
+        "Working workaround found this run: submitting a search through the on-page search box redirects to a path-based URL, <code>https://www.roberthalf.com/ca/en/jobs/all/&lt;keyword-slug&gt;</code> (spaces as hyphens), which does return keyword-matched results via direct HTTP. This URL does not carry the <code>jobType=CONTRACT&specialty=TECHNOLOGY</code> scoping — results included Permanent roles and non-Technology specialties, so each result was individually screened rather than trusting the URL to pre-filter.",
+        "This is a skill-maintenance item: <code>.agents/skills/check-roberthalf/SKILL.md</code>'s Access section should be updated to the path-based pattern; flagged here rather than edited directly since it wasn't asked for."
+      ]
+    },
+    {
+      "heading": "Geographic exclusions",
+      "items": [
+        "All on-site/hybrid postings outside the reachable range (Ottawa, Kingston, Brockville, Cornwall, Montréal), regardless of title-level plausibility: Systems Engineer (Edmonton, AB, Permanent, $80-100k), Software Developer ×2 (Edmonton AB / Windsor ON), Senior Director Engineering (Toronto, contract, $123.50-143/hr), Application Developer Team Lead (Mississauga, Permanent, $125-150k), Laptop Deployment Technician (Toronto, Temporary), Sr. SAP ABAP Developer (Calgary, Temporary), Cloud Systems Analyst (North York, Temporary, $25-35/hr — junior scope in addition to geography), Senior Desktop Application Developer (Calgary, Permanent, $120-150k), Quality Engineer (Calgary, Permanent), Enterprise Architect (Toronto, Temporary, $85-100/hr), Project Manager ×2 (Langley BC / Edmonton), Network Security Consultant (Enoch AB, Temporary), Director of Cybersecurity (Toronto, Permanent, $165-185k)."
+      ]
+    },
+    {
+      "heading": "Scope exclusion",
+      "items": [
+        "<b>Cyber Security Analyst</b> (Ottawa, ON, remote, Temporary, $80-90/hr): the one remote/reachable-geography result found — but its center of gravity is security-analyst work (SOC-style, threat/vuln analysis), not SRE, Platform, or DevOps. Not scored. The same posting has surfaced on other boards this month."
+      ]
+    },
+    {
+      "heading": "Run notes",
+      "items": [
+        "None of the 17 unique postings reviewed across the six searches had a genuine SRE/Platform/DevOps/Cloud-engineering/DevSecOps center of gravity — the site's own keyword matching is broad and fuzzy (matches any 'Engineer'/'Developer'/'Analyst' title loosely related to the search term), not semantic.",
+        "No CAPTCHA or blocking challenge was encountered; the reCAPTCHA loader script present on every page is a generic form-protection component, not an active challenge on the search results.",
+        "All retrieval was read-only; no application, account, or form action was used."
+      ]
+    }
+  ],
+  "rows": []
+}

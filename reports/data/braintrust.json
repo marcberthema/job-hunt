@@ -1,1 +1,69 @@
-{"board":"Braintrust","run_date":"2026-09-21","eyebrow":"Braintrust - read-only marketplace search","title":"SRE, Platform & DevOps opportunities","lede":"Current Engineering and IT marketplace roles gated for Canadian eligibility. Scores measure technical fit only.","latest_update":"Updated September 21, 2026 - one eligible developer-productivity contract found.","stats":[{"value":6,"label":"search passes"},{"value":18,"label":"first-page roles reviewed"},{"value":1,"label":"eligible"},{"value":1,"label":"ineligible target role"},{"value":0,"label":"pipeline matches"}],"rows":[{"score":6,"family":"Platform","title":"Sr Software Engineer - Developer Productivity","company":"TaskRabbit","location":"United States | Canada + 2 more; full PST overlap","salary":"$60-70 USD/hour","gap":"Strong TypeScript/Node.js plus Kubernetes-at-scale depth is required; Marc's strongest match is CI/CD, ArgoCD, platform enablement and automation.","url":"https://app.usebraintrust.com/jobs/17859/","status":"Current - accepting applications Sep 21"}],"ineligible":[{"title":"DevOps Cloud Engineer (Remote - USA)","company":"United States Cold Storage","reason":"United States only; Canada excluded.","url":"https://app.usebraintrust.com/jobs/17743"}],"notes_sections":[{"heading":"Search notes","items":["The DevOps, SRE, Cloud Engineering and DevSecOps skill-chip searches returned no jobs. The unfiltered Engineering/IT page was title-skimmed for Platform and Forward Deployed matches.","TaskRabbit was posted seven days ago, remains marked Accepting Applications, and is a 40-hour/week long-term freelance engagement."]}],"method":"Six default title families were checked. Location was gated from Braintrust's card and detail-page fields before scoring."}
+{
+  "board": "Braintrust",
+  "run_date": "2026-09-19",
+  "eyebrow": "Braintrust · contractor marketplace, read-only",
+  "title": "SRE, Platform & DevOps opportunities",
+  "lede": "Skill-chip search on the four confirmed IDs, plus a title-skim of the unfiltered Engineering feed for Platform Engineer / Forward Deployed Engineer (no confirmed chip exists for either). Scores measure technical and domain fit only.",
+  "latest_update": "First run, September 19, 2026 — 4 of 6 keywords returned zero results outright; one plausible candidate found via unfiltered title-skim, but its rate falls below the profile's contract-rate floor.",
+  "stats": [
+    {
+      "value": 6,
+      "label": "keywords attempted"
+    },
+    {
+      "value": 4,
+      "label": "returned zero results"
+    },
+    {
+      "value": 1,
+      "label": "eligible, scored"
+    },
+    {
+      "value": 1,
+      "label": "ineligible (US-only)"
+    },
+    {
+      "value": 0,
+      "label": "pipeline matches"
+    }
+  ],
+  "ineligible": [
+    {
+      "title": "DevOps Cloud Engineer (Remote - USA)",
+      "company": "United States Cold Storage",
+      "reason": "Location column states \"United States only.\"",
+      "url": "https://app.usebraintrust.com/jobs/?role=5,16"
+    }
+  ],
+  "rows": [
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Sr Software Engineer - Developer Productivity",
+      "company": "TaskRabbit",
+      "location": "United States | Canada + 2 more — explicitly Canada-eligible",
+      "salary": "$60–$70/hour",
+      "gap": "Skill fit itself is strong (CI/CD, ArgoCD/GitOps, Kubernetes/Docker/Helm, developer-platform ownership, and explicit day-to-day use of Claude/AI-assisted workflows — directly supported by Marc's real AI-assisted-engineering practice at Énergir), but the $60–70/hr rate is well below the profile's $100/hr full-time-consulting-contract floor for this 40hrs/wk, long-term engagement — capped per the rate red flag rather than the skill gap.",
+      "url": "https://app.usebraintrust.com/jobs/17859/"
+    }
+  ],
+  "notes_sections": [
+    {
+      "heading": "Keyword results",
+      "items": [
+        "All four confirmed skill-chip IDs returned zero results this run: DevOps Engineer (1338), Site Reliability Engineer (8473), Cloud Engineer / Cloud Engineering (10001), DevSecOps Engineer (6831).",
+        "Platform Engineer and Forward Deployed Engineer have no confirmed skill chip (confirmed again this run — searching the Skills filter for \"Platform Engineer\" returns \"Skill not found\"; the skills list is technology/tool tags, not job-title tags). Fell back to the unfiltered <code>role=5,16</code> listing (1,394 total openings, sorted by recency) and title-skimmed the first page (~20 postings).",
+        "The unfiltered feed's relevance density is very low — dominated by unrelated freelance gigs (LATAM Salesforce/CMS/QA roles, CNC programming, iOS, LLM data annotation) rather than infrastructure/DevOps work. Only 2 of the ~20 postings skimmed were even topically adjacent: the TaskRabbit role (scored above) and a US-only DevOps Cloud Engineer posting (ineligible)."
+      ]
+    },
+    {
+      "heading": "Run notes",
+      "items": [
+        "First-ever run against this source. No prior report data existed to compare against.",
+        "Browser-driven throughout, per the skill's requirement (client-side rendered, direct HTTP returns an empty shell).",
+        "No CAPTCHA, verification prompt, or write-side action occurred; no account created or profile submitted.",
+        "Given how thin the unfiltered feed is for this domain, a full page-2+ title-skim wasn't run this pass — worth revisiting if this source is checked again, but the zero-result pattern across all 4 real skill-chip searches suggests Braintrust currently has very little SRE/Platform/DevOps-specific demand, not a search-mechanism failure."
+      ]
+    }
+  ]
+}

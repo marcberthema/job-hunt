@@ -1,1 +1,63 @@
-{"board":"Procom","run_date":"2026-09-21","eyebrow":"Procom - Canadian jobs portal","title":"SRE, Platform & DevOps opportunities","lede":"Current Canadian jobs-portal results validated from full job descriptions. Scores measure technical fit only.","latest_update":"Updated September 21, 2026 - one exceptional remote match remains live and is already in the pipeline.","stats":[{"value":6,"label":"queries"},{"value":14,"label":"unique results reviewed"},{"value":1,"label":"eligible target role"},{"value":0,"label":"ineligible"},{"value":1,"label":"pipeline match"}],"rows":[{"score":9,"family":"DevOps","title":"Senior Salesforce DevOps Engineer - AI Automation","company":"Flextrack","location":"Remote Canada or US","salary":"Not stated","gap":"Four to eight years of AI experience is stated as required, although the practical AI-governance, Salesforce, Azure, CI/CD and cross-team influence scope is unusually close.","url":"https://myprocom-portal.procomservices.com/jobs/senior-devops-engineer-ai-automation-ea506134","status":"New - in pipeline since Aug 25"}],"notes_sections":[{"heading":"Validation notes","items":["The Flextrack posting remains accessible and explicitly open to Canada-based candidates. It is permanent, remote, and was posted July 31, 2026.","Platform searches also surfaced QA, embedded software, data/AI and infrastructure-support noise; those roles were outside the target families."]}],"method":"All six default title queries were run through Procom's live jobs portal. Visible cards were deduplicated and plausible target roles were opened and validated."}
+{
+  "board": "Procom",
+  "run_date": "2026-09-19",
+  "eyebrow": "Procom contractor portal · read-only",
+  "title": "SRE, Platform & DevOps opportunities",
+  "lede": "Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.",
+  "latest_update": "First run, September 19, 2026 — no eligible target-family postings; inventory currently skews heavily toward Salesforce, AI/ML, embedded, and data-center hardware roles.",
+  "stats": [
+    {
+      "value": 6,
+      "label": "keywords searched"
+    },
+    {
+      "value": 19,
+      "label": "unique postings reviewed"
+    },
+    {
+      "value": 0,
+      "label": "eligible, scored"
+    },
+    {
+      "value": 1,
+      "label": "geographic/rate exclusion"
+    },
+    {
+      "value": 1,
+      "label": "pipeline match"
+    },
+    {
+      "value": 17,
+      "label": "scope-excluded"
+    }
+  ],
+  "rows": [],
+  "notes_sections": [
+    {
+      "heading": "Geographic and rate exclusion",
+      "items": [
+        "<b>Senior Systems Engineer (Cloud & Infrastructure)</b> (Toronto, ON, hybrid, $53–$70/hr CAD, posted July 10, 2026 — the only genuinely target-family title found this run): excluded on three grounds at once — Toronto is outside the reachable-city range, $53–70/hr is well below the $100/hr full-time-consulting-contract floor, and a July 10 post date (over two months old against a September 19 run) makes it likely stale/expired even before the other two gates apply."
+      ]
+    },
+    {
+      "heading": "Pipeline match — not rescored/refiled",
+      "items": [
+        "<b>Senior Salesforce DevOps Engineer – AI Automation</b> (client: AI Automation — Flextrack): appeared in 3 of the 4 keyword searches that returned results (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer). Already <code>New</code> in applications.md (found 2026-08-25, score 6, Procom). Not refiled."
+      ]
+    },
+    {
+      "heading": "Scope exclusions",
+      "items": [
+        "The remaining 17 unique postings had no SRE/Platform/DevOps center of gravity: QA Automation Engineer, Senior Salesforce Integration Engineer, Senior AI Engineer, Embedded C++ Software Engineer (Android Automotive/AOSP), Senior Embedded Software Engineer - Automotive, Network Engineer, Programmer Analyst - Senior, AI Engineer / Solution Lead, Junior Analytics Engineer, Principal Data Architect, Infrastructure Early Life Support (Desktop Engineer — end-user support, not infrastructure platform work), Commissioning Engineer-Data Centers, Data Center Field Service Engineer (Transformer-Specific) (both hardware/facilities roles, not IT infrastructure), Senior Python/SQL Engineer - Risk Division, Unified Communication Voice Specialist III, Senior Project/Solutions Engineer, Lead Machine Learning Engineer."
+      ]
+    },
+    {
+      "heading": "Run notes",
+      "items": [
+        "DevSecOps Engineer and Forward Deployed Engineer both returned zero results outright (\"We're unable to find any jobs matching your search\").",
+        "Browser-driven throughout, per the skill's requirement — the public marketing site dead-ends, but the real contractor portal (<code>myprocom-portal.procomservices.com</code>) loaded cleanly with no login needed. Used the <code>find</code> tool to enumerate all result cards per search, since a naive text extraction only surfaces the first visible card.",
+        "No CAPTCHA, verification prompt, or write-side action occurred."
+      ]
+    }
+  ]
+}
