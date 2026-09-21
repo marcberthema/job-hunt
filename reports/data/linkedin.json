@@ -72,15 +72,42 @@
     }
   ],
   "could_not_validate": [
-    "Quantiphi — Senior Platform Engineer (LinkedIn 4410395795): current remote Toronto listing was accessible, but the full description remained stuck on Loading job details.",
-    "Open Systems Technologies — DevOps, Kubernetes, and Site Reliability Engineer (LinkedIn 4466862852): Montréal hybrid contract surfaced repeatedly, but the full description and office cadence could not be established.",
-    "National Bank of Canada — Développeur senior Cloud AWS (LinkedIn 4469947920): Montréal hybrid posting was current, but the full requirements and office cadence did not load.",
-    "Solutions GURUS — Développeur Cloud - DevOps Produit/Cloud Developer (LinkedIn 4458208866): Montréal hybrid posting was current, but the full requirements and office cadence did not load.",
-    "Jobgether — Senior Infrastructure Engineer (LinkedIn 4468703495): current Canada-remote listing was accessible, but its partner-company description did not load during validation.",
-    "Braze — Senior Lead Systems Engineer: surfaced repeatedly, but was not shortlisted for full-description validation because the Toronto hybrid arrangement is outside the reachable-city scope.",
-    "Clutch — Founding Staff Platform Engineer: Toronto hybrid result; full requirements and cadence were not validated.",
-    "Questrade — Senior Principal Site Reliability Engineer: North York hybrid result; full requirements and cadence were not validated.",
-    "KPMG Canada — Bilingual Senior AWS Platform Engineer: Montréal listing was marked on-site; full requirements were not validated after the work-arrangement screen."
+    {
+      "text": "Quantiphi — Senior Platform Engineer: current remote Toronto listing was accessible, but the full description remained stuck on Loading job details.",
+      "url": "https://www.linkedin.com/jobs/view/4410395795/"
+    },
+    {
+      "text": "Open Systems Technologies — DevOps, Kubernetes, and Site Reliability Engineer: Montréal hybrid contract surfaced repeatedly, but the full description and office cadence could not be established.",
+      "url": "https://www.linkedin.com/jobs/view/4466862852/"
+    },
+    {
+      "text": "National Bank of Canada — Développeur senior Cloud AWS: Montréal hybrid posting was current, but the full requirements and office cadence did not load.",
+      "url": "https://www.linkedin.com/jobs/view/4469947920/"
+    },
+    {
+      "text": "Solutions GURUS — Développeur Cloud - DevOps Produit/Cloud Developer: Montréal hybrid posting was current, but the full requirements and office cadence did not load.",
+      "url": "https://www.linkedin.com/jobs/view/4458208866/"
+    },
+    {
+      "text": "Jobgether — Senior Infrastructure Engineer: current Canada-remote listing was accessible, but its partner-company description did not load during validation.",
+      "url": "https://www.linkedin.com/jobs/view/4468703495/"
+    },
+    {
+      "text": "Braze — Senior Lead Systems Engineer: surfaced repeatedly, but was not shortlisted for full-description validation because the Toronto hybrid arrangement is outside the reachable-city scope.",
+      "url": "https://ca.linkedin.com/jobs/view/4449696746/"
+    },
+    {
+      "text": "Clutch — Founding Staff Platform Engineer: Toronto hybrid result; full requirements and cadence were not validated.",
+      "url": "https://ca.linkedin.com/jobs/view/4456040753/"
+    },
+    {
+      "text": "Questrade — Senior Principal Site Reliability Engineer: North York hybrid result; full requirements and cadence were not validated.",
+      "url": "https://ca.linkedin.com/jobs/view/4448063438/"
+    },
+    {
+      "text": "KPMG Canada — Bilingual Senior AWS Platform Engineer: Montréal listing was marked on-site; full requirements were not validated after the work-arrangement screen.",
+      "url": "https://ca.linkedin.com/jobs/view/4453633084/"
+    }
   ],
   "rows": [
     {
@@ -341,7 +368,7 @@
       "family": "DevOps",
       "title": "Senior DevOps Engineer",
       "company": "Ayla Networks",
-      "status": "New lead",
+      "status": "New",
       "location": "Remote — Canada/US Eastern",
       "salary": "Not stated",
       "gap": "Five years production AWS and GCP",
@@ -352,7 +379,7 @@
       "family": "DevOps",
       "title": "DevOps Engineer",
       "company": "Sundayy (Newton client)",
-      "status": "New lead",
+      "status": "New",
       "location": "Remote — Canada",
       "salary": "Not stated",
       "gap": "Production AWS networking and Go",
@@ -363,7 +390,7 @@
       "family": "SRE",
       "title": "Administrateur systèmes / SRE — Expert",
       "company": "Systematix",
-      "status": "New lead",
+      "status": "New",
       "location": "Montréal — hybrid 2 days/week",
       "salary": "12-month contract",
       "gap": "Required AWS certification/depth",
@@ -451,7 +478,7 @@
       "family": "Platform",
       "title": "Forward Deployed Engineer",
       "company": "Agility IT",
-      "status": "New lead",
+      "status": "New",
       "location": "Remote — Canada, T4",
       "salary": "Up to CAD $57/hour",
       "gap": "Agentic AI, LangChain/LangGraph",

@@ -60,10 +60,17 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 const jobs = [{"score": 4, "family": "Platform", "title": "Sr Software Engineer - Developer Productivity", "company": "TaskRabbit", "location": "United States | Canada + 2 more — explicitly Canada-eligible", "salary": "$60–$70/hour", "gap": "Skill fit itself is strong (CI/CD, ArgoCD/GitOps, Kubernetes/Docker/Helm, developer-platform ownership, and explicit day-to-day use of Claude/AI-assisted workflows — directly supported by Marc's real AI-assisted-engineering practice at Énergir), but the $60–70/hr rate is well below the profile's $100/hr full-time-consulting-contract floor for this 40hrs/wk, long-term engagement — capped per the rate red flag rather than the skill gap.", "url": "https://app.usebraintrust.com/jobs/17859/", "status": "Applied — 2026-09-19"}, {"score": -1, "family": "DevOps", "title": "DevOps Cloud Engineer (Remote - USA)", "company": "United States Cold Storage", "location": "United States only", "salary": "Not stated", "gap": "Location metadata explicitly states United States only, so a Canada-based candidate is not eligible.", "url": "https://app.usebraintrust.com/jobs/?role=5,16", "status": "Ineligible — US only"}];
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const statusPill=status=>{
+  const full=String(status||"");
+  const lower=full.toLowerCase();
+  const short=lower.startsWith("expired")?"Expired":lower.startsWith("skipped")?"Skipped":full;
+  const tooltip=short===full?"":` title="${esc(full)}"`;
+  return `<span class="pill"${tooltip}>${esc(short)}</span>`;
+};
 function render(){
   const q=$("#q").value.toLowerCase(),family=$("#family").value,location=$("#location").value.toLowerCase(),minimum=+$("#minimum").value,hideDone=$("#hideDone").checked;
   const list=jobs.filter(j=>(!hideDone||!/(applied|rejected|skipped|expired)/i.test(j.status||""))&&(!family||j.family===family)&&(!location||(j.location||"").toLowerCase().includes(location))&&j.score>=minimum&&(!q||Object.values(j).join(" ").toLowerCase().includes(q))).sort((a,b)=>dir*(a[key]<b[key]?-1:a[key]>b[key]?1:0));
-  rowsEl.innerHTML=list.length?list.map(j=>`<tr><td><span class="score ${j.score>=8?"high":j.score<=4?"low":""}">${j.score}/10</span></td><td><span class="pill">${esc(j.family)}</span></td><td class="job">${esc(j.title)}${j.status?`<br><span class="pill">${esc(j.status)}</span>`:""}</td><td class="company">${esc(j.company)}</td><td>${esc(j.location||"")}</td><td>${esc(j.salary||"Not stated")}</td><td>${esc(j.gap||"")}</td><td><a class="posting" href="${esc(j.url)}" target="_blank" rel="noopener">View ↗</a></td></tr>`).join(""):`<tr><td class="empty" colspan="8">No postings match the current filters.</td></tr>`;
+  rowsEl.innerHTML=list.length?list.map(j=>`<tr><td><span class="score ${j.score>=8?"high":j.score<=4?"low":""}">${j.score}/10</span></td><td><span class="pill">${esc(j.family)}</span></td><td class="job">${esc(j.title)}${j.status?`<br>${statusPill(j.status)}`:""}</td><td class="company">${esc(j.company)}</td><td>${esc(j.location||"")}</td><td>${esc(j.salary||"Not stated")}</td><td>${esc(j.gap||"")}</td><td><a class="posting" href="${esc(j.url)}" target="_blank" rel="noopener">View ↗</a></td></tr>`).join(""):`<tr><td class="empty" colspan="8">No postings match the current filters.</td></tr>`;
   $("#count").textContent=`Showing ${list.length} of ${jobs.length} validated postings`;
 }
 const locSel=$("#location");[...new Set(jobs.map(j=>j.location).filter(Boolean))].sort().forEach(loc=>{const o=document.createElement("option");o.textContent=loc;locSel.append(o)});

@@ -41,7 +41,9 @@ file, verify against this schema, not against an older version of that board's o
       "status": "New"
     }
   ],
-  "could_not_validate": ["One sentence per posting that couldn't be validated."],
+  "could_not_validate": [
+    {"text": "One sentence explaining why the posting couldn't be validated.", "url": "https://..."}
+  ],
   "notes_sections": [
     {"heading": "Validation notes", "items": ["One <li>-ready string per item; inline <b>/<a> markup is fine, it's inserted as HTML."]}
   ],
@@ -59,8 +61,10 @@ file, verify against this schema, not against an older version of that board's o
   should set these for a readable report.
 - `stats` — the stat-card row. Use whatever counts the skill's own "Output and report" section
   already tracks (searches completed, eligible/ineligible/inaccessible, pipeline matches, etc.).
-- `could_not_validate` — postings whose full description couldn't be confirmed; list of plain
-  sentences.
+- `could_not_validate` — postings whose full description couldn't be confirmed. Each entry is an
+  object with `text` explaining the problem and `url` linking directly to the posting so Marc can
+  inspect it manually. Legacy plain strings still render, but new or refreshed entries must use
+  the linked object form.
 - `notes_sections` — freeform prose the skill wants to surface (exclusions, caveats, refresh
   deltas). `items` strings may contain `<b>`/`<a>` inline HTML; everything else must already be
   escaped by the writer (the renderer does not escape these).
@@ -85,6 +89,9 @@ file, verify against this schema, not against an older version of that board's o
   rejected, skipped & expired" toggle hides any row whose status starts with one of those four
   words — so when the user confirms a decision on a posting, set `status` accordingly, not just a
   note.
+
+  Use `New`, not `New lead`, for every validated opportunity awaiting review. Discovery recency
+  belongs in the report run date or notes, not in the status pill.
 
 ### Excluded postings — score `0` / `-1`, never a footer list
 

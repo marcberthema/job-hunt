@@ -66,10 +66,17 @@ th{{background:var(--soft);color:var(--muted);font-size:11px;text-transform:uppe
 const jobs = {rows_json};
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({{"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}}[c]));
+const statusPill=status=>{{
+  const full=String(status||"");
+  const lower=full.toLowerCase();
+  const short=lower.startsWith("expired")?"Expired":lower.startsWith("skipped")?"Skipped":full;
+  const tooltip=short===full?"":` title="${{esc(full)}}"`;
+  return `<span class="pill"${{tooltip}}>${{esc(short)}}</span>`;
+}};
 function render(){{
   const q=$("#q").value.toLowerCase(),family=$("#family").value,location=$("#location").value.toLowerCase(),minimum=+$("#minimum").value,hideDone=$("#hideDone").checked;
   const list=jobs.filter(j=>(!hideDone||!/(applied|rejected|skipped|expired)/i.test(j.status||""))&&(!family||j.family===family)&&(!location||(j.location||"").toLowerCase().includes(location))&&j.score>=minimum&&(!q||Object.values(j).join(" ").toLowerCase().includes(q))).sort((a,b)=>dir*(a[key]<b[key]?-1:a[key]>b[key]?1:0));
-  rowsEl.innerHTML=list.length?list.map(j=>`<tr><td><span class="score ${{j.score>=8?"high":j.score<=4?"low":""}}">${{j.score}}/10</span></td><td><span class="pill">${{esc(j.family)}}</span></td><td class="job">${{esc(j.title)}}${{j.status?`<br><span class="pill">${{esc(j.status)}}</span>`:""}}</td><td class="company">${{esc(j.company)}}</td><td>${{esc(j.location||"")}}</td><td>${{esc(j.salary||"Not stated")}}</td><td>${{esc(j.gap||"")}}</td><td><a class="posting" href="${{esc(j.url)}}" target="_blank" rel="noopener">View ↗</a></td></tr>`).join(""):`<tr><td class="empty" colspan="8">No postings match the current filters.</td></tr>`;
+  rowsEl.innerHTML=list.length?list.map(j=>`<tr><td><span class="score ${{j.score>=8?"high":j.score<=4?"low":""}}">${{j.score}}/10</span></td><td><span class="pill">${{esc(j.family)}}</span></td><td class="job">${{esc(j.title)}}${{j.status?`<br>${{statusPill(j.status)}}`:""}}</td><td class="company">${{esc(j.company)}}</td><td>${{esc(j.location||"")}}</td><td>${{esc(j.salary||"Not stated")}}</td><td>${{esc(j.gap||"")}}</td><td><a class="posting" href="${{esc(j.url)}}" target="_blank" rel="noopener">View ↗</a></td></tr>`).join(""):`<tr><td class="empty" colspan="8">No postings match the current filters.</td></tr>`;
   $("#count").textContent=`Showing ${{list.length}} of ${{jobs.length}} validated postings`;
 }}
 const locSel=$("#location");[...new Set(jobs.map(j=>j.location).filter(Boolean))].sort().forEach(loc=>{{const o=document.createElement("option");o.textContent=loc;locSel.append(o)}});
@@ -88,6 +95,8 @@ def esc(s):
         .replace("&", "&amp;")
         .replace("<", "&lt;")
         .replace(">", "&gt;")
+        .replace('"', "&quot;")
+        .replace("'", "&#39;")
     )
 
 
@@ -103,7 +112,14 @@ def render_stats(stats):
 def render_could_not_validate(items):
     if not items:
         return ""
-    lis = "\n".join(f"<li>{esc(i)}</li>" for i in items)
+    def render_item(item):
+        if isinstance(item, dict):
+            text = esc(item["text"])
+            url = esc(item["url"])
+            return f'<li>{text} <a href="{url}" target="_blank" rel="noopener">Open posting ↗</a></li>'
+        return f"<li>{esc(item)}</li>"
+
+    lis = "\n".join(render_item(i) for i in items)
     return f'<section class="panel"><h2>Could not validate</h2><ul>{lis}</ul></section>\n'
 
 
