@@ -41,6 +41,12 @@ Do not require a literal title match. Exclude unrelated business analysis, proje
 
 Prefer postings from the past two days using Randstad's `datePosted` or displayed date, but include every matching current posting found on the reviewed page and report its date. Daily reruns depend on repository deduplication rather than silently omitting older live roles.
 
+## Run completeness and inventory audit
+
+The complete first Technologies category page is the mandatory default discovery pass. Record the request URL, HTTP/status outcome, category result count, number reviewed, every Randstad job identifier or canonical URL inspected (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. When the user supplies a local filter term, also record the term and matched IDs. Apply title/scope filtering only after capturing the page inventory so unrelated cards do not disappear from the audit.
+
+A CAPTCHA, verification page, access restriction, malformed response, or incomplete structured inventory makes the run incomplete unless a rendered browser successfully exposes the same full page. Never claim completeness from a partial regex match or only the plausible jobs.
+
 ## Geography and eligibility
 
 Randstad Canada listings are Canadian-market postings, but that alone does not establish an acceptable work arrangement. Validate the full description and retain only:
@@ -90,6 +96,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output and report
 
 Before returning results, write this run's data to `reports/data/randstad.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py randstad` to regenerate `reports/randstad-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated jobs. Include all scored rows, direct posting URLs, pipeline status, run date, and counts for category postings reviewed, plausible matches, eligible validated jobs, geographic exclusions, inaccessible postings, and known pipeline matches.
+
+Put the inventory audit in `notes_sections`, summarize it in `method`, and report passes attempted separately from passes completed plus category results reviewed. Reconcile it before `latest_update`; the mandatory page must be `Complete` or `Zero results` before claiming completion. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 

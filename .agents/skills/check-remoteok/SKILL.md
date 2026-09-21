@@ -41,6 +41,12 @@ Prefer postings from the past 14 days. Review every plausible target-family post
 
 Deduplicate by RemoteOK job `id` or canonical URL, then by company plus exact title.
 
+## Run completeness and inventory audit
+
+The latest-100 API inventory is the mandatory default discovery pass; the target families are independent classification buckets within that single fetch, not substitute queries. Record the endpoint, HTTP status, response type, total job objects after removing metadata, the 100-job boundary, number reviewed, every plausible RemoteOK ID, and a per-family match count including zero. Mark the inventory `Complete`, `Zero results`, or `Incomplete - <reason>` before deduplication.
+
+If the API fails twice, the browser fallback is complete only when its rendered inventory and boundary are recorded. A CAPTCHA, verification page, malformed payload, metadata-only response, or partial browser load makes the run incomplete. Search snippets cannot substitute for the API or rendered fallback inventory.
+
 ## Regional eligibility gate
 
 RemoteOK is worldwide and many postings are not open to Canadians. Apply this gate before scoring, using both `location` and the full description:
@@ -88,6 +94,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output and report
 
 Before returning results, write this run's data to `reports/data/remoteok.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py remoteok` to regenerate `reports/remoteok-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every scored row, direct posting URLs, pipeline status, run date, API inventory size, plausible candidates, eligible, unclear, ineligible, inaccessible, stale, and known-pipeline counts.
+
+Put the inventory and family audit in `notes_sections`, summarize it in `method`, and report retrievals attempted separately from completed plus unique results reviewed. Reconcile it before `latest_update`; do not claim completion while the inventory is `Incomplete`. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 

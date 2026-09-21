@@ -44,6 +44,12 @@ Treat timezone language as a remote-eligibility signal worth validating. Phrases
 
 Use the connected browser's existing authenticated LinkedIn session as the primary discovery path. Navigate LinkedIn Jobs, enter searches and filters, open result pages, scroll, paginate, and read posting details as needed. These are the only permitted LinkedIn interactions. Supplement discovery and validation with public web searches, distinctive title/company searches, and employer career sites when they improve coverage or provide a more authoritative posting. For a custom query, review up to 20 plausible results. For the default rotation, review up to 12 plausible results per phrase before deduplication. State the actual boundary when access or result volume prevents this.
 
+## Run completeness and pass audit
+
+Unless the user narrows the request, every declared phrase, remote-hub, and reachable-city hybrid pass is mandatory. Execute each pass independently and verify the rendered query, location, workplace, and past-two-days state. For every pass, record its exact parameters, rendered result count, number reviewed, LinkedIn job IDs or canonical employer URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Capture the audit before deduplication and retain repeated postings under every pass where they appeared.
+
+A CAPTCHA, security checkpoint, verification prompt, login/session loss, or other access block makes the affected pass and overall run incomplete. Employer pages may validate postings already discovered, but public snippets or employer searches cannot be used to pretend a mandatory LinkedIn pass ran successfully.
+
 ## Browser access and validation
 
 Use only an already connected, authenticated browser session; never request, reveal, extract, copy, export, or otherwise handle credentials, cookies, authentication tokens, or session data. Do not sign in or sign out. Never evade bot protection or attempt CAPTCHA or verification bypass. If LinkedIn presents a CAPTCHA, verification prompt, security checkpoint, or access restriction, stop using that path and look for the role on the employer's official career site.
@@ -71,6 +77,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output
 
 Before returning the result, write this run's data to `reports/data/linkedin.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py linkedin` to regenerate `reports/linkedin-job-search.html` — never hand-author the HTML directly, so it reflects the current validated run. Include every scored row, current pipeline-status labels, direct posting URLs, the run date, and search/validation/exclusion totals. This data refresh is required on every invocation, including reruns with no new postings.
+
+Put the pass audit in `notes_sections`, summarize it in `method`, and report passes attempted separately from passes completed. Reconcile it before `latest_update`; all mandatory passes must be `Complete` or `Zero results` before claiming completion. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with search phrases completed, unique postings validated, exclusions, employer-site recoveries, inaccessible postings, and known pipeline matches. Sort every validated role by score descending using exactly:
 

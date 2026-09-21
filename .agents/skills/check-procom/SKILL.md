@@ -36,6 +36,12 @@ Review up to eight results per keyword in the default rotation. If a keyword ret
 
 Deduplicate by company plus exact title.
 
+## Run completeness and query audit
+
+All six default queries are mandatory and independent. Navigate each portal query separately, verify the rendered keyword and real results list, then record the result count, number reviewed, posting IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Deduplicate only after the audit, retaining repeated postings under every query where they appeared.
+
+A CAPTCHA, verification page, login wall, persistent loading shell, or other block makes the affected query and overall rotation incomplete. Never infer completion from the marketing-site shell, snippets, or a single visible card.
+
 ## Eligibility gate
 
 Procom is a Canadian staffing agency, but some US postings mix in. Use the location field shown per result:
@@ -70,6 +76,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output and report
 
 Before returning results, write this run's data to `reports/data/procom.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py procom` to regenerate `reports/procom-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every scored row, ineligible entries and reasons, direct posting URLs, pipeline status, run date, and counts for searches completed, results reviewed, eligible, ineligible, inaccessible, and known pipeline matches.
+
+Put the per-query audit in `notes_sections`, summarize it in `method`, and report searches attempted separately from searches completed plus unique results reviewed. Reconcile it before `latest_update`; all mandatory queries must be `Complete` or `Zero results` before the run is called complete. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 

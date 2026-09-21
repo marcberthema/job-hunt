@@ -66,6 +66,12 @@ Search Built In's current filtered pages first. Because its URL taxonomy and fil
 
 Review the complete first results page for every search pass; do not stop after the first few attractive jobs. If pagination or a large result set would materially expand the run, state the boundary used instead of silently truncating it.
 
+## Run completeness and pass audit
+
+Unless the user narrows the request, every declared role/geography discovery pass is mandatory. Execute each pass independently and verify the rendered query, location, workplace, and freshness filters before recording it. For every pass, record the exact role and geography, URL/filter state, rendered result count, number reviewed, posting IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Capture the audit before deduplication and retain repeated postings under every pass where they appeared.
+
+If Built In presents a CAPTCHA, verification page, login wall, persistent loading state, or other block, stop the affected path and mark the overall run incomplete. Supplemental web searches may recover an employer posting after Built In discovery, but cannot replace a mandatory Built In pass.
+
 ## Fetch, validate, and deduplicate
 
 Open each candidate's direct `builtin.com/job/...` page. Extract the authoritative details from the full posting:
@@ -102,6 +108,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output
 
 Before returning the result, write this run's data to `reports/data/builtin.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py builtin` to regenerate `reports/builtin-job-search.html` — never hand-author the HTML directly, so it reflects the current validated run rather than a prior snapshot. Include every row from the scored table, current pipeline-status labels, direct posting URLs, the run date, and search/validation/exclusion totals. This data refresh is required on every invocation of this skill, including reruns with no new postings.
+
+Put the pass audit in `notes_sections`, summarize the boundary in `method`, and report passes attempted separately from passes completed. Reconcile it before `latest_update`; all mandatory passes must be `Complete` or `Zero results` before claiming a complete run. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the number of searches completed, unique postings validated, exclusions, and previously known pipeline matches. Then return one Markdown table sorted by skill score descending, using exactly these columns:
 

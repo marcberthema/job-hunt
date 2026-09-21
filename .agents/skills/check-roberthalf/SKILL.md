@@ -57,6 +57,12 @@ Review up to eight results per keyword in the default rotation. If a keyword ret
 
 Deduplicate by company plus exact title.
 
+## Run completeness and query audit
+
+All six default HTTP queries are mandatory and independent. Fetch each keyword URL separately with the required Contract and Technology parameters, then record the exact keyword/URL, HTTP status, rendered or parsed result count, number reviewed, Robert Half posting IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Capture the audit before deduplication and retain repeated postings under every query where they appeared.
+
+A block page, malformed response, missing result inventory, or incomplete payload makes the affected query and overall run incomplete unless the same query is successfully rerun in a rendered browser. Snippets cannot substitute for a mandatory query.
+
 ## Geography and eligibility
 
 The `ca.` region path plus `specialty=TECHNOLOGY` keep results Canada/tech-scoped by construction — no eligibility gate is needed.
@@ -86,6 +92,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output and report
 
 Before returning results, write this run's data to `reports/data/roberthalf.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py roberthalf` to regenerate `reports/roberthalf-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated jobs. Include every scored row, direct posting URLs, pipeline status, run date, and counts for searches completed, results reviewed, validated jobs, inaccessible postings, and known pipeline matches.
+
+Put the query audit in `notes_sections`, summarize it in `method`, and report queries attempted separately from queries completed plus unique results reviewed. Reconcile it before `latest_update`; all mandatory queries must be `Complete` or `Zero results` before claiming completion. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 

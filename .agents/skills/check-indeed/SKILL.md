@@ -27,6 +27,12 @@ Do not reject a posting from a remote-discovery pass merely because Indeed label
 
 Search Indeed's public pages when accessible and supplement them with web searches targeting Indeed, distinctive title/company combinations, and employer career sites. Review a reasonable first page for each pass and state any boundary.
 
+## Run completeness and pass audit
+
+Unless the user narrows the request, every declared role/geography pass is mandatory and independent. For every pass, record the exact query and location, access method, result count when exposed, number reviewed, Indeed IDs or canonical employer URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Capture the audit before deduplication and retain repeated postings under every pass where they appeared.
+
+If Indeed blocks a mandatory pass, attempt only the permitted employer-site recovery for postings already discovered and mark that Indeed pass incomplete; web or employer search results do not prove the Indeed inventory was exhausted. Never call a partial rotation complete.
+
 ## Access and validation
 
 Never evade bot protection, rotate identities, disguise automation, reuse private browser cookies, or attempt CAPTCHA bypass. When Indeed blocks a page, use it only for discovery and seek the same job on the employer's official career site. Prefer the employer posting as the canonical URL and evidence source.
@@ -52,6 +58,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output
 
 Before returning the result, write this run's data to `reports/data/indeed.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py indeed` to regenerate `reports/indeed-job-search.html` — never hand-author the HTML directly, so it reflects the current validated run. Include every scored row, current pipeline-status labels, direct posting URLs, the run date, and search/validation/exclusion totals. This data refresh is required on every invocation, including reruns with no new postings.
+
+Put the pass audit in `notes_sections`, summarize it in `method`, and report passes attempted separately from passes completed. Reconcile it before `latest_update`; all mandatory passes must be `Complete` or `Zero results` before claiming completion. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with searches completed, unique postings validated, exclusions, employer-site recoveries, inaccessible postings, and known pipeline matches. Sort every validated job by score descending using exactly:
 

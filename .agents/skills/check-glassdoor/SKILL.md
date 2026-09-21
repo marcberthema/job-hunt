@@ -40,6 +40,12 @@ Review up to eight results per keyword in the default rotation. If a keyword ret
 
 Deduplicate by company plus exact title.
 
+## Run completeness and query audit
+
+All six default queries are mandatory and independent. For each query, navigate separately, verify the rendered search term and Canada scope, and record the result count, number reviewed, posting IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Deduplicate only after this audit and retain repeated IDs under every query where they appeared.
+
+A CAPTCHA, verification page, login wall, or other block makes the affected query and overall run incomplete. Snippets and cached pages may recover an already discovered posting but cannot substitute for executing a mandatory Glassdoor query.
+
 ## Geography and eligibility
 
 The `canada-` URL prefix scopes results to Canada by construction — no hard eligibility gate is needed. A "Remote" tag on an individual posting could theoretically hide non-Canada bias (the same caution warranted on RemoteOK/We Work Remotely), but this is not confirmed as a widespread issue here; treat it as a soft skim-the-body caution rather than a gate.
@@ -67,6 +73,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output and report
 
 Before returning results, write this run's data to `reports/data/glassdoor.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py glassdoor` to regenerate `reports/glassdoor-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated jobs. Include every scored row, direct posting URLs, pipeline status, run date, and counts for searches completed, results reviewed, validated jobs, inaccessible postings, and known pipeline matches.
+
+Put the per-query audit in `notes_sections`, summarize it in `method`, and report searches attempted separately from searches completed plus unique results reviewed. Reconcile it before `latest_update`; claim completion only when all mandatory queries are `Complete` or `Zero results`. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 

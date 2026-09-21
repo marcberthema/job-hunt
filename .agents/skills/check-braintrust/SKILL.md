@@ -38,6 +38,12 @@ Review up to eight results per keyword in the default rotation. If a keyword ret
 
 Deduplicate by company plus exact title.
 
+## Run completeness and query audit
+
+For the default rotation, all six queries are mandatory and independent. Navigate each query separately and verify the rendered filter or title-skim state. For every query, record the exact term, filter/URL, rendered result count, number reviewed, posting IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Deduplicate only after capturing this audit, retaining a repeated posting under every query where it appeared.
+
+A CAPTCHA, verification page, login wall, persistent loading state, or other block makes the affected query and overall run incomplete. Never claim all searches completed from snippets, cached pages, or a partial rotation.
+
 ## Eligibility gate
 
 Each result card shows a Location column directly (e.g. "United States only," "Work from anywhere," "North America + 1 more," "United States | Canada"). Apply this gate using that column before opening the full posting:
@@ -75,6 +81,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output and report
 
 Before returning results, write this run's data to `reports/data/braintrust.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py braintrust` to regenerate `reports/braintrust-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every scored row, ineligible entries and reasons, direct posting URLs, pipeline status, run date, and counts for searches completed, results reviewed, eligible, ineligible, inaccessible, and known pipeline matches.
+
+Put the per-query audit in `notes_sections`, summarize it in `method`, and report searches attempted separately from searches completed. Reconcile the audit before `latest_update`; a run is complete only when every mandatory query is `Complete` or `Zero results`. Preserve any matching `Applied`, `Skipped`, or `Rejected` pipeline status exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 

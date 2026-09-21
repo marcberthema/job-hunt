@@ -31,6 +31,12 @@ Retain roles whose actual responsibilities center on SRE, platform engineering, 
 
 Prefer postings from the past two days when Job Bank provides a reliable date, but include every matching current posting found within the stated review boundary and report its date.
 
+## Run completeness and query audit
+
+All three default queries are mandatory and independent. Fetch each query separately and record the exact URL, HTTP/result state, displayed result count, number reviewed, Job Bank identifiers or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Capture the audit before deduplication and retain repeated postings under every query where they appeared.
+
+A CAPTCHA, verification page, access restriction, malformed response, or incomplete listing payload makes the affected query and overall run incomplete unless the same query is successfully rerun in a rendered browser. Snippets and employer searches may validate an already discovered posting but cannot substitute for executing the Job Bank query.
+
 ## Geography and eligibility
 
 Job Bank is Canada-specific, but that does not establish an acceptable work arrangement. Validate the full description and retain only:
@@ -78,6 +84,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output and report
 
 Before returning results, write this run's data to `reports/data/jobbank.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py jobbank` to regenerate `reports/jobbank-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated jobs. Include all scored rows, direct posting URLs, pipeline status, run date, and counts for results reviewed, plausible matches, eligible validated jobs, geographic or role exclusions, inaccessible postings, and known pipeline matches.
+
+Put the query audit in `notes_sections`, summarize it in `method`, and report queries attempted separately from queries completed plus unique results reviewed. Reconcile it before `latest_update`; all three queries must be `Complete` or `Zero results` before claiming completion. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals and note that overlap with Indeed is expected. Sort validated roles by score descending using exactly:
 

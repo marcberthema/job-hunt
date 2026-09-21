@@ -40,6 +40,12 @@ A posting you open and read in full, then rule out for location/remote-eligibili
 
 Prefer postings from the past two days using Eluta's displayed posted age or an authoritative employer date. When the source exposes no reliable date, retain the posting but mark freshness as unconfirmed. Review the first 10 results per query and state when fewer were available. Do not paginate unless the user requests a deeper search.
 
+## Run completeness and pass audit
+
+Unless the user narrows the request, every default role query and declared remote/hybrid geography pass is mandatory. Execute each pass separately, verify the rendered query, accepted city value, Remote-filter state, and visible result count, then record the exact pass, count, number reviewed, Eluta cache IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Capture this audit before deduplication and retain repeated postings under every pass where they appeared.
+
+A CAPTCHA, verification page, blocked cache path, login wall, persistent loading state, or other access failure makes the affected pass and overall run incomplete unless the same pass's rendered inventory was already captured and every candidate can be validated through employer pages. Never claim completion from snippets or a partial role/geography rotation.
+
 ## Browser access and validation
 
 Use a browser for Eluta's client-rendered result links. No login is required. Run this source sequentially with other browser-driven job-board skills because shared browser sessions have previously caused tab collisions.
@@ -74,6 +80,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output
 
 Before returning results, write this run's data to `reports/data/eluta.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py eluta` to regenerate `reports/eluta-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated postings. Include all scored rows, current pipeline-status labels, direct accessible posting URLs, the run date, and search, validation, exclusion, employer-recovery, and inaccessible totals.
+
+Put the pass audit in `notes_sections`, summarize it in `method`, and report passes attempted separately from passes completed. Reconcile it before `latest_update`; all mandatory passes must be `Complete` or `Zero results` before claiming a complete run. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with searches completed, unique postings reviewed, validated jobs, exclusions, employer-site recoveries, inaccessible postings, and known pipeline matches. Sort validated jobs by score descending using exactly:
 

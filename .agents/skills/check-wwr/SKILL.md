@@ -38,6 +38,12 @@ Review up to eight results per keyword in the default rotation. If a keyword ret
 
 Deduplicate by company plus exact title.
 
+## Run completeness and query audit
+
+All six default queries are mandatory and independent. Navigate each query separately, verify the rendered term and real results list, then record the result count, number reviewed, posting IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Deduplicate only after capturing the audit and retain repeated postings under every query where they appeared.
+
+A CAPTCHA, verification page, login wall, or other block makes the affected query and overall run incomplete. Direct HTTP errors, snippets, generic `Anywhere in the World` labels, and related-job cards cannot substitute for a rendered query and its real result links.
+
 ## Eligibility gate
 
 We Work Remotely shows "Anywhere in the World" on nearly every posting regardless of actual eligibility — confirmed by sampling: postings tagged that way have still been restricted to a single non-Canada location (India, France, US-only, Romania, Malta). Never treat that tag as an eligibility signal. Use the specific location line extracted per result instead:
@@ -73,6 +79,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output and report
 
 Before returning results, write this run's data to `reports/data/wwr.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py wwr` to regenerate `reports/wwr-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every scored row, ineligible entries and reasons, direct posting URLs, pipeline status, run date, and counts for searches completed, results reviewed, eligible, ineligible, inaccessible, and known pipeline matches.
+
+Put the per-query audit in `notes_sections`, summarize it in `method`, and report searches attempted separately from searches completed plus unique results reviewed. Reconcile it before `latest_update`; claim completion only when all mandatory queries are `Complete` or `Zero results`. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 

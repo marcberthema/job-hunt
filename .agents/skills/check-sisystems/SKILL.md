@@ -48,6 +48,12 @@ Because keyword filtering is unreliable, inspect titles and summaries rather tha
 
 Prefer postings from the past two days using the displayed age or authoritative detail-page date. Include every matching current posting found within the stated result boundary and report its date or `Freshness unconfirmed`.
 
+## Run completeness and query audit
+
+All eight default queries are mandatory and independent. Navigate each query separately, verify the rendered `q=` value, `expertise=3`, and that real listings replaced the loading state, then record the displayed result count, number reviewed, requisition IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Capture the audit before deduplication and retain repeated postings under every query where they appeared.
+
+A CAPTCHA, WAF page, verification prompt, login wall, persistent loading shell, or other block makes the affected query and overall run incomplete. Do not use snippets, unrelated results caused by the soft keyword filter, or one visible card as evidence that the full query was audited.
+
 ## Geography and eligibility
 
 S.i. Systems serves the Canadian market, but each posting still needs work-arrangement validation. Retain only:
@@ -98,6 +104,8 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 ## Output and report
 
 Before returning results, write this run's data to `reports/data/sisystems.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py sisystems` to regenerate `reports/sisystems-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated jobs. Include every scored row, direct posting URLs, pipeline status, run date, and counts for searches completed, unique results reviewed, plausible candidates, eligible validated jobs, geographic or eligibility exclusions, inaccessible postings, and known pipeline matches.
+
+Put the query audit in `notes_sections`, summarize it in `method`, and report queries attempted separately from queries completed plus unique results reviewed. Reconcile it before `latest_update`; every mandatory query must be `Complete` or `Zero results` before claiming completion. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 
