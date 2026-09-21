@@ -47,9 +47,9 @@ A CAPTCHA, verification page, login wall, persistent loading shell, or other blo
 Procom is a Canadian staffing agency, but some US postings mix in. Use the location field shown per result:
 
 - A Canadian city/province, or "Remote" with no US-specific qualifier: eligible.
-- A US city/state shown: open the full posting first to check for an explicit "open to Canada-based remote candidates" line before excluding. If silent or explicitly US-only: ineligible — record title, company, and reason ("US-based posting, no stated Canada eligibility").
+- A US city/state shown: open the full posting first to check for an explicit "open to Canada-based remote candidates" line before excluding. If silent or explicitly US-only: add a `score: -1` row with status `Ineligible — US-only location` and the evidence in `gap`.
 
-This gate — and the ineligible entries it produces — is for postings ruled out from a quick location check, at most a one-line skim of the full posting for the Canada-eligibility line above. A posting that goes on to full "Validate and extract" review (full description, pay rate, job type) and only then turns out ineligible is not recorded this way — score it `-1` with `status: "Ineligible"` as a normal row in `rows` instead, per `reports/report_schema.md`.
+Whether a posting is ruled out during the quick location check or the full validation pass, keep it in `rows` as `score: -1` with a specific `Ineligible — <short reason>` status pill. Never create a separate ineligible collection or footer list.
 
 ## Validate and extract
 
@@ -75,7 +75,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output and report
 
-Before returning results, write this run's data to `reports/data/procom.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py procom` to regenerate `reports/procom-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every scored row, ineligible entries and reasons, direct posting URLs, pipeline status, run date, and counts for searches completed, results reviewed, eligible, ineligible, inaccessible, and known pipeline matches.
+Before returning results, write this run's data to `reports/data/procom.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py procom` to regenerate `reports/procom-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every result and exclusion in `rows`, direct posting URLs, pipeline or exclusion status pills, run date, and counts for searches completed, results reviewed, eligible, ineligible, inaccessible, and known pipeline matches.
 
 Put the per-query audit in `notes_sections`, summarize it in `method`, and report searches attempted separately from searches completed plus unique results reviewed. Reconcile it before `latest_update`; all mandatory queries must be `Complete` or `Zero results` before the run is called complete. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
@@ -86,7 +86,7 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Procom job detail page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches.
 
-After the table, list ineligible entries (location-gated before full review) with reasons, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/procom.json` during discovery.
+Put location-gated and other ineligible entries in the same table as `score: -1` rows; never repeat them in a footer list. After the table, list only `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/procom.json` during discovery.
 
 ## Follow-up filing
 

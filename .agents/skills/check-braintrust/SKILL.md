@@ -49,10 +49,10 @@ A CAPTCHA, verification page, login wall, persistent loading state, or other blo
 Each result card shows a Location column directly (e.g. "United States only," "Work from anywhere," "North America + 1 more," "United States | Canada"). Apply this gate using that column before opening the full posting:
 
 - "Work from anywhere," an explicit Canada mention, or "North America": eligible.
-- "United States only," or a region list that excludes Canada: ineligible. Do not open the full posting; record title, company, and reason.
+- "United States only," or a region list that excludes Canada: ineligible. Do not open the full posting; add a `score: -1` row with a specific `Ineligible — <short reason>` status pill and the evidence in `gap`.
 - A specific US city/state with no "only" qualifier (Braintrust's on-site convention): ineligible unless the full posting states otherwise.
 
-This gate — and the ineligible list it produces — is for postings ruled out from the card's Location column alone, before opening the full posting. A posting that goes through full "Validate and extract" review and only then turns out region-ineligible is not recorded this way — score it `-1` with `status: "Ineligible"` as a normal row in `rows` instead, per `reports/report_schema.md`.
+Whether the card location or the full description reveals the restriction, keep the posting in `rows` as `score: -1` with an explanatory status pill. Never create a separate ineligible collection or footer list.
 
 ## Validate and extract
 
@@ -80,7 +80,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output and report
 
-Before returning results, write this run's data to `reports/data/braintrust.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py braintrust` to regenerate `reports/braintrust-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every scored row, ineligible entries and reasons, direct posting URLs, pipeline status, run date, and counts for searches completed, results reviewed, eligible, ineligible, inaccessible, and known pipeline matches.
+Before returning results, write this run's data to `reports/data/braintrust.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py braintrust` to regenerate `reports/braintrust-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every result and exclusion in `rows`, direct posting URLs, pipeline or exclusion status pills, run date, and counts for searches completed, results reviewed, eligible, ineligible, inaccessible, and known pipeline matches.
 
 Put the per-query audit in `notes_sections`, summarize it in `method`, and report searches attempted separately from searches completed. Reconcile the audit before `latest_update`; a run is complete only when every mandatory query is `Complete` or `Zero results`. Preserve any matching `Applied`, `Skipped`, or `Rejected` pipeline status exactly and never reset a reviewed posting to `New`.
 
@@ -91,7 +91,7 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Braintrust job detail page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
-After the table, list ineligible entries from the pre-review location gate with reasons, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/braintrust.json` during discovery.
+Put every ineligible entry in the same table as a `score: -1` row; never repeat it in a footer list. After the table, list only `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/braintrust.json` during discovery.
 
 ## Follow-up filing
 

@@ -49,10 +49,10 @@ A CAPTCHA, verification page, login wall, or other block makes the affected quer
 We Work Remotely shows "Anywhere in the World" on nearly every posting regardless of actual eligibility — confirmed by sampling: postings tagged that way have still been restricted to a single non-Canada location (India, France, US-only, Romania, Malta). Never treat that tag as an eligibility signal. Use the specific location line extracted per result instead:
 
 - Names Canada, "Worldwide," or is blank/absent: provisionally eligible. If blank, confirm with an explicit region statement in the full posting before finalizing.
-- Names a single non-Canada country/city, or a region list that excludes Canada: ineligible. Do not open the full posting; record title, company, and reason (e.g. "region-restricted to India, excludes Canada").
+- Names a single non-Canada country/city, or a region list that excludes Canada: ineligible. Do not open the full posting; add a `score: -1` row with a specific status pill such as `Ineligible — region excludes Canada` and put the evidence in `gap`.
 - Names a broad multi-country descriptor that plausibly includes Canada (e.g. "North America Only," a flag list containing Canada): eligible.
 
-This gate — and the ineligible list it produces — applies only when the region-restricted location line rules a posting out without opening its full posting page. A posting that does get opened (e.g. under "Validate and extract" below) and only then turns out region-ineligible is not recorded this way — score it `-1` with `status: "Ineligible"` as a normal row in `rows` instead, per `reports/report_schema.md`.
+Whether the location line rules a posting out before opening it or the full page reveals the restriction later, keep it in `rows` as `score: -1` with a specific `Ineligible — <short reason>` status pill. Never create a separate ineligible collection or footer list.
 
 ## Validate and extract
 
@@ -78,7 +78,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output and report
 
-Before returning results, write this run's data to `reports/data/wwr.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py wwr` to regenerate `reports/wwr-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every scored row, ineligible entries and reasons, direct posting URLs, pipeline status, run date, and counts for searches completed, results reviewed, eligible, ineligible, inaccessible, and known pipeline matches.
+Before returning results, write this run's data to `reports/data/wwr.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py wwr` to regenerate `reports/wwr-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no eligible jobs. Include every result and exclusion in `rows`, direct posting URLs, pipeline or exclusion status pills, run date, and counts for searches completed, results reviewed, eligible, ineligible, inaccessible, and known pipeline matches.
 
 Put the per-query audit in `notes_sections`, summarize it in `method`, and report searches attempted separately from searches completed plus unique results reviewed. Reconcile it before `latest_update`; claim completion only when all mandatory queries are `Complete` or `Zero results`. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
@@ -89,7 +89,7 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the We Work Remotely job page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
-After the table, list ineligible entries from the pre-review region gate with reasons, `Could not validate` entries, and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/wwr.json` during discovery.
+Put every region-gated entry in the same table as a `score: -1` row; never repeat it in a footer list. After the table, list only `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/wwr.json` during discovery.
 
 ## Follow-up filing
 

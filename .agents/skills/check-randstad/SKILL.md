@@ -57,7 +57,7 @@ Randstad Canada listings are Canadian-market postings, but that alone does not e
 
 Exclude fully on-site roles and hybrid roles outside those cities. For Montréal, exclude confirmed requirements above two office days weekly. When Montréal cadence is undisclosed, retain the role and write `Hybrid — days not stated; confirm <=2`.
 
-A posting you open and read in full, then rule out for location or remote-eligibility, is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. Do not drop it silently or move it to a footer list.
+A posting ruled out for location or remote-eligibility is still a scored row — give it `score: -1` and a specific `Ineligible — <short reason>` status pill per `reports/report_schema.md`, with `gap` stating the gate. Do not drop it silently or move it to a footer list.
 
 Do not trust a title containing `REMOTE` or a location field alone. Confirm the arrangement in the description or structured posting data. For example, a posting may be indexed under Toronto while explicitly allowing remote work anywhere in Canada.
 

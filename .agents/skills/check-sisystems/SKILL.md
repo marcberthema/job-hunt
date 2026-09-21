@@ -66,7 +66,7 @@ Exclude fully on-site roles and hybrid roles outside those cities. For Montréal
 
 Do not infer remote eligibility merely because S.i. Systems is Canadian or a listing names multiple cities. Confirm it in the full description. A Toronto posting requiring only occasional attendance may be materially different from weekly hybrid work; retain it only when the burden is genuinely occasional and flag it for confirmation.
 
-A posting you open and read in full, then rule out for location or remote-eligibility, is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. Do not drop it silently or move it to a footer list.
+A posting ruled out for location or remote-eligibility is still a scored row — give it `score: -1` and a specific `Ineligible — <short reason>` status pill per `reports/report_schema.md`, with `gap` stating the gate. Do not drop it silently or move it to a footer list.
 
 ## Validate and deduplicate
 

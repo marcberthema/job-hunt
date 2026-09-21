@@ -12,14 +12,6 @@
     {"value": 1, "label": "ineligible (US-only)"},
     {"value": 1, "label": "pipeline matches"}
   ],
-  "ineligible": [
-    {
-      "title": "DevOps Cloud Engineer (Remote - USA)",
-      "company": "United States Cold Storage",
-      "reason": "Location column states \"United States only.\"",
-      "url": "https://app.usebraintrust.com/jobs/?role=5,16"
-    }
-  ],
   "rows": [
     {
       "score": 4,
@@ -31,6 +23,17 @@
       "gap": "Skill fit itself is strong (CI/CD, ArgoCD/GitOps, Kubernetes/Docker/Helm, developer-platform ownership, and explicit day-to-day use of Claude/AI-assisted workflows — directly supported by Marc's real AI-assisted-engineering practice at Énergir), but the $60–70/hr rate is well below the profile's $100/hr full-time-consulting-contract floor for this 40hrs/wk, long-term engagement — capped per the rate red flag rather than the skill gap.",
       "url": "https://app.usebraintrust.com/jobs/17859/",
       "status": "Applied — 2026-09-19"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Cloud Engineer (Remote - USA)",
+      "company": "United States Cold Storage",
+      "location": "United States only",
+      "salary": "Not stated",
+      "gap": "Location metadata explicitly states United States only, so a Canada-based candidate is not eligible.",
+      "url": "https://app.usebraintrust.com/jobs/?role=5,16",
+      "status": "Ineligible — US only"
     }
   ],
   "notes_sections": [

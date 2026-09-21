@@ -41,9 +41,6 @@ file, verify against this schema, not against an older version of that board's o
       "status": "New"
     }
   ],
-  "ineligible": [
-    {"title": "...", "company": "...", "reason": "...", "url": "..."}
-  ],
   "could_not_validate": ["One sentence per posting that couldn't be validated."],
   "notes_sections": [
     {"heading": "Validation notes", "items": ["One <li>-ready string per item; inline <b>/<a> markup is fine, it's inserted as HTML."]}
@@ -62,11 +59,6 @@ file, verify against this schema, not against an older version of that board's o
   should set these for a readable report.
 - `stats` — the stat-card row. Use whatever counts the skill's own "Output and report" section
   already tracks (searches completed, eligible/ineligible/inaccessible, pipeline matches, etc.).
-- `ineligible` — only for boards that run an eligibility gate (Dice, RemoteOK, WWR, Braintrust,
-  Procom) *before* opening a posting's full description, from title/metadata alone (e.g. a
-  clearance requirement visible in the listing snippet). Rendered as a separate not-scored table.
-  A posting that *was* opened and read in full, then ruled out, is scored `0` or `-1` in `rows`
-  instead — see Excluded-but-reviewed postings below.
 - `could_not_validate` — postings whose full description couldn't be confirmed; list of plain
   sentences.
 - `notes_sections` — freeform prose the skill wants to surface (exclusions, caveats, refresh
@@ -79,7 +71,7 @@ file, verify against this schema, not against an older version of that board's o
 - `score` (0–10, or `0`/`-1` for the excluded-but-reviewed cases below; required), `family`
   (`SRE` | `Platform` | `DevOps`, required), `title`, `company`, `url` (required).
 - `location`, `salary`, `gap` — optional, default to blank/"Not stated" in the rendered table.
-- `status` — this posting's pipeline label, starting with one of `New`, `Applied`, `Skipped`,
+- `status` — this posting's pipeline or exclusion pill, starting with one of `New`, `Applied`, `Skipped`,
   `Rejected`, `Expired`, `Out of scope`, or `Ineligible` (free text may follow, e.g.
   `Applied — Sep 18`), or omitted/blank when it isn't decided yet. `Skipped` means Marc decided
   not to pursue it (skill gap, duplicate, bad rate, etc.); `Rejected` means he applied and the
@@ -94,33 +86,30 @@ file, verify against this schema, not against an older version of that board's o
   words — so when the user confirms a decision on a posting, set `status` accordingly, not just a
   note.
 
-### Excluded-but-reviewed postings — score `0` / `-1`, not a footer list
+### Excluded postings — score `0` / `-1`, never a footer list
 
-A posting the skill actually opened and read in full, then ruled out, is a scored row in the main
-table — filterable and sortable like everything else — never a separate not-scored panel or
-`notes_sections` prose entry. Use whichever score fits, and put the one-line reason in `gap`:
+Every identified posting that is ruled out is a row in the main table — filterable and sortable
+like everything else — regardless of whether the decision came from listing metadata, a title,
+a location line, or a full-description review. Never put a per-posting exclusion in a separate
+panel, footer list, or `notes_sections`. Use whichever score fits and put the full one-line reason
+in `gap`:
 
-- **`score: 0`, `status: "Out of scope"`** — wrong domain/skill center of gravity even though it
-  was worth opening (e.g. application development wearing a "DevOps" title, GRC/audit dressed up
-  as DevSecOps, ML-platform architecture rather than infrastructure). `gap` states what the role
-  actually is and why it doesn't match.
-- **`score: -1`, `status: "Ineligible"`** — a hard eligibility gate: on-site/hybrid outside the
+- **`score: 0`, `status: "Out of scope — <short reason>"`** — wrong domain/skill center of gravity
+  (e.g. application development wearing a "DevOps" title, GRC/audit dressed up as DevSecOps,
+  ML-platform architecture rather than infrastructure). `gap` states what the role actually is
+  and why it doesn't match.
+- **`score: -1`, `status: "Ineligible — <short reason>"`** — a hard eligibility gate: on-site/hybrid outside the
   reachable-city range, no remote option, required clearance, a residency/citizenship requirement,
   visa/work-authorization mismatch, or a rate/salary hard floor. `gap` states the specific gate and
   why it's disqualifying (e.g. "Toronto hybrid 3+ days, outside Ottawa/Kingston/Brockville/
   Cornwall/Montréal — real SRE fit on skill alone, but not take-able").
 
 Both render identically to a normal row — score, family, title, company, location, salary,
-posting link — so `family`, `location`, `salary`, and `url` should still be filled in whenever the
-skill has them, not left blank just because the posting won't be pursued. The shared template's
-"Any score" filter option is `-1`, so neither of these gets hidden by default.
-
-This is different from the `ineligible` array below, which is for a posting ruled out by title or
-metadata alone, *before* opening its full description — no full review happened, so there's
-nothing to score. Once a skill opens a posting and reads it, the outcome belongs in `rows` as a
-scored `0` or `-1` row, not in `ineligible`, `could_not_validate`, or `notes_sections`.
-`notes_sections` stays for genuine run-level prose (search-method caveats, per-query audits,
-refresh deltas) — never for a per-posting exclusion decision.
+posting link — so fill every field known from the listing even when no full review was needed.
+The status must include a concise reason after the dash so the pill explains the score at a glance;
+keep the fuller evidence in `gap`. Use the best-supported family when known and the closest target
+family when only metadata is available. `notes_sections` stays for genuine run-level prose
+(search-method caveats, per-query audits, refresh deltas), never for per-posting decisions.
 
 ## Regenerating the HTML
 

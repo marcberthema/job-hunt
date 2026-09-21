@@ -51,7 +51,7 @@ th{{background:var(--soft);color:var(--muted);font-size:11px;text-transform:uppe
     <input id="q" type="search" placeholder="Search title, company, location or gap…">
     <select id="family"><option value="">All families</option><option>SRE</option><option>Platform</option><option>DevOps</option></select>
     <select id="location"><option value="">All locations</option></select>
-    <select id="minimum"><option value="-1">Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4" selected>4+ stretch</option></select>
+    <select id="minimum"><option value="-1" selected>Any score</option><option value="8">8+ strong fit</option><option value="6">6+ plausible fit</option><option value="4">4+ stretch</option></select>
     <label class="pill"><input id="hideDone" type="checkbox" checked> Hide applied, rejected, skipped &amp; expired</label>
   </div>
   <p class="count" id="count"></p>
@@ -60,7 +60,7 @@ th{{background:var(--soft);color:var(--muted);font-size:11px;text-transform:uppe
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-{ineligible_html}{could_not_validate_html}{notes_html}{method_html}
+{could_not_validate_html}{notes_html}{method_html}
 </main>
 <script>
 const jobs = {rows_json};
@@ -97,21 +97,6 @@ def render_stats(stats):
     return "\n".join(
         f'    <div class="stat"><b>{esc(s["value"])}</b><span>{esc(s["label"])}</span></div>'
         for s in stats
-    )
-
-
-def render_ineligible(ineligible):
-    if not ineligible:
-        return ""
-    rows = "\n".join(
-        f'<tr><td><a href="{esc(i.get("url", "#"))}">{esc(i["title"])} — {esc(i["company"])}</a></td>'
-        f'<td class="reason">{esc(i["reason"])}</td></tr>'
-        for i in ineligible
-    )
-    return (
-        '<section class="panel"><h2>Ineligible — not scored</h2><table>'
-        "<thead><tr><th>Role — Company</th><th>Reason</th></tr></thead>"
-        f"<tbody>{rows}</tbody></table></section>\n"
     )
 
 
@@ -153,7 +138,6 @@ def build(board):
         lede=esc(data.get("lede", "")),
         latest_update=esc(data.get("latest_update", f"Latest update: {data['run_date']}")),
         stats_html=render_stats(data.get("stats", [])),
-        ineligible_html=render_ineligible(data.get("ineligible")),
         could_not_validate_html=render_could_not_validate(data.get("could_not_validate")),
         notes_html=render_notes(data.get("notes_sections")),
         method_html=render_method(data.get("method")),

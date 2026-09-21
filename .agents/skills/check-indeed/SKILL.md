@@ -19,7 +19,7 @@ Use the broad Forward Deployed Engineer query so discovery does not miss infrast
 
 Run geography passes for remote work explicitly open to Canada or Ontario, plus hybrid work in Ottawa, Kingston, Cornwall, and Montréal. For Montréal, exclude confirmed requirements above two office days weekly. Retain undisclosed hybrid cadence as `Hybrid — days not stated; confirm <=2`. Exclude fully on-site roles and remote roles restricted to an ineligible region.
 
-A posting you open and read in full, then rule out for location or remote-eligibility, is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. Do not drop it silently or move it to a footer list.
+A posting ruled out for location or remote-eligibility is still a scored row — give it `score: -1` and a specific `Ineligible — <short reason>` status pill per `reports/report_schema.md`, with `gap` stating the gate. Do not drop it silently or move it to a footer list.
 
 Run additional remote-discovery passes using Canada's major employment hubs as the Indeed location: Toronto/GTA, Vancouver, Montréal, Calgary, Ottawa, Edmonton, Waterloo/Kitchener, Halifax, Winnipeg, Québec City, and Victoria. Indeed may index a Canada-remote position under an employer office or recruiting hub even when the worker can live elsewhere in Canada. Treat these city passes as discovery only: do not retain local on-site work or hybrid work outside Ottawa, Kingston, Cornwall, and Montréal.
 

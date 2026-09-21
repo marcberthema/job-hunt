@@ -55,9 +55,9 @@ RemoteOK is worldwide and many postings are not open to Canadians. Apply this ga
 - Ineligible: US-only, US-person, US work authorization, a non-Canada country/region, mandatory residence outside Canada, or a location list that excludes Canada.
 - Unclear: `location` is blank, says only `Remote`, or uses vague wording without confirming Canada. Inspect the full description and canonical page. If still unclear, retain it with `Confirm Canada eligibility` rather than presenting it as confirmed.
 
-Never rely on `Remote`, `Worldwide`, tags, flag icons, or title text alone. The description may contain a narrower residency, citizenship, time-zone, or language requirement. List ineligible roles separately and do not score them.
+Never rely on `Remote`, `Worldwide`, tags, flag icons, or title text alone. The description may contain a narrower residency, citizenship, time-zone, or language requirement. Keep ineligible roles in the main table as `score: -1` rows with a specific `Ineligible — <short reason>` status pill.
 
-This gate — and the ineligible list it produces — is for postings ruled out from `location` and a skim of the description for eligibility language alone, before the full "Validation and extraction" pass below. A posting that goes through full validation/extraction (responsibilities, requirements, salary, etc. captured for scoring) and only then turns out ineligible is not recorded this way — score it `-1` with `status: "Ineligible"` as a normal row in `rows` instead, per `reports/report_schema.md`.
+Whether the location gate rules a posting out during a skim or the full validation pass, keep it in `rows` as `score: -1`, put the evidence in `gap`, and never create a separate ineligible collection or footer list.
 
 ## Validation and extraction
 
@@ -104,7 +104,7 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the canonical RemoteOK detail page. Preserve currency and pay period, use `Not stated` for unknown facts, and include low scores rather than hiding weak matches. Include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
-After the table, list regional exclusions from the pre-review location gate, unclear eligibility, `Could not validate` entries, stale postings, and material search limitations. Ask which eligible roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/remoteok.json` during discovery.
+Regional exclusions belong in the same table as `score: -1` rows and are never repeated below it. After the table, list only unclear eligibility, `Could not validate` entries, stale postings, and material search limitations. Ask which eligible roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/remoteok.json` during discovery.
 
 ## Follow-up filing
 

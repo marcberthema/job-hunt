@@ -14,7 +14,6 @@
     {"value": 4, "label": "out of scope, scored 0, reviewed in full"},
     {"value": 8, "label": "screened out by title"}
   ],
-  "ineligible": [],
   "rows": [
     {
       "score": 7,

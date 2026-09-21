@@ -34,7 +34,7 @@ Use these queries so discovery extends beyond literal matches to the three targe
 - `Azure DevOps Engineer`
 - `Forward Deployed Engineer`
 
-Use the broad Forward Deployed Engineer query so discovery does not miss infrastructure-oriented roles whose titles omit an infrastructure qualifier. Evaluate the full description: retain roles with meaningful infrastructure, platform, reliability, cloud, or DevOps responsibilities, including weak fits with low scores; exclude roles that are purely application development or otherwise unrelated to the three target families. A posting you open and read in full, then rule out for this reason, is still a scored row — give it `score: 0` and `status: "Out of scope"` per `reports/report_schema.md`, with `gap` stating what the role actually is. Do not drop it silently or move it to a footer list.
+Use the broad Forward Deployed Engineer query so discovery does not miss infrastructure-oriented roles whose titles omit an infrastructure qualifier. Evaluate the full description: retain roles with meaningful infrastructure, platform, reliability, cloud, or DevOps responsibilities, including weak fits with low scores; exclude roles that are purely application development or otherwise unrelated to the three target families. A posting you rule out for this reason is still a scored row — give it `score: 0` and a specific `Out of scope — <short reason>` status pill per `reports/report_schema.md`, with `gap` stating what the role actually is. Do not drop it silently or move it to a footer list.
 
 Classify each retained posting into exactly one family based on its actual responsibilities, not merely its title:
 
@@ -60,7 +60,7 @@ Run additional remote-discovery passes using Canada's major employment hubs as t
 
 Do not reject a posting from a remote-discovery pass merely because Built In labels it with a city. Open the full description and retain it only when the posting explicitly permits remote work from Canada or Ontario, worldwide remote work compatible with a Canadian worker, or an equivalent eligible arrangement. A bare `Remote` or `In-Office or Remote` label without supporting eligibility language is insufficient.
 
-A posting you open and read in full, then rule out for location or remote-eligibility (hybrid outside Ottawa/Kingston/Cornwall/Montréal, on-site, or a remote label that doesn't hold up), is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. Do not drop it silently or move it to a footer list.
+A posting you rule out for location or remote-eligibility (hybrid outside Ottawa/Kingston/Cornwall/Montréal, on-site, or a remote label that doesn't hold up) is still a scored row — give it `score: -1` and a specific `Ineligible — <short reason>` status pill per `reports/report_schema.md`, with `gap` stating the specific gate. Do not drop it silently or move it to a footer list.
 
 Search Built In's current filtered pages first. Because its URL taxonomy and filters can change, inspect the live site rather than assuming an old route remains valid. Supplement weak or empty internal results with domain-restricted web searches targeting `builtin.com/job/` and the same role/geography. Do not use search-result snippets as the final evidence when the posting itself is accessible.
 

@@ -47,7 +47,7 @@ Job Bank is Canada-specific, but that does not establish an acceptable work arra
 
 Exclude fully on-site roles and hybrid roles outside those cities. For Montreal, exclude confirmed requirements above two office days weekly. When Montreal cadence is undisclosed, retain the role and write `Hybrid - days not stated; confirm <=2`. Check for explicit provincial or regional residence restrictions.
 
-A posting you open and read in full, then rule out for location or remote-eligibility, is still a scored row — give it `score: -1` and `status: "Ineligible"` per `reports/report_schema.md`, with `gap` stating the specific gate. Do not drop it silently or move it to a footer list.
+A posting ruled out for location or remote-eligibility is still a scored row — give it `score: -1` and a specific `Ineligible — <short reason>` status pill per `reports/report_schema.md`, with `gap` stating the gate. Do not drop it silently or move it to a footer list.
 
 ## Access, validation, and deduplication
 

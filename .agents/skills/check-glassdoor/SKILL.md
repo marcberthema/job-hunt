@@ -81,7 +81,7 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 | Skill score | Family | Job title | Company | Location / office cadence | Salary / rate | Biggest gap | Possible duplicate | Posting |
 |---:|---|---|---|---|---|---|---|---|
 
-Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Glassdoor job page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches.
+Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Glassdoor job page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches. Every identified exclusion belongs in this same table: use `score: 0` with an `Out of scope — <short reason>` status pill for domain exclusions and `score: -1` with an `Ineligible — <short reason>` status pill for hard gates. Put the full evidence in `gap`; never move an exclusion to a footer list.
 
 After the table, list `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md` — skip re-offering any posting already flagged as a duplicate. Do not draft application material or write files other than `reports/data/glassdoor.json` during discovery.
 

@@ -56,7 +56,7 @@
       "salary": "USD $135,000–$145,000/year",
       "gap": "Same customer-facing CI/CD/DevOps profile as JFrog's Senior req Marc already applied to, but this req's own posting text restricts remote work to the US East Coast — not take-able from Ontario. Corrected 2026-09-21: the initial run's location field missed this line and scored it 7/New; re-verified directly on the posting before filing.",
       "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-      "status": "Ineligible"
+      "status": "Ineligible — US East Coast only"
     },
     {
       "score": 5,
@@ -89,7 +89,7 @@
       "salary": "Not stated",
       "gap": "Full posting states \"we are unable to consider applications from candidates in other timezones\" outside CET±3 — excludes Canada/Eastern entirely. Real Azure/Terraform/AKS fit otherwise, but not take-able.",
       "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-cloud-engineer-azure",
-      "status": "Ineligible"
+      "status": "Ineligible — timezone excludes Canada"
     },
     {
       "score": 0,
@@ -100,7 +100,7 @@
       "salary": "USD $198,750–$295,000/year",
       "gap": "Cloud security specialist role (AWS security services, CNAPP/SIEM tooling, security certs) — not DevOps/Platform/SRE center of gravity; Marc has no claimed cloud-security-specialist depth.",
       "url": "https://weworkremotely.com/remote-jobs/hex-technologies-cloud-security-engineer",
-      "status": "Out of scope"
+      "status": "Out of scope — cloud security"
     },
     {
       "score": 0,
@@ -111,7 +111,7 @@
       "salary": "Not stated",
       "gap": "Application-layer GenAI engineering (RAG, multi-agent systems, Text2SQL, fine-tuning) requiring a graduate degree in a quantitative discipline — not infrastructure/DevOps work despite the Forward Deployed Engineer title.",
       "url": "https://weworkremotely.com/remote-jobs/databricks-ai-engineer-fde-forward-deployed-engineer",
-      "status": "Out of scope"
+      "status": "Out of scope — application AI"
     }
   ],
   "could_not_validate": [],

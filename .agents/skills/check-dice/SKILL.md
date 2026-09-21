@@ -76,7 +76,7 @@ Apply these rules in order before detailed extraction or scoring:
 4. Fully on-site US role without a remote option: ineligible.
 5. Otherwise: eligible. If authorization language is absent, flag: Confirm work authorization with recruiter before applying.
 
-For an ineligible posting, stop detailed review and record only title, company, direct URL, and one-line reason. Do not score it. This gate — and the `Ineligible` table it feeds — applies only to postings ruled out from the clearance/authorization language visible before detailed review. A posting that gets opened and read in full (e.g. while extracting responsibilities for scoring) and only then turns out ineligible is not moved to this table — score it `-1` with `status: "Ineligible"` as a normal row in `rows` instead, per `reports/report_schema.md`.
+For an ineligible posting, stop detailed review but keep it in the main results table as `score: -1`. Record title, company, direct URL, known location/pay, the one-line evidence in `gap`, and a specific status pill such as `Ineligible — clearance required` or `Ineligible — no sponsorship`. This applies whether the gate is visible before or during detailed review; never create a separate ineligible table or footer list.
 
 ## Score eligible postings
 
@@ -94,7 +94,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 ## Output
 
-Before responding, write this run's data to `reports/data/dice.json` per `reports/report_schema.md` — run date, queries completed, search boundary, unique results reviewed, eligible/ineligible/inaccessible totals, employer recoveries, pipeline matches, every scored eligible posting, every ineligible posting and reason, canonical links — then run `python3 reports/build_report.py dice` to regenerate `reports/dice-job-search.html`. Never hand-author the HTML directly.
+Before responding, write this run's data to `reports/data/dice.json` per `reports/report_schema.md` — run date, queries completed, search boundary, unique results reviewed, eligible/ineligible/inaccessible totals, employer recoveries, pipeline matches, every posting and exclusion as a scored row, and canonical links — then run `python3 reports/build_report.py dice` to regenerate `reports/dice-job-search.html`. Never hand-author the HTML directly.
 
 Refresh the data file on every invocation, including runs with no eligible results.
 
@@ -108,21 +108,12 @@ Include a query audit in `notes_sections` and summarize it in `method`. For each
 
 The stats must distinguish `queries attempted` from `queries completed`. Set `queries completed` to six only when all six audit entries are `Complete` or `Zero results`. Before writing `latest_update`, the response, or the method text, count the audit entries and reconcile their totals with the deduplicated eligible, ineligible, and could-not-validate collections. Do not claim full completion when the audit is missing, contains fewer than six entries, or contains an `Incomplete` entry.
 
-Return two sections.
-
-### Eligible
-
-Sort by score descending:
+Return one table containing eligible, out-of-scope, and ineligible rows, sorted by score descending:
 
 | Role — Company | Score | Why | Flags |
 |---|---:|---|---|
 
-### Ineligible
-
-Postings gated out by clearance/authorization language before detailed review — do not score these:
-
-| Role — Company | Reason |
-|---|---|
+Clearance, authorization, and location exclusions are `score: -1` rows in this table with explanatory status pills; do not add a separate `Ineligible` section.
 
 Then list Could not validate postings and material limitations. Ask which eligible postings the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/dice.json` during discovery.
 
