@@ -1,29 +1,39 @@
 {
   "board": "LinkedIn",
-  "run_date": "2026-09-18",
+  "run_date": "2026-09-21",
   "eyebrow": "LinkedIn · authenticated read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Full descriptions validated on LinkedIn. Scores measure skill and domain fit.",
-  "latest_update": "Latest update: September 18, 2026 — 14 title-family searches completed; 10 fresh postings fully validated.",
+  "latest_update": "Latest update: September 21, 2026 — 45 mandatory passes completed; 5 current postings fully validated, including 1 pipeline match.",
   "stats": [
     {
-      "value": 14,
-      "label": "title-family searches"
+      "value": 45,
+      "label": "mandatory search passes"
     },
     {
-      "value": 35,
-      "label": "validated postings"
+      "value": 5,
+      "label": "current postings validated"
     },
     {
-      "value": 4,
-      "label": "excluded results"
+      "value": 5,
+      "label": "inaccessible candidates"
     },
     {
-      "value": 2,
-      "label": "pipeline matches"
+      "value": 1,
+      "label": "pipeline match"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "September 21 latest run",
+      "items": [
+        "<b>45 mandatory passes completed:</b> 14 Canada-remote title phrases, 11 remote-hub discovery passes, and 20 hybrid title/city passes across Ottawa, Kingston, Cornwall, and Montréal. All used LinkedIn's reliable Past 24 hours filter because its attempted 48-hour parameter rendered as Past week.",
+        "<b>Best current match: Syntax — Senior Platform Engineer (SRE), AI Solutions.</b> The fresh repost matches Marc's existing Applied pipeline row by company and exact role, so its status remains Applied. Azure, Terraform, GitOps, observability, incident response, AI-assisted engineering and automation align well; deep Kubernetes/CNCF and Backstage ownership remain the main gap.",
+        "<b>ClearGov — Senior DevOps Engineer:</b> strong developer enablement, Terraform, CI/CD, observability, incident response and AI-guardrail alignment. The decisive mismatch is deep hands-on AWS architecture; compensation is CAD $110K–$140K, above the remote floor but below the aspirational target.",
+        "<b>Sage Recruiting client — Staff Platform Engineer:</b> exceptional pay at CAD $210K–$260K plus equity, but the role explicitly demands production Go, deep AWS, and extensive Kubernetes cluster operations, making it a stretch despite strong ownership, Terraform, reliability and AI-workflow overlap.",
+        "<b>LinkedIn read-only audit:</b> Kingston and Cornwall returned zero with the Hybrid filter. Required unfiltered reruns were completed; the visible results were Canada-remote roles rather than local hybrid candidates. No CAPTCHA, checkpoint, or login loss occurred."
+      ]
+    },
     {
       "heading": "September 18 latest run",
       "items": [
@@ -62,12 +72,72 @@
     }
   ],
   "could_not_validate": [
+    "Quantiphi — Senior Platform Engineer (LinkedIn 4410395795): current remote Toronto listing was accessible, but the full description remained stuck on Loading job details.",
+    "Open Systems Technologies — DevOps, Kubernetes, and Site Reliability Engineer (LinkedIn 4466862852): Montréal hybrid contract surfaced repeatedly, but the full description and office cadence could not be established.",
+    "National Bank of Canada — Développeur senior Cloud AWS (LinkedIn 4469947920): Montréal hybrid posting was current, but the full requirements and office cadence did not load.",
+    "Solutions GURUS — Développeur Cloud - DevOps Produit/Cloud Developer (LinkedIn 4458208866): Montréal hybrid posting was current, but the full requirements and office cadence did not load.",
+    "Jobgether — Senior Infrastructure Engineer (LinkedIn 4468703495): current Canada-remote listing was accessible, but its partner-company description did not load during validation.",
     "Braze — Senior Lead Systems Engineer: surfaced repeatedly, but was not shortlisted for full-description validation because the Toronto hybrid arrangement is outside the reachable-city scope.",
     "Clutch — Founding Staff Platform Engineer: Toronto hybrid result; full requirements and cadence were not validated.",
     "Questrade — Senior Principal Site Reliability Engineer: North York hybrid result; full requirements and cadence were not validated.",
     "KPMG Canada — Bilingual Senior AWS Platform Engineer: Montréal listing was marked on-site; full requirements were not validated after the work-arrangement screen."
   ],
   "rows": [
+    {
+      "score": 7,
+      "family": "Platform",
+      "title": "Senior Platform Engineer (SRE), AI Solutions",
+      "company": "Syntax",
+      "status": "Applied — Sep 18 (pipeline match; repost Sep 21)",
+      "location": "Remote — Québec / Canada",
+      "salary": "Not stated",
+      "gap": "Deep Kubernetes/CNCF operations and Backstage ownership",
+      "url": "https://www.linkedin.com/jobs/view/4454548847/"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Senior/Lead Engineer — Agentic AI Development",
+      "company": "FICO",
+      "status": "New",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Large-codebase software architecture, LLM evaluation infrastructure, and contract testing depth",
+      "url": "https://www.linkedin.com/jobs/view/4468149373/"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "ClearGov",
+      "status": "New",
+      "location": "Remote — Canada",
+      "salary": "CAD $110,000–$140,000/year",
+      "gap": "Deep production AWS architecture, networking, security and FinOps ownership",
+      "url": "https://www.linkedin.com/jobs/view/4467624809/"
+    },
+    {
+      "score": 6,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Jobgether partner company",
+      "status": "New",
+      "location": "Remote — Canada; no visa sponsorship",
+      "salary": "Not stated",
+      "gap": "Production Redis/ElastiCache plus stronger cloud/Kubernetes operations depth",
+      "url": "https://www.linkedin.com/jobs/view/4468711395/"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Staff Platform Engineer (description: Staff Cloud Engineer)",
+      "company": "Sage Recruiting client — AI infrastructure startup",
+      "status": "New",
+      "location": "Remote — Canada / U.S.",
+      "salary": "CAD $210,000–$260,000/year + equity",
+      "gap": "Requires production Go, deep AWS, and extensive Kubernetes cluster operations",
+      "url": "https://www.linkedin.com/jobs/view/4469932585/"
+    },
     {
       "score": 9,
       "family": "SRE",
@@ -133,17 +203,6 @@
       "salary": "Not stated",
       "gap": "Slack bot ownership and production Go/Node.js/TypeScript",
       "url": "https://www.linkedin.com/jobs/view/4467590177/"
-    },
-    {
-      "score": 7,
-      "family": "Platform",
-      "title": "Senior Platform Engineer (SRE), AI Solutions",
-      "company": "Syntax",
-      "status": "Applied — Sep 18",
-      "location": "Remote — Montréal / Canada",
-      "salary": "Not stated",
-      "gap": "Deep Kubernetes/CNCF and Backstage ownership",
-      "url": "https://www.linkedin.com/jobs/view/4468320244/"
     },
     {
       "score": 4,
@@ -454,5 +513,5 @@
       "url": "https://www.linkedin.com/jobs/view/4372005660/"
     }
   ],
-  "method": "Authenticated, read-only LinkedIn search completed September 18, 2026. All 14 default title families were searched with LinkedIn's past-two-days parameter and Canada location. The first visible result set (up to seven postings per phrase in this interface) was reviewed and deduplicated by LinkedIn job ID, then shortlisted postings were opened and scored only from accessible full descriptions. Ten fresh postings received full-description validation; four failed location or compensation gates, six were retained in the scored table, and one retained posting (Elastic) matched an existing Applied pipeline row. No employer-site recovery was required. The additional hub-by-hub and reachable-city hybrid grids were not exhaustively run in this invocation, so coverage is broad but not exhaustive."
+  "method": "Authenticated, strictly read-only LinkedIn search completed September 21, 2026. Passes attempted/completed: 45/45 — 14 Canada-remote phrase passes, 11 remote-hub passes, and 20 reachable-city hybrid passes, each independently rendered with Past 24 hours. Up to seven visible results per pass were reviewed before deduplication. Kingston and Cornwall Hybrid-filter zeroes were rerun without the workplace filter as required. Five current postings were validated from accessible full descriptions and scored; five additional plausible postings are listed as inaccessible. Syntax matched an existing Applied row by company and exact role. Historical rows and prior pipeline decisions remain preserved below."
 }
