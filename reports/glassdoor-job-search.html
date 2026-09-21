@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RemoteOK job search — 2026-09-21</title>
+<title>Glassdoor job search — 2026-09-21</title>
 <style>
 :root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
@@ -22,17 +22,15 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 </head>
 <body><main>
 <header>
-  <div class="eyebrow">RemoteOK - read-only API search</div>
+  <div class="eyebrow">Glassdoor Canada - read-only browser search</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
-  <p class="lede">Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical fit only.</p>
-  <p class="latest">Rechecked September 21, 2026 - no eligible target-family role found.</p>
+  <p class="lede">Accessible Canada listings validated before Glassdoor's human-verification block ended the run. Scores apply the profile's unreachable-location cap.</p>
+  <p class="latest">Updated September 21, 2026 - two full descriptions validated before access was blocked.</p>
   <div class="stats">
-    <div class="stat"><b>99</b><span>API jobs</span></div>
-    <div class="stat"><b>5</b><span>keyword-plausible</span></div>
-    <div class="stat"><b>0</b><span>eligible</span></div>
-    <div class="stat"><b>0</b><span>unclear</span></div>
-    <div class="stat"><b>1</b><span>ineligible target role</span></div>
-    <div class="stat"><b>0</b><span>inaccessible</span></div>
+    <div class="stat"><b>2</b><span>queries started</span></div>
+    <div class="stat"><b>16</b><span>results reviewed</span></div>
+    <div class="stat"><b>2</b><span>full descriptions validated</span></div>
+    <div class="stat"><b>1</b><span>blocked detail page</span></div>
     <div class="stat"><b>0</b><span>pipeline matches</span></div>
   </div>
 </header>
@@ -50,15 +48,14 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://remoteok.com/remote-jobs/remote-engineering-manager-tlm-platform-harper-1137380">Engineering Manager/TLM, Platform — Harper</a></td><td class="reason">Requires relocation to San Francisco and five days per week in office.</td></tr></tbody></table></section>
-<aside class="notes"><h2>Scope exclusions</h2><ul><li>Four other keyword hits were application-development roles whose descriptions merely mentioned infrastructure, DevOps or platform concepts; they were not target-family jobs.</li>
-<li>No eligible or unresolved Canadian target-family posting appeared in the latest 99-job API inventory.</li></ul><h2>Search limitations</h2><ul><li>The API is a latest-inventory feed rather than a dedicated semantic search. The latest 100-object boundary was reviewed by title, tags and full description.</li>
-<li>No CAPTCHA, authentication or write-side action occurred.</li></ul></aside>
-<p class="method">The RemoteOK public API was fetched once. Its metadata object was discarded, the latest 99 jobs were screened, and plausible matches were gated using both location and description text.</p>
+<section class="panel"><h2>Could not validate</h2><ul><li>Senior Software Engineer - Dev Ops - CARFAX: opening the detail page triggered Glassdoor's human-verification block, so the posting was not scored.</li></ul></section>
+<aside class="notes"><h2>Search limitation</h2><ul><li>Glassdoor displayed 676 DevOps Engineer results and 7,286 Platform Engineer results in Canada. Further detail-page validation stopped immediately when the CARFAX page triggered the site's human-verification protection.</li>
+<li>No verification challenge was solved or bypassed, and no sign-in, save, Easy Apply or other write-side control was used.</li></ul></aside>
+<p class="method">The DevOps and Platform rotations began in a real browser. Sixteen visible results were title-skimmed and two complete descriptions were captured before Glassdoor blocked the next detail page; the remaining keyword rotation could not be completed safely.</p>
 
 </main>
 <script>
-const jobs = [];
+const jobs = [{"score": 4, "family": "Platform", "title": "AKS Platform Engineer (1891)", "company": "Direct IT Recruiting", "location": "Toronto hybrid - 2 days/week; outside reachable hybrid geography", "salary": "CAD $85-95/hour", "gap": "Requires five years of hands-on AKS/Kubernetes administration; Marc's Kubernetes depth is provisioning and automation rather than deep cluster operations.", "url": "https://www.glassdoor.ca/job-listing/aks-platform-engineer-1891-85-95hr-direct-it-recruiting-JV_IC2281069_KO0,39_KE40,60.htm?jl=1010268340840", "status": "Current - posted Sep 19"}, {"score": 2, "family": "Platform", "title": "Systems Integration & Operations Engineer - Industrial Automation", "company": "Heat View Controls", "location": "London, Ontario - in person; outside reachable geography", "salary": "CAD $60,000-85,000/year", "gap": "Requires industrial automation/embedded systems experience and in-person work in London; compensation is also below target.", "url": "https://www.glassdoor.ca/job-listing/systems-integration-operations-engineer-industrial-automation-heat-view-controls-JV_IC2285502_KO0,60_KE61,79.htm?jl=1010268333907", "status": "Current - posted Sep 19"}];
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){

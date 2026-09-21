@@ -18,6 +18,23 @@ If the user supplies search terms, use them as one query. Otherwise run:
 - DevSecOps Engineer
 - Forward Deployed Engineer
 
+For the default rotation, all six queries are mandatory and independent. Do not infer that one broad query covers another title family. A run is complete only after every query has been submitted and its rendered result count and review outcome have been recorded.
+
+## Browser and rendered-state requirement
+
+Use a real browser for Dice search-result pages and job-detail pages. Dice is JavaScript-driven; direct HTTP, generic web fetches, search-engine snippets, or cached pages may omit the active filters, current result inventory, sponsorship label, workplace type, or full description. Those methods may be used only to recover an employer posting after a Dice result has already been discovered, never as a substitute for executing the six Dice queries.
+
+For every query:
+
+1. Navigate to the filtered Dice URL separately; do not only change or inspect a prior page's text.
+2. Verify the rendered search box contains the intended query.
+3. Verify the rendered active-filter chips show the current equivalents of `Last 7 Days`, `Full Time` and/or `Contract`, `Remote`, and `Willing to sponsor`.
+4. Record the rendered result count, including zero.
+5. Review up to eight results from that query and record each Dice job-detail ID or canonical URL inspected.
+6. Only then mark that query complete and continue to the next title.
+
+If Dice presents a CAPTCHA, human-verification page, login wall, or other block, stop rather than bypassing it. Mark the affected query and the overall run `Incomplete` and report which earlier queries were completed. Never describe a partial rotation as six searches completed.
+
 ## Search filters
 
 For each query, use Dice's current equivalent of:
@@ -38,6 +55,8 @@ Dice is US-market-heavy and may return US roles despite countryCode2=CA. Sponsor
 For a custom query, review the first 15–20 results. For the default rotation, review up to eight results per query. Do not paginate beyond the first page. If one query is empty, continue; if all are empty, report that outcome.
 
 Deduplicate rotation results by company plus exact title before fetching descriptions and applying the eligibility gate.
+
+Deduplication happens after the per-query audit is captured. A posting appearing under several queries should have one scored row, but its Dice ID or URL must remain listed under every query where it appeared. This makes independent runs comparable without duplicating the final results.
 
 ## Source of truth
 
@@ -76,6 +95,16 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 Before responding, write this run's data to `reports/data/dice.json` per `reports/report_schema.md` — run date, queries completed, search boundary, unique results reviewed, eligible/ineligible/inaccessible totals, employer recoveries, pipeline matches, every scored eligible posting, every ineligible posting and reason, canonical links — then run `python3 reports/build_report.py dice` to regenerate `reports/dice-job-search.html`. Never hand-author the HTML directly.
 
 Refresh the data file on every invocation, including runs with no eligible results.
+
+Include a query audit in `notes_sections` and summarize it in `method`. For each default query, record:
+
+- exact query text
+- rendered result count
+- number reviewed within the boundary
+- reviewed Dice job IDs or canonical URLs (or `none`)
+- completion state: `Complete`, `Zero results`, or `Incomplete - <reason>`
+
+The stats must distinguish `queries attempted` from `queries completed`. Set `queries completed` to six only when all six audit entries are `Complete` or `Zero results`. Before writing `latest_update`, the response, or the method text, count the audit entries and reconcile their totals with the deduplicated eligible, ineligible, and could-not-validate collections. Do not claim full completion when the audit is missing, contains fewer than six entries, or contains an `Incomplete` entry.
 
 Return two sections.
 

@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RemoteOK job search — 2026-09-21</title>
+<title>Braintrust job search — 2026-09-21</title>
 <style>
 :root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
@@ -22,17 +22,15 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 </head>
 <body><main>
 <header>
-  <div class="eyebrow">RemoteOK - read-only API search</div>
+  <div class="eyebrow">Braintrust - read-only marketplace search</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
-  <p class="lede">Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical fit only.</p>
-  <p class="latest">Rechecked September 21, 2026 - no eligible target-family role found.</p>
+  <p class="lede">Current Engineering and IT marketplace roles gated for Canadian eligibility. Scores measure technical fit only.</p>
+  <p class="latest">Updated September 21, 2026 - one eligible developer-productivity contract found.</p>
   <div class="stats">
-    <div class="stat"><b>99</b><span>API jobs</span></div>
-    <div class="stat"><b>5</b><span>keyword-plausible</span></div>
-    <div class="stat"><b>0</b><span>eligible</span></div>
-    <div class="stat"><b>0</b><span>unclear</span></div>
+    <div class="stat"><b>6</b><span>search passes</span></div>
+    <div class="stat"><b>18</b><span>first-page roles reviewed</span></div>
+    <div class="stat"><b>1</b><span>eligible</span></div>
     <div class="stat"><b>1</b><span>ineligible target role</span></div>
-    <div class="stat"><b>0</b><span>inaccessible</span></div>
     <div class="stat"><b>0</b><span>pipeline matches</span></div>
   </div>
 </header>
@@ -50,15 +48,14 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://remoteok.com/remote-jobs/remote-engineering-manager-tlm-platform-harper-1137380">Engineering Manager/TLM, Platform — Harper</a></td><td class="reason">Requires relocation to San Francisco and five days per week in office.</td></tr></tbody></table></section>
-<aside class="notes"><h2>Scope exclusions</h2><ul><li>Four other keyword hits were application-development roles whose descriptions merely mentioned infrastructure, DevOps or platform concepts; they were not target-family jobs.</li>
-<li>No eligible or unresolved Canadian target-family posting appeared in the latest 99-job API inventory.</li></ul><h2>Search limitations</h2><ul><li>The API is a latest-inventory feed rather than a dedicated semantic search. The latest 100-object boundary was reviewed by title, tags and full description.</li>
-<li>No CAPTCHA, authentication or write-side action occurred.</li></ul></aside>
-<p class="method">The RemoteOK public API was fetched once. Its metadata object was discarded, the latest 99 jobs were screened, and plausible matches were gated using both location and description text.</p>
+<section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://app.usebraintrust.com/jobs/17743">DevOps Cloud Engineer (Remote - USA) — United States Cold Storage</a></td><td class="reason">United States only; Canada excluded.</td></tr></tbody></table></section>
+<aside class="notes"><h2>Search notes</h2><ul><li>The DevOps, SRE, Cloud Engineering and DevSecOps skill-chip searches returned no jobs. The unfiltered Engineering/IT page was title-skimmed for Platform and Forward Deployed matches.</li>
+<li>TaskRabbit was posted seven days ago, remains marked Accepting Applications, and is a 40-hour/week long-term freelance engagement.</li></ul></aside>
+<p class="method">Six default title families were checked. Location was gated from Braintrust's card and detail-page fields before scoring.</p>
 
 </main>
 <script>
-const jobs = [];
+const jobs = [{"score": 6, "family": "Platform", "title": "Sr Software Engineer - Developer Productivity", "company": "TaskRabbit", "location": "United States | Canada + 2 more; full PST overlap", "salary": "$60-70 USD/hour", "gap": "Strong TypeScript/Node.js plus Kubernetes-at-scale depth is required; Marc's strongest match is CI/CD, ArgoCD, platform enablement and automation.", "url": "https://app.usebraintrust.com/jobs/17859/", "status": "Current - accepting applications Sep 21"}];
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){

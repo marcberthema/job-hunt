@@ -1,13 +1,13 @@
 {
   "board": "BuiltIn",
-  "run_date": "2026-09-18",
+  "run_date": "2026-09-21",
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Scores measure technical and domain fit; logistics and compensation are separate.",
   "latest_update": "Latest update: September 18, 2026 — full role-family and eligible-city rerun completed.",
   "stats": [
     {
-      "value": 45,
+      "value": 49,
       "label": "search passes"
     },
     {
@@ -153,7 +153,7 @@
       "salary": "CAD $120,000–$170,000 + bonus",
       "gap": "No stated experience deploying into defence or classified networks",
       "url": "https://builtin.com/job/forward-deployed-engineer/9252600",
-      "status": "Already applied"
+      "status": "Expired - Built In says removed Sep 15, 2026"
     },
     {
       "score": 7,
@@ -396,6 +396,17 @@
       "gap": "Requires 5+ years AWS at roughly 5,000 instances and 3+ years Kubernetes at massive scale",
       "url": "https://builtin.com/job/senior-site-reliability-engineer-ii-infrastructure-ai-native/9749664",
       "status": "Expired July 15"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Forward Deployed Engineer - Migration",
+      "company": "gaiia",
+      "location": "Remote Canada; occasional US travel",
+      "salary": "Not stated",
+      "gap": "Requires strong TypeScript/Node.js plus formal ETL migration ownership; Marc's closest evidence is SQL/data integration and learning poorly documented systems cold.",
+      "url": "https://builtin.com/job/forward-deployed-engineer-migration/10535531",
+      "status": "Current - checked Sep 21"
     }
   ]
 }

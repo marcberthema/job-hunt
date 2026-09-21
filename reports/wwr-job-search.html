@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RemoteOK job search — 2026-09-21</title>
+<title>We Work Remotely job search — 2026-09-21</title>
 <style>
 :root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
@@ -22,18 +22,16 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 </head>
 <body><main>
 <header>
-  <div class="eyebrow">RemoteOK - read-only API search</div>
+  <div class="eyebrow">We Work Remotely - read-only browser search</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
-  <p class="lede">Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical fit only.</p>
-  <p class="latest">Rechecked September 21, 2026 - no eligible target-family role found.</p>
+  <p class="lede">Current WWR target-family listings checked against their actual detail-page regions. Scores measure technical fit only.</p>
+  <p class="latest">Updated September 21, 2026 - one eligible role, already applied.</p>
   <div class="stats">
-    <div class="stat"><b>99</b><span>API jobs</span></div>
-    <div class="stat"><b>5</b><span>keyword-plausible</span></div>
-    <div class="stat"><b>0</b><span>eligible</span></div>
-    <div class="stat"><b>0</b><span>unclear</span></div>
-    <div class="stat"><b>1</b><span>ineligible target role</span></div>
-    <div class="stat"><b>0</b><span>inaccessible</span></div>
-    <div class="stat"><b>0</b><span>pipeline matches</span></div>
+    <div class="stat"><b>6</b><span>queries</span></div>
+    <div class="stat"><b>9</b><span>results reviewed</span></div>
+    <div class="stat"><b>1</b><span>eligible</span></div>
+    <div class="stat"><b>2</b><span>ineligible</span></div>
+    <div class="stat"><b>1</b><span>pipeline match</span></div>
   </div>
 </header>
 <section>
@@ -50,15 +48,15 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://remoteok.com/remote-jobs/remote-engineering-manager-tlm-platform-harper-1137380">Engineering Manager/TLM, Platform — Harper</a></td><td class="reason">Requires relocation to San Francisco and five days per week in office.</td></tr></tbody></table></section>
-<aside class="notes"><h2>Scope exclusions</h2><ul><li>Four other keyword hits were application-development roles whose descriptions merely mentioned infrastructure, DevOps or platform concepts; they were not target-family jobs.</li>
-<li>No eligible or unresolved Canadian target-family posting appeared in the latest 99-job API inventory.</li></ul><h2>Search limitations</h2><ul><li>The API is a latest-inventory feed rather than a dedicated semantic search. The latest 100-object boundary was reviewed by title, tags and full description.</li>
-<li>No CAPTCHA, authentication or write-side action occurred.</li></ul></aside>
-<p class="method">The RemoteOK public API was fetched once. Its metadata object was discarded, the latest 99 jobs were screened, and plausible matches were gated using both location and description text.</p>
+<section class="panel"><h2>Ineligible — not scored</h2><table><thead><tr><th>Role — Company</th><th>Reason</th></tr></thead><tbody><tr><td><a href="https://weworkremotely.com/remote-jobs/proxify-ab-senior-devops-engineer-azure-8">Senior DevOps Engineer (Azure) — Proxify AB</a></td><td class="reason">Requires CET timezone +/-3 hours; Eastern Time is outside that range.</td></tr>
+<tr><td><a href="https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer">Professional Services DevOps Engineer — JFrog</a></td><td class="reason">Detail/listing location is Remote US rather than Canada.</td></tr></tbody></table></section>
+<aside class="notes"><h2>Validation notes</h2><ul><li>JFrog is current, posted 13 days ago, and lists an October 8, 2026 apply-by date.</li>
+<li>The generic Anywhere in the World badge was not used as eligibility evidence; each retained candidate's specific location or body restriction was checked.</li></ul></aside>
+<p class="method">Six bare-title searches were run in a real browser. Visible results were title-skimmed and deduplicated; plausible candidates were validated on their own posting pages.</p>
 
 </main>
 <script>
-const jobs = [];
+const jobs = [{"score": 8, "family": "DevOps", "title": "Senior Professional Services DevOps Engineer", "company": "JFrog", "location": "Remote Canada; East Coast", "salary": "CAD $130,000-150,000/year plus bonus/equity", "gap": "Formal customer-facing professional-services depth is less explicit than the exceptionally strong JFrog, CI/CD, artifact, enablement and regulated-enterprise match.", "url": "https://weworkremotely.com/remote-jobs/jfrog-senior-professional-services-devops-engineer", "status": "Applied - Sep 15"}];
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 function render(){
