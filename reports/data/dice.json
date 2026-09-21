@@ -1,128 +1,42 @@
 {
   "board": "Dice",
-  "run_date": "2026-09-19",
+  "run_date": "2026-09-21",
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Rechecked September 19, 2026.",
+  "latest_update": "Corrected September 21, 2026 (browser re-run) — supersedes an earlier same-day WebFetch-based pass that mixed real search results with \"Similar Jobs\" sidebar suggestions.",
   "stats": [
-    {
-      "value": 6,
-      "label": "queries"
-    },
-    {
-      "value": 32,
-      "label": "unique reviewed"
-    },
-    {
-      "value": 7,
-      "label": "eligible, scored"
-    },
-    {
-      "value": 1,
-      "label": "pipeline match"
-    },
-    {
-      "value": 1,
-      "label": "hard-gated"
-    },
-    {
-      "value": 1,
-      "label": "ineligible (on-site)"
-    },
-    {
-      "value": 22,
-      "label": "scope-excluded"
-    }
+    {"value": 6, "label": "queries"},
+    {"value": 20, "label": "unique real search results"},
+    {"value": 1, "label": "new eligible, scored"},
+    {"value": 4, "label": "known pipeline postings shown"},
+    {"value": 0, "label": "ineligible in actual results"},
+    {"value": 4, "label": "out of scope, scored 0, reviewed in full"},
+    {"value": 11, "label": "screened out by title"}
   ],
-  "ineligible": [
-    {
-      "title": "Forward Deployed Engineer",
-      "company": "Kforce Technology Staffing",
-      "reason": "On-site in Armonk, NY with no remote option stated (contradicts the workplaceTypes=Remote search filter); also an LLM/RAG/prompt-engineering AI-application role, not infrastructure/DevOps.",
-      "url": "https://www.dice.com/job-detail/8a5018c6-c4a1-4af2-bc46-0990851dfd50"
-    }
-  ],
+  "ineligible": [],
   "rows": [
     {
       "score": 7,
-      "family": "SRE",
-      "title": "DevOps Engineer (content reads as SRE)",
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer (listed as \"DevOps Engineer\")",
       "company": "TechniPros, LLC",
-      "location": "Remote in Kansas City, KS, US area — on-site \"depends on experience\"",
-      "salary": "Not stated; Contract W-2, 12+ months",
-      "gap": "None material — strong direct overlap (Kubernetes, Terraform, AWS/Azure, Docker, Prometheus, Grafana, GitHub Actions, incident response/runbooks). Flag: \"Able to Sponsor\", W-2 only, explicitly \"No C2C\" — TN-sponsorship path, confirm remote-from-Canada support with recruiter before pursuing.",
-      "url": "https://www.dice.com/job-detail/3d6389da-5200-4f80-942b-403485234765"
+      "location": "Remote in Washington DC / Silver Spring MD / Philadelphia PA / Wilmington DE / Fairfax VA rotation — on-site \"Depends on Experience\"",
+      "salary": "Not stated; Contract W-2, 12 months, explicitly No C2C",
+      "gap": "Very strong direct overlap: Azure, Terraform, Kubernetes, Docker, Jenkins, Ansible, Git, Linux, Python required; ArgoCD, GitHub Actions, Prometheus, Grafana preferred. AWS listed alongside Azure (venue, not hard-gate) — no penalty. No material skill gap; closest thing is \"mentor junior DevOps engineers,\" light people-leadership Marc can speak to via the 12-team enablement story. Flag: \"Able to Sponsor\", W-2 only, No C2C — TN-sponsorship path, confirm remote-from-Canada support. Flag: same employer and same \"remote-with-on-site-depends-on-experience\" rotation pattern as two other TechniPros postings Marc already skipped 2026-09-19 for the on-site requirement — worth the identical call unless the recruiter confirms fully remote.",
+      "url": "https://www.dice.com/job-detail/715868bc-acd6-4537-8112-21f758a120e1",
+      "status": "New"
     },
     {
       "score": 6,
       "family": "DevOps",
-      "title": "DevOps Engineer",
+      "title": "DevSecOps Engineer (listed as \"DevOps Engineer\")",
       "company": "TechniPros, LLC",
-      "location": "Remote (Columbus OH / Chicago IL / Minneapolis MN / Detroit MI / Madison WI rotation) — on-site \"depends on experience\"",
-      "salary": "Not stated; Contract W-2, 12 months",
-      "gap": "Security-scanning tooling (SonarQube, Snyk, Prisma Cloud, Checkmarx) is new but adjacent to existing CI/CD and observability work. Flag: \"Able to Sponsor\", W-2 only, explicitly \"No C2C\" — TN-sponsorship path, confirm remote-from-Canada support.",
-      "url": "https://www.dice.com/job-detail/a0acae92-9fd1-4865-a46f-dcf4f46f1a41"
-    },
-    {
-      "score": 5,
-      "family": "DevOps",
-      "title": "Salesforce DevOps Architect",
-      "company": "Shiro Technologies",
-      "location": "Remote, occasional travel",
-      "salary": "Depends on Experience; Full Time",
-      "gap": "Requires hands-on Flosum, Copado, or Gearset (Marc's real Salesforce delivery work at Énergir used native Salesforce CLI plus a custom validation pipeline, not these commercial release-management tools) and some Apex/LWC/Health Cloud/Experience Cloud development depth Marc doesn't have. Posting also references IL4/IL5 federal compliance environments as a plus — confirm how hard that requirement actually is. Flag: \"Able to Sponsor\" on an FTE role — confirm authorization path.",
-      "url": "https://www.dice.com/job-detail/f094cb31-ef6c-46e4-b51c-b2231c0c435c"
-    },
-    {
-      "score": 5,
-      "family": "SRE",
-      "title": "Staff Site Reliability Engineer",
-      "company": "Ping Identity",
-      "location": "Remote (fully distributed)",
-      "salary": "$136,000–$181,000 USD/year; Full Time",
-      "gap": "Requires Go programming proficiency, which Marc doesn't have. Flag: USD-denominated salary and no sponsorship language anywhere in the posting — likely a US-only role; confirm Canada/remote-international eligibility with the recruiter before pursuing.",
-      "url": "https://www.dice.com/job-detail/26f9de27-a424-413c-ae9a-07fb1e4f4b81"
-    },
-    {
-      "score": 5,
-      "family": "Platform",
-      "title": "Migration Solution Architect – Azure",
-      "company": "Turing IT Labs",
-      "location": "Remote, no travel",
-      "salary": "$170,000–$220,000/year; Full Time",
-      "gap": "Requires 8–12+ years specifically in a Solution Architect title/scope; Marc's architecture-adjacent work is real but not formally titled at this tenure (profile deliberately avoids leading with \"Architect\" framing for this reason). Strong Azure/AWS/Terraform/DevSecOps overlap otherwise. Flag: no sponsorship/clearance language stated — confirm Canada eligibility before pursuing given the high US-typical salary band.",
-      "url": "https://www.dice.com/job-detail/d65bb710-2e7d-4e78-9b12-40725da96e7a"
-    },
-    {
-      "score": 4,
-      "family": "Platform",
-      "title": "RH OpenShift Container Platform 4 – Platform Deployment Senior Consultant",
-      "company": "Job.com, LLC",
-      "location": "Remote, no travel",
-      "salary": "Depends on Experience; Contract W-2, 4 months",
-      "gap": "Requires 4+ years of hands-on Red Hat OpenShift Container Platform 4.x administration specifically (IPI/UPI cluster installs, OVN-Kubernetes, RBAC/SCC) — Marc's Kubernetes/ArgoCD work at Desjardins is real but not OpenShift-specific. Flag: no sponsorship/authorization language stated — confirm Canada eligibility.",
-      "url": "https://www.dice.com/job-detail/99e22c95-f644-4618-bf85-6d135c1ad02e"
-    },
-    {
-      "score": 4,
-      "family": "Platform",
-      "title": "Senior DevOps / Data Platform Engineer",
-      "company": "GlobalLogic Inc.",
-      "location": "Remote",
-      "salary": "~$120,000–$130,000/year equivalent; Contract (C2C or W-2), 12 months",
-      "gap": "Real AWS/Terraform/CI-CD overlap, but the role's actual center of gravity is data-platform engineering (Snowflake, Parquet/S3 data lake patterns, Fivetran CDC, database replication) rather than core infrastructure DevOps — the profile's scope rule excludes data-engineering-centered roles even when infra keywords are present. A different GlobalLogic posting was rejected 2026-07-07 (score 4, multi-cloud lead scope gap) — same employer, consistent pattern.",
-      "url": "https://www.dice.com/job-detail/93ff84f7-42cd-4c47-a43c-714d3842643b"
-    },
-    {
-      "score": 3,
-      "family": "Platform",
-      "title": "AWS Cloud Migration Architect",
-      "company": "Quantiphi Inc.",
-      "location": "Remote (Canada/USA) — explicitly Canada-eligible",
-      "salary": "Not stated; Full Time",
-      "gap": "Hard-gated: AWS migration-architecture ownership at scale is literally the deliverable (Migration Hub, MGN, Landing Zone, Control Tower, 10+ years) — this exceeds what the ~6-month, non-production, by-hand Tink AWS build supports per the profile's AWS/GCP hard-gate rule. Capped regardless of the genuinely Canada-open arrangement.",
-      "url": "https://www.dice.com/job-detail/722f0276-32dd-45d2-ac94-bf49a7e93f2a"
+      "location": "Remote or Dallas/Austin/Houston/San Antonio, TX — on-site \"Depends on Experience\"",
+      "salary": "Not stated; Contract W-2, 12+ months, explicitly No C2C",
+      "gap": "Strong CI/CD and IaC overlap (Jenkins, GitHub Actions, Terraform, Docker, Kubernetes), but the role centers on dedicated security-scanning tooling (Trivy, Snyk, GitHub Advanced Security, SonarQube, HashiCorp Vault) Marc hasn't named hands-on depth with. Flag: \"Able to Sponsor\", W-2, No C2C — TN-sponsorship path. Flag: same on-site-rotation pattern as two TechniPros postings Marc skipped 2026-09-19 for that reason, and as the sibling posting above.",
+      "url": "https://www.dice.com/job-detail/06ab958a-d350-444e-a112-14b5a57bb829",
+      "status": "New (surfaced 2026-09-21; not yet in applications.md)"
     },
     {
       "score": 5,
@@ -131,26 +45,103 @@
       "company": "Quantum Technologies LLC",
       "location": "Remote — US authorization list (USC/GC/H-1B/OPT-EAD), no Canada/TN mention",
       "salary": "$80–90/hour",
-      "gap": "OpenShift/certificate/ServiceNow overlap is real but the role reads as app-support/platform-ops hybrid (ongoing Java/.NET maintenance), not pure platform engineering; W-2 only, Canada/TN eligibility unconfirmed.",
+      "gap": "OpenShift/certificate/ServiceNow overlap is real but the role reads as app-support/platform-ops hybrid, not pure platform engineering; W-2 only, Canada/TN eligibility unconfirmed.",
       "url": "https://www.dice.com/job-detail/d57b98ba-d63f-40f4-add5-1e9c3dafe833",
-      "status": "New — already in applications.md (found 2026-09-18), not refiled"
+      "status": "Applied — 2026-09-19"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "Salesforce DevOps Architect",
+      "company": "Shiro Technologies",
+      "location": "Remote, occasional travel",
+      "salary": "Depends on Experience; Full Time",
+      "gap": "Requires hands-on Flosum, Copado, or Gearset plus Apex/LWC/Health Cloud development depth Marc doesn't have; possible IL4/IL5 federal compliance requirement.",
+      "url": "https://www.dice.com/job-detail/f094cb31-ef6c-46e4-b51c-b2231c0c435c",
+      "status": "Skipped — 2026-09-19 (wrong Salesforce discipline, likely clearance requirement)"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior DevOps / Data Platform Engineer",
+      "company": "GlobalLogic Inc.",
+      "location": "Remote",
+      "salary": "~$120,000–$130,000/year equivalent; Contract (C2C or W-2), 12 months",
+      "gap": "Real AWS/Terraform/CI-CD overlap, but the role's center of gravity is data-platform engineering (Snowflake, CDC), not core infrastructure DevOps.",
+      "url": "https://www.dice.com/job-detail/93ff84f7-42cd-4c47-a43c-714d3842643b",
+      "status": "Skipped — 2026-09-19 (insufficient Snowflake depth)"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Cloud Security-Remote",
+      "company": "ISite Technologies Inc",
+      "location": "Remote",
+      "salary": "Depends on Experience; Contract W-2/C2C/Independent, 12 months",
+      "gap": "Cloud security engineering specialist role — IAM, network security, encryption, CSPM, Zero Trust, vulnerability management on Azure/GCP. Not a DevOps/Platform/SRE role; Marc has no claimed IAM/CSPM/Zero-Trust depth. Reviewed in full, not screened by title alone.",
+      "url": "https://www.dice.com/job-detail/1ad63edd-482e-421a-9b1b-c0c5f938a171",
+      "status": "Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "AI Platform Engineer",
+      "company": "IT Trailblazers, LLC",
+      "location": "Remote",
+      "salary": "Not stated; Contract Independent/C2C/W-2, 12 months",
+      "gap": "8+ years leading distributed real-time systems (Kafka/Spark/Flink/PySpark) to build production agentic-AI/LLM platforms. ML-infrastructure architecture ownership, not general DevOps/platform engineering — outside Marc's demonstrated scope. Reviewed in full, not screened by title alone.",
+      "url": "https://www.dice.com/job-detail/5bc8d240-435f-4161-b959-1552a18bab31",
+      "status": "Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Forward-Deployed Engineer W/ Generative AI Exp",
+      "company": "Key Business Solutions, Inc.",
+      "location": "Remote",
+      "salary": "Depends on Experience; Contract C2C/W-2/Independent, 6 months",
+      "gap": "Prompt engineering, RAG pipelines, LangGraph/Claude Agent SDK, vector DBs for an accounting-firm client (Cohn Reznick). Application-layer AI engineering, not infrastructure/DevOps. Reviewed in full, not screened by title alone.",
+      "url": "https://www.dice.com/job-detail/b64fdd50-d372-40f7-b09e-fb32dadc6622",
+      "status": "Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Google Cloud Architect — GCP & AI Services",
+      "company": "Quantum Technologies LLC",
+      "location": "Remote",
+      "salary": "$60–70/hr, C2C",
+      "gap": "GCP-primary cloud-transformation architecture ownership at scale is the explicit deliverable — hits the profile's hard AWS/GCP gate outright. Rate is also below target regardless. Reviewed in full, not screened by title alone.",
+      "url": "https://www.dice.com/job-detail/80d0c919-ad39-4d11-acf2-5f9bf3404018",
+      "status": "Out of scope"
     }
   ],
   "notes_sections": [
     {
-      "heading": "Scope exclusions — not opened for full validation",
+      "heading": "Methodology correction — this run replaces an earlier same-day pass",
       "items": [
-        "22 of the 32 unique postings reviewed were screened out by title alone as off-topic for the SRE/Platform/DevOps family, per the skill's skim-before-fetch guidance: 2× Business Analyst, 2× Quality Assurance Engineer, 5× Salesforce Developer/Architect/Tech Lead (non-DevOps app-dev flavor), 3× Oracle Cloud/EPM/Fusion functional consultant, 1× SAP Commerce Solutions Architect, 1× Cloud Security analyst role, 1× Senior Google Cloud Architect (GCP-primary — would hit the GCP hard gate on sight), and 5× AI/Generative-AI-flavored roles (Senior AI Agent Platform Engineer, AI Platform Engineer, Principal Generative AI Engineer, and two more Forward Deployed Engineer postings centered on LLM/RAG/agentic-AI work rather than infrastructure)."
+        "An earlier 2026-09-21 run used WebFetch (anonymous HTML fetch + summarization) against Dice's search URLs and reported 22 \"unique\" postings including 5 that turned out to be wrong: Kforce Technology Staffing's Forward Deployed Engineer (Armonk, NY), High Bridge Consulting's Senior AI FDE, Cencora's FDE, a Kanshe Infotech Salesforce Financial Services Cloud Architect, and TechniPros' Principal Generative AI Engineer.",
+        "This browser-based re-run, done logged in as Marc's actual Dice account, confirms those 5 were never real search-result hits — they were entries from the \"Similar Jobs\" sidebar shown on a job-detail page, which WebFetch's markdown conversion flattened into the same list as genuine search results. Dice's own on-page result counters (e.g. \"1 results (0 new)\" for Forward Deployed Engineer) confirm the true, much smaller result sets used here.",
+        "Real per-query result counts this run: DevOps Engineer 4, Platform Engineer 10 (11 raw links; Dice's own count says 10, likely a dedupe on their side), Site Reliability Engineer 0, Cloud Engineer 5, DevSecOps Engineer 3, Forward Deployed Engineer 1 — 20 unique postings total after cross-query dedupe by job ID.",
+        "Net effect: the earlier run's \"ineligible\" entry (Kforce) is retracted — it was never actually returned by this rotation's queries, so it isn't scored or listed as ineligible here. If Marc wants it checked anyway (it may still be a live posting reachable by direct search), that would need a standalone lookup, not this rotation."
+      ]
+    },
+    {
+      "heading": "Scope exclusions — screened out by title, not opened for full validation",
+      "items": [
+        "11 of the remaining 16 real unique postings were off-domain by title: 4× Salesforce (Tech Lead, 3× Developer), 2× Oracle Cloud (Order to Cash / Fusion Functional Consultant), 1× SAP Commerce Solutions Architect, and 4× further AI/Generative-AI-flavored roles (AI/ML Engineer, Gen AI Engineer, Agentic AI Engineer, Senior AI Agent Platform Engineer) consistent with the pattern confirmed above."
       ]
     },
     {
       "heading": "Run notes",
       "items": [
-        "All six default titles were searched (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer); up to 8 results reviewed per query, deduplicated to 32 unique postings by Dice job GUID.",
-        "Direct HTTP retrieval worked cleanly for both search results and individual job-detail pages this run — no browser fallback needed.",
-        "\"Able to Sponsor\" appears on several postings without naming TN specifically — flagged per-posting for recruiter confirmation rather than assumed eligible, per the skill's TN-sponsorship-path rule. Several roles carry no sponsorship/authorization language at all rather than an explicit unsponsored-authorization-required statement, so per the eligibility gate's ordering they were scored with a confirm-authorization flag rather than excluded outright.",
-        "No CAPTCHA, verification prompt, or write-side action occurred."
+        "All six default titles searched via Claude in Chrome against dice.com, logged in as Marc's own account (not anonymous) — this matches how a human would actually use the site and is the more trustworthy method for this JS-heavy search UI going forward. Prefer this over WebFetch for Dice in future runs.",
+        "One genuinely new posting this run: TechniPros \"Senior DevOps Engineer\" (job-detail/715868bc), posted 14 minutes before this check — strong direct skill match, scored 7, but same employer/on-site-rotation pattern Marc has skipped twice before (2026-09-19) for the on-site condition.",
+        "TechniPros' DevSecOps Engineer posting (job-detail/06ab958a) is still live and unchanged from 2026-09-19's scoring; it has not yet been added to applications.md.",
+        "Quantum Technologies, Shiro Technologies, and GlobalLogic postings are carried forward from 2026-09-19 with pipeline status pulled directly from applications.md — not re-scored.",
+        "No CAPTCHA or write-side action occurred."
       ]
     }
-  ]
+  ],
+  "method": "Six-query default rotation against Dice's remote + willing-to-sponsor + Canada country-code filter, past 7 days, full-time or contract, run via logged-in browser session (Claude in Chrome) rather than anonymous WebFetch after WebFetch was found to conflate real search results with job-detail \"Similar Jobs\" sidebar suggestions. 20 unique real search results after dedup; 1 new eligible posting scored, 1 known-but-unfiled posting carried forward, 3 known pipeline postings carried forward with current applications.md status, 4 opened and read in full then scored 0 / \"Out of scope\" (cloud-security-specialist, ML/AI-infrastructure, application-layer-AI, and GCP-hard-gate roles), 11 screened out by title alone as off-domain (Salesforce, Oracle, SAP, further AI/GenAI-flavored)."
 }
