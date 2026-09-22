@@ -1,16 +1,16 @@
 {
   "board": "Braintrust",
-  "run_date": "2026-09-21",
+  "run_date": "2026-09-22",
   "eyebrow": "Braintrust · contractor marketplace, read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Skill-chip search on the four confirmed IDs, plus a title-skim of the unfiltered Engineering feed for Platform Engineer / Forward Deployed Engineer (no confirmed chip exists for either). Scores measure technical and domain fit only.",
-  "latest_update": "Re-run September 21, 2026 — identical outcome to the 2026-09-19 run: all four confirmed skill-chip searches return zero results, and the same TaskRabbit posting (now Applied) and the same US-only ineligible posting remain the only two topically relevant listings on the unfiltered feed.",
+  "latest_update": "Re-run September 22, 2026 — identical outcome to the 2026-09-19 and 2026-09-21 runs: all four confirmed skill-chip searches return zero results, and the same TaskRabbit posting (Applied) and the same US-only ineligible posting remain the only two topically relevant listings on the unfiltered feed.",
   "stats": [
     {"value": 6, "label": "keywords attempted"},
     {"value": 4, "label": "returned zero results"},
     {"value": 1, "label": "eligible, scored"},
     {"value": 1, "label": "ineligible (US-only)"},
-    {"value": 1, "label": "pipeline matches"}
+    {"value": 2, "label": "pipeline matches"}
   ],
   "rows": [
     {
@@ -18,7 +18,7 @@
       "family": "Platform",
       "title": "Sr Software Engineer - Developer Productivity",
       "company": "TaskRabbit",
-      "location": "United States | Canada + 2 more — explicitly Canada-eligible",
+      "location": "United States | Canada | Mexico + 1 more — explicitly Canada-eligible",
       "salary": "$60–$70/hour",
       "gap": "Skill fit itself is strong (CI/CD, ArgoCD/GitOps, Kubernetes/Docker/Helm, developer-platform ownership, and explicit day-to-day use of Claude/AI-assisted workflows — directly supported by Marc's real AI-assisted-engineering practice at Énergir), but the $60–70/hr rate is well below the profile's $100/hr full-time-consulting-contract floor for this 40hrs/wk, long-term engagement — capped per the rate red flag rather than the skill gap.",
       "url": "https://app.usebraintrust.com/jobs/17859/",
@@ -30,29 +30,31 @@
       "title": "DevOps Cloud Engineer (Remote - USA)",
       "company": "United States Cold Storage",
       "location": "United States only",
-      "salary": "Not stated",
+      "salary": "$75–$85/hour",
       "gap": "Location metadata explicitly states United States only, so a Canada-based candidate is not eligible.",
       "url": "https://app.usebraintrust.com/jobs/?role=5,16",
-      "status": "Ineligible — US only"
+      "status": "Skipped — 2026-09-21 (Ineligible, US only)"
     }
   ],
   "notes_sections": [
     {
       "heading": "Keyword results",
       "items": [
-        "All four confirmed skill-chip IDs returned zero results this run, same as 2026-09-19: DevOps Engineer (1338), Site Reliability Engineer (8473), Cloud Engineer / Cloud Engineering (10001), DevSecOps Engineer (6831).",
+        "All four confirmed skill-chip IDs returned zero results this run, matching 2026-09-19 and 2026-09-21: DevOps Engineer (1338), Site Reliability Engineer (8473), Cloud Engineer / Cloud Engineering (10001), DevSecOps Engineer (6831).",
         "Platform Engineer and Forward Deployed Engineer still have no confirmed skill chip. Fell back to the unfiltered <code>role=5,16</code> listing (1,394 total openings, sorted by recency) and title-skimmed the first page (~20 postings).",
-        "The unfiltered feed's relevance density remains very low — dominated by unrelated freelance gigs (LATAM Salesforce/CMS/QA roles, CNC programming, iOS, LLM data annotation, AI benchmarking) rather than infrastructure/DevOps work. Only the same 2 postings from the prior run were topically adjacent: the TaskRabbit role (now Applied, carried forward from applications.md) and the same US-only DevOps Cloud Engineer posting (ineligible, pre-review location gate — not reopened)."
+        "The unfiltered feed's relevance density remains very low — dominated by unrelated freelance gigs (LATAM Salesforce/CMS/QA/AI-annotation roles, CNC programming, iOS, storage admin, network/corp-IT hybrid roles) rather than infrastructure/DevOps work. Only the same 2 postings from the prior two runs were topically adjacent: the TaskRabbit role (Applied — carried forward from applications.md, score 4, below current filing bar on rate) and the same US-only DevOps Cloud Engineer posting (Skipped/Ineligible, carried forward — not reopened)."
       ]
     },
     {
       "heading": "Run notes",
       "items": [
-        "Second run against this source; confirms the 2026-09-19 finding rather than surfacing anything new — Braintrust currently has very little SRE/Platform/DevOps-specific demand for the target titles.",
+        "Third consecutive run against this source with the same outcome — confirms 2026-09-19 and 2026-09-21 findings rather than surfacing anything new. Braintrust currently has almost no SRE/Platform/DevOps-specific demand for the target titles; worth deprioritizing this source's checking frequency relative to higher-yield boards until the skill-chip inventory turns over.",
         "Browser-driven throughout, per the skill's requirement (client-side rendered, direct HTTP returns an empty shell).",
-        "No CAPTCHA, verification prompt, or write-side action occurred; no account created or profile submitted.",
-        "Checked applications.md fresh this run: TaskRabbit (https://app.usebraintrust.com/jobs/17859/) is Applied — 2026-09-19. Status carried forward, not re-scored."
+        "No CAPTCHA, verification prompt, or write-side action occurred; no account created, no profile submitted, no sign-in.",
+        "Checked applications.md fresh this run: TaskRabbit (https://app.usebraintrust.com/jobs/17859/) is Applied — 2026-09-19; United States Cold Storage is Skipped — 2026-09-21 (Ineligible, US-only). Both statuses carried forward, neither re-scored nor re-filed.",
+        "Zero new eligible postings this run — nothing qualified for automatic filing under the shared automatic-filing policy (no row scores 5+ and is current/eligible/unfiled)."
       ]
     }
-  ]
+  ],
+  "method": "Ran all four confirmed skill-chip searches (DevOps Engineer 1338, Site Reliability Engineer 8473, Cloud Engineer/Cloud Engineering 10001, DevSecOps Engineer 6831) as separate navigations per the skill's no-AND-combining rule, plus the unfiltered role=5,16 Engineering+IT feed as the required fallback for Platform Engineer and Forward Deployed Engineer (no confirmed skill chip for either). All 6 mandatory queries complete — 4 zero-result, 2 (Platform/FDE fallback) reviewed via the same title-skim of the first ~20 unfiltered results. No blocking, CAPTCHA, or login wall encountered. Auto-filing: 0 new rows — the only 2 topically relevant postings already have applications.md rows (1 Applied, 1 Skipped/Ineligible), preserved as-is per policy."
 }
