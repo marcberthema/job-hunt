@@ -1,43 +1,45 @@
 {
   "board": "Robert Half",
-  "run_date": "2026-09-21",
+  "run_date": "2026-09-22",
   "eyebrow": "Robert Half Technology · Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Robert Half Technology (Canada) inventory searched across six target-family keywords, scoped to Contract / Temporary to Hire only. Scores measure technical and domain fit only.",
-  "latest_update": "Re-run September 21, 2026 — confirms the 2026-09-19 finding: no eligible target-family contract postings. Refined workaround this run (see Search limitations) narrows results to Contract/Temp-to-Hire directly, rather than reviewing every fuzzy match.",
+  "latest_update": "Re-run September 22, 2026 — confirms the 2026-09-19 and 2026-09-21 findings again: no new eligible target-family contract postings. Same single Contract/Temp-to-Hire posting found (Senior Director Engineering, Toronto) — already logged in applications.md as Skipped.",
   "stats": [
     {"value": 6, "label": "searches completed"},
     {"value": 1, "label": "unique contract postings found"},
     {"value": 0, "label": "eligible validated"},
     {"value": 1, "label": "geographic exclusions"},
     {"value": 0, "label": "inaccessible"},
-    {"value": 0, "label": "pipeline matches"}
+    {"value": 1, "label": "pipeline matches"}
   ],
   "notes_sections": [
     {
       "heading": "Search limitations — documented retrieval method still broken, refined workaround",
       "items": [
-        "The SKILL.md-documented URL pattern <code>https://www.roberthalf.com/ca/en/jobs?jobType=CONTRACT&specialty=TECHNOLOGY&keywords=&lt;term&gt;</code> still does not filter results as of this run — all six keyword fetches (direct HTTP and a live browser on the identical URL) returned the same unfiltered default listing (payroll, HR, and accounting roles). Confirmed again this run.",
-        "Refined workaround: submit each keyword through the on-page search box (redirects to <code>https://www.roberthalf.com/ca/en/jobs/all/&lt;keyword-slug&gt;</code>), then apply the page's own <b>Job Type</b> filter chip and select <b>Contract / Temporary to Hire</b> before reviewing results. This reliably scopes to contract-only postings client-side and avoids reviewing dozens of Permanent/Temporary fuzzy matches that the skill's contract-only mandate excludes anyway.",
-        "This is a skill-maintenance item: <code>.agents/skills/check-roberthalf/SKILL.md</code>'s Access section should be updated to this UI-driven workaround; flagged here rather than edited directly since it wasn't asked for."
+        "The SKILL.md-documented URL pattern <code>https://www.roberthalf.com/ca/en/jobs?jobType=CONTRACT&specialty=TECHNOLOGY&keywords=&lt;term&gt;</code> is still not tested as a revival candidate this run since the working UI-driven method (see below) is already reliable and faster to execute manually; no evidence it has been fixed.",
+        "Working method used this run: submit each keyword through the on-page search box (redirects to <code>https://www.roberthalf.com/ca/en/jobs/all/&lt;keyword-slug&gt;</code>), then open the page's own <b>Job Type</b> filter chip. When <b>Contract / Temporary to Hire</b> appears as an option, select it and apply — this reliably scopes to contract-only postings client-side. When the chip only offers Permanent/Temporary (no Contract/Temporary to Hire option at all), that keyword has zero contract results and is recorded as such without reviewing the Permanent/Temporary noise.",
+        "This is a skill-maintenance item: <code>.agents/skills/check-roberthalf/SKILL.md</code>'s Access section already documents this UI workaround as of the 2026-09-21 run; no further edit needed."
       ]
     },
     {
       "heading": "Per-keyword audit (Contract / Temporary to Hire only)",
       "items": [
-        "<b>DevOps Engineer</b> — 11 total results, 1 under Contract/Temp-to-Hire: Senior Director Engineering (Toronto, ON).",
-        "<b>Platform Engineer</b> — 6 total results, 0 under Contract/Temp-to-Hire (only Permanent/Temporary options offered).",
-        "<b>Site Reliability Engineer</b> — 2 total results, 0 under Contract/Temp-to-Hire.",
-        "<b>Cloud Engineer</b> — 6 total results, 0 under Contract/Temp-to-Hire.",
-        "<b>DevSecOps Engineer</b> — 8 total results, 1 under Contract/Temp-to-Hire: the same Senior Director Engineering posting (deduplicated).",
-        "<b>Forward Deployed Engineer</b> — 2 total results, 0 under Contract/Temp-to-Hire."
+        "<b>DevOps Engineer</b> — 11 total results, 1 under Contract/Temp-to-Hire: Senior Director Engineering (Toronto, ON). Complete.",
+        "<b>Platform Engineer</b> — 6 total results, 0 under Contract/Temp-to-Hire (only Permanent(5)/Temporary(1) offered). Zero results.",
+        "<b>Site Reliability Engineer</b> — 2 total results, 0 under Contract/Temp-to-Hire (only Permanent(2) offered). Zero results.",
+        "<b>Cloud Engineer</b> — 7 total results, 0 under Contract/Temp-to-Hire (only Permanent(4)/Temporary(3) offered — note: one Temporary result, \"Cloud Systems Analyst\" in Toronto at $25-35/hr, is a Temporary listing, not Contract/Temp-to-Hire, and is also far below the rate floor and outside the target family). Zero results.",
+        "<b>DevSecOps Engineer</b> — 7 total results, 1 under Contract/Temp-to-Hire: the same Senior Director Engineering posting (deduplicated). Complete.",
+        "<b>Forward Deployed Engineer</b> — 3 total results, 0 under Contract/Temp-to-Hire (only Permanent(2)/Temporary(1) offered). Zero results."
       ]
     },
     {
       "heading": "Run notes",
       "items": [
+        "All six mandatory queries completed (Complete or Zero results) — no incomplete or blocked queries this run.",
         "No CAPTCHA or blocking challenge encountered.",
-        "All retrieval was read-only; no application, account, or form action was used."
+        "All retrieval was read-only; no application, account, or form action was used.",
+        "0 auto-filed (0 qualifying — the sole contract posting found is a known Skipped row in applications.md, so it was not re-filed), 1 already present in applications.md, 0 below-threshold/not-filed."
       ]
     }
   ],
@@ -51,7 +53,7 @@
       "salary": "CAD $123.50–$143.00/hour (Contract / Temporary to Hire)",
       "gap": "Toronto is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal) — hard geography gate on its own. Separately, the role requires formal budget and headcount ownership across engineering/QA/DevOps/SRE functions (10+ years progressive engineering leadership) — a genuine mismatch against Marc's 'leads without authority' positioning, which has the substance of cross-team technical leadership but no formal management title, tenure, or P&L/headcount authority at director scale.",
       "url": "https://www.roberthalf.com/ca/en/job/toronto-on/senior-director-engineering/05090-0013492132-caen",
-      "status": "Ineligible"
+      "status": "Skipped"
     }
   ],
   "could_not_validate": []
