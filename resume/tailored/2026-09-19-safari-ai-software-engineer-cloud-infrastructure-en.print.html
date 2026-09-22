@@ -1,0 +1,76 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>2026-09-19-safari-ai-software-engineer-cloud-infrastructure-en.pdf</title><style>
+@page { size: Letter; margin: 0.6in 0.65in; }
+:root { --accent:#1a3c5e; --fg:#111; --muted:#444; --rule:#c9d4de; }
+* { box-sizing:border-box; }
+body { font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+       font-size:10pt; line-height:1.27; color:var(--fg); margin:0;
+       -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+h1 { font-size:22pt; font-weight:700; color:var(--accent); letter-spacing:-.01em; margin:0 0 2pt; }
+h2 { font-size:12.5pt; font-weight:700; color:var(--accent); margin:6pt 0 2.5pt;
+     padding-bottom:2pt; border-bottom:1px solid var(--rule); }
+h3 { font-size:10.5pt; font-weight:700; margin:6pt 0 0; page-break-after:avoid; }
+p  { margin:0 0 3pt; }
+.subtitle { font-size:11pt; font-weight:600; color:var(--muted); margin:0 0 4pt; }
+.contact { font-size:9.2pt; color:var(--muted); margin:0 0 2pt; }
+.contact a { color:var(--muted); text-decoration:none; }
+.meta { font-size:9.3pt; color:var(--muted); margin:0 0 2.5pt; }
+.meta em { color:var(--muted); }
+ul { margin:0 0 3pt; padding-left:12pt; }
+li { margin:0 0 1.1pt; page-break-inside:avoid; }
+.keytech { font-size:9pt; color:var(--muted); margin:1pt 0 0; }
+table { border-collapse:collapse; width:100%; margin:0 0 6pt; font-size:9.8pt; }
+td { vertical-align:top; padding:1.8pt 6pt 1.8pt 0; border-bottom:1px solid #eef2f5; }
+td:first-child { width:31%; font-weight:600; color:var(--fg); }
+hr { display:none; }
+.role { }
+h3 + .meta { page-break-after:avoid; }
+</style></head><body><h1>Marc Berthelette</h1>
+<p class="subtitle"><strong>Software Engineer · Cloud Infrastructure · AWS · Kubernetes</strong></p>
+<p class="contact">Smiths Falls, ON, Canada · Remote · marc.berthelette@gmail.com<br><a href="https://linkedin.com/in/marc-berthelette-3aba6917">linkedin.com/in/marc-berthelette-3aba6917</a> · Bilingual French and English · Incorporated in Canada · Available immediately</p>
+<h2>Professional Summary</h2>
+<p>Senior DevOps engineer with 18 years building and operating cloud infrastructure, including a from-scratch AWS build at Tink (EC2, S3, Route 53, VPC, self-managed memcached, serverless database) delivered with no prior AWS experience. Current Terraform, Kubernetes, and Python/FastAPI practice at Énergir and Desjardins, standardizing infrastructure and building internal services for real operational audiences. Comfortable operating with autonomy and shipping working infrastructure under a delivery deadline.</p>
+<h2>Technical Skills</h2>
+<table>
+<tr><td><strong>Cloud Infrastructure</strong></td><td>AWS (EC2, S3, Route 53, VPC — hands-on build, see Work Experience), Microsoft Azure</td></tr>
+<tr><td><strong>Containers &amp; Orchestration</strong></td><td>Kubernetes, Docker, ArgoCD</td></tr>
+<tr><td><strong>Infrastructure as Code</strong></td><td>Terraform, Ansible</td></tr>
+<tr><td><strong>Programming</strong></td><td>Python, FastAPI, Bash, Java</td></tr>
+<tr><td><strong>Observability</strong></td><td>Dynatrace, Splunk, ELK Stack</td></tr>
+<tr><td><strong>CI/CD</strong></td><td>GitHub Actions, Azure DevOps</td></tr>
+</table>
+<h2>Work Experience</h2>
+</div><div class="role"><h3>Énergir — Senior DevOps Engineer</h3>
+<p class="meta"><strong>Montréal, QC | September 2021 – Present</strong></p>
+<ul>
+<li>Led cloud modernization migrating several mission-critical services to Microsoft Azure, implementing Terraform and Ansible IaC practices that standardized environment provisioning and eliminated configuration drift across dev, staging, and production.</li>
+<li>Drove CI/CD and platform-engineering adoption across 12 application teams outside any reporting line, running recurring enablement sessions (~6/year) that turned delivered tooling into actual usage.</li>
+<li>Standardized CI/CD delivery across nine distinct runtimes for 12 application teams and 70+ applications, entering most ecosystems with no prior experience and reverse-engineering each before automating it.</li>
+</ul>
+<p class="keytech"><strong>Key technologies:</strong> Microsoft Azure, Terraform, Ansible, Azure DevOps, GitHub Actions, Python, IaC</p>
+</div><div class="role"><h3>Desjardins — Senior DevOps Engineer <em>(Contract)</em></h3>
+<p class="meta"><strong>Montréal, QC (Remote) | October 2025 – March 2026</strong> — <em>concurrent engagement alongside the Énergir role</em></p>
+<ul>
+<li>Automated provisioning of on-demand Artifactory environments using Kubernetes and ArgoCD, giving administrators repeatable, isolated environments for safely testing configuration changes and upgrades — internal developer tooling built for a real audience.</li>
+<li>Extended the engagement past its original scope by building the validation logic tool-agnostic and the test set configurable, so administrators could cover their own cases.</li>
+<li>Designed and built a Python/FastAPI service that tested the configuration of ~250 enterprise Artifactory repositories every 4 hours.</li>
+</ul>
+<p class="keytech"><strong>Key technologies:</strong> Kubernetes, ArgoCD, Python, FastAPI, GitHub Actions, Docker, Helm</p>
+</div><div class="role"><h3>Tink — DevOps Engineer</h3>
+<p class="meta"><strong>Montréal, QC | January 2018 – August 2021</strong></p>
+<ul>
+<li>Built the compute, caching, and database layers of a client's full AWS migration target environment — EC2, S3, Route 53, self-managed memcached on EC2, and a serverless relational database — and contributed to VPC/network and Route 53 design, with no prior AWS experience. Roughly 6 months of work; provisioned by hand in the AWS console, not through Terraform or CloudFormation; the client cancelled the migration before cutover.</li>
+<li>Centralized Jenkins Pipeline as Code across a team of 10–15 developers maintaining 80+ applications for 20+ clients.</li>
+<li>Conceived and built, unprompted, a software inventory platform cataloguing every application and version across a 600+ server fleet — surfacing CVE exposure, end-of-life software, and SSL/TLS certificate scoring to product owners who previously had no such visibility.</li>
+<li>Managed fleet configuration as code via Puppet and Spacewalk.</li>
+</ul>
+<p class="keytech"><strong>Key technologies:</strong> AWS (EC2, S3, Route 53, VPC), Jenkins, Puppet, Spacewalk, Bash</p>
+</div><div class="role"><h3>SOVO Technologies — Lead Technician to Software Engineer</h3>
+<p class="meta"><strong>Montréal, QC | November 2008 – December 2017</strong></p>
+<ul>
+<li>Owned company IT infrastructure, delivered a zero-downtime server relocation, and introduced redundancy that eliminated single points of failure.</li>
+<li>Wrote production software for approximately seven years before the title formalized it.</li>
+</ul>
+<p class="keytech"><strong>Key technologies:</strong> C++, Java, SQL, Windows Server, VMware vSphere, Active Directory</p>
+<h2>Education</h2>
+<p class="meta"><strong>Bachelor of Automated Manufacturing Engineering</strong> — École de Technologie Supérieure, Montréal, QC | 2005 – 2016</p>
+<p class="meta"><strong>DCS in Computer Science Technology</strong> — Cégep André-Laurendeau, Montréal, QC | 2002 – 2005</p></div></body></html>

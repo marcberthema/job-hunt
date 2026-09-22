@@ -1,0 +1,82 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><title>2026-09-21-safari-ai-software-engineer-cloud-infrastructure-en.pdf</title><style>
+@page { size: Letter; margin: 0.6in 0.65in; }
+:root { --accent:#1a3c5e; --fg:#111; --muted:#444; --rule:#c9d4de; }
+* { box-sizing:border-box; }
+body { font-family:"Inter","Helvetica Neue",Helvetica,Arial,sans-serif;
+       font-size:10pt; line-height:1.27; color:var(--fg); margin:0;
+       -webkit-print-color-adjust:exact; print-color-adjust:exact; }
+h1 { font-size:22pt; font-weight:700; color:var(--accent); letter-spacing:-.01em; margin:0 0 2pt; }
+h2 { font-size:12.5pt; font-weight:700; color:var(--accent); margin:6pt 0 2.5pt;
+     padding-bottom:2pt; border-bottom:1px solid var(--rule); }
+h3 { font-size:10.5pt; font-weight:700; margin:6pt 0 0; page-break-after:avoid; }
+p  { margin:0 0 3pt; }
+.subtitle { font-size:11pt; font-weight:600; color:var(--muted); margin:0 0 4pt; }
+.contact { font-size:9.2pt; color:var(--muted); margin:0 0 2pt; }
+.contact a { color:var(--muted); text-decoration:none; }
+.meta { font-size:9.3pt; color:var(--muted); margin:0 0 2.5pt; }
+.meta em { color:var(--muted); }
+ul { margin:0 0 3pt; padding-left:12pt; }
+li { margin:0 0 1.1pt; page-break-inside:avoid; }
+.keytech { font-size:9pt; color:var(--muted); margin:1pt 0 0; }
+table { border-collapse:collapse; width:100%; margin:0 0 6pt; font-size:9.8pt; }
+td { vertical-align:top; padding:1.8pt 6pt 1.8pt 0; border-bottom:1px solid #eef2f5; }
+td:first-child { width:31%; font-weight:600; color:var(--fg); }
+hr { display:none; }
+.role { }
+h3 + .meta { page-break-after:avoid; }
+</style></head><body><h1>Marc Berthelette</h1>
+<p class="subtitle"><strong>Software Engineer · Cloud Infrastructure · Python Platforms · Reliability</strong></p>
+<p class="contact">Smiths Falls, ON, Canada · Remote · marc.berthelette@gmail.com<br><a href="https://linkedin.com/in/marc-berthelette-3aba6917">linkedin.com/in/marc-berthelette-3aba6917</a> · Bilingual: French (native) · English (fluent) · Available immediately</p>
+<h2>Professional Summary</h2>
+<p>Software and cloud-infrastructure engineer with 18 years spanning production application development, internal platforms, DevOps, and reliability engineering. Built a Python/FastAPI validation service for 250 enterprise artifact repositories, wrote production software for roughly seven years, standardized CI/CD across 70+ applications, and automated Azure infrastructure with Terraform and Ansible. Takes ambiguous services from problem discovery through implementation and production operation, pairing software-engineering discipline with observability, incident response, documentation, and infrastructure ownership.</p>
+<h2>Core Expertise</h2>
+<table>
+<tr><td><strong>Software Engineering</strong></td><td>Python, FastAPI, C++, Java, Bash, SQL, NoSQL, API and service design, configurable validation systems</td></tr>
+<tr><td><strong>Cloud Infrastructure</strong></td><td>Microsoft Azure, AWS, Terraform, Ansible, Puppet, Linux, environment provisioning, security and reliability</td></tr>
+<tr><td><strong>Containers &amp; Delivery</strong></td><td>Kubernetes, Docker, ArgoCD, Azure DevOps, GitHub Actions, Jenkins, CI/CD, pipeline-as-code</td></tr>
+<tr><td><strong>Production Reliability</strong></td><td>Dynatrace, Splunk, ELK, incident response, RCA, automated remediation, monitoring and alerting</td></tr>
+<tr><td><strong>Engineering Enablement</strong></td><td>Internal platforms, developer tooling, documentation, technical evaluation, cross-team adoption</td></tr>
+</table>
+<h2>Work Experience</h2>
+</div><div class="role"><h3>Énergir — Senior DevOps Engineer</h3>
+<p class="meta"><strong>Montréal, QC | September 2021 – Present</strong></p>
+<ul>
+<li>Owned CI/CD standardization for 12 application teams and 70+ applications across nine distinct runtimes, replacing manual delivery with automated pipelines and quality gates.</li>
+<li>Led cloud modernization for 5–10 mission-critical services on Microsoft Azure and implemented Terraform and Ansible infrastructure automation across development, staging, and production.</li>
+<li>Rebuilt Salesforce delivery with the official CLI and designed a validation-sandbox merge gate, reducing a recurring missed-deployment problem to one miss since launch.</li>
+<li>Drove incident RCA and implemented monitoring, observability dashboards, and automated remediation to reduce MTTR.</li>
+<li>Improved pipeline usability by separating application-code errors from platform errors in reporting, making failures self-diagnosing for engineering teams.</li>
+<li>Evaluated and introduced AI-assisted engineering practices with hard scope gates and human-validation checkpoints before generated code can reach production.</li>
+</ul>
+<p class="keytech"><strong>Key technologies:</strong> Python, Java, Microsoft Azure, Terraform, Ansible, Azure DevOps, GitHub Actions, CloudFoundry, Databricks, Salesforce</p>
+</div><div class="role"><h3>Desjardins — Senior DevOps Engineer <em>(Contract)</em></h3>
+<p class="meta"><strong>Montréal, QC (Remote) | October 2025 – March 2026</strong> — <em>concurrent engagement, delivered alongside the Énergir role</em></p>
+<ul>
+<li>Designed and built a Python/FastAPI service that validated the configuration of roughly 250 enterprise JFrog repositories across seven package ecosystems every four hours and published results to Dynatrace.</li>
+<li>Made the validation engine tool-agnostic and its test set configurable, allowing administrators to extend it and turning the same service into the regression-safety net for the enterprise JFrog upgrade.</li>
+<li>Automated provisioning of on-demand Artifactory environments with Kubernetes and ArgoCD, providing self-service infrastructure for controlled testing.</li>
+<li>Implemented artifact-lifecycle policies and Splunk alerting for configuration changes made outside the CI/CD pipeline.</li>
+</ul>
+<p class="keytech"><strong>Key technologies:</strong> Python, FastAPI, Kubernetes, ArgoCD, GitHub Actions, JFrog Artifactory, Dynatrace, Splunk, Docker, Helm</p>
+</div><div class="role"><h3>Tink — DevOps Engineer</h3>
+<p class="meta"><strong>Montréal, QC | January 2018 – August 2021</strong></p>
+<ul>
+<li>Conceived and built an internal software-inventory platform cataloguing every installed application and version across 600+ servers, exposing CVE, end-of-life, and SSL/TLS risks to product owners.</li>
+<li>Centralized Jenkins Pipeline as Code for 10–15 developers maintaining 80+ applications for 20+ clients.</li>
+<li>Automated Linux operating-system patching and kernel-update reboots across the fleet and managed configuration declaratively through Puppet and Spacewalk.</li>
+<li>Built ELK observability and a self-healing response for a recurring Elasticsearch failure, eliminating a class of manual on-call intervention.</li>
+<li>Built the compute, caching, database, DNS, and network layers of an AWS migration target; the client cancelled before production cutover.</li>
+</ul>
+<p class="keytech"><strong>Key technologies:</strong> Python, Bash, Linux, Jenkins, Puppet, Spacewalk, ELK Stack, AWS (EC2, S3, Route 53, VPC), VMware</p>
+</div><div class="role"><h3>SOVO Technologies — Lead Technician → Software Engineer</h3>
+<p class="meta"><strong>Montréal, QC | November 2008 – December 2017</strong></p>
+<ul>
+<li>Designed and programmed the production scheduling system used for the production department's full planning cycle.</li>
+<li>Built a voice-recognition evaluation system and multilingual dictionary infrastructure supporting internationalized locales.</li>
+<li>Wrote production software for roughly seven years before the Software Engineer title formalized the work.</li>
+<li>Owned company infrastructure, managed a technician team, and served as the final quality gate before releases reached production.</li>
+</ul>
+<p class="keytech"><strong>Key technologies:</strong> C++, Java, SQL, Windows Server, Linux, Active Directory, VMware vSphere, Cisco routing</p>
+<h2>Education</h2>
+<p class="meta"><strong>Bachelor of Automated Manufacturing Engineering</strong> — École de Technologie Supérieure (ÉTS), Montréal, QC | 2005 – 2016</p>
+<p class="meta"><strong>DCS in Computer Science Technology</strong> — Cégep André-Laurendeau, Montréal, QC | 2002 – 2005</p></div></body></html>

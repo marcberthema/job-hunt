@@ -6,12 +6,30 @@
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
   "latest_update": "Rechecked September 22, 2026 — all nine remote title passes completed via direct fetch (no browser needed). 3 new eligible postings auto-filed at score 6-7 (Banyan Software, Estoras Group, Sureify). Also fixed a schema gap from the prior run: previously-excluded ineligible/hard-gated postings (Hadrian, Sparksoft x2, Rain, Cardinal Health) are now proper scored rows instead of notes-only prose, per reports/report_schema.md.",
   "stats": [
-    {"value": 9, "label": "remote title passes completed"},
-    {"value": 22, "label": "new postings validated this run"},
-    {"value": 3, "label": "new eligible, auto-filed"},
-    {"value": 7, "label": "pipeline matches carried forward"},
-    {"value": 6, "label": "ineligible (hard eligibility gate)"},
-    {"value": 12, "label": "out of scope (domain mismatch)"}
+    {
+      "value": 9,
+      "label": "remote title passes completed"
+    },
+    {
+      "value": 22,
+      "label": "new postings validated this run"
+    },
+    {
+      "value": 3,
+      "label": "new eligible, auto-filed"
+    },
+    {
+      "value": 7,
+      "label": "pipeline matches carried forward"
+    },
+    {
+      "value": 6,
+      "label": "ineligible (hard eligibility gate)"
+    },
+    {
+      "value": 12,
+      "label": "out of scope (domain mismatch)"
+    }
   ],
   "rows": [
     {
@@ -34,7 +52,7 @@
       "salary": "$120,000–$145,000 CAD/year (Canada-based base band)",
       "gap": "Kubernetes \"mastery\" and Go are named requirements Marc doesn't have at that depth — his Kubernetes is real but provisioning/operational-side, not deep cluster engineering. Otherwise a strong match: AWS+Azure venue, Terraform at scale, Dynatrace-equivalent APM, and explicit AI-assisted-engineering tooling (Claude Code) that Marc's Énergir practice answers directly.",
       "url": "https://builtin.com/job/senior-sre/11299911",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 7,
@@ -56,7 +74,7 @@
       "salary": "Not stated (contract role)",
       "gap": "Reads as general cloud/infra-ops competence (hosting, networking, storage, IAM, CI/CD, monitoring, backups) rather than an architecture-ownership-at-scale deliverable — AWS is the venue Marc can answer honestly via the Tink build. Salary not stated; confirm it clears the $80/hr long-term or $90/hr part-time contract floor before pursuing.",
       "url": "https://builtin.com/job/aws-and-devops-engineer/11292868",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 6,
@@ -67,7 +85,7 @@
       "salary": "Not stated",
       "gap": "AWS production ops is the primary cloud (not Azure) — Marc's real answer is the dated, by-hand, non-production Tink build, honestly bounded. Otherwise strong tooling match: Terraform, Kubernetes/Docker, Jenkins/GitHub Actions CI/CD, scripting. Salary not stated; confirm the floor before pursuing.",
       "url": "https://builtin.com/job/senior-devops-engineer/11125369",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 6,
@@ -390,8 +408,14 @@
     }
   ],
   "could_not_validate": [
-    {"text": "Canonical's \"Site Reliability Engineer\" listing (search-result slug senior-site-reliability-engineer-americas) 404'd on the direct job URL — Built In's search results and job pages use inconsistent slugs for this posting; couldn't resolve a working canonical link this run.", "url": "https://builtin.com/job/senior-site-reliability-engineer-americas/"},
-    {"text": "WorkOS, MaintainX, and Supabase all have Site Reliability Engineer postings sharing the generic slug \"site-reliability-engineer\" with no distinguishing numeric ID visible in the search results — couldn't resolve which specific job URL belongs to which company without opening each individually, which the search-results fetch didn't support this run.", "url": "https://builtin.com/jobs/remote/dev-ops?search=Site+Reliability+Engineer"}
+    {
+      "text": "Canonical's \"Site Reliability Engineer\" listing (search-result slug senior-site-reliability-engineer-americas) 404'd on the direct job URL — Built In's search results and job pages use inconsistent slugs for this posting; couldn't resolve a working canonical link this run.",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer-americas/"
+    },
+    {
+      "text": "WorkOS, MaintainX, and Supabase all have Site Reliability Engineer postings sharing the generic slug \"site-reliability-engineer\" with no distinguishing numeric ID visible in the search results — couldn't resolve which specific job URL belongs to which company without opening each individually, which the search-results fetch didn't support this run.",
+      "url": "https://builtin.com/jobs/remote/dev-ops?search=Site+Reliability+Engineer"
+    }
   ],
   "notes_sections": [
     {
