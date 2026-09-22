@@ -108,15 +108,22 @@ a location line, or a full-description review. Never put a per-posting exclusion
 panel, footer list, or `notes_sections`. Use whichever score fits and put the full one-line reason
 in `gap`:
 
-- **`score: 0`, `status: "Out of scope — <short reason>"`** — wrong domain/skill center of gravity
-  (e.g. application development wearing a "DevOps" title, GRC/audit dressed up as DevSecOps,
-  ML-platform architecture rather than infrastructure). `gap` states what the role actually is
-  and why it doesn't match.
-- **`score: -1`, `status: "Ineligible — <short reason>"`** — a hard eligibility gate: on-site/hybrid outside the
-  reachable-city range, no remote option, required clearance, a residency/citizenship requirement,
-  visa/work-authorization mismatch, or a rate/salary hard floor. `gap` states the specific gate and
-  why it's disqualifying (e.g. "Toronto hybrid 3+ days, outside Ottawa/Kingston/Brockville/
-  Cornwall/Montréal — real SRE fit on skill alone, but not take-able").
+- **`score: 0`** — wrong domain/skill center of gravity (e.g. application development wearing a
+  "DevOps" title, GRC/audit dressed up as DevSecOps, ML-platform architecture rather than
+  infrastructure). `gap` states what the role actually is and why it doesn't match.
+- **`score: -1`** — a hard eligibility gate: on-site/hybrid outside the reachable-city range, no
+  remote option, required clearance, a residency/citizenship requirement, visa/work-authorization
+  mismatch, or a rate/salary hard floor. `gap` states the specific gate and why it's disqualifying
+  (e.g. "Toronto hybrid 3+ days, outside Ottawa/Kingston/Brockville/Cornwall/Montréal — real SRE
+  fit on skill alone, but not take-able").
+
+Both cases use **`status: "Skipped — <short reason>"`** (updated 2026-09-22, at Marc's request —
+previously `"Out of scope — ..."` / `"Ineligible — ..."`). This matches the report's "hide applied,
+rejected, skipped & expired" toggle, which only matches rows whose status starts with `Skipped`,
+`Applied`, `Rejected`, or `Expired` — so an excluded 0/-1 row now hides along with genuine pipeline
+decisions instead of always staying visible. It renders the same as Marc's own manual `Skipped`
+calls from `/review`; the reason after the dash and the fuller evidence in `gap` are what
+distinguish an automatic exclusion from a manual one, not the status word itself.
 
 Both render identically to a normal row — score, family, title, company, location, salary,
 posting link — so fill every field known from the listing even when no full review was needed.

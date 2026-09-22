@@ -217,7 +217,7 @@
       "salary": "$92,000–$120,800/year",
       "gap": "Out of scope — the role is identity/access-management operations (Okta, Active Directory, Entra ID administration, SSO/provisioning troubleshooting), not infrastructure/platform/DevOps; no cloud platform or Kubernetes component at all.",
       "url": "https://builtin.com/job/senior-operations-reliability-engineer-iam/11008189",
-      "status": "Out of scope — IAM operations, not infrastructure/DevOps"
+      "status": "Skipped — IAM operations, not infrastructure/DevOps"
     },
     {
       "score": 0,
@@ -228,7 +228,7 @@
       "salary": "Not stated",
       "gap": "Out of scope — this is a medical-device reliability engineering role (DFMEA, HALT/HASS, ISO 13485/FDA 21 CFR 820, statistical reliability modeling), unrelated to IT/DevOps despite the shared job title.",
       "url": "https://builtin.com/job/reliability-engineer/9589624",
-      "status": "Out of scope — medical-device reliability engineering, not IT"
+      "status": "Skipped — medical-device reliability engineering, not IT"
     },
     {
       "score": 0,
@@ -239,7 +239,7 @@
       "salary": "Not stated",
       "gap": "Out of scope — this is a payments technical-support/reconciliation role (partner engagement, anomaly detection tooling, multi-currency reconciliation), not infrastructure or platform engineering, despite the \"Reliability Engineer\" title.",
       "url": "https://builtin.com/job/integration-reliability-engineer-payments/10299737",
-      "status": "Out of scope — payments support/reconciliation, not infrastructure"
+      "status": "Skipped — payments support/reconciliation, not infrastructure"
     },
     {
       "score": 0,
@@ -250,7 +250,7 @@
       "salary": "$100,000–$168,000 CAD/year",
       "gap": "Out of scope — core deliverable is database-internals performance/regression engineering with deep hands-on Rust (or C++/Go) — database software engineering, not infrastructure operations, despite the great Ottawa-remote location and pay.",
       "url": "https://builtin.com/job/software-engineer-database-reliability-performance/10921200",
-      "status": "Out of scope — database internals/Rust engineering, not infra ops"
+      "status": "Skipped — database internals/Rust engineering, not infra ops"
     },
     {
       "score": 0,
@@ -261,7 +261,7 @@
       "salary": "$139,200–$235,200 USD/year (US band; varies by location)",
       "gap": "Out of scope — core deliverable is Rust backend/graph-database service engineering (a knowledge-graph query engine) for an internal product, not infrastructure operations, despite AWS/GCP/Kubernetes/Terraform appearing around the edges.",
       "url": "https://builtin.com/job/senior-platform-engineer-gitlab-orbit/11167353",
-      "status": "Out of scope — Rust backend/graph-service engineering, not infra ops"
+      "status": "Skipped — Rust backend/graph-service engineering, not infra ops"
     },
     {
       "score": 0,
@@ -272,7 +272,7 @@
       "salary": "$152,800–$259,200 USD/year (US band; varies by location)",
       "gap": "Out of scope — despite the team name, the deliverable is backend software architecture leadership (modernizing monoliths, API/service standards, Go adoption), not infrastructure/platform operations.",
       "url": "https://builtin.com/job/staff-backend-engineer-core-devops/11252102",
-      "status": "Out of scope — backend software architecture leadership, not infra ops"
+      "status": "Skipped — backend software architecture leadership, not infra ops"
     },
     {
       "score": 0,
@@ -283,7 +283,7 @@
       "salary": "Not stated",
       "gap": "Out of scope — explicitly an entry-level/new-grad internship (\"recent graduates,\" GPA requirement) doing Java application development, not senior infrastructure/DevOps work.",
       "url": "https://builtin.com/job/devops-developer/11303850",
-      "status": "Out of scope — new-grad Java app-dev internship, not senior DevOps"
+      "status": "Skipped — new-grad Java app-dev internship, not senior DevOps"
     },
     {
       "score": 0,
@@ -294,7 +294,7 @@
       "salary": "$176,000–$289,000/year",
       "gap": "Out of scope — a cloud security-specialist role (threat modeling, multi-tenant isolation, mTLS/service-mesh security, Wiz posture management), not DevOps/platform engineering, despite touching AWS/GCP/Azure and Kubernetes.",
       "url": "https://builtin.com/job/staff-cloud-security-engineer/10984412",
-      "status": "Out of scope — cloud security specialist, not DevOps/platform"
+      "status": "Skipped — cloud security specialist, not DevOps/platform"
     },
     {
       "score": 0,
@@ -305,7 +305,7 @@
       "salary": "Not stated",
       "gap": "Out of scope — customer-facing implementation/prototyping engineering (APIs, data pipelines, full-stack proofs-of-concept), not infrastructure or DevOps work.",
       "url": "https://builtin.com/job/forward-deployed-engineer-fde/10988674",
-      "status": "Out of scope — customer-facing implementation engineering, not infra"
+      "status": "Skipped — customer-facing implementation engineering, not infra"
     },
     {
       "score": 0,
@@ -316,7 +316,7 @@
       "salary": "$100,000–$170,000/year + 20% variable",
       "gap": "Out of scope — a customer-facing supply-chain platform deployment/consulting role (UAT, training, stakeholder adoption), not infrastructure/DevOps engineering.",
       "url": "https://builtin.com/job/forward-deployed-supply-chain-engineer-canada/11215712",
-      "status": "Out of scope — customer-facing supply-chain deployment, not infra"
+      "status": "Skipped — customer-facing supply-chain deployment, not infra"
     },
     {
       "score": 0,
@@ -327,7 +327,7 @@
       "salary": "$150,000–$200,000/year",
       "gap": "Out of scope — full-stack AI agentic software/customer-implementation role (React/TypeScript, LLM agent deployment, architecture ownership of a product), not infrastructure/DevOps despite AWS/Kubernetes exposure.",
       "url": "https://builtin.com/job/forward-deployed-engineer/10430513",
-      "status": "Out of scope — AI agentic software/customer-implementation, not infra"
+      "status": "Skipped — AI agentic software/customer-implementation, not infra"
     },
     {
       "score": 0,
@@ -338,7 +338,7 @@
       "salary": "Not stated",
       "gap": "GCP/GKE is the explicit primary platform requirement — hits the profile's GCP hard gate directly. Capped 0–4.",
       "url": "https://builtin.com/job/cloud-engineer/9954111",
-      "status": "Out of scope — GCP-primary requirement, hard-gated"
+      "status": "Skipped — GCP-primary requirement, hard-gated"
     },
     {
       "score": -1,
@@ -349,7 +349,7 @@
       "salary": "Not stated",
       "gap": "Ineligible — Toronto hybrid at 3+ days/week onsite, outside the Ottawa/Kingston/Brockville/Cornwall/Montréal reachable-city range. Real skill overlap (Kubernetes, GitLab CI/CD, AWS/OpenShift) but not take-able.",
       "url": "https://builtin.com/job/devops-engineer-senior/10778433",
-      "status": "Ineligible — Toronto hybrid 3+ days/week, outside reachable range"
+      "status": "Skipped — Toronto hybrid 3+ days/week, outside reachable range"
     },
     {
       "score": -1,
@@ -360,7 +360,7 @@
       "salary": "Not stated",
       "gap": "Ineligible — the job description requires relocation to Air Apps' Lisbon office despite the Canada-suggesting listing header; same pattern as this company's previously-excluded SRE posting (job_sources.md, 2026-09-08/09-19).",
       "url": "https://builtin.com/job/devops-engineer-backend/9189749",
-      "status": "Ineligible — onsite Lisbon, PT despite misleading Canada header"
+      "status": "Skipped — onsite Lisbon, PT despite misleading Canada header"
     },
     {
       "score": -1,
@@ -371,7 +371,7 @@
       "salary": "Not stated",
       "gap": "Ineligible — requires US citizen/national/lawful-permanent-resident status under ITAR. Repeat exclusion (job_sources.md, 2026-09-08).",
       "url": "https://builtin.com/job/site-reliability-engineer-client-platform/",
-      "status": "Ineligible — ITAR, US-persons only"
+      "status": "Skipped — ITAR, US-persons only"
     },
     {
       "score": -1,
@@ -382,7 +382,7 @@
       "salary": "Not stated",
       "gap": "Ineligible — requires having lived in the United States 3 of the past 5 years; Canada-based workers not eligible despite a Bristol, QC office listed.",
       "url": "https://builtin.com/job/devsecops-engineer/11208039",
-      "status": "Ineligible — US-residency-history requirement"
+      "status": "Skipped — US-residency-history requirement"
     },
     {
       "score": -1,
@@ -393,7 +393,7 @@
       "salary": "Not stated",
       "gap": "Ineligible — same US-residency-history requirement as the standard posting, plus mandatory AWS certification and US Public Trust clearance.",
       "url": "https://builtin.com/job/senior-devsecops-engineer/11207916",
-      "status": "Ineligible — US-residency-history + US Public Trust clearance"
+      "status": "Skipped — US-residency-history + US Public Trust clearance"
     },
     {
       "score": -1,
@@ -404,7 +404,7 @@
       "salary": "Not stated",
       "gap": "Ineligible — \"Must be a U.S. Person\" under export-control law; also a part-time student/recent-grad role. Repeat exclusion (job_sources.md, 2026-09-08).",
       "url": "https://builtin.com/job/it-devsecops-engineer-contractor/9462402",
-      "status": "Ineligible — US-person export-control requirement"
+      "status": "Skipped — US-person export-control requirement"
     }
   ],
   "could_not_validate": [

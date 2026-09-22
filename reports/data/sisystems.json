@@ -6,13 +6,34 @@
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
   "latest_update": "Rechecked September 22, 2026 — all 8 mandatory rendered-browser queries completed same-day-following-day from the prior run. Counts were 29, 41, 34, 31, 37, 24, 53 and 53 (unchanged from Sept 21), and the first eight results of every query were byte-for-byte the same recurring requisition set already scored — no new eligible posting, no new plausible candidate.",
   "stats": [
-    {"value": 8, "label": "searches completed"},
-    {"value": 9, "label": "unique postings reviewed"},
-    {"value": 0, "label": "eligible validated"},
-    {"value": 6, "label": "geographic/location exclusions"},
-    {"value": 2, "label": "scope exclusions"},
-    {"value": 0, "label": "inaccessible"},
-    {"value": 3, "label": "pipeline matches"}
+    {
+      "value": 8,
+      "label": "searches completed"
+    },
+    {
+      "value": 9,
+      "label": "unique postings reviewed"
+    },
+    {
+      "value": 0,
+      "label": "eligible validated"
+    },
+    {
+      "value": 6,
+      "label": "geographic/location exclusions"
+    },
+    {
+      "value": 2,
+      "label": "scope exclusions"
+    },
+    {
+      "value": 0,
+      "label": "inaccessible"
+    },
+    {
+      "value": 3,
+      "label": "pipeline matches"
+    }
   ],
   "notes_sections": [
     {
@@ -69,7 +90,7 @@
       "salary": "Hourly: Negotiable",
       "gap": "Toronto with no stated remote option, outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal). Otherwise a very strong skill match: Python scripting, GitHub Actions automation, observability/monitoring, MTTR/MTTD reduction, RCA, DR readiness — directly mirrors Marc's Énergir/Desjardins background. Worth flagging for a confirm-remote follow-up if the user wants.",
       "url": "https://www.sisystems.com/jobs/site-reliability-engineer-6-years-to-improve-production-reliability-and-automate-sre-processes-using-python-github-actions-and-observability-tooling/330032003600380037003100/",
-      "status": "Ineligible"
+      "status": "Skipped"
     },
     {
       "score": -1,
@@ -80,7 +101,7 @@
       "salary": "Hourly: Negotiable",
       "gap": "Toronto hybrid, outside the reachable-city range. Also bare-metal hardware lifecycle (Cisco UCS/Dell/HP) is a narrower fit than Marc's config-management/IaC depth.",
       "url": "https://www.sisystems.com/jobs/infrastructure-engineer-5-years-to-own-bare-metal-hardware-and-automation-using-cisco-ucs-ansible-windows-and-red-hat-systems-58529/330032003600350037003000/",
-      "status": "Ineligible"
+      "status": "Skipped"
     },
     {
       "score": -1,
@@ -91,7 +112,7 @@
       "salary": "Hourly: Negotiable",
       "gap": "Calgary hybrid, outside the reachable-city range. Also a React/TypeScript-heavy full-stack developer role wearing a network-automation title, not general DevOps/platform engineering.",
       "url": "https://www.sisystems.com/jobs/intermediate-network-automation-developer-support-the-development-of-enterprise-scale-automation-platforms-across-both-it-and-ot-environments/330032003600340030003200/",
-      "status": "Ineligible"
+      "status": "Skipped"
     },
     {
       "score": -1,
@@ -102,7 +123,7 @@
       "salary": "Hourly: Negotiable",
       "gap": "Toronto hybrid, outside the reachable-city range. Otherwise a real CI/CD/IaC (Terraform, ARM, Azure) skill match.",
       "url": "https://www.sisystems.com/jobs/application-release-engineer-iii-2-5-years-of-experience-to-deliver-automated-build-test-release-and-deployment-solutions-using-ci-cd-azure-and-infrastructure-as-code-58515/330032003600330032003000/",
-      "status": "Ineligible"
+      "status": "Skipped"
     },
     {
       "score": -1,
@@ -113,7 +134,7 @@
       "salary": "CAD $97,000–$108,000/year",
       "gap": "Explicit Metro Vancouver residency requirement, outside the reachable-city range. Also traditional Windows sysadmin scope (Exchange, file/print/DNS/DHCP, SAN), not DevOps/Platform/SRE center of gravity.",
       "url": "https://www.sisystems.com/jobs/senior-systems-administrator-7-years-of-experience-to-deliver-infrastructure-projects-and-operational-support-using-windows-server-vmware-and-hybrid-azure-services/330032003600370037003400/",
-      "status": "Ineligible"
+      "status": "Skipped"
     },
     {
       "score": -1,
@@ -124,7 +145,7 @@
       "salary": "Hourly: Negotiable",
       "gap": "Calgary, fully on-site, outside the reachable-city range.",
       "url": "https://www.sisystems.com/jobs/senior-infrastructure-operations-lead-to-assist-with-vmware-production-environments-including-backup-and-disaster-recovery-ownership-and-m365-and-azure-active-directory-administration/330032003600360036003900/",
-      "status": "Ineligible"
+      "status": "Skipped"
     },
     {
       "score": -1,
@@ -135,7 +156,7 @@
       "salary": "Hourly: Negotiable",
       "gap": "Toronto hybrid at 4 days/week is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal) on its own, and would fail the cadence rule even for a reachable city. Otherwise a very strong skill match: 7+ years Azure infrastructure, building enterprise Azure environments from scratch across Dev/QA/Prod/DR, Terraform/Ansible/PowerShell/Bicep IaC, CI/CD pipelines, and Databricks platform support — directly mirrors Marc's Énergir Azure-migration and Databricks-runtime experience.",
       "url": "https://www.sisystems.com/jobs/senior-cloud-platform-engineer-8-10-years-to-design-build-and-automate-azure-infrastructure-and-databricks-platforms-58544/330032003600330030003100/",
-      "status": "Ineligible"
+      "status": "Skipped"
     },
     {
       "score": 0,
@@ -146,7 +167,7 @@
       "salary": "CAD $110,000–$134,000/year",
       "gap": "IT management/leadership role (multidisciplinary team, enterprise applications, vendor management) requiring secret-level clearance eligibility (10 years continuous Canada residency) — not hands-on SRE/Platform/DevOps engineering, and Marc doesn't hold clearance.",
       "url": "https://www.sisystems.com/jobs/senior-manager-technology-services-to-lead-digital-transformation-and-modernization-using-microsoft-365-azure-itil-and-devops-ci-cd-practices/330032003600370034003600/",
-      "status": "Out of scope"
+      "status": "Skipped"
     },
     {
       "score": 0,
@@ -157,7 +178,7 @@
       "salary": "Hourly: Negotiable",
       "gap": "Deep carrier/ISP network engineering (BGP, OSPF, MPLS, ISIS, L3VPN) — a distinct specialty from general DevOps/platform engineering; Marc has no telecom carrier-routing depth.",
       "url": "https://www.sisystems.com/jobs/senior-design-specialist-to-architect-and-validate-core-networking-solutions-using-cisco-nso-mpls-sdn-and-network-automation/330032003600340033003200/",
-      "status": "Out of scope"
+      "status": "Skipped"
     },
     {
       "score": 2,

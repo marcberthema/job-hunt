@@ -663,7 +663,7 @@
       "salary": "CAD $110,000–$130,000/year",
       "gap": "Ineligible geography: the full description explicitly requires full-time onsite work in Victoria, outside the reachable hybrid area.",
       "url": "https://ca.indeed.com/viewjob?jk=29cdf9168113c35b",
-      "status": "Ineligible — full-time onsite in Victoria"
+      "status": "Skipped — full-time onsite in Victoria"
     },
     {
       "score": 7,
@@ -751,7 +751,7 @@
       "salary": "CAD $88,716.49–$151,679.14/year",
       "gap": "Ineligible geography: Vancouver is outside the reachable on-site/hybrid range",
       "url": "https://ca.indeed.com/jobs?q=Site+Reliability+Engineer&l=Canada (Thales, Vancouver BC — \"Senior CloudOps Developer\"; full posting read in browser)",
-      "status": "Ineligible — Vancouver hybrid, outside reachable range"
+      "status": "Skipped — Vancouver hybrid, outside reachable range"
     },
     {
       "score": -1,
@@ -762,7 +762,7 @@
       "salary": "CAD $120,000–$150,000/year",
       "gap": "Requires Canadian Enhanced Reliability security clearance and Controlled Goods/export-control authorization for military Land C4ISR systems work — hard eligibility gate, plus total domain mismatch (defense C4ISR, not infrastructure/DevOps)",
       "url": "https://ca.indeed.com/jobs?q=Forward+Deployed+Engineer&l=Canada (Thales, Ottawa ON — \"AI Solutions Engineer\"; full posting read in browser)",
-      "status": "Ineligible — requires Canadian Enhanced Reliability clearance + export-control authorization"
+      "status": "Skipped — requires Canadian Enhanced Reliability clearance + export-control authorization"
     },
     {
       "score": -1,
@@ -773,7 +773,7 @@
       "salary": "CAD $150,000–$190,000/year",
       "gap": "Ineligible geography: Toronto is outside the reachable on-site/hybrid range; also an architecture/solution-consulting role, not infrastructure/platform ops",
       "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Canada (Tactable, Toronto ON — \"Tech Lead\"; full posting read in browser)",
-      "status": "Ineligible — Toronto hybrid, outside reachable range"
+      "status": "Skipped — Toronto hybrid, outside reachable range"
     },
     {
       "score": -1,
@@ -784,7 +784,7 @@
       "salary": "CAD $69.92–$93.22/hour",
       "gap": "Ineligible geography: Toronto is outside the reachable on-site/hybrid range",
       "url": "https://ca.indeed.com/viewjob?jk=9aa784ca70fd6663",
-      "status": "Ineligible — Toronto hybrid, outside reachable range"
+      "status": "Skipped — Toronto hybrid, outside reachable range"
     }
   ]
 }

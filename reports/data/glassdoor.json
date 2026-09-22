@@ -6,11 +6,26 @@
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
   "latest_update": "Latest update: September 22, 2026 — all six mandatory Canada queries completed, eight results per query reviewed before dedup. Five new postings validated: Exaion's Private Cloud Infrastructure Administrator (Montreal hybrid, score 4), Export Development Canada's Cybersecurity Engineer (Ottawa/Toronto/Montreal, score 3), and three exclusions (InfoTrack Toronto — ineligible geography; Logistec and Haber — domain mismatch). Zero postings cleared the auto-file threshold (score ≥5) today.",
   "stats": [
-    {"value": 6, "label": "keyword searches attempted"},
-    {"value": 6, "label": "keyword searches completed"},
-    {"value": 48, "label": "result appearances reviewed today"},
-    {"value": 5, "label": "new postings validated today"},
-    {"value": 0, "label": "auto-filed today (none cleared score ≥5)"}
+    {
+      "value": 6,
+      "label": "keyword searches attempted"
+    },
+    {
+      "value": 6,
+      "label": "keyword searches completed"
+    },
+    {
+      "value": 48,
+      "label": "result appearances reviewed today"
+    },
+    {
+      "value": 5,
+      "label": "new postings validated today"
+    },
+    {
+      "value": 0,
+      "label": "auto-filed today (none cleared score ≥5)"
+    }
   ],
   "rows": [
     {
@@ -22,7 +37,7 @@
       "salary": "CAD $92,500–$136,000/year",
       "gap": "Ineligible geography: the full posting requires two days each week in the London office, outside Marc's reachable hybrid cities; the technical scope also requires deep production Kubernetes and MLOps/LLM infrastructure.",
       "url": "https://www.glassdoor.ca/job-listing/senior-software-engineer-dev-ops-carfax-JV_KO0,32_KE33,39.htm?jl=1010147663187",
-      "status": "Ineligible — London hybrid"
+      "status": "Skipped — London hybrid"
     },
     {
       "score": 6,
@@ -198,7 +213,7 @@
       "salary": "CAD $100,000–$135,000/year (employer stated)",
       "gap": "Out of scope — the title matched the Forward Deployed Engineer keyword, but the actual job is chemical/process engineering embedded in pulp and paper mills (P&IDs, DCS/PLC signals, mass and energy balances); no software, cloud, or infrastructure component at all",
       "url": "https://www.glassdoor.ca/Job/canada-forward-deployed-engineer-jobs-SRCH_IL.0,6_IN3_KO7,32.htm",
-      "status": "Out of scope — pulp & paper process engineering, not IT"
+      "status": "Skipped — pulp & paper process engineering, not IT"
     },
     {
       "score": -1,
@@ -209,7 +224,7 @@
       "salary": "CAD $130,000–$150,000/year (employer stated)",
       "gap": "Ineligible geography — Toronto is outside Marc's reachable on-site/hybrid range (Ottawa/Kingston/Brockville/Cornwall/Montréal); appeared independently across three separate keyword queries (DevOps Engineer, Platform Engineer, DevSecOps Engineer), suggesting a strong keyword match that the location gate still excludes",
       "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm",
-      "status": "Ineligible — Toronto"
+      "status": "Skipped — Toronto"
     }
   ],
   "could_not_validate": [
