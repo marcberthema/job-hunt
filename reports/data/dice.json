@@ -4,11 +4,11 @@
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Updated September 21, 2026 (re-run) — all six required browser-rendered queries completed a second time same-day; identical 17 unique postings and identical per-query counts to the prior corrected browser pass, confirming no new Dice inventory in the past 7 days.",
+  "latest_update": "Updated September 21, 2026 — all six required browser-rendered queries completed with every required filter visible. Counts changed to 3, 12, 0, 7, 3 and 1; no new target-family candidate was found within the review boundary.",
   "stats": [
     {"value": 6, "label": "queries attempted"},
     {"value": 6, "label": "queries completed"},
-    {"value": 17, "label": "unique reviewed"},
+    {"value": 19, "label": "unique reviewed"},
     {"value": 2, "label": "new eligible, scored"},
     {"value": 3, "label": "known pipeline postings shown"},
     {"value": 4, "label": "out of scope, scored 0, reviewed in full"},
@@ -117,6 +117,16 @@
   ],
   "notes_sections": [
     {
+      "heading": "Query audit — latest September 21 run",
+      "items": [
+        "DevOps Engineer: 3 rendered; reviewed 3; Complete. IDs: 715868bc-acd6-4537-8112-21f758a120e1, 06ab958a-d350-444e-a112-14b5a57bb829, 93ff84f7-42cd-4c47-a43c-714d3842643b.",
+        "Platform Engineer: 12 rendered; reviewed first 8; Complete. IDs: d57b98ba-d63f-40f4-add5-1e9c3dafe833, 93ff84f7-42cd-4c47-a43c-714d3842643b, 5bc8d240-435f-4161-b959-1552a18bab31, cf0a1228-a393-49ae-abc4-ca5f47b01f6b, 705b1411-f640-413c-a253-b803e420aaf5, 1491a6fb-0b0c-4280-92b9-33d8d8836d44, 53af2cdd-a31d-4805-8d8b-f971158e299c, 46f6563c-66ad-4dbf-9801-eecbcae4647f.",
+        "Site Reliability Engineer: 0 rendered; Zero results. Cloud Engineer: 7 rendered; reviewed 7; Complete. IDs: d57b98ba-d63f-40f4-add5-1e9c3dafe833, 1ad63edd-482e-421a-9b1b-c0c5f938a171, 80d0c919-ad39-4d11-acf2-5f9bf3404018, 4a3b0067-d95a-4415-90f3-b9a43e06a91c, edd81531-1284-4c8b-ba9f-fd97a1429170, cc115426-f444-46b0-8572-70b182d29c8d, 521b96f0-0b17-4739-8a47-06f40ed1f808.",
+        "DevSecOps Engineer: 3 rendered; reviewed 3; Complete. IDs: 06ab958a-d350-444e-a112-14b5a57bb829, 3d1b6a99-3a4c-43f9-a4c1-b9ac5987ea88, 715868bc-acd6-4537-8112-21f758a120e1. Forward Deployed Engineer: 1 rendered; reviewed 1; Complete. ID: b64fdd50-d372-40f7-b09e-fb32dadc6622.",
+        "Last 7 Days, Full Time, Contract, Remote and Willing to sponsor were visibly active for all six passes. No CAPTCHA, login or write-side action occurred."
+      ]
+    },
+    {
       "heading": "Query audit — current run",
       "items": [
         "<b>DevOps Engineer:</b> 4 rendered results; reviewed 4; Complete. IDs: 715868bc-acd6-4537-8112-21f758a120e1, 06ab958a-d350-444e-a112-14b5a57bb829, f094cb31-ef6c-46e4-b51c-b2231c0c435c, 93ff84f7-42cd-4c47-a43c-714d3842643b.",
@@ -154,5 +164,5 @@
       ]
     }
   ],
-  "method": "All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor filters visibly active, as a same-day confirmation re-run. Counts were 4, 10, 0, 5, 3, and 1 — identical to the prior pass. Up to eight results per query were audited, producing 23 appearances and 17 unique Dice IDs after cross-query deduplication: 2 new eligible postings scored (unchanged), 3 known pipeline postings preserved with current applications.md status, 4 fully reviewed out-of-scope postings retained, and 8 off-domain titles screened out. Similar Jobs sidebar entries were excluded. No new Dice inventory in the past 7 days beyond what the prior run already found."
+  "method": "All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 3, 12, 0, 7, 3 and 1. Up to eight results per query were audited before deduplication. Two newly surfaced Cloud-query IDs were Oracle/Salesforce functional roles outside the target families; no new eligible target-family posting was found. Existing validated rows and pipeline statuses were preserved."
 }

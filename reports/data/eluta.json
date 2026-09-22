@@ -1,22 +1,22 @@
 {
   "board": "Eluta",
-  "run_date": "2026-09-19",
+  "run_date": "2026-09-21",
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
-  "lede": "6 of 10 default remote keywords plus 1 of 5 reachable-city hybrid passes (Ottawa). Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 19, 2026 — 2 new eligible candidates (Braze, theScore); caught and corrected a same-day scoring error on a Mogo/Orion Digital posting reported via BuiltIn earlier today.",
+  "lede": "Ten default remote title passes plus five reachable-city hybrid discovery passes. Scores measure technical and domain fit only.",
+  "latest_update": "Rechecked September 21, 2026 — all 10 remote title passes rendered; Ottawa and Montréal city passes completed, while Kingston, Brockville and Cornwall did not reliably accept the requested city value and are marked incomplete. No newly validated eligible posting was added.",
   "stats": [
     {
-      "value": 7,
-      "label": "search passes run"
+      "value": 15,
+      "label": "search passes attempted"
     },
     {
-      "value": 57,
-      "label": "unique postings reviewed (approx.)"
+      "value": 12,
+      "label": "passes completed"
     },
     {
-      "value": 2,
-      "label": "new eligible, scored"
+      "value": 3,
+      "label": "passes incomplete"
     },
     {
       "value": 18,
@@ -54,6 +54,15 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "September 21 pass audit",
+      "items": [
+        "Remote-only passes completed, first 10 results reviewed each: DevOps Engineer (190), Senior DevOps Engineer (99), Staff DevOps Engineer (25), Site Reliability Engineer (108), Senior Site Reliability Engineer (52), Staff Site Reliability Engineer (28), Cloud Engineer (698), DevSecOps Engineer (14), Infrastructure Engineer (739), and Senior Infrastructure Engineer (374).",
+        "Ottawa | DevOps Engineer | 61 rendered results; first 10 reviewed | Complete. Montréal | DevOps Engineer | first 10 reviewed | Complete.",
+        "Kingston, Brockville and Cornwall | DevOps Engineer | attempted through the visible city field | Incomplete — the rendered page did not reliably preserve/accept the requested city and returned inconsistent inventory, so these are not claimed as zero-result passes.",
+        "No CAPTCHA, sign-in, application, alert subscription, email action or other write-side action occurred."
+      ]
+    },
     {
       "heading": "Correction — same-day scoring error",
       "items": [

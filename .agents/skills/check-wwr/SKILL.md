@@ -5,7 +5,7 @@ description: Search We Work Remotely for recent Canada-eligible remote SRE, Plat
 
 # Check We Work Remotely
 
-Search We Work Remotely, validate current postings, gate region eligibility before scoring, compare every eligible result with Marc's profile, and update `reports/wwr-job-search.html`. All external activity is strictly read-only: never apply, use "AI Auto-Apply," save a job, create an account, sign in, upload information, or submit a form. Apart from refreshing the board-specific report, do not create job files or change pipeline state.
+Search We Work Remotely, validate current postings, gate region eligibility, compare every eligible result with Marc's profile, update `reports/wwr-job-search.html`, and auto-file qualifying jobs under the policy below. External activity is strictly read-only: never apply, use "AI Auto-Apply," save, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
 
@@ -90,6 +90,10 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the We Work Remotely job page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
 Put every region-gated entry in the same table as a `score: -1` row; never repeat it in a footer list. After the table, list only `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/wwr.json` during discovery.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

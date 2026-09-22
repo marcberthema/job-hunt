@@ -5,7 +5,7 @@ description: Search LinkedIn and employer career sites for recent Canada-eligibl
 
 # Check LinkedIn
 
-Discover recent LinkedIn-listed jobs through Marc's authenticated LinkedIn session in the connected browser, validate them using full LinkedIn postings or employer career sites, compare every eligible posting with Marc's current profile, and update `reports/linkedin-job-search.html`. LinkedIn access is strictly read-only: never apply, save a job, follow, connect, react, comment, post, message, submit a form, change profile or account data, or perform any other action that writes to LinkedIn. Apart from the board-specific report refresh, do not create job files or change pipeline state.
+Discover recent LinkedIn jobs through Marc's connected browser, validate them using full postings or employer sites, compare every eligible posting with Marc's profile, update `reports/linkedin-job-search.html`, and auto-file qualifying jobs under the policy below. LinkedIn access is strictly read-only: never apply, save, follow, connect, react, comment, post, message, submit a form, or change profile/account data. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
 
@@ -88,6 +88,10 @@ Lead with search phrases completed, unique postings validated, exclusions, emplo
 Use only `SRE`, `Platform`, or `DevOps`. Link directly to the accessible full posting, preferring the employer page. Preserve currency and pay period; use `Not stated` for unknown facts. Include low scores, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
 After the table, list `Could not validate` entries and material search limitations. Explicitly distinguish employer-validated roles from LinkedIn pages that were inaccessible. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/linkedin.json` during discovery.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

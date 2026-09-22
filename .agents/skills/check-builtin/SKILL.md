@@ -5,7 +5,7 @@ description: Search Built In broadly for Canada-eligible remote and selected Eas
 
 # Check Built In
 
-Search Built In, validate the full postings, compare every eligible result with Marc's current profile, and update `reports/builtin-job-search.html` with the completed run. Apart from that board-specific report refresh, this is a read-only discovery workflow: do not create job files, change pipeline state, or submit applications unless the user subsequently asks.
+Search Built In, validate full postings, compare every eligible result with Marc's profile, update `reports/builtin-job-search.html`, and auto-file qualifying jobs under the policy below. External discovery remains read-only: never submit applications or change third-party state. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
 
@@ -128,6 +128,10 @@ Requirements:
 - A posting opened and read in full, then ruled out for domain mismatch or ineligibility, belongs in this same table as a `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) row — never a separate list or prose note.
 
 After the table, report `Could not validate` and material search limitations, if any. End by asking which postings the user wants to investigate or add to `applications.md`. Do not draft cover letters or write files other than `reports/data/builtin.json` during this discovery run.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

@@ -5,7 +5,7 @@ description: Search Glassdoor Canada for recent SRE, Platform, DevOps, Cloud, an
 
 # Check Glassdoor
 
-Search Glassdoor Canada, validate current postings, compare every result with Marc's profile, and update `reports/glassdoor-job-search.html`. All external activity is strictly read-only: never apply, use Easy Apply, save a job, create an account, sign in, upload information, or submit a form. Apart from refreshing the board-specific report, do not create job files or change pipeline state.
+Search Glassdoor Canada, validate current postings, compare every result with Marc's profile, update `reports/glassdoor-job-search.html`, and auto-file qualifying jobs under the policy below. All external activity is strictly read-only: never apply, use Easy Apply, save a job, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
 
@@ -84,6 +84,10 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Glassdoor job page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches. Every identified exclusion belongs in this same table: use `score: 0` with an `Out of scope — <short reason>` status pill for domain exclusions and `score: -1` with an `Ineligible — <short reason>` status pill for hard gates. Put the full evidence in `gap`; never move an exclusion to a footer list.
 
 After the table, list `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md` — skip re-offering any posting already flagged as a duplicate. Do not draft application material or write files other than `reports/data/glassdoor.json` during discovery.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

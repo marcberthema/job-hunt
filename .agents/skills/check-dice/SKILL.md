@@ -5,7 +5,7 @@ description: Search Dice for recent sponsor-willing remote DevOps, Platform, SRE
 
 # Check Dice
 
-Search Dice, validate accessible postings, apply the eligibility gate before scoring, compare eligible jobs with Marc's profile, and update reports/dice-job-search.html. Apart from that report refresh, this is read-only discovery: do not create job files, change pipeline state, sign in, submit forms, or apply unless the user subsequently asks.
+Search Dice, validate accessible postings, apply the eligibility gate, compare eligible jobs with Marc's profile, update `reports/dice-job-search.html`, and auto-file qualifying jobs under the policy below. External discovery is read-only: do not sign in, submit forms, or apply. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Input and role rotation
 
@@ -116,6 +116,10 @@ Return one table containing eligible, out-of-scope, and ineligible rows, sorted 
 Clearance, authorization, and location exclusions are `score: -1` rows in this table with explanatory status pills; do not add a separate `Ineligible` section.
 
 Then list Could not validate postings and material limitations. Ask which eligible postings the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/dice.json` during discovery.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

@@ -75,12 +75,13 @@ file, verify against this schema, not against an older version of that board's o
 - `score` (0–10, or `0`/`-1` for the excluded-but-reviewed cases below; required), `family`
   (`SRE` | `Platform` | `DevOps`, required), `title`, `company`, `url` (required).
 - `location`, `salary`, `gap` — optional, default to blank/"Not stated" in the rendered table.
-- `status` — this posting's pipeline or exclusion pill, starting with one of `New`, `Applied`, `Skipped`,
+- `status` — this posting's pipeline or exclusion pill, starting with one of `New`, `InProcess`, `Applied`, `Skipped`,
   `Rejected`, `Expired`, `Out of scope`, or `Ineligible` (free text may follow, e.g.
   `Applied — Sep 18`), or omitted/blank when it isn't decided yet. `Skipped` means Marc decided
   not to pursue it (skill gap, duplicate, bad rate, etc.); `Rejected` means he applied and the
   employer passed on him — only reachable from `Applied`, never set directly on a fresh discovery
-  row. `Applied`, `Skipped`, and `Rejected` should mirror the matching `applications.md` row when
+  row. `InProcess` means application materials are ready but Marc has not confirmed submission.
+  `InProcess`, `Applied`, `Skipped`, and `Rejected` should mirror the matching `applications.md` row when
   one exists — a `check-*` skill's own discovery pass typically only ever produces `New` rows,
   since it never files anything on its own (see `CLAUDE.md`'s Conventions). `Expired` is
   report-only (an expired posting never gets an `applications.md` row of its own — see the

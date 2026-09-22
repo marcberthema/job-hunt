@@ -3,10 +3,10 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Eluta job search — 2026-09-19</title>
+<title>Eluta job search — 2026-09-21</title>
 <style>
-:root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
-@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
+:root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e;--amber:#9a6700;--amber-bg:#fff8c5}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b;--amber:#e3b341;--amber-bg:#3b2e00}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,"Segoe UI",sans-serif}a{color:var(--blue)}
 main{width:min(1500px,calc(100% - 32px));margin:auto}header{padding:52px 0 28px}.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
 h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:10px 0}.lede,.count,.method{color:var(--muted)}.latest{font-weight:700;color:var(--blue);margin:8px 0 0}
@@ -15,7 +15,7 @@ h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:10px 0}.lede,.count,.m
 input,select{padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit}.table-shell{overflow:auto}
 table{border-collapse:collapse;width:100%;min-width:1000px}th,td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
 th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:uppercase;cursor:pointer}.score{font-size:18px;font-weight:800}.high{color:var(--green)}.low{color:#b77900}
-.pill{display:inline-block;padding:3px 8px;border-radius:99px;background:var(--soft);border:1px solid var(--line);font-size:11px;font-weight:700}.job,.company,.posting{font-weight:700}
+.pill{display:inline-block;padding:3px 8px;border-radius:99px;background:var(--soft);border:1px solid var(--line);font-size:11px;font-weight:700}.pill.inprocess{color:var(--amber);background:var(--amber-bg);border-color:var(--amber)}.job,.company,.posting{font-weight:700}
 .empty{text-align:center;padding:34px;color:var(--muted)}.panel{padding:22px;margin:24px 0}.notes{padding:22px;margin:28px 0 70px}.notes h2,.panel h2{margin-top:0}.notes li+li,.panel li+li{margin-top:7px}
 .reason{color:var(--red)}@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.controls{position:static;grid-template-columns:1fr}}
 </style>
@@ -24,12 +24,12 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 <header>
   <div class="eyebrow">Eluta.ca · Canadian employer career-page index</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
-  <p class="lede">6 of 10 default remote keywords plus 1 of 5 reachable-city hybrid passes (Ottawa). Scores measure technical and domain fit only.</p>
-  <p class="latest">Rechecked September 19, 2026 — 2 new eligible candidates (Braze, theScore); caught and corrected a same-day scoring error on a Mogo/Orion Digital posting reported via BuiltIn earlier today.</p>
+  <p class="lede">Ten default remote title passes plus five reachable-city hybrid discovery passes. Scores measure technical and domain fit only.</p>
+  <p class="latest">Rechecked September 21, 2026 — all 10 remote title passes rendered; Ottawa and Montréal city passes completed, while Kingston, Brockville and Cornwall did not reliably accept the requested city value and are marked incomplete. No newly validated eligible posting was added.</p>
   <div class="stats">
-    <div class="stat"><b>7</b><span>search passes run</span></div>
-    <div class="stat"><b>57</b><span>unique postings reviewed (approx.)</span></div>
-    <div class="stat"><b>2</b><span>new eligible, scored</span></div>
+    <div class="stat"><b>15</b><span>search passes attempted</span></div>
+    <div class="stat"><b>12</b><span>passes completed</span></div>
+    <div class="stat"><b>3</b><span>passes incomplete</span></div>
     <div class="stat"><b>18</b><span>pipeline matches</span></div>
     <div class="stat"><b>4</b><span>PLATO hard-gate hits (Indigenous-owned firm)</span></div>
     <div class="stat"><b>1</b><span>correction issued</span></div>
@@ -49,7 +49,10 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<aside class="notes"><h2>Correction — same-day scoring error</h2><ul><li><b>Mogo/Orion Digital "DevOps Staff Platform Engineer"</b> was scored 7 and reported as a top new pick earlier today via the BuiltIn run, then resurfaced here on Eluta. It's the exact same posting already logged <code>Rejected</code> in applications.md on 2026-09-16 (score 4) — missed during the BuiltIn dedup check because applications.md recorded the company as "Orion Digital" (the legal/parent entity) while BuiltIn and Eluta both show the consumer brand "Mogo." <code>reports/data/builtin.json</code> has been corrected to reflect this as a pipeline match, not a fresh recommendation. Flagging here too since it was reported to Marc as a top pick earlier in the same session.</li></ul><h2>Recurring hard-gate — PLATO</h2><ul><li><b>PLATO</b> (an Indigenous-owned staffing/recruitment firm — Marc does not qualify per the Indigenous-membership hiring requirement in profile.md's Red Flags) appeared 4 separate times across today's searches under different postings: "DevOps Engineer (Azure ARO) remote contract" ($75-100/hr), "QA Automation Engineer (Salesforce Financial Services Cloud)", "DevSecOps"-adjacent copy on the same ARO posting, and "Infrastructure Engineer (remote contract)" ($75-100/hr). All hard-gated, none scored, consistent with the standing profile.md rule.</li></ul><h2>Pipeline matches confirmed this run — not rescored/refiled</h2><ul><li>Already <code>Applied</code>: Case IQ DevOps Engineer, Web.com/Newfold Senior DevOps Engineer AI Platform, Warner Music DevOps Engineer, Jonas/Computrition AI-First DevOps Engineer, Empire Life DevSecOps Engineer (Infrastructure), Cresta Infrastructure Engineer/SRE, Xsolla Platform Engineer (DevOps Engineer), Movable Ink Senior Site Reliability Engineer, Autodesk Senior DevOps Developer, Tailscale Infrastructure Engineer (same company+title as a Manual-filed 2026-07-07 row; this run surfaced full comp, $218,420–$273,360 CAD, worth Marc double-checking it's the same req given the 2.5-month gap).</li>
+<aside class="notes"><h2>September 21 pass audit</h2><ul><li>Remote-only passes completed, first 10 results reviewed each: DevOps Engineer (190), Senior DevOps Engineer (99), Staff DevOps Engineer (25), Site Reliability Engineer (108), Senior Site Reliability Engineer (52), Staff Site Reliability Engineer (28), Cloud Engineer (698), DevSecOps Engineer (14), Infrastructure Engineer (739), and Senior Infrastructure Engineer (374).</li>
+<li>Ottawa | DevOps Engineer | 61 rendered results; first 10 reviewed | Complete. Montréal | DevOps Engineer | first 10 reviewed | Complete.</li>
+<li>Kingston, Brockville and Cornwall | DevOps Engineer | attempted through the visible city field | Incomplete — the rendered page did not reliably preserve/accept the requested city and returned inconsistent inventory, so these are not claimed as zero-result passes.</li>
+<li>No CAPTCHA, sign-in, application, alert subscription, email action or other write-side action occurred.</li></ul><h2>Correction — same-day scoring error</h2><ul><li><b>Mogo/Orion Digital "DevOps Staff Platform Engineer"</b> was scored 7 and reported as a top new pick earlier today via the BuiltIn run, then resurfaced here on Eluta. It's the exact same posting already logged <code>Rejected</code> in applications.md on 2026-09-16 (score 4) — missed during the BuiltIn dedup check because applications.md recorded the company as "Orion Digital" (the legal/parent entity) while BuiltIn and Eluta both show the consumer brand "Mogo." <code>reports/data/builtin.json</code> has been corrected to reflect this as a pipeline match, not a fresh recommendation. Flagging here too since it was reported to Marc as a top pick earlier in the same session.</li></ul><h2>Recurring hard-gate — PLATO</h2><ul><li><b>PLATO</b> (an Indigenous-owned staffing/recruitment firm — Marc does not qualify per the Indigenous-membership hiring requirement in profile.md's Red Flags) appeared 4 separate times across today's searches under different postings: "DevOps Engineer (Azure ARO) remote contract" ($75-100/hr), "QA Automation Engineer (Salesforce Financial Services Cloud)", "DevSecOps"-adjacent copy on the same ARO posting, and "Infrastructure Engineer (remote contract)" ($75-100/hr). All hard-gated, none scored, consistent with the standing profile.md rule.</li></ul><h2>Pipeline matches confirmed this run — not rescored/refiled</h2><ul><li>Already <code>Applied</code>: Case IQ DevOps Engineer, Web.com/Newfold Senior DevOps Engineer AI Platform, Warner Music DevOps Engineer, Jonas/Computrition AI-First DevOps Engineer, Empire Life DevSecOps Engineer (Infrastructure), Cresta Infrastructure Engineer/SRE, Xsolla Platform Engineer (DevOps Engineer), Movable Ink Senior Site Reliability Engineer, Autodesk Senior DevOps Developer, Tailscale Infrastructure Engineer (same company+title as a Manual-filed 2026-07-07 row; this run surfaced full comp, $218,420–$273,360 CAD, worth Marc double-checking it's the same req given the 2.5-month gap).</li>
 <li>Already <code>Rejected</code>: Mogo/Orion Digital DevOps Staff Platform Engineer (see correction above), StackAdapt DevOps Engineer (Kubernetes team), Leap Tools DevOps Engineer, Movable Ink Lead Site Reliability Engineer, BMO Financial Group Senior Cloud Engineer.</li>
 <li>Already <code>New</code>: Xsolla Site Reliability Engineer (Monetization), Valtech Digital Site Reliability Expert, Magnet Forensics Senior Site Reliability Engineer (Cloud Networking & IaC — a different role than the newly-seen "Director, Cloud Engineering" at the same company, see below).</li>
 <li>StackAdapt's "Senior DevOps Engineer (Kubernetes team)" also resurfaced here — same cross-posted role already covered by today's BuiltIn/LinkedIn correction note (LinkedIn scored it 4, BuiltIn's fuller read scored it 7).</li></ul><h2>Not opened this run — plausible backlog for next pass</h2><ul><li>Toronto/GTA on-site or hybrid, not validated for cadence: Fullscript "Director of Engineering, Developer Infrastructure" (Ottawa-tagged but likely leadership scope), Cerence "Site Reliability Engineering Team Lead" (Principal/people-management scope), Magnet Forensics "Director, Cloud Engineering" (leadership scope, distinct from the known New SRE role at the same company).</li>
@@ -71,7 +74,8 @@ const statusPill=status=>{
   const lower=full.toLowerCase();
   const short=lower.startsWith("expired")?"Expired":lower.startsWith("skipped")?"Skipped":full;
   const tooltip=short===full?"":` title="${esc(full)}"`;
-  return `<span class="pill"${tooltip}>${esc(short)}</span>`;
+  const statusClass=lower.startsWith("inprocess")?" inprocess":"";
+  return `<span class="pill${statusClass}"${tooltip}>${esc(short)}</span>`;
 };
 function render(){
   const q=$("#q").value.toLowerCase(),family=$("#family").value,location=$("#location").value.toLowerCase(),minimum=+$("#minimum").value,hideDone=$("#hideDone").checked;

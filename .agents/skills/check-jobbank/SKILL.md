@@ -5,7 +5,7 @@ description: Search Canada's Job Bank for recent Canada-remote and selected East
 
 # Check Job Bank
 
-Search Job Bank, validate full postings, compare every eligible result with Marc's current profile, and update `reports/jobbank-job-search.html`. Job Bank access is strictly read-only: never apply, email, subscribe, create an account, sign in, upload information, or submit a form. Apart from refreshing the board-specific report, do not create job files or change pipeline state.
+Search Job Bank, validate full postings, compare every eligible result with Marc's profile, update `reports/jobbank-job-search.html`, and auto-file qualifying jobs under the policy below. External access is strictly read-only: never apply, email, subscribe, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
 
@@ -95,6 +95,10 @@ Lead with the run totals and note that overlap with Indeed is expected. Sort val
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link to the employer's canonical posting when available; otherwise link directly to the Job Bank detail page. Preserve currency and pay period and use `Not stated` for unknown facts. Include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
 After the table, list `Could not validate` entries and material search limitations — geographic and unrelated-role exclusions are scored `0`/`-1` rows in the table above, not a separate prose list. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/jobbank.json` during discovery.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

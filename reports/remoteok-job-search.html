@@ -5,8 +5,8 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>RemoteOK job search — 2026-09-21</title>
 <style>
-:root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e}
-@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b}}
+:root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e;--amber:#9a6700;--amber-bg:#fff8c5}
+@media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b;--amber:#e3b341;--amber-bg:#3b2e00}}
 *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,"Segoe UI",sans-serif}a{color:var(--blue)}
 main{width:min(1500px,calc(100% - 32px));margin:auto}header{padding:52px 0 28px}.eyebrow{color:var(--blue);font-size:12px;font-weight:800;letter-spacing:.13em;text-transform:uppercase}
 h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:10px 0}.lede,.count,.method{color:var(--muted)}.latest{font-weight:700;color:var(--blue);margin:8px 0 0}
@@ -15,7 +15,7 @@ h1{font-size:clamp(30px,5vw,52px);line-height:1.05;margin:10px 0}.lede,.count,.m
 input,select{padding:10px 12px;border:1px solid var(--line);border-radius:8px;background:var(--panel);color:var(--ink);font:inherit}.table-shell{overflow:auto}
 table{border-collapse:collapse;width:100%;min-width:1000px}th,td{padding:13px 12px;text-align:left;vertical-align:top;border-bottom:1px solid var(--line)}
 th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:uppercase;cursor:pointer}.score{font-size:18px;font-weight:800}.high{color:var(--green)}.low{color:#b77900}
-.pill{display:inline-block;padding:3px 8px;border-radius:99px;background:var(--soft);border:1px solid var(--line);font-size:11px;font-weight:700}.job,.company,.posting{font-weight:700}
+.pill{display:inline-block;padding:3px 8px;border-radius:99px;background:var(--soft);border:1px solid var(--line);font-size:11px;font-weight:700}.pill.inprocess{color:var(--amber);background:var(--amber-bg);border-color:var(--amber)}.job,.company,.posting{font-weight:700}
 .empty{text-align:center;padding:34px;color:var(--muted)}.panel{padding:22px;margin:24px 0}.notes{padding:22px;margin:28px 0 70px}.notes h2,.panel h2{margin-top:0}.notes li+li,.panel li+li{margin-top:7px}
 .reason{color:var(--red)}@media(max-width:800px){.stats{grid-template-columns:1fr 1fr}.controls{position:static;grid-template-columns:1fr}}
 </style>
@@ -68,7 +68,8 @@ const statusPill=status=>{
   const lower=full.toLowerCase();
   const short=lower.startsWith("expired")?"Expired":lower.startsWith("skipped")?"Skipped":full;
   const tooltip=short===full?"":` title="${esc(full)}"`;
-  return `<span class="pill"${tooltip}>${esc(short)}</span>`;
+  const statusClass=lower.startsWith("inprocess")?" inprocess":"";
+  return `<span class="pill${statusClass}"${tooltip}>${esc(short)}</span>`;
 };
 function render(){
   const q=$("#q").value.toLowerCase(),family=$("#family").value,location=$("#location").value.toLowerCase(),minimum=+$("#minimum").value,hideDone=$("#hideDone").checked;

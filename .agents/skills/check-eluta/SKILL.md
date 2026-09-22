@@ -5,7 +5,7 @@ description: Search Eluta and Canadian employer career sites for recent Canada-r
 
 # Check Eluta
 
-Discover recent jobs indexed by Eluta, validate them through full Eluta cached copies or employer career pages, compare every eligible posting with Marc's current profile, and update `reports/eluta-job-search.html`. Eluta and employer-site access is strictly read-only: never apply, email, subscribe, create an account, sign in, upload information, or submit a form. Apart from the board-specific report refresh, do not create job files or change pipeline state.
+Discover recent Eluta jobs, validate them through full cached copies or employer pages, compare every eligible posting with Marc's profile, update `reports/eluta-job-search.html`, and auto-file qualifying jobs under the policy below. External access is strictly read-only: never apply, email, subscribe, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
 
@@ -91,6 +91,10 @@ Lead with searches completed, unique postings reviewed, validated jobs, exclusio
 Use only `SRE`, `Platform`, or `DevOps`. Prefer the employer's canonical URL; otherwise link the accessible Eluta cached copy. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
 After the table, list `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/eluta.json` during discovery.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

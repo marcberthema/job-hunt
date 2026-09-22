@@ -5,7 +5,7 @@ description: Search Randstad Canada's Technologies inventory for recent Canada-r
 
 # Check Randstad
 
-Search Randstad Canada, validate current postings, compare every eligible result with Marc's profile, and update `reports/randstad-job-search.html`. Randstad access is strictly read-only: never apply, email a recruiter, subscribe, create an account, sign in, upload information, or submit a form. Apart from refreshing the board-specific report, do not create job files or change pipeline state.
+Search Randstad Canada, validate current postings, compare every eligible result with Marc's profile, update `reports/randstad-job-search.html`, and auto-file qualifying jobs under the policy below. External access is strictly read-only: never apply, email a recruiter, subscribe, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
 
@@ -107,6 +107,10 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Randstad job detail page. Preserve currency and pay period and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
 After the table, list `Could not validate` entries and material search limitations — geographic and scope exclusions are scored `0`/`-1` rows in the table above, not a separate prose list. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/randstad.json` during discovery.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

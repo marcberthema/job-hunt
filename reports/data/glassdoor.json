@@ -1,18 +1,29 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-09-19",
+  "run_date": "2026-09-21",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "Latest update: September 19, 2026 — first run written to this schema; confirmed one exact duplicate against an already-rejected Indeed posting (Morson) plus several titles not seen on Indeed.",
+  "latest_update": "Latest update: September 21, 2026 — all six mandatory Canada queries completed and eight results per query were reviewed before deduplication. CARFAX was validated in full and added as ineligible because it requires two office days weekly in London, Ontario.",
   "stats": [
-    {"value": 4, "label": "keyword searches attempted"},
-    {"value": 2, "label": "keywords usable (DevOps Engineer, DevSecOps Engineer)"},
-    {"value": 79, "label": "results screened"},
-    {"value": 12, "label": "postings opened and validated"},
+    {"value": 6, "label": "keyword searches attempted"},
+    {"value": 6, "label": "keyword searches completed"},
+    {"value": 48, "label": "result appearances reviewed"},
+    {"value": 13, "label": "postings retained and validated"},
     {"value": 1, "label": "confirmed duplicate of an Indeed posting"}
   ],
   "rows": [
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior Software Engineer - Dev Ops",
+      "company": "CARFAX",
+      "location": "London, ON — hybrid, 2 days/week",
+      "salary": "CAD $92,500–$136,000/year",
+      "gap": "Ineligible geography: the full posting requires two days each week in the London office, outside Marc's reachable hybrid cities; the technical scope also requires deep production Kubernetes and MLOps/LLM infrastructure.",
+      "url": "https://www.glassdoor.ca/job-listing/senior-software-engineer-dev-ops-carfax-JV_KO0,32_KE33,39.htm?jl=1010147663187",
+      "status": "Ineligible — London hybrid"
+    },
     {
       "score": 6,
       "family": "SRE",
@@ -149,6 +160,15 @@
   "could_not_validate": [],
   "notes_sections": [
     {
+      "heading": "September 21 query audit",
+      "items": [
+        "DevOps Engineer: 690 rendered; first 8 reviewed; Complete. IDs: 1010147663187, 1010254014564, 1010155857616, 1010269526806, 1010253469075, 1010102598047, 1010138159268, 1010229824066.",
+        "Platform Engineer: 7,437 rendered; first 8 reviewed; Complete. Site Reliability Engineer: 1,116 rendered; first 8 reviewed; Complete. Both remain extremely noisy, but the required first-eight boundary was audited rather than abandoned.",
+        "Cloud Engineer: 3,985 rendered; first 8 reviewed; Complete. DevSecOps Engineer: 153 rendered; first 8 reviewed; Complete. Forward Deployed Engineer: 154 rendered; first 8 reviewed; Complete.",
+        "The six passes produced 48 result appearances before deduplication. No CAPTCHA, sign-in, saved-job, alert or application action occurred."
+      ]
+    },
+    {
       "heading": "Indeed/Glassdoor overlap — direct answer to this run's question",
       "items": [
         "One confirmed exact duplicate this run: Morson Group's \"Senior Azure Cloud DevOps Specialist\" (Ottawa, $89.30/hr) is the same req as Morson Talent's posting already filed and Rejected via Indeed on 2026-09-15 — same title, same rate, same recruiter family, just listed under a slightly different company-display name (\"Morson Group\" vs. \"Morson Talent\").",
@@ -167,5 +187,5 @@
       ]
     }
   ],
-  "method": "Searched Glassdoor Canada via the canada-<keyword>-jobs URL pattern, screened 79 results across the two keywords that phrase-match cleanly (DevOps Engineer, DevSecOps Engineer), and opened 12 postings to full description for scoring. Platform Engineer and Site Reliability Engineer were tried but abandoned after confirming (again) that Glassdoor's matching returns literal-substring noise for both regardless of the N parameter — not worth the review time. Cloud Engineer and Forward Deployed Engineer were not attempted this run. No formal eligibility gate is needed (the canada- URL prefix scopes results by construction), so hard-gate postings (AWS/GCP-ownership-at-scale, unreachable on-site location, provincial residency) are scored low rather than excluded, per profile.md's red-flag rules."
+  "method": "All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform, SRE and Cloud queries were highly noisy but still audited. CARFAX's full posting was read and retained as a score -1 location exclusion. Existing validated rows and pipeline statuses were preserved."
 }

@@ -4,7 +4,7 @@
   "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Updated September 21, 2026 — all 8 default queries completed. Networks and Infrastructure is a small, static pool: the remaining 6 queries resurfaced almost entirely the same postings as the first 2, plus one new candidate (Senior Cloud Platform Engineer, Toronto hybrid 4 days/week — Azure/Databricks/Terraform, strong skill fit but outside reachable range).",
+  "latest_update": "Rechecked September 21, 2026 — all 8 mandatory rendered-browser queries completed. Counts were 29, 41, 34, 31, 37, 24, 53 and 53; the first eight results of each reproduced the same previously validated candidate pool, with no new eligible posting.",
   "stats": [
     {"value": 8, "label": "searches completed"},
     {"value": 9, "label": "unique postings reviewed"},
@@ -16,6 +16,16 @@
   ],
   "notes_sections": [
     {
+      "heading": "Latest query audit — September 21",
+      "items": [
+        "DevOps Engineer: 29 rendered; first 8 reviewed; Complete. Senior DevOps Engineer: 41 rendered; first 8 reviewed; Complete. Site Reliability Engineer: 34 rendered; first 8 reviewed; Complete.",
+        "Platform Engineer: 31 rendered; first 8 reviewed; Complete. Cloud Engineer: 37 rendered; first 8 reviewed; Complete. DevSecOps Engineer: 24 rendered; first 8 reviewed; Complete.",
+        "Infrastructure Engineer: 53 rendered; first 8 reviewed; Complete. Senior Infrastructure Engineer: 53 rendered; first 8 reviewed; Complete.",
+        "The recurring requisition set included 155055 (SRE), 154999 (Ottawa Technology Services Manager), 154970 (bare-metal Infrastructure Engineer), 154908 (AWS Cloud Engineer), 154891 (Senior DevSecOps Engineer), 154820 (Senior DevOps Specialist), 154802 (Network Automation Developer), 154720 (Application Release Engineer), and 154794 (Senior Cloud Platform Engineer).",
+        "The SRE and Ottawa manager descriptions were re-opened and remain unchanged: the SRE has no Canada-wide remote statement and is tied to Toronto; the manager role is fully onsite and management-centered. No CAPTCHA, login, form submission or application action occurred."
+      ]
+    },
+    {
       "heading": "Run notes — full 8-query rotation",
       "items": [
         "A first pass completed 2 of 8 queries (DevOps Engineer, Senior DevOps Engineer) before hitting a session budget limit; this run completed the remaining 6 (Site Reliability Engineer, Platform Engineer, Cloud Engineer, DevSecOps Engineer, Infrastructure Engineer, Senior Infrastructure Engineer) and merged results.",
@@ -26,6 +36,7 @@
       ]
     }
   ],
+  "method": "Eight independent searches were executed with expertise=3 in a rendered browser. Each query reached a real listing state and the first eight results were captured before deduplication. The soft keyword filter repeatedly returned the same small Networks and Infrastructure inventory. Current descriptions and applications.md statuses were reconciled; 12 previously validated rows remain, with no new eligible role and no inaccessible posting.",
   "rows": [
     {
       "score": 7,

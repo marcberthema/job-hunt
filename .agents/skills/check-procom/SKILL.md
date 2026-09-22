@@ -5,7 +5,7 @@ description: Search Procom's contractor jobs portal for recent Canadian SRE, Pla
 
 # Check Procom
 
-Search Procom, validate current postings, gate eligibility before scoring, compare every eligible result with Marc's profile, and update `reports/procom-job-search.html`. All external activity is strictly read-only: never apply, save a job, create an account, sign in, upload information, or submit a form. Apart from refreshing the board-specific report, do not create job files or change pipeline state.
+Search Procom, validate current postings, gate eligibility, compare every eligible result with Marc's profile, update `reports/procom-job-search.html`, and auto-file qualifying jobs under the policy below. External activity is strictly read-only: never apply, save, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
 
@@ -87,6 +87,10 @@ Lead with the run totals. Sort validated jobs by score descending using exactly:
 Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the Procom job detail page. Preserve currency and pay period, and use `Not stated` for unknown facts. Include low scores rather than hiding weak matches.
 
 Put location-gated and other ineligible entries in the same table as `score: -1` rows; never repeat them in a footer list. After the table, list only `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/procom.json` during discovery.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

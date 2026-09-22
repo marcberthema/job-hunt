@@ -1,18 +1,18 @@
 {
   "board": "BuiltIn",
-  "run_date": "2026-09-19",
+  "run_date": "2026-09-21",
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
-  "lede": "Four-keyword rotation (DevOps Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer) against the /jobs/remote/dev-ops?search= endpoint. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 19, 2026 — 6 new eligible candidates, best fit Branch/Vistex at score 6-7. Correction: the Mogo/Orion Digital posting initially scored here is already a Rejected pipeline match, not new — see Pipeline matches note.",
+  "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
+  "latest_update": "Rechecked September 21, 2026 — all nine remote title passes completed; the required city/location filter could not be verified reliably, so geography passes are marked incomplete. Inviso's current FDE Infrastructure SRE posting was validated and matched to an existing Applied pipeline row.",
   "stats": [
     {
-      "value": 78,
-      "label": "unique postings surfaced"
+      "value": 9,
+      "label": "remote title passes completed"
     },
     {
-      "value": 20,
-      "label": "opened for full validation"
+      "value": 15,
+      "label": "geography passes incomplete"
     },
     {
       "value": 6,
@@ -32,6 +32,17 @@
     }
   ],
   "rows": [
+    {
+      "score": 8,
+      "family": "SRE",
+      "title": "FDE Infrastructure SRE Engineer - Canada",
+      "company": "Inviso Corporation",
+      "location": "Remote Canada; client travel may be required",
+      "salary": "Not stated",
+      "gap": "Deep production Kubernetes cluster operations, landing-zone ownership and AI/GPU platform operations are not as strongly evidenced as the Azure, Terraform, CI/CD, observability and incident-response requirements.",
+      "url": "https://builtin.com/job/infrastructure-sre-engineer-canada/10971481",
+      "status": "Applied — 2026-09-19"
+    },
     {
       "score": 7,
       "family": "SRE",
@@ -94,6 +105,15 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "September 21 pass audit",
+      "items": [
+        "Complete remote passes: Site Reliability Engineer, Reliability Engineer, Platform Engineer, Infrastructure Engineer, Cloud Engineer, DevOps Engineer, DevSecOps Engineer, Azure DevOps Engineer and Forward Deployed Engineer. The complete visible first page was captured before deduplication; DevSecOps Engineer and Azure DevOps Engineer rendered zero direct job links.",
+        "Remote/city discovery passes for Canada/Ontario, Ottawa, Kingston, Cornwall, Montréal, Toronto, Vancouver, Calgary, Edmonton, Waterloo/Kitchener, Halifax, Winnipeg, Québec City and Victoria were attempted through the visible location field but the rendered results did not reliably change to the selected location. All 15 are marked Incomplete rather than complete or zero-result.",
+        "Inviso Corporation's full current posting was opened and validated. It is already Applied in applications.md (2026-09-19), so it is retained as a pipeline match rather than presented as new.",
+        "No CAPTCHA, sign-in, saved job, alert creation or application action occurred."
+      ]
+    },
     {
       "heading": "Pipeline matches — not rescored/refiled",
       "items": [

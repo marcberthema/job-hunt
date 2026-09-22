@@ -5,7 +5,7 @@ description: Search Indeed and employer career sites for Canada-eligible remote 
 
 # Check Indeed
 
-Discover Indeed jobs through public search access, validate them against authoritative postings, compare every eligible result with Marc's current profile, and update `reports/indeed-job-search.html`. Apart from that board-specific report refresh, this is read-only: do not create job files, change pipeline state, apply, sign in, solve CAPTCHAs, or attempt to bypass access controls.
+Discover Indeed jobs through public search access, validate them against authoritative postings, compare every eligible result with Marc's profile, update `reports/indeed-job-search.html`, and auto-file qualifying jobs under the policy below. External access is read-only: do not apply, sign in, solve CAPTCHAs, or bypass controls. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
 
@@ -69,6 +69,10 @@ Lead with searches completed, unique postings validated, exclusions, employer-si
 Use only `SRE`, `Platform`, or `DevOps`. Link directly to the accessible full posting, preferring the employer page. Preserve currency and pay period; use `Not stated` for unknown facts. Include low scores, and include full-review exclusions as `score: 0` (`Out of scope`) or `score: -1` (`Ineligible`) rows in this same table, per `reports/report_schema.md`.
 
 After the table, list `Could not validate` entries and search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/indeed.json` during discovery.
+
+## Automatic filing
+
+Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
 
 ## Follow-up filing
 

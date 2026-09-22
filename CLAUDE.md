@@ -45,7 +45,7 @@ job-hunt/
   CLAUDE.md               ← This file — project conventions and workflow
   profile.md              ← Source of truth: background, skills, rate, preferences, what "real consulting" looks like
   job_sources.md          ← Every job board evaluated: working/blocked/manual, last-checked date per source
-  applications.md         ← The ledger: one row per posting, Status = New | Applied | Skipped | Rejected
+  applications.md         ← The ledger: one row per posting, Status = New | InProcess | Applied | Skipped | Rejected
   specs/
     INDEX.md              ← Progress tracker for all automation stories
     <story>.md            ← Feature specs (written conversationally, one per automation capability)
@@ -97,15 +97,17 @@ It should contain:
 Every posting is one row in `applications.md`, moving through one `Status` column:
 
 ```
-New  →  Applied   (you confirmed submission)
-     →  Skipped   (you decided not to pursue it — skill gap, duplicate, expired, etc.)
+New  →  InProcess  (materials prepared; waiting for you to submit externally)
+     →  Skipped    (you decided not to pursue it — skill gap, duplicate, expired, etc.)
+
+InProcess  →  Applied  (you confirmed submission)
 
 Applied  →  Rejected  (the employer passed on you — only reachable from Applied)
 ```
 
 `Skipped` and `Rejected` look similar but mean opposite things: `Skipped` is Marc's own call, made
 before ever applying; `Rejected` means he applied and the employer said no. Never set `Rejected`
-directly from `New` — that transition always passes through `Applied` first.
+directly from `New` or `InProcess` — that transition always passes through `Applied` first.
 
 A row carries: date found, score, company, role, the board it came from, its source URL, and any
 flags in `Notes`. Full scoring detail and rationale live in that board's
@@ -141,7 +143,7 @@ and `review` are the only two that touch `applications.md`.
 | Skill | Purpose |
 |---|---|
 | `addjob` | Shared filing step: fetch/score/draft a single posting by URL, append a `New` row to `applications.md` |
-| `review` | Walk `applications.md`'s `New` rows (highest score first), pay/days-in-office/contract-type highlighted — reject/skip, or apply (cover letter + application-question help), updating `Status` to `Applied` once you confirm submission |
+| `review` | Walk `applications.md`'s `New` rows (highest score first), pay/days-in-office/contract-type highlighted — skip, or prepare an application and set `InProcess`; update to `Applied` once you confirm submission |
 | `check-indeed` | Search Indeed for Canada-eligible remote and reachable-city hybrid roles, score every result, file picks via `addjob` |
 | `check-dice` | Search Dice, gate out clearance/US-work-authorization-only postings before scoring |
 | `check-jobbank` | Search Job Bank (Canada), score every result |
