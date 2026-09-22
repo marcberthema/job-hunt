@@ -1,16 +1,16 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-09-21",
+  "run_date": "2026-09-22",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "Latest update: September 21, 2026 — all six mandatory Canada queries completed and eight results per query were reviewed before deduplication. CARFAX was validated in full and added as ineligible because it requires two office days weekly in London, Ontario.",
+  "latest_update": "Latest update: September 22, 2026 — all six mandatory Canada queries completed, eight results per query reviewed before dedup. Five new postings validated: Exaion's Private Cloud Infrastructure Administrator (Montreal hybrid, score 4), Export Development Canada's Cybersecurity Engineer (Ottawa/Toronto/Montreal, score 3), and three exclusions (InfoTrack Toronto — ineligible geography; Logistec and Haber — domain mismatch). Zero postings cleared the auto-file threshold (score ≥5) today.",
   "stats": [
     {"value": 6, "label": "keyword searches attempted"},
     {"value": 6, "label": "keyword searches completed"},
-    {"value": 48, "label": "result appearances reviewed"},
-    {"value": 13, "label": "postings retained and validated"},
-    {"value": 1, "label": "confirmed duplicate of an Indeed posting"}
+    {"value": 48, "label": "result appearances reviewed today"},
+    {"value": 5, "label": "new postings validated today"},
+    {"value": 0, "label": "auto-filed today (none cleared score ≥5)"}
   ],
   "rows": [
     {
@@ -33,7 +33,7 @@
       "salary": "Not stated",
       "gap": "AWS multi-account + EKS/Kubernetes 'at scale' ownership is deeper than Marc's provisioning-side K8s depth (CKA in progress, not complete); otherwise strong overlap — incident command, Terraform/Ansible IaC, Datadog observability, and explicit AI-assisted-engineering tooling (Amazon Kiro) matching Marc's own Énergir practice",
       "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm",
-      "status": "New"
+      "status": "Applied"
     },
     {
       "score": 5,
@@ -44,7 +44,7 @@
       "salary": "CAD $101,800–$124,400/year (employer stated) + 12% bonus target",
       "gap": "Salary range straddles the $120k Montréal on-site/hybrid floor — most of the range sits below it, only the top clears; otherwise a strong fit: Terraform CI/CD, Dynatrace/Elasticsearch observability, insurance-sector regulated environment, and explicit enterprise-AI-tooling emphasis. Bilingual requirement is a Marc asset, not a gap.",
       "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm",
-      "status": "New"
+      "status": "Applied"
     },
     {
       "score": 4,
@@ -55,6 +55,17 @@
       "salary": "CAD $100,000–$160,000/year (employer stated)",
       "gap": "Requires self-hosted Kubernetes cluster administration — a real depth gap (Marc's K8s experience is provisioning/automation-side, not deep node/cluster ops); GCP-or-AWS requirement is flexible, not a hard gate on its own",
       "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Private Cloud Infrastructure Administrator F/H",
+      "company": "Exaion",
+      "location": "Montreal, QC — hybrid (télétravail hybride)",
+      "salary": "Not stated",
+      "gap": "Real tooling overlap (Ansible, Linux/CentOS/Debian administration, Kubernetes, Python, Bash, ELK, Prometheus/Grafana), but the scope reads as Level 2 infrastructure support and maintenance — daily incident response, documentation upkeep, escalating to tier-3 — not senior platform ownership or architecture. No salary stated to confirm it clears the $120k Montréal hybrid floor. A different Exaion req (\"Senior Cloud & Infrastructure Delivery Lead\") was already Skipped 2026-09-19 for an HPC/GPU gap — this is a separate, more junior-leaning role at the same employer.",
+      "url": "https://www.glassdoor.ca/Job/canada-cloud-engineer-jobs-SRCH_IL.0,6_IN3_KO7,21.htm",
       "status": "New"
     },
     {
@@ -77,6 +88,17 @@
       "salary": "CAD $79,000–$135,000/year (Glassdoor estimate)",
       "gap": "Domain mismatch — center of gravity is RF/wireless/embedded test-lab automation (spectrum analyzers, signal generators, LTE/5G) rather than cloud/platform engineering; also requires eligibility for Canadian Security Clearance",
       "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm",
+      "status": "New"
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "Cybersecurity Engineer - 405 EN",
+      "company": "Export Development Canada",
+      "location": "Ottawa, ON (or Toronto/Montréal hub) — hybrid, 2 days/week now, moving to 3 days/week by Sept 2026 (phased)",
+      "salary": "CAD $96,557–$128,742/year (employer stated, Cyber Security Specialist 18) + performance incentive",
+      "gap": "Domain mismatch — this is a cybersecurity engineering generalist role (application/cloud/identity/network security breadth, embedding with delivery teams on DevSecOps practices), requiring 7+ years of dedicated cybersecurity engineering experience, not infrastructure/platform ownership. Marc's adjacent security work (CVE/EoL tracking and SSL/TLS scoring at Tink, Splunk config-drift alerting at Desjardins) is real but doesn't reach a specialist security-engineer bar. Salary midpoint clears the $100k Ottawa hybrid floor; Azure-preferred is a plus.",
+      "url": "https://www.glassdoor.ca/Job/canada-devsecops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,25.htm",
       "status": "New"
     },
     {
@@ -155,37 +177,76 @@
       "gap": "Location hard-gate (Calgary is outside the reachable range) compounded by an AWS-native architecture-ownership hard gate — CloudFormation StackSets, multi-account AWS Organizations, and IAM/networking ownership are the actual deliverables",
       "url": "https://www.glassdoor.ca/Job/canada-devsecops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,25.htm",
       "status": "New"
+    },
+    {
+      "score": 2,
+      "family": "DevOps",
+      "title": "Directeur.rice principal, développement de logiciel (Software Development)",
+      "company": "Logistec",
+      "location": "Montreal, QC",
+      "salary": "CAD $52,000–$103,000/year (Glassdoor estimate)",
+      "gap": "Out of scope — director-level software development leadership (people management of a dev org), not infrastructure/platform/SRE, and the Glassdoor-estimated range sits below the $120k Montréal FTE floor even at the top end",
+      "url": "https://www.glassdoor.ca/Job/canada-devsecops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,25.htm",
+      "status": "Out of scope — director-level software dev leadership"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Forward Deployment Engineer",
+      "company": "Haber",
+      "location": "Montreal region (on the road — 2–3 week on-site blocks at pulp/paper mills)",
+      "salary": "CAD $100,000–$135,000/year (employer stated)",
+      "gap": "Out of scope — the title matched the Forward Deployed Engineer keyword, but the actual job is chemical/process engineering embedded in pulp and paper mills (P&IDs, DCS/PLC signals, mass and energy balances); no software, cloud, or infrastructure component at all",
+      "url": "https://www.glassdoor.ca/Job/canada-forward-deployed-engineer-jobs-SRCH_IL.0,6_IN3_KO7,32.htm",
+      "status": "Out of scope — pulp & paper process engineering, not IT"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Cloud Infrastructure & DevSecOps Engineer",
+      "company": "InfoTrack Canada",
+      "location": "Toronto, ON",
+      "salary": "CAD $130,000–$150,000/year (employer stated)",
+      "gap": "Ineligible geography — Toronto is outside Marc's reachable on-site/hybrid range (Ottawa/Kingston/Brockville/Cornwall/Montréal); appeared independently across three separate keyword queries (DevOps Engineer, Platform Engineer, DevSecOps Engineer), suggesting a strong keyword match that the location gate still excludes",
+      "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm",
+      "status": "Ineligible — Toronto"
     }
   ],
-  "could_not_validate": [],
+  "could_not_validate": [
+    {
+      "text": "Olive Systems \"Forward Deployed Engineer — One Process, Multiple Opportunities\" (Remote) is not an actual job requisition — it's a staffing/matching funnel (\"MakeHire\") for Forward Deployed Engineer roles at US companies, with no specific employer, compensation, or Canada eligibility stated. Read in full; could not be scored as a posting.",
+      "url": "https://www.glassdoor.ca/Job/canada-forward-deployed-engineer-jobs-SRCH_IL.0,6_IN3_KO7,32.htm"
+    }
+  ],
   "notes_sections": [
     {
-      "heading": "September 21 query audit",
+      "heading": "September 22 query audit",
       "items": [
-        "DevOps Engineer: 690 rendered; first 8 reviewed; Complete. IDs: 1010147663187, 1010254014564, 1010155857616, 1010269526806, 1010253469075, 1010102598047, 1010138159268, 1010229824066.",
-        "Platform Engineer: 7,437 rendered; first 8 reviewed; Complete. Site Reliability Engineer: 1,116 rendered; first 8 reviewed; Complete. Both remain extremely noisy, but the required first-eight boundary was audited rather than abandoned.",
-        "Cloud Engineer: 3,985 rendered; first 8 reviewed; Complete. DevSecOps Engineer: 153 rendered; first 8 reviewed; Complete. Forward Deployed Engineer: 154 rendered; first 8 reviewed; Complete.",
-        "The six passes produced 48 result appearances before deduplication. No CAPTCHA, sign-in, saved-job, alert or application action occurred."
+        "DevOps Engineer: 110 rendered (N=22); first 8 reviewed; Complete. Candidates: CARFAX (dup), LYNKED Inc. (London, unreachable, $58-69K), LMI Technologies (Burnaby, unreachable), BMO Associate DevOps Engineer (Toronto, unreachable), Wissen Infotech (dup), Moneris Manager SRE/DevOps (Toronto, unreachable + people-management), InfoTrack Canada (Toronto, unreachable — added as Ineligible row), Octasic (dup). 0 new eligible.",
+        "Platform Engineer: 1,321 rendered (N=24); first 8 reviewed; Complete — reconfirmed structurally noisy (Tactable Tech Lead, Soneil Spark Senior SWE, CATSA Data Engineer and similar non-DevOps titles dominate). 0 new eligible.",
+        "Site Reliability Engineer: 297 rendered (N=32); first 8 reviewed; Complete — reconfirmed noise-dominated (VIA Rail structural/electrical reliability, Capgemini air-systems, X-Group electrical engineer). 0 new eligible.",
+        "Cloud Engineer: N=20 truncated to \"Cloud enginee\" and returned 0 results; retried at N=21 → 728 rendered, clean phrase match. First 8 reviewed; Complete. New candidate: Exaion's \"Private Cloud Infrastructure Administrator F/H\" (Montreal hybrid, score 4). Rest were duplicates (Exaion Delivery Lead already Skipped 2026-09-19, CARFAX) or unreachable (FinneyTaylor/Edmonton, Thales/Vancouver, Tactable/Toronto, LYNKED/London, Soneil Spark/Brampton).",
+        "DevSecOps Engineer: 23 rendered (N=25); first 8 reviewed; Complete, clean phrase match as in prior runs. New candidates: Export Development Canada's \"Cybersecurity Engineer - 405 EN\" (Ottawa/Toronto/Montreal, score 3, domain mismatch) and Logistec's director-level software-dev role (Montreal, score 2, out of scope). BMO's two Toronto postings (Principal Cloud Security Engineer, Principal Engineer AI) are unreachable and not added as rows given no other decision-relevant detail.",
+        "Forward Deployed Engineer: 23 rendered (N=32); first 8 reviewed; Complete — reconfirmed dominated by AI/GenAI deployment and unrelated-domain \"forward deployed\" titles. New candidates: Haber's pulp-and-paper process-engineering role (Montreal, score 0, total domain mismatch despite the matching title) and Olive Systems' staffing funnel (not a real posting, logged under Could Not Validate). Turnifai (AI enablement for private equity, Toronto) and PocketHealth (pre-sales Solutions Engineer, GTA-office-twice-weekly) were opened and are both out of scope on domain and geography — not added as rows.",
+        "The six passes produced 48 result appearances before dedup. No CAPTCHA, sign-in, saved-job, alert, or application action occurred."
       ]
     },
     {
-      "heading": "Indeed/Glassdoor overlap — direct answer to this run's question",
+      "heading": "Indeed/Glassdoor overlap",
       "items": [
-        "One confirmed exact duplicate this run: Morson Group's \"Senior Azure Cloud DevOps Specialist\" (Ottawa, $89.30/hr) is the same req as Morson Talent's posting already filed and Rejected via Indeed on 2026-09-15 — same title, same rate, same recruiter family, just listed under a slightly different company-display name (\"Morson Group\" vs. \"Morson Talent\").",
-        "Beyond that single confirmed case, most of this run's 12 validated postings were titles <b>not</b> seen on Indeed in the current pipeline (Tecsys, Intact, Xsolla, Codan/Zetron, Octasic, BMO, CUBE84, Shiki, MEDFAR, Hookdeck, Wissen) — Glassdoor is pulling a materially different inventory from a mostly overlapping employer pool this run, not a re-skin of the same postings.",
-        "MEDFAR's Quebec-residency hard gate recurred on a different posting than the one previously seen via Indeed on 2026-08-20 — same employer-level policy, different req, reinforcing this as a standing company rule rather than a one-off.",
-        "Deloitte's Azure Cloud Engineer posting (seen again in this run's raw results) is a known duplicate of an already-filed Indeed posting from a prior run — not re-added to the table above."
+        "No newly confirmed cross-board duplicates today beyond the standing Morson Group/Morson Talent match already on record.",
+        "InfoTrack Canada's Toronto posting recurred across three separate keyword queries this run (DevOps, Platform, DevSecOps) — a genuinely strong keyword match, excluded purely on the Toronto location hard-gate."
       ]
     },
     {
       "heading": "Keyword reliability this run",
       "items": [
-        "\"DevOps Engineer\" (N=22) and \"DevSecOps Engineer\" (N=25) both phrase-matched cleanly (91 and 19 results respectively) — the two usable keywords this run.",
-        "\"Platform Engineer\" reconfirmed as structurally unusable regardless of N — every N tried matches literal \"engine\" jobs (1,111 results dominated by mechanical/electrical/game-engine noise), consistent with the 2026-09-08 finding that this is inherent to Glassdoor's matching, not a URL-encoding bug.",
-        "\"Site Reliability Engineer\" reconfirmed the same inherent-noise problem — 266 results dominated by mechanical/electrical \"reliability engineer\" roles (rail, mining, hardware), not SRE. Neither keyword is worth retrying with different N values.",
-        "Did not run Cloud Engineer or Forward Deployed Engineer this pass — boundary for a follow-up run."
+        "\"DevOps Engineer\" (N=22, 110 results) and \"DevSecOps Engineer\" (N=25, 23 results) both phrase-matched cleanly again.",
+        "\"Cloud Engineer\" needed a retry — N=20 truncated the query text and returned 0 results; N=21 gave a clean 728-result match. Worth updating the default N guess for this keyword to 21.",
+        "\"Platform Engineer\" and \"Site Reliability Engineer\" reconfirmed structurally unusable regardless of N, consistent with every prior run — not worth retrying with different N values.",
+        "\"Forward Deployed Engineer\" phrase-matched correctly (23 results) but the keyword itself is now dominated by AI/GenAI deployment roles and unrelated \"forward deployed\" job titles in other industries (process engineering, real estate/OT networking) — a domain drift away from infra/platform DevOps, same pattern noted in the 2026-09-08 run."
       ]
     }
   ],
-  "method": "All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform, SRE and Cloud queries were highly noisy but still audited. CARFAX's full posting was read and retained as a score -1 location exclusion. Existing validated rows and pipeline statuses were preserved."
+  "method": "All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
 }
