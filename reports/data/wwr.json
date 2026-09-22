@@ -1,34 +1,34 @@
 {
   "board": "We Work Remotely",
-  "run_date": "2026-09-21",
+  "run_date": "2026-09-22",
   "eyebrow": "We Work Remotely · region-gated",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Six-keyword rotation against We Work Remotely, region eligibility confirmed from each posting's own detail page (the site's generic 'Anywhere in the World' tag is not trustworthy on its own).",
-  "latest_update": "Checked September 21, 2026 — 7 postings opened and read in full across 4 keywords with results (2 keywords returned zero); 2 known pipeline postings, 2 new scored rows, 1 reviewed-then-ineligible (timezone gate), 2 reviewed-then-out-of-scope.",
+  "latest_update": "Checked September 22, 2026 — all 6 mandatory queries run (2 zero-result, 4 with results); every result was either a known/duplicate posting already tracked from the 2026-09-21 run or clearly out of the SRE/Platform/DevOps family by title. Zero new eligible postings, zero new filings.",
   "stats": [
     {
       "value": 6,
       "label": "searches completed"
     },
     {
-      "value": 7,
-      "label": "postings reviewed in full"
+      "value": 16,
+      "label": "results reviewed (title + dedup pass)"
     },
     {
-      "value": 2,
-      "label": "pipeline matches"
+      "value": 4,
+      "label": "pipeline/known matches (unchanged)"
     },
     {
-      "value": 1,
+      "value": 0,
       "label": "new scored (in-scope)"
     },
     {
       "value": 2,
-      "label": "ineligible (reviewed)"
+      "label": "ineligible (known, resurfaced)"
     },
     {
       "value": 2,
-      "label": "out of scope (reviewed)"
+      "label": "out of scope (known, resurfaced)"
     },
     {
       "value": 0,
@@ -54,9 +54,9 @@
       "company": "JFrog",
       "location": "\"Open to remote within the East Coast only\" — explicit US East Coast region restriction, stated at the top of the full posting; excludes Canada. Distinct from JFrog's Senior req (already Applied), which is explicitly Canada-GeoLocked.",
       "salary": "USD $135,000–$145,000/year",
-      "gap": "Same customer-facing CI/CD/DevOps profile as JFrog's Senior req Marc already applied to, but this req's own posting text restricts remote work to the US East Coast — not take-able from Ontario. Corrected 2026-09-21: the initial run's location field missed this line and scored it 7/New; re-verified directly on the posting before filing.",
+      "gap": "Same customer-facing CI/CD/DevOps profile as JFrog's Senior req Marc already applied to, but this req's own posting text restricts remote work to the US East Coast — not take-able from Ontario.",
       "url": "https://weworkremotely.com/remote-jobs/jfrog-professional-services-devops-engineer",
-      "status": "Ineligible — US East Coast only"
+      "status": "Skipped"
     },
     {
       "score": 5,
@@ -65,7 +65,7 @@
       "company": "Lemon.io",
       "location": "Remote — EU, US, Canada, UK, Australia, Singapore (freelance marketplace, no visa assistance)",
       "salary": "Contract, rate not stated",
-      "gap": "Requires 3+ years Kubernetes and Python/Golang — Marc has no Golang experience and his Kubernetes depth is provisioning-level, not the deep administration this listing implies.",
+      "gap": "Requires 3+ years Kubernetes and Python/Golang — Marc has no Golang experience and his Kubernetes depth is provisioning-level, not the deep administration this listing implies. Resurfaced 2026-09-22 (still listed, 29d old at check time); also a cross-board duplicate of the 2026-08-25 RemoteOK filing, which is already marked Skipped/expired in applications.md — not refiled.",
       "url": "https://weworkremotely.com/remote-jobs/lemon-io-senior-devops-engineer-3",
       "status": "Skipped"
     },
@@ -89,7 +89,7 @@
       "salary": "Not stated",
       "gap": "Full posting states \"we are unable to consider applications from candidates in other timezones\" outside CET±3 — excludes Canada/Eastern entirely. Real Azure/Terraform/AKS fit otherwise, but not take-able.",
       "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-cloud-engineer-azure",
-      "status": "Ineligible — timezone excludes Canada"
+      "status": "Skipped"
     },
     {
       "score": 0,
@@ -98,9 +98,9 @@
       "company": "Hex Technologies",
       "location": "Remote, Anywhere in the World",
       "salary": "USD $198,750–$295,000/year",
-      "gap": "Cloud security specialist role (AWS security services, CNAPP/SIEM tooling, security certs) — not DevOps/Platform/SRE center of gravity; Marc has no claimed cloud-security-specialist depth.",
+      "gap": "Cloud-security specialist role (threat detection, security architecture ownership) rather than DevOps, Platform, or SRE center of gravity.",
       "url": "https://weworkremotely.com/remote-jobs/hex-technologies-cloud-security-engineer",
-      "status": "Out of scope — cloud security"
+      "status": "Skipped"
     },
     {
       "score": 0,
@@ -109,33 +109,26 @@
       "company": "Databricks",
       "location": "Remote, Anywhere in the World",
       "salary": "Not stated",
-      "gap": "Application-layer GenAI engineering (RAG, multi-agent systems, Text2SQL, fine-tuning) requiring a graduate degree in a quantitative discipline — not infrastructure/DevOps work despite the Forward Deployed Engineer title.",
+      "gap": "Application-layer GenAI/customer-solutions engineering role, not infrastructure or DevOps work — title only nominally matches the Forward Deployed Engineer search term.",
       "url": "https://weworkremotely.com/remote-jobs/databricks-ai-engineer-fde-forward-deployed-engineer",
-      "status": "Out of scope — application AI"
+      "status": "Skipped"
     }
   ],
   "could_not_validate": [],
   "notes_sections": [
     {
-      "heading": "Query audit",
+      "heading": "Per-query audit — 2026-09-22",
       "items": [
-        "<b>DevOps Engineer</b> — ~9 listings shown, 8 reviewed within boundary; 3 plausible (both JFrog reqs, Lemon.io). Complete.",
-        "<b>Platform Engineer</b> — 4 listings shown (one duplicate LawnStarter posting); 1 plausible (Proxify AB Senior Platform Engineer). Complete.",
-        "<b>Site Reliability Engineer</b> — 0 results. Zero results.",
-        "<b>Cloud Engineer</b> — 2 listings shown across two passes (Proxify AB Senior Cloud Engineer, Hex Technologies Cloud Security Engineer); both opened and reviewed in full. Complete.",
-        "<b>DevSecOps Engineer</b> — 0 results. Zero results.",
-        "<b>Forward Deployed Engineer</b> — 1 listing shown (Databricks AI Engineer - FDE), reviewed in full. Complete."
-      ]
-    },
-    {
-      "heading": "Run notes",
-      "items": [
-        "No CAPTCHA or blocking challenge encountered.",
-        "Confirmed the skill's warning about wrong-<article>-element extraction on detail pages: a naive page-text read grabs the \"Related Jobs\" sidebar instead of the real description on at least one JFrog listing. Located and read the actual job-description region for every posting instead.",
-        "Correction (2026-09-21, during addjob filing): JFrog's non-Senior Professional Services DevOps Engineer req was re-verified before filing and found to state \"Open to remote within the East Coast only\" at the top of its full posting — a US-only region restriction the original run's location field missed. Re-scored from 7/New to -1/Ineligible; not filed to applications.md.",
-        "All retrieval was read-only; no application, account, \"AI Auto-Apply,\" or form action was used."
+        "<b>DevOps Engineer</b>: 9 results, reviewed. Complete. In-family hits: JFrog Senior Professional Services DevOps Engineer (known, Applied), JFrog Professional Services DevOps Engineer (known, Ineligible — US East Coast only), Lemon.io Senior DevOps Engineer (known/cross-board duplicate, Skipped — Golang/K8s gap). Out-of-family by title, not opened: Software Engineer and Security Operations Engineer (CircleCI), Engineering Manager, Notifications (Discord), Senior Software Engineer (CircleCI), Application Security Engineer II (Abnormal).",
+        "<b>Platform Engineer</b>: 4 results, reviewed. Complete. In-family hit: Proxify AB Senior Platform Engineer (known, New, score 4 — Kubernetes operator/Go gap). Out-of-family by title, not opened: Analytics Engineering Manager, Data Platform & Governance (LawnStarter, listed twice), Lead Engineer (Drupal / Web Platforms) (Current) — data-analytics management and CMS web development respectively, not infrastructure/DevOps.",
+        "<b>Site Reliability Engineer</b>: 0 results. Zero results — confirms the persistent multi-word-phrase gap on this site's search.",
+        "<b>Cloud Engineer</b>: 1 result, reviewed. Complete. Proxify AB Senior Cloud Engineer (Azure) — known, Ineligible (CET±3 timezone excludes Canada).",
+        "<b>DevSecOps Engineer</b>: 0 results. Zero results — confirms the persistent multi-word-phrase gap.",
+        "<b>Forward Deployed Engineer</b>: 1 result, reviewed. Complete. Databricks AI Engineer - FDE — known, Out of scope (application-layer GenAI, not infrastructure).",
+        "All 6 mandatory queries: Complete or Zero results — no CAPTCHA, block, or access failure encountered this run.",
+        "Net for this run: every posting surfaced across all 6 queries was already known from the 2026-09-21 run (same URLs) or clearly out of the SRE/Platform/DevOps family by title. Zero new candidates, zero new filings. This board's live inventory has not meaningfully turned over in the 24 hours since the last check."
       ]
     }
   ],
-  "method": "Six default keyword queries run independently via browser against weworkremotely.com/remote-jobs/search. Two returned zero results (Site Reliability Engineer, DevSecOps Engineer). Across the remaining four, 7 distinct postings were opened and read in full (region tag never trusted alone — confirmed from each posting's own detail page): 2 are known pipeline postings (JFrog Senior Professional Services DevOps Engineer — Applied; Lemon.io Senior DevOps Engineer — Skipped), 2 are new in-scope scored postings, 1 was reviewed in full and found region-ineligible (CET-timezone-only restriction hidden behind an \"Anywhere in the World\" tag), and 2 were reviewed in full and found out of scope (cloud security specialist; application-layer GenAI engineering)."
-}
+  "method": "Bare-title rotation per the check-wwr skill's six mandatory queries (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer), each searched independently via weworkremotely.com/remote-jobs/search?term=. Eligibility gated on each posting's own detail-page location line, never the decorative \"Anywhere in the World\" tag. This run found no new inventory since 2026-09-21 — the same 7 in-family postings resurfaced under the same URLs, already reflected in applications.md and this report. Repository notes (job_sources.md) continue to show single-broad-term searches (\"DevOps\", \"Cloud\", \"Platform\") surfacing more volume historically than this skill's mandated bare-title rotation; the bare-title rotation was used here per the skill's written mandatory-query list."
+  }
