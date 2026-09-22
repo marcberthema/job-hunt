@@ -24,7 +24,7 @@
       "salary": "Not stated; Contract W-2, 12 months, explicitly No C2C",
       "gap": "Very strong direct overlap: Azure, Terraform, Kubernetes, Docker, Jenkins, Ansible, Git, Linux, Python required; ArgoCD, GitHub Actions, Prometheus, Grafana preferred. AWS listed alongside Azure (venue, not hard-gate) — no penalty. No material skill gap; closest thing is \"mentor junior DevOps engineers,\" light people-leadership Marc can speak to via the 12-team enablement story. Flag: \"Able to Sponsor\", W-2 only, No C2C — TN-sponsorship path, confirm remote-from-Canada support. Flag: same employer and same \"remote-with-on-site-depends-on-experience\" rotation pattern as two other TechniPros postings Marc already skipped 2026-09-19 for the on-site requirement — worth the identical call unless the recruiter confirms fully remote.",
       "url": "https://www.dice.com/job-detail/715868bc-acd6-4537-8112-21f758a120e1",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 6,
@@ -35,7 +35,7 @@
       "salary": "Not stated; Contract W-2, 12+ months, explicitly No C2C",
       "gap": "Strong CI/CD and IaC overlap (Jenkins, GitHub Actions, Terraform, Docker, Kubernetes), but the role centers on dedicated security-scanning tooling (Trivy, Snyk, GitHub Advanced Security, SonarQube, HashiCorp Vault) Marc hasn't named hands-on depth with. Flag: \"Able to Sponsor\", W-2, No C2C — TN-sponsorship path. Flag: same on-site-rotation pattern as two TechniPros postings Marc skipped 2026-09-19 for that reason, and as the sibling posting above.",
       "url": "https://www.dice.com/job-detail/06ab958a-d350-444e-a112-14b5a57bb829",
-      "status": "New (surfaced 2026-09-21; not yet in applications.md)"
+      "status": "Skipped"
     },
     {
       "score": 5,

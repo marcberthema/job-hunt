@@ -4,6 +4,12 @@ Every `check-*` skill writes its run's results to `reports/data/<board>.json` in
 hand-authoring `reports/<board>-job-search.html` directly. `reports/build_report.py` renders the
 HTML deterministically from that JSON — no AI-authored HTML, no per-board bespoke CSS.
 
+During rendering, `applications.md` is the authoritative source for pipeline status. The builder
+overlays `New`, `InProcess`, `Applied`, `Skipped`, or `Rejected` onto matching report rows, first by
+posting URL and then by an unambiguous company-and-title match for cross-board duplicates that use
+different URLs. This prevents a refreshed static report from showing an already-decided posting as
+`New`.
+
 `<board>` is the lowercase slug used everywhere else in this repo (`builtin`, `dice`, `indeed`,
 `linkedin`, `jobbank`, `eluta`, `randstad`, `remoteok`, `sisystems`, `braintrust`, `wwr`,
 `glassdoor`, `procom`, `roberthalf`).

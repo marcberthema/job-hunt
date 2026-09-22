@@ -8,11 +8,88 @@ Usage:
     python3 reports/build_report.py --all         # regenerate every reports/data/*.json
 """
 import json
+import re
 import sys
 from pathlib import Path
 
 REPORTS_DIR = Path(__file__).resolve().parent
 DATA_DIR = REPORTS_DIR / "data"
+APPLICATIONS_PATH = REPORTS_DIR.parent / "applications.md"
+PIPELINE_STATUSES = {"New", "InProcess", "Applied", "Skipped", "Rejected"}
+
+
+def normalize_match_text(value):
+    """Normalize titles/companies enough to match Markdown ledger rows to report rows."""
+    text = str(value or "").casefold()
+    text = re.sub(r"[\u2010-\u2015]", "-", text)
+    return re.sub(r"\s+", " ", text).strip()
+
+
+def load_ledger():
+    """Index applications.md entries by URL and company/title identity."""
+    by_url = {}
+    by_identity = {}
+    if not APPLICATIONS_PATH.exists():
+        return {"by_url": by_url, "by_identity": by_identity}
+
+    for line in APPLICATIONS_PATH.read_text(encoding="utf-8").splitlines():
+        if not line.startswith("|"):
+            continue
+        parts = [part.strip() for part in line.split("|")]
+        if len(parts) < 10 or parts[2] not in PIPELINE_STATUSES:
+            continue
+        url_match = re.search(r"https?://[^\s|]+", parts[8])
+        if not url_match:
+            continue
+        entry = {
+            "status": parts[2],
+            "company": normalize_match_text(parts[5]),
+            "title": normalize_match_text(parts[6]),
+        }
+        url = url_match.group(0).rstrip("/")
+        by_url.setdefault(url, []).append(entry)
+        identity = (entry["company"], entry["title"])
+        by_identity.setdefault(identity, []).append(entry)
+    return {"by_url": by_url, "by_identity": by_identity}
+
+
+def ledger_status(row, ledger):
+    """Return the authoritative ledger status for a report row when unambiguous."""
+    url = str(row.get("url") or "").rstrip("/")
+    candidates = ledger["by_url"].get(url, [])
+    if len(candidates) == 1:
+        return candidates[0]["status"]
+    title = normalize_match_text(row.get("title"))
+    company = normalize_match_text(row.get("company"))
+    if candidates:
+        exact = [
+            item for item in candidates
+            if item["title"] == title and item["company"] == company
+        ]
+        if len({item["status"] for item in exact}) == 1:
+            return exact[0]["status"]
+        title_matches = [item for item in candidates if item["title"] == title]
+        if len({item["status"] for item in title_matches}) == 1:
+            return title_matches[0]["status"]
+
+    # The same posting is often discovered through a board URL and filed using the
+    # employer's canonical URL. Reconcile those cross-board duplicates only when
+    # every matching ledger entry agrees on the pipeline status.
+    identity_matches = ledger["by_identity"].get((company, title), [])
+    if identity_matches and len({item["status"] for item in identity_matches}) == 1:
+        return identity_matches[0]["status"]
+    return None
+
+
+def apply_ledger_statuses(rows, ledger):
+    """Overlay pipeline decisions from applications.md onto report data in memory."""
+    updated = 0
+    for row in rows:
+        status = ledger_status(row, ledger)
+        if status and row.get("status") != status:
+            row["status"] = status
+            updated += 1
+    return updated
 
 TEMPLATE = """<!doctype html>
 <html lang="en">
@@ -140,7 +217,7 @@ def render_method(method):
     return f'<p class="method">{method}</p>\n'
 
 
-def build(board):
+def build(board, ledger=None):
     data_path = DATA_DIR / f"{board}.json"
     if not data_path.exists():
         print(f"no data file for '{board}' at {data_path}", file=sys.stderr)
@@ -148,6 +225,7 @@ def build(board):
     data = json.loads(data_path.read_text(encoding="utf-8"))
 
     rows = data.get("rows", [])
+    synced = apply_ledger_statuses(rows, ledger if ledger is not None else load_ledger())
     html = TEMPLATE.format(
         title_tag=esc(f"{data['board']} job search — {data['run_date']}"),
         eyebrow=esc(data.get("eyebrow", data["board"])),
@@ -163,7 +241,7 @@ def build(board):
 
     out_path = REPORTS_DIR / f"{board}-job-search.html"
     out_path.write_text(html, encoding="utf-8")
-    print(f"wrote {out_path} ({len(rows)} rows)")
+    print(f"wrote {out_path} ({len(rows)} rows, {synced} statuses synced from applications.md)")
     return True
 
 
@@ -215,8 +293,9 @@ def main(argv):
         return 1
     if argv[0] == "--all":
         ok = True
+        ledger = load_ledger()
         for data_file in sorted(DATA_DIR.glob("*.json")):
-            ok = build(data_file.stem) and ok
+            ok = build(data_file.stem, ledger) and ok
         rebuild_index()
         return 0 if ok else 1
     return 0 if build(argv[0]) else 1

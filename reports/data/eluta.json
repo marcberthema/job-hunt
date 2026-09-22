@@ -37,6 +37,7 @@
       "family": "SRE",
       "title": "Senior Site Reliability Engineer I",
       "company": "Braze",
+      "status": "Skipped",
       "location": "Toronto ON, tagged Remote (full-time)",
       "salary": "CAD $153,815–$277,000/year (OTE $172,000–$308,400)",
       "gap": "Deep hands-on NGINX ingress-layer mastery and Ruby/Go programming are both explicitly required — Marc's languages are Python/Bash/C++/Java, not Ruby or Go. Kubernetes, Terraform/Ansible IaC, SLO/error-budget ownership, on-call/RCA practice, and observability (Prometheus/Grafana/Datadog nice-to-have) all overlap well otherwise.",
