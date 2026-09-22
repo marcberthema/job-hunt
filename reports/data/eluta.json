@@ -1,34 +1,30 @@
 {
   "board": "Eluta",
-  "run_date": "2026-09-21",
+  "run_date": "2026-09-22",
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
-  "lede": "Ten default remote title passes plus five reachable-city hybrid discovery passes. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 21, 2026 — all 10 remote title passes rendered; Ottawa and Montréal city passes completed, while Kingston, Brockville and Cornwall did not reliably accept the requested city value and are marked incomplete. No newly validated eligible posting was added.",
+  "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
+  "latest_update": "Rechecked September 22, 2026 — completed the 4 remote keywords left over from 2026-09-21 (Staff DevOps Engineer, Senior Site Reliability Engineer, Staff Site Reliability Engineer, Senior Infrastructure Engineer), spot-re-verified DevOps Engineer (unchanged inventory), and ran all 4 remaining city passes (Kingston, Brockville, Cornwall, Montréal). 2 new eligible postings filed (McKesson score 7, Genetec score 5); 3 new sub-5 rows and 1 new ineligible/1 new out-of-scope row logged for completeness; 1 posting could not be validated.",
   "stats": [
     {
-      "value": 15,
-      "label": "search passes attempted"
+      "value": 9,
+      "label": "search passes attempted this run"
     },
     {
-      "value": 12,
+      "value": 8,
       "label": "passes completed"
     },
     {
-      "value": 3,
-      "label": "passes incomplete"
+      "value": 1,
+      "label": "passes could-not-validate (1 posting)"
+    },
+    {
+      "value": 2,
+      "label": "new eligible postings filed"
     },
     {
       "value": 18,
-      "label": "pipeline matches"
-    },
-    {
-      "value": 4,
-      "label": "PLATO hard-gate hits (Indigenous-owned firm)"
-    },
-    {
-      "value": 1,
-      "label": "correction issued"
+      "label": "prior-run pipeline matches (unchanged)"
     }
   ],
   "rows": [
@@ -52,9 +48,102 @@
       "salary": "CAD $145,000–$193,000/year",
       "gap": "Scored from the Eluta listing summary only — the inline expansion didn't reliably open for this posting despite repeated attempts, so full requirements (in particular any hard GCP/AWS ownership bar) are unconfirmed. What the summary shows is a strong match: GCP/AWS infrastructure ownership, ArgoCD/Helm/GitHub Actions platform tooling, observability and incident response across regulated jurisdictions (sports betting).",
       "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer&filter-remote_jobs=only"
+    },
+    {
+      "score": 7,
+      "family": "SRE",
+      "title": "Senior Lead Engineer, Platform Operations & Observability / Ingénieur principal, Opérations de plateforme et observabilité",
+      "company": "McKesson Canada",
+      "status": "New",
+      "location": "Saint-Laurent (Montréal), QC — hybrid, 2 days/week mandatory (Mon/Wed) at the Dobrin office",
+      "salary": "CAD $94,400–$157,300/year",
+      "gap": "Range's low end sits below the $120k Montréal hybrid-FTE floor, but the top clears it comfortably and 7+ years SRE/Platform/DevOps seniority plus healthcare-regulated scope argues for upper-range placement — confirm in conversation. Otherwise an excellent match: incident management/RCA/MTTR ownership, CI/CD and change governance, Dynatrace explicitly preferred (direct Desjardins overlap), Azure/Kubernetes preferred, technical leadership and mentorship without formal people-management — mirrors Marc's 'leads without authority' positioning.",
+      "url": "https://careers.mckesson.com/en/job/saint-laurent/senior-lead-engineer-platform-operations-and-observability/733/99226810112"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "Ingénieur(e) DevOps / DevOps Engineer - Dynamics 365 & Azure DevOps",
+      "company": "Genetec Inc.",
+      "status": "New",
+      "location": "Montréal, QC — office cadence not stated (free on-site parking/gym mentioned, but no explicit days/week; treat as hybrid pending confirmation)",
+      "salary": "Not stated",
+      "gap": "Strong Azure DevOps administration/CI-CD/IaC (Terraform, Bicep, ARM) overlap with Marc's depth, but the role is Dynamics 365 F&O/CE- and Power Platform/Dataverse-specific — Marc has no D365 exposure, a real gap against a '5+ years D365 DevOps' bar. Bilingual FR/EN requirement is a Marc strength.",
+      "url": "https://apply.workable.com/genetec-inc/j/831CC24E50"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "DevOps Engineer - BTP Site Reliability Engineering team",
+      "company": "SAP Canada Inc.",
+      "status": "New",
+      "location": "Montréal, QC — hybrid, 3 days/week in-office",
+      "salary": "CAD $95,000–$135,000/year",
+      "gap": "3 days/week on-site needs a well-above-target rate to be worth it per profile.md's reachable-city rule; $95-135K doesn't clear that bar (barely reaches the $120k Montréal floor at the very top). Otherwise a real skill match: Kubernetes, Linux, CI/CD, multi-cloud (AWS/Azure/GCP), Python/Go/Bash. Not eligible for employer-sponsored work authorization — irrelevant to Marc as a Canadian citizen/resident.",
+      "url": "https://jobs.sap.com/job/Montreal-DevOps-Engineer-BTP-Site-Reliability-Engineering-team-Queb-H3B-0B3/1426752233/"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevOps Engineer (Cloud Infrastructure)",
+      "company": "Tecsys Inc.",
+      "status": "New",
+      "location": "Montréal, QC — described as \"digital-first\" with flexible/hybrid offices; exact days/week not stated",
+      "salary": "Not stated",
+      "gap": "Heavily AWS-centric (\"complex, hybrid architectures\" on AWS) with no Azure mention — Marc's AWS story is dated and by-hand, no IaC, a weak answer if AWS ownership is the actual deliverable here. Tecsys already has a separate, different-req Site Reliability Engineer posting Applied via Glassdoor (2026-09-19) — same employer, distinct role, not a duplicate.",
+      "url": "https://freehire.me/jobs/devops-engineer-cloud-infrastructure-tecsys-glsqkcrz"
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Staff Engineer, Site Reliability",
+      "company": "Baby List, Inc.",
+      "status": "New",
+      "location": "Work Remotely (Canada/US)",
+      "salary": "Not stated",
+      "gap": "Hard AWS-ownership-at-scale gate: \"deep hands-on Terraform expertise\" as IaC owner, \"proven AWS experience at scale\" (EKS, RDS, networking, DNS, CDNs), and production Kubernetes debugging are all explicit musts. No Azure mentioned at all — Marc's dated, by-hand, non-IaC AWS experience doesn't clear this bar.",
+      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer&filter-remote_jobs=only"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Site Reliability Engineer",
+      "company": "HostPapa Inc. (managed.com / CloudBlue)",
+      "status": "Ineligible — role excludes Ontario residents",
+      "location": "Work Remotely — posting states \"anticipated that this position will be performed outside of Ontario\"",
+      "salary": "Not stated",
+      "gap": "Explicit statement that the role will be performed outside Ontario — Marc is based in Smiths Falls, ON, so this is a hard geographic eligibility gate against him specifically, the inverse of the usual residency-requirement rule. Otherwise a strong skill match (SLIs/SLOs, Kubernetes, Datadog/Grafana/Elastic, Python/Bash, Azure-preferred) — the gate alone rules it out.",
+      "url": "https://www.eluta.ca/search?q=Senior+Site+Reliability+Engineer&filter-remote_jobs=only"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Manager, Fixed Wireless New Technology & Performance",
+      "company": "Xplore Inc.",
+      "status": "Out of scope — telecom RF/fixed-wireless engineering management, not DevOps/SRE/Platform IC work",
+      "location": "Cornwall, ON",
+      "salary": "Not stated",
+      "gap": "Title mentions a DevOps team the role partners with, but the job itself is network-performance/RF engineering management for fixed wireless technology — wrong domain and a people-management scope, not an IC infrastructure role.",
+      "url": "https://www.eluta.ca/search?q=DevOps+Engineer&l=Cornwall%2C+ON"
+    }
+  ],
+  "could_not_validate": [
+    {
+      "text": "Degree, Inc. \"Senior Software Engineer, Infrastructure Platform\" ($123,750–$165,000 CAD, remote) — plausible Platform-family fit (AWS infrastructure, Kubernetes, distributed systems, deployment tooling, internal developer platforms) but Eluta's inline expansion and cache link both failed to open on repeated attempts this run; the listing snippet alone isn't sufficient for scoring per the skill's rule. Worth a retry next run.",
+      "url": "https://www.eluta.ca/search?q=Senior+Infrastructure+Engineer&filter-remote_jobs=only"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "September 22 pass audit (continuation of 2026-09-21's leftover scope)",
+      "items": [
+        "Remote-only passes completed, first 10 results reviewed each: Staff DevOps Engineer (26 total), Senior Site Reliability Engineer (53 total), Staff Site Reliability Engineer (26 total), Senior Infrastructure Engineer (379 total, only first 10 reviewed — extremely broad term). DevOps Engineer spot-re-verified (191 total) — same top-10 inventory as 2026-09-21, no change, not re-scored.",
+        "City passes: Kingston, ON | DevOps Engineer | Complete — Zero results. Brockville, ON | DevOps Engineer | Complete — Zero results. Cornwall, ON | DevOps Engineer | Complete — 1 result (Xplore Inc., scored Out of scope). Montréal, QC | DevOps Engineer | 280 total results, first 10 reviewed | Complete.",
+        "Eluta's inline \"Show more\" expansion and the cache-link fallback were both unreliable again this run — worked for HostPapa and Baby List, failed for Degree Inc. and Genetec/McKesson/SAP/Tecsys (recovered via WebSearch to each employer's own canonical career page instead, per job_sources.md's employer-canonical-URL convention).",
+        "Ottawa city pass and the 6 remote keywords already completed 2026-09-21 (DevOps Engineer, Senior DevOps Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Infrastructure Engineer) were not re-run today given same-day inventory turnover is typically low — DevOps Engineer's spot-check above confirms this. Worth a full fresh pass on all 10 remote keywords + Ottawa next time inventory has had more days to turn over.",
+        "No CAPTCHA, sign-in, application, alert subscription, email action or other write-side action occurred."
+      ]
+    },
     {
       "heading": "September 21 pass audit",
       "items": [
@@ -110,5 +199,6 @@
         "No CAPTCHA, verification prompt, or write-side action occurred."
       ]
     }
-  ]
+  ],
+  "method": "2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
 }
