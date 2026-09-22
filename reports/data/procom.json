@@ -1,16 +1,17 @@
 {
   "board": "Procom",
-  "run_date": "2026-09-21",
+  "run_date": "2026-09-22",
   "eyebrow": "Procom contractor portal · read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.",
-  "latest_update": "Re-run September 21, 2026 — no eligible target-family postings; inventory still skews heavily toward Salesforce, AI/ML, embedded, and data-center hardware roles. The prior run's one genuinely target-family posting (Senior Systems Engineer, Cloud & Infrastructure, Toronto) is no longer live.",
+  "latest_update": "Re-run September 22, 2026 — no eligible target-family postings; inventory has shifted toward AI/data-engineering and embedded-automotive noise, plus one new Toronto-hybrid security-platform (PKI/CyberArk) role and one new Toronto-hybrid systems-engineer role, both ruled out. The Flextrack Salesforce DevOps posting (already Skipped in applications.md) is still the only live pipeline match. The previously logged QA Automation Engineer (Richmond, BC) posting has been removed from the portal (confirmed via direct URL, now 404) — updated from Out of scope to Expired.",
   "stats": [
     {"value": 6, "label": "keywords searched"},
-    {"value": 4, "label": "unique postings reviewed"},
-    {"value": 0, "label": "eligible, scored"},
+    {"value": 21, "label": "unique postings reviewed"},
+    {"value": 0, "label": "eligible, scored 5+"},
     {"value": 1, "label": "pipeline match"},
-    {"value": 3, "label": "out of scope, reviewed"}
+    {"value": 5, "label": "out of scope / ineligible, reviewed"},
+    {"value": 2, "label": "expired"}
   ],
   "rows": [
     {
@@ -20,30 +21,19 @@
       "company": "Flextrack",
       "location": "Canada · Remote",
       "salary": "Not stated (Permanent)",
-      "gap": "Real CI/CD, automation, and delivery-velocity center of gravity (though Salesforce-ecosystem-specific) — appeared in 3 of the 4 keyword searches that returned results. Already known in applications.md (found 2026-08-25, score 6, Procom board) and Skipped there 2026-09-19 (auto-marked expired at that review). Still live on Procom as of this run.",
+      "gap": "Real CI/CD, automation, and delivery-velocity center of gravity (though Salesforce-ecosystem-specific). Already known in applications.md (found 2026-08-25, score 6, Procom board) and Skipped there 2026-09-19 (auto-marked expired at that review). Confirmed still live on Procom as of this run — appeared in the DevOps Engineer, Site Reliability Engineer, and Cloud Engineer keyword searches.",
       "url": "https://myprocom-portal.procomservices.com/jobs/senior-devops-engineer-ai-automation-ea506134",
       "status": "Skipped"
     },
     {
       "score": 0,
       "family": "Platform",
-      "title": "Salesforce Integration Architect",
+      "title": "Senior Salesforce Integration Engineer (listed under \"Salesforce Integration Architect\")",
       "company": "Flextrack",
-      "location": "Canada/US · Remote",
+      "location": "United States · Remote (open to Canada)",
       "salary": "Not stated (Permanent)",
-      "gap": "Salesforce integration architecture and platform ownership specifically (VMS integration patterns, endpoint/data-flow design) — real infrastructure and reliability language throughout, but the actual deliverable is Salesforce-ecosystem architecture, not general SRE/Platform/DevOps.",
+      "gap": "Salesforce/VMS integration architecture — real infrastructure and reliability language throughout, but the actual deliverable is Salesforce-ecosystem integration engineering, not general SRE/Platform/DevOps. Same posting previously logged as \"Salesforce Integration Architect\"; display title has changed but the URL/req is identical.",
       "url": "https://myprocom-portal.procomservices.com/jobs/salesforce-integration-architect-8fd62e89",
-      "status": "Out of scope"
-    },
-    {
-      "score": 0,
-      "family": "DevOps",
-      "title": "QA Automation Engineer",
-      "company": "Procom client (Richmond, BC)",
-      "location": "Richmond, British Columbia · Hybrid",
-      "salary": "$53–$70/hr CAD (Contract, 12 months)",
-      "gap": "QA/test-automation engineering (functional, regression, performance testing, Robot Framework/JMeter) integrated with CI/CD pipelines — quality engineering, not infrastructure/platform/reliability engineering.",
-      "url": "https://myprocom-portal.procomservices.com/jobs/qa-automation-engineer-richmond-2bd34f90",
       "status": "Out of scope"
     },
     {
@@ -53,22 +43,76 @@
       "company": "Procom client — Energy (Raleigh, NC)",
       "location": "Raleigh, North Carolina, US · Remote with on-site travel",
       "salary": "Not stated (Permanent)",
-      "gap": "Physical field-service work — transformer hardware installation, relay testing, firmware upgrades for utility/data-center electrical infrastructure. Hands-on hardware/electrical engineering, not IT/software platform engineering.",
+      "gap": "Physical field-service work — transformer hardware installation, relay testing, firmware upgrades. Hands-on hardware/electrical engineering, not IT/software platform engineering. Also US-based.",
       "url": "https://myprocom-portal.procomservices.com/jobs/data-center-field-service-engineer-transformer-specific-raleigh-3ef64a1b",
       "status": "Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Sr. Security Platform Engineer - CyberArk Machine Identity Security",
+      "company": "Procom client — Financial Services (Toronto)",
+      "location": "Toronto, Ontario · Hybrid 1d/wk or fully remote (EST)",
+      "salary": "$75–$100/hr CAD (Contract, 4–5 months)",
+      "gap": "Certificate-lifecycle automation, PKI modernization, and CyberArk Machine Identity Security / HashiCorp Vault integration — the mandatory skills (CyberArk, HashiCorp Vault PKI, cryptography, certificate automation) are the job itself, and Marc has zero exposure to any of them despite the posting touching Terraform/Kubernetes/Python he does have. A genuine security-engineering specialization dressed in \"Platform Engineering\" framing, not general infra/platform work. Rate range also straddles the $90/hr short-contract floor at its low end.",
+      "url": "https://myprocom-portal.procomservices.com/jobs/sr-security-platform-engineer-cyberark-machine-identity-security-toron-a5747a2d",
+      "status": "Out of scope"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior Systems Engineer (Cloud & Infrastructure)",
+      "company": "MCAP (via Procom)",
+      "location": "Toronto, Ontario · Hybrid, 2 days/week onsite",
+      "salary": "$53–$70/hr CAD (Contract, 3 months, potential conversion to FTE)",
+      "gap": "Ineligible — Toronto hybrid 2 days/week onsite falls outside the reachable-city range (Ottawa/Kingston/Brockville/Cornwall/Montréal), no remote-only alternative stated. Real skill overlap otherwise (Azure hybrid administration, PowerShell IaC, financial services, M365/Entra) but not take-able as posted. Also posted 2026-07-10 for a 3-month engagement starting ASAP — likely near or past its original term by this run's date.",
+      "url": "https://myprocom-portal.procomservices.com/jobs/senior-systems-engineer-cloud-infrastructure-toronto-4263fb5d",
+      "status": "Ineligible — Toronto hybrid 2d/wk, outside reachable range"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Infrastructure Early Life Support (Desktop Engineer)",
+      "company": "Procom client (Vaughan, ON)",
+      "location": "Vaughan, Ontario · Hybrid",
+      "salary": "Not stated (Contract, 12 months)",
+      "gap": "Tier-3 desktop/hardware-refresh support role, not platform/DevOps engineering. Also outside the reachable-city range. Posting is confirmed stale.",
+      "url": "https://myprocom-portal.procomservices.com/jobs/infrastructure-early-life-support-desktop-engineer-vaughan-bdd28a3c",
+      "status": "Expired — posted 2024-06-06, still listed live but over 2 years stale"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "QA Automation Engineer",
+      "company": "Procom client (Richmond, BC)",
+      "location": "Richmond, British Columbia · Hybrid",
+      "salary": "$53–$70/hr CAD (Contract, 12 months)",
+      "gap": "Quality engineering, not infrastructure/platform/reliability engineering. Posting has been removed from the portal — direct URL now returns \"We couldn't find that job\" (checked 2026-09-22).",
+      "url": "https://myprocom-portal.procomservices.com/jobs/qa-automation-engineer-richmond-2bd34f90",
+      "status": "Expired — posting removed (confirmed via direct URL, 404 as of 2026-09-22)"
     }
   ],
   "notes_sections": [
     {
-      "heading": "Run notes",
+      "heading": "Per-query audit",
       "items": [
-        "DevOps Engineer (3 results), Platform Engineer (11 results, 8 reviewed), Site Reliability Engineer (2 results), and Cloud Engineer (12 results, 8 reviewed) all returned candidates; DevSecOps Engineer and Forward Deployed Engineer both returned zero results outright (\"We're unable to find any jobs matching your search\").",
-        "Platform Engineer and Cloud Engineer searches exceeded the 8-result review cap (11 and 12 total respectively) — the unreviewed remainder were screened by title alone (Principal Data Architect duplicate window items, additional embedded/data/network titles) and were not plausibly SRE/Platform/DevOps given the pattern already established across the 8 opened.",
-        "Browser-driven throughout, per the skill's requirement — the public marketing site dead-ends, but the real contractor portal (<code>myprocom-portal.procomservices.com</code>) loaded cleanly with no login needed. Confirmed the documented naive-text-extraction trap (only the first visible card's full content renders) and used screenshots plus the <code>find</code> tool to read each card and detail pane instead.",
-        "The prior run's one target-family posting, Senior Systems Engineer (Cloud & Infrastructure) in Toronto, did not reappear in any of this run's searches — likely expired/rotated out of inventory.",
-        "This run's browser session ran concurrently with two other agents (WWR, Braintrust) sharing the same Chrome tab group — worked around by opening a dedicated tab rather than reusing the shared one, after an initial text-extraction call returned WWR content from a tab another agent had navigated.",
-        "No CAPTCHA, verification prompt, or write-side action occurred."
+        "<b>DevOps Engineer</b> — 2 results, both reviewed. Complete.",
+        "<b>Platform Engineer</b> — 13 results, all 13 reviewed (full list rendered via accessibility tree, not just the visible cards). Complete.",
+        "<b>Site Reliability Engineer</b> — 2 results, both reviewed (both duplicates of postings already captured under other keywords). Complete.",
+        "<b>Cloud Engineer</b> — 15 results, 14 unique postings identified and reviewed by title/detail (one may have been a rendering duplicate not distinctly captured). Complete.",
+        "<b>DevSecOps Engineer</b> — 0 results (\"We're unable to find any jobs matching your search\"). Zero results.",
+        "<b>Forward Deployed Engineer</b> — 0 results. Zero results.",
+        "No CAPTCHA, verification prompt, login wall, or blocking page encountered on any query."
+      ]
+    },
+    {
+      "heading": "Search noise excluded from the table",
+      "items": [
+        "The Platform Engineer and Cloud Engineer keywords pull in a lot of full-text keyword-matched noise with no real SRE/Platform/DevOps center of gravity, not individually rowed here (consistent with prior runs): Python/Spark Developer (Mississauga), Junior AI Engineer (Markham), Senior AI Engineer (Calgary and Vancouver), Senior Embedded Software Engineer – Automotive C++/Linux (Ottawa), Embedded C++ Software Engineer – Android Automotive/AOSP (Ottawa), Programmer Analyst – Senior at Bank of Montreal (Toronto), AI Engineer / Solution Lead ($150K–$180K/yr, Toronto), Ingénieur(e) analytique junior/Junior Analytics Engineer (Quebec City), Principal Data Architect (Mississauga), Junior Security Engineer (Markham), Data Engineer and Senior Data Engineer (Mississauga/Calgary), Unified Communication Voice Specialist III (Vancouver), and Senior Project/Solutions Engineer (Houston, TX — also US-ineligible).",
+        "Procom's inventory this run skews heavily toward AI/ML engineering, data engineering, and embedded-automotive roles rather than infrastructure/platform/reliability work — a continuation of the drift noted in the 2026-09-08 and 2026-09-19 runs.",
+        "Browser-driven throughout; the real contractor portal (myprocom-portal.procomservices.com) loaded cleanly with no login needed. The naive-text-extraction trap (get_page_text returning only chrome, not card content) was confirmed again — read_page's accessibility tree and screenshots were used instead to capture full result lists, including lazily-rendered cards beyond the first visible few."
       ]
     }
-  ]
+  ],
+  "method": "Six-keyword default rotation (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer) run browser-driven against the real contractor portal. 21 unique postings encountered and reviewed across the four keywords that returned results; two returned zero results outright. Zero eligible target-family postings scored 5 or above this run — the one known pipeline match (Flextrack Salesforce DevOps Engineer) remains Skipped per applications.md. Two new out-of-scope/ineligible postings identified (a Toronto-hybrid CyberArk/PKI security-platform role, and a Toronto-hybrid MCAP systems-engineer role outside the reachable-city range), plus confirmation that a previously logged QA Automation Engineer posting has been removed from the portal. No jobs qualified for automatic filing this run."
 }
