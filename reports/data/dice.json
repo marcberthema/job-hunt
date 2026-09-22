@@ -1,18 +1,18 @@
 {
   "board": "Dice",
-  "run_date": "2026-09-21",
+  "run_date": "2026-09-22",
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Updated September 21, 2026 — all six required browser-rendered queries completed with every required filter visible. Counts changed to 3, 12, 0, 7, 3 and 1; no new target-family candidate was found within the review boundary.",
+  "latest_update": "Updated September 22, 2026 — all six required browser-rendered queries completed with every required filter visible. Counts were 2, 8, 0, 10, 2 and 1. Inventory has fully turned over since 2026-09-21 for the TechniPros recurring postings (new job IDs each time, same content) but every candidate this run was either a known pipeline decision or a title-screened-out non-DevOps role. Zero new eligible candidates, zero filed.",
   "stats": [
     {"value": 6, "label": "queries attempted"},
     {"value": 6, "label": "queries completed"},
     {"value": 19, "label": "unique reviewed"},
-    {"value": 2, "label": "new eligible, scored"},
-    {"value": 3, "label": "known pipeline postings shown"},
-    {"value": 4, "label": "out of scope, scored 0, reviewed in full"},
-    {"value": 8, "label": "screened out by title"}
+    {"value": 0, "label": "new eligible, scored"},
+    {"value": 9, "label": "known pipeline postings shown"},
+    {"value": 3, "label": "out of scope, scored 0, reviewed in full"},
+    {"value": 11, "label": "screened out by title"}
   ],
   "rows": [
     {
@@ -20,22 +20,22 @@
       "family": "DevOps",
       "title": "Senior DevOps Engineer (listed as \"DevOps Engineer\")",
       "company": "TechniPros, LLC",
-      "location": "Remote in Washington DC / Silver Spring MD / Philadelphia PA / Wilmington DE / Fairfax VA rotation — on-site \"Depends on Experience\"",
+      "location": "Remote in New York, NY, US — on-site \"Depends on Experience\"; multi-city rotation (NYC, Boston, Hartford, Princeton, Newark)",
       "salary": "Not stated; Contract W-2, 12 months, explicitly No C2C",
-      "gap": "Very strong direct overlap: Azure, Terraform, Kubernetes, Docker, Jenkins, Ansible, Git, Linux, Python required; ArgoCD, GitHub Actions, Prometheus, Grafana preferred. AWS listed alongside Azure (venue, not hard-gate) — no penalty. No material skill gap; closest thing is \"mentor junior DevOps engineers,\" light people-leadership Marc can speak to via the 12-team enablement story. Flag: \"Able to Sponsor\", W-2 only, No C2C — TN-sponsorship path, confirm remote-from-Canada support. Flag: same employer and same \"remote-with-on-site-depends-on-experience\" rotation pattern as two other TechniPros postings Marc already skipped 2026-09-19 for the on-site requirement — worth the identical call unless the recruiter confirms fully remote.",
-      "url": "https://www.dice.com/job-detail/715868bc-acd6-4537-8112-21f758a120e1",
-      "status": "Skipped"
+      "gap": "Very strong direct overlap: Azure, Terraform, Kubernetes, Docker, Jenkins, Ansible, Git, Linux, Python required; ArgoCD, GitHub Actions, Prometheus, Grafana preferred. AWS listed alongside Azure (venue, not hard-gate) — no penalty. No material skill gap. Flag: \"Able to Sponsor\", W-2 only, No C2C — TN-sponsorship path. Flag: this is the 5th appearance of this exact TechniPros DevOps-titled repost (new job ID each run — 3d6389da and a0acae92 on 2026-09-19, 715868bc on 2026-09-21, now 450177b2) — Marc has already skipped the pattern 3 times for the on-site-rotation requirement (see applications.md).",
+      "url": "https://www.dice.com/job-detail/450177b2-c72a-45da-adc9-7e67fc3a152b",
+      "status": "Skipped — recurring TechniPros repost, same decision as 2026-09-19/2026-09-21"
     },
     {
       "score": 6,
       "family": "DevOps",
       "title": "DevSecOps Engineer (listed as \"DevOps Engineer\")",
       "company": "TechniPros, LLC",
-      "location": "Remote or Dallas/Austin/Houston/San Antonio, TX — on-site \"Depends on Experience\"",
-      "salary": "Not stated; Contract W-2, 12+ months, explicitly No C2C",
-      "gap": "Strong CI/CD and IaC overlap (Jenkins, GitHub Actions, Terraform, Docker, Kubernetes), but the role centers on dedicated security-scanning tooling (Trivy, Snyk, GitHub Advanced Security, SonarQube, HashiCorp Vault) Marc hasn't named hands-on depth with. Flag: \"Able to Sponsor\", W-2, No C2C — TN-sponsorship path. Flag: same on-site-rotation pattern as two TechniPros postings Marc skipped 2026-09-19 for that reason, and as the sibling posting above.",
-      "url": "https://www.dice.com/job-detail/06ab958a-d350-444e-a112-14b5a57bb829",
-      "status": "Skipped"
+      "location": "Remote in Atlanta, GA, US — on-site \"Depends on Experience\"; multi-city rotation (Atlanta, Charlotte, Tampa, Raleigh, Durham, Orlando, Columbia)",
+      "salary": "Not stated; Contract W-2, 12 months, explicitly No C2C",
+      "gap": "Strong CI/CD and IaC overlap (Terraform, Docker, Kubernetes, GitHub Actions), but the role centers on dedicated security-scanning tooling (Trivy, Snyk, SonarQube, HashiCorp Vault) Marc hasn't named hands-on depth with. Flag: \"Able to Sponsor\", W-2, No C2C — TN-sponsorship path. Flag: same recurring TechniPros repost pattern as above (new job ID this run — 06ab958a on 2026-09-19/2026-09-21, now 45ba9f6d) — Marc already skipped the equivalent posting on 2026-09-21.",
+      "url": "https://www.dice.com/job-detail/45ba9f6d-e8dd-446a-b481-1f1d2f89ddea",
+      "status": "Skipped — recurring TechniPros repost, same decision as 2026-09-21"
     },
     {
       "score": 5,
@@ -44,7 +44,7 @@
       "company": "Quantum Technologies LLC",
       "location": "Remote — US authorization list (USC/GC/H-1B/OPT-EAD), no Canada/TN mention",
       "salary": "$80–90/hour",
-      "gap": "OpenShift/certificate/ServiceNow overlap is real but the role reads as app-support/platform-ops hybrid, not pure platform engineering; W-2 only, Canada/TN eligibility unconfirmed.",
+      "gap": "OpenShift/certificate/ServiceNow overlap is real but the role reads as app-support/platform-ops hybrid, not pure platform engineering; W-2 only, Canada/TN eligibility unconfirmed. Same posting resurfaced unchanged this run.",
       "url": "https://www.dice.com/job-detail/d57b98ba-d63f-40f4-add5-1e9c3dafe833",
       "status": "Applied — 2026-09-19"
     },
@@ -55,7 +55,7 @@
       "company": "Shiro Technologies",
       "location": "Remote, occasional travel",
       "salary": "Depends on Experience; Full Time",
-      "gap": "Requires hands-on Flosum, Copado, or Gearset plus Apex/LWC/Health Cloud development depth Marc doesn't have; possible IL4/IL5 federal compliance requirement.",
+      "gap": "Requires hands-on Flosum, Copado, or Gearset plus Apex/LWC/Health Cloud development depth Marc doesn't have; possible IL4/IL5 federal compliance requirement. Not resurfaced in any of this run's six queries — carried forward from applications.md, not re-scored.",
       "url": "https://www.dice.com/job-detail/f094cb31-ef6c-46e4-b51c-b2231c0c435c",
       "status": "Skipped — 2026-09-19 (wrong Salesforce discipline, likely clearance requirement)"
     },
@@ -66,7 +66,7 @@
       "company": "GlobalLogic Inc.",
       "location": "Remote",
       "salary": "~$120,000–$130,000/year equivalent; Contract (C2C or W-2), 12 months",
-      "gap": "Real AWS/Terraform/CI-CD overlap, but the role's center of gravity is data-platform engineering (Snowflake, CDC), not core infrastructure DevOps.",
+      "gap": "Real AWS/Terraform/CI-CD overlap, but the role's center of gravity is data-platform engineering (Snowflake, CDC), not core infrastructure DevOps. Same posting ID resurfaced unchanged this run.",
       "url": "https://www.dice.com/job-detail/93ff84f7-42cd-4c47-a43c-714d3842643b",
       "status": "Skipped — 2026-09-19 (insufficient Snowflake depth)"
     },
@@ -77,9 +77,9 @@
       "company": "ISite Technologies Inc",
       "location": "Remote",
       "salary": "Depends on Experience; Contract W-2/C2C/Independent, 12 months",
-      "gap": "Cloud security engineering specialist role — IAM, network security, encryption, CSPM, Zero Trust, vulnerability management on Azure/GCP. Not a DevOps/Platform/SRE role; Marc has no claimed IAM/CSPM/Zero-Trust depth. Reviewed in full, not screened by title alone.",
+      "gap": "Cloud security engineering specialist role — IAM, network security, encryption, CSPM, Zero Trust, vulnerability management on Azure/GCP. Not a DevOps/Platform/SRE role. Same posting ID resurfaced unchanged this run.",
       "url": "https://www.dice.com/job-detail/1ad63edd-482e-421a-9b1b-c0c5f938a171",
-      "status": "Out of scope"
+      "status": "Skipped — 2026-09-21 (Out of scope, cloud security not DevOps)"
     },
     {
       "score": 0,
@@ -88,9 +88,9 @@
       "company": "IT Trailblazers, LLC",
       "location": "Remote",
       "salary": "Not stated; Contract Independent/C2C/W-2, 12 months",
-      "gap": "8+ years leading distributed real-time systems (Kafka/Spark/Flink/PySpark) to build production agentic-AI/LLM platforms. ML-infrastructure architecture ownership, not general DevOps/platform engineering — outside Marc's demonstrated scope. Reviewed in full, not screened by title alone.",
+      "gap": "8+ years leading distributed real-time systems (Kafka/Spark/Flink/PySpark) to build production agentic-AI/LLM platforms. ML-infrastructure architecture ownership, not general DevOps/platform engineering. Same title/company resurfaced in this run's Platform Engineer query.",
       "url": "https://www.dice.com/job-detail/5bc8d240-435f-4161-b959-1552a18bab31",
-      "status": "Out of scope"
+      "status": "Skipped — 2026-09-21 (Out of scope, ML-infra ownership)"
     },
     {
       "score": 0,
@@ -99,70 +99,57 @@
       "company": "Key Business Solutions, Inc.",
       "location": "Remote",
       "salary": "Depends on Experience; Contract C2C/W-2/Independent, 6 months",
-      "gap": "Prompt engineering, RAG pipelines, LangGraph/Claude Agent SDK, vector DBs for an accounting-firm client (Cohn Reznick). Application-layer AI engineering, not infrastructure/DevOps. Reviewed in full, not screened by title alone.",
+      "gap": "Prompt engineering, RAG pipelines, LLM-as-judge, vector DBs for an accounting-firm client (Cohn Reznick). Application-layer AI engineering, not infrastructure/DevOps. Same posting resurfaced unchanged this run.",
       "url": "https://www.dice.com/job-detail/b64fdd50-d372-40f7-b09e-fb32dadc6622",
-      "status": "Out of scope"
+      "status": "Skipped — 2026-09-21 (Out of scope, application-layer AI)"
     },
     {
       "score": 0,
       "family": "Platform",
-      "title": "Senior Google Cloud Architect — GCP & AI Services",
+      "title": "Senior Google Cloud Architect Google Cloud Platform (Google Cloud Platform) & AI Services",
       "company": "Quantum Technologies LLC",
       "location": "Remote",
       "salary": "$60–70/hr, C2C",
-      "gap": "GCP-primary cloud-transformation architecture ownership at scale is the explicit deliverable — hits the profile's hard AWS/GCP gate outright. Rate is also below target regardless. Reviewed in full, not screened by title alone.",
+      "gap": "GCP-primary cloud-transformation architecture ownership at scale is the explicit deliverable — hits the profile's hard AWS/GCP gate outright. Rate is also below target regardless. Same posting resurfaced unchanged this run.",
       "url": "https://www.dice.com/job-detail/80d0c919-ad39-4d11-acf2-5f9bf3404018",
-      "status": "Out of scope"
+      "status": "Skipped — 2026-09-21 (Out of scope, GCP-primary hard gate)"
     }
   ],
   "notes_sections": [
     {
-      "heading": "Query audit — latest September 21 run",
+      "heading": "Query audit — 2026-09-22 run",
       "items": [
-        "DevOps Engineer: 3 rendered; reviewed 3; Complete. IDs: 715868bc-acd6-4537-8112-21f758a120e1, 06ab958a-d350-444e-a112-14b5a57bb829, 93ff84f7-42cd-4c47-a43c-714d3842643b.",
-        "Platform Engineer: 12 rendered; reviewed first 8; Complete. IDs: d57b98ba-d63f-40f4-add5-1e9c3dafe833, 93ff84f7-42cd-4c47-a43c-714d3842643b, 5bc8d240-435f-4161-b959-1552a18bab31, cf0a1228-a393-49ae-abc4-ca5f47b01f6b, 705b1411-f640-413c-a253-b803e420aaf5, 1491a6fb-0b0c-4280-92b9-33d8d8836d44, 53af2cdd-a31d-4805-8d8b-f971158e299c, 46f6563c-66ad-4dbf-9801-eecbcae4647f.",
-        "Site Reliability Engineer: 0 rendered; Zero results. Cloud Engineer: 7 rendered; reviewed 7; Complete. IDs: d57b98ba-d63f-40f4-add5-1e9c3dafe833, 1ad63edd-482e-421a-9b1b-c0c5f938a171, 80d0c919-ad39-4d11-acf2-5f9bf3404018, 4a3b0067-d95a-4415-90f3-b9a43e06a91c, edd81531-1284-4c8b-ba9f-fd97a1429170, cc115426-f444-46b0-8572-70b182d29c8d, 521b96f0-0b17-4739-8a47-06f40ed1f808.",
-        "DevSecOps Engineer: 3 rendered; reviewed 3; Complete. IDs: 06ab958a-d350-444e-a112-14b5a57bb829, 3d1b6a99-3a4c-43f9-a4c1-b9ac5987ea88, 715868bc-acd6-4537-8112-21f758a120e1. Forward Deployed Engineer: 1 rendered; reviewed 1; Complete. ID: b64fdd50-d372-40f7-b09e-fb32dadc6622.",
-        "Last 7 Days, Full Time, Contract, Remote and Willing to sponsor were visibly active for all six passes. No CAPTCHA, login or write-side action occurred."
+        "<b>DevOps Engineer:</b> 2 rendered; reviewed 2; Complete. IDs: 450177b2-c72a-45da-adc9-7e67fc3a152b (TechniPros), 96ff94813a1dc0c604fda42585dd047d / confirmed canonical 93ff84f7-42cd-4c47-a43c-714d3842643b (GlobalLogic, same posting, unchanged ID on open).",
+        "<b>Platform Engineer:</b> 8 rendered; reviewed 8; Complete. IDs: d57b98ba-d63f-40f4-add5-1e9c3dafe833 (Quantum, known), 93ff84f7-42cd-4c47-a43c-714d3842643b (GlobalLogic, known), 5bc8d240-435f-4161-b959-1552a18bab31 (IT Trailblazers, known), plus 5 new title-screened non-DevOps postings (Salesforce Tech Lead — cloudingest inc; Salesforce Developer — TechniPros; Salesforce Developer — Medinext Global; Salesforce Developer — Virtualan Software; Python Full Stack Developer — Rivago infotech).",
+        "<b>Site Reliability Engineer:</b> 0 rendered; Zero results.",
+        "<b>Cloud Engineer:</b> 10 rendered; reviewed first 8; Complete. IDs: d57b98ba-d63f-40f4-add5-1e9c3dafe833 (Quantum, known), 1ad63edd-482e-421a-9b1b-c0c5f938a171 (ISite, known), 80d0c919-ad39-4d11-acf2-5f9bf3404018 (Quantum GCP, known), plus new title-screened postings: Gen AI Engineer (TechniPros), IAM SailPoint (TechniPros), Salesforce Technical Architect (Kanshe Infotech), PeopleSoft HCM to Oracle Fusion Cloud HCM (Cyber Sphere), Oracle Cloud - Order to Cash consultant (P2PSoftTek). Not reviewed within the 8-result boundary: 2 remaining results, not opened.",
+        "<b>DevSecOps Engineer:</b> 2 rendered; reviewed 2; Complete. IDs: 45ba9f6d-e8dd-446a-b481-1f1d2f89ddea (TechniPros, recurring repost), and SAP Commerce (Hybris) - Solutions Architect (Techwave Consulting Inc, title-screened, out of scope).",
+        "<b>Forward Deployed Engineer:</b> 1 rendered; reviewed 1; Complete. ID: b64fdd50-d372-40f7-b09e-fb32dadc6622 (Key Business Solutions, known, unchanged content and ID).",
+        "Last 7 Days, Full Time, Contract, Remote and Willing to Sponsor were visibly active for all six passes. Session was already authenticated (Marc's Chrome profile) — no explicit sign-in performed by the skill. No CAPTCHA, login prompt, or write-side action occurred."
       ]
     },
     {
-      "heading": "Query audit — current run",
+      "heading": "Recurring-repost pattern — TechniPros, LLC",
       "items": [
-        "<b>DevOps Engineer:</b> 4 rendered results; reviewed 4; Complete. IDs: 715868bc-acd6-4537-8112-21f758a120e1, 06ab958a-d350-444e-a112-14b5a57bb829, f094cb31-ef6c-46e4-b51c-b2231c0c435c, 93ff84f7-42cd-4c47-a43c-714d3842643b.",
-        "<b>Platform Engineer:</b> 10 rendered results; reviewed first 8; Complete. IDs: d57b98ba-d63f-40f4-add5-1e9c3dafe833, 93ff84f7-42cd-4c47-a43c-714d3842643b, 5bc8d240-435f-4161-b959-1552a18bab31, cf0a1228-a393-49ae-abc4-ca5f47b01f6b, 705b1411-f640-413c-a253-b803e420aaf5, 1491a6fb-0b0c-4280-92b9-33d8d8836d44, 53af2cdd-a31d-4805-8d8b-f971158e299c, 46f6563c-66ad-4dbf-9801-eecbcae4647f.",
-        "<b>Site Reliability Engineer:</b> 0 rendered results; reviewed 0; Zero results; IDs: none.",
-        "<b>Cloud Engineer:</b> 5 rendered results; reviewed 5; Complete. IDs: d57b98ba-d63f-40f4-add5-1e9c3dafe833, 1ad63edd-482e-421a-9b1b-c0c5f938a171, 80d0c919-ad39-4d11-acf2-5f9bf3404018, cc115426-f444-46b0-8572-70b182d29c8d, 521b96f0-0b17-4739-8a47-06f40ed1f808.",
-        "<b>DevSecOps Engineer:</b> 3 rendered results; reviewed 3; Complete. IDs: 06ab958a-d350-444e-a112-14b5a57bb829, 3d1b6a99-3a4c-43f9-a4c1-b9ac5987ea88, 715868bc-acd6-4537-8112-21f758a120e1.",
-        "<b>Forward Deployed Engineer:</b> 1 rendered result; reviewed 1; Complete. ID: b64fdd50-d372-40f7-b09e-fb32dadc6622. Kforce appeared only in Similar Jobs and is excluded from query totals and rows."
-      ]
-    },
-    {
-      "heading": "Methodology correction — this run replaces an earlier same-day pass",
-      "items": [
-        "An earlier 2026-09-21 run used WebFetch (anonymous HTML fetch + summarization) against Dice's search URLs and reported 22 \"unique\" postings including 5 that turned out to be wrong: Kforce Technology Staffing's Forward Deployed Engineer (Armonk, NY), High Bridge Consulting's Senior AI FDE, Cencora's FDE, a Kanshe Infotech Salesforce Financial Services Cloud Architect, and TechniPros' Principal Generative AI Engineer.",
-        "This browser-based re-run, done logged in as Marc's actual Dice account, confirms those 5 were never real search-result hits — they were entries from the \"Similar Jobs\" sidebar shown on a job-detail page, which WebFetch's markdown conversion flattened into the same list as genuine search results. Dice's own on-page result counters (e.g. \"1 results (0 new)\" for Forward Deployed Engineer) confirm the true, much smaller result sets used here.",
-        "Current rendered counts remain DevOps Engineer 4, Platform Engineer 10, Site Reliability Engineer 0, Cloud Engineer 5, DevSecOps Engineer 3, and Forward Deployed Engineer 1. The merged skill reviews at most eight results per query, yielding 17 unique inspected IDs after cross-query deduplication.",
-        "Kforce remains a real posting but appeared only in Dice's Similar Jobs module, not in an audited filtered result list. It is therefore excluded from current query totals and report rows."
+        "TechniPros, LLC continues to repost the same two role templates (a \"DevOps Engineer\"-titled Senior DevOps Engineer role, and a \"DevOps Engineer\"-titled DevSecOps Engineer role) with a new job-detail ID and a rotating on-site multi-city list every few days: seen 2026-09-19 (IDs 3d6389da, a0acae92, 06ab958a), 2026-09-21 (IDs 715868bc, 06ab958a), and now 2026-09-22 (IDs 450177b2, 45ba9f6d). Content, required skills, W-2/No-C2C terms, and scoring are unchanged each time. Both are treated as the same recurring decision under the automatic-filing dedup rule (employer + exact role) and were not re-filed — applications.md already carries 4 Skipped rows for this exact pattern.",
+        "Worth flagging to Marc directly: if TechniPros keeps reposting under new job IDs indefinitely, this source will keep resurfacing the identical two postings on every run without ever producing a new candidate — low marginal value from this employer going forward unless the on-site requirement changes."
       ]
     },
     {
       "heading": "Scope exclusions — screened out by title, not opened for full validation",
       "items": [
-        "Eight reviewed postings were screened out by title as off-domain within the current boundary: Salesforce development/leadership, Oracle functional consulting, SAP Commerce architecture, and further AI/Generative-AI application roles."
+        "Eleven postings this run were screened out by title as off-domain within the review boundary, not opened for full description review: Salesforce Tech Lead (cloudingest inc), 3 more Salesforce Developer postings (TechniPros, Medinext Global, Virtualan Software), Python Full Stack Developer (Rivago infotech), Gen AI Engineer (TechniPros), IAM SailPoint specialist (TechniPros), Salesforce Technical Architect / Genesys Cloud (Kanshe Infotech), PeopleSoft HCM to Oracle Fusion Cloud HCM migration (Cyber Sphere LLC), Oracle Cloud Order-to-Cash consultant (P2PSoftTek Inc), and SAP Commerce (Hybris) Solutions Architect (Techwave Consulting Inc). None of these carry a DevOps/Platform/SRE center of gravity."
       ]
     },
     {
       "heading": "Run notes",
       "items": [
-        "All six default titles were searched in a rendered Chrome browser against dice.com, logged in as Marc's account. This is the required method for Dice's JavaScript-driven search UI; WebFetch is not used as a substitute.",
-        "This is a same-day re-run requested after the prior corrected browser pass. Every per-query rendered count, every job ID under every query, and the full deduplicated candidate set are byte-for-byte identical to the prior run: no new postings appeared, none of the prior 9 candidates disappeared.",
-        "TechniPros \"Senior DevOps Engineer\" (job-detail/715868bc) remains a strong direct skill match, scored 7, but has the same employer/on-site-rotation pattern Marc skipped twice before (2026-09-19). Not yet in applications.md.",
-        "TechniPros' DevSecOps Engineer posting (job-detail/06ab958a) is still live and unchanged, scored 6. Not yet in applications.md.",
-        "Checked applications.md fresh this run: Quantum Technologies (d57b98ba) is Applied — 2026-09-19; Shiro Technologies (f094cb31) and GlobalLogic (93ff84f7) are Skipped — 2026-09-19. All three statuses unchanged from the prior run.",
+        "All six default titles were searched in a rendered Chrome browser against dice.com. The browser session was already signed in to Marc's Dice account from a prior session — this run did not perform any sign-in action itself.",
+        "Checked applications.md fresh this run: all 8 resurfaced known postings (TechniPros DevOps, TechniPros DevSecOps, Quantum Cloud & App Platform Engineer, GlobalLogic, ISite, IT Trailblazers, Key Business Solutions, Quantum Google Cloud Architect) match an existing applications.md decision by employer+role — none needed filing or re-scoring beyond confirming the decision still applies. Shiro Technologies did not resurface this run; carried forward from applications.md unchanged.",
+        "Zero new eligible (score ≥5, in-scope, not already decided) candidates this run — every in-scope posting found was already a known pipeline decision, and every new posting found was off-domain by title. 0 auto-filed.",
         "No CAPTCHA or write-side action occurred."
       ]
     }
   ],
-  "method": "All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 3, 12, 0, 7, 3 and 1. Up to eight results per query were audited before deduplication. Two newly surfaced Cloud-query IDs were Oracle/Salesforce functional roles outside the target families; no new eligible target-family posting was found. Existing validated rows and pipeline statuses were preserved."
+  "method": "All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 2, 8, 0, 10, 2, and 1. Up to eight results per query were audited before deduplication, yielding 19 unique reviewed postings. Eight were known pipeline postings (TechniPros's two recurring reposts plus six previously-scored postings, all unchanged in content), one known posting (Shiro) was not resurfaced and was carried forward, and eleven were new but off-domain by title. No new eligible target-family posting was found this run; zero postings were auto-filed."
 }
