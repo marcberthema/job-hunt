@@ -1,35 +1,17 @@
 {
   "board": "BuiltIn",
-  "run_date": "2026-09-21",
+  "run_date": "2026-09-22",
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 21, 2026 — all nine remote title passes completed; the required city/location filter could not be verified reliably, so geography passes are marked incomplete. Inviso's current FDE Infrastructure SRE posting was validated and matched to an existing Applied pipeline row.",
+  "latest_update": "Rechecked September 22, 2026 — all nine remote title passes completed via direct fetch (no browser needed). 3 new eligible postings auto-filed at score 6-7 (Banyan Software, Estoras Group, Sureify). Also fixed a schema gap from the prior run: previously-excluded ineligible/hard-gated postings (Hadrian, Sparksoft x2, Rain, Cardinal Health) are now proper scored rows instead of notes-only prose, per reports/report_schema.md.",
   "stats": [
-    {
-      "value": 9,
-      "label": "remote title passes completed"
-    },
-    {
-      "value": 15,
-      "label": "geography passes incomplete"
-    },
-    {
-      "value": 6,
-      "label": "new eligible, scored"
-    },
-    {
-      "value": 3,
-      "label": "pipeline matches"
-    },
-    {
-      "value": 6,
-      "label": "ineligible / hard-gated"
-    },
-    {
-      "value": 1,
-      "label": "unclear eligibility"
-    }
+    {"value": 9, "label": "remote title passes completed"},
+    {"value": 22, "label": "new postings validated this run"},
+    {"value": 3, "label": "new eligible, auto-filed"},
+    {"value": 7, "label": "pipeline matches carried forward"},
+    {"value": 6, "label": "ineligible (hard eligibility gate)"},
+    {"value": 12, "label": "out of scope (domain mismatch)"}
   ],
   "rows": [
     {
@@ -46,12 +28,46 @@
     {
       "score": 7,
       "family": "SRE",
+      "title": "Senior SRE (Modernized Application Operations)",
+      "company": "Banyan Software",
+      "location": "Remote — US/Canada",
+      "salary": "$120,000–$145,000 CAD/year (Canada-based base band)",
+      "gap": "Kubernetes \"mastery\" and Go are named requirements Marc doesn't have at that depth — his Kubernetes is real but provisioning/operational-side, not deep cluster engineering. Otherwise a strong match: AWS+Azure venue, Terraform at scale, Dynatrace-equivalent APM, and explicit AI-assisted-engineering tooling (Claude Code) that Marc's Énergir practice answers directly.",
+      "url": "https://builtin.com/job/senior-sre/11299911",
+      "status": "New"
+    },
+    {
+      "score": 7,
+      "family": "SRE",
       "title": "Senior AI DevOps & Reliability Engineer",
       "company": "Branch (branch.io)",
       "location": "Remote — Canada (Vancouver-anchored, 100% remote)",
       "salary": "$123,000–$160,000 CAD/year + 10% bonus",
-      "gap": "None material — direct overlap on Kubernetes, AWS, Terraform, CI/CD, Python/Bash, Prometheus/Grafana; the AI-first tooling expectation (Claude Code) is a genuine strength given Énergir's AI-assisted-engineering work, not a gap. Note: explicitly states no relocation/visa sponsorship — Marc must already be Canada-based, which he is",
-      "url": "https://builtin.com/job/ai-devops-reliability-engineer/10028204"
+      "gap": "None material on skill fit — Marc could not access a working BuiltIn link for this posting.",
+      "url": "https://builtin.com/job/ai-devops-reliability-engineer/10028204",
+      "status": "Skipped — 2026-09-19 (link inaccessible)"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "AWS and DevOps Engineer",
+      "company": "Estoras Group",
+      "location": "Remote — Canada (EST business hours required)",
+      "salary": "Not stated (contract role)",
+      "gap": "Reads as general cloud/infra-ops competence (hosting, networking, storage, IAM, CI/CD, monitoring, backups) rather than an architecture-ownership-at-scale deliverable — AWS is the venue Marc can answer honestly via the Tink build. Salary not stated; confirm it clears the $80/hr long-term or $90/hr part-time contract floor before pursuing.",
+      "url": "https://builtin.com/job/aws-and-devops-engineer/11292868",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Sureify",
+      "location": "Remote — Americas, Canada-eligible",
+      "salary": "Not stated",
+      "gap": "AWS production ops is the primary cloud (not Azure) — Marc's real answer is the dated, by-hand, non-production Tink build, honestly bounded. Otherwise strong tooling match: Terraform, Kubernetes/Docker, Jenkins/GitHub Actions CI/CD, scripting. Salary not stated; confirm the floor before pursuing.",
+      "url": "https://builtin.com/job/senior-devops-engineer/11125369",
+      "status": "New"
     },
     {
       "score": 6,
@@ -61,7 +77,8 @@
       "location": "Remote — Canada",
       "salary": "$105,000–$120,000 CAD/year",
       "gap": "None material — Terraform, Ansible, Puppet, Kubernetes, Docker, Linux, and networking all overlap directly with Marc's real experience (Puppet specifically from Tink)",
-      "url": "https://builtin.com/job/senior-cloud-engineer/11187701"
+      "url": "https://builtin.com/job/senior-cloud-engineer/11187701",
+      "status": "Applied — 2026-09-19"
     },
     {
       "score": 5,
@@ -71,7 +88,8 @@
       "location": "Remote — Ontario (Toronto-anchored, \"Hiring Remotely in Toronto, ON, CAN\")",
       "salary": "Not stated",
       "gap": "ML/AI infrastructure support (training clusters, model serving, GPU workload scheduling) is not established in the profile; core DevOps/Kubernetes/Terraform/CI-CD requirements otherwise align",
-      "url": "https://builtin.com/job/staff-devops-engineer/10886416"
+      "url": "https://builtin.com/job/staff-devops-engineer/10886416",
+      "status": "Applied — 2026-09-19"
     },
     {
       "score": 5,
@@ -81,18 +99,52 @@
       "location": "Remote — Canada",
       "salary": "Not stated",
       "gap": "Role's actual center of gravity is service/product architecture engineering (event-driven AWS-native services, API and data-model design) more than infrastructure-operations DevOps, despite real AWS/IaC/CI-CD keywords present",
-      "url": "https://builtin.com/job/staff-software-engineer-platform-and-cloud-services/11168711"
+      "url": "https://builtin.com/job/staff-software-engineer-platform-and-cloud-services/11168711",
+      "status": "Skipped — 2026-09-19"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Staff Engineer, Site Reliability",
+      "company": "Babylist",
+      "location": "Remote — Hiring Remotely in Canada",
+      "salary": "Not stated",
+      "gap": "Staff-level AWS EKS/RDS infrastructure ownership (\"you own IaC, not just contribute to it\") plus hands-on production Kubernetes debugging expertise — beyond Marc's dated, by-hand, non-production AWS and provisioning-side Kubernetes depth.",
+      "url": "https://builtin.com/job/staff-engineer-site-reliability/10011879",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Staff Developer - Cloud Engineering",
+      "company": "Jane App",
+      "location": "Remote — Canada (also US/UK)",
+      "salary": "$158,400–$247,500 CAD/year",
+      "gap": "Staff-level, multi-region AWS architecture ownership and cross-team technical leadership is the explicit core deliverable — hits the profile's AWS hard-gate rule (cloud-native architecture ownership at scale) despite excellent pay and a real Terraform match.",
+      "url": "https://builtin.com/job/staff-developer-cloud-engineering/10989700",
+      "status": "New"
     },
     {
       "score": 4,
       "family": "Platform",
       "title": "Software Engineer, Cloud Infrastructure",
       "company": "Safari AI",
-      "status": "InProcess",
       "location": "Remote (Vancouver-anchored team; Canada-eligible)",
       "salary": "Not stated",
       "gap": "Reads as a product/infra software-engineering IC role (building a service from scratch, code-sample required) rather than operations/platform-enablement work; less aligned than the title alone suggests",
-      "url": "https://builtin.com/job/software-engineer-cloud-infrastructure/11262477"
+      "url": "https://builtin.com/job/software-engineer-cloud-infrastructure/11262477",
+      "status": "InProcess"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Cloud Engineer",
+      "company": "Laivly",
+      "location": "Remote — Canada (posted for Winnipeg, MB)",
+      "salary": "Not stated",
+      "gap": "AWS-exclusive architecture ownership at scale is stated as the position's foundation (IAM, VPC, compute, storage, FinOps, mentorship) — hits the profile's AWS hard-gate rule.",
+      "url": "https://builtin.com/job/senior-cloud-engineer/10689558",
+      "status": "New"
     },
     {
       "score": 3,
@@ -102,63 +154,283 @@
       "location": "Remote — Canada",
       "salary": "Not stated",
       "gap": "Requires proven agentic-AI-platform infrastructure build experience specifically (SDN micro-segmentation, agent policy/control planes) — Marc's cloud/IaC depth is real but this is a narrow, cutting-edge specialization he hasn't built. Same company flagged for the identical reason in a prior run (job_sources.md, 2026-09-08)",
-      "url": "https://builtin.com/job/expert-devops-engineer/11019366"
+      "url": "https://builtin.com/job/expert-devops-engineer/11019366",
+      "status": "New"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "FDE Backend Platform Engineer - Canada",
+      "company": "Inviso Corporation",
+      "location": "Remote — Canada; some client travel",
+      "salary": "Not stated",
+      "gap": "Posting's own seniority header lists this as an Entry level role despite the FDE/consulting framing — junior scope, not the senior architecture-ownership work the profile targets.",
+      "url": "https://builtin.com/job/backend-platform-engineer-canada/10971484",
+      "status": "New"
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "Staff Platform Database Reliability Engineer",
+      "company": "Index Exchange",
+      "location": "Remote/Hybrid — Canada (Toronto HQ)",
+      "salary": "Not stated",
+      "gap": "Core requirement is 7+ years as a Database Reliability Engineer/DBA across MySQL/MariaDB/Galera/PostgreSQL/Kafka/Aerospike internals — a DBA specialization Marc's profile doesn't establish, despite real Kubernetes/Terraform/ArgoCD overlap around the edges.",
+      "url": "https://builtin.com/job/staff-platform-database-reliability-engineer/10795336",
+      "status": "New"
+    },
+    {
+      "score": 2,
+      "family": "DevOps",
+      "title": "DevOps & Golang Developer",
+      "company": "Groupe Bruxelles Lambert (GBL)",
+      "location": "Remote — Toronto, ON",
+      "salary": "Not stated",
+      "gap": "Golang microservice development is the primary requirement (Marc has no Go); posting is also labeled entry level. GCP is the stated cloud platform, listed only as preferred.",
+      "url": "https://builtin.com/job/devops-golang-developer/11195141",
+      "status": "New"
+    },
+    {
+      "score": 0,
+      "family": "SRE",
+      "title": "Senior Operations Reliability Engineer - IAM",
+      "company": "Genesys",
+      "location": "Remote — Canada (Eastern Time hours required)",
+      "salary": "$92,000–$120,800/year",
+      "gap": "Out of scope — the role is identity/access-management operations (Okta, Active Directory, Entra ID administration, SSO/provisioning troubleshooting), not infrastructure/platform/DevOps; no cloud platform or Kubernetes component at all.",
+      "url": "https://builtin.com/job/senior-operations-reliability-engineer-iam/11008189",
+      "status": "Out of scope — IAM operations, not infrastructure/DevOps"
+    },
+    {
+      "score": 0,
+      "family": "SRE",
+      "title": "Reliability Engineer",
+      "company": "Sapsol Technologies Inc",
+      "location": "Remote — Canada (Mississauga, ON HQ)",
+      "salary": "Not stated",
+      "gap": "Out of scope — this is a medical-device reliability engineering role (DFMEA, HALT/HASS, ISO 13485/FDA 21 CFR 820, statistical reliability modeling), unrelated to IT/DevOps despite the shared job title.",
+      "url": "https://builtin.com/job/reliability-engineer/9589624",
+      "status": "Out of scope — medical-device reliability engineering, not IT"
+    },
+    {
+      "score": 0,
+      "family": "SRE",
+      "title": "Integration Reliability Engineer, Payments",
+      "company": "Stripe",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Out of scope — this is a payments technical-support/reconciliation role (partner engagement, anomaly detection tooling, multi-currency reconciliation), not infrastructure or platform engineering, despite the \"Reliability Engineer\" title.",
+      "url": "https://builtin.com/job/integration-reliability-engineer-payments/10299737",
+      "status": "Out of scope — payments support/reconciliation, not infrastructure"
+    },
+    {
+      "score": 0,
+      "family": "SRE",
+      "title": "Software Engineer, Database Reliability & Performance",
+      "company": "InfluxData",
+      "location": "Remote/Hybrid — Ottawa, ON",
+      "salary": "$100,000–$168,000 CAD/year",
+      "gap": "Out of scope — core deliverable is database-internals performance/regression engineering with deep hands-on Rust (or C++/Go) — database software engineering, not infrastructure operations, despite the great Ottawa-remote location and pay.",
+      "url": "https://builtin.com/job/software-engineer-database-reliability-performance/10921200",
+      "status": "Out of scope — database internals/Rust engineering, not infra ops"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Platform Engineer, GitLab Orbit",
+      "company": "GitLab",
+      "location": "Remote — global; Canada eligibility not confirmed in posting",
+      "salary": "$139,200–$235,200 USD/year (US band; varies by location)",
+      "gap": "Out of scope — core deliverable is Rust backend/graph-database service engineering (a knowledge-graph query engine) for an internal product, not infrastructure operations, despite AWS/GCP/Kubernetes/Terraform appearing around the edges.",
+      "url": "https://builtin.com/job/senior-platform-engineer-gitlab-orbit/11167353",
+      "status": "Out of scope — Rust backend/graph-service engineering, not infra ops"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Staff Backend Engineer, Core DevOps",
+      "company": "GitLab",
+      "location": "Remote — global; Canada eligibility not confirmed in posting",
+      "salary": "$152,800–$259,200 USD/year (US band; varies by location)",
+      "gap": "Out of scope — despite the team name, the deliverable is backend software architecture leadership (modernizing monoliths, API/service standards, Go adoption), not infrastructure/platform operations.",
+      "url": "https://builtin.com/job/staff-backend-engineer-core-devops/11252102",
+      "status": "Out of scope — backend software architecture leadership, not infra ops"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "DevOps Developer",
+      "company": "Ericsson",
+      "location": "Remote/Hybrid — Montréal, QC",
+      "salary": "Not stated",
+      "gap": "Out of scope — explicitly an entry-level/new-grad internship (\"recent graduates,\" GPA requirement) doing Java application development, not senior infrastructure/DevOps work.",
+      "url": "https://builtin.com/job/devops-developer/11303850",
+      "status": "Out of scope — new-grad Java app-dev internship, not senior DevOps"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Staff Cloud Security Engineer",
+      "company": "Temporal Technologies",
+      "location": "Remote — location/Canada eligibility not stated",
+      "salary": "$176,000–$289,000/year",
+      "gap": "Out of scope — a cloud security-specialist role (threat modeling, multi-tenant isolation, mTLS/service-mesh security, Wiz posture management), not DevOps/platform engineering, despite touching AWS/GCP/Azure and Kubernetes.",
+      "url": "https://builtin.com/job/staff-cloud-security-engineer/10984412",
+      "status": "Out of scope — cloud security specialist, not DevOps/platform"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Forward Deployed Engineer (FDE)",
+      "company": "Coveo",
+      "location": "Remote — Canada (Québec-based company)",
+      "salary": "Not stated",
+      "gap": "Out of scope — customer-facing implementation/prototyping engineering (APIs, data pipelines, full-stack proofs-of-concept), not infrastructure or DevOps work.",
+      "url": "https://builtin.com/job/forward-deployed-engineer-fde/10988674",
+      "status": "Out of scope — customer-facing implementation engineering, not infra"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Forward Deployed Supply Chain Engineer (Canada)",
+      "company": "Lyric (lyric.tech)",
+      "location": "Remote — US/Canada, up to 30% travel (mostly US)",
+      "salary": "$100,000–$170,000/year + 20% variable",
+      "gap": "Out of scope — a customer-facing supply-chain platform deployment/consulting role (UAT, training, stakeholder adoption), not infrastructure/DevOps engineering.",
+      "url": "https://builtin.com/job/forward-deployed-supply-chain-engineer-canada/11215712",
+      "status": "Out of scope — customer-facing supply-chain deployment, not infra"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Founding Forward Deployed Engineer",
+      "company": "Docebo",
+      "location": "Remote or Hybrid — city/Canada eligibility not confirmed in posting",
+      "salary": "$150,000–$200,000/year",
+      "gap": "Out of scope — full-stack AI agentic software/customer-implementation role (React/TypeScript, LLM agent deployment, architecture ownership of a product), not infrastructure/DevOps despite AWS/Kubernetes exposure.",
+      "url": "https://builtin.com/job/forward-deployed-engineer/10430513",
+      "status": "Out of scope — AI agentic software/customer-implementation, not infra"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Cloud Engineer - Kubernetes and GCP",
+      "company": "Cardinal Health",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "GCP/GKE is the explicit primary platform requirement — hits the profile's GCP hard gate directly. Capped 0–4.",
+      "url": "https://builtin.com/job/cloud-engineer/9954111",
+      "status": "Out of scope — GCP-primary requirement, hard-gated"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Engineer - Senior",
+      "company": "Symbiotic Group Inc.",
+      "location": "Toronto, ON — hybrid, minimum 3 days/week onsite",
+      "salary": "Not stated",
+      "gap": "Ineligible — Toronto hybrid at 3+ days/week onsite, outside the Ottawa/Kingston/Brockville/Cornwall/Montréal reachable-city range. Real skill overlap (Kubernetes, GitLab CI/CD, AWS/OpenShift) but not take-able.",
+      "url": "https://builtin.com/job/devops-engineer-senior/10778433",
+      "status": "Ineligible — Toronto hybrid 3+ days/week, outside reachable range"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Engineer Backend / Mobile (4 similar postings)",
+      "company": "Air Apps",
+      "location": "Fully onsite — Lisbon, Portugal (listing header misleadingly says \"Hiring Remotely in ... ON, CAN\")",
+      "salary": "Not stated",
+      "gap": "Ineligible — the job description requires relocation to Air Apps' Lisbon office despite the Canada-suggesting listing header; same pattern as this company's previously-excluded SRE posting (job_sources.md, 2026-09-08/09-19).",
+      "url": "https://builtin.com/job/devops-engineer-backend/9189749",
+      "status": "Ineligible — onsite Lisbon, PT despite misleading Canada header"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Site Reliability Engineer, Client Platform",
+      "company": "Hadrian",
+      "location": "United States (ITAR)",
+      "salary": "Not stated",
+      "gap": "Ineligible — requires US citizen/national/lawful-permanent-resident status under ITAR. Repeat exclusion (job_sources.md, 2026-09-08).",
+      "url": "https://builtin.com/job/site-reliability-engineer-client-platform/",
+      "status": "Ineligible — ITAR, US-persons only"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevSecOps Engineer",
+      "company": "Sparksoft Corporation",
+      "location": "United States (residency-history requirement)",
+      "salary": "Not stated",
+      "gap": "Ineligible — requires having lived in the United States 3 of the past 5 years; Canada-based workers not eligible despite a Bristol, QC office listed.",
+      "url": "https://builtin.com/job/devsecops-engineer/11208039",
+      "status": "Ineligible — US-residency-history requirement"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior DevSecOps Engineer",
+      "company": "Sparksoft Corporation",
+      "location": "United States (residency-history + clearance requirement)",
+      "salary": "Not stated",
+      "gap": "Ineligible — same US-residency-history requirement as the standard posting, plus mandatory AWS certification and US Public Trust clearance.",
+      "url": "https://builtin.com/job/senior-devsecops-engineer/11207916",
+      "status": "Ineligible — US-residency-history + US Public Trust clearance"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "IT / DevSecOps Engineer Contractor",
+      "company": "Rain",
+      "location": "United States (export-control)",
+      "salary": "Not stated",
+      "gap": "Ineligible — \"Must be a U.S. Person\" under export-control law; also a part-time student/recent-grad role. Repeat exclusion (job_sources.md, 2026-09-08).",
+      "url": "https://builtin.com/job/it-devsecops-engineer-contractor/9462402",
+      "status": "Ineligible — US-person export-control requirement"
     }
+  ],
+  "could_not_validate": [
+    {"text": "Canonical's \"Site Reliability Engineer\" listing (search-result slug senior-site-reliability-engineer-americas) 404'd on the direct job URL — Built In's search results and job pages use inconsistent slugs for this posting; couldn't resolve a working canonical link this run.", "url": "https://builtin.com/job/senior-site-reliability-engineer-americas/"},
+    {"text": "WorkOS, MaintainX, and Supabase all have Site Reliability Engineer postings sharing the generic slug \"site-reliability-engineer\" with no distinguishing numeric ID visible in the search results — couldn't resolve which specific job URL belongs to which company without opening each individually, which the search-results fetch didn't support this run.", "url": "https://builtin.com/jobs/remote/dev-ops?search=Site+Reliability+Engineer"}
   ],
   "notes_sections": [
     {
-      "heading": "September 21 pass audit",
+      "heading": "September 22 pass audit",
       "items": [
-        "Complete remote passes: Site Reliability Engineer, Reliability Engineer, Platform Engineer, Infrastructure Engineer, Cloud Engineer, DevOps Engineer, DevSecOps Engineer, Azure DevOps Engineer and Forward Deployed Engineer. The complete visible first page was captured before deduplication; DevSecOps Engineer and Azure DevOps Engineer rendered zero direct job links.",
-        "Remote/city discovery passes for Canada/Ontario, Ottawa, Kingston, Cornwall, Montréal, Toronto, Vancouver, Calgary, Edmonton, Waterloo/Kitchener, Halifax, Winnipeg, Québec City and Victoria were attempted through the visible location field but the rendered results did not reliably change to the selected location. All 15 are marked Incomplete rather than complete or zero-result.",
-        "Inviso Corporation's full current posting was opened and validated. It is already Applied in applications.md (2026-09-19), so it is retained as a pipeline match rather than presented as new.",
-        "No CAPTCHA, sign-in, saved job, alert creation or application action occurred."
+        "Complete remote passes: Site Reliability Engineer, Reliability Engineer, Platform Engineer, Infrastructure Engineer, Cloud Engineer, DevOps Engineer, DevSecOps Engineer (3 results, all previously known), Azure DevOps Engineer (zero results), and Forward Deployed Engineer. All 9 passes used direct WebFetch against builtin.com/jobs/remote/dev-ops?search=&lt;term&gt; — no browser needed this run, and no CAPTCHA/block encountered.",
+        "Geography/city passes (Ottawa, Kingston, Cornwall, Montréal hybrid; plus the Canada-hub remote-discovery cities) were not run this session — the prior run (2026-09-21) documented that Built In's location filter does not reliably change rendered results, and this run's time budget went to fully validating the 9 role-query passes instead, including fixing the prior run's notes-only-exclusion schema gap. Geography passes remain the standing incomplete boundary for this source.",
+        "Inviso Corporation's original FDE Infrastructure SRE Engineer posting resurfaced again (already Applied 2026-09-19) — retained as a pipeline match, not rescored."
+      ]
+    },
+    {
+      "heading": "Schema fix this run",
+      "items": [
+        "The prior run (2026-09-21) put Hadrian, both Sparksoft postings, Rain, and Cardinal Health in notes-only prose (\"Ineligible\"/\"Hard-gated\" bullet lists) instead of scored table rows, which contradicts <code>reports/report_schema.md</code>'s explicit instruction that every ruled-out posting is a row (score 0 or -1), never a footer/notes list. Converted all five to proper rows this run; no new information, same exclusion reasons."
       ]
     },
     {
       "heading": "Pipeline matches — not rescored/refiled",
       "items": [
-        "<b>Correction — DevOps Staff Platform Engineer — Mogo (Orion Digital Corp)</b> (<a href=\"https://builtin.com/job/devops-staff-platform-engineer/11186361\">11186361</a>, $135,000–$170,000 CAD/year): initially scored 7 and presented as a top new pick in this run, but this is the same posting already logged in applications.md as <code>Rejected</code> on 2026-09-16 (score 4, via Eluta/Indeed, company recorded there as \"Orion Digital\" rather than the \"Mogo\" consumer brand — a company-name-alias dedup miss). Marc already reviewed and passed on this one 3 days before this run; not a fresh recommendation. Flagging prominently rather than quietly dropping it, since it was reported as a top pick earlier today.",
-        "<b>Senior DevOps Engineer (Kubernetes team) — StackAdapt</b>: this BuiltIn posting (<a href=\"https://builtin.com/job/senior-devops-engineer-kubernetes-team/10882772\">10882772</a>) validated at score 7 on a full read, but the same role is already <code>Applied</code> in applications.md via a LinkedIn posting (2026-09-18, scored only 4 there — \"AWS dated/by-hand, Kubernetes provisioning-side\"). Same company + exact title = the same underlying req cross-posted; not refiled, but worth noting the scoring gap between a thin LinkedIn read and BuiltIn's fuller description — the LinkedIn score may have undersold it.",
-        "<b>Senior or Staff Site Reliability Engineer (26248) — Enverus</b>: same job code (26248) as the already-<code>Applied</code> Indeed posting from 2026-08-25 (score 7). Confirmed duplicate, not refiled."
-      ]
-    },
-    {
-      "heading": "Ineligible",
-      "items": [
-        "<b>Site Reliability Engineer, Client Platform — Hadrian</b>: US-only, requires US citizen/national/lawful-permanent-resident status under ITAR. Repeat exclusion (job_sources.md, 2026-09-08).",
-        "<b>DevSecOps Engineer — Sparksoft Corporation</b>: requires having lived in the United States 3 of the past 5 years; Canada-based workers not eligible despite a Bristol, QC office listed.",
-        "<b>Senior DevSecOps Engineer — Sparksoft Corporation</b>: same US-residency-history requirement, plus mandatory AWS certification and US Public Trust clearance.",
-        "<b>IT / DevSecOps Engineer Contractor — Rain (rain aero)</b>: \"Must be a U.S. Person\" under export-control law; also a part-time student/recent-grad role. Repeat exclusion (job_sources.md, 2026-09-08)."
-      ]
-    },
-    {
-      "heading": "Hard-gated",
-      "items": [
-        "<b>Cloud Engineer - Kubernetes and GCP — Cardinal Health</b>: GCP/GKE is the explicit primary platform requirement — hits the profile's GCP hard gate directly. Capped 0–4."
-      ]
-    },
-    {
-      "heading": "Unclear eligibility — not scored",
-      "items": [
-        "<b>DevOps Engineer (Founding Team) — Fabrion</b>: San Francisco Bay Area headquartered, 7 locations listed but Canada eligibility not explicitly confirmed in the posting. Needs a direct check before scoring, per the geography rule against assuming eligibility from an ambiguous \"In-Office or Remote\" label."
+        "<b>DevOps Staff Platform Engineer — Mogo (Orion Digital Corp)</b> (<a href=\"https://builtin.com/job/devops-staff-platform-engineer/11186361\">11186361</a>): resurfaced under both Platform Engineer and DevOps Engineer queries. Already <code>Rejected</code> in applications.md (2026-09-16, filed there as \"Orion Digital\"). Not refiled.",
+        "<b>Senior DevOps Engineer (Kubernetes team) — StackAdapt</b> (<a href=\"https://builtin.com/job/senior-devops-engineer-kubernetes-team/10882772\">10882772</a>) and its sibling <a href=\"https://builtin.com/job/devops-engineer/10318251\">DevOps Engineer</a> (10318251): already tracked in applications.md (Applied via LinkedIn 2026-09-18, and Skipped/auto-rejected 2026-08-31 respectively). Not refiled.",
+        "Company+exact-title dedup matches confirmed this run and not refiled: Case IQ \"DevOps Engineer\" (Applied 2026-09-15 via LinkedIn), Jonas Software \"AI-First DevOps Engineer\" (Applied 2026-08-20), Newfold Digital/Web.com \"Senior DevOps Engineer, AI Platform\" (Applied 2026-09-16), D-Wave Systems \"Senior AI DevOps Developer\" (Skipped 2026-08-23), Broadridge \"Lead DevOps Engineer\" (Skipped/expired), CoinMarketCap \"DevOps Engineer - Contractor\" (Skipped/expired), Leap Tools \"DevOps Engineer\" (Skipped 2026-09-16), BMO \"Senior Cloud Engineer\" (Skipped 2026-07-07), Newton.co \"DevOps Engineer - Canada Wide - Remote\" (Applied 2026-07-14, same company+title), Nango \"Staff Platform Engineer\" (Skipped 2026-08-27 as \"Staff Engineer, Platform & Infrastructure\" — same company, near-identical title)."
       ]
     },
     {
       "heading": "Not opened this run — volume boundary",
       "items": [
-        "78 unique postings surfaced across the 4-keyword rotation; 20 were opened for full validation (7 new eligible + 2 pipeline matches + 6 ineligible/hard-gated + 1 unclear + 4 already covered by existing builtin.json rows, e.g. Elastic Senior SRE Observability & Analytics). The remaining ~58 were screened by title only: clear scope exclusions not opened include 2× full-stack/app-dev roles, 4× Cloud/Data Security Engineer roles (security-analyst center of gravity, not DevOps), 2× data-engineering-centered Cloud/Data Engineer roles, 1 explicitly Junior SRE posting, and several URL/title-mismatched low-ID postings (e.g. a \"Site Reliability Engineer\" at slug <code>ai-support-engineer/4452256</code>, a \"Cloud Platform Engineer\" at slug <code>site-reliability-engineer/4452205</code>) that look like stale reposted permalinks.",
-        "Plausible-but-not-yet-opened backlog worth a follow-up pass: Staff Backend Engineer (Core DevOps), plain \"DevOps Engineer\" (11187585), DevOps & Golang Developer, DevOps Engineer – Senior (10778433), Senior DevOps Engineer (11125369), Site Reliability Engineer (SRE) (9080747), Site Reliability Engineer (10644498), Site Reliability Engineer, Robotics, Site Reliability Engineer (Monetization), 2× plain Site Reliability Engineer (8247517, 9823851), Site Reliability Developer 1, Cloud Platform Engineer — AI/3D, Senior Cloud Engineer (10689558, a different req from the scored Vistex one), and GPU Cloud Platform Engineer."
+        "Forward Deployed Engineer query (25 results): beyond the 3 opened in full (Coveo, Lyric, Docebo — all out of scope, confirming the historical pattern that this keyword mostly surfaces customer-facing AI/software-implementation roles), the remaining 22 were screened by title/company only and not opened: Webflow, Sardine, Spellbook, Magical, TAR, NegotiateAI, SecurityScorecard, SensorUp, CruxOCM, GC AI, S32, Tiger Analytics, Nexaminds, AI Fund, Retell AI (x2, one explicitly \"New Grad\"), Tines (\"West\" — US region), H Company (explicitly US), Cohere AI's public-sector FDE variant (likely clearance-gated), CoLab Software (mechanical FDE, wrong domain), Caylent (x2, already Applied/tracked).",
+        "Reliability Engineer query: Jumpstart Refugee Talent, SCR-Sibelco graduate programme, Cerebras kernel reliability, nesto \"Senior Data Reliability Developer\" (QA-flavored), MrBeast quality/reliability, and Tailscale's \"Customer Reliability Engineer\" (a stale/mismatched permalink pointing to a Tier-3 support role) were screened by title only — none read as core infrastructure/DevOps.",
+        "Platform Engineer query: several Block/Cash App/Affirm/Kraken/Speechify/WEX/GitLab listings are core product/backend software-engineering roles (iOS, Ruby, data platform, agentic SDLC) screened out by title; Kinaxis \"Machine Learning/Operations Research Platform Engineer\" and Vena Solutions \"Site Reliability Developer 1\" are plausible-but-not-yet-opened — worth a follow-up pass."
       ]
     },
     {
       "heading": "Run notes",
       "items": [
-        "Ran the standing 4-keyword rotation (DevOps Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer) — Platform Engineer and Forward Deployed Engineer stay skipped per the 2026-09-08 note (historically noisy, mostly non-infra results).",
-        "Direct HTTP retrieval against <code>builtin.com/jobs/remote/dev-ops?search=&lt;term&gt;</code> worked cleanly for both search results and individual job pages — no browser needed this run.",
-        "Genuinely encouraging pattern this run: three separate employers (Mogo, Branch, and to a lesser extent Nexxa) are explicitly recruiting for AI-agent-aware DevOps/Platform roles that value hands-on use of tools like Claude Code — Marc's real AI-assisted-engineering practice at Énergir is a direct, defensible answer to that requirement, not an analogy.",
-        "No CAPTCHA, verification prompt, or write-side action occurred."
+        "Direct HTTP retrieval via WebFetch worked cleanly for every search page and every job detail page attempted (aside from the two slug-collision cases in Could not validate) — no browser needed this run.",
+        "No CAPTCHA, verification prompt, sign-in, or write-side action occurred on builtin.com."
       ]
     }
-  ]
+  ],
+  "method": "Nine role-query passes (Site Reliability Engineer, Reliability Engineer, Platform Engineer, Infrastructure Engineer, Cloud Engineer, DevOps Engineer, DevSecOps Engineer, Azure DevOps Engineer, Forward Deployed Engineer) against Built In's remote/dev-ops search, all fetched directly without a browser. Geography/city passes were not run this session — Built In's location filter has not reliably worked across the last several runs; that remains the standing incomplete boundary. 22 new postings were opened and fully validated this run; the remainder of a much larger raw result set was screened by title only where the domain mismatch was unambiguous (customer-facing FDE implementation roles, core product/backend software engineering, new-grad internships)."
 }
