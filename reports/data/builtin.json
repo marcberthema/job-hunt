@@ -1,21 +1,21 @@
 {
   "board": "BuiltIn",
-  "run_date": "2026-09-22",
+  "run_date": "2026-09-24",
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 22, 2026 — all nine remote title passes completed via direct fetch (no browser needed). 3 new eligible postings auto-filed at score 6-7 (Banyan Software, Estoras Group, Sureify). Also fixed a schema gap from the prior run: previously-excluded ineligible/hard-gated postings (Hadrian, Sparksoft x2, Rain, Cardinal Health) are now proper scored rows instead of notes-only prose, per reports/report_schema.md.",
+  "latest_update": "Rechecked September 24, 2026 — all nine Fully Remote title passes completed in the rendered browser. Two new Canada-eligible postings were fully validated and auto-filed: Vena Solutions Senior Site Reliability Developer (8) and MLabs Site Reliability Engineer (7). Samsara was excluded as US-resident-only; GitLab and Proofpoint location eligibility could not be confirmed. Built In's country/city selector still resolves several requested locations incorrectly, so the geography rotation is incomplete and explicitly reported.",
   "stats": [
     {
       "value": 9,
       "label": "remote title passes completed"
     },
     {
-      "value": 22,
+      "value": 5,
       "label": "new postings validated this run"
     },
     {
-      "value": 3,
+      "value": 2,
       "label": "new eligible, auto-filed"
     },
     {
@@ -32,6 +32,39 @@
     }
   ],
   "rows": [
+    {
+      "score": 8,
+      "family": "SRE",
+      "title": "Senior Site Reliability Developer",
+      "company": "Vena Solutions",
+      "location": "Remote within Canada; GTA candidates preferred for approximately 2 Toronto office visits/month",
+      "salary": "CAD $123,250-$166,750/year",
+      "gap": "Requires deeper production AWS/EKS ownership and ideally an AWS or Azure certification; Marc's strongest cloud depth is Azure and his AWS work was a dated, non-production build.",
+      "url": "https://builtin.com/job/senior-site-reliability-developer/11316943",
+      "status": "New"
+    },
+    {
+      "score": 7,
+      "family": "SRE",
+      "title": "Site Reliability Engineer",
+      "company": "MLabs",
+      "location": "Remote-first; explicitly hiring in Canada",
+      "salary": "GBP £90,000-£120,000/year",
+      "gap": "AWS/GCP operations and highly available PostgreSQL are more central than Marc's demonstrated depth, though his Ansible, CD, systems, networking and financial-sector experience align well.",
+      "url": "https://builtin.com/job/site-reliability-engineer/11326830",
+      "status": "New"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior Platform Engineer, Growth Product Engineering",
+      "company": "Samsara",
+      "location": "Remote or hybrid — United States residents only",
+      "salary": "USD $131,792-$199,350/year",
+      "gap": "Explicitly limited to candidates residing in the United States; technically this strongly matches Marc's CI/CD, IaC, observability, self-service tooling and AI-generated-code guardrail work.",
+      "url": "https://builtin.com/job/senior-platform-engineer-growth-product-engineering/11334617",
+      "status": "Skipped — US residents only"
+    },
     {
       "score": 8,
       "family": "SRE",
@@ -409,6 +442,14 @@
   ],
   "could_not_validate": [
     {
+      "text": "GitLab — Principal Site Reliability Engineer, Platform Engineering: Dedicated: full technical description was accessible and current, but the listing showed only '3 Locations' and a US salary band; its generic country-hiring statement did not explicitly confirm Canada eligibility.",
+      "url": "https://builtin.com/job/principal-site-reliability-engineer-platform-engineering-dedicated/11333544"
+    },
+    {
+      "text": "Proofpoint — DevOps Engineer: full technical description was accessible and current, but the listing showed only '2 Locations' without naming them or explicitly confirming Canada eligibility.",
+      "url": "https://builtin.com/job/devops-engineer/11343374"
+    },
+    {
       "text": "Canonical's \"Site Reliability Engineer\" listing (search-result slug senior-site-reliability-engineer-americas) 404'd on the direct job URL — Built In's search results and job pages use inconsistent slugs for this posting; couldn't resolve a working canonical link this run.",
       "url": "https://builtin.com/job/senior-site-reliability-engineer-americas/"
     },
@@ -418,6 +459,16 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "September 24 rendered-browser pass audit",
+      "items": [
+        "<b>9 Fully Remote title passes completed:</b> Site Reliability Engineer (25 first-page results reviewed), Reliability Engineer (25), Platform Engineer (25), Infrastructure Engineer (25), Cloud Engineer (23), DevOps Engineer (25), DevSecOps Engineer (1), Azure DevOps Engineer (zero results), and Forward Deployed Engineer (25). Each pass visibly rendered the requested search phrase and Fully Remote workplace filter.",
+        "<b>11 remote-hub discovery passes completed:</b> Toronto (12 first-page results), Vancouver (12), Montréal (15), Calgary (16), Ottawa (15), Edmonton (16), Waterloo (15), Halifax (15), Winnipeg (15), Québec City (15), and Victoria (15). Every direct city route visibly rendered the requested city and Fully Remote state before inventory capture.",
+        "<b>Reachable-city hybrid rotation incomplete:</b> Built In continued to resolve a country-level Canada selection to Toronto, and typed Ottawa/Kingston/Cornwall values repeatedly reverted to Toronto. Direct city routes rendered the requested city, but the Hybrid workplace state could not be completed reliably across all four cities before repeated browser-session timeouts. No claim of a complete overall run is made.",
+        "<b>2 auto-filed:</b> Vena Solutions — Senior Site Reliability Developer (score 8, remote Canada, CAD $123,250-$166,750) and MLabs — Site Reliability Engineer (score 7, explicitly hiring in Canada, GBP £90,000-£120,000).",
+        "<b>Fresh exclusions/limits:</b> Samsara Senior Platform Engineer was fully validated but is explicitly restricted to US residents (score -1). GitLab Principal SRE and Proofpoint DevOps Engineer exposed full technical descriptions but did not identify a Canada-eligible location clearly enough to file; they were not auto-filed."
+      ]
+    },
     {
       "heading": "September 22 pass audit",
       "items": [
@@ -456,5 +507,5 @@
       ]
     }
   ],
-  "method": "Nine role-query passes (Site Reliability Engineer, Reliability Engineer, Platform Engineer, Infrastructure Engineer, Cloud Engineer, DevOps Engineer, DevSecOps Engineer, Azure DevOps Engineer, Forward Deployed Engineer) against Built In's remote/dev-ops search, all fetched directly without a browser. Geography/city passes were not run this session — Built In's location filter has not reliably worked across the last several runs; that remains the standing incomplete boundary. 22 new postings were opened and fully validated this run; the remainder of a much larger raw result set was screened by title only where the domain mismatch was unambiguous (customer-facing FDE implementation roles, core product/backend software engineering, new-grad internships)."
+  "method": "Rendered-browser run on September 24, 2026. All nine mandatory Fully Remote role-query passes and all eleven remote-hub discovery passes were completed, with complete first pages reviewed before deduplication. Five fresh plausible postings were opened in full: Vena and MLabs were eligible and auto-filed; Samsara was US-only; GitLab and Proofpoint lacked explicit Canadian location eligibility. Built In's location control repeatedly resolved typed Eastern Ontario cities to Toronto, and the browser session timed out while applying Hybrid state across the direct city routes. The four reachable-city hybrid passes therefore remain incomplete; this report does not claim a complete overall rotation."
 }

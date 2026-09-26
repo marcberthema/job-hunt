@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Senior DevOps &amp; Platform Engineering Consultant — Azure, CI/CD, Kubernetes, IaC. Remote consulting and senior employment opportunities, worldwide.">
-  <title>Marc Berthelette — Senior DevOps &amp; Platform Engineering Consultant</title>
+  <meta name="description" content="Senior SRE and Platform Engineering Consultant helping teams improve reliability, observability, CI/CD, cloud migrations, and infrastructure automation.">
+  <title>Marc Berthelette — Senior SRE &amp; Platform Engineering Consultant</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -412,6 +412,10 @@
       .hero { padding: 3.5rem 0 2.5rem; }
       .hero-ctas { flex-direction: column; }
       .btn-primary, .btn-secondary { text-align: center; }
+      nav .container { padding-left: 1rem; padding-right: 1rem; }
+      .nav-name { display: none; }
+      .nav-links { width: 100%; justify-content: space-between; gap: 0.5rem; }
+      .nav-links a { font-size: 0.78rem; }
     }
   </style>
 </head>
@@ -423,6 +427,7 @@
       <a href="#" class="nav-name">Marc Berthelette</a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
+        <li><a href="#part-time">Part-time</a></li>
         <li><a href="#experience">Experience</a></li>
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -437,14 +442,13 @@
     <div class="hero">
       <p class="hero-eyebrow">Available for remote engagements · Worldwide</p>
       <h1>Marc Berthelette</h1>
-      <p class="hero-title">Senior DevOps &amp; Platform Engineering Consultant · 18 years of experience</p>
+      <p class="hero-title">Senior SRE &amp; Platform Engineering Consultant · 18 years of experience</p>
       <p class="hero-desc">
-        I get handed systems I've never seen and make them deliverable. At Énergir that meant nine
-        different runtimes — Java, Spark, Salesforce, Databricks and more — most of which I'd never
-        touched before I automated them. I also tend to come back with more than was asked for: given
-        a set of deployment scripts to port, I delivered the validation gate that stops broken code
-        from ever reaching the main branch. 18 years across financial services and energy.
-        Bilingual (FR/EN). Incorporated in Canada, available worldwide.
+        I make complex systems more reliable, observable, and safe to change. That means finding the
+        causes behind recurring incidents, automating fragile delivery paths, and building the signals
+        teams need before customers find the failure. My work spans 70+ applications at Énergir, health
+        monitoring for roughly 250 enterprise repositories at Desjardins, and operational automation
+        across a 600+ server fleet. Bilingual (FR/EN), incorporated in Canada, available worldwide.
       </p>
       <div class="hero-ctas">
         <a href="#contact" class="btn-primary">Get in touch</a>
@@ -455,43 +459,84 @@
     <!-- Services -->
     <section id="services">
       <p class="section-label">What I do</p>
-      <h2>Delivery Automation &amp; DevOps Consulting</h2>
+      <h2>Reliability Engineering That Improves Delivery</h2>
       <p>
-        My focus is automating how things get built, tested, and shipped — regardless of what "the thing"
-        is. Applications, integrations, infrastructure, data pipelines: I design the delivery process and
-        make it repeatable. I also build and maintain the platform that delivery runs on.
-        Engagements are remote, contract-first, and outcome-driven.
+        Reliability is more than uptime. I connect production signals, incident learning, platform
+        standards, and delivery automation so teams can release with confidence and spend less time on
+        avoidable operational work.
       </p>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">🚀</div>
-          <h3>Application Delivery Pipelines</h3>
-          <p>End-to-end CI/CD for any workload — Java, .NET, Python, Salesforce, or custom — on Azure DevOps, GitHub Actions, and Jenkins.</p>
+          <h3>Service Reliability</h3>
+          <p>Practical reliability targets, health signals, alerting, incident analysis, and automated remediation grounded in how the service actually behaves.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🏗️</div>
-          <h3>Infrastructure as Code</h3>
-          <p>Terraform and Ansible-based provisioning to eliminate configuration drift and standardize environments across dev, staging, and production.</p>
+          <h3>Observability</h3>
+          <p>Monitoring and dashboards that expose actionable service health with Dynatrace, Splunk, ELK, and purpose-built validation services.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">☁️</div>
-          <h3>Cloud Modernization</h3>
-          <p>Migration planning and execution to Microsoft Azure — scalability, resilience, and cost optimization.</p>
+          <h3>Reliable Delivery</h3>
+          <p>CI/CD quality gates, deployment validation, and self-diagnosing pipelines that make failures clear and prevent bad releases.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🔭</div>
-          <h3>Observability &amp; SRE</h3>
-          <p>Monitoring, alerting, and incident response frameworks using Dynatrace, Splunk, and the ELK Stack.</p>
+          <h3>Platform Automation</h3>
+          <p>Repeatable environments with Terraform, Ansible, Kubernetes, and ArgoCD that reduce drift and operational toil.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🚢</div>
-          <h3>Container &amp; GitOps Delivery</h3>
-          <p>Kubernetes, Docker, and ArgoCD — GitOps delivery pipelines from image build to production rollout.</p>
+          <h3>Cloud Resilience</h3>
+          <p>Azure modernization and migration work designed around recoverability, scalability, security, and sustainable operations.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">📐</div>
-          <h3>Platform Standards &amp; Enablement</h3>
-          <p>Technical documentation, workshops, and DevEx improvements that raise the delivery baseline across teams.</p>
+          <h3>Team Enablement</h3>
+          <p>Standards, documentation, and workshops that help application teams own reliable delivery instead of depending on a platform gatekeeper.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="part-time">
+      <p class="section-label">Part-time &amp; fractional services</p>
+      <h2>Senior Reliability Help Without Another Full-Time Hire</h2>
+      <p>
+        For teams that need experienced ownership of a defined platform or reliability problem, I offer
+        focused remote engagements and ongoing fractional support. Scope, outcomes, response expectations,
+        and exclusions are agreed up front; the work can begin as a project and continue as a retainer.
+      </p>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🔧</div>
+          <h3>Pipeline Rescue &amp; Modernization</h3>
+          <p>Assess slow, fragile, or manual delivery; redesign quality gates, deployment automation, diagnostics, and reusable pipeline patterns.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧭</div>
+          <h3>Cloud &amp; Platform Migration</h3>
+          <p>Plan and deliver phased migrations, environment automation, cutover safeguards, and operational readiness—especially for Microsoft Azure.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">📡</div>
+          <h3>Observability &amp; Incident Improvement</h3>
+          <p>Turn recurring failures into an improvement plan with useful health checks, dashboards, alerts, root-cause analysis, and toil reduction.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🧱</div>
+          <h3>Infrastructure &amp; IaC Review</h3>
+          <p>Review Terraform, configuration, Kubernetes, and cloud practices; identify reliability risks and leave a prioritized implementation roadmap.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Release Readiness Assessment</h3>
+          <p>Evaluate whether a service is safe to operate and change: deployment path, rollback, monitoring, dependencies, recovery, and ownership.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🤝</div>
+          <h3>Fractional SRE / Platform Partner</h3>
+          <p>Ongoing senior guidance and hands-on improvement for teams whose developers currently carry the platform burden alone.</p>
         </div>
       </div>
     </section>
@@ -604,7 +649,7 @@
         </div>
 
         <div class="skill-group">
-          <h3>Monitoring, Observability &amp; Security</h3>
+          <h3>Reliability, Observability &amp; Security</h3>
           <div class="tags">
             <span class="tag">Dynatrace</span>
             <span class="tag">Splunk</span>
@@ -656,7 +701,7 @@
         <div class="skill-group">
           <h3>Methodologies &amp; Practices</h3>
           <div class="tags">
-            <span class="tag">Site Reliability Engineering (SRE)</span>
+            <span class="tag tag-accent">Site Reliability Engineering (SRE)</span>
             <span class="tag">Agile / Scrum</span>
             <span class="tag">DevSecOps</span>
             <span class="tag">Platform Engineering</span>
@@ -689,7 +734,7 @@
       <h2>Working with me</h2>
       <p>
         I work as a senior individual contributor — remotely, worldwide. Whether you need fractional
-        DevOps leadership, a fixed-term platform engineering contract, or a senior DevOps hire, I'm
+        SRE leadership, a fixed-term platform engineering contract, or a senior reliability hire, I'm
         available to start quickly as an incorporated Canadian entity with no onboarding friction.
       </p>
       <p>
@@ -718,7 +763,7 @@
       <h2>Let's talk</h2>
       <div class="contact-box">
         <p>
-          Available for new engagements now. Tell me about your platform engineering challenges
+          Available for new engagements now. Tell me about your reliability or platform challenge
           and we'll figure out if there's a fit.
         </p>
         <div class="contact-links">
@@ -731,7 +776,7 @@
   </div>
 
   <footer>
-    <p>© 2026 Marc Berthelette · Senior DevOps &amp; Platform Engineering Consultant · Remote · Worldwide</p>
+    <p>© 2026 Marc Berthelette · Senior SRE &amp; Platform Engineering Consultant · Remote · Worldwide</p>
   </footer>
 
 </body>

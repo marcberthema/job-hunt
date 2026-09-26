@@ -1,10 +1,10 @@
 {
   "board": "Dice",
-  "run_date": "2026-09-22",
+  "run_date": "2026-09-24",
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Updated September 22, 2026 — all six required browser-rendered queries completed with every required filter visible. Counts were 2, 8, 0, 10, 2 and 1. Inventory has fully turned over since 2026-09-21 for the TechniPros recurring postings (new job IDs each time, same content) but every candidate this run was either a known pipeline decision or a title-screened-out non-DevOps role. Zero new eligible candidates, zero filed.",
+  "latest_update": "Updated September 24, 2026 — all six required browser-rendered queries completed with every required filter visible. Counts were 4, 4, 0, 12, 1 and 1. The only newly validated plausible role was a junior US Cloud Engineer (score 4), below the automatic-filing threshold. Zero auto-filed.",
   "stats": [
     {"value": 6, "label": "queries attempted"},
     {"value": 6, "label": "queries completed"},
@@ -15,6 +15,17 @@
     {"value": 11, "label": "screened out by title"}
   ],
   "rows": [
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Cloud Engineer",
+      "company": "Nexorant LLC",
+      "location": "Remote — United States; occasional travel; confirm TN support",
+      "salary": "USD $85,000–$110,000/year",
+      "gap": "Role targets 1–4 years and broad cloud operations rather than senior platform ownership; Dice says Able to Sponsor, but TN support and Canadian eligibility still require recruiter confirmation.",
+      "url": "https://www.dice.com/job-detail/a9f468b9-a918-4dce-9bb3-efcdb496b4ad",
+      "status": "New"
+    },
     {
       "score": 7,
       "family": "DevOps",

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Consultant senior en ingénierie DevOps et plateforme — Azure, CI/CD, Kubernetes, IaC. Mandats à distance, partout dans le monde.">
-  <title>Marc Berthelette — Consultant senior en DevOps &amp; ingénierie de plateforme</title>
+  <meta name="description" content="Consultant senior SRE et en ingénierie de plateforme — fiabilité, observabilité, CI/CD, migrations infonuagiques et automatisation.">
+  <title>Marc Berthelette — Consultant senior SRE &amp; ingénierie de plateforme</title>
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -372,6 +372,10 @@
       .hero { padding: 3.5rem 0 2.5rem; }
       .hero-ctas { flex-direction: column; }
       .btn-primary, .btn-secondary { text-align: center; }
+      nav .container { padding-left: 1rem; padding-right: 1rem; }
+      .nav-name { display: none; }
+      .nav-links { width: 100%; justify-content: space-between; gap: 0.4rem; }
+      .nav-links a { font-size: 0.74rem; }
     }
   </style>
 </head>
@@ -382,6 +386,7 @@
       <a href="/fr/" class="nav-name">Marc Berthelette</a>
       <ul class="nav-links">
         <li><a href="#services">Services</a></li>
+        <li><a href="#temps-partiel">Temps partiel</a></li>
         <li><a href="#experience">Expérience</a></li>
         <li><a href="#skills">Compétences</a></li>
         <li><a href="#contact">Contact</a></li>
@@ -395,14 +400,13 @@
     <div class="hero">
       <p class="hero-eyebrow">Disponible pour des mandats à distance · Partout dans le monde</p>
       <h1>Marc Berthelette</h1>
-      <p class="hero-title">Consultant senior en DevOps &amp; ingénierie de plateforme · 18 ans d&#39;expérience</p>
+      <p class="hero-title">Consultant senior SRE &amp; en ingénierie de plateforme · 18 ans d&#39;expérience</p>
       <p class="hero-desc">
-        On me confie des systèmes que je n'ai jamais vus et j'en fais des systèmes livrables. Chez Énergir,
-        cela a représenté neuf écosystèmes technologiques distincts — Java, Spark, Salesforce, Databricks et
-        d'autres — dont la plupart m'étaient inconnus avant que je les automatise. J'ai aussi tendance à livrer
-        plus que ce qui a été demandé : chargé de convertir des scripts de déploiement, j'ai livré le pipeline de
-        validation qui empêche le code défectueux d'atteindre la branche principale. 18 ans dans les services
-        financiers et l'énergie. Bilingue (FR/EN). Société incorporée au Canada, disponible partout dans le monde.
+        Je rends les systèmes complexes plus fiables, observables et sûrs à modifier. Je cherche les causes
+        des incidents récurrents, automatise les chemins de livraison fragiles et construis les signaux qui
+        permettent aux équipes d'agir avant les clients. Mon travail couvre plus de 70 applications chez Énergir,
+        la surveillance d'environ 250 dépôts d'entreprise chez Desjardins et l'automatisation d'un parc de plus
+        de 600 serveurs. Bilingue (FR/EN), incorporé au Canada, disponible partout dans le monde.
       </p>
       <div class="hero-ctas">
         <a href="#contact" class="btn-primary">Me contacter</a>
@@ -412,44 +416,61 @@
 
     <section id="services">
       <p class="section-label">Ce que je fais</p>
-      <h2>Automatisation de la livraison &amp; consultation DevOps</h2>
+      <h2>La fiabilité au service de la livraison</h2>
       <p>
-        Mon expertise, c'est d'automatiser la façon dont les choses se construisent, se testent et se livrent —
-        peu importe ce que c'est. Applications, intégrations, infrastructure, pipelines de données : je conçois
-        le processus de livraison et le rends répétable. Je construis aussi la plateforme sur laquelle
-        cette livraison repose. Les mandats sont à distance, prioritairement contractuels, et axés sur les résultats.
+        La fiabilité ne se limite pas à la disponibilité. Je relie les signaux de production, l'apprentissage
+        tiré des incidents, les standards de plateforme et l'automatisation afin que les équipes puissent livrer
+        avec confiance et réduire le travail opérationnel évitable.
       </p>
       <div class="services-grid">
         <div class="service-card">
           <div class="service-icon">🚀</div>
-          <h3>Pipelines de livraison applicative</h3>
-          <p>CI/CD de bout en bout pour tout type de charge — Java, .NET, Python, Salesforce ou sur mesure — sur Azure DevOps, GitHub Actions et Jenkins.</p>
+          <h3>Fiabilité des services</h3>
+          <p>Objectifs de fiabilité pragmatiques, signaux de santé, alertes, analyse d'incidents et remédiation automatisée.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🏗️</div>
-          <h3>Infrastructure as Code</h3>
-          <p>Provisionnement par Terraform et Ansible pour éliminer la dérive de configuration et standardiser les environnements.</p>
+          <h3>Observabilité</h3>
+          <p>Surveillance et tableaux de bord exploitables avec Dynatrace, Splunk, ELK et des services de validation sur mesure.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">☁️</div>
-          <h3>Modernisation infonuagique</h3>
-          <p>Planification et exécution de migrations vers Microsoft Azure — évolutivité, résilience et optimisation des coûts.</p>
+          <h3>Livraison fiable</h3>
+          <p>Contrôles qualité CI/CD, validation des déploiements et pipelines autodiagnostiques qui préviennent les mauvaises mises en production.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🔭</div>
-          <h3>Observabilité &amp; SRE</h3>
-          <p>Cadres de surveillance, d'alertes et de réponse aux incidents avec Dynatrace, Splunk et la suite ELK.</p>
+          <h3>Automatisation de plateforme</h3>
+          <p>Environnements répétables avec Terraform, Ansible, Kubernetes et ArgoCD pour réduire la dérive et le travail manuel.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">🚢</div>
-          <h3>Conteneurs &amp; livraison GitOps</h3>
-          <p>Kubernetes, Docker et ArgoCD — pipelines GitOps du build d'image jusqu'au déploiement en production.</p>
+          <h3>Résilience infonuagique</h3>
+          <p>Modernisation Azure pensée pour la reprise, l'évolutivité, la sécurité et des opérations durables.</p>
         </div>
         <div class="service-card">
           <div class="service-icon">📐</div>
-          <h3>Standards de plateforme &amp; formation</h3>
-          <p>Documentation technique, ateliers et améliorations DevEx qui élèvent le niveau de livraison de toute l'équipe.</p>
+          <h3>Habilitation des équipes</h3>
+          <p>Standards, documentation et ateliers qui permettent aux équipes applicatives de prendre en charge une livraison fiable.</p>
         </div>
+      </div>
+    </section>
+
+    <section id="temps-partiel">
+      <p class="section-label">Services à temps partiel et fractionnés</p>
+      <h2>Une expertise senior en fiabilité sans une embauche à temps plein</h2>
+      <p>
+        Pour les équipes qui ont besoin d'un responsable expérimenté pour un problème défini de plateforme
+        ou de fiabilité, j'offre des mandats ciblés à distance et un accompagnement fractionné continu. La portée,
+        les résultats, les attentes de réponse et les exclusions sont convenus dès le départ.
+      </p>
+      <div class="services-grid">
+        <div class="service-card"><div class="service-icon">🔧</div><h3>Redressement et modernisation CI/CD</h3><p>Diagnostic des livraisons lentes, fragiles ou manuelles; refonte des contrôles qualité, diagnostics et modèles réutilisables.</p></div>
+        <div class="service-card"><div class="service-icon">🧭</div><h3>Migration infonuagique et de plateforme</h3><p>Planification par étapes, automatisation des environnements, sécurisation de la bascule et préparation opérationnelle, particulièrement sur Azure.</p></div>
+        <div class="service-card"><div class="service-icon">📡</div><h3>Observabilité et amélioration des incidents</h3><p>Bilans de santé, tableaux de bord, alertes, analyse de cause racine et réduction du travail opérationnel répétitif.</p></div>
+        <div class="service-card"><div class="service-icon">🧱</div><h3>Revue d'infrastructure et d'IaC</h3><p>Revue de Terraform, Kubernetes, de la configuration et du nuage, avec risques priorisés et feuille de route de mise en œuvre.</p></div>
+        <div class="service-card"><div class="service-icon">🛡️</div><h3>Évaluation de l'état de préparation</h3><p>Évaluation du déploiement, du retour arrière, de la surveillance, des dépendances, de la reprise et des responsabilités.</p></div>
+        <div class="service-card"><div class="service-icon">🤝</div><h3>Partenaire SRE / plateforme fractionné</h3><p>Conseils seniors et améliorations pratiques pour les équipes dont les développeurs portent seuls la plateforme.</p></div>
       </div>
     </section>
 
@@ -551,7 +572,7 @@
         </div>
 
         <div class="skill-group">
-          <h3>Surveillance, observabilité &amp; sécurité</h3>
+          <h3>Fiabilité, observabilité &amp; sécurité</h3>
           <div class="tags">
             <span class="tag">Dynatrace</span>
             <span class="tag">Splunk</span>
@@ -603,7 +624,7 @@
         <div class="skill-group">
           <h3>Méthodologies &amp; pratiques</h3>
           <div class="tags">
-            <span class="tag">Ingénierie de la fiabilité des sites (SRE)</span>
+            <span class="tag tag-accent">Ingénierie de la fiabilité des sites (SRE)</span>
             <span class="tag">Agile / Scrum</span>
             <span class="tag">DevSecOps</span>
             <span class="tag">Ingénierie de plateforme</span>
@@ -634,8 +655,8 @@
       <h2>Travailler avec moi</h2>
       <p>
         J'interviens comme contributeur individuel senior — à distance, partout dans le monde. Que vous
-        ayez besoin d'un leadership DevOps fractionné, d'un contrat d'ingénierie de plateforme à durée
-        déterminée ou d'un ingénieur DevOps senior, je suis disponible rapidement en tant que société
+        ayez besoin d'un leadership SRE fractionné, d'un contrat d'ingénierie de plateforme à durée
+        déterminée ou d'un spécialiste senior en fiabilité, je suis disponible rapidement en tant que société
         incorporée canadienne, sans friction à l'intégration.
       </p>
       <p>
@@ -663,7 +684,7 @@
       <h2>Discutons</h2>
       <div class="contact-box">
         <p>
-          Disponible pour de nouveaux mandats dès maintenant. Parlez-moi de vos défis en ingénierie de
+          Disponible pour de nouveaux mandats dès maintenant. Parlez-moi de votre défi de fiabilité ou de
           plateforme et nous verrons s'il y a une bonne adéquation.
         </p>
         <div class="contact-links">
@@ -676,7 +697,7 @@
   </div>
 
   <footer>
-    <p>© 2026 Marc Berthelette · Consultant senior en DevOps &amp; ingénierie de plateforme · À distance · Partout dans le monde</p>
+    <p>© 2026 Marc Berthelette · Consultant senior SRE &amp; en ingénierie de plateforme · À distance · Partout dans le monde</p>
   </footer>
 
 </body>

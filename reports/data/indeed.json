@@ -1,14 +1,14 @@
 {
   "board": "Indeed",
-  "run_date": "2026-09-22",
+  "run_date": "2026-09-24",
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "Rechecked September 22, 2026 — no Additional-Verification block hit this run; all 9 default title-family passes against Canada-broad, plus Ottawa/Kingston/Cornwall/Montréal reachable-city hybrid passes, completed cleanly. 2 new eligible postings auto-filed.",
+  "latest_update": "Rechecked September 24, 2026 — all 9 title-family, 4 reachable-city and 11 remote-hub passes completed without a CAPTCHA or verification block. No new posting cleared every filing gate.",
   "stats": [
     {
-      "value": 13,
-      "label": "fresh title-family + city passes (this run)"
+      "value": 24,
+      "label": "search passes completed this run"
     },
     {
       "value": 46,
@@ -28,6 +28,17 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "September 24 validation notes",
+      "items": [
+        "Completed all 24 required discovery passes: 9 title-family searches, 4 reachable-city searches (Ottawa, Kingston, Cornwall and Montreal), and 11 remote-hub searches. Indeed loaded normally in the browser; no CAPTCHA or Additional Verification page appeared.",
+        "Most searches recycled the same recommendation pool. Exact fresh target-family results were sparse: several passes returned zero exact matches, while generic Reliability and Forward Deployed searches were dominated by non-IT or unrelated engineering work.",
+        "Zūm Rails' fresh Senior DevOps Engineer posting is Canada-remote and a reasonable tooling match, but its CAD $95K-$120K range starts below the candidate's CAD $100K remote FTE floor. It was scored but not auto-filed.",
+        "Realign LLC's Montreal hybrid Senior Identity and Reliability Engineering Specialist was validated from an accessible full description. Its PingDirectory/ForgeRock/LDAP identity-engineering specialization is a material gap, so it did not meet the filing threshold.",
+        "AutoTrader.ca's Senior Platform Engineer was confirmed current on the employer's Greenhouse board, but the role is in-office Toronto and therefore outside the eligible geography. The Ottawa Cloud Site Reliability Engineer II result could not be recovered as a full accessible posting and was not scored or filed.",
+        "No new row was appended to applications.md because no newly discovered posting cleared skill score, full-description, freshness, geography and compensation gates together."
+      ]
+    },
     {
       "heading": "September 18 validation notes",
       "items": [
@@ -785,6 +796,39 @@
       "gap": "Ineligible geography: Toronto is outside the reachable on-site/hybrid range",
       "url": "https://ca.indeed.com/viewjob?jk=9aa784ca70fd6663",
       "status": "Skipped — Toronto hybrid, outside reachable range"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Zūm Rails",
+      "location": "Remote — Canada",
+      "salary": "CAD $95,000-$120,000/year",
+      "gap": "Strong CI/CD, Terraform, Kubernetes, observability and automation overlap; biggest gap is the role's AWS-centered production environment. The advertised range begins below the CAD $100K remote FTE floor.",
+      "url": "https://ca.indeed.com/viewjob?jk=74f24a1700749080",
+      "status": "Hold — salary range starts below hard floor; not auto-filed"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Senior Identity and Reliability Engineering Specialist",
+      "company": "Realign LLC",
+      "location": "Montreal, QC — Hybrid",
+      "salary": "CAD $131,985/year",
+      "gap": "Terraform, Ansible, Jenkins, Linux and reliability work align, but deep PingDirectory/ForgeRock, LDAP/SCIM and identity-lifecycle engineering are central requirements outside the candidate's demonstrated experience.",
+      "url": "https://ca.indeed.com/viewjob?jk=bdc2f8e25b1389b9",
+      "status": "Not filed — score below threshold"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior Platform Engineer",
+      "company": "AutoTrader.ca",
+      "location": "Toronto, ON — In office",
+      "salary": "CAD $130,000-$160,000/year",
+      "gap": "Ineligible geography: the employer posting identifies an in-office Toronto role, outside the candidate's reachable hybrid area.",
+      "url": "https://job-boards.greenhouse.io/autotradercanada",
+      "status": "Skipped — Toronto in-office, outside reachable range"
     }
   ]
 }

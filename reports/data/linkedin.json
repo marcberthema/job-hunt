@@ -1,29 +1,40 @@
 {
   "board": "LinkedIn",
-  "run_date": "2026-09-22",
+  "run_date": "2026-09-24",
   "eyebrow": "LinkedIn · authenticated read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Full descriptions validated on LinkedIn. Scores measure skill and domain fit.",
-  "latest_update": "Latest update: September 22, 2026 — 3 of 14 mandatory phrase passes completed (partial run); 25 postings reviewed, 4 new postings auto-filed.",
+  "latest_update": "Latest update: September 24, 2026 — 7 of 45 mandatory passes completed and several later phrase pages reached before repeated browser-control resets; 2 current pipeline duplicates validated, 0 new postings auto-filed.",
   "stats": [
     {
-      "value": 3,
-      "label": "phrase passes completed (of 45 mandatory)"
+      "value": 7,
+      "label": "passes completed (of 45 mandatory)"
     },
     {
-      "value": 25,
-      "label": "postings reviewed this run"
+      "value": 35,
+      "label": "unique listing IDs discovered"
     },
     {
-      "value": 4,
+      "value": 0,
       "label": "new postings auto-filed"
     },
     {
-      "value": 4,
+      "value": 2,
       "label": "pipeline matches confirmed"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "September 24 run (incomplete — browser-control resets)",
+      "items": [
+        "<b>Completed and audited:</b> 7 of 14 Canada-remote phrase passes: DevOps Consultant Remote, DevOps Specialist Remote, DevOps Engineer Remote, Senior DevOps Engineer Remote, Staff DevOps Engineer Remote, Senior Site Reliability Engineer Remote, and Platform Engineer Remote. Each used Canada, Remote, and <code>f_TPR=r172800</code>; rendered counts ranged from 22 to 300+ and 7 visible results were reviewed per completed pass.",
+        "The second phrase batch reached Senior Platform Engineer Remote, Cloud Engineer Remote, Infrastructure Engineer SRE Remote, DevSecOps Engineer Remote, and Deployment Engineer Remote, but the browser-control session reset before their rendered counts and result IDs could be captured reliably. Those passes, the final two phrase searches, all 11 remote-hub passes, and all 20 reachable-city hybrid passes are recorded as incomplete rather than inferred from snippets.",
+        "<b>Blackpoint Cyber — Director of SRE</b> is current and Canada-remote, but the exact company/title already exists as Skipped in applications.md. The accessible LinkedIn description confirms strong Azure/AWS, Terraform, Kubernetes, observability and incident-response alignment; the decisive gap remains the required 5+ years managing an SRE team. It was not re-filed.",
+        "<b>Autodesk — Senior DevOps Developer</b> is current on Autodesk's employer site (requisition 26WD99916) and remote across Canada. It is a strong CI/CD, IaC, reliability and security-operations match, but applications.md already contains the same company and exact title, including an Applied row. The prior pipeline decision was preserved and no duplicate was filed.",
+        "SecurityScorecard's Senior Forward Deployed Engineer appeared as a fresh Greater Ottawa remote result, but a complete authoritative description could not be recovered during this run; it remains unscored under Could not validate.",
+        "No LinkedIn write-side action occurred: no save, apply, follow, message, alert, reaction, or profile change."
+      ]
+    },
     {
       "heading": "September 22 run (partial — 3 of 14 phrase passes)",
       "items": [
@@ -89,6 +100,10 @@
     }
   ],
   "could_not_validate": [
+    {
+      "text": "SecurityScorecard — Senior Forward Deployed Engineer: fresh Greater Ottawa remote LinkedIn result; a complete current employer description was not recovered during this run.",
+      "url": "https://www.linkedin.com/jobs/view/4469346704/"
+    },
     {
       "text": "Quantiphi — Senior Platform Engineer: current remote Toronto listing was accessible, but the full description remained stuck on Loading job details.",
       "url": "https://www.linkedin.com/jobs/view/4410395795/"
@@ -819,7 +834,29 @@
       "salary": "Not stated",
       "gap": "Early-career level, below Marc's seniority target",
       "url": "https://www.linkedin.com/jobs/view/4468186070/"
+    },
+    {
+      "score": 6,
+      "family": "SRE",
+      "title": "Director of SRE",
+      "company": "Blackpoint Cyber",
+      "status": "Skipped",
+      "location": "Canada — Remote",
+      "salary": "Not stated",
+      "gap": "Requires 5+ years of direct SRE people management; Marc's management experience does not establish that depth despite strong hands-on infrastructure alignment.",
+      "url": "https://www.linkedin.com/jobs/view/4442201878/"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Senior DevOps Developer",
+      "company": "Autodesk",
+      "status": "Applied",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "The AWS-centered cloud-native platform is less aligned than Marc's primary Azure production depth.",
+      "url": "https://autodesk.wd1.myworkdayjobs.com/en-US/Ext/job/Ontario-CAN---Remote/Senior-DevOps-Developer--GCPay_26WD99916-1"
     }
   ],
-  "method": "Authenticated, strictly read-only LinkedIn search. Prior full run completed September 21, 2026 (45/45 passes). This run (September 22, 2026) is partial: 3 of the 14 mandatory Canada-remote phrase passes were completed (\"DevOps Consultant Remote\", \"DevOps Specialist Remote\", \"DevOps Engineer Remote\"), each rendered with geoId=101174742 and f_TPR=r172800 (displaying as \"Past week\"). The remaining 11 phrase passes and all 31 remote-hub/reachable-city hybrid passes were not reached — boundary for the next run. 25 postings were opened and scored from accessible full descriptions this run; 3 exact pipeline matches (Clio, ComPsych, Tailscale) and 1 cross-board same-day duplicate (Estoras Group, filed via Built In) were identified against applications.md and preserved rather than re-filed. 4 new postings cleared the score ≥5 auto-file bar and were appended to applications.md. Historical rows and prior pipeline decisions from the September 18–21 runs remain preserved below."
+  "method": "Authenticated, strictly read-only LinkedIn search on September 24, 2026. Seven of 45 mandatory passes completed with reconciled rendered counts and LinkedIn IDs; several additional phrase pages were reached but could not be audited after repeated browser-control resets, so the overall run is incomplete. Completed passes used Canada, Remote, and f_TPR=r172800 and reviewed the visible first-page results (7 per pass, 35 unique IDs after deduplication). Two current full descriptions were validated: Blackpoint Cyber on LinkedIn and Autodesk on its employer site. Both matched existing applications.md company/title decisions and were not re-filed. SecurityScorecard remained unvalidated. No new posting cleared every automatic-filing gate. Historical rows and prior pipeline decisions remain preserved below."
 }

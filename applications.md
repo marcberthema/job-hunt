@@ -20,6 +20,8 @@ posting, append-only.
 
 | Date Found | Status | Status Date | Score | Company | Role | Board | Source | Notes |
 |---|---|---|---:|---|---|---|---|---|
+| 2026-09-24 | New |  | 8 | Vena Solutions | Senior Site Reliability Developer | BuiltIn | https://builtin.com/job/senior-site-reliability-developer/11316943 | Remote within Canada; GTA candidates preferred for roughly two Toronto office visits per month. CAD $123,250-$166,750/year. Excellent Azure DevOps, Terraform, Ansible, Kubernetes, observability, incident-response and developer-enablement overlap; biggest gap is deeper production AWS/EKS ownership and preferred cloud certification. |
+| 2026-09-24 | New |  | 7 | MLabs | Site Reliability Engineer | BuiltIn | https://builtin.com/job/site-reliability-engineer/11326830 | Remote-first and explicitly hiring in Canada; permanent FTE, GBP £90,000-£120,000/year. Strong Ansible, automated provisioning/CD, systems/network engineering and financial-infrastructure overlap; biggest gap is operating AWS/GCP and highly available PostgreSQL at the depth implied. |
 | 2026-07-07 | Applied | 2026-07-07 | 8 | 4IR Solutions | Senior Reliability Engineer | Indeed | https://ca.indeed.com/viewjob?jk=0c017f572e2677b7 |  |
 | 2026-07-07 | Applied | 2026-07-07 | 8 | Clio | Systems Engineer, Azure Infrastructure | Manual | pasted text (no URL provided) |  |
 | 2026-07-07 | Applied | 2026-07-07 | 6 | Cohere | Forward Deployed Engineer, Infrastructure Specialist (North America) | Manual | pasted text (no URL provided) |  |

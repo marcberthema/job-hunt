@@ -1,10 +1,10 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-09-22",
+  "run_date": "2026-09-24",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "Latest update: September 22, 2026 — all six mandatory Canada queries completed, eight results per query reviewed before dedup. Five new postings validated: Exaion's Private Cloud Infrastructure Administrator (Montreal hybrid, score 4), Export Development Canada's Cybersecurity Engineer (Ottawa/Toronto/Montreal, score 3), and three exclusions (InfoTrack Toronto — ineligible geography; Logistec and Haber — domain mismatch). Zero postings cleared the auto-file threshold (score ≥5) today.",
+  "latest_update": "Latest update: September 24, 2026 — all six mandatory Canada queries completed, with eight results per query reviewed before deduplication. Exact-phrase search remained noisy; no newly surfaced posting could be fully validated as an eligible score-5+ opportunity, so zero were auto-filed.",
   "stats": [
     {
       "value": 6,

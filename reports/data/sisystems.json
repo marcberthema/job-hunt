@@ -1,10 +1,10 @@
 {
   "board": "S.i. Systems",
-  "run_date": "2026-09-22",
+  "run_date": "2026-09-24",
   "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 22, 2026 — all 8 mandatory rendered-browser queries completed same-day-following-day from the prior run. Counts were 29, 41, 34, 31, 37, 24, 53 and 53 (unchanged from Sept 21), and the first eight results of every query were byte-for-byte the same recurring requisition set already scored — no new eligible posting, no new plausible candidate.",
+  "latest_update": "Rechecked September 24, 2026 — all 8 mandatory rendered-browser queries completed. Counts were 27, 39, 33, 30, 36, 22, 52 and 52. One new Platform Engineer requisition was validated in full but excluded because its Toronto hybrid cadence moves from 2 to 4 office days; zero new eligible postings and zero auto-filed.",
   "stats": [
     {
       "value": 8,
@@ -59,6 +59,17 @@
   ],
   "method": "Eight independent searches were executed with expertise=3 in a rendered browser. Each query reached a real listing state and the first eight results were captured before deduplication. The soft keyword filter repeatedly returned the same small Networks and Infrastructure inventory as the September 21 run — same counts, same recurring requisition set. Current descriptions and applications.md statuses were reconciled; 12 previously validated rows remain, with no new eligible role and no inaccessible posting.",
   "rows": [
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Platform Engineer (8+ years) — DevOps, CI/CD and GitHub Enterprise 58102",
+      "company": "Financial services client (via S.i. Systems)",
+      "location": "Toronto, ON — hybrid 2 days/week moving to 4 days/week",
+      "salary": "Hourly rate negotiable; 12-month contract",
+      "gap": "Toronto hybrid cadence is explicitly expected to increase from 2 to 4 office days/week, outside the reachable-city policy despite excellent Azure-adjacent platform, CI/CD, GitHub Actions and AI-assisted-engineering alignment.",
+      "url": "https://www.sisystems.com/jobs/platform-engineer-8-years-to-support-platform-engineering-and-software-delivery-modernization-using-devops-ci-cd-and-github-enterprise-58102/330032003700320032003900/",
+      "status": "Skipped — Toronto hybrid moving to 4 days/week"
+    },
     {
       "score": 7,
       "family": "DevOps",
