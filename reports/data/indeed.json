@@ -1,33 +1,36 @@
 {
   "board": "Indeed",
-  "run_date": "2026-09-24",
+  "run_date": "2026-10-01",
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "Rechecked September 24, 2026 — all 9 title-family, 4 reachable-city and 11 remote-hub passes completed without a CAPTCHA or verification block. No new posting cleared every filing gate.",
+  "latest_update": "Rechecked October 1, 2026 — 9 title passes, 6 reachable-city passes and 9 hub passes ran with no CAPTCHA (Halifax, Winnipeg, Québec City, Victoria returned 0 results, unverified). 1 new posting auto-filed: GoLogic Ingénieur(e) IA & DevOps (score 6).",
   "stats": [
     {
-      "value": 24,
-      "label": "search passes completed this run"
+      "value": "9+6+9",
+      "label": "title + city + hub passes run"
     },
     {
-      "value": 46,
-      "label": "current actionable"
+      "value": 4,
+      "label": "new postings validated"
+    },
+    {
+      "value": 1,
+      "label": "auto-filed"
     },
     {
       "value": 3,
-      "label": "confirmed expired"
-    },
-    {
-      "value": 31,
-      "label": "excluded results"
-    },
-    {
-      "value": 9,
-      "label": "pipeline matches"
+      "label": "not opened / could not validate"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 1 run (not a formal complete audit)",
+      "items": [
+        "Run through in-browser Indeed fetches (past 3 days, date-sorted), first results page per pass. Titles (location Canada): Site Reliability, Reliability, Platform, Infrastructure, Cloud, DevOps, DevSecOps, Azure DevOps, Forward Deployed. Cities: Ottawa (3 titles), Kingston (2), Cornwall (1), Montréal (4). Hubs: Toronto, Vancouver, Calgary, Edmonton, Kitchener-Waterloo, Halifax, Winnipeg, Québec City, Victoria with two remote queries each. Per-pass counts and IDs were not logged to the audit standard, so this is <b>not</b> a complete-pass audit.",
+        "Intact Observability/DevOps Advisor is already <b>Applied</b> (2026-09-19). Most other new results were BMO/Intact architect or software roles, Toronto on-site, or out of scope."
+      ]
+    },
     {
       "heading": "September 24 validation notes",
       "items": [
@@ -829,6 +832,64 @@
       "gap": "Ineligible geography: the employer posting identifies an in-office Toronto role, outside the candidate's reachable hybrid area.",
       "url": "https://job-boards.greenhouse.io/autotradercanada",
       "status": "Skipped — Toronto in-office, outside reachable range"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Ingénieur(e) IA & DevOps",
+      "company": "GoLogic",
+      "location": "Montréal, QC — hybrid (\"home, office or both\"); cadence not stated",
+      "salary": "CAD $70,000–$110,000/yr",
+      "gap": "Multi-agent AI design experience is listed as essential; salary ceiling sits below the $120k Montréal hybrid floor but above the $100k remote floor — confirm remote/hybrid cadence",
+      "url": "https://ca.indeed.com/viewjob?jk=6b54d64913c4ef19",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Landmark Global",
+      "location": "Ottawa, ON — Work Location: Remote",
+      "salary": "CAD $87,000–$115,000/yr",
+      "gap": "AWS-primary (CloudFormation, VPC) with strong Chef administration required; hard-gated AWS ownership, Marc has Puppet not Chef",
+      "url": "https://ca.indeed.com/viewjob?jk=14cd36b38c197da5",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Cloud Platform / Site Reliability Engineer (ThinkOn via Digioptimizer)",
+      "company": "Digioptimizer / ThinkOn",
+      "location": "Remote — Canada",
+      "salary": "Listing shows $1,000–$100,000/yr (unreliable)",
+      "gap": "Production Kubernetes cluster operations on VMware VCF/VKS plus on-call — Kubernetes administration gap (listing link is the search page; its job ID was not retained)",
+      "url": "https://ca.indeed.com/jobs?q=Cloud+Engineer&l=Canada&fromage=3&sort=date",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "DevOps (consulting bench posting)",
+      "company": "Extia",
+      "location": "Montréal, QC — cadence not stated",
+      "salary": "Not stated",
+      "gap": "Generic consulting-bench posting, no pay, no cadence, no named client; Marc already had an intake meeting with Extia (ledger row 2026-09-19)",
+      "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Montr%C3%A9al%2C+QC&fromage=3&sort=date",
+      "status": ""
+    }
+  ],
+  "could_not_validate": [
+    {
+      "text": "Cloud Infrastructure Engineer (Logic 2000, Remote) — Toronto-hub pass; its job ID could not be re-resolved to open the full description.",
+      "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Toronto%2C+ON&fromage=3&sort=date"
+    },
+    {
+      "text": "Platform Engineer (Hookdeck, Remote) — Toronto-hub pass; full description not opened.",
+      "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Toronto%2C+ON&fromage=3&sort=date"
+    },
+    {
+      "text": "Senior DevSecOps Engineer (Realign LLC, Toronto) and Principal Platform Engineer (SkyWatch, Kitchener) — hub-pass results, full descriptions not opened.",
+      "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Toronto%2C+ON&fromage=3&sort=date"
     }
   ]
 }

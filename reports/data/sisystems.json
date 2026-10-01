@@ -1,41 +1,40 @@
 {
   "board": "S.i. Systems",
-  "run_date": "2026-09-24",
+  "run_date": "2026-10-01",
   "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 24, 2026 — all 8 mandatory rendered-browser queries completed. Counts were 27, 39, 33, 30, 36, 22, 52 and 52. One new Platform Engineer requisition was validated in full but excluded because its Toronto hybrid cadence moves from 2 to 4 office days; zero new eligible postings and zero auto-filed.",
+  "latest_update": "Rechecked October 1, 2026 — all 8 rendered-browser queries completed (counts 25, 39, 32, 28, 36, 21, 56, 56). 3 new postings validated and excluded (clearance+GCP, Oshawa hybrid, delivery-lead scope); the Azure & Databricks DevOps role is a strong skill match blocked only by Oshawa. 0 auto-filed.",
   "stats": [
     {
       "value": 8,
       "label": "searches completed"
     },
     {
-      "value": 9,
-      "label": "unique postings reviewed"
+      "value": "~40",
+      "label": "unique postings reviewed (first 8/query)"
     },
     {
       "value": 0,
       "label": "eligible validated"
     },
     {
-      "value": 6,
-      "label": "geographic/location exclusions"
-    },
-    {
-      "value": 2,
-      "label": "scope exclusions"
+      "value": 3,
+      "label": "new exclusions this run"
     },
     {
       "value": 0,
-      "label": "inaccessible"
-    },
-    {
-      "value": 3,
-      "label": "pipeline matches"
+      "label": "auto-filed"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 1 query audit",
+      "items": [
+        "DevOps Engineer 25 · Senior DevOps Engineer 39 · Site Reliability Engineer 32 · Platform Engineer 28 · Cloud Engineer 36 · DevSecOps Engineer 21 · Infrastructure Engineer 56 · Senior Infrastructure Engineer 56 — all <b>Complete</b>, first 8 cards per query reviewed (expertise=3).",
+        "Results are date-sorted, not relevance-sorted, so deeper pages were not reviewed. Carry-over roles (Platform Engineer 58102, SRE 6+, bare-metal Infrastructure Engineer, AWS Cloud Engineer, Dynatrace SRE, Crown Corp DevSecOps) unchanged from the Sept 24 run."
+      ]
+    },
     {
       "heading": "Latest query audit — September 22",
       "items": [
@@ -201,7 +200,49 @@
       "gap": "Known pipeline match, carried forward from applications.md — not re-scored this run.",
       "url": "https://www.sisystems.com/jobs/aws-cloud-engineer-5-years-to-refine-cloud-infrastructure-cloud-maturity-project-for-a-healthcare-non-profit-client/330032003600350030003800/",
       "status": "Skipped — 2026-09-16"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Engineering Director (SECRET clearance, 8+ yrs)",
+      "company": "S.i. Systems client",
+      "location": "Remote (anywhere in Canada), permanent",
+      "salary": "Salary negotiable",
+      "gap": "Requires an existing, transferable Government of Canada SECRET clearance plus expert-level Azure AND GCP (GKE, Cloud Run) at director scope — clearance gate and GCP hard gate",
+      "url": "https://www.sisystems.com/jobs/x/330032003700340034003100/",
+      "status": "Skipped — clearance + GCP gate"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Technical Specialist (Azure & Databricks DevOps Engineer) - ID 26-086",
+      "company": "S.i. Systems client",
+      "location": "Oshawa, ON — 2 days/week on-site (listed as Toronto)",
+      "salary": "Hourly negotiable; 12 months, 35 h/week",
+      "gap": "Strong skill fit (Azure + Databricks CI/CD, platform reliability) but Oshawa is outside the Ottawa/Kingston/Brockville/Cornwall/Montréal reachable range",
+      "url": "https://www.sisystems.com/jobs/x/330032003600310030003100/",
+      "status": "Skipped — Oshawa hybrid outside reachable cities"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Digital Technical Delivery Lead (DevOps & QA modernization, banking)",
+      "company": "S.i. Systems client (banking)",
+      "location": "Multiple Locations",
+      "salary": "Not stated",
+      "gap": "Delivery/program-lead role holding a third-party partner to standard; judged from listing summary — not hands-on engineering",
+      "url": "https://www.sisystems.com/jobs/x/330032003700340031003400/",
+      "status": "Skipped — out of scope (delivery lead)"
     }
   ],
-  "could_not_validate": []
+  "could_not_validate": [
+    {
+      "text": "Manager, Site Reliability Engineering (SRE) — permanent, Multiple Locations; people-management title, detail page not opened this run.",
+      "url": "https://www.sisystems.com/search-it-jobs/?expertise=3&q=Site%20Reliability%20Engineer"
+    },
+    {
+      "text": "Secret Cleared Azure Administrator — Ottawa contract; requires an existing Secret clearance, detail page not opened this run.",
+      "url": "https://www.sisystems.com/search-it-jobs/?expertise=3&q=Platform%20Engineer"
+    }
+  ]
 }

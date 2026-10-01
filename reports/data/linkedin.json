@@ -1,29 +1,37 @@
 {
   "board": "LinkedIn",
-  "run_date": "2026-09-24",
+  "run_date": "2026-10-01",
   "eyebrow": "LinkedIn · authenticated read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Full descriptions validated on LinkedIn. Scores measure skill and domain fit.",
-  "latest_update": "Latest update: September 24, 2026 — 7 of 45 mandatory passes completed and several later phrase pages reached before repeated browser-control resets; 2 current pipeline duplicates validated, 0 new postings auto-filed.",
+  "latest_update": "Latest update: October 1, 2026 — all 14 phrase passes ran, but the 11 remote-hub and reachable-city hybrid passes were NOT run, so the run is incomplete. 68 new relevant listings were triaged by LinkedIn workplace label; 1 auto-filed (Insight Cloud Platform Engineer, score 7). Top unconfirmed lead: Barracuda Cloud SRE Senior (Ottawa hybrid).",
   "stats": [
     {
+      "value": 14,
+      "label": "phrase passes run (Canada, past 2 days)"
+    },
+    {
+      "value": 68,
+      "label": "relevant new listings triaged"
+    },
+    {
       "value": 7,
-      "label": "passes completed (of 45 mandatory)"
+      "label": "scored this run"
     },
     {
-      "value": 35,
-      "label": "unique listing IDs discovered"
-    },
-    {
-      "value": 0,
-      "label": "new postings auto-filed"
-    },
-    {
-      "value": 2,
-      "label": "pipeline matches confirmed"
+      "value": 1,
+      "label": "auto-filed"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 1 run (incomplete)",
+      "items": [
+        "Discovery used the logged-in browser plus LinkedIn’s public job-search listing endpoint (read-only, no state change). That endpoint ignored the Remote workplace filter, so each relevant listing’s Remote/Hybrid/On-site label was read from its job page instead: roughly 28 on-site, 17+ hybrid and 14 remote or unlabelled of 68.",
+        "<b>Not run:</b> the 11 remote-hub passes and the 4-city hybrid passes. Treat the overall run as <b>Incomplete</b>.",
+        "Only the shortlist above was opened; other triaged listings were excluded on title or workplace label alone and are not rows."
+      ]
+    },
     {
       "heading": "September 24 run (incomplete — browser-control resets)",
       "items": [
@@ -139,6 +147,18 @@
     {
       "text": "KPMG Canada — Bilingual Senior AWS Platform Engineer: Montréal listing was marked on-site; full requirements were not validated after the work-arrangement screen.",
       "url": "https://ca.linkedin.com/jobs/view/4453633084/"
+    },
+    {
+      "text": "Barracuda — Cloud Site Reliability Senior Engineer, Ottawa (LinkedIn label Hybrid, responses managed off LinkedIn). Top lead: AKS, Terraform on Azure, Azure DevOps. The LinkedIn body would not render and employer-site search surfaced only a Bangalore sibling requisition, so Ottawa cadence and pay are unconfirmed.",
+      "url": "https://www.linkedin.com/jobs/view/4473972450/"
+    },
+    {
+      "text": "Alithya — Azure DevOps Consultant (LinkedIn label Hybrid, Ontario, CAD $80,000–$120,000). Azure DevOps/Terraform/Bicep fit, but office city and cadence are not stated; Alithya also appears as a skipped developer role in applications.md.",
+      "url": "https://www.linkedin.com/jobs/view/4462540698/"
+    },
+    {
+      "text": "Rightsline Senior DevSecOps (Remote, CA$90–100k, AWS-centred), Scribd Staff SE Core Infrastructure (Remote, 10+ yrs software engineering), Jane App Staff Developer Cloud Engineering (Remote, AWS), Deel SRE (Remote) — skimmed only, not scored in full.",
+      "url": "https://www.linkedin.com/jobs/view/4473584423/"
     }
   ],
   "rows": [
@@ -856,6 +876,72 @@
       "salary": "Not stated",
       "gap": "The AWS-centered cloud-native platform is less aligned than Marc's primary Azure production depth.",
       "url": "https://autodesk.wd1.myworkdayjobs.com/en-US/Ext/job/Ontario-CAN---Remote/Senior-DevOps-Developer--GCPay_26WD99916-1"
+    },
+    {
+      "score": 7,
+      "family": "Platform",
+      "title": "Cloud Platform Engineer",
+      "company": "Insight",
+      "location": "Canada — LinkedIn label Remote",
+      "salary": "CAD $100,000–$125,000/yr",
+      "gap": "Azure/AWS landing-zone and networking breadth plus CloudFormation expected; employer-site posting not cross-checked",
+      "url": "https://www.linkedin.com/jobs/view/4464034759/",
+      "status": "New"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Sr. DevOps / Cloud Infrastructure Engineer",
+      "company": "Brainpower360",
+      "location": "Montréal, QC — LinkedIn label On-site",
+      "salary": "CAD $120,000–$140,000/yr",
+      "gap": "Excellent skill fit (Azure DevOps YAML, Terraform/Bicep, Helm, ArgoCD) but on-site, no remote or hybrid option",
+      "url": "https://www.linkedin.com/jobs/view/4473525884/",
+      "status": "Skipped — on-site Montréal"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Spécialiste DevOps Azure",
+      "company": "CGI",
+      "location": "Montréal, QC — hybrid 4 days/week in office",
+      "salary": "Not stated",
+      "gap": "Azure fit, but 4 office days/week exceeds the 2-day Montréal limit",
+      "url": "https://www.linkedin.com/jobs/search/?keywords=Spécialiste%20DevOps%20Azure%20CGI",
+      "status": "Skipped — Montréal hybrid 4 days"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Platform/DevOps Engineer",
+      "company": "Vasco",
+      "location": "Montréal, QC — hybrid 3 days/week in person",
+      "salary": "Not stated",
+      "gap": "3 office days/week in Montréal; no rate to offset the commute",
+      "url": "https://www.linkedin.com/jobs/search/?keywords=Platform/DevOps%20Engineer%20Vasco",
+      "status": "Skipped — Montréal hybrid 3 days"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Engineer/Platform Engineer – Azure",
+      "company": "Pet Valu",
+      "location": "Markham, ON — hybrid",
+      "salary": "CAD $110,000–$130,000/yr",
+      "gap": "Markham is outside the reachable-city range",
+      "url": "https://www.linkedin.com/jobs/search/?keywords=DevOps%20Engineer%20Platform%20Engineer%20Azure%20Pet%20Valu",
+      "status": "Skipped — Markham hybrid"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Staff/Lead Platform/DevOps Engineer",
+      "company": "Mimica",
+      "location": "Canada — Remote",
+      "salary": "Not stated",
+      "gap": "GKE-preferred production Kubernetes and GCP IAM — GCP/Kubernetes hard gate",
+      "url": "https://www.linkedin.com/jobs/search/?keywords=Staff%20Lead%20Platform%20DevOps%20Engineer%20Mimica",
+      "status": ""
     }
   ],
   "method": "Authenticated, strictly read-only LinkedIn search on September 24, 2026. Seven of 45 mandatory passes completed with reconciled rendered counts and LinkedIn IDs; several additional phrase pages were reached but could not be audited after repeated browser-control resets, so the overall run is incomplete. Completed passes used Canada, Remote, and f_TPR=r172800 and reviewed the visible first-page results (7 per pass, 35 unique IDs after deduplication). Two current full descriptions were validated: Blackpoint Cyber on LinkedIn and Autodesk on its employer site. Both matched existing applications.md company/title decisions and were not re-filed. SecurityScorecard remained unvalidated. No new posting cleared every automatic-filing gate. Historical rows and prior pipeline decisions remain preserved below."
