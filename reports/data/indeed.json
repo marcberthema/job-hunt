@@ -4,11 +4,15 @@
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "Rechecked October 1, 2026 — 9 title passes, 6 reachable-city passes and 9 hub passes ran with no CAPTCHA (Halifax, Winnipeg, Québec City, Victoria returned 0 results, unverified). 1 new posting auto-filed: GoLogic Ingénieur(e) IA & DevOps (score 6).",
+  "latest_update": "Rechecked October 1, 2026 — title passes (9/9) and reachable-city passes (20/20) complete and audited; 21 of 22 remote-hub passes were rate-limited (HTTP 429) on the audited rerun, so the Indeed run remains Incomplete. 1 posting auto-filed this day: GoLogic Ingénieur(e) IA & DevOps (score 6).",
   "stats": [
     {
-      "value": "9+6+9",
-      "label": "title + city + hub passes run"
+      "value": "29 of 29",
+      "label": "title + city passes complete"
+    },
+    {
+      "value": "1 of 22",
+      "label": "hub passes audited (rest rate-limited)"
     },
     {
       "value": 4,
@@ -17,18 +21,16 @@
     {
       "value": 1,
       "label": "auto-filed"
-    },
-    {
-      "value": 3,
-      "label": "not opened / could not validate"
     }
   ],
   "notes_sections": [
     {
-      "heading": "October 1 run (not a formal complete audit)",
+      "heading": "October 1 pass audit (past 3 days, date-sorted, first results page)",
       "items": [
-        "Run through in-browser Indeed fetches (past 3 days, date-sorted), first results page per pass. Titles (location Canada): Site Reliability, Reliability, Platform, Infrastructure, Cloud, DevOps, DevSecOps, Azure DevOps, Forward Deployed. Cities: Ottawa (3 titles), Kingston (2), Cornwall (1), Montréal (4). Hubs: Toronto, Vancouver, Calgary, Edmonton, Kitchener-Waterloo, Halifax, Winnipeg, Québec City, Victoria with two remote queries each. Per-pass counts and IDs were not logged to the audit standard, so this is <b>not</b> a complete-pass audit.",
-        "Intact Observability/DevOps Advisor is already <b>Applied</b> (2026-09-19). Most other new results were BMO/Intact architect or software roles, Toronto on-site, or out of scope."
+        "<b>Title passes, location Canada — 9 of 9 Complete:</b> Site Reliability Engineer 10 · Reliability Engineer 16 · Platform Engineer 16 · Infrastructure Engineer 16 · Cloud Engineer 16 · DevOps Engineer 16 · DevSecOps Engineer 16 · Azure DevOps Engineer 16 · Forward Deployed Engineer 9 (unique results on page 1).",
+        "<b>Reachable-city hybrid passes (Cloud Platform / Platform / DevOps / SRE / Infrastructure Engineer) — 20 of 20 Complete or Zero results:</b> Ottawa 11/7/3/6/11 · Kingston 6/6/<b>0</b>/6/6 (DevOps: Zero results) · Cornwall 6/6/<b>0</b>/6/6 (DevOps: Zero results) · Montréal 16/16/16/8/16. Kingston and Cornwall repeat the same 6 results across titles, so treat them as Indeed’s broadened fallback, not local postings.",
+        "<b>Remote-hub passes (11 hubs × “DevOps Engineer remote” + “Site Reliability Engineer remote”) — 1 of 22 formally Complete, 21 Incomplete:</b> only Toronto/DevOps was captured in the audited run; the other 21 returned <b>HTTP 429 (rate limited)</b> and a slower retry was throttled again, so I stopped rather than push through. An earlier same-day unaudited fetch did cover Toronto, Vancouver, Calgary, Edmonton, Kitchener-Waterloo and Halifax-to-Victoria (Halifax/Winnipeg/Québec/Victoria returned 0), and its results are in the rows above — but that earlier pass is not an ID-level audit.",
+        "New relevant results beyond what was already reviewed: none worth scoring (Xsolla Platform Engineer already Applied; Appnovation AgentCore Platform Engineer, RBC Principal Infrastructure Architecture and Faire Staff Data Infrastructure are Toronto/architect/data roles). No CAPTCHA at any point."
       ]
     },
     {
