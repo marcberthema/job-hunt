@@ -4,32 +4,32 @@
   "eyebrow": "LinkedIn · authenticated read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Full descriptions validated on LinkedIn. Scores measure skill and domain fit.",
-  "latest_update": "Latest update: October 1, 2026 — all 14 phrase passes ran, but the 11 remote-hub and reachable-city hybrid passes were NOT run, so the run is incomplete. 68 new relevant listings were triaged by LinkedIn workplace label; 1 auto-filed (Insight Cloud Platform Engineer, score 7). Top unconfirmed lead: Barracuda Cloud SRE Senior (Ottawa hybrid).",
+  "latest_update": "Latest update: October 1, 2026 — all 67 passes now run (14 Canada-wide phrases, 11 hubs × 3 titles, 4 reachable cities × 5 titles). 2 auto-filed: Insight Cloud Platform Engineer (7) and Barracuda Cloud SRE Senior, Ottawa (7, validated on the employer’s Jobvite page). Unconfirmed: MaintainX SRE (remote eligibility), Alithya Azure DevOps (office city).",
   "stats": [
     {
-      "value": 14,
-      "label": "phrase passes run (Canada, past 2 days)"
+      "value": "67 of 67",
+      "label": "mandatory passes completed (14 phrase + 33 hub + 20 city)"
     },
     {
-      "value": 68,
-      "label": "relevant new listings triaged"
+      "value": "~150",
+      "label": "relevant new listings triaged by workplace label"
     },
     {
-      "value": 7,
-      "label": "scored this run"
+      "value": 11,
+      "label": "scored this session"
     },
     {
-      "value": 1,
-      "label": "auto-filed"
+      "value": 2,
+      "label": "auto-filed this session"
     }
   ],
   "notes_sections": [
     {
-      "heading": "October 1 run (incomplete)",
+      "heading": "October 1 run",
       "items": [
-        "Discovery used the logged-in browser plus LinkedIn’s public job-search listing endpoint (read-only, no state change). That endpoint ignored the Remote workplace filter, so each relevant listing’s Remote/Hybrid/On-site label was read from its job page instead: roughly 28 on-site, 17+ hybrid and 14 remote or unlabelled of 68.",
-        "<b>Not run:</b> the 11 remote-hub passes and the 4-city hybrid passes. Treat the overall run as <b>Incomplete</b>.",
-        "Only the shortlist above was opened; other triaged listings were excluded on title or workplace label alone and are not rows."
+        "Discovery used the logged-in browser plus LinkedIn’s public job-search listing endpoint (read-only; no state changes). The endpoint ignores the Remote filter, so each relevant listing’s Remote/Hybrid/On-site label was read from its job page. <b>Remote hubs</b> (Toronto, Vancouver, Montréal, Calgary, Ottawa, Edmonton, Kitchener, Halifax, Winnipeg, Québec City, Victoria) each ran DevOps / SRE / Platform Engineer, and the <b>hybrid passes</b> for Ottawa, Kingston, Cornwall and Montréal each ran five title searches; every pass returned its page of 10 (Kingston and Cornwall returned very few, Edmonton SRE none new).",
+        "Each pass shows page 1 only (10 results) for the past 2 days; passes after the first were deduplicated against earlier ones, so counts are new-unseen results. Only shortlisted listings were opened; the rest were excluded on title or workplace label alone and are not rows.",
+        "Montréal hybrid was almost entirely 3–4 office days (CGI, Vasco, others) or on-site. Barracuda’s employer page gives no office-day count; confirm ≤2 before applying."
       ]
     },
     {
@@ -149,16 +149,16 @@
       "url": "https://ca.linkedin.com/jobs/view/4453633084/"
     },
     {
-      "text": "Barracuda — Cloud Site Reliability Senior Engineer, Ottawa (LinkedIn label Hybrid, responses managed off LinkedIn). Top lead: AKS, Terraform on Azure, Azure DevOps. The LinkedIn body would not render and employer-site search surfaced only a Bangalore sibling requisition, so Ottawa cadence and pay are unconfirmed.",
-      "url": "https://www.linkedin.com/jobs/view/4473972450/"
-    },
-    {
       "text": "Alithya — Azure DevOps Consultant (LinkedIn label Hybrid, Ontario, CAD $80,000–$120,000). Azure DevOps/Terraform/Bicep fit, but office city and cadence are not stated; Alithya also appears as a skipped developer role in applications.md.",
       "url": "https://www.linkedin.com/jobs/view/4462540698/"
     },
     {
       "text": "Rightsline Senior DevSecOps (Remote, CA$90–100k, AWS-centred), Scribd Staff SE Core Infrastructure (Remote, 10+ yrs software engineering), Jane App Staff Developer Cloud Engineering (Remote, AWS), Deel SRE (Remote) — skimmed only, not scored in full.",
       "url": "https://www.linkedin.com/jobs/view/4473584423/"
+    },
+    {
+      "text": "MaintainX (Autodesk) — Site Reliability Engineer, Montréal (LinkedIn label Remote, CAD $88–195k listed, $107–165k per aggregators). Strong SRE-enablement fit (SLOs, observability, mentoring developers) but a search aggregator describes it as remote “for Montreal, Quebec”; whether an Ontario resident qualifies is unconfirmed, and the posting itself doesn’t say.",
+      "url": "https://www.linkedin.com/jobs/view/4463511994/"
     }
   ],
   "rows": [
@@ -942,6 +942,38 @@
       "gap": "GKE-preferred production Kubernetes and GCP IAM — GCP/Kubernetes hard gate",
       "url": "https://www.linkedin.com/jobs/search/?keywords=Staff%20Lead%20Platform%20DevOps%20Engineer%20Mimica",
       "status": ""
+    },
+    {
+      "score": 7,
+      "family": "SRE",
+      "title": "Cloud Site Reliability Senior Engineer",
+      "company": "Barracuda Networks",
+      "location": "Ottawa, ON — hybrid (office days/week not stated; confirm ≤2)",
+      "salary": "CAD $110,000–$140,000/yr on-target earnings",
+      "gap": "Multi-cluster Kubernetes (ideally AKS) operations and cloud-architecture depth beyond Marc’s hands-on K8s record; extensive Terraform expected",
+      "url": "https://jobs.jobvite.com/barracuda-networks-inc/job/oCSRAfwF",
+      "status": "New"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Cloud Platform Engineer",
+      "company": "Accenture",
+      "location": "Ottawa, ON — hybrid, minimum 3 days/week in office",
+      "salary": "CAD $74,000–$124,000/yr",
+      "gap": "3+ office days/week, hybrid-cloud ops on-site in high-security environments (Anthos, Outposts, Nutanix), shifts/on-call and Reliability clearance",
+      "url": "https://www.linkedin.com/jobs/view/4445790334/",
+      "status": "Skipped — Ottawa hybrid 3+ days"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Site Reliability Specialist, IT Operations",
+      "company": "Sherweb",
+      "location": "Québec City, QC — LinkedIn label Remote",
+      "salary": "CAD $71,330–$101,900/yr",
+      "gap": "Systems-administration-leaning IT operations role; pay band tops out at the $100k remote floor",
+      "url": "https://www.linkedin.com/jobs/view/4446310466/"
     }
   ],
   "method": "Authenticated, strictly read-only LinkedIn search on September 24, 2026. Seven of 45 mandatory passes completed with reconciled rendered counts and LinkedIn IDs; several additional phrase pages were reached but could not be audited after repeated browser-control resets, so the overall run is incomplete. Completed passes used Canada, Remote, and f_TPR=r172800 and reviewed the visible first-page results (7 per pass, 35 unique IDs after deduplication). Two current full descriptions were validated: Blackpoint Cyber on LinkedIn and Autodesk on its employer site. Both matched existing applications.md company/title decisions and were not re-filed. SecurityScorecard remained unvalidated. No new posting cleared every automatic-filing gate. Historical rows and prior pipeline decisions remain preserved below."
