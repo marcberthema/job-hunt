@@ -334,19 +334,50 @@ Saturation details:
 
 ## 8. Questions to ask
 
-1. How is the team organized: the observability and analytics halves, the two managers, and where Platform Security fits?
-2. Who are the platform's users day to day, and what happens to them when it is degraded?
-3. How do you keep alerting alive when the observability platform itself is unhealthy? (At Tink, paging and log investigation were separate tools, so they were independent.)
-4. What SLOs does the observability platform itself have, for example data freshness or completeness?
-5. What does on-call look like: how many people, does it follow the sun across regions, and what is a typical week's page volume?
-6. Who builds the dashboards and alerts on the platform: this team, or each Cloud engineering team?
-7. How is the work split across ECH, ECE and ECK?
-8. How much of the team's code is Go versus Python and Terraform?
-9. You joined recently. What have you decided to prioritize first?
-10. What would you want a new senior engineer to have delivered at 90 days?
-11. What is the rest of the process after this conversation?
+Note beside you: **team, monitor the monitor, SLOs, on-call.** If the recruiter already covered something, open with "the recruiter touched on this, but I'd like to hear it from you." If time is short, ask 2 and 4.
 
-Ask 1 to 5 first. The backfill-or-growth question is largely answered: the recruiter said SRE headcount went up through the June cuts. Skip comp unless they raise it.
+### The four main questions
+
+**1. Team organization**
+- **Ask:** "How are the observability and analytics sides organized, and where does platform security fit in?"
+- **Why:** Lindsay's title says Platform Security and the posting says Observability. You need to know what you'd work on and who you'd report to.
+- **Listen for:** team size, regions, and whether Lindsay would be your manager.
+
+**2. Monitoring the monitor**
+- **Ask:** "At Tink our paging tool was separate from our logging stack, so losing one didn't take out the other. But nothing watched the paging tool itself, beyond someone glancing at a dashboard. How do you handle that at your scale?"
+- **Why:** it is the most interesting problem in this job, and you are asking about a gap you have lived with.
+- **Listen for:** separate clusters watching each other, external checks, or an admission that it is a known weak spot.
+- **If asked how you'd close the gap:** a heartbeat. The monitoring system sends a regular "I'm alive" signal to something independent, and an alert fires when it stops.
+
+**3. The platform's own SLOs**
+- **Ask:** "The platform has its own users, the Cloud engineers. Does it have its own SLOs, for things like freshness, availability and completeness, and how is completeness measured?"
+- **Say SLOs, not SLAs.** The users are internal.
+- **What they would measure:** freshness (time until data is searchable), completeness (did everything arrive), availability (can engineers search and load dashboards).
+- **Listen for:** concrete targets (a team that measures itself) or "we're working on that" (work you could own).
+- **If it is turned back on you,** two real methods:
+  - *Expected versus observed (Desjardins):* "I read the expected list of repositories from Artifactory's own configuration and checked that I was monitoring every one."
+  - *The catch-all (Énergir log ingestion):* "Anything that didn't match a known category was flagged and processed generically, so gaps in our parsing were visible instead of silent."
+  - The principle: nothing should fail silently.
+  - Use Desjardins and Énergir as examples, not Canopy.
+
+**4. On-call**
+- **Ask:** "How many people share the rotation, and does it follow the sun across regions? During an on-call week, how much of the time typically goes to pages and interrupts, and how much is left for project work?"
+- **Avoid:** "checking the monitoring during my whole shift" (suggests watching a screen) and "are the systems pretty stable?" (sounds like hoping for a quiet job).
+- **Listen for:** "a few pages a week, mostly project work" (healthy); "on-call week is mostly interrupts" (acceptable if other weeks are protected); "it's pretty busy right now" (team is stretched).
+
+### If there is time
+
+5. Who builds the dashboards and alerts on the platform: this team, or each Cloud engineering team?
+6. How is the work split across ECH, ECE and ECK?
+7. How much of the team's code is Go versus Python and Terraform?
+8. You joined recently. What have you decided to prioritize first?
+9. What would you want a new senior engineer to have delivered at 90 days?
+
+### The close
+
+"I should mention I'm expecting an offer from another company shortly. This role is my preference, so I wanted you to know my timeline. What are the next steps on your side?"
+
+The backfill-or-growth question is largely answered: the recruiter said SRE headcount went up through the June cuts. Skip comp unless they raise it.
 
 ---
 

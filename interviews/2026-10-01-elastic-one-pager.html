@@ -1,0 +1,148 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Elastic Interview Notes</title>
+<style>
+  :root { --bg:#ffffff; --fg:#1a1a1a; --muted:#555; --line:#d5d5d5; --head:#0b5cad; --warn:#b3261e; --card:#f6f7f9; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#15171a; --fg:#e8e8e8; --muted:#a8a8a8; --line:#3a3d42; --head:#7db7f5; --warn:#ff8a80; --card:#1e2125; }
+  }
+  * { box-sizing: border-box; }
+  body { margin:0; padding:12px 16px; background:var(--bg); color:var(--fg);
+         font:14px/1.35 system-ui, -apple-system, "Segoe UI", sans-serif; }
+  h1 { font-size:16px; margin:0 0 8px; }
+  h1 span { font-weight:400; color:var(--muted); }
+  .role { background:var(--card); border-left:4px solid var(--head); padding:6px 10px; margin-bottom:10px; font-size:14px; }
+  .grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(300px, 1fr)); gap:10px; }
+  section { border:1px solid var(--line); border-radius:6px; padding:8px 10px; }
+  h2 { font-size:12px; text-transform:uppercase; letter-spacing:.05em; color:var(--head); margin:0 0 4px; }
+  ul { margin:0; padding-left:16px; }
+  li { margin:2px 0; }
+  b { font-weight:650; }
+  .warn h2 { color:var(--warn); }
+  .q { color:var(--muted); }
+</style>
+</head>
+<body>
+<h1>Elastic · Senior SRE, Observability <span>· Lindsay Sandall · hiring manager</span></h1>
+<div class="role"><b>The role:</b> the team runs the observability platform Elastic's Cloud engineers rely on to see production (200+ hosted deployments, logs, metrics, traces) and produces the SLA/SLO monitoring for Hosted and Serverless. <b>Users = Elastic's engineers, not customers.</b> End with "Is that close?"</div>
+
+<div class="grid">
+
+<section>
+<h2>Background · 2 minutes</h2>
+<ul>
+<li><b>SOVO:</b> one sentence. Support → ran IT → wrote production software.</li>
+<li><b>Tink 2018:</b> owned services end to end, on call for all production. <b>Built logging on the Elastic Stack.</b> Started to make on-call easier, ended up helping everyone. I built the inventory platform (CVE exposure).</li>
+<li><b>Énergir 2021:</b> first cloud. Delivery for 12 teams. Infra team onto Terraform.</li>
+<li><b>Desjardins:</b> I designed and built a Python service checking ~250 repositories.</li>
+<li><b>Why here:</b> observability is the work I enjoy most; this team runs the platform Elastic's engineers rely on; I want good practice as the baseline.</li>
+</ul>
+</section>
+
+<section>
+<h2>Why leaving · why full-time</h2>
+<ul>
+<li>Contract <b>not renewed</b> after five years.</li>
+<li>Told: they wanted a permanent hire and a GitHub Actions specialist. Pipeline ownership was moving to app teams. "A reasonable point for both sides."</li>
+<li>Permanent role: offered earlier, I declined; I wanted to stay independent then.</li>
+<li><b>Now:</b> long-term ownership of a platform, one team, stability for my family.</li>
+<li>GitHub Actions: comfortable; depth is Azure DevOps and Jenkins.</li>
+</ul>
+</section>
+
+<section>
+<h2>Incident story</h2>
+<ul>
+<li>Énergir, on call. Training portal auth returning 500s. Not my system; only one with access.</li>
+<li>Reproduced → Nginx logs → forwarding to a port not listening → found service → restarted → confirmed logins.</li>
+<li>Told on-call: <b>mitigated</b>, still finding the cause.</li>
+<li>Cause: server had rebooted, service not set to start on boot. Fixed, reported to owners.</li>
+<li><b>Hindsight:</b> check other services for the same gap; monitor with a test login, not a port check.</li>
+</ul>
+</section>
+
+<section>
+<h2>Terraform</h2>
+<ul>
+<li>I own <b>~20 workspaces</b>: Jenkins, workers, Nexus, vaults, dev and prod.</li>
+<li>Wider estate 80–100, built by the infra team; I supported them.</li>
+<li><b>State story:</b> their pipeline re-imported everything each run. I made the case for persistent state; they moved it to a storage account.</li>
+<li>Why: imports can't show drift, no locking, slow and fragile.</li>
+<li>Bare resources → shared modules. Wrote some, used most. About 3 years.</li>
+</ul>
+</section>
+
+<section>
+<h2>Gaps · say once, then stop</h2>
+<ul>
+<li><b>Go:</b> none in production. C++, Java, Python; learn runtimes cold.</li>
+<li><b>Kubernetes:</b> practical (ArgoCD, Helm), not cluster ownership. CKA in progress.</li>
+<li><b>SLOs:</b> no formal ones. Platform-versus-app failure split was effectively an SLI.</li>
+<li><b>Elastic Stack:</b> production, 2018–2021, self-managed.</li>
+<li><b>Vault:</b> team owned an inherited one; I worked the move to Azure Key Vault. Small.</li>
+</ul>
+</section>
+
+<section>
+<h2>SRE terms</h2>
+<ul>
+<li><b>SLI</b> what you measure · <b>SLO</b> what you aim for · <b>SLA</b> what you promise</li>
+<li><b>Error budget</b> = 100% − SLO (99.9% ≈ 43 min / 30 days)</li>
+<li><b>Burn rate</b> = how fast the budget is spent</li>
+<li>Page on fast burns, ticket on slow ones</li>
+<li><b>Toil</b> = manual, repetitive operational work</li>
+<li>Mitigate first, root cause after</li>
+<li>Freshness · completeness · availability</li>
+<li>Nothing should fail silently</li>
+</ul>
+</section>
+
+<section>
+<h2>My questions</h2>
+<ul>
+<li><b>Team:</b> how are observability, analytics and platform security organized?</li>
+<li><b>Monitor the monitor:</b> at Tink, paging was separate from logging, but nothing watched the pager. How do you handle that at your scale?</li>
+<li><b>SLOs:</b> does the platform have its own, for freshness, availability, completeness? How is completeness measured?</li>
+<li><b>On-call:</b> how many people, follow the sun? In an on-call week, how much is interrupts versus project work?</li>
+<li class="q">Completeness, if asked: Desjardins expected-versus-observed; Énergir catch-all for unmatched logs.</li>
+</ul>
+</section>
+
+<section class="warn">
+<h2>Don't say</h2>
+<ul>
+<li>Anything negative about Énergir or Dynatrace</li>
+<li>"All hands on deck" → calm, structured response</li>
+<li>"Tools for the cloud team" → a production platform</li>
+<li>"Helped set up 80–100" · "five years of Terraform"</li>
+<li>"Disclosed" about the Desjardins overlap</li>
+<li>"Simpler version of Jenkins" · "willing to learn"</li>
+<li>Canopy or other personal projects</li>
+</ul>
+</section>
+
+<section>
+<h2>If asked</h2>
+<ul>
+<li><b>Overlap:</b> renewal was uncertain; took a 3-month contract as a safety net; delivered both; extended to 6. A contractor's response. As an employee, one employer gets my full attention.</li>
+<li><b>Salary:</b> posted range works; targeting 160–175.</li>
+<li><b>Start:</b> available immediately.</li>
+<li><b>Time zones:</b> Eastern overlaps both Europe and the west coast.</li>
+</ul>
+</section>
+
+<section>
+<h2>Close</h2>
+<ul>
+<li>"I'm expecting an offer from another company shortly. This role is my preference, so I wanted you to know my timeline. What are the next steps on your side?"</li>
+<li>Say plainly that you want the role.</li>
+<li>Afterwards: write down what was asked.</li>
+</ul>
+</section>
+
+</div>
+</body>
+</html>
