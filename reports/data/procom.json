@@ -1,10 +1,10 @@
 {
   "board": "Procom",
-  "run_date": "2026-09-22",
+  "run_date": "2026-10-05",
   "eyebrow": "Procom contractor portal · read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.",
-  "latest_update": "Re-run September 22, 2026 — no eligible target-family postings; inventory has shifted toward AI/data-engineering and embedded-automotive noise, plus one new Toronto-hybrid security-platform (PKI/CyberArk) role and one new Toronto-hybrid systems-engineer role, both ruled out. The Flextrack Salesforce DevOps posting (already Skipped in applications.md) is still the only live pipeline match. The previously logged QA Automation Engineer (Richmond, BC) posting has been removed from the portal (confirmed via direct URL, now 404) — updated from Out of scope to Expired.",
+  "latest_update": "Rechecked October 5, 2026 — all 6 portal queries rendered (DevOps 8, Platform 22, SRE 1, Cloud 24, DevSecOps 4, FDE 0). 1 auto-filed: BMO Cloud Security DevSecOps Engineer (Azure Focus), remote contract, $75–100/hr (score 5). The Ottawa Senior Azure Cloud DevOps Specialist is a strong fit but its requisition already has a Skipped row.",
   "stats": [
     {
       "value": 6,
@@ -108,9 +108,47 @@
       "gap": "Quality engineering, not infrastructure/platform/reliability engineering. Posting has been removed from the portal — direct URL now returns \"We couldn't find that job\" (checked 2026-09-22).",
       "url": "https://myprocom-portal.procomservices.com/jobs/qa-automation-engineer-richmond-2bd34f90",
       "status": "Expired — posting removed (confirmed via direct URL, 404 as of 2026-09-22)"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "Cloud Security DevSecOps Engineer (Azure Focus)",
+      "company": "Bank of Montreal (via Procom)",
+      "location": "Toronto-listed, remote contract (Ontario)",
+      "salary": "CAD $75–$100/hr, 14 months from Oct 2026",
+      "gap": "Azure security-service depth (Defender, IAM, Landing Zones) is thinner than the Terraform/Bicep policy-as-code core; security engineering rather than delivery",
+      "url": "https://myprocom-portal.procomservices.com/jobs/cloud-security-devsecops-engineer-azure-focus-toronto-dbdaa8fe",
+      "status": "New"
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "Cloud Security DevSecOps Engineer (AWS Focus)",
+      "company": "Bank of Montreal (via Procom)",
+      "location": "Toronto-listed, remote contract",
+      "salary": "CAD $85–$100/hr",
+      "gap": "AWS-focused cloud-security guardrails — AWS depth is hard-gated; the Azure twin is the better match",
+      "url": "https://myprocom-portal.procomservices.com/jobs/?keyword=DevSecOps+Engineer"
+    },
+    {
+      "score": 8,
+      "family": "DevOps",
+      "title": "Senior Azure Cloud DevOps Specialist (RQ01840)",
+      "company": "Procom (anonymous client)",
+      "location": "Ottawa, ON — hybrid (office days not stated; confirm <=2), 13-month contract",
+      "salary": "CAD $72–$90/hr",
+      "gap": "None material on skills (Azure, enterprise CI/CD, Python, Kubernetes/OpenShift); rate straddles the $80/hr floor; hybrid cadence unconfirmed",
+      "url": "https://myprocom-portal.procomservices.com/jobs/senior-azure-cloud-devops-specialist-ottawa-8ee7422b",
+      "status": "Skipped — same requisition already Skipped (Morson Talent row, 2026-09-15)"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 query audit",
+      "items": [
+        "Portal keyword searches, each navigated separately: DevOps Engineer 8 · Platform Engineer 22 · Site Reliability Engineer 1 (Flextrack Salesforce DevOps, stale) · Cloud Engineer 24 · DevSecOps Engineer 4 · Forward Deployed Engineer Zero results. Reviewed all results under the boundary. IDs of note: ATS 331836 (BMO Azure security, filed), 331834 (BMO AWS), 326534 (Senior Azure Cloud DevOps Specialist, Ottawa, requisition RQ01840). No CAPTCHA."
+      ]
+    },
     {
       "heading": "Per-query audit",
       "items": [
@@ -132,5 +170,6 @@
       ]
     }
   ],
-  "method": "Six-keyword default rotation (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer) run browser-driven against the real contractor portal. 21 unique postings encountered and reviewed across the four keywords that returned results; two returned zero results outright. Zero eligible target-family postings scored 5 or above this run — the one known pipeline match (Flextrack Salesforce DevOps Engineer) remains Skipped per applications.md. Two new out-of-scope/ineligible postings identified (a Toronto-hybrid CyberArk/PKI security-platform role, and a Toronto-hybrid MCAP systems-engineer role outside the reachable-city range), plus confirmation that a previously logged QA Automation Engineer posting has been removed from the portal. No jobs qualified for automatic filing this run."
+  "method": "Six-keyword default rotation (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer) run browser-driven against the real contractor portal. 21 unique postings encountered and reviewed across the four keywords that returned results; two returned zero results outright. Zero eligible target-family postings scored 5 or above this run — the one known pipeline match (Flextrack Salesforce DevOps Engineer) remains Skipped per applications.md. Two new out-of-scope/ineligible postings identified (a Toronto-hybrid CyberArk/PKI security-platform role, and a Toronto-hybrid MCAP systems-engineer role outside the reachable-city range), plus confirmation that a previously logged QA Automation Engineer posting has been removed from the portal. No jobs qualified for automatic filing this run.",
+  "could_not_validate": []
 }

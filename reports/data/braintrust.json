@@ -1,16 +1,31 @@
 {
   "board": "Braintrust",
-  "run_date": "2026-09-22",
+  "run_date": "2026-10-05",
   "eyebrow": "Braintrust · contractor marketplace, read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Skill-chip search on the four confirmed IDs, plus a title-skim of the unfiltered Engineering feed for Platform Engineer / Forward Deployed Engineer (no confirmed chip exists for either). Scores measure technical and domain fit only.",
-  "latest_update": "Re-run September 22, 2026 — identical outcome to the 2026-09-19 and 2026-09-21 runs: all four confirmed skill-chip searches return zero results, and the same TaskRabbit posting (Applied) and the same US-only ineligible posting remain the only two topically relevant listings on the unfiltered feed.",
+  "latest_update": "Rechecked October 5, 2026 — all 6 queries rendered; the four skill-chip queries (DevOps 1338, SRE 8473, Cloud 10001, DevSecOps 6831) returned zero jobs; the unfiltered Engineering/IT listing showed 229 openings and 20 cards were skimmed for Platform and FDE. Nothing eligible; 0 filed.",
   "stats": [
-    {"value": 6, "label": "keywords attempted"},
-    {"value": 4, "label": "returned zero results"},
-    {"value": 1, "label": "eligible, scored"},
-    {"value": 1, "label": "ineligible (US-only)"},
-    {"value": 2, "label": "pipeline matches"}
+    {
+      "value": 6,
+      "label": "keywords attempted"
+    },
+    {
+      "value": 4,
+      "label": "returned zero results"
+    },
+    {
+      "value": 1,
+      "label": "eligible, scored"
+    },
+    {
+      "value": 1,
+      "label": "ineligible (US-only)"
+    },
+    {
+      "value": 2,
+      "label": "pipeline matches"
+    }
   ],
   "rows": [
     {
@@ -34,9 +49,37 @@
       "gap": "Location metadata explicitly states United States only, so a Canada-based candidate is not eligible.",
       "url": "https://app.usebraintrust.com/jobs/?role=5,16",
       "status": "Skipped — 2026-09-21 (Ineligible, US only)"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Sr Software Engineer - Developer Productivity",
+      "company": "TaskRabbit",
+      "location": "United States | Canada | Mexico + 1 more (PST/PDT/CIST), 40 hrs/wk",
+      "salary": "USD $60–70/hr",
+      "gap": "Contract rate is below the $80/hr long-term floor, and the role is software-engineering weighted (TypeScript) with CI/CD and Kubernetes",
+      "url": "https://app.usebraintrust.com/jobs/?role=5,16",
+      "status": "Skipped — rate below floor"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Forward Deployed Engineer (Contract) - LATAM",
+      "company": "Dual Logic",
+      "location": "New Mexico | South America",
+      "salary": "USD $30/hr",
+      "gap": "Region excludes Canada and the rate is far below floor",
+      "url": "https://app.usebraintrust.com/jobs/?role=5,16",
+      "status": "Skipped — region excludes Canada"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 query audit",
+      "items": [
+        "DevOps Engineer (skills=1338): Zero results · Site Reliability Engineer (skills=8473): Zero results · Cloud Engineer (skills=10001): Zero results · DevSecOps Engineer (skills=6831): Zero results · Platform Engineer and Forward Deployed Engineer: title-skim of the first 20 cards of the unfiltered role=5,16 listing (229 openings). Located relevant cards: Dual Logic FDE (LATAM only), GMI ConnectWise Cloud Specialist (India/Philippines/South America), TaskRabbit Sr Software Engineer – Developer Productivity (US/Canada/Mexico, $60–70/hr). No CAPTCHA."
+      ]
+    },
     {
       "heading": "Keyword results",
       "items": [
@@ -56,5 +99,6 @@
       ]
     }
   ],
-  "method": "Ran all four confirmed skill-chip searches (DevOps Engineer 1338, Site Reliability Engineer 8473, Cloud Engineer/Cloud Engineering 10001, DevSecOps Engineer 6831) as separate navigations per the skill's no-AND-combining rule, plus the unfiltered role=5,16 Engineering+IT feed as the required fallback for Platform Engineer and Forward Deployed Engineer (no confirmed skill chip for either). All 6 mandatory queries complete — 4 zero-result, 2 (Platform/FDE fallback) reviewed via the same title-skim of the first ~20 unfiltered results. No blocking, CAPTCHA, or login wall encountered. Auto-filing: 0 new rows — the only 2 topically relevant postings already have applications.md rows (1 Applied, 1 Skipped/Ineligible), preserved as-is per policy."
+  "method": "Ran all four confirmed skill-chip searches (DevOps Engineer 1338, Site Reliability Engineer 8473, Cloud Engineer/Cloud Engineering 10001, DevSecOps Engineer 6831) as separate navigations per the skill's no-AND-combining rule, plus the unfiltered role=5,16 Engineering+IT feed as the required fallback for Platform Engineer and Forward Deployed Engineer (no confirmed skill chip for either). All 6 mandatory queries complete — 4 zero-result, 2 (Platform/FDE fallback) reviewed via the same title-skim of the first ~20 unfiltered results. No blocking, CAPTCHA, or login wall encountered. Auto-filing: 0 new rows — the only 2 topically relevant postings already have applications.md rows (1 Applied, 1 Skipped/Ineligible), preserved as-is per policy.",
+  "could_not_validate": []
 }

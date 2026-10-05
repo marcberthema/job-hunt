@@ -1,10 +1,10 @@
 {
   "board": "Randstad",
-  "run_date": "2026-09-22",
+  "run_date": "2026-10-05",
   "eyebrow": "Randstad Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "First-page Technologies inventory, validated from Randstad's full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 22, 2026 — full first-page refresh (30 postings, all dated Sept 18-22); no eligible target-family postings this run.",
+  "latest_update": "Rechecked October 5, 2026 — direct HTTP 200 on the Technologies category (first page, 30 postings, 385 Ontario / 44 Québec of the full list). No SRE, Platform, DevOps, Cloud or DevSecOps postings on the page; 1 infrastructure-architect listing scored out of scope. 0 filed.",
   "stats": [
     {
       "value": 30,
@@ -32,6 +32,12 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 audit",
+      "items": [
+        "Fetched https://www.randstad.ca/jobs/s-technologies/ (HTTP 200, no CAPTCHA) and filtered the first page locally; no JobPosting JSON-LD was exposed this run, so postings were read from the static listing HTML (titles, locations, IDs only — descriptions not opened). Titles on the page are dominated by software developers, Maximo/CRM analysts, project and change managers, scrum masters and retail coffee roles. The only infrastructure-flavoured listing is Infrastructure Architect and Partner – MSP Experience (Saint-Laurent, QC), which is an architect/partner role. Not paginated (the first page held postings from the past ~2 weeks and nothing in the target families)."
+      ]
+    },
     {
       "heading": "Run notes",
       "items": [
@@ -77,6 +83,18 @@
       "gap": "Fully remote and Canada-eligible on paper, but the role is offensive-security work — hands-on penetration testing, red-team operations, crisis-simulation/tabletop facilitation, third-party pentest vendor governance — not DevSecOps engineering. Wrong domain center of gravity; also well below Marc's rate floor.",
       "url": "https://www.randstad.ca/jobs/security-developer-remote_edmonton_47476231/",
       "status": "Skipped"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Infrastructure Architect and Partner – MSP Experience",
+      "company": "Randstad (client not disclosed)",
+      "location": "Saint-Laurent (Montréal), QC",
+      "salary": "Not stated",
+      "gap": "Architect/partner role for a managed-services provider — architecture-first scope, not hands-on reliability or platform engineering; judged from the listing, description not opened",
+      "url": "https://www.randstad.ca/jobs/s-technologies/",
+      "status": "Skipped — out of scope (architect/MSP)"
     }
-  ]
+  ],
+  "could_not_validate": []
 }

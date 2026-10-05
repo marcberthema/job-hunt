@@ -1,10 +1,10 @@
 {
   "board": "Eluta",
-  "run_date": "2026-09-22",
+  "run_date": "2026-10-05",
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 22, 2026 — completed the 4 remote keywords left over from 2026-09-21 (Staff DevOps Engineer, Senior Site Reliability Engineer, Staff Site Reliability Engineer, Senior Infrastructure Engineer), spot-re-verified DevOps Engineer (unchanged inventory), and ran all 4 remaining city passes (Kingston, Brockville, Cornwall, Montréal). 2 new eligible postings filed (McKesson score 7, Genetec score 5); 3 new sub-5 rows and 1 new ineligible/1 new out-of-scope row logged for completeness; 1 posting could not be validated.",
+  "latest_update": "Rechecked October 5, 2026 — all 10 default remote queries ran (10 results each, 69 unique) plus Ottawa hybrid; Kingston, Brockville and Cornwall returned zero results and Montréal could not be queried through the URL route, so the geography passes are incomplete. 0 new postings cleared the filing gates; Wind River Senior DevOps (Kanata hybrid) is an unvalidated lead.",
   "stats": [
     {
       "value": 9,
@@ -125,15 +125,62 @@
       "salary": "Not stated",
       "gap": "Title mentions a DevOps team the role partners with, but the job itself is network-performance/RF engineering management for fixed wireless technology — wrong domain and a people-management scope, not an IC infrastructure role.",
       "url": "https://www.eluta.ca/search?q=DevOps+Engineer&l=Cornwall%2C+ON"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Engineer II (Contract)",
+      "company": "Spring Financial",
+      "location": "Remote — Mexico residents",
+      "salary": "MXN $612,000–$857,000/yr",
+      "gap": "The posting offers remote work from Mexico, not Canada",
+      "url": "https://freehire.me/jobs/devops-engineer-ii-contract-springfinancial-theyqfuj",
+      "status": "Skipped — region: Mexico only"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior DevOps / Platform Engineer — Cloud",
+      "company": "Dominion Dynamics",
+      "location": "Ottawa, ON — on-site (Ottawa/Toronto)",
+      "salary": "CAD $117,000–$156,000 (estimate)",
+      "gap": "Role is on-site and reports to the Head of Security; sovereign-hosting focus",
+      "url": "https://jobs.ashbyhq.com/Dominion%20Dynamics/524d2ece-f27a-469d-b00e-503cc40869ac",
+      "status": "Skipped — on-site"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Zscaler Site Reliability Engineer (SRE)",
+      "company": "DXC Technology",
+      "location": "Ottawa, ON — exclusively on-site at a client location",
+      "salary": "CAD $115,000–$155,000",
+      "gap": "Requires a Canadian government security clearance, Canadian citizenship and 10 years verifiable residency, and on-site Ottawa",
+      "url": "https://www.workopolis.com/jobsearch/viewjob/di6TjW7EaEG063zt904FtKrPMLSYXK0mhNZIbN2ur0QAQ38AFPbmFOx89ki8IFXX",
+      "status": "Skipped — clearance and on-site"
     }
   ],
   "could_not_validate": [
     {
       "text": "Degree, Inc. \"Senior Software Engineer, Infrastructure Platform\" ($123,750–$165,000 CAD, remote) — plausible Platform-family fit (AWS infrastructure, Kubernetes, distributed systems, deployment tooling, internal developer platforms) but Eluta's inline expansion and cache link both failed to open on repeated attempts this run; the listing snippet alone isn't sufficient for scoring per the skill's rule. Worth a retry next run.",
       "url": "https://www.eluta.ca/search?q=Senior+Infrastructure+Engineer&filter-remote_jobs=only"
+    },
+    {
+      "text": "Wind River — Senior DevOps Engineer, Kanata (Ottawa), hybrid, CAD $95,000–$120,000 plus bonus: owns CI/CD, build reliability and the virtualization environment for the Wind River Cloud Platform (Kubernetes, Helm, Ansible, OpenStack, StarlingX). Plausible fit, but the employer page and office-day count could not be retrieved, so it is unscored.",
+      "url": "https://www.eluta.ca/jobs-at-wind-river"
+    },
+    {
+      "text": "JLL — Senior Cloud Engineer (CAD $140,000–$170,000, Toronto, remote tag) and Think Research — Senior Cloud Engineer (Toronto, remote tag): not validated this run.",
+      "url": "https://www.eluta.ca/search?q=Cloud%20Engineer&filter-remote_jobs=only"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 pass audit",
+      "items": [
+        "Remote queries (filter-remote_jobs=only, first 10 results each): DevOps Engineer 10 · Senior DevOps Engineer 10 · Staff DevOps Engineer 10 · Site Reliability Engineer 10 · Senior Site Reliability Engineer 10 · Staff Site Reliability Engineer 10 · Cloud Engineer 10 · DevSecOps Engineer 10 · Infrastructure Engineer 10 · Senior Infrastructure Engineer 10 — 69 unique results; 27 matched employers already in applications.md. City passes (DevOps Engineer and Site Reliability Engineer, no remote filter): Ottawa 10/10 · Kingston 0/0 · Brockville 0/0 · Cornwall 0/0 · Montréal 0/0 — the zero returns for Montréal conflict with the 280 results seen on 2026-09-22, so the city value is not being accepted through a direct URL and that pass is Incomplete. Cache-page validation was not attempted this run; four candidates were checked against employer or aggregator copies instead."
+      ]
+    },
     {
       "heading": "September 22 pass audit (continuation of 2026-09-21's leftover scope)",
       "items": [

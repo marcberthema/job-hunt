@@ -1,10 +1,10 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-09-24",
+  "run_date": "2026-10-05",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "Latest update: September 24, 2026 — all six mandatory Canada queries completed, with eight results per query reviewed before deduplication. Exact-phrase search remained noisy; no newly surfaced posting could be fully validated as an eligible score-5+ opportunity, so zero were auto-filed.",
+  "latest_update": "Rechecked October 5, 2026 — all 6 queries rendered (DevOps 36, Platform 215, SRE 43, Cloud 114, DevSecOps 11, FDE 0). 1 new posting auto-filed: Intact DevOps Specialist - Shared Services (Montréal hybrid, CAD $118.7–145.1k, score 7).",
   "stats": [
     {
       "value": 6,
@@ -225,15 +225,51 @@
       "gap": "Ineligible geography — Toronto is outside Marc's reachable on-site/hybrid range (Ottawa/Kingston/Brockville/Cornwall/Montréal); appeared independently across three separate keyword queries (DevOps Engineer, Platform Engineer, DevSecOps Engineer), suggesting a strong keyword match that the location gate still excludes",
       "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm",
       "status": "Skipped — Toronto"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "DevOps Specialist - Shared Services",
+      "company": "Intact Financial",
+      "location": "Montréal, QC — hybrid, office days not stated; confirm <=2 (also posted for Saint-Hyacinthe and Laval)",
+      "salary": "CAD $118,700–$145,100/yr + 15% bonus target",
+      "gap": "Java/Spring Boot on OpenShift and a 7+ year technical-leadership scope; bilingual required (a plus for Marc); range straddles the $120k Montréal hybrid floor",
+      "url": "https://freehire.me/jobs/devops-specialist-shared-services-intact-financial-76ns6vma",
+      "status": "New"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior Cloud DevOps Engineer",
+      "company": "Morson Group",
+      "location": "Ottawa, ON",
+      "salary": "CAD $61/hr",
+      "gap": "Contract rate is well below the $80/hr long-term floor and the $90/hr floor for shorter work",
+      "url": "https://www.glassdoor.ca/Job/canada-cloud-engineer-jobs-SRCH_IL.0,6_IN3_KO7,21.htm",
+      "status": "Skipped — rate below floor"
     }
   ],
   "could_not_validate": [
     {
       "text": "Olive Systems \"Forward Deployed Engineer — One Process, Multiple Opportunities\" (Remote) is not an actual job requisition — it's a staffing/matching funnel (\"MakeHire\") for Forward Deployed Engineer roles at US companies, with no specific employer, compensation, or Canada eligibility stated. Read in full; could not be scored as a posting.",
       "url": "https://www.glassdoor.ca/Job/canada-forward-deployed-engineer-jobs-SRCH_IL.0,6_IN3_KO7,32.htm"
+    },
+    {
+      "text": "isgSearch — Principal Observability Engineer, Toronto (CAD $125–180k, Glassdoor estimate): card shows no work arrangement and the description was not opened.",
+      "url": "https://www.glassdoor.ca/Job/canada-site-reliability-engineer-jobs-SRCH_IL.0,6_IN3_KO7,32.htm"
+    },
+    {
+      "text": "Tangerine — Cloud Engineer, Toronto: card shows no work arrangement or pay; description not opened.",
+      "url": "https://www.glassdoor.ca/Job/canada-forward-deployed-engineer-jobs-SRCH_IL.0,6_IN3_KO7,32.htm"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 query audit",
+      "items": [
+        "Past-7-days, newest-first, Canada. URL <N> is the length of the 'canada-<slug>' string (the first attempt used a too-short N for Platform/SRE/Cloud and returned truncated-keyword noise; rerun with the correct N). Rendered counts: DevOps Engineer 36 · Platform Engineer 215 · Site Reliability Engineer 43 · Cloud Engineer 114 · DevSecOps Engineer 11 · Forward Deployed Engineer 0 (Glassdoor substituted unrelated roles). Reviewed the first 8–14 cards per query. Intact Observability/DevOps Advisor and Tecsys SRE remain Applied; Rentsync SRE (St. Catharines) was scored 4 on BuiltIn. isgSearch Principal Observability Engineer and Tangerine Cloud Engineer (both Toronto) were not opened — work arrangement not visible on the card. No CAPTCHA."
+      ]
+    },
     {
       "heading": "September 22 query audit",
       "items": [
