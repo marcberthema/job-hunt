@@ -21,7 +21,7 @@ Prefer direct HTTP retrieval because the category and job descriptions are prese
 
 Do not use Randstad's `?query=` parameter: it has returned zero results for ordinary terms such as `devops`. Fetch the Technologies category and filter its contents locally.
 
-On a normal run, review every posting on the first category page, currently about 30 results. Record when fewer were available. Do not paginate unless the user requests a deeper search or the first page contains no postings recent enough to test the source meaningfully.
+On a normal run, collect **every page** of the Technologies category (`/jobs/s-technologies/`, then `/jobs/s-technologies/page-2/` … — about 18 pages and 500 postings on 2026-10-05), then open every posting whose title or summary is plausibly DevOps, SRE, platform, cloud, infrastructure, or CI/CD. The first page alone hid the whole DevOps inventory (a remote Azure/Terraform DevOps contract was on page 12). Space the page fetches a second or more apart.
 
 Stop the affected retrieval path if Randstad presents a CAPTCHA, verification challenge, or access restriction. Never bypass it. A failed posting should be listed under `Could not validate` without aborting other directly accessible postings.
 
