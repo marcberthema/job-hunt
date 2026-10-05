@@ -323,6 +323,42 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
 
 ---
 
+## Working Philosophy (added 2026-10-02 — optional framing, use only when it fits)
+
+Marc's own statement of why he does this work:
+
+> **My one goal is to help you — by improving existing processes and automating repetitive ones —
+> so you can spend more time doing what you actually want to do.**
+
+This is his general philosophy, not a tagline to paste everywhere. It is the common thread behind
+his career (removing toil for application teams), and behind the side ideas he is exploring.
+
+**Proof — never state the philosophy without one of these:**
+- **Énergir, Oracle** — a fully manual deployment became automated delivery, after an earlier
+  attempt had failed; the team stopped spending release days on hand-run steps.
+- **Énergir, Salesforce** — missed deployment windows went from a recurring problem to one miss
+  since launch, on a dependable every-other-Tuesday cadence.
+- **Tink, patching** — OS patching and kernel reboots across 600+ servers became a monthly
+  verification check; an unstable Elasticsearch cluster restarted itself instead of paging a human.
+
+**When to use it (cover letters, interview answers, LinkedIn About):**
+- The posting talks about toil reduction, developer experience, platform enablement, internal
+  customers, self-service, or automation of manual processes.
+- The role is consulting or advisory, where the buyer cares about their people's time.
+- An interviewer asks "why do you do this work?" or "what motivates you?".
+
+**When to leave it out:**
+- The role is centred on something else — deep infrastructure or cluster operations at scale,
+  security/compliance, architecture ownership, incident command — and the posting never mentions
+  enablement or manual work. Lead with the matching evidence instead; forcing the philosophy in
+  reads as generic.
+- Any posting where it would displace a more specific, more relevant story.
+
+It is **not** part of the default resume summary and is **not** one of the always-highlight
+advantages below. Decide per posting.
+
+---
+
 ## Competitive Advantages to Always Highlight
 
 1. **The signature pattern — given a narrow scope, delivers something structurally larger.** This is the
@@ -394,6 +430,9 @@ Jira, ServiceNow, Agile / Scrum, Technical documentation, Stakeholder enablement
   Pick whichever of the three instances is closest to the posting's domain and tell it as a short story:
   what was asked, what was delivered, why the larger thing was the right call. Marc's own framing is
   "what is best for the client, not necessarily the cheapest" — that sentence is his voice, use it.
+- **Working Philosophy is conditional, not default.** See the Working Philosophy section: use it
+  only when the posting is about removing manual work, enablement, or developer experience, and
+  always pair it with a proof story. If it doesn't fit the role, don't mention it.
 - **Never answer an AWS/GCP requirement with "willing to learn."** For **AWS**, answer with the Tink
   build: ~6 months constructing a client's full AWS target environment (EC2, S3, Route 53, VPC,
   self-managed memcached, serverless relational database) with no prior AWS experience, cancelled by the
