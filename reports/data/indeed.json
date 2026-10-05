@@ -1,36 +1,36 @@
 {
   "board": "Indeed",
-  "run_date": "2026-10-01",
+  "run_date": "2026-10-05",
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "Rechecked October 1, 2026 — all 51 Indeed passes (9 title, 20 reachable-city, 22 remote-hub) are now Complete after a rate-limited first attempt was rerun at a slower pace. No new posting cleared the filing gates beyond GoLogic Ingénieur(e) IA & DevOps (score 6), filed earlier today.",
+  "latest_update": "Rechecked October 5, 2026 — title passes (9/9) and 19 of 20 city passes ran cleanly; Indeed rate-limited (HTTP 429) at pass 29, so Montréal/Infrastructure and all 22 remote-hub passes are Incomplete this run. No new posting cleared the filing gates (GoLogic from October 1 remains the day’s Indeed filing).",
   "stats": [
     {
-      "value": "51 of 51",
-      "label": "passes complete (9 title + 20 city + 22 hub)"
+      "value": "9 of 9",
+      "label": "title passes complete"
     },
     {
-      "value": 8,
-      "label": "new postings validated"
+      "value": "19 of 20",
+      "label": "city passes run"
     },
     {
-      "value": 1,
-      "label": "auto-filed"
+      "value": "0 of 22",
+      "label": "hub passes (rate-limited)"
     },
     {
       "value": 0,
-      "label": "could not validate"
+      "label": "auto-filed this run"
     }
   ],
   "notes_sections": [
     {
-      "heading": "October 1 pass audit — complete (past 3 days, date-sorted, first results page)",
+      "heading": "October 5 pass audit (past 3 days, date-sorted, first results page; 7-second spacing, stopped on the first HTTP 429)",
       "items": [
-        "<b>Title passes, location Canada — 9 of 9 Complete:</b> Site Reliability Engineer 10 · Reliability Engineer 16 · Platform Engineer 16 · Infrastructure Engineer 16 · Cloud Engineer 16 · DevOps Engineer 16 · DevSecOps Engineer 16 · Azure DevOps Engineer 16 · Forward Deployed Engineer 9 (unique results on page 1).",
-        "<b>Reachable-city hybrid passes — 20 of 20 Complete or Zero results</b> (Cloud Platform / Platform / DevOps / SRE / Infrastructure Engineer): Ottawa 11/7/3/6/11 · Kingston 6/6/<b>0</b>/6/6 · Cornwall 6/6/<b>0</b>/6/6 · Montréal 16/16/16/8/16. Kingston and Cornwall repeat the same 6 results across titles — Indeed’s broadened fallback, not local postings.",
-        "<b>Remote-hub passes — 22 of 22 Complete.</b> The first audited run was rate-limited (HTTP 429); a later rerun at 7-second gaps finished all 21 outstanding passes with no throttle. Results per pass (DevOps / SRE): Toronto 16 / 6 · Vancouver 8 / 6 · Calgary 7 / 6 · Edmonton 6 / 6 · Kitchener-Waterloo 11 / 7 · Halifax 8 / 6 · Winnipeg 6 / 6 · Québec City 6 / 6 · Victoria 6 / 6 · Montréal 16 / 6 · Ottawa 7 / 6. Small markets mostly repeat Indeed’s national fallback.",
-        "The rerun surfaced one new relevant listing (Tiger Analytics Forward Deployed Engineer, generative-AI implementation — not scored). Four earlier “could not validate” hub results were opened and scored: Logic 2000 (clearance + SAS Viya), Hookdeck (backend development), Realign (Toronto on-site), SkyWatch (Kitchener hybrid). No CAPTCHA at any point."
+        "<b>Title passes, location Canada — 9 of 9 Complete:</b> Site Reliability Engineer 6 · Reliability Engineer 7 · Platform Engineer 11 · Infrastructure Engineer 15 · Cloud Engineer 16 · DevOps Engineer 16 · DevSecOps Engineer 13 · Azure DevOps Engineer 16 · Forward Deployed Engineer 6 (unique results).",
+        "<b>Reachable-city hybrid passes — 19 of 20 run:</b> Ottawa 8/8/3/6/6 (Cloud Platform / Platform / DevOps / SRE / Infrastructure) · Kingston 6/6/<b>0</b>/6/6 · Cornwall 6/6/<b>0</b>/6/6 · Montréal 8/8/7/6/<b>HTTP 429</b>. Kingston and Cornwall repeat Indeed’s broadened fallback.",
+        "<b>Remote-hub passes — not run:</b> Indeed returned HTTP 429 (rate limited) at the 29th pass, so the run stopped there rather than push on — no retry or workaround. The 22 hub passes (11 hubs × DevOps/SRE remote) and Montréal/Infrastructure Engineer are <b>Incomplete</b>; the 51 passes were completed on October 1 (see the prior audit in git history).",
+        "New relevant listings: 18 unseen in-family results from 63 unique IDs. Intact DevOps Specialist – Shared Services (three location copies) is already filed from Glassdoor; Morson Senior Cloud DevOps (Ottawa) is the same requisition as the existing Skipped Morson row; the rest were Toronto, architect/data or game-industry roles. No CAPTCHA."
       ]
     },
     {
@@ -922,7 +922,23 @@
       "gap": "Principal-level platform role in Kitchener, outside the reachable cities for hybrid work",
       "url": "https://ca.indeed.com/viewjob?jk=5b87501ef2551db8",
       "status": "Skipped — Kitchener hybrid"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Architecte TI – Infrastructures, DevOps et gestion de projets",
+      "company": "MICROCOM #Technologies",
+      "location": "Montréal, QC",
+      "salary": "CAD $75,000–$95,000/yr",
+      "gap": "Pay is below the $120k Montréal hybrid floor and the role is architecture/project management",
+      "url": "https://ca.indeed.com/jobs?q=DevOps+Engineer&l=Montr%C3%A9al%2C+QC&fromage=3&sort=date",
+      "status": "Skipped — salary below Montréal floor"
     }
   ],
-  "could_not_validate": []
+  "could_not_validate": [
+    {
+      "text": "Cloud Imperium Games — Principal DevOps, Montréal (10+ years, production Kubernetes, on-call): the Indeed page shows no pay and no remote/hybrid statement, so eligibility cannot be scored.",
+      "url": "https://ca.indeed.com/jobs?q=Principal+DevOps&l=Montr%C3%A9al%2C+QC&fromage=3"
+    }
+  ]
 }
