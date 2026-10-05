@@ -4,7 +4,7 @@
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 5, 2026 — all 9 Fully Remote role queries plus all 20 reachable-city hybrid and 33 remote-hub passes now run (Complete or Zero results). 6 auto-filed today: Raydar SRE (7), Bounteous (7), Clario (6), General Dynamics Ottawa DevOps (6), Kinaxis (5), Practice Better (5).",
+  "latest_update": "Re-read October 5, 2026 — all 156 BuiltIn postings were read in full; 2 more roles filed (Case IQ DevOps Engineer 7, Spellbook Platform & Infrastructure 5), bringing BuiltIn to 8 filings today.",
   "stats": [
     {
       "value": 9,
@@ -535,6 +535,94 @@
       "gap": "Mid-level scope and a defence setting: must be able to obtain a Canadian government security clearance; cloud-agnostic (AWS, Azure or GCP) so no single-cloud gate",
       "url": "https://builtin.com/job/software-engineering-developer-devops/11341326",
       "status": "New"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Case IQ",
+      "location": "Remote — Canada (team spans 7 countries)",
+      "salary": "Not stated",
+      "gap": "Multi-cloud Azure (AKS, App Insights) and AWS (ECS, Lambda, DynamoDB) operations with Terraform/CDK and CI/CD; Senior level — pay not posted; AWS services are part of a two-cloud mix, so no single-cloud gate",
+      "url": "https://builtin.com/job/devops-engineer/11187585",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Senior Software Engineer, Platform & Infrastructure",
+      "company": "Spellbook",
+      "location": "Remote — Ontario residents only (eligible)",
+      "salary": "Not posted (above Ontario disclosure threshold)",
+      "gap": "AWS, MongoDB, IaC, CI/CD and observability for a legal-AI product; software-engineering weighted, AWS-primary",
+      "url": "https://builtin.com/job/senior-software-engineer-platform-infrastructure/11233917",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Camunda",
+      "location": "Remote — Canada",
+      "salary": "CAD-range $94,000–$279,000 (very wide)",
+      "gap": "Kubernetes-based multi-cloud operations at depth — Kubernetes administration gate; Camunda has a Skipped earlier row for another role",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer/11290634",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Cloud Engineer",
+      "company": "Laivly",
+      "location": "Remote — open to candidates within Canada",
+      "salary": "Not stated",
+      "gap": "Owns AWS infrastructure end to end (IaC, SLOs/DR, Datadog, FinOps); AWS ownership gate",
+      "url": "https://builtin.com/job/senior-cloud-engineer/10689558",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Staff Infrastructure Engineer / Sr. Infrastructure Engineer (VGS)",
+      "company": "Very Good Security",
+      "location": "Remote (Canada tag on some listings)",
+      "salary": "USD $145,000–$260,000",
+      "gap": "Multi-region AWS payment infrastructure with Kubernetes at staff level — AWS depth gate",
+      "url": "https://builtin.com/job/staff-infrastructure-engineer/10972880",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Staff Database Reliability Engineer, Open Internet",
+      "company": "Lutra",
+      "location": "Remote — Canada",
+      "salary": "$180,000–$250,000",
+      "gap": "Database reliability across bare-metal and cloud (7+ yrs DBA-style scope) — not Marc’s depth",
+      "url": "https://builtin.com/job/staff-database-reliability-engineer-open-internet/11336272",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevOps Engineer - Senior",
+      "company": "Symbiotic Group",
+      "location": "Toronto — on-site days per week",
+      "salary": "Not stated",
+      "gap": "Consulting placement with on-site days in Toronto, outside the reachable cities",
+      "url": "https://builtin.com/job/devops-engineer-senior/10778433",
+      "status": "Skipped — Toronto on-site days"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior Software Engineer I/II - Infrastructure",
+      "company": "Samsara",
+      "location": "US residents only",
+      "salary": "USD $143,000–$185,000",
+      "gap": "Posting is explicitly remote for candidates residing in the US",
+      "url": "https://builtin.com/job/sr-software-engineer-ii-iam/10808929",
+      "status": "Skipped — US residents only"
     }
   ],
   "could_not_validate": [
@@ -556,6 +644,14 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 full-read pass",
+      "items": [
+        "Fetched the full page of all 156 postings from the nine Fully Remote role queries (and re-fetched any that returned a stub), then ranked them by DevOps/SRE/infrastructure content in the description, not the title. 111 had ten or more such mentions; 73 of those mention Canada, and 44 of those 73 were not already in <code>applications.md</code> and were read through their duties, requirements and eligibility lines. Roles already in the ledger by BuiltIn ID were left to their existing rows.",
+        "<b>Filed (2):</b> Case IQ DevOps Engineer (7) and Spellbook Senior Software Engineer, Platform &amp; Infrastructure (5). Of the rest, most are AWS/GCP or Kubernetes-depth roles, security-infrastructure roles, ML/AI platform roles, forward-deployed AI engineers, or software-engineering roles with a thin ops component; a few are US-only or on-site.",
+        "Postings with no Canada wording anywhere in the description (about 38 of the 111) were set aside as eligibility-unconfirmed rather than assumed eligible; BuiltIn’s “Remote” tag alone does not establish Canada eligibility."
+      ]
+    },
     {
       "heading": "October 5 geography passes — complete",
       "items": [
