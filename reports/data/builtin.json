@@ -4,7 +4,7 @@
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 5, 2026 — all 9 Fully Remote role queries ran by direct HTTP (156 unique postings, 37 new since last run, 12 opened). 5 auto-filed: Raydar SRE (7), Bounteous Senior DevOps contract (7), Clario Senior DevOps (6), Kinaxis Cloud Engineer II SRE (5), Practice Better Intermediate DevOps (5). Hub and city passes not run — overall run incomplete.",
+  "latest_update": "Rechecked October 5, 2026 — all 9 Fully Remote role queries plus all 20 reachable-city hybrid and 33 remote-hub passes now run (Complete or Zero results). 6 auto-filed today: Raydar SRE (7), Bounteous (7), Clario (6), General Dynamics Ottawa DevOps (6), Kinaxis (5), Practice Better (5).",
   "stats": [
     {
       "value": 9,
@@ -524,6 +524,17 @@
       "gap": "Entry-level multi-cloud support role at a US non-profit, not the senior reliability scope",
       "url": "https://builtin.com/job/devops-engineer/11447621",
       "status": "Skipped — out of scope (entry level)"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Software Engineering Developer, DevOps",
+      "company": "General Dynamics Mission Systems–Canada",
+      "location": "Ottawa, ON — hybrid, office days not stated (confirm <=2)",
+      "salary": "CAD $85,000–$110,000/yr",
+      "gap": "Mid-level scope and a defence setting: must be able to obtain a Canadian government security clearance; cloud-agnostic (AWS, Azure or GCP) so no single-cloud gate",
+      "url": "https://builtin.com/job/software-engineering-developer-devops/11341326",
+      "status": "New"
     }
   ],
   "could_not_validate": [
@@ -546,9 +557,9 @@
   ],
   "notes_sections": [
     {
-      "heading": "October 5 run",
+      "heading": "October 5 geography passes — complete",
       "items": [
-        "Direct HTTP (no browser needed) against builtin.com/jobs/remote/dev-ops?search=<term>, HTTP 200 for all nine. First-page counts: Site Reliability Engineer 25 · Reliability Engineer 25 · Platform Engineer 25 · Infrastructure Engineer 25 · Cloud Engineer 25 · DevOps Engineer 25 · DevSecOps Engineer 3 · Azure DevOps Engineer 0 (Zero results) · Forward Deployed Engineer 25. 156 unique postings; 37 are newer than the previous run’s newest ID (11326830) and were triaged by title, 12 opened in full. <b>Not run this session:</b> the 11 remote-hub passes and 4 reachable-city hybrid passes (BuiltIn’s location filter is unreliable without a rendered browser) — the run is Incomplete on geography."
+        "Run by direct HTTP against builtin.com/jobs/<hybrid|remote>?search=<title>&city=<city>&state=<province>&country=CAN, 3-second spacing, HTTP 200 throughout. <b>Reachable-city hybrid passes (20):</b> Ottawa — Cloud Platform 0, Platform 0, DevOps <b>2</b>, SRE 0, Infrastructure <b>2</b> · Kingston, Cornwall and Montréal — Zero results on all five titles. <b>Remote-hub passes (33; 11 hubs × DevOps/SRE/Platform):</b> Toronto, Vancouver, Montréal, Calgary, Ottawa, Edmonton, Waterloo, Halifax, Winnipeg, Québec City and Victoria each returned a full first page of 25 — the city value does not change the Fully Remote inventory, so these passes re-surfaced the same Canada-remote postings already reviewed on October 5 (108 unique IDs across all 53 passes; nothing newer than the IDs already assessed). The one reachable-city hybrid posting found was General Dynamics Mission Systems Software Engineering Developer, DevOps (Ottawa), which was opened and scored. Together with the nine role queries, every declared BuiltIn pass is now Complete or Zero results."
       ]
     },
     {
