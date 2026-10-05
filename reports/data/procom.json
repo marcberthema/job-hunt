@@ -4,7 +4,7 @@
   "eyebrow": "Procom contractor portal · read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 5, 2026 — all 6 portal queries rendered (DevOps 8, Platform 22, SRE 1, Cloud 24, DevSecOps 4, FDE 0). 1 auto-filed: BMO Cloud Security DevSecOps Engineer (Azure Focus), remote contract, $75–100/hr (score 5). The Ottawa Senior Azure Cloud DevOps Specialist is a strong fit but its requisition already has a Skipped row.",
+  "latest_update": "Re-read October 5, 2026 — all 29 unique Procom postings (DevOps 7, Platform 21, SRE 1, Cloud 23, DevSecOps 4) were opened and read in full, including page 2 of the Platform and Cloud results. No new in-family role beyond the BMO Azure security contract already filed and the Ottawa Azure DevOps requisition already Skipped.",
   "stats": [
     {
       "value": 6,
@@ -140,9 +140,38 @@
       "gap": "None material on skills (Azure, enterprise CI/CD, Python, Kubernetes/OpenShift); rate straddles the $80/hr floor; hybrid cadence unconfirmed",
       "url": "https://myprocom-portal.procomservices.com/jobs/senior-azure-cloud-devops-specialist-ottawa-8ee7422b",
       "status": "Skipped — same requisition already Skipped (Morson Talent row, 2026-09-15)"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Full Stack Cloud Engineer / Software Developer, Telemetry and Observability Platform",
+      "company": "Procom (automotive client)",
+      "location": "Ottawa, ON — hybrid",
+      "salary": "CAD hourly (not shown)",
+      "gap": "Opened in full: cloud-native application development “under the guidance of senior engineers” for a vehicle-telemetry platform — a developer role, not infrastructure or reliability",
+      "url": "https://myprocom-portal.procomservices.com/jobs?loginType=contractor&lang=en&keyword=Cloud+Engineer",
+      "status": "Skipped — out of scope (application development)"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior Systems Engineer (Cloud & Infrastructure)",
+      "company": "Procom (Toronto client)",
+      "location": "Toronto, ON — hybrid 2 days/week, contract-to-hire",
+      "salary": "CAD $52.50–$70/hr",
+      "gap": "Toronto is outside the reachable cities and the hourly range is below the $80/hr contract floor",
+      "url": "https://myprocom-portal.procomservices.com/jobs?loginType=contractor&lang=en&keyword=Cloud+Engineer",
+      "status": "Skipped — Toronto hybrid, rate below floor"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 full-read pass",
+      "items": [
+        "Each posting’s detail page was fetched and its JobPosting data and description read, including the second results page that the first run did not page to (the portal shows 20 per page; Platform has 21 and Cloud 23). Findings: the two Telemetry & Observability postings (Ottawa) are full-stack developer roles working under senior engineers, not platform operations; Senior Systems Engineer (Cloud & Infrastructure) is hybrid 2 days/week in Toronto at $52.50–70/hr; Flextrack’s Senior Salesforce DevOps Engineer – AI Automation (remote US/Canada) is the same requisition as the Skipped Flextrack row (listing dated July 31, freshness unconfirmed). The remaining results are software, data, embedded, telecom, Salesforce-integration and AI engineering roles.",
+        "Procom detail pages open directly by fetch (about 300 KB each, with the full description in JobPosting JSON)."
+      ]
+    },
     {
       "heading": "October 5 query audit",
       "items": [
