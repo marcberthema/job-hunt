@@ -4,7 +4,7 @@
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 5, 2026 — all 10 default remote queries ran (10 results each, 69 unique) plus Ottawa hybrid; Kingston, Brockville and Cornwall returned zero results and Montréal could not be queried through the URL route, so the geography passes are incomplete. 0 new postings cleared the filing gates; Wind River Senior DevOps (Kanata hybrid) is an unvalidated lead.",
+  "latest_update": "Rechecked October 5, 2026 — all 10 default remote queries ran (10 results each, 69 unique) plus Ottawa hybrid; Kingston, Brockville and Cornwall returned zero results and Montréal could not be queried through the URL route, so the geography passes are incomplete. 0 new postings cleared the filing gates; Wind River Senior DevOps (Kanata hybrid) is an unvalidated lead. Montréal retry blocked by Eluta’s human-verification page; Kingston/Brockville/Cornwall zeros are unverified for the same reason.",
   "stats": [
     {
       "value": 9,
@@ -175,6 +175,12 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 Montréal retry — blocked",
+      "items": [
+        "Retried the Montréal pass in a browser (q=DevOps Engineer, l=Montreal, QC). Eluta answered with a <b>User Verification (“are you a human?”) page</b> citing unusual request volume from this IP, so the pass stayed <b>Incomplete</b> and I did not attempt the check. The zero results earlier today for Kingston, Brockville, Cornwall and Montréal were probably this same block served to in-page fetches, so treat those four city passes as unverified rather than genuine zero-result passes."
+      ]
+    },
     {
       "heading": "October 5 pass audit",
       "items": [
