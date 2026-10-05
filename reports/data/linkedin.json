@@ -4,7 +4,7 @@
   "eyebrow": "LinkedIn · authenticated read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Full descriptions validated on LinkedIn. Scores measure skill and domain fit.",
-  "latest_update": "Latest update: October 5, 2026 — all 67 mandatory passes completed (14 Canada-wide phrases, 33 hub passes, 20 reachable-city passes; past 3 days). 44 listings newer than the October 1 run, 23 in-family and labelled by workplace type; 1 auto-filed: Larouche Raymond (headhunter) Principal Cloud & DevOps Consultant, 100% remote, up to $200k (score 6).",
+  "latest_update": "Latest update: October 5, 2026 — full-read pass: all 263 LinkedIn listings from the 67 mandatory passes were read from their full descriptions; 6 new roles filed (Exo IaC 8, Conga 7, Onepoint DevOps IA 6, Tecsys DevOps 6, NTT DATA 5, Coinbase 5).",
   "stats": [
     {
       "value": "67 of 67",
@@ -24,6 +24,15 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 full-read pass (Marc: open more, do not filter by company)",
+      "items": [
+        "Re-collected every LinkedIn result for the 67 mandatory passes over the past 7 days — 263 unique in-family-title listings (obvious non-engineering titles removed) — and pulled the full description of every one through the public job-description endpoint. Each was scored from the text, not the title; employers already in <code>applications.md</code> were matched by role, not company (CARET Senior DevOps, Keyfactor Senior DevOps, MongoDB SRE and Onepoint/Crown Corp DevSecOps are the same roles Marc already Applied to, so they were left alone).",
+        "209 listings had substantive DevOps/SRE/infrastructure content; their Remote/Hybrid/On-site labels were read from the job pages (55 remote, 91 hybrid, 57 on-site, 6 unlabelled). Of the 89 that were remote or hybrid in a reachable city, about 25 were opened for a closer read of duties, requirements, pay and office cadence.",
+        "<b>Filed (6):</b> Exo IaC Developer (8), Conga Sr. SWE DevOps (7), Onepoint DevOps IA (6), Tecsys Ingénieur DevOps (6), NTT DATA DevOps CI/CD (5), Coinbase Core Reliability (5). Hybrid cadence and pay are unconfirmed for several — each ledger row says what to confirm.",
+        "Not read beyond the summary line: roughly 60 remote/hybrid listings whose titles are software-engineering roles (Affirm, Cohere, Thumbtack ML infrastructure, AI/forward-deployed engineers) and network/security engineering roles; they rank low on DevOps content in the description."
+      ]
+    },
     {
       "heading": "October 5 follow-up — skimmed roles now opened",
       "items": [
@@ -1055,6 +1064,171 @@
       "gap": "10+ years of software engineering is the bar; AWS/Terraform/Python infrastructure but software-engineering weighted",
       "url": "https://www.linkedin.com/jobs/view/4454794667/",
       "status": ""
+    },
+    {
+      "score": 8,
+      "family": "Platform",
+      "title": "Développeur(euse) – IaC (Infrastructure as Code)",
+      "company": "Exo – Réseau de transport métropolitain",
+      "location": "Montréal, QC — LinkedIn label Hybrid (hybrid work favoured; office days not stated)",
+      "salary": "Not stated (public-transit agency — confirm vs the $120k Montréal floor)",
+      "gap": "5–8 yrs and French required; Azure architecture with Terraform/Bicep and Azure DevOps pipelines — close to a full match. Gap: pay and office cadence unconfirmed, public-sector band may sit below the Montréal floor",
+      "url": "https://www.linkedin.com/jobs/view/4465058266/",
+      "status": "New"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Sr. Software Engineer, DevOps",
+      "company": "Conga",
+      "location": "Canada — Waterloo-listed, LinkedIn label Remote",
+      "salary": "Not stated",
+      "gap": "CI/CD, AWS and Azure IaC, Docker/Kubernetes standards under the Cloud Operations team; 5+ yrs; pay not posted",
+      "url": "https://www.linkedin.com/jobs/view/4473816710/",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "DevOps IA (AI Factory)",
+      "company": "Onepoint (Wepoint copy: Montréal hybrid)",
+      "location": "Montréal, QC — Onepoint copy labelled Remote, Wepoint copy Hybrid",
+      "salary": "Not stated",
+      "gap": "Industrializing AI solutions: infrastructure, CI/CD and production environments for AI teams; cloud AWS/Azure/GCP with AI services, 5+ yrs; French posting; remote vs hybrid differs by copy",
+      "url": "https://www.linkedin.com/jobs/view/4452542111/",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Ingénieur DevOps",
+      "company": "Tecsys Inc.",
+      "location": "Montréal, QC — LinkedIn label Hybrid (days not stated; confirm <=2)",
+      "salary": "Not stated",
+      "gap": "AWS/Azure hybrid infrastructure, Kubernetes, IaC and incident response in French; Marc already has an Applied Tecsys SRE row (different role); Kubernetes depth to confirm",
+      "url": "https://www.linkedin.com/jobs/view/4464889693/",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "DevOps CI/CD Engineer / Kentico – Remote Canada",
+      "company": "NTT DATA North America",
+      "location": "Remote — Canada",
+      "salary": "CAD $104,900–$154,800",
+      "gap": "AWS-primary (EC2, Auto Scaling, RDS, S3, Lambda, ECS) with GitHub Actions/CodePipeline for a .NET/Kentico stack; 8+ yrs asked",
+      "url": "https://www.linkedin.com/jobs/view/4473932844/",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "SRE",
+      "title": "Senior Software Engineer, Core Reliability",
+      "company": "Coinbase",
+      "location": "Québec-listed, remote-first Canada",
+      "salary": "CAD $191,100",
+      "gap": "Software-engineering weighted: 5+ yrs with Ruby/Go/Terraform building reliability and deployment infrastructure for T0 services; remote-first with quarterly meetups",
+      "url": "https://www.linkedin.com/jobs/view/4447230507/",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevOps Specialist",
+      "company": "Scientific Games (Light & Wonder)",
+      "location": "Montréal, QC — remote option per posting (French)",
+      "salary": "Not stated",
+      "gap": "OpenShift/Kubernetes operations on-prem and AWS is the core (5+ yrs, CKA-type certs preferred) — Kubernetes administration gate",
+      "url": "https://www.linkedin.com/jobs/view/4427812664/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Staff DevOps Engineer",
+      "company": "Hubstaff",
+      "location": "Canada — Remote",
+      "salary": "CAD $200,000–$250,000",
+      "gap": "Runs AWS and GCP, Kubernetes, Linux and cloud networking at staff level — GCP and Kubernetes depth gates; scope otherwise matches (reliability, security, developer experience)",
+      "url": "https://www.linkedin.com/jobs/view/4471526377/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior / Staff Cloud Infrastructure Engineer",
+      "company": "Lasso Informatics",
+      "location": "Montréal, QC — hybrid 2 days/week",
+      "salary": "CAD $80,000–$130,000",
+      "gap": "\"Walk into an imperfect infrastructure environment and make it better\" is Marc’s signature, but it owns AWS and GCP end to end plus Datadog — AWS/GCP gate; most of the band is below the $120k Montréal floor",
+      "url": "https://www.linkedin.com/jobs/view/4472365323/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Systems Engineer, Production",
+      "company": "Clio",
+      "location": "Canada — Remote (hubs Burnaby, Calgary, Toronto)",
+      "salary": "CAD $119,000–$161,000",
+      "gap": "AWS infrastructure design and operation is the job — hard gate (Marc’s Applied Clio role was the Azure one)",
+      "url": "https://www.linkedin.com/jobs/view/4407605927/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Platform Engineer",
+      "company": "System Soft Technologies",
+      "location": "Montréal, QC — LinkedIn label Hybrid",
+      "salary": "Not stated",
+      "gap": "Operates enterprise Kubernetes platforms across AWS/Azure/GCP with a 10+ yr bar and AI-enabled automation — Kubernetes platform-operations gate",
+      "url": "https://www.linkedin.com/jobs/view/4474386614/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Senior Software Engineer, Site Reliability Engineering",
+      "company": "Thumbtack",
+      "location": "Canada — Victoria-listed, Remote",
+      "salary": "USD $180,200–$233,000",
+      "gap": "\"Extensive fluency in AWS and Linux\" and rotating on-call — AWS depth gate",
+      "url": "https://www.linkedin.com/jobs/view/4475048102/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevSecOps Specialist",
+      "company": "Aylo",
+      "location": "Montréal, QC — hybrid",
+      "salary": "Not stated",
+      "gap": "Infrastructure-security team (cloud security and analytics programs) rather than delivery pipelines; 3–5 yrs",
+      "url": "https://www.linkedin.com/jobs/view/4465315163/",
+      "status": ""
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Developer",
+      "company": "Livingston International",
+      "location": "Québec City, QC — Remote label",
+      "salary": "CAD $60,515–$91,000",
+      "gap": "Azure DevOps CI/CD fit, but the whole band is below the $100k remote floor",
+      "url": "https://www.linkedin.com/jobs/view/4473075137/",
+      "status": "Skipped — salary below floor"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Cloud DevOps Specialist",
+      "company": "Accenture",
+      "location": "Ottawa, ON — hybrid",
+      "salary": "CAD $75,400–$125,400",
+      "gap": "Opened in full: the duties are data-pipeline and big-data engineering under a “Cloud DevOps” title",
+      "url": "https://www.linkedin.com/jobs/view/4473805356/",
+      "status": "Skipped — out of scope (data pipelines)"
     }
   ],
   "method": "Authenticated, strictly read-only LinkedIn search on September 24, 2026. Seven of 45 mandatory passes completed with reconciled rendered counts and LinkedIn IDs; several additional phrase pages were reached but could not be audited after repeated browser-control resets, so the overall run is incomplete. Completed passes used Canada, Remote, and f_TPR=r172800 and reviewed the visible first-page results (7 per pass, 35 unique IDs after deduplication). Two current full descriptions were validated: Blackpoint Cyber on LinkedIn and Autodesk on its employer site. Both matched existing applications.md company/title decisions and were not re-filed. SecurityScorecard remained unvalidated. No new posting cleared every automatic-filing gate. Historical rows and prior pipeline decisions remain preserved below."
