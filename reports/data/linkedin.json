@@ -25,6 +25,13 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 5 follow-up — skimmed roles now opened",
+      "items": [
+        "The four roles skimmed on October 1 plus Alithya were opened in full (public job-description endpoint): Alithya Azure DevOps Consultant (6, filed), Deel SRE (5, filed), Jane App Staff Cloud Engineering (4 — AWS gate), Rightsline (4 — at the pay floor), Scribd (4). MaintainX SRE stays unconfirmed (remote eligibility from Ontario).",
+        "Per Marc’s direction the shortlist rule is now “open more, filter less”; the ~150 listings triaged by title/workplace label on the 10-01 and 10-05 runs have not yet been re-read in full."
+      ]
+    },
+    {
       "heading": "October 5 run (complete)",
       "items": [
         "Past-3-days listing endpoint (read-only; ignores the Remote filter) for every mandatory pass: 14 phrases for Canada, 11 hubs x 3 titles, Ottawa/Kingston/Cornwall/Montréal x 5 titles. All returned results except Kingston (Cloud Platform, DevOps and SRE passes: Zero results) — Kingston/Cornwall rely on the same broadened fallback as before. New IDs above the previous run's newest (4474517023) were filtered to in-family titles, then each listing's Remote/Hybrid/On-site label was read from its job page. Of 23 in-family new listings the labels were mostly Remote (Kinaxis Cloud Engineer 2 appears as many location-indexed copies), with Coveo FDE and Kinaxis Ottawa/Toronto as Hybrid. Opened in full: Larouche Raymond, Blue J. Network Solutions Senior DevOps Engineer, AI Platform matches the Web.com/Network Solutions posting already in the ledger; Thumbtack SRE postings are US-oriented; Kinaxis Cloud Engineer II is already filed (BuiltIn, 2026-10-05)."
@@ -153,14 +160,6 @@
     {
       "text": "KPMG Canada — Bilingual Senior AWS Platform Engineer: Montréal listing was marked on-site; full requirements were not validated after the work-arrangement screen.",
       "url": "https://ca.linkedin.com/jobs/view/4453633084/"
-    },
-    {
-      "text": "Alithya — Azure DevOps Consultant (LinkedIn label Hybrid, Ontario, CAD $80,000–$120,000). Azure DevOps/Terraform/Bicep fit, but office city and cadence are not stated; Alithya also appears as a skipped developer role in applications.md.",
-      "url": "https://www.linkedin.com/jobs/view/4462540698/"
-    },
-    {
-      "text": "Rightsline Senior DevSecOps (Remote, CA$90–100k, AWS-centred), Scribd Staff SE Core Infrastructure (Remote, 10+ yrs software engineering), Jane App Staff Developer Cloud Engineering (Remote, AWS), Deel SRE (Remote) — skimmed only, not scored in full.",
-      "url": "https://www.linkedin.com/jobs/view/4473584423/"
     },
     {
       "text": "MaintainX (Autodesk) — Site Reliability Engineer, Montréal (LinkedIn label Remote, CAD $88–195k listed, $107–165k per aggregators). Strong SRE-enablement fit (SLOs, observability, mentoring developers) but a search aggregator describes it as remote “for Montreal, Quebec”; whether an Ontario resident qualifies is unconfirmed, and the posting itself doesn’t say.",
@@ -1001,6 +1000,61 @@
       "salary": "Not stated",
       "gap": "AWS/GCP and Kubernetes cloud-infrastructure ownership with a 5+ year bar — hard-gated on AWS/GCP depth",
       "url": "https://www.linkedin.com/jobs/view/4475300367/"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Azure DevOps Consultant",
+      "company": "Alithya",
+      "location": "Ontario, Canada — LinkedIn label Hybrid; city and office days not stated (confirm)",
+      "salary": "CAD $80,000–$120,000/yr",
+      "gap": "3+ yr intermediate consulting scope below Marc’s seniority; hybrid city/cadence unconfirmed (Ontario floor $100k only in Ottawa/Kingston/Brockville/Cornwall)",
+      "url": "https://www.linkedin.com/jobs/view/4462540698/",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "SRE",
+      "title": "Site Reliability Engineer",
+      "company": "Deel",
+      "location": "Canada — LinkedIn label Remote",
+      "salary": "CAD $50,000–$120,000/yr (very wide band)",
+      "gap": "Node.js/Go expectation and a follow-the-sun on-call rotation; AWS EKS/S3/RDS is “familiarity”, so no AWS gate; pay band unreliable against the $100k floor",
+      "url": "https://www.linkedin.com/jobs/view/4472946622/",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Staff Developer – Cloud Engineering",
+      "company": "Jane App",
+      "location": "Canada — Remote (Toronto office optional)",
+      "salary": "CAD $158,400–$247,500/yr",
+      "gap": "Culture and scope fit are strong (ambiguous infrastructure problems, cross-team leadership, AI-positive) but the role requires deep multi-region, high-scale AWS — AWS hard gate",
+      "url": "https://www.linkedin.com/jobs/view/4462704125/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevSecOps Engineer",
+      "company": "Rightsline",
+      "location": "Remote — 100% remote team",
+      "salary": "CAD $90,000–$100,000/yr",
+      "gap": "Security-incident and hardening split 50/50, AWS-centred; the whole band is at or below the $100k remote floor",
+      "url": "https://www.linkedin.com/jobs/view/4473584423/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Staff Software Engineer, Core Infrastructure",
+      "company": "Scribd",
+      "location": "Remote — Ottawa-indexed",
+      "salary": "USD $176,500+",
+      "gap": "10+ years of software engineering is the bar; AWS/Terraform/Python infrastructure but software-engineering weighted",
+      "url": "https://www.linkedin.com/jobs/view/4454794667/",
+      "status": ""
     }
   ],
   "method": "Authenticated, strictly read-only LinkedIn search on September 24, 2026. Seven of 45 mandatory passes completed with reconciled rendered counts and LinkedIn IDs; several additional phrase pages were reached but could not be audited after repeated browser-control resets, so the overall run is incomplete. Completed passes used Canada, Remote, and f_TPR=r172800 and reviewed the visible first-page results (7 per pass, 35 unique IDs after deduplication). Two current full descriptions were validated: Blackpoint Cyber on LinkedIn and Autodesk on its employer site. Both matched existing applications.md company/title decisions and were not re-filed. SecurityScorecard remained unvalidated. No new posting cleared every automatic-filing gate. Historical rows and prior pipeline decisions remain preserved below."
