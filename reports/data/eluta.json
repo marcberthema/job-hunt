@@ -4,7 +4,7 @@
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 5, 2026 — all 10 remote queries ran, and after Marc cleared the human-verification page, the city passes were re-run in a browser: Ottawa 10, Montréal DevOps 10 and SRE 10, Kingston/Brockville/Cornwall zero. 0 new postings cleared the filing gates; Wind River (Kanata hybrid) and several Montréal listings remain unopened leads.",
+  "latest_update": "Re-read October 5, 2026 — all Eluta results were opened in full (cached copies) with no company-based filtering; 5 new roles filed (Deloitte 7, Brain Finance 6, Barracuda Cloud SRE II 6, GoMaterials 5, commonsku 5). GE Vernova roles confirmed out of scope on full read.",
   "stats": [
     {
       "value": 9,
@@ -169,6 +169,160 @@
       "gap": "GCP, Kubernetes, Helm, Jaeger and Bitbucket stack with a 7+ year bar — GCP hard gate; pay estimate sits mostly below the $120k Montréal hybrid floor",
       "url": "https://ca.linkedin.com/jobs/view/senior-devops-at-ko%C3%AFos-intelligence-3249873532",
       "status": ""
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Data Platform DevOps Engineer - Senior Consultant",
+      "company": "Deloitte LLP",
+      "location": "Montréal/Ottawa and other Canadian locations — permanent, hybrid (office days not stated; confirm <=2)",
+      "salary": "CAD $80,000–$138,000/yr",
+      "gap": "Bilingual French/English required (a strength); Snowflake and Databricks listed as assets — Databricks is a direct Énergir match; hybrid cadence and the top of the pay band vs the $120k Montréal floor to confirm",
+      "url": "https://www.eluta.ca/cache?u=25404511:careers.deloitte.ca",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Brain Finance",
+      "location": "Montréal, QC — hybrid, team in office Wednesdays (1 day/week)",
+      "salary": "Not stated",
+      "gap": "AWS and/or GCP with Terraform and CI/CD — either cloud accepted, but no Azure; 4–5 years asked; pay unconfirmed against the $120k Montréal floor",
+      "url": "https://www.eluta.ca/cache?u=25081863:www.brainfinance.com",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "SRE",
+      "title": "Cloud Site Reliability Engineer II",
+      "company": "Barracuda Networks",
+      "location": "Ottawa, ON — hybrid, office days not stated (confirm <=2)",
+      "salary": "CAD $100,000–$120,000/yr",
+      "gap": "Level II (2–4 yrs) is below Marc’s seniority; Loki/Mimir/Tempo/Grafana telemetry on multi-cluster EKS rather than his Dynatrace/Splunk/ELK background",
+      "url": "https://www.eluta.ca/cache?u=25387579:jobs.jobvite.com",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Senior Software Engineer – Data & ML Platform",
+      "company": "GoMaterials",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Python/SQL data-pipeline ownership and ML/OR tooling is the core; Azure, Terraform/Bicep, CI/CD and observability are real, but this is data-platform engineering more than infrastructure",
+      "url": "https://www.eluta.ca/cache?u=25412523:jobs.lever.co",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "DevOps Engineer II",
+      "company": "commonsku",
+      "location": "Remote — Canada (Toronto-listed)",
+      "salary": "CAD $110,000–$130,000/yr",
+      "gap": "Intermediate scope (3+ yrs) reporting alongside a Senior DevOps; AWS, Kubernetes, Terraform stack",
+      "url": "https://www.eluta.ca/cache?u=25419015:commonsku.na.teamtailor.com",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Software Engineer, Infrastructure Platform",
+      "company": "Degree, Inc.",
+      "location": "Remote — British Columbia or Ontario residents only (eligible)",
+      "salary": "CAD $123,750–$165,000",
+      "gap": "\"Deep AWS experience in production\" plus hands-on Kubernetes — AWS depth is hard-gated",
+      "url": "https://www.eluta.ca/search?q=Senior%20Infrastructure%20Engineer&filter-remote_jobs=only",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Cloud Engineer",
+      "company": "Think Research",
+      "location": "Remote — Toronto-listed",
+      "salary": "$130,000–$150,000",
+      "gap": "Requires 10+ yrs HA architecture, 5+ yrs Kubernetes, 3+ yrs database administration, GCP/AWS/Azure — Kubernetes and DBA depth gate",
+      "url": "https://www.eluta.ca/search?q=Cloud%20Engineer&filter-remote_jobs=only",
+      "status": ""
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Staff Software Engineer – Electricity Markets",
+      "company": "GE Vernova",
+      "location": "Remote",
+      "salary": "CAD $126,418–$189,627",
+      "gap": "Opened in full: technical lead for an electricity Market Management System (power systems, optimization, customer design work) — DevOps/CI-CD appears once; not an operations or deployment role",
+      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+      "status": "Skipped — out of scope (market-systems lead)"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Software Consulting Engineer – T&D",
+      "company": "GE Vernova",
+      "location": "Remote",
+      "salary": "Not stated",
+      "gap": "Opened in full: grid/T&D software consulting — \"deploy\" appears as customer-solution delivery, no infrastructure or reliability scope",
+      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+      "status": "Skipped — out of scope (T&D software consulting)"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Staff Engineer (Platform)",
+      "company": "Later Media",
+      "location": "Remote — Canada",
+      "salary": "CAD $175,000–$250,000",
+      "gap": "Backend service development in C#/TypeScript with some Kubernetes/AWS; software-engineering centred",
+      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Staff Software Development Engineer",
+      "company": "Wagepoint",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Full-stack staff engineer with cloud infrastructure and incident response as one of several duties",
+      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Site Reliability Consultant",
+      "company": "Pythian Services",
+      "location": "Ottawa-area, remote/hybrid not stated",
+      "salary": "Not stated",
+      "gap": "Hands-on Kubernetes, Istio and Linux operations across AWS/GCP — Kubernetes administration depth gate",
+      "url": "https://www.eluta.ca/search?q=Site%20Reliability%20Engineer&l=Ottawa%2C%20ON",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineering Tools Specialist",
+      "company": "Mannarino Systems & Software",
+      "location": "Saint-Laurent (Montréal), QC — hybrid/remote tag",
+      "salary": "Not stated",
+      "gap": "Administers Jenkins/GitLab/Bitbucket/Artifactory with end-user support duties — tools-support scope",
+      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&l=Montreal%2C%20QC",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Cloud Security Engineer (Azure)",
+      "company": "Smile Digital Health",
+      "location": "Remote — Canada",
+      "salary": "CAD $130,000–$140,000",
+      "gap": "Security-architecture centred (Defender for Cloud, Prisma CSPM) rather than delivery or reliability; Marc already has an Applied Smile Azure platform role",
+      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+      "status": ""
     }
   ],
   "could_not_validate": [
@@ -181,15 +335,24 @@
       "url": "https://www.eluta.ca/jobs-at-wind-river"
     },
     {
-      "text": "JLL — Senior Cloud Engineer (CAD $140,000–$170,000, Toronto, remote tag) and Think Research — Senior Cloud Engineer (Toronto, remote tag): not validated this run.",
+      "text": "JLL — Senior Cloud Engineer (CAD $140–170k, Toronto, remote tag): Eluta’s cached copy is an empty shell and no employer page was found.",
       "url": "https://www.eluta.ca/search?q=Cloud%20Engineer&filter-remote_jobs=only"
     },
     {
-      "text": "Montréal (Eluta, not opened): Brain Finance DevOps Engineer, Unity DevOps Engineer ($83.3–124.9k), Mannarino Senior DevOps Engineering Tools Specialist (Saint-Laurent), Morgan Stanley RPE – System Reliability Engineering Specialist (Hybrid), Deloitte Data Platform DevOps Senior Consultant ($80–138k). Work arrangement and requirements were not visible from the listing.",
-      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&l=Montreal%2C%20QC"
+      "text": "Wind River (Kanata hybrid, $95–120k), Entrust, Portage CyberTech, DXC, Dominion Dynamics: Eluta cache pages are empty shells; Wind River and DXC/Dominion were validated through aggregators (Wind River hybrid, unscored; DXC on-site + clearance; Dominion on-site).",
+      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&l=Ottawa%2C%20ON"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 full-read pass (Marc: open more, do not filter by company)",
+      "items": [
+        "Re-read every Eluta result instead of triaging on title/company. Method: each result’s cached copy (<code>/cache?u=&lt;id&gt;</code>) was fetched, giving full text for 69 remote results and 33 Ottawa/Montréal city results (cache pages for about 8 city results were empty JavaScript shells). Roles were scored on the full description regardless of whether the employer already appears in <code>applications.md</code>; duplicates were matched on employer + role only.",
+        "<b>Five new roles filed:</b> Deloitte Data Platform DevOps Senior Consultant (7), Brain Finance DevOps Engineer (6), Barracuda Cloud SRE II (6), GoMaterials Senior Software Engineer – Data &amp; ML Platform (5), commonsku DevOps Engineer II (5).",
+        "<b>GE Vernova checked on Marc’s hypothesis</b> (a domain-software employer may still need DevOps/SRE): both postings opened in full — the Electricity Markets role is a market-management-system technical lead and the T&amp;D role is grid software consulting; neither has real deployment or reliability scope, so both scored 0.",
+        "Cached copies are Eluta snapshots (indexed dates range from June to October 5) — freshness is not confirmed for older ones."
+      ]
+    },
     {
       "heading": "October 5 city-pass retry (after Marc cleared Eluta’s human check)",
       "items": [
