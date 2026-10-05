@@ -92,6 +92,17 @@ Use only `SRE`, `Platform`, or `DevOps`. Prefer the employer's canonical URL; ot
 
 After the table, list `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/eluta.json` during discovery.
 
+## Retrieval methods that work (verified 2026-10-05)
+
+- **Full text without a click:** each result block's `onclick` contains `enavOpenNew('cache?u=<id>:<domain>')`. Fetch `https://www.eluta.ca/cache?u=<id>:<domain>` directly — it returns the employer page text as Eluta indexed it, with the index date in the banner. Parse the id from the result block's HTML; the visible title link is only `#!`. Some cached pages are empty JavaScript shells (Workday, some ATS pages); for those, search the employer's own careers page for the exact title and report the result as `Could not validate` if nothing current is found.
+- **City passes:** `https://www.eluta.ca/search?q=<query>&l=<City>%2C%20<PR>` works when typed as `Montreal, QC`, `Ottawa, ON`, `Kingston, ON`, `Brockville, ON`, `Cornwall, ON` (no Remote filter). A zero-result city is only genuine if the page rendered normally with a title like `<query> jobs in <City>`; a `User Verification` page means Eluta rate-limited the session.
+- **Verification page:** if Eluta shows "are you a human?", stop; do not click through. Ask Marc to clear it in his own browser, then continue with page loads rather than rapid repeated fetches (several seconds apart).
+- **Do not filter by employer.** About 40% of results come from employers already in `applications.md`; judge each on its role.
+
+## Read in full
+
+Read and follow [the shared read-in-full policy](../_shared/read-in-full.md): open and score every in-family or ambiguous result from its full description, deduplicate by posting identity (never by employer), do not skip a role on its title alone, and list anything unopened under `Could not validate` with the reason. Where this skill sets a per-query review cap, that cap limits how many results are *collected* per page, not how many collected in-family results get read — when the policy and a cap conflict, read the posting.
+
 ## Automatic filing
 
 Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.

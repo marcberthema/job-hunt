@@ -129,6 +129,17 @@ Requirements:
 
 After the table, report `Could not validate` and material search limitations, if any. End by asking which postings the user wants to investigate or add to `applications.md`. Do not draft cover letters or write files other than `reports/data/builtin.json` during this discovery run.
 
+## Retrieval methods that work (verified 2026-10-05)
+
+- **Direct HTTP works** for result pages; no browser is required. Fully Remote role queries: `https://builtin.com/jobs/remote/dev-ops?search=<term>` returns up to 25 postings.
+- **City and hub passes:** `https://builtin.com/jobs/hybrid?search=<title>&city=<City>&state=<Province>&country=CAN` returns hybrid postings for that city (Ottawa returned real results); the equivalent `/jobs/remote?...&city=...` route does **not** change the Fully Remote inventory, so hub passes largely re-surface the same national remote set — record that rather than counting them as new inventory.
+- **Full posting:** each `https://builtin.com/job/<slug>/<id>` page includes the role summary, location/work model, salary, and the full description in the static HTML. Job IDs rise with time, so IDs higher than the previous run's newest are new postings.
+- **Read every in-family posting** from the page text; many carry a "Hiring Remotely in Canada" or city tag that is only confirmed by the description.
+
+## Read in full
+
+Read and follow [the shared read-in-full policy](../_shared/read-in-full.md): open and score every in-family or ambiguous result from its full description, deduplicate by posting identity (never by employer), do not skip a role on its title alone, and list anything unopened under `Could not validate` with the reason. Where this skill sets a per-query review cap, that cap limits how many results are *collected* per page, not how many collected in-family results get read — when the policy and a cap conflict, read the posting.
+
 ## Automatic filing
 
 Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.

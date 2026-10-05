@@ -91,6 +91,10 @@ Use only `SRE`, `Platform`, or `DevOps` for Family. Link directly to the We Work
 
 Put every region-gated entry in the same table as a `score: -1` row; never repeat it in a footer list. After the table, list only `Could not validate` entries and material search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft application material or write files other than `reports/data/wwr.json` during discovery.
 
+## Read in full
+
+Read and follow [the shared read-in-full policy](../_shared/read-in-full.md): open and score every in-family or ambiguous result from its full description, deduplicate by posting identity (never by employer), do not skip a role on its title alone, and list anything unopened under `Could not validate` with the reason. Where this skill sets a per-query review cap, that cap limits how many results are *collected* per page, not how many collected in-family results get read — when the policy and a cap conflict, read the posting.
+
 ## Automatic filing
 
 Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.

@@ -89,6 +89,19 @@ Use only `SRE`, `Platform`, or `DevOps`. Link directly to the accessible full po
 
 After the table, list `Could not validate` entries and material search limitations. Explicitly distinguish employer-validated roles from LinkedIn pages that were inaccessible. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/linkedin.json` during discovery.
 
+## Retrieval methods that work (verified 2026-10-05)
+
+- **Listing discovery:** the public listing endpoint `https://www.linkedin.com/jobs-guest/jobs/api/seeMoreJobPostings/search?keywords=<q>&location=<loc>&f_TPR=r259200&start=0` (use `r604800` for 7 days) returns up to 10 cards per request as HTML fragments. Each card carries the job ID (`jobPosting:<id>`), title, company, and location. **It ignores the Remote workplace filter**, so a "remote" search returns on-site and hybrid roles too.
+- **Full description:** `https://www.linkedin.com/jobs-guest/jobs/api/jobPosting/<id>` returns the description text for most postings (some are truncated; when the duties section is missing, open the logged-in job page or the employer's own posting).
+- **Workplace label:** the label (`Remote` / `Hybrid` / `On-site`) appears only on the job page itself (`/jobs/view/<id>/`, next to the "N days ago" line). Read it from the job page for every candidate that has meaningful DevOps/SRE/platform content; do not trust the search filter.
+- **Reading volume:** collect all passes first, then fetch descriptions for every remaining result, then read labels for those with real DevOps/SRE/infrastructure content, then read duties and requirements in detail for the eligible ones. Space requests a second or more apart and keep the whole run sequential.
+- **Employer postings:** when the page says "responses managed off LinkedIn," search for the exact title and company on the employer's careers or ATS page (for example a Jobvite/Greenhouse listing) and use that as the canonical URL.
+- **Read-only:** none of this signs in, applies, saves, follows, messages, or changes account state.
+
+## Read in full
+
+Read and follow [the shared read-in-full policy](../_shared/read-in-full.md): open and score every in-family or ambiguous result from its full description, deduplicate by posting identity (never by employer), do not skip a role on its title alone, and list anything unopened under `Could not validate` with the reason. Where this skill sets a per-query review cap, that cap limits how many results are *collected* per page, not how many collected in-family results get read — when the policy and a cap conflict, read the posting.
+
 ## Automatic filing
 
 Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.

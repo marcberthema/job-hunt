@@ -70,6 +70,14 @@ Use only `SRE`, `Platform`, or `DevOps`. Link directly to the accessible full po
 
 After the table, list `Could not validate` entries and search limitations. Ask which roles the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/indeed.json` during discovery.
 
+## Read in full
+
+Read and follow [the shared read-in-full policy](../_shared/read-in-full.md): open and score every in-family or ambiguous result from its full description, deduplicate by posting identity (never by employer), do not skip a role on its title alone, and list anything unopened under `Could not validate` with the reason. Where this skill sets a per-query review cap, that cap limits how many results are *collected* per page, not how many collected in-family results get read — when the policy and a cap conflict, read the posting.
+
+## Pacing
+
+Indeed rate-limits quickly (HTTP 429 after a few dozen rapid requests). Space page loads or fetches at least 7 seconds apart, run sequentially, and stop at the first 429 — mark the remaining passes `Incomplete` and resume in a later session; never loop retries or work around the limit. Indeed result pages expose each job's ID in an anchor's `data-jk` attribute; the full posting is `https://ca.indeed.com/viewjob?jk=<id>`.
+
 ## Automatic filing
 
 Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.

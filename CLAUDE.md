@@ -177,5 +177,6 @@ The site is a pure HTML/CSS personal consulting site with no build step. Deploy 
 - **`profile.md` is always read first** by any skill before doing anything
 - **One row per posting** in `applications.md` — never a file per job
 - **No API tokens** — everything runs within your Claude subscription via Claude Code, or the equivalent on ChatGPT/Codex
+- **Read postings in full, never filter by company** — every `check-*` skill follows `.agents/skills/_shared/read-in-full.md`: open and score every in-family or ambiguous result from its full description, deduplicate by posting (URL/requisition, then employer + exact role), don't skip on title alone, and report anything unopened with the reason. Same rules apply from Claude Code or ChatGPT/Codex
 - **Manual approval gate** — no skill ever submits an application without your explicit confirmation; only the `review` skill sets `Status: Applied`, and only once you confirm submission
 - **Git tracks everything** — commit after each `check-*` run and after each review session

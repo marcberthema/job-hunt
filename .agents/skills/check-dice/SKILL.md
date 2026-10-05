@@ -117,6 +117,10 @@ Clearance, authorization, and location exclusions are `score: -1` rows in this t
 
 Then list Could not validate postings and material limitations. Ask which eligible postings the user wants investigated or added to `applications.md`. Do not draft applications or write files other than `reports/data/dice.json` during discovery.
 
+## Read in full
+
+Read and follow [the shared read-in-full policy](../_shared/read-in-full.md): open and score every in-family or ambiguous result from its full description, deduplicate by posting identity (never by employer), do not skip a role on its title alone, and list anything unopened under `Could not validate` with the reason. Where this skill sets a per-query review cap, that cap limits how many results are *collected* per page, not how many collected in-family results get read — when the policy and a cap conflict, read the posting.
+
 ## Automatic filing
 
 Read and follow [the shared automatic-filing policy](../_shared/automatic-filing.md). This is the only routine `applications.md` mutation authorized during discovery.
