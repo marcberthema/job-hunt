@@ -4,7 +4,7 @@
   "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 5, 2026 — all 8 queries completed (counts 23, 37, 30, 26, 34, 19, 54, 54). 1 new posting validated and auto-filed: Senior IT Application Specialist, DevOps & AI Operations (permanent, Canada-wide listing, Oakville hybrid if local; score 7). Everything else is unchanged from October 1.",
+  "latest_update": "Re-read October 5, 2026 — the 20-card page limit was lifted by running 13 queries (the 8 defaults at 20 cards each plus Azure, Kubernetes, Terraform, Cloud, Platform, SRE, DevSecOps variants); 44 unique postings were collected and every detail page read in full. Nothing new is eligible: the one new Azure/Bicep platform role is an expired June–July one-month contract.",
   "stats": [
     {
       "value": 8,
@@ -28,6 +28,13 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 full-read pass",
+      "items": [
+        "S.i. Systems shows only 20 cards per query regardless of the result count (55 for Infrastructure Engineer), and the page has no working pager, so the first run’s ‘first 8 per query’ left most of each query unread. This pass collected up to 20 cards for each of 13 queries (DevOps Engineer, Site Reliability/SRE, Platform, Cloud, Infrastructure, Azure, Kubernetes, Terraform, DevSecOps…), de-duplicated to 44 postings and fetched every detail page (<code>/jobs/&lt;slug&gt;/&lt;id&gt;/</code>, which returns the full description to a normal browser fetch). New finds were all non-qualifying: a Cloud Platform Engineer (Azure DevOps + Bicep IaC, remote, 10+ years) is a one-month contract that ended July 31 (listing stale); a Kubernetes Engineer in Toronto (max $93/hr, clearance flag) is outside the reachable cities.",
+        "Carry-over roles (Senior IT Application Specialist – filed; Platform Engineer 58102; SRE 6+; bare-metal Infrastructure Engineer; AWS Cloud Engineer; DevOps Director with SECRET; Azure/Databricks Oshawa; Crown Corp DevSecOps – Applied) were re-read and are unchanged."
+      ]
+    },
     {
       "heading": "October 5 query audit",
       "items": [
@@ -250,6 +257,28 @@
       "gap": "24x7 rotating on-call and expert Linux/SAML/LDAPS expectations; GCP/GKE is only a nice-to-have; remote eligibility to confirm",
       "url": "https://www.sisystems.com/jobs/senior-it-application-specialist-devops-ai-operations-saas-client/330032003700360031003800/",
       "status": "New"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Cloud Platform Engineer (Azure, 10+ years) — IaC and CI/CD with Azure DevOps and Bicep",
+      "company": "S.i. Systems client (technology consulting)",
+      "location": "Remote — Canada-wide listing; contract June 29–July 31, 2026",
+      "salary": "Hourly negotiable",
+      "gap": "Strong fit on skills (Azure, Bicep, Azure DevOps) but the engagement window has already ended — the listing is stale",
+      "url": "https://www.sisystems.com/jobs/cloud-platform-engineer-to-design-and-maintain-iac-and-ci-cd-pipelines-using-azure-devops-and-bicep-rq02360/330032003300300031003100/",
+      "status": "Expired — one-month contract ended 2026-07-31"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Kubernetes Engineer — cloud-native design and implementation",
+      "company": "S.i. Systems client",
+      "location": "Toronto, ON",
+      "salary": "Hourly up to $93",
+      "gap": "Toronto is outside the reachable cities; clearance flag in the posting",
+      "url": "https://www.sisystems.com/search-it-jobs/?expertise=3&q=Kubernetes",
+      "status": "Skipped — Toronto"
     }
   ],
   "could_not_validate": [
