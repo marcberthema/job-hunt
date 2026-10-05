@@ -4,7 +4,7 @@
   "eyebrow": "Robert Half Technology · Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Robert Half Technology (Canada) inventory searched across six target-family keywords, scoped to Contract / Temporary to Hire only. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 5, 2026 — all 6 keyword pages rendered (DevOps 7, Platform 5, SRE 2, Cloud 3, DevSecOps 6, FDE 4 results; unscoped, contract filter not applied to a paginated UI). 1 auto-filed: Azure Cloud Engineer (Senior Azure Infrastructure Consultant), part-time remote contract through Dec 2026 (score 6).",
+  "latest_update": "Re-read October 5, 2026 — 17 keyword/skill searches (the six defaults plus infrastructure, systems, cloud architect, Azure, Kubernetes, Terraform, SRE, DevOps, Linux, automation and release) collected 43 unique postings across up to three pages each; the 34 whose text loaded were read in full. Only the Azure Cloud Engineer part-time contract (filed earlier) is in the target families.",
   "stats": [
     {
       "value": 6,
@@ -32,6 +32,12 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 full-read pass",
+      "items": [
+        "Searched 17 keywords/skills on the path-based search (up to three pages each), de-duplicated to 43 postings, fetched each detail page and scored the description text. Highest infrastructure/cloud content: Acheson AB Azure Cloud Engineer (already filed), Calgary Systems Administrator, Georgetown ON IT Architect (outside the reachable cities) and a Toronto laptop-deployment technician role; the rest are controllers, buyers, project managers, developers and network-security administrators. Nine detail pages did not load text and are unscored (all non-IT titles)."
+      ]
+    },
     {
       "heading": "October 5 query audit",
       "items": [
