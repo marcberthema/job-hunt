@@ -1,10 +1,10 @@
 {
   "board": "BuiltIn",
-  "run_date": "2026-09-24",
+  "run_date": "2026-10-05",
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 24, 2026 — all nine Fully Remote title passes completed in the rendered browser. Two new Canada-eligible postings were fully validated and auto-filed: Vena Solutions Senior Site Reliability Developer (8) and MLabs Site Reliability Engineer (7). Samsara was excluded as US-resident-only; GitLab and Proofpoint location eligibility could not be confirmed. Built In's country/city selector still resolves several requested locations incorrectly, so the geography rotation is incomplete and explicitly reported.",
+  "latest_update": "Rechecked October 5, 2026 — all 9 Fully Remote role queries ran by direct HTTP (156 unique postings, 37 new since last run, 12 opened). 5 auto-filed: Raydar SRE (7), Bounteous Senior DevOps contract (7), Clario Senior DevOps (6), Kinaxis Cloud Engineer II SRE (5), Practice Better Intermediate DevOps (5). Hub and city passes not run — overall run incomplete.",
   "stats": [
     {
       "value": 9,
@@ -438,6 +438,92 @@
       "gap": "Ineligible — \"Must be a U.S. Person\" under export-control law; also a part-time student/recent-grad role. Repeat exclusion (job_sources.md, 2026-09-08).",
       "url": "https://builtin.com/job/it-devsecops-engineer-contractor/9462402",
       "status": "Skipped — US-person export-control requirement"
+    },
+    {
+      "score": 7,
+      "family": "Platform",
+      "title": "Site Reliability Engineer",
+      "company": "Raydar (confidential Series B conversational-AI client)",
+      "location": "Remote — Canada or US, US time zones",
+      "salary": "USD $160,000–$210,000 (Canadian bands lower, not stated)",
+      "gap": "TypeScript/Node expectation and a software-engineer-style technical screen; Kubernetes operating depth",
+      "url": "https://builtin.com/job/site-reliability-engineer/11433395",
+      "status": "New"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer (Contract - Canada/Mexico)",
+      "company": "Bounteous",
+      "location": "Remote — Canada",
+      "salary": "Not stated (contract)",
+      "gap": "Rate not stated; Kubernetes depth beyond Marc’s hands-on record; cloud accepted as AWS, Azure or GCP",
+      "url": "https://builtin.com/job/senior-devops-engineer/11466766",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Clario (Thermo Fisher Scientific)",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "AWS is the primary cloud (Azure secondary) and deep Kubernetes is expected; the ask for large-scale CI/CD platforms is a direct Énergir match",
+      "url": "https://builtin.com/job/senior-devops-engineer/11379158",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "SRE",
+      "title": "Cloud Engineer II, Site Reliability Engineering",
+      "company": "Kinaxis",
+      "location": "Ottawa/Toronto hybrid; other Canadian locations remote",
+      "salary": "Not stated",
+      "gap": "Mid-level scope (2–4 yrs) below Marc’s seniority, though the stack (GitHub Actions, Terraform, ArgoCD, Ansible) fits closely",
+      "url": "https://builtin.com/job/cloud-engineer-2-site-reliability-engineering/11487792",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "Intermediate DevOps Engineer",
+      "company": "Practice Better",
+      "location": "Remote — Canada-based candidates only",
+      "salary": "CAD $110,000–$120,000/yr",
+      "gap": "Intermediate level (4–6 yrs); AWS named as the primary cloud; .NET/Rails/TypeScript stack",
+      "url": "https://builtin.com/job/intermediate-devops-engineer/11379471",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Modern Campus",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "AWS-primary with ownership of EKS/ECS Kubernetes platforms and on-call — hard-gated on AWS/Kubernetes depth",
+      "url": "https://builtin.com/job/senior-devops-engineer/11490066"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Site Reliability Engineer",
+      "company": "Rentsync",
+      "location": "In-office or remote (Canada) — eligibility not fully stated",
+      "salary": "CAD $80,000–$110,000/yr",
+      "gap": "Incident-response SRE on multi-cluster AWS/EKS; mid-level pay band that tops out at the remote floor",
+      "url": "https://builtin.com/job/site-reliability-engineer/11422899"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Wycliffe Bible Translators USA",
+      "location": "In-office or remote",
+      "salary": "Not stated",
+      "gap": "Entry-level multi-cloud support role at a US non-profit, not the senior reliability scope",
+      "url": "https://builtin.com/job/devops-engineer/11447621",
+      "status": "Skipped — out of scope (entry level)"
     }
   ],
   "could_not_validate": [
@@ -459,6 +545,12 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 run",
+      "items": [
+        "Direct HTTP (no browser needed) against builtin.com/jobs/remote/dev-ops?search=<term>, HTTP 200 for all nine. First-page counts: Site Reliability Engineer 25 · Reliability Engineer 25 · Platform Engineer 25 · Infrastructure Engineer 25 · Cloud Engineer 25 · DevOps Engineer 25 · DevSecOps Engineer 3 · Azure DevOps Engineer 0 (Zero results) · Forward Deployed Engineer 25. 156 unique postings; 37 are newer than the previous run’s newest ID (11326830) and were triaged by title, 12 opened in full. <b>Not run this session:</b> the 11 remote-hub passes and 4 reachable-city hybrid passes (BuiltIn’s location filter is unreliable without a rendered browser) — the run is Incomplete on geography."
+      ]
+    },
     {
       "heading": "September 24 rendered-browser pass audit",
       "items": [

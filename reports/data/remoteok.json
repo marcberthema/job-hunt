@@ -1,10 +1,10 @@
 {
   "board": "RemoteOK",
-  "run_date": "2026-09-22",
+  "run_date": "2026-10-05",
   "eyebrow": "RemoteOK · read-only API search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked September 22, 2026 — inventory unchanged since September 21: same 99 API objects, same 3 plausible target-family candidates (Harper, KPI Solutions, Arango), same dispositions. No eligible target-family postings this run, 0 filed.",
+  "latest_update": "Rechecked October 5, 2026 — direct API (99 objects) unchanged since 2026-09-22: same 3 plausible titles (KPI Software Deployment Engineer, Arango Golang Kubernetes Engineer, Tessera Oracle Fusion Cloud Lead), none eligible. 0 new, 0 filed.",
   "stats": [
     {
       "value": 99,
@@ -44,6 +44,12 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 run",
+      "items": [
+        "Direct curl of remoteok.com/api returned HTTP 200 with 99 job objects; inventory has not turned over (newest relevant posting dated 2026-09-19). KPI Solutions remains out of scope (warehouse-automation role), Arango remains unvalidated (Premium-gated requirements), Tessera Labs is an Oracle Fusion ERP lead (out of scope). Fourth consecutive run with zero target-family turnover."
+      ]
+    },
     {
       "heading": "Could not validate",
       "items": [
@@ -85,5 +91,6 @@
       "url": "https://remoteok.com/remote-jobs/remote-software-deployment-engineer-kpi-solutions-1137408",
       "status": "Skipped"
     }
-  ]
+  ],
+  "could_not_validate": []
 }

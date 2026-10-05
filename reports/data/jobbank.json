@@ -1,10 +1,10 @@
 {
   "board": "Job Bank",
-  "run_date": "2026-09-22",
+  "run_date": "2026-10-05",
   "eyebrow": "Job Bank Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default rotation validated against full Job Bank detail pages. Scores measure technical and domain fit only; excluded-but-reviewed postings are scored 0 (out of scope) or -1 (ineligible) rows rather than a separate list.",
-  "latest_update": "Rechecked September 22, 2026 — no eligible target-family postings this run; 5 known postings persisted (still -1 Ineligible), 2 new postings found (1 Ineligible on geography, 1 Out of scope on domain).",
+  "latest_update": "Rechecked October 5, 2026 — all 3 default queries fetched by direct HTTP (DevOps Engineer 1, Cloud Engineer 4, Site Reliability Engineer 0). New: 49 Solutions OpenStack Cloud Engineer (SSC) and Farley Group mechanical 'DevOps Engineer' scored out; 0 eligible, 0 filed.",
   "stats": [
     {
       "value": 3,
@@ -116,10 +116,49 @@
       "gap": "London is outside the reachable-city range — hard geography gate. Also well below the $100k on-site/hybrid FTE salary floor, and scoped junior (2–4 years experience) regardless.",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50293995",
       "status": "Skipped"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "OpenStack Cloud Engineer Consultant (Shared Services Canada)",
+      "company": "49 Solutions",
+      "location": "Ottawa, ON — SSC engagement, work arrangement not stated",
+      "salary": "$150,000–$200,000/yr as posted (likely a day-rate mis-entry)",
+      "gap": "Hands-on OpenStack at scale is the whole job — no OpenStack background, and a federal-contract placement that likely needs a security clearance",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50371867",
+      "status": "Skipped — OpenStack at scale (skill gate)"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "DevOps Engineer (listed) — Engineering Specialist, Project Design",
+      "company": "The Farley Group",
+      "location": "Puslinch, ON — hybrid, travel required",
+      "salary": "$65,000–$90,000/yr",
+      "gap": "Mechanical/structural design engineer for air-supported structures — the DevOps title is an occupation-code label only",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50410160",
+      "status": "Skipped — out of scope (mechanical engineering)"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Cloud Engineer",
+      "company": "Source Code",
+      "location": "Toronto, ON",
+      "salary": "$90.37/hr",
+      "gap": "Same Toronto on-site client as the two Source Code postings already skipped; Toronto is outside the reachable cities",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50419706",
+      "status": "Skipped — Toronto on-site (repeat client)"
     }
   ],
   "could_not_validate": [],
   "notes_sections": [
+    {
+      "heading": "October 5 query audit",
+      "items": [
+        "Direct HTTP 200 for all three Job Bank result pages (locationstring=Remote). DevOps Engineer: 1 result (50410160, Farley Group, Puslinch) · Cloud Engineer: 4 (50371867 49 Solutions Ottawa; 50419706, 50298477, 50290511 Source Code Toronto — the latter two already Skipped) · Site Reliability Engineer: Zero results (no postings in the page payload). Reviewed all results; no CAPTCHA."
+      ]
+    },
     {
       "heading": "Run notes",
       "items": [

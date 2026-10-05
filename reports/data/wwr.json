@@ -1,10 +1,10 @@
 {
   "board": "We Work Remotely",
-  "run_date": "2026-09-22",
+  "run_date": "2026-10-05",
   "eyebrow": "We Work Remotely · region-gated",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Six-keyword rotation against We Work Remotely, region eligibility confirmed from each posting's own detail page (the site's generic 'Anywhere in the World' tag is not trustworthy on its own).",
-  "latest_update": "Checked September 22, 2026 — all 6 mandatory queries run (2 zero-result, 4 with results); every result was either a known/duplicate posting already tracked from the 2026-09-21 run or clearly out of the SRE/Platform/DevOps family by title. Zero new eligible postings, zero new filings.",
+  "latest_update": "Rechecked October 5, 2026 — all 6 queries rendered (DevOps 8, Platform 6, SRE 0, Cloud 4, DevSecOps 0, FDE 0 results). 3 new postings scored, all excluded; 0 eligible new, 0 filed.",
   "stats": [
     {
       "value": 6,
@@ -112,10 +112,49 @@
       "gap": "Application-layer GenAI/customer-solutions engineering role, not infrastructure or DevOps work — title only nominally matches the Forward Deployed Engineer search term.",
       "url": "https://weworkremotely.com/remote-jobs/databricks-ai-engineer-fde-forward-deployed-engineer",
       "status": "Skipped"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer (Azure)",
+      "company": "Proxify AB",
+      "location": "Remote — CET timezone ±3 hours only",
+      "salary": "Not stated",
+      "gap": "Posting states candidates outside the CET ±3h time zone cannot be considered — excludes Ontario",
+      "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-devops-engineer-azure-8",
+      "status": "Skipped — region: CET ±3h only"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Engineer (Remote)",
+      "company": "thehivecareers.co",
+      "location": "Barbados",
+      "salary": "Not stated",
+      "gap": "Posting lists Location: Barbados — not open to a Canadian-based worker",
+      "url": "https://weworkremotely.com/remote-jobs/thehivecareers-co-devops-engineer-remote",
+      "status": "Skipped — region: Barbados"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Staff Machine Learning Platform Engineer",
+      "company": "Faire",
+      "location": "Kitchener-Waterloo, ON / remote",
+      "salary": "Not stated",
+      "gap": "ML-platform engineering for model infrastructure, not shared infrastructure or reliability; judged from listing, not opened",
+      "url": "https://weworkremotely.com/remote-jobs/search?term=DevOps+Engineer",
+      "status": "Skipped — out of scope (ML platform)"
     }
   ],
   "could_not_validate": [],
   "notes_sections": [
+    {
+      "heading": "October 5 query audit",
+      "items": [
+        "Rendered in-browser, first page per query: DevOps Engineer 8 · Platform Engineer 6 · Site Reliability Engineer Zero results · Cloud Engineer 4 · DevSecOps Engineer Zero results · Forward Deployed Engineer Zero results. Real results (not the generic Anywhere tag) were read per posting. JFrog Senior Professional Services DevOps remains Applied; Proxify Senior Platform Engineer remains New. No CAPTCHA."
+      ]
+    },
     {
       "heading": "Per-query audit — 2026-09-22",
       "items": [
@@ -131,4 +170,4 @@
     }
   ],
   "method": "Bare-title rotation per the check-wwr skill's six mandatory queries (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer), each searched independently via weworkremotely.com/remote-jobs/search?term=. Eligibility gated on each posting's own detail-page location line, never the decorative \"Anywhere in the World\" tag. This run found no new inventory since 2026-09-21 — the same 7 in-family postings resurfaced under the same URLs, already reflected in applications.md and this report. Repository notes (job_sources.md) continue to show single-broad-term searches (\"DevOps\", \"Cloud\", \"Platform\") surfacing more volume historically than this skill's mandated bare-title rotation; the bare-title rotation was used here per the skill's written mandatory-query list."
-  }
+}
