@@ -4,7 +4,7 @@
   "eyebrow": "Braintrust · contractor marketplace, read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Skill-chip search on the four confirmed IDs, plus a title-skim of the unfiltered Engineering feed for Platform Engineer / Forward Deployed Engineer (no confirmed chip exists for either). Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 5, 2026 — all 6 queries rendered; the four skill-chip queries (DevOps 1338, SRE 8473, Cloud 10001, DevSecOps 6831) returned zero jobs; the unfiltered Engineering/IT listing showed 229 openings and 20 cards were skimmed for Platform and FDE. Nothing eligible; 0 filed.",
+  "latest_update": "Re-read October 5, 2026 — the unfiltered Engineering/IT listing shows 229 openings; pages 1–2 (about 27 cards) were read and none is a Canada-eligible DevOps/SRE/platform contract. Pagination beyond page 2 could not be driven reliably, so roughly 200 openings were not read.",
   "stats": [
     {
       "value": 6,
@@ -75,6 +75,12 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 5 full-read pass — partial",
+      "items": [
+        "Read the card text for the first 27 of 229 openings (Dual Logic FDE – LATAM only; GMI ConnectWise Cloud Specialist – India/Philippines/South America; TaskRabbit Developer Productivity – already Applied at $60–70/hr; the rest are app, AI/ML and frontend contracts). Braintrust’s skill-chip filters (DevOps, SRE, Cloud, DevSecOps) return zero jobs, and its pager buttons did not respond to scripted clicks beyond page 2, so the remaining 10 pages were <b>not read</b>. The marketplace is dominated by US/LATAM-restricted freelance rates below Marc’s floor, so the expected yield is low, but this board is Incomplete under the read-in-full rule."
+      ]
+    },
+    {
       "heading": "October 5 query audit",
       "items": [
         "DevOps Engineer (skills=1338): Zero results · Site Reliability Engineer (skills=8473): Zero results · Cloud Engineer (skills=10001): Zero results · DevSecOps Engineer (skills=6831): Zero results · Platform Engineer and Forward Deployed Engineer: title-skim of the first 20 cards of the unfiltered role=5,16 listing (229 openings). Located relevant cards: Dual Logic FDE (LATAM only), GMI ConnectWise Cloud Specialist (India/Philippines/South America), TaskRabbit Sr Software Engineer – Developer Productivity (US/Canada/Mexico, $60–70/hr). No CAPTCHA."
@@ -100,5 +106,10 @@
     }
   ],
   "method": "Ran all four confirmed skill-chip searches (DevOps Engineer 1338, Site Reliability Engineer 8473, Cloud Engineer/Cloud Engineering 10001, DevSecOps Engineer 6831) as separate navigations per the skill's no-AND-combining rule, plus the unfiltered role=5,16 Engineering+IT feed as the required fallback for Platform Engineer and Forward Deployed Engineer (no confirmed skill chip for either). All 6 mandatory queries complete — 4 zero-result, 2 (Platform/FDE fallback) reviewed via the same title-skim of the first ~20 unfiltered results. No blocking, CAPTCHA, or login wall encountered. Auto-filing: 0 new rows — the only 2 topically relevant postings already have applications.md rows (1 Applied, 1 Skipped/Ineligible), preserved as-is per policy.",
-  "could_not_validate": []
+  "could_not_validate": [
+    {
+      "text": "Braintrust pages 3–12 of the unfiltered Engineering + IT & System Admin listing (about 200 openings) were not read; the pager did not respond to scripted clicks.",
+      "url": "https://app.usebraintrust.com/jobs/?role=5,16"
+    }
+  ]
 }
