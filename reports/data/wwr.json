@@ -4,7 +4,7 @@
   "eyebrow": "We Work Remotely · region-gated",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Six-keyword rotation against We Work Remotely, region eligibility confirmed from each posting's own detail page (the site's generic 'Anywhere in the World' tag is not trustworthy on its own).",
-  "latest_update": "Rechecked October 5, 2026 — all 6 queries rendered (DevOps 8, Platform 6, SRE 0, Cloud 4, DevSecOps 0, FDE 0 results). 3 new postings scored, all excluded; 0 eligible new, 0 filed.",
+  "latest_update": "Re-read October 5, 2026 — nine queries (the six defaults plus Infrastructure Engineer, SRE and DevOps) collected 28 unique postings, and all 28 were opened and read in full. One strong lead — EPAM Lead Cloud Engineer (Azure/AKS internal developer platform) — carries only WWR’s generic ‘Anywhere in the World’ tag and EPAM’s own listings show the equivalent role as Poland-remote, so Canada eligibility is unconfirmed. 0 filed.",
   "stats": [
     {
       "value": 6,
@@ -145,10 +145,44 @@
       "gap": "ML-platform engineering for model infrastructure, not shared infrastructure or reliability; judged from listing, not opened",
       "url": "https://weworkremotely.com/remote-jobs/search?term=DevOps+Engineer",
       "status": "Skipped — out of scope (ML platform)"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Software Engineer (AI-native pipelines)",
+      "company": "CircleCI",
+      "location": "Remote — Canada pay band listed",
+      "salary": "CAD $127,000–$159,000",
+      "gap": "Opened in full: a full-stack product engineer building developer-facing AI pipeline interfaces (3+ yrs full-stack), not infrastructure operations",
+      "url": "https://weworkremotely.com/remote-jobs/circleci-software-engineer",
+      "status": "Skipped — out of scope (full-stack product engineering)"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Senior SRE – Networks",
+      "company": "Fastly",
+      "location": "US",
+      "salary": "Not stated",
+      "gap": "Posting restricts to US residents/authorization",
+      "url": "https://weworkremotely.com/remote-jobs/search?term=Site+Reliability+Engineer",
+      "status": "Skipped — US-only"
     }
   ],
-  "could_not_validate": [],
+  "could_not_validate": [
+    {
+      "text": "EPAM Systems — Lead Cloud Engineer (Azure, AKS, Terraform/OpenTofu, Backstage). Strong fit, but WWR only shows “Anywhere in the World” and EPAM lists the matching AKS role as Poland-remote; check careers.epam.com for a Canada requisition before applying.",
+      "url": "https://weworkremotely.com/remote-jobs/epam-systems-lead-cloud-engineer"
+    }
+  ],
   "notes_sections": [
+    {
+      "heading": "October 5 full-read pass",
+      "items": [
+        "Beyond the six default queries I searched Infrastructure Engineer, SRE and DevOps and fetched every result’s detail page, then scored the description text (28 postings; the first run opened only 3 of them). Real region lines were read, not WWR’s generic tag. Highest DevOps content: Bloominfo-style principal infrastructure role (US only), JFrog Senior Professional Services DevOps (already Applied), Proxify Senior DevOps (Azure, CET ±3h) and Proxify Senior Platform/Cloud Engineer, Datadog advocates and Vercel security (US), Fastly Senior SRE – Networks (US), and the <b>EPAM Lead Cloud Engineer</b> described below.",
+        "<b>EPAM Lead Cloud Engineer</b> (posted 5 days ago, apply by Oct 30): an Azure/AKS internal-developer-platform role — Terraform/OpenTofu modules, AKS operations, Backstage golden paths, image-factory pipelines, 5+ yrs Azure IaC and 1+ yr leadership — squarely in Marc’s lane and EPAM is where he has two Applied rows. But WWR’s region line is only the generic tag, the text asks for B2+ English, and EPAM’s own site lists the matching Lead Cloud DevOps Engineer (AKS) as Poland-remote. Not filed; worth a direct check on careers.epam.com for a Canada requisition."
+      ]
+    },
     {
       "heading": "October 5 query audit",
       "items": [
