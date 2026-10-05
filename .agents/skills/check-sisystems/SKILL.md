@@ -27,7 +27,7 @@ If the site presents a CAPTCHA, verification prompt, or blocking page, stop the 
 
 If the user supplies a query, add it as an encoded `q=` value and review the first 15 displayed results. Treat `q=` only as a soft ranking signal: it has historically returned unrelated roles even for ordinary terms such as `devops`.
 
-For a default run, search these terms separately with `expertise=3`, reviewing the first eight displayed results per term before deduplication:
+For a default run, search these terms separately with `expertise=3`, reviewing every card each query displays (the site shows at most 20 cards per query and has no working pager — read all 20; when a query reports more than 20 results, add narrower keyword variants such as `Azure`, `Kubernetes`, `Terraform`, `SRE`) before deduplication:
 
 - `DevOps Engineer`
 - `Senior DevOps Engineer`
