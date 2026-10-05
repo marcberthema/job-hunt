@@ -4,7 +4,7 @@
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 5, 2026 — all 10 default remote queries ran (10 results each, 69 unique) plus Ottawa hybrid; Kingston, Brockville and Cornwall returned zero results and Montréal could not be queried through the URL route, so the geography passes are incomplete. 0 new postings cleared the filing gates; Wind River Senior DevOps (Kanata hybrid) is an unvalidated lead. Montréal retry blocked by Eluta’s human-verification page; Kingston/Brockville/Cornwall zeros are unverified for the same reason.",
+  "latest_update": "Rechecked October 5, 2026 — all 10 remote queries ran, and after Marc cleared the human-verification page, the city passes were re-run in a browser: Ottawa 10, Montréal DevOps 10 and SRE 10, Kingston/Brockville/Cornwall zero. 0 new postings cleared the filing gates; Wind River (Kanata hybrid) and several Montréal listings remain unopened leads.",
   "stats": [
     {
       "value": 9,
@@ -158,6 +158,17 @@
       "gap": "Requires a Canadian government security clearance, Canadian citizenship and 10 years verifiable residency, and on-site Ottawa",
       "url": "https://www.workopolis.com/jobsearch/viewjob/di6TjW7EaEG063zt904FtKrPMLSYXK0mhNZIbN2ur0QAQ38AFPbmFOx89ki8IFXX",
       "status": "Skipped — clearance and on-site"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Koïos Intelligence",
+      "location": "Montréal, QC — work arrangement not stated",
+      "salary": "CAD $80,075–$120,725 (estimate)",
+      "gap": "GCP, Kubernetes, Helm, Jaeger and Bitbucket stack with a 7+ year bar — GCP hard gate; pay estimate sits mostly below the $120k Montréal hybrid floor",
+      "url": "https://ca.linkedin.com/jobs/view/senior-devops-at-ko%C3%AFos-intelligence-3249873532",
+      "status": ""
     }
   ],
   "could_not_validate": [
@@ -172,13 +183,18 @@
     {
       "text": "JLL — Senior Cloud Engineer (CAD $140,000–$170,000, Toronto, remote tag) and Think Research — Senior Cloud Engineer (Toronto, remote tag): not validated this run.",
       "url": "https://www.eluta.ca/search?q=Cloud%20Engineer&filter-remote_jobs=only"
+    },
+    {
+      "text": "Montréal (Eluta, not opened): Brain Finance DevOps Engineer, Unity DevOps Engineer ($83.3–124.9k), Mannarino Senior DevOps Engineering Tools Specialist (Saint-Laurent), Morgan Stanley RPE – System Reliability Engineering Specialist (Hybrid), Deloitte Data Platform DevOps Senior Consultant ($80–138k). Work arrangement and requirements were not visible from the listing.",
+      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&l=Montreal%2C%20QC"
     }
   ],
   "notes_sections": [
     {
-      "heading": "October 5 Montréal retry — blocked",
+      "heading": "October 5 city-pass retry (after Marc cleared Eluta’s human check)",
       "items": [
-        "Retried the Montréal pass in a browser (q=DevOps Engineer, l=Montreal, QC). Eluta answered with a <b>User Verification (“are you a human?”) page</b> citing unusual request volume from this IP, so the pass stayed <b>Incomplete</b> and I did not attempt the check. The zero results earlier today for Kingston, Brockville, Cornwall and Montréal were probably this same block served to in-page fetches, so treat those four city passes as unverified rather than genuine zero-result passes."
+        "Marc cleared the human-verification page in the browser, then each pass was re-run by navigation (no in-page fetches), one per page load: <b>Montréal DevOps Engineer 10</b> and <b>Montréal Site Reliability Engineer 10</b> results; <b>Kingston, Brockville and Cornwall DevOps Engineer: 0 blocks each</b> (the pages rendered normally — genuine Zero results). The earlier zeros for those cities and Montréal were the verification block, not real. Ottawa was completed earlier. All geography passes are now Complete or Zero results at the DevOps/SRE level.",
+        "Montréal results reviewed from the listing only (Eluta’s cache path was not used): Koïos Intelligence Senior DevOps Engineer scored 4 (GCP/Kubernetes stack, $80–121k estimate); Valtech Site Reliability Expert is the same title already Skipped on 2026-09-19; SAP and Tecsys DevOps/SRE roles are already in the ledger. Brain Finance DevOps Engineer, Unity DevOps, Mannarino DevOps Tools Specialist, Morgan Stanley System Reliability Specialist (hybrid) and Deloitte Data Platform DevOps Senior Consultant were not opened."
       ]
     },
     {
