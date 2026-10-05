@@ -4,7 +4,7 @@
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Rechecked October 5, 2026 — all 6 queries rendered with the Remote / Willing-to-sponsor / 7-day filters (DevOps 3, Platform 6, SRE 1, Cloud 6, DevSecOps 2, FDE 2 results). Nothing eligible and in scope: 1 new DevOps listing excluded on pay, the rest are AI/ERP/security/hardware roles. 0 filed.",
+  "latest_update": "Re-read October 5, 2026 — all 31 unique Dice postings from the six queries (DevOps 7, Platform 3, SRE 4, Cloud 11, DevSecOps 7, FDE 4) were opened and read in full. None is eligible and in scope: W-2-only or US-local DevOps contracts, entry-level pay, architects and security roles. 0 filed.",
   "stats": [
     {
       "value": 6,
@@ -167,9 +167,49 @@
       "gap": "Kernel/boot/ARM Linux distribution engineering, not reliability or platform work; judged from listing",
       "url": "https://www.dice.com/jobs?q=Site%20Reliability%20Engineer&filters.workplaceTypes=Remote",
       "status": "Skipped — out of scope (kernel/embedded)"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer — Atlanta, Charlotte, Tampa, Raleigh and other US locations",
+      "company": "TechniPros, LLC",
+      "location": "US cities; W-2 only, no C2C",
+      "salary": "Not stated",
+      "gap": "AWS/Azure/Kubernetes/Terraform scope fits, but the posting is W-2 only with no corporation-to-corporation arrangement — the incompatibility Marc already recorded on 2026-09-21",
+      "url": "https://www.dice.com/job-detail/bc712486-dcba-454a-b4e9-5b05f625a028",
+      "status": "Skipped — W-2 only (no C2C)"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "AWS Cloud Developer",
+      "company": "Amzur Technologies",
+      "location": "Must be local to Kansas City or Washington DC",
+      "salary": "USD $50–58/hr",
+      "gap": "Local-only requirement and Java/serverless application development",
+      "url": "https://www.dice.com/jobs?filters.workplaceTypes=Remote&filters.willingToSponsor=true&q=AWS",
+      "status": "Skipped — local-only US"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Software Architect (Drupal Lead + Architecture + Infrastructure + Kafka + DevSecOps)",
+      "company": "Pioneer Corporation",
+      "location": "Remote, 6+ months",
+      "salary": "Depends on experience",
+      "gap": "Opened in full: principal solution-architecture contract for a Drupal/Kafka public portal — architecture-led, not infrastructure delivery",
+      "url": "https://www.dice.com/jobs?filters.workplaceTypes=Remote&filters.willingToSponsor=true&q=Forward%20Deployed%20Engineer",
+      "status": "Skipped — out of scope (software architecture)"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 full-read pass",
+      "items": [
+        "Every result’s detail page was fetched and its JobPosting data and description read, not just the card. Findings: TechniPros Senior DevOps Engineer (Atlanta/Charlotte/Tampa…) is W-2 only, no C2C — the same TN-incompatible arrangement Marc skipped on 2026-09-21; the NYC/Boston DevOps twin follows the same pattern. NET2ASPIRE DevOps Engineer is entry-level at USD $33–42k. Amzur AWS Cloud Developer must be local to Kansas City or Washington DC. Pioneer Software Architect (Drupal + Kafka + DevSecOps) is a 6-month architecture contract, not infrastructure delivery. The other results are SAP/Oracle/Salesforce consultants, QA, business analysts, AI-security engineers, ARM-kernel engineers and AI forward-deployed roles — read and set aside as outside the target families.",
+        "Dice detail pages open directly by fetch; the description is in the page’s JobPosting JSON."
+      ]
+    },
     {
       "heading": "October 5 query audit",
       "items": [
