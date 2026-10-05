@@ -4,7 +4,7 @@
   "eyebrow": "Job Bank Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default rotation validated against full Job Bank detail pages. Scores measure technical and domain fit only; excluded-but-reviewed postings are scored 0 (out of scope) or -1 (ineligible) rows rather than a separate list.",
-  "latest_update": "Rechecked October 5, 2026 — all 3 default queries fetched by direct HTTP (DevOps Engineer 1, Cloud Engineer 4, Site Reliability Engineer 0). New: 49 Solutions OpenStack Cloud Engineer (SSC) and Farley Group mechanical 'DevOps Engineer' scored out; 0 eligible, 0 filed.",
+  "latest_update": "Re-read October 5, 2026 — the three default queries plus five extended occupation-code queries (Platform, DevSecOps, Infrastructure, Cloud DevOps, Systems Engineer Cloud) were run and every in-family result opened in full. Two strong-looking roles were excluded on arrangement: Vancouver on-site (Remarcable Senior DevOps) and a Montréal Azure Cloud Engineer needing 3 office days. 0 filed.",
   "stats": [
     {
       "value": 3,
@@ -149,10 +149,39 @@
       "gap": "Same Toronto on-site client as the two Source Code postings already skipped; Toronto is outside the reachable cities",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50419706",
       "status": "Skipped — Toronto on-site (repeat client)"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Remarcable, Inc.",
+      "location": "Vancouver, BC — on site",
+      "salary": "CAD $179,494.91/yr",
+      "gap": "AWS-required DevOps ownership at senior level, but the posting is on-site in Vancouver with no remote option",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50261726",
+      "status": "Skipped — on-site Vancouver"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Azure Cloud Engineer (AI platform infrastructure)",
+      "company": "Blitz TI (client undisclosed)",
+      "location": "Montréal, QC — hybrid, 3 days/week in office",
+      "salary": "CAD $120,000–$140,000/yr",
+      "gap": "Strong fit on skills (Azure APIM, Entra ID, Key Vault, Terraform, CI/CD, containers) but 3 office days a week needs a rate well above target and this sits at the Montréal floor",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50389261",
+      "status": "Skipped — Montréal hybrid 3 days"
     }
   ],
   "could_not_validate": [],
   "notes_sections": [
+    {
+      "heading": "October 5 full-read pass",
+      "items": [
+        "Beyond the skill’s three default queries I ran Platform Engineer (0), DevSecOps Engineer (0), Infrastructure Engineer (2), Cloud DevOps (24) and Systems Engineer Cloud (25) and read the 44 unique results’ titles, then opened every plausible one in full: Remarcable Senior DevOps Engineer (AWS/Azure, $179,495, permanent) is <b>on-site in Vancouver</b>; Blitz TI Azure Cloud Engineer (Azure APIM, Entra ID, Key Vault, Terraform, containers, production AI platform; $120–140k permanent, 35 h/week) requires <b>hybrid three days per week in downtown Montréal</b>; CloudKettle’s “Cloud Architect” is a Salesforce Revenue Cloud architect; Lancesoft’s cloud developer is a Java full-stack role with 3 office days. The remaining results are cloud-developer, application-architect, network, mechanical and managerial roles.",
+        "Job Bank result and detail pages work by direct HTTP; the originating-site name appears on each detail page (Jobillico, ZipRecruiter, Talent.com, Indeed)."
+      ]
+    },
     {
       "heading": "October 5 query audit",
       "items": [
