@@ -1,10 +1,10 @@
 {
   "board": "S.i. Systems",
-  "run_date": "2026-10-01",
+  "run_date": "2026-10-05",
   "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Rechecked October 1, 2026 — all 8 rendered-browser queries completed (counts 25, 39, 32, 28, 36, 21, 56, 56). 3 new postings validated and excluded (clearance+GCP, Oshawa hybrid, delivery-lead scope); the Azure & Databricks DevOps role is a strong skill match blocked only by Oshawa. 0 auto-filed.",
+  "latest_update": "Rechecked October 5, 2026 — all 8 queries completed (counts 23, 37, 30, 26, 34, 19, 54, 54). 1 new posting validated and auto-filed: Senior IT Application Specialist, DevOps & AI Operations (permanent, Canada-wide listing, Oakville hybrid if local; score 7). Everything else is unchanged from October 1.",
   "stats": [
     {
       "value": 8,
@@ -28,6 +28,12 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 query audit",
+      "items": [
+        "DevOps Engineer 23 · Senior DevOps Engineer 37 · Site Reliability Engineer 30 · Platform Engineer 26 · Cloud Engineer 34 · DevSecOps Engineer 19 · Infrastructure Engineer 54 · Senior Infrastructure Engineer 54 — all Complete, first 8 cards per query reviewed (expertise=3, real listings rendered). Date-sorted results; the only new in-family card since 2026-10-01 is requisition 155386. Carry-over roles (Platform Engineer 58102, SRE 6+, bare-metal Infrastructure Engineer, AWS Cloud Engineer, DevOps Director with SECRET clearance, Azure/Databricks Oshawa) unchanged; Intermediate/Senior sysadmin, backup and IT-analyst roles are out of the target families."
+      ]
+    },
     {
       "heading": "October 1 query audit",
       "items": [
@@ -233,6 +239,17 @@
       "gap": "Delivery/program-lead role holding a third-party partner to standard; judged from listing summary — not hands-on engineering",
       "url": "https://www.sisystems.com/jobs/x/330032003700340031003400/",
       "status": "Skipped — out of scope (delivery lead)"
+    },
+    {
+      "score": 7,
+      "family": "Platform",
+      "title": "Senior IT Application Specialist, DevOps & AI Operations - SaaS Client",
+      "company": "S.i. Systems client (SaaS)",
+      "location": "Oakville, ON — hybrid if local; listing covers Canadian cities from Victoria to Halifax, so remote is likely but not stated",
+      "salary": "Negotiable (permanent FTE)",
+      "gap": "24x7 rotating on-call and expert Linux/SAML/LDAPS expectations; GCP/GKE is only a nice-to-have; remote eligibility to confirm",
+      "url": "https://www.sisystems.com/jobs/senior-it-application-specialist-devops-ai-operations-saas-client/330032003700360031003800/",
+      "status": "New"
     }
   ],
   "could_not_validate": [

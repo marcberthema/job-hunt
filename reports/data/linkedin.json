@@ -1,10 +1,10 @@
 {
   "board": "LinkedIn",
-  "run_date": "2026-10-01",
+  "run_date": "2026-10-05",
   "eyebrow": "LinkedIn · authenticated read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Full descriptions validated on LinkedIn. Scores measure skill and domain fit.",
-  "latest_update": "Latest update: October 1, 2026 — all 67 passes now run (14 Canada-wide phrases, 11 hubs × 3 titles, 4 reachable cities × 5 titles). 2 auto-filed: Insight Cloud Platform Engineer (7) and Barracuda Cloud SRE Senior, Ottawa (7, validated on the employer’s Jobvite page). Unconfirmed: MaintainX SRE (remote eligibility), Alithya Azure DevOps (office city).",
+  "latest_update": "Latest update: October 5, 2026 — all 67 mandatory passes completed (14 Canada-wide phrases, 33 hub passes, 20 reachable-city passes; past 3 days). 44 listings newer than the October 1 run, 23 in-family and labelled by workplace type; 1 auto-filed: Larouche Raymond (headhunter) Principal Cloud & DevOps Consultant, 100% remote, up to $200k (score 6).",
   "stats": [
     {
       "value": "67 of 67",
@@ -24,6 +24,12 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 5 run (complete)",
+      "items": [
+        "Past-3-days listing endpoint (read-only; ignores the Remote filter) for every mandatory pass: 14 phrases for Canada, 11 hubs x 3 titles, Ottawa/Kingston/Cornwall/Montréal x 5 titles. All returned results except Kingston (Cloud Platform, DevOps and SRE passes: Zero results) — Kingston/Cornwall rely on the same broadened fallback as before. New IDs above the previous run's newest (4474517023) were filtered to in-family titles, then each listing's Remote/Hybrid/On-site label was read from its job page. Of 23 in-family new listings the labels were mostly Remote (Kinaxis Cloud Engineer 2 appears as many location-indexed copies), with Coveo FDE and Kinaxis Ottawa/Toronto as Hybrid. Opened in full: Larouche Raymond, Blue J. Network Solutions Senior DevOps Engineer, AI Platform matches the Web.com/Network Solutions posting already in the ledger; Thumbtack SRE postings are US-oriented; Kinaxis Cloud Engineer II is already filed (BuiltIn, 2026-10-05)."
+      ]
+    },
     {
       "heading": "October 1 run",
       "items": [
@@ -974,6 +980,27 @@
       "salary": "CAD $71,330–$101,900/yr",
       "gap": "Systems-administration-leaning IT operations role; pay band tops out at the $100k remote floor",
       "url": "https://www.linkedin.com/jobs/view/4446310466/"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Architecte logiciel senior / DevOps Azure Cloud — Consultant principal infonuagique et DevOps",
+      "company": "Larouche Raymond Headhunters (consulting-firm client)",
+      "location": "100% remote, Québec-posted",
+      "salary": "Up to CAD $200,000 (permanent)",
+      "gap": "Principal-consultant scope: cloud strategy, pre-sales/SOW writing, business development and client coaching on top of Azure DevOps delivery — thinner consulting/pre-sales record; French working language",
+      "url": "https://www.linkedin.com/jobs/view/4475322925/",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Infrastructure Developer",
+      "company": "Blue J",
+      "location": "Remote (Toronto office optional)",
+      "salary": "Not stated",
+      "gap": "AWS/GCP and Kubernetes cloud-infrastructure ownership with a 5+ year bar — hard-gated on AWS/GCP depth",
+      "url": "https://www.linkedin.com/jobs/view/4475300367/"
     }
   ],
   "method": "Authenticated, strictly read-only LinkedIn search on September 24, 2026. Seven of 45 mandatory passes completed with reconciled rendered counts and LinkedIn IDs; several additional phrase pages were reached but could not be audited after repeated browser-control resets, so the overall run is incomplete. Completed passes used Canada, Remote, and f_TPR=r172800 and reviewed the visible first-page results (7 per pass, 35 unique IDs after deduplication). Two current full descriptions were validated: Blackpoint Cyber on LinkedIn and Autodesk on its employer site. Both matched existing applications.md company/title decisions and were not re-filed. SecurityScorecard remained unvalidated. No new posting cleared every automatic-filing gate. Historical rows and prior pipeline decisions remain preserved below."
