@@ -41,7 +41,7 @@
       "salary": "CAD $123,250-$166,750/year",
       "gap": "Requires deeper production AWS/EKS ownership and ideally an AWS or Azure certification; Marc's strongest cloud depth is Azure and his AWS work was a dated, non-production build.",
       "url": "https://builtin.com/job/senior-site-reliability-developer/11316943",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 7,
@@ -52,7 +52,7 @@
       "salary": "GBP £90,000-£120,000/year",
       "gap": "AWS/GCP operations and highly available PostgreSQL are more central than Marc's demonstrated depth, though his Ansible, CD, systems, networking and financial-sector experience align well.",
       "url": "https://builtin.com/job/site-reliability-engineer/11326830",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": -1,
@@ -107,7 +107,7 @@
       "salary": "Not stated (contract role)",
       "gap": "Reads as general cloud/infra-ops competence (hosting, networking, storage, IAM, CI/CD, monitoring, backups) rather than an architecture-ownership-at-scale deliverable — AWS is the venue Marc can answer honestly via the Tink build. Salary not stated; confirm it clears the $80/hr long-term or $90/hr part-time contract floor before pursuing.",
       "url": "https://builtin.com/job/aws-and-devops-engineer/11292868",
-      "status": "InProcess"
+      "status": "Skipped"
     },
     {
       "score": 6,
@@ -162,7 +162,7 @@
       "salary": "Not stated",
       "gap": "Staff-level AWS EKS/RDS infrastructure ownership (\"you own IaC, not just contribute to it\") plus hands-on production Kubernetes debugging expertise — beyond Marc's dated, by-hand, non-production AWS and provisioning-side Kubernetes depth.",
       "url": "https://builtin.com/job/staff-engineer-site-reliability/10011879",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 4,
@@ -184,7 +184,7 @@
       "salary": "Not stated",
       "gap": "Reads as a product/infra software-engineering IC role (building a service from scratch, code-sample required) rather than operations/platform-enablement work; less aligned than the title alone suggests",
       "url": "https://builtin.com/job/software-engineer-cloud-infrastructure/11262477",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 4,
@@ -448,7 +448,7 @@
       "salary": "USD $160,000–$210,000 (Canadian bands lower, not stated)",
       "gap": "TypeScript/Node expectation and a software-engineer-style technical screen; Kubernetes operating depth",
       "url": "https://builtin.com/job/site-reliability-engineer/11433395",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 7,
@@ -459,7 +459,7 @@
       "salary": "Not stated (contract)",
       "gap": "Rate not stated; Kubernetes depth beyond Marc’s hands-on record; cloud accepted as AWS, Azure or GCP",
       "url": "https://builtin.com/job/senior-devops-engineer/11466766",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 6,
@@ -470,7 +470,7 @@
       "salary": "Not stated",
       "gap": "AWS is the primary cloud (Azure secondary) and deep Kubernetes is expected; the ask for large-scale CI/CD platforms is a direct Énergir match",
       "url": "https://builtin.com/job/senior-devops-engineer/11379158",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 5,
@@ -481,7 +481,7 @@
       "salary": "Not stated",
       "gap": "Mid-level scope (2–4 yrs) below Marc’s seniority, though the stack (GitHub Actions, Terraform, ArgoCD, Ansible) fits closely",
       "url": "https://builtin.com/job/cloud-engineer-2-site-reliability-engineering/11487792",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 5,
@@ -492,7 +492,7 @@
       "salary": "CAD $110,000–$120,000/yr",
       "gap": "Intermediate level (4–6 yrs); AWS named as the primary cloud; .NET/Rails/TypeScript stack",
       "url": "https://builtin.com/job/intermediate-devops-engineer/11379471",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 4,
@@ -534,7 +534,7 @@
       "salary": "CAD $85,000–$110,000/yr",
       "gap": "Mid-level scope and a defence setting: must be able to obtain a Canadian government security clearance; cloud-agnostic (AWS, Azure or GCP) so no single-cloud gate",
       "url": "https://builtin.com/job/software-engineering-developer-devops/11341326",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 7,
@@ -545,7 +545,7 @@
       "salary": "Not stated",
       "gap": "Multi-cloud Azure (AKS, App Insights) and AWS (ECS, Lambda, DynamoDB) operations with Terraform/CDK and CI/CD; Senior level — pay not posted; AWS services are part of a two-cloud mix, so no single-cloud gate",
       "url": "https://builtin.com/job/devops-engineer/11187585",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 5,
@@ -556,7 +556,7 @@
       "salary": "Not posted (above Ontario disclosure threshold)",
       "gap": "AWS, MongoDB, IaC, CI/CD and observability for a legal-AI product; software-engineering weighted, AWS-primary",
       "url": "https://builtin.com/job/senior-software-engineer-platform-infrastructure/11233917",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 4,

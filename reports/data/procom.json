@@ -118,7 +118,7 @@
       "salary": "CAD $75–$100/hr, 14 months from Oct 2026",
       "gap": "Azure security-service depth (Defender, IAM, Landing Zones) is thinner than the Terraform/Bicep policy-as-code core; security engineering rather than delivery",
       "url": "https://myprocom-portal.procomservices.com/jobs/cloud-security-devsecops-engineer-azure-focus-toronto-dbdaa8fe",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 3,
