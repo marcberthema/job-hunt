@@ -1,10 +1,10 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-06",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "Re-read October 5–6, 2026 — Glassdoor loaded without a block this time and the right-hand description pane was read for about 55 listings across the DevOps, Platform and Cloud queries. Two new roles filed: Koonkie Cloud Services DevOps Engineer (Azure, Terraform/Bicep, 5+ yrs, British Columbia, $130–140k; score 7) and CDPQ Principal Developer, IaC Microsoft 365 & Azure (Montréal hybrid; score 6). Site Reliability Engineer, DevSecOps and Forward Deployed Engineer were not re-read because the pane load slowed to a crawl.",
+  "latest_update": "Re-read October 6, 2026 — Glassdoor’s DevOps, Platform, Cloud, SRE and DevSecOps queries were read from the description pane (about 90 unique postings; FDE returned 0). 2 roles filed: Koonkie Cloud Services DevOps Engineer (7) and CDPQ IaC Microsoft 365 & Azure (6); nothing new from the SRE and DevSecOps queries.",
   "stats": [
     {
       "value": 6,
@@ -320,11 +320,12 @@
   ],
   "notes_sections": [
     {
-      "heading": "October 6 full-read pass — partial",
+      "heading": "October 6 full-read pass — complete",
       "items": [
-        "Glassdoor’s job pages sit behind a human-verification check, but the search page’s right-hand description pane loads each posting’s full description. Method: select each result card and read the pane (a plain scripted click does not update the pane; dispatching the full pointer/mouse event sequence at the card’s centre point does). Read in full: DevOps Engineer query 26 of 44 results (the list shows 26 cards and had no working ‘show more’), Platform Engineer 16 of 30 cards (mostly non-DevOps ‘platform’ roles) and Cloud Engineer 22 of 30 cards. About 55 unique descriptions in all. The pane became very slow partway through the Platform and Cloud runs, so the SRE, DevSecOps and FDE queries were <b>not re-read</b> in this pass.",
+        "Glassdoor’s job pages sit behind a human-verification check, but the search page’s right-hand description pane loads each posting’s full description. Method: select each result card and read the pane (a plain scripted click does not update the pane; dispatching the full pointer/mouse event sequence at the card’s centre point does). Read in full: DevOps Engineer query 26 of 44 results (the list shows 26 cards and had no working ‘show more’), Platform Engineer 16 of 30 cards (mostly non-DevOps ‘platform’ roles) and Cloud Engineer 22 of 30 cards. About 55 unique descriptions in all. The Platform and Cloud runs slowed (the description pane was loading very slowly), but the Site Reliability Engineer query (30 of 66 cards) and the DevSecOps query (all 16 results) were then read in full as well, bringing the total to about 90 unique descriptions. Forward Deployed Engineer returned 0 results.",
         "<b>Filed (2):</b> Koonkie Cloud Services DevOps Engineer — “internal subject-matter expert for all things Azure”, Terraform/Bicep, GitHub Actions, Azure Blob/ACR, Python, 5+ yrs, mentoring developers, $130–140k, British Columbia (remote vs office not stated; confirm); and CDPQ ‘Développeur(-euse) principal(e), IaC Microsoft 365 & Azure’ — OpenTofu/Bicep IaC and Azure DevOps pipelines alongside M365/Exchange/Entra administration with a 24/7 on-call rotation, Montréal hybrid.",
-        "Excluded after reading: Realign GCP Infrastructure & Cloud SRE (Toronto on-site, GCP), Realign Platform Engineer AI/ML (Halifax on-site), Tangerine Cloud Engineer (Toronto, GCP/Kubernetes), isgSearch Principal Observability Engineer (12-month contract, 10+ yrs, deep AWS + OpenShift), BMO Principal AI Cloud Engineer and Lead Cloud Software Developer (AWS/AI development), Intact Principal Cloud Strategy (architect)."
+        "Excluded after reading: Realign GCP Infrastructure & Cloud SRE (Toronto on-site, GCP), Realign Platform Engineer AI/ML (Halifax on-site), Tangerine Cloud Engineer (Toronto, GCP/Kubernetes), isgSearch Principal Observability Engineer (12-month contract, 10+ yrs, deep AWS + OpenShift), BMO Principal AI Cloud Engineer and Lead Cloud Software Developer (AWS/AI development), Intact Principal Cloud Strategy (architect).",
+        "SRE and DevSecOps results read after the first pass: nothing new in the target families — the 66 “site reliability engineer” results are dominated by mechanical/process reliability engineers (Teck, Adecco, MEGlobal, DNV), application-security and solutions-engineering roles, and the DevSecOps query surfaced only an Application Security Engineer (Halliburton) and an Application Security Lead (Scaleup Innovation Lab)."
       ]
     },
     {
