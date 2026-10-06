@@ -257,7 +257,7 @@
       "salary": "CAD $130,000–$140,000",
       "gap": "Azure-first (Terraform/Bicep, GitHub Actions, Blob/ACR) with a 5+ yr senior-DevOps/SRE bar plus mentoring; work arrangement unconfirmed — confirm remote eligibility from Ontario",
       "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm?fromAge=7&sortBy=date_desc",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 6,
@@ -268,7 +268,7 @@
       "salary": "Not shown on Glassdoor (CDPQ bands are typically well above the $120k floor — confirm)",
       "gap": "About half the role is Microsoft 365/Exchange/Entra administration plus a 24/7 on-call rotation; the other half (OpenTofu/Bicep, Azure DevOps pipelines, DevSecOps) is a direct fit",
       "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm?fromAge=7&sortBy=date_desc",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 4,
