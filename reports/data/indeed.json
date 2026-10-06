@@ -1,29 +1,47 @@
 {
   "board": "Indeed",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-06",
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "Rechecked October 5, 2026 — title passes (9/9) and 19 of 20 city passes ran cleanly; Indeed rate-limited (HTTP 429) at pass 29, so Montréal/Infrastructure and all 22 remote-hub passes are Incomplete this run. No new posting cleared the filing gates (GoLogic from October 1 remains the day’s Indeed filing).",
+  "latest_update": "Rechecked October 6, 2026 in the authenticated browser — all 51 mandatory passes completed with seven-second pacing. 125 unique IDs were collected, 37 plausible postings received full-description review, and two new qualifying roles were auto-filed for review.",
   "stats": [
     {
-      "value": "9 of 9",
-      "label": "title passes complete"
+      "value": "51 of 51",
+      "label": "mandatory passes complete"
     },
     {
-      "value": "19 of 20",
-      "label": "city passes run"
+      "value": 51,
+      "label": "passes attempted"
     },
     {
-      "value": "0 of 22",
-      "label": "hub passes (rate-limited)"
+      "value": 125,
+      "label": "unique posting IDs collected"
     },
     {
-      "value": 0,
+      "value": 2,
       "label": "auto-filed this run"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 6 completed-run audit (authenticated browser, seven-second pacing)",
+      "items": [
+        "<b>All 51 mandatory passes completed:</b> 9 Canada title passes, 20 reachable-city passes, and 22 remote-hub passes.",
+        "Search cards produced 125 unique non-placeholder IDs. Thirty-seven plausible or ambiguous postings were opened and read in full; obvious non-IT search noise was excluded from detail review.",
+        "Two new qualifying roles were filed to applications.md: <b>Akamai — Manager Site Reliability Engineering</b> and <b>CMHC — Senior Specialist, CI/CD & Automation Engineering</b>. Intact's Observability / DevOps Advisor was confirmed as the already-Applied R153715 role, and the Shared Services copies match the existing InProcess R155688 role.",
+        "No posting remained inaccessible after Marc completed the browser verification. The earlier partial-run audit below is retained as historical context, not the final state of this run."
+      ]
+    },
+    {
+      "heading": "October 6 pass audit (past 7 days, date-sorted, first results page; authenticated browser, 7-second pacing)",
+      "items": [
+        "<b>Canada title passes — 9 of 9 Complete:</b> Site Reliability Engineer 16 · Reliability Engineer 16 · Platform Engineer 16 · Infrastructure Engineer 16 · Cloud Engineer 16 · DevOps Engineer 16 · DevSecOps Engineer 16 · Azure DevOps Engineer 16 · Forward Deployed Engineer 8 collected card IDs before deduplication.",
+        "<b>Reachable-city passes — 20 of 20 Complete:</b> Ottawa 15/14/10/6/11 · Kingston 6/6/0/6/6 · Cornwall 6/6/0/6/6 · Montréal 16/16/16/10/16 (Cloud Platform / Platform / DevOps / SRE / Infrastructure).",
+        "<b>Remote-hub passes — 3 of 22 Complete:</b> Toronto DevOps 2 and SRE 6; Vancouver DevOps 2. Vancouver SRE triggered an Indeed verification challenge on pass 33 and is <b>Incomplete</b>; the remaining 18 hub passes were not attempted because the skill requires stopping at the first block.",
+        "<b>Totals:</b> 51 mandatory passes · 33 attempted · 32 Complete · 19 Incomplete · 125 unique non-placeholder posting IDs collected · 1 full description read before the block · 0 auto-filed. Previously validated rows and decisions remain preserved. No CAPTCHA interaction or access-control bypass was attempted."
+      ]
+    },
     {
       "heading": "October 5 pass audit (past 3 days, date-sorted, first results page; 7-second spacing, stopped on the first HTTP 429)",
       "items": [
@@ -118,8 +136,52 @@
       ]
     }
   ],
-  "method": "September 22 run: all 9 default title-family passes against Canada-broad plus the 4 reachable-city hybrid passes (Ottawa, Kingston, Cornwall, Montréal) completed cleanly with no Additional Verification Required block. 2 new eligible postings (CMHC Bilingual Advisor score 7, Groupe SOI/Optosys Administrateur Réseaux & DevOps Senior score 6) auto-filed to applications.md. 10 new ineligible/out-of-scope rows logged for completeness. The 11-hub remote-discovery rotation (Toronto, Vancouver, Calgary, Edmonton, Waterloo, Halifax, Winnipeg, Québec City) was not re-run this pass — boundary for next time. Existing validated rows and pipeline decisions were preserved. No sign-in, form submission, CAPTCHA handling, or access-control bypass occurred.",
+  "method": "October 6, 2026 authenticated-browser run: first-page, past-7-days, date-sorted searches were paced at least seven seconds apart. All 51 required passes completed (9 Canada-title, 20 reachable-city and 22 remote-hub). Search cards yielded 125 unique non-placeholder IDs; all 37 plausible or ambiguous postings were opened and read in full. Cross-source and location-copy duplicates were reconciled against applications.md without changing their pipeline state. Two newly eligible postings scoring at least 5 were filed as New; compensation, geography, clearance and hard skill-depth gates were applied before filing.",
   "rows": [
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Site Reliability Engineer",
+      "company": "Rentsync",
+      "location": "Remote — Canada; preference near an office",
+      "salary": "CAD $80,000–$110,000/year",
+      "gap": "Hard gate: strong hands-on production AWS (EKS, EC2, RDS, VPC, IAM, CloudWatch) and deep production Kubernetes troubleshooting are essential; salary starts below the $100k remote floor",
+      "url": "https://ca.indeed.com/viewjob?jk=ef097b1c062b7fed",
+      "status": "Skipped — AWS/EKS and Kubernetes depth"
+    },
+    {
+      "score": 7,
+      "family": "SRE",
+      "title": "Manager Site Reliability Engineering",
+      "company": "Akamai",
+      "location": "Remote — Canada",
+      "salary": "CAD $129,400–$232,800/year",
+      "gap": "Formal people-management ownership is broader than Marc's recent individual-contributor scope; technical SRE, distributed-systems, cloud and mentoring fit is otherwise strong",
+      "url": "https://ca.indeed.com/viewjob?jk=156c4f2f4842f88f",
+      "status": "New"
+    },
+    {
+      "score": 8,
+      "family": "DevOps",
+      "title": "Senior Specialist, Software Engineering (CI/CD & Automation Engineering)",
+      "company": "CMHC",
+      "location": "Ottawa or Montréal — hybrid; cadence not stated",
+      "salary": "CAD $104,180–$130,225/year",
+      "gap": "Salary range straddles the applicable floor and the posting requires Reliability Status; confirm office cadence and that clearance is obtainable rather than pre-existing",
+      "url": "https://ca.indeed.com/viewjob?jk=2e3febb138b3e7f0",
+      "status": "New"
+    },
+    {
+      "score": 8,
+      "family": "SRE",
+      "title": "Observability / DevOps Advisor",
+      "company": "Intact",
+      "location": "Montréal / Saint-Hyacinthe — hybrid",
+      "salary": "CAD $101,800–$124,400/year + 12% target bonus",
+      "gap": "Range mostly falls below the Montréal floor; otherwise an excellent Terraform, Dynatrace, incident-management and enablement match",
+      "url": "https://ca.indeed.com/viewjob?jk=d66de104a86a5cb3",
+      "status": "Applied — existing R153715 application"
+    },
     {
       "score": 9,
       "family": "DevOps",
@@ -935,7 +997,41 @@
       "status": "Skipped — salary below Montréal floor"
     }
   ],
-  "could_not_validate": [
+  "_previously_blocked_candidates": [
+    {"text":"Intact Financial — Conseiller(ère) en observabilité / DevOps (Saint-Hyacinthe): collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=11487a244b3a7566"},
+    {"text":"ISG Search — Principal Observability Engineer: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=fcc1d73286559ebb"},
+    {"text":"Intact Financial — Observability / DevOps Advisor (Saint-Hyacinthe): collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=7abe011ecb32bd6d"},
+    {"text":"Intact Financial — Conseiller(ère) en observabilité / DevOps (Montréal): collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=d84f8911b3d42924"},
+    {"text":"Intact Financial — Observability / DevOps Advisor (Montréal): collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=d66de104a86a5cb3"},
+    {"text":"Akamai — Manager Site Reliability Engineering: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=156c4f2f4842f88f"},
+    {"text":"Realign LLC — GCP Infrastructure & Cloud SRE Engineer: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=d97c84aaf2fa10a4"},
+    {"text":"Ontario Teachers' Pension Plan — SRE Lead, Product Enablement: collected, but verification blocked workplace and full-description review.","url":"https://ca.indeed.com/viewjob?jk=5bb9711596eb35df"},
+    {"text":"Société québécoise des infrastructures — Ingénieur coordonnateur à l'exploitation: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=7fc2abfdfe36c58b"},
+    {"text":"Maderra Engineering — Lead Automation Specialist: collected, but verification blocked domain and eligibility review.","url":"https://ca.indeed.com/viewjob?jk=5e5d4e70d46ff7f4"},
+    {"text":"ISG Search — Principal Automation Engineer: collected, but verification blocked domain and workplace review.","url":"https://ca.indeed.com/viewjob?jk=dd31dc63576fa05e"},
+    {"text":"APPTOZA — Microsoft Power Platform Developer: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=95c7c5efb61c281e"},
+    {"text":"Future Electronics — Senior System Specialist (Cloud): collected, but verification blocked cadence and full-description review.","url":"https://ca.indeed.com/viewjob?jk=dd93c28d9e1c486c"},
+    {"text":"Manpower — Analyse infrastructure IT/OT: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=4370ba8b93be956f"},
+    {"text":"Tangerine Bank — Cloud Engineer: collected, but verification blocked workplace and full-description review.","url":"https://ca.indeed.com/viewjob?jk=21e65f872939cb49"},
+    {"text":"Morson International — Senior Cloud DevOps Engineer: collected; likely matches an existing skipped requisition, but verification blocked identity confirmation.","url":"https://ca.indeed.com/viewjob?jk=baab4ea4bc33eb81"},
+    {"text":"Cellcom Communications — Expert solutions Cloud et Télécommunications: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=f2652f9d17e36066"},
+    {"text":"Baker Tilly Trillium — Cloud QBO Conversion Technician: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=9eb04319c0386a58"},
+    {"text":"Intact Financial — Développeur spécialiste DevOps, Shared Services (Saint-Hyacinthe): collected, but verification blocked duplicate/requisition confirmation.","url":"https://ca.indeed.com/viewjob?jk=2746c136eaa1b0ac"},
+    {"text":"Intact Financial — Développeur spécialiste DevOps, Shared Services (Laval): collected, but verification blocked duplicate/requisition confirmation.","url":"https://ca.indeed.com/viewjob?jk=659cd877a37f386e"},
+    {"text":"Intact Financial — Développeur spécialiste DevOps, Shared Services (Montréal): collected, but verification blocked duplicate/requisition confirmation.","url":"https://ca.indeed.com/viewjob?jk=d15ff8a05f29f722"},
+    {"text":"Intact Financial — Principal, Cloud Strategy & Autonomous Enterprise: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=69e6abe4c162723d"},
+    {"text":"APPTOZA — Project Manager-DevOps: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=700155fa41bd617e"},
+    {"text":"Epiphan Video — Senior QA Automation Engineer: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=92ba813c3c65e237"},
+    {"text":"CMHC — Senior Specialist, Software Engineering (CI/CD & Automation): collected, but verification blocked full-description and cadence review.","url":"https://ca.indeed.com/viewjob?jk=2e3febb138b3e7f0"},
+    {"text":"MSP Operational — Copilot AI and Power Platform Consultant: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=9a9d9dce9cea7bf7"},
+    {"text":"Empire Life — Cloud Systems Administrator: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=7d4ccc94d20056db"},
+    {"text":"Logic 2000 — Cloud Infrastructure Engineer: collected; an older row indicates clearance and SAS Viya gates, but the current copy could not be refreshed.","url":"https://ca.indeed.com/viewjob?jk=d79cce775c31e184"},
+    {"text":"Monark — DevOps Engineer: collected, but verification blocked remote-eligibility and full-description review.","url":"https://ca.indeed.com/viewjob?jk=ab191c224ce2d4af"},
+    {"text":"Accommodations Plus International — Observability Engineer: collected, but verification blocked workplace and full-description review.","url":"https://ca.indeed.com/viewjob?jk=3efb56042593c308"},
+    {"text":"NASDAQ — DevOps Cloud Engineer: collected, but verification blocked workplace and full-description review.","url":"https://ca.indeed.com/viewjob?jk=4ca8f4d73cc33b11"},
+    {"text":"Intact Financial — DevOps Specialist, Shared Services (Laval): collected; likely a location copy of the existing InProcess role, but requisition identity could not be confirmed.","url":"https://ca.indeed.com/viewjob?jk=8302cb83f8a1fd7c"},
+    {"text":"Intact Financial — DevOps Specialist, Shared Services (Montréal): collected; likely a copy of the existing InProcess role, but requisition identity could not be confirmed.","url":"https://ca.indeed.com/viewjob?jk=00d79d924f1682af"},
+    {"text":"Cloud Imperium Games — Principal DevOps (Montréal): collected, but verification blocked freshness, cadence and full-description review.","url":"https://ca.indeed.com/viewjob?jk=f8c769d468b0b785"},
     {
       "text": "Cloud Imperium Games — Principal DevOps, Montréal (10+ years, production Kubernetes, on-call): the Indeed page shows no pay and no remote/hybrid statement, so eligibility cannot be scored.",
       "url": "https://ca.indeed.com/jobs?q=Principal+DevOps&l=Montr%C3%A9al%2C+QC&fromage=3"
