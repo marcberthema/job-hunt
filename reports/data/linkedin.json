@@ -192,7 +192,7 @@
       "family": "DevOps",
       "title": "Senior/Lead Engineer — Agentic AI Development",
       "company": "FICO",
-      "status": "InProcess",
+      "status": "Skipped",
       "location": "Remote — Canada",
       "salary": "Not stated",
       "gap": "Large-codebase software architecture, LLM evaluation infrastructure, and contract testing depth",
@@ -247,7 +247,7 @@
       "family": "Platform",
       "title": "Platform Engineer",
       "company": "Hunter Bond client — fintech trading",
-      "status": "InProcess",
+      "status": "Applied",
       "location": "Montréal — hybrid; days not stated, confirm ≤2",
       "salary": "CAD $180,000/year + bonus and benefits",
       "gap": "Hybrid office cadence is not disclosed",
@@ -674,9 +674,9 @@
     {
       "score": 5,
       "family": "DevOps",
-      "title": "DevOps Specialist - Kubernetes (35700)",
+      "title": "DevOps Specialist — Kubernetes (35700)",
       "company": "Myticas Consulting",
-      "status": "InProcess",
+      "status": "Skipped",
       "location": "Ottawa — fully on-site",
       "salary": "Not stated",
       "gap": "Rate unstated for a fully on-site reachable-city role; otherwise strong Azure/AKS/Kubernetes match",
@@ -900,7 +900,7 @@
       "salary": "CAD $100,000–$125,000/yr",
       "gap": "Azure/AWS landing-zone and networking breadth plus CloudFormation expected; employer-site posting not cross-checked",
       "url": "https://www.linkedin.com/jobs/view/4464034759/",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": -1,
@@ -966,7 +966,7 @@
       "salary": "CAD $110,000–$140,000/yr on-target earnings",
       "gap": "Multi-cluster Kubernetes (ideally AKS) operations and cloud-architecture depth beyond Marc’s hands-on K8s record; extensive Terraform expected",
       "url": "https://jobs.jobvite.com/barracuda-networks-inc/job/oCSRAfwF",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": -1,
@@ -998,7 +998,7 @@
       "salary": "Up to CAD $200,000 (permanent)",
       "gap": "Principal-consultant scope: cloud strategy, pre-sales/SOW writing, business development and client coaching on top of Azure DevOps delivery — thinner consulting/pre-sales record; French working language",
       "url": "https://www.linkedin.com/jobs/view/4475322925/",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 4,
@@ -1019,7 +1019,7 @@
       "salary": "CAD $80,000–$120,000/yr",
       "gap": "3+ yr intermediate consulting scope below Marc’s seniority; hybrid city/cadence unconfirmed (Ontario floor $100k only in Ottawa/Kingston/Brockville/Cornwall)",
       "url": "https://www.linkedin.com/jobs/view/4462540698/",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 5,
@@ -1030,7 +1030,7 @@
       "salary": "CAD $50,000–$120,000/yr (very wide band)",
       "gap": "Node.js/Go expectation and a follow-the-sun on-call rotation; AWS EKS/S3/RDS is “familiarity”, so no AWS gate; pay band unreliable against the $100k floor",
       "url": "https://www.linkedin.com/jobs/view/4472946622/",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 4,
@@ -1074,7 +1074,7 @@
       "salary": "Not stated (public-transit agency — confirm vs the $120k Montréal floor)",
       "gap": "5–8 yrs and French required; Azure architecture with Terraform/Bicep and Azure DevOps pipelines — close to a full match. Gap: pay and office cadence unconfirmed, public-sector band may sit below the Montréal floor",
       "url": "https://www.linkedin.com/jobs/view/4465058266/",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 7,
@@ -1085,7 +1085,7 @@
       "salary": "Not stated",
       "gap": "CI/CD, AWS and Azure IaC, Docker/Kubernetes standards under the Cloud Operations team; 5+ yrs; pay not posted",
       "url": "https://www.linkedin.com/jobs/view/4473816710/",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 6,
@@ -1096,7 +1096,7 @@
       "salary": "Not stated",
       "gap": "Industrializing AI solutions: infrastructure, CI/CD and production environments for AI teams; cloud AWS/Azure/GCP with AI services, 5+ yrs; French posting; remote vs hybrid differs by copy",
       "url": "https://www.linkedin.com/jobs/view/4452542111/",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 6,
@@ -1107,7 +1107,7 @@
       "salary": "Not stated",
       "gap": "AWS/Azure hybrid infrastructure, Kubernetes, IaC and incident response in French; Marc already has an Applied Tecsys SRE row (different role); Kubernetes depth to confirm",
       "url": "https://www.linkedin.com/jobs/view/4464889693/",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 5,
@@ -1118,7 +1118,7 @@
       "salary": "CAD $104,900–$154,800",
       "gap": "AWS-primary (EC2, Auto Scaling, RDS, S3, Lambda, ECS) with GitHub Actions/CodePipeline for a .NET/Kentico stack; 8+ yrs asked",
       "url": "https://www.linkedin.com/jobs/view/4473932844/",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 5,
@@ -1129,7 +1129,7 @@
       "salary": "CAD $191,100",
       "gap": "Software-engineering weighted: 5+ yrs with Ruby/Go/Terraform building reliability and deployment infrastructure for T0 services; remote-first with quarterly meetups",
       "url": "https://www.linkedin.com/jobs/view/4447230507/",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 4,

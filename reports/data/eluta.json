@@ -179,7 +179,7 @@
       "salary": "CAD $80,000–$138,000/yr",
       "gap": "Bilingual French/English required (a strength); Snowflake and Databricks listed as assets — Databricks is a direct Énergir match; hybrid cadence and the top of the pay band vs the $120k Montréal floor to confirm",
       "url": "https://www.eluta.ca/cache?u=25404511:careers.deloitte.ca",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 6,
@@ -190,7 +190,7 @@
       "salary": "Not stated",
       "gap": "AWS and/or GCP with Terraform and CI/CD — either cloud accepted, but no Azure; 4–5 years asked; pay unconfirmed against the $120k Montréal floor",
       "url": "https://www.eluta.ca/cache?u=25081863:www.brainfinance.com",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 6,
@@ -201,7 +201,7 @@
       "salary": "CAD $100,000–$120,000/yr",
       "gap": "Level II (2–4 yrs) is below Marc’s seniority; Loki/Mimir/Tempo/Grafana telemetry on multi-cluster EKS rather than his Dynatrace/Splunk/ELK background",
       "url": "https://www.eluta.ca/cache?u=25387579:jobs.jobvite.com",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 5,
@@ -212,7 +212,7 @@
       "salary": "Not stated",
       "gap": "Python/SQL data-pipeline ownership and ML/OR tooling is the core; Azure, Terraform/Bicep, CI/CD and observability are real, but this is data-platform engineering more than infrastructure",
       "url": "https://www.eluta.ca/cache?u=25412523:jobs.lever.co",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 5,
@@ -223,7 +223,7 @@
       "salary": "CAD $110,000–$130,000/yr",
       "gap": "Intermediate scope (3+ yrs) reporting alongside a Senior DevOps; AWS, Kubernetes, Terraform stack",
       "url": "https://www.eluta.ca/cache?u=25419015:commonsku.na.teamtailor.com",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 4,
