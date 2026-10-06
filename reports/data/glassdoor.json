@@ -4,7 +4,7 @@
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "Rechecked October 5, 2026 — all 6 queries rendered (DevOps 36, Platform 215, SRE 43, Cloud 114, DevSecOps 11, FDE 0). 1 new posting auto-filed: Intact DevOps Specialist - Shared Services (Montréal hybrid, CAD $118.7–145.1k, score 7).",
+  "latest_update": "Re-read October 5–6, 2026 — Glassdoor loaded without a block this time and the right-hand description pane was read for about 55 listings across the DevOps, Platform and Cloud queries. Two new roles filed: Koonkie Cloud Services DevOps Engineer (Azure, Terraform/Bicep, 5+ yrs, British Columbia, $130–140k; score 7) and CDPQ Principal Developer, IaC Microsoft 365 & Azure (Montréal hybrid; score 6). Site Reliability Engineer, DevSecOps and Forward Deployed Engineer were not re-read because the pane load slowed to a crawl.",
   "stats": [
     {
       "value": 6,
@@ -247,6 +247,61 @@
       "gap": "Contract rate is well below the $80/hr long-term floor and the $90/hr floor for shorter work",
       "url": "https://www.glassdoor.ca/Job/canada-cloud-engineer-jobs-SRCH_IL.0,6_IN3_KO7,21.htm",
       "status": "Skipped — rate below floor"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Koonkie Cloud Services",
+      "location": "British Columbia — remote vs on-site not stated",
+      "salary": "CAD $130,000–$140,000",
+      "gap": "Azure-first (Terraform/Bicep, GitHub Actions, Blob/ACR) with a 5+ yr senior-DevOps/SRE bar plus mentoring; work arrangement unconfirmed — confirm remote eligibility from Ontario",
+      "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm?fromAge=7&sortBy=date_desc",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Développeur(-euse) principal(e), IaC Microsoft 365 & Azure",
+      "company": "Caisse de dépôt et placement du Québec (CDPQ)",
+      "location": "Montréal, QC — hybrid (office days not stated; confirm <=2)",
+      "salary": "Not shown on Glassdoor (CDPQ bands are typically well above the $120k floor — confirm)",
+      "gap": "About half the role is Microsoft 365/Exchange/Entra administration plus a 24/7 on-call rotation; the other half (OpenTofu/Bicep, Azure DevOps pipelines, DevSecOps) is a direct fit",
+      "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm?fromAge=7&sortBy=date_desc",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Principal Observability Engineer (12-month contract)",
+      "company": "isgSearch",
+      "location": "Toronto, ON",
+      "salary": "CAD $125,000–$180,000 (Glassdoor estimate)",
+      "gap": "10+ yrs with deep AWS and Kubernetes/OpenShift — AWS depth gate; Toronto",
+      "url": "https://www.glassdoor.ca/Job/canada-cloud-engineer-jobs-SRCH_IL.0,6_IN3_KO7,21.htm?fromAge=7&sortBy=date_desc",
+      "status": ""
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "GCP Infrastructure & Cloud SRE Engineer",
+      "company": "Realign",
+      "location": "Toronto, ON — on-site",
+      "salary": "CAD $120,000",
+      "gap": "GCP-primary and on-site in Toronto",
+      "url": "https://www.glassdoor.ca/Job/canada-devops-engineer-jobs-SRCH_IL.0,6_IN3_KO7,22.htm?fromAge=7&sortBy=date_desc",
+      "status": "Skipped — GCP + Toronto on-site"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Cloud Engineer",
+      "company": "Tangerine",
+      "location": "Toronto, ON",
+      "salary": "Not stated",
+      "gap": "Toronto is outside the reachable cities; GCP/Kubernetes stack",
+      "url": "https://www.glassdoor.ca/Job/canada-cloud-engineer-jobs-SRCH_IL.0,6_IN3_KO7,21.htm?fromAge=7&sortBy=date_desc",
+      "status": "Skipped — Toronto"
     }
   ],
   "could_not_validate": [
@@ -264,6 +319,14 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 6 full-read pass — partial",
+      "items": [
+        "Glassdoor’s job pages sit behind a human-verification check, but the search page’s right-hand description pane loads each posting’s full description. Method: select each result card and read the pane (a plain scripted click does not update the pane; dispatching the full pointer/mouse event sequence at the card’s centre point does). Read in full: DevOps Engineer query 26 of 44 results (the list shows 26 cards and had no working ‘show more’), Platform Engineer 16 of 30 cards (mostly non-DevOps ‘platform’ roles) and Cloud Engineer 22 of 30 cards. About 55 unique descriptions in all. The pane became very slow partway through the Platform and Cloud runs, so the SRE, DevSecOps and FDE queries were <b>not re-read</b> in this pass.",
+        "<b>Filed (2):</b> Koonkie Cloud Services DevOps Engineer — “internal subject-matter expert for all things Azure”, Terraform/Bicep, GitHub Actions, Azure Blob/ACR, Python, 5+ yrs, mentoring developers, $130–140k, British Columbia (remote vs office not stated; confirm); and CDPQ ‘Développeur(-euse) principal(e), IaC Microsoft 365 & Azure’ — OpenTofu/Bicep IaC and Azure DevOps pipelines alongside M365/Exchange/Entra administration with a 24/7 on-call rotation, Montréal hybrid.",
+        "Excluded after reading: Realign GCP Infrastructure & Cloud SRE (Toronto on-site, GCP), Realign Platform Engineer AI/ML (Halifax on-site), Tangerine Cloud Engineer (Toronto, GCP/Kubernetes), isgSearch Principal Observability Engineer (12-month contract, 10+ yrs, deep AWS + OpenShift), BMO Principal AI Cloud Engineer and Lead Cloud Software Developer (AWS/AI development), Intact Principal Cloud Strategy (architect)."
+      ]
+    },
     {
       "heading": "October 5 query audit",
       "items": [
