@@ -1,33 +1,38 @@
 {
   "board": "S.i. Systems",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-07",
   "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Re-read October 5, 2026 — the 20-card page limit was lifted by running 13 queries (the 8 defaults at 20 cards each plus Azure, Kubernetes, Terraform, Cloud, Platform, SRE, DevSecOps variants); 44 unique postings were collected and every detail page read in full. Nothing new is eligible: the one new Azure/Bicep platform role is an expired June–July one-month contract.",
+  "latest_update": "Latest update: October 7, 2026 — all 8 mandatory queries plus 4 narrowing variants completed (46 unique postings, every one fetched in full). No new qualifying roles: every in-family posting was either already in the ledger, Toronto/other-city hybrid or on-site, clearance-gated, a manager role, or out of scope. 0 filed.",
   "stats": [
     {
-      "value": 8,
-      "label": "searches completed"
+      "value": "12 of 12",
+      "label": "queries complete (8 mandatory + 4 variants)"
     },
     {
-      "value": "~40",
-      "label": "unique postings reviewed (first 8/query)"
+      "value": 46,
+      "label": "unique postings fetched in full"
     },
     {
-      "value": 0,
-      "label": "eligible validated"
-    },
-    {
-      "value": 3,
-      "label": "new exclusions this run"
+      "value": 9,
+      "label": "rows added this run"
     },
     {
       "value": 0,
-      "label": "auto-filed"
+      "label": "auto-filed this run"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 7 query audit (real browser, no challenge or WAF page)",
+      "items": [
+        "Mandatory queries (<code>expertise=3</code>, rendered <code>q=</code> verified, 20 cards read each): DevOps Engineer 24 results · Senior DevOps Engineer 40 · Site Reliability Engineer 31 · Platform Engineer 28 · Cloud Engineer 35 · DevSecOps Engineer 20 · Infrastructure Engineer 57 · Senior Infrastructure Engineer 57 — all Complete. Narrowing variants for the capped queries: Azure 26 (20 read) · Kubernetes 4 · Terraform 7 · SRE 5 — all Complete.",
+        "46 unique postings across the 12 queries; each detail page was fetched and read in full. Roughly 25 were network, sysadmin, DBA, ServiceNow, SAP, WebMethods, Netcracker, Genesys or analyst roles with no SRE/platform/DevOps centre — set aside without rows (listed by count only, per the read-in-full policy for clearly unrelated occupations) after reading their headers and cadence lines.",
+        "Known pipeline matches (left untouched): Senior DevSecOps Engineer (crown corporation — Applied), Senior IT Application Specialist DevOps & AI Operations (Applied), Senior DevOps Specialist Jenkins/Terraform/Ansible/AWS (Applied), AWS Cloud Engineer 5+ yrs, Azure & Databricks DevOps (Oshawa hybrid), DevOps Engineering Director (SECRET clearance), Platform Engineer 8+ yrs, SRE 6+ yrs, Infrastructure Engineer bare-metal, Kubernetes Engineer (Toronto), and the other earlier rows.",
+        "Newly recorded exclusions this run: Manager SRE (Etobicoke hybrid 3x), mobile DevOps CI/CD and mainframe DevOps Deploy specialists (Toronto hybrid), DR architecture specialist, Cloud Platform Manager, telephony operational engineer, Ottawa on-site IM/IT Advisor, plus a stale Ottawa Senior SRE listing whose contract ended Feb 10, 2026. The cloud-platform Azure/Bicep listing (153337) has a contract end date of Jul 31, 2026 and stays Expired."
+      ]
+    },
     {
       "heading": "October 5 full-read pass",
       "items": [
@@ -69,7 +74,7 @@
       ]
     }
   ],
-  "method": "Eight independent searches were executed with expertise=3 in a rendered browser. Each query reached a real listing state and the first eight results were captured before deduplication. The soft keyword filter repeatedly returned the same small Networks and Infrastructure inventory as the September 21 run — same counts, same recurring requisition set. Current descriptions and applications.md statuses were reconciled; 12 previously validated rows remain, with no new eligible role and no inaccessible posting.",
+  "method": "October 7, 2026: 12 of 12 queries completed in a real browser with no challenge; 46 unique postings, all fetched in full; no eligible new role cleared the filing bar. Eight independent searches were executed with expertise=3 in a rendered browser. Each query reached a real listing state and the first eight results were captured before deduplication. The soft keyword filter repeatedly returned the same small Networks and Infrastructure inventory as the September 21 run — same counts, same recurring requisition set. Current descriptions and applications.md statuses were reconciled; 12 previously validated rows remain, with no new eligible role and no inaccessible posting.",
   "rows": [
     {
       "score": -1,
@@ -256,7 +261,7 @@
       "salary": "Negotiable (permanent FTE)",
       "gap": "24x7 rotating on-call and expert Linux/SAML/LDAPS expectations; GCP/GKE is only a nice-to-have; remote eligibility to confirm",
       "url": "https://www.sisystems.com/jobs/senior-it-application-specialist-devops-ai-operations-saas-client/330032003700360031003800/",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 0,
@@ -279,6 +284,114 @@
       "gap": "Toronto is outside the reachable cities; clearance flag in the posting",
       "url": "https://www.sisystems.com/search-it-jobs/?expertise=3&q=Kubernetes",
       "status": "Skipped — Toronto"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Manager, Site Reliability Engineering (SRE)",
+      "company": "S.i. Systems client",
+      "location": "Etobicoke, ON — hybrid 3x/week",
+      "salary": "Not stated",
+      "gap": "Ineligible — Etobicoke hybrid 3 days/week, outside reachable cities; people-management scope",
+      "url": "https://www.sisystems.com/jobs/manager-site-reliability-engineering-sre/330032003500360031003600/",
+      "status": "Skipped — Toronto-area hybrid 3 days; manager",
+      "engagement": "Permanent"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Specialty Developer III — mobile DevOps CI/CD (GitHub Actions, Jenkins, Android/iOS)",
+      "company": "S.i. Systems client",
+      "location": "Toronto, ON — hybrid 2 days on-site (may rise to 4)",
+      "salary": "Hourly: negotiable",
+      "gap": "Ineligible — Toronto hybrid outside reachable cities; mobile build-toolchain (Android/iOS) specialism",
+      "url": "https://www.sisystems.com/jobs/specialty-developer-iii-5-years-of-experience-to-support-mobile-devops-ci-cd-platforms-using-github-actions-jenkins-android-and-ios-build-toolchains-58368/330032003400380035003600/",
+      "status": "Skipped — Toronto hybrid",
+      "engagement": "Contract"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Specialty Developer — mainframe SDLC deployment automation (DevOps Deploy, z/OS)",
+      "company": "S.i. Systems client",
+      "location": "Toronto, ON — hybrid (Tuesday mandatory)",
+      "salary": "Hourly: negotiable",
+      "gap": "Ineligible — Toronto hybrid outside reachable cities; z/OS mainframe tooling",
+      "url": "https://www.sisystems.com/jobs/specialty-developer-5-years-of-experience-to-automate-mainframe-sdlc-deployment-workflows-using-devops-deploy-z-os-and-ci-cd-pipelines-104886-1/330032003400310032003500/",
+      "status": "Skipped — Toronto hybrid",
+      "engagement": "Contract"
+    },
+    {
+      "score": 7,
+      "family": "SRE",
+      "title": "Site Reliability Engineer with strong Dynatrace expertise (jp1345)",
+      "company": "S.i. Systems (Banking client)",
+      "location": "Toronto, ON — hybrid model, about 2 days a month at present",
+      "salary": "Hourly: negotiable",
+      "gap": "Dynatrace-centred observability for large distributed systems; Toronto hybrid cadence to confirm (previous decision preserved)",
+      "url": "https://www.sisystems.com/jobs/site-reliability-engineer-with-strong-expertise-in-dynatrace-to-ensure-the-reliability-performance-and-observability-of-large-scale-distributed-systems-jp1345/330032003400300033003800/",
+      "status": "Skipped",
+      "engagement": "Contract"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Technical Architecture Specialist — disaster recovery and enterprise resilience (10+ years)",
+      "company": "S.i. Systems client",
+      "location": "Toronto, ON — hybrid",
+      "salary": "Hourly: negotiable",
+      "gap": "Out of scope — DR architecture/enterprise infrastructure planning, not SRE/platform/DevOps work; Toronto hybrid also unreachable",
+      "url": "https://www.sisystems.com/jobs/senior-technical-architecture-specialist-10-years-required-to-support-disaster-recovery-architecture-testing-and-enterprise-resilience-initiatives-247326/330032003700370030003100/",
+      "status": "Skipped — DR architecture scope",
+      "engagement": "Contract"
+    },
+    {
+      "score": 0,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer (public sector, Digital Hub)",
+      "company": "S.i. Systems client",
+      "location": "Ottawa, ON",
+      "salary": "Daily: negotiable",
+      "gap": "Out of scope as actionable — posting's term ended February 10, 2026 (Intermediate SRE, public sector); stale listing still shown by the site",
+      "url": "https://www.sisystems.com/jobs/senior-site-reliability-engineer-to-provide-site-reliability-engineering-services-in-support-of-production-applications-and-operations/320039003600340037003100/",
+      "status": "Expired — contract end date Feb 10, 2026",
+      "engagement": "Contract"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Cloud Platform Manager (10+ years)",
+      "company": "S.i. Systems client",
+      "location": "Toronto, ON — Remote Ontario with occasional travel",
+      "salary": "Hourly: negotiable",
+      "gap": "Out of scope — manager role over Modern Workplace/endpoint management and Azure for a managed-services client; people/accountability scope Marc lacks",
+      "url": "https://www.sisystems.com/jobs/cloud-platform-manager-to-lead-and-be-accountable-for-the-design-delivery-and-operational-excellence-of-cloud-platform-tools/330032003200300034003500/",
+      "status": "Skipped — manager scope",
+      "engagement": "Contract"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Operational Engineer — enterprise telephony (Teams Telephony, Amazon Connect)",
+      "company": "S.i. Systems client",
+      "location": "Toronto/Waterloo — primarily remote, office about once a month",
+      "salary": "Hourly: negotiable",
+      "gap": "Out of scope — contact-centre telephony operations; also requires 5 consecutive years of Canadian residence for ERC screening",
+      "url": "https://www.sisystems.com/jobs/senior-operational-engineer-to-support-and-modernize-enterprise-telephony-solutions-using-microsoft-teams-telephony-and-amazon-connect-1715-1733/330032003500390030003300/",
+      "status": "Skipped — telephony scope",
+      "engagement": "Contract"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior (Bilingual) IM/IT Advisor, Enterprise Systems",
+      "company": "S.i. Systems client",
+      "location": "Ottawa, ON — on-site",
+      "salary": "Salary: $105,300–$131,600",
+      "gap": "Ineligible — fully on-site in Ottawa; M365/VMware/Hyper-V/Commvault infrastructure administration rather than platform engineering",
+      "url": "https://www.sisystems.com/jobs/senior-bilingual-im-it-advisor-enterprise-systems-to-lead-enterprise-infrastructure-modernization-using-microsoft-365-and-hybrid-cloud-operations/330032003500340035003500/",
+      "status": "Skipped — Ottawa on-site",
+      "engagement": "Permanent"
     }
   ],
   "could_not_validate": [

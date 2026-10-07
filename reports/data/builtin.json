@@ -1,37 +1,128 @@
 {
   "board": "BuiltIn",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-07",
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
-  "latest_update": "Re-read October 5, 2026 — all 156 BuiltIn postings were read in full; 2 more roles filed (Case IQ DevOps Engineer 7, Spellbook Platform & Infrastructure 5), bringing BuiltIn to 8 filings today.",
+  "latest_update": "Latest update: October 7, 2026 — all 62 Built In passes completed (9 role queries, 20 city hybrid passes, 33 hub passes; HTTP 200 throughout). 174 unique postings collected, 113 not previously in the ledger/report were fetched in full; Ciklum (7), Kinaxis Staff Cloud Engineer (5) and the other LinkedIn-filed roles also surfaced here. No new Built-In-only role cleared the filing bar; 0 filed from this source.",
   "stats": [
     {
-      "value": 9,
-      "label": "remote title passes completed"
+      "value": "62 of 62",
+      "label": "passes attempted / completed"
     },
     {
-      "value": 5,
-      "label": "new postings validated this run"
+      "value": 174,
+      "label": "unique postings collected"
     },
     {
-      "value": 2,
-      "label": "new eligible, auto-filed"
+      "value": 113,
+      "label": "fetched in full (not already in ledger)"
     },
     {
-      "value": 7,
-      "label": "pipeline matches carried forward"
-    },
-    {
-      "value": 6,
-      "label": "ineligible (hard eligibility gate)"
-    },
-    {
-      "value": 12,
-      "label": "out of scope (domain mismatch)"
+      "value": 0,
+      "label": "auto-filed this run"
     }
   ],
   "rows": [
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Platform Engineer, Infrastructure",
+      "company": "Helius",
+      "location": "Remote — Canada eligibility not stated (company HQ Toronto, 'fully distributed team')",
+      "salary": "Not stated",
+      "gap": "Bare-metal fleet provisioning (PXE/IPMI/BMC/RAID) is the core; Marc's fleet work was VM-based; eligibility not confirmed so not filed",
+      "url": "https://builtin.com/job/platform-engineer-infrastructure/11404533",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Penn Interactive (PENN Entertainment / theScore)",
+      "location": "Remote — Canada",
+      "salary": "CAD $145,000–$193,000",
+      "gap": "Strong production Kubernetes cluster operations plus Go/Python tooling and distributed-systems depth",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer/10920033",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Infrastructure Developer",
+      "company": "Blue J",
+      "location": "Toronto/Kitchener-Waterloo hybrid, in person 1–2 times a quarter; must be eligible to work in Canada",
+      "salary": "CA$160,000–CA$180,000",
+      "gap": "5+ years AWS or GCP via IaC and 3+ years Kubernetes",
+      "url": "https://builtin.com/job/senior-infrastructure-developer/11493659",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Senior or Staff Site Reliability Engineer - 26248",
+      "company": "Enverus",
+      "location": "Canada-based, remote or in-office",
+      "salary": "Not stated",
+      "gap": "3+ years AWS administration and 5+ years Windows/Linux server administration; energy-SaaS domain fits",
+      "url": "https://builtin.com/job/staff-site-reliability-engineer-26248/10213232",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Chromatic",
+      "location": "Remote — mainland US or Canada",
+      "salary": "USD $155,000–$190,000",
+      "gap": "AWS-primary Terraform/container security with 5+ years",
+      "url": "https://builtin.com/job/senior-devops-engineer/10381653",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Planet",
+      "location": "Remote — US or Canada",
+      "salary": "USD $153,000–$191,300",
+      "gap": "6+ years services at scale; Kubernetes/GCP-heavy satellite data platform",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer/10874374",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Sr. Infrastructure Engineer",
+      "company": "Very Good Security",
+      "location": "Remote (2 locations; Canada wording in description unconfirmed)",
+      "salary": "CAD $155,000–$230,000",
+      "gap": "AWS EKS with Flux/Argo and 5+ years distributed systems",
+      "url": "https://builtin.com/job/sr-infrastructure-engineer/9588405",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "Sr. Staff Infrastructure Engineer",
+      "company": "Very Good Security",
+      "location": "Remote",
+      "salary": "CAD $185,000–$280,000",
+      "gap": "Multi-region AWS payment infrastructure architecture at Staff level",
+      "url": "https://builtin.com/job/sr-staff-infrastructure-engineer/10972335",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Customer Reliability Engineer",
+      "company": "Andromeda (andromeda.ai)",
+      "location": "In-Office or Remote (8 locations)",
+      "salary": "Not stated",
+      "gap": "Provisioning and operating Kubernetes clusters; Canada eligibility not stated",
+      "url": "https://builtin.com/job/site-reliability-engineer-ai-infrastructure/9024257",
+      "status": ""
+    },
     {
       "score": 8,
       "family": "SRE",
@@ -41,7 +132,7 @@
       "salary": "CAD $123,250-$166,750/year",
       "gap": "Requires deeper production AWS/EKS ownership and ideally an AWS or Azure certification; Marc's strongest cloud depth is Azure and his AWS work was a dated, non-production build.",
       "url": "https://builtin.com/job/senior-site-reliability-developer/11316943",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 7,
@@ -85,7 +176,7 @@
       "salary": "$120,000–$145,000 CAD/year (Canada-based base band)",
       "gap": "Kubernetes \"mastery\" and Go are named requirements Marc doesn't have at that depth — his Kubernetes is real but provisioning/operational-side, not deep cluster engineering. Otherwise a strong match: AWS+Azure venue, Terraform at scale, Dynatrace-equivalent APM, and explicit AI-assisted-engineering tooling (Claude Code) that Marc's Énergir practice answers directly.",
       "url": "https://builtin.com/job/senior-sre/11299911",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 7,
@@ -118,7 +209,7 @@
       "salary": "Not stated",
       "gap": "AWS production ops is the primary cloud (not Azure) — Marc's real answer is the dated, by-hand, non-production Tink build, honestly bounded. Otherwise strong tooling match: Terraform, Kubernetes/Docker, Jenkins/GitHub Actions CI/CD, scripting. Salary not stated; confirm the floor before pursuing.",
       "url": "https://builtin.com/job/senior-devops-engineer/11125369",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 6,
@@ -448,7 +539,7 @@
       "salary": "USD $160,000–$210,000 (Canadian bands lower, not stated)",
       "gap": "TypeScript/Node expectation and a software-engineer-style technical screen; Kubernetes operating depth",
       "url": "https://builtin.com/job/site-reliability-engineer/11433395",
-      "status": "InProcess"
+      "status": "Skipped"
     },
     {
       "score": 7,
@@ -459,7 +550,7 @@
       "salary": "Not stated (contract)",
       "gap": "Rate not stated; Kubernetes depth beyond Marc’s hands-on record; cloud accepted as AWS, Azure or GCP",
       "url": "https://builtin.com/job/senior-devops-engineer/11466766",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 6,
@@ -470,7 +561,7 @@
       "salary": "Not stated",
       "gap": "AWS is the primary cloud (Azure secondary) and deep Kubernetes is expected; the ask for large-scale CI/CD platforms is a direct Énergir match",
       "url": "https://builtin.com/job/senior-devops-engineer/11379158",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 5,
@@ -481,7 +572,7 @@
       "salary": "Not stated",
       "gap": "Mid-level scope (2–4 yrs) below Marc’s seniority, though the stack (GitHub Actions, Terraform, ArgoCD, Ansible) fits closely",
       "url": "https://builtin.com/job/cloud-engineer-2-site-reliability-engineering/11487792",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 5,
@@ -492,7 +583,7 @@
       "salary": "CAD $110,000–$120,000/yr",
       "gap": "Intermediate level (4–6 yrs); AWS named as the primary cloud; .NET/Rails/TypeScript stack",
       "url": "https://builtin.com/job/intermediate-devops-engineer/11379471",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 4,
@@ -545,7 +636,7 @@
       "salary": "Not stated",
       "gap": "Multi-cloud Azure (AKS, App Insights) and AWS (ECS, Lambda, DynamoDB) operations with Terraform/CDK and CI/CD; Senior level — pay not posted; AWS services are part of a two-cloud mix, so no single-cloud gate",
       "url": "https://builtin.com/job/devops-engineer/11187585",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 5,
@@ -556,7 +647,7 @@
       "salary": "Not posted (above Ontario disclosure threshold)",
       "gap": "AWS, MongoDB, IaC, CI/CD and observability for a legal-AI product; software-engineering weighted, AWS-primary",
       "url": "https://builtin.com/job/senior-software-engineer-platform-infrastructure/11233917",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 4,
@@ -627,6 +718,10 @@
   ],
   "could_not_validate": [
     {
+      "text": "MaintainX Site Reliability Engineer: full description read and a decent reliability/enablement fit, but the posting says only 'In-Office or Remote' with no Canada or Ontario wording, so remote eligibility from Ontario is not confirmed.",
+      "url": "https://builtin.com/job/site-reliability-engineer/10644498"
+    },
+    {
       "text": "GitLab — Principal Site Reliability Engineer, Platform Engineering: Dedicated: full technical description was accessible and current, but the listing showed only '3 Locations' and a US salary band; its generic country-hiring statement did not explicitly confirm Canada eligibility.",
       "url": "https://builtin.com/job/principal-site-reliability-engineer-platform-engineering-dedicated/11333544"
     },
@@ -644,6 +739,16 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 7 pass audit (direct HTTP, 3-second spacing, HTTP 200 throughout)",
+      "items": [
+        "<b>Role queries (9 of 9 Complete)</b> via <code>builtin.com/jobs/remote/dev-ops?search=…</code>: Site Reliability Engineer 25 · Reliability Engineer 25 · Platform Engineer 25 · Infrastructure Engineer 25 · Cloud Engineer 25 · DevOps Engineer 25 · DevSecOps Engineer 3 · Azure DevOps Engineer <b>0</b> (Zero results) · Forward Deployed Engineer 25 results collected.",
+        "<b>Reachable-city hybrid passes (20 of 20 Zero results)</b> via <code>/jobs/hybrid?search=…&amp;city=…</code>: Ottawa, Kingston, Cornwall and Montréal each returned zero hybrid postings for Cloud Platform, Platform, DevOps, SRE and Infrastructure (Ottawa had two DevOps/Infrastructure hybrid results on October 5; they are no longer listed).",
+        "<b>Remote-hub passes (33 of 33 Complete)</b> for Toronto, Vancouver, Montréal, Calgary, Ottawa, Edmonton, Waterloo, Halifax, Winnipeg, Québec City and Victoria x DevOps/SRE/Platform: each returned 25 results, but as before the hub route re-surfaces the same national remote inventory rather than new local postings.",
+        "<b>Totals:</b> 62 passes attempted, 62 completed; 174 unique job IDs; 113 not already tracked were fetched in full and ranked by DevOps/SRE/infrastructure content in the description (not the title), then the Canada-eligible in-family ones were read through duties and requirements. About 40 of the 113 carry no Canada wording at all and were set aside as eligibility-unconfirmed rather than assumed eligible; most of the rest are AWS/GCP or Kubernetes-depth, security-infrastructure, ML-platform or software-engineering roles.",
+        "Pipeline matches seen again: Ciklum (BuiltIn copy of the Senior DevOps Engineer, Azure/AKS/Terraform — filed today from LinkedIn), Kinaxis Staff Cloud Engineer (filed today from LinkedIn), Smile Digital Health Azure Platform Engineer (Applied), Crypto.com Senior DevOps (AWS gate, not filed). Helius (bare-metal infrastructure, score 5) is the closest new fit but its Canada eligibility is not stated, so it is not filed."
+      ]
+    },
     {
       "heading": "October 5 full-read pass",
       "items": [
@@ -706,5 +811,5 @@
       ]
     }
   ],
-  "method": "Rendered-browser run on September 24, 2026. All nine mandatory Fully Remote role-query passes and all eleven remote-hub discovery passes were completed, with complete first pages reviewed before deduplication. Five fresh plausible postings were opened in full: Vena and MLabs were eligible and auto-filed; Samsara was US-only; GitLab and Proofpoint lacked explicit Canadian location eligibility. Built In's location control repeatedly resolved typed Eastern Ontario cities to Toronto, and the browser session timed out while applying Hybrid state across the direct city routes. The four reachable-city hybrid passes therefore remain incomplete; this report does not claim a complete overall rotation."
+  "method": "October 7, 2026: 62 of 62 Built In passes completed over direct HTTP (3-second spacing, no block); 174 unique postings, 113 untracked ones read in full; 0 filed. Rendered-browser run on September 24, 2026. All nine mandatory Fully Remote role-query passes and all eleven remote-hub discovery passes were completed, with complete first pages reviewed before deduplication. Five fresh plausible postings were opened in full: Vena and MLabs were eligible and auto-filed; Samsara was US-only; GitLab and Proofpoint lacked explicit Canadian location eligibility. Built In's location control repeatedly resolved typed Eastern Ontario cities to Toronto, and the browser session timed out while applying Hybrid state across the direct city routes. The four reachable-city hybrid passes therefore remain incomplete; this report does not claim a complete overall rotation."
 }

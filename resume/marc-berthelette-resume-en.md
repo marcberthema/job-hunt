@@ -27,7 +27,7 @@ Senior DevOps engineer who takes ownership of production systems other people ar
 
 ### Énergir — Senior DevOps Engineer
 
-**Montréal, QC | September 2021 – Present**
+**Montréal, QC | September 2021 – September 2026**
 
 - Owned CI/CD standardization for 12 application teams and 70+ applications across nine distinct runtimes — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, and Databricks — entering most of those ecosystems with no prior experience; took the Oracle team from fully manual deployment to automated delivery after an earlier attempt had failed.
 - Rebuilt Salesforce delivery with no prior Salesforce experience — replacing legacy ANT scripts with the official Salesforce CLI tooling and building a validation pipeline that tests every candidate merge in a sandbox — cutting missed deployment windows from a recurring problem to a single miss since launch, with a dependable every-other-Tuesday cadence.

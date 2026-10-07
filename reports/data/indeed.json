@@ -1,29 +1,34 @@
 {
   "board": "Indeed",
-  "run_date": "2026-10-06",
+  "run_date": "2026-10-07",
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "Rechecked October 6, 2026 in the authenticated browser — all 51 mandatory passes completed with seven-second pacing. 125 unique IDs were collected, 37 plausible postings received full-description review, and two new qualifying roles were auto-filed for review.",
+  "latest_update": "Latest update: October 7, 2026 — INCOMPLETE run: Indeed rate-limited (HTTP 429) at pass 29 of 51; 28 passes completed, 23 not run. No new roles filed; about 14 plausible new listings are unread and listed under Could not validate.",
   "stats": [
     {
-      "value": "51 of 51",
-      "label": "mandatory passes complete"
+      "value": "28 of 51",
+      "label": "mandatory passes complete (23 incomplete after HTTP 429)"
     },
     {
-      "value": 51,
-      "label": "passes attempted"
+      "value": 115,
+      "label": "unique IDs collected (placeholders included)"
     },
     {
-      "value": 125,
-      "label": "unique posting IDs collected"
-    },
-    {
-      "value": 2,
+      "value": 0,
       "label": "auto-filed this run"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 7 run (INCOMPLETE — HTTP 429)",
+      "items": [
+        "Ran from the authenticated Indeed browser tab with same-origin requests, past 7 days, date-sorted, first page, 7-second spacing. <b>Canada title passes — 9 of 9 Complete</b> (16 cards each, Forward Deployed 7: Site Reliability, Reliability, Platform, Infrastructure, Cloud, DevOps, DevSecOps, Azure DevOps, Forward Deployed). <b>Reachable-city passes — 19 of 20 Complete</b>: Ottawa 13/16/10/6/7 · Kingston 6/6/2/6/6 · Cornwall 6/2/2/6/6 · Montréal 16/16/16/10 (Cloud Platform / Platform / DevOps / SRE / Infrastructure order; Montréal Infrastructure is the incomplete pass); Forward Deployed returned 7.",
+        "<b>Montréal / Infrastructure Engineer — Incomplete (HTTP 429)</b>, and all <b>22 remote-hub passes (11 hubs x DevOps/SRE remote) were not attempted</b>: the skill requires stopping at the first 429, so there was no retry or workaround. Passes attempted 29, completed 28, incomplete 23. This repeats the October 5 rate-limit point (pass 29).",
+        "Because discovery was cut off, no posting descriptions were opened this run; the 115 unique IDs (about 90 not already in the ledger or report) were triaged by title only and nothing was scored or filed. The roles worth a full read next session are listed under Could not validate. Most of the remaining IDs are noise (mechanical reliability engineering, security advisors, sysadmins, application developers) or already-known pipeline roles (Koonkie, CMHC, Intact, LRO via LinkedIn).",
+        "No CAPTCHA or verification page appeared; no access control was bypassed."
+      ]
+    },
     {
       "heading": "October 6 completed-run audit (authenticated browser, seven-second pacing)",
       "items": [
@@ -136,7 +141,7 @@
       ]
     }
   ],
-  "method": "October 6, 2026 authenticated-browser run: first-page, past-7-days, date-sorted searches were paced at least seven seconds apart. All 51 required passes completed (9 Canada-title, 20 reachable-city and 22 remote-hub). Search cards yielded 125 unique non-placeholder IDs; all 37 plausible or ambiguous postings were opened and read in full. Cross-source and location-copy duplicates were reconciled against applications.md without changing their pipeline state. Two newly eligible postings scoring at least 5 were filed as New; compensation, geography, clearance and hard skill-depth gates were applied before filing.",
+  "method": "October 7, 2026 incomplete run: 28 of 51 mandatory passes completed before Indeed returned HTTP 429 (Montréal Infrastructure Engineer); the 22 remote-hub passes were not run. No descriptions opened, nothing scored or filed. Previously validated rows and pipeline decisions are preserved unchanged. Resume the Indeed hub passes and the unread candidates in a later session. October 6, 2026 authenticated-browser run: first-page, past-7-days, date-sorted searches were paced at least seven seconds apart. All 51 required passes completed (9 Canada-title, 20 reachable-city and 22 remote-hub). Search cards yielded 125 unique non-placeholder IDs; all 37 plausible or ambiguous postings were opened and read in full. Cross-source and location-copy duplicates were reconciled against applications.md without changing their pipeline state. Two newly eligible postings scoring at least 5 were filed as New; compensation, geography, clearance and hard skill-depth gates were applied before filing.",
   "rows": [
     {
       "score": 3,
@@ -158,7 +163,7 @@
       "salary": "CAD $129,400–$232,800/year",
       "gap": "Formal people-management ownership is broader than Marc's recent individual-contributor scope; technical SRE, distributed-systems, cloud and mentoring fit is otherwise strong",
       "url": "https://ca.indeed.com/viewjob?jk=156c4f2f4842f88f",
-      "status": "InProcess"
+      "status": "Skipped"
     },
     {
       "score": 8,
@@ -169,7 +174,7 @@
       "salary": "CAD $104,180–$130,225/year",
       "gap": "Salary range straddles the applicable floor and the posting requires Reliability Status; confirm office cadence and that clearance is obtainable rather than pre-existing",
       "url": "https://ca.indeed.com/viewjob?jk=2e3febb138b3e7f0",
-      "status": "InProcess"
+      "status": "Applied"
     },
     {
       "score": 8,
@@ -998,43 +1003,199 @@
     }
   ],
   "_previously_blocked_candidates": [
-    {"text":"Intact Financial — Conseiller(ère) en observabilité / DevOps (Saint-Hyacinthe): collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=11487a244b3a7566"},
-    {"text":"ISG Search — Principal Observability Engineer: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=fcc1d73286559ebb"},
-    {"text":"Intact Financial — Observability / DevOps Advisor (Saint-Hyacinthe): collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=7abe011ecb32bd6d"},
-    {"text":"Intact Financial — Conseiller(ère) en observabilité / DevOps (Montréal): collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=d84f8911b3d42924"},
-    {"text":"Intact Financial — Observability / DevOps Advisor (Montréal): collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=d66de104a86a5cb3"},
-    {"text":"Akamai — Manager Site Reliability Engineering: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=156c4f2f4842f88f"},
-    {"text":"Realign LLC — GCP Infrastructure & Cloud SRE Engineer: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=d97c84aaf2fa10a4"},
-    {"text":"Ontario Teachers' Pension Plan — SRE Lead, Product Enablement: collected, but verification blocked workplace and full-description review.","url":"https://ca.indeed.com/viewjob?jk=5bb9711596eb35df"},
-    {"text":"Société québécoise des infrastructures — Ingénieur coordonnateur à l'exploitation: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=7fc2abfdfe36c58b"},
-    {"text":"Maderra Engineering — Lead Automation Specialist: collected, but verification blocked domain and eligibility review.","url":"https://ca.indeed.com/viewjob?jk=5e5d4e70d46ff7f4"},
-    {"text":"ISG Search — Principal Automation Engineer: collected, but verification blocked domain and workplace review.","url":"https://ca.indeed.com/viewjob?jk=dd31dc63576fa05e"},
-    {"text":"APPTOZA — Microsoft Power Platform Developer: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=95c7c5efb61c281e"},
-    {"text":"Future Electronics — Senior System Specialist (Cloud): collected, but verification blocked cadence and full-description review.","url":"https://ca.indeed.com/viewjob?jk=dd93c28d9e1c486c"},
-    {"text":"Manpower — Analyse infrastructure IT/OT: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=4370ba8b93be956f"},
-    {"text":"Tangerine Bank — Cloud Engineer: collected, but verification blocked workplace and full-description review.","url":"https://ca.indeed.com/viewjob?jk=21e65f872939cb49"},
-    {"text":"Morson International — Senior Cloud DevOps Engineer: collected; likely matches an existing skipped requisition, but verification blocked identity confirmation.","url":"https://ca.indeed.com/viewjob?jk=baab4ea4bc33eb81"},
-    {"text":"Cellcom Communications — Expert solutions Cloud et Télécommunications: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=f2652f9d17e36066"},
-    {"text":"Baker Tilly Trillium — Cloud QBO Conversion Technician: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=9eb04319c0386a58"},
-    {"text":"Intact Financial — Développeur spécialiste DevOps, Shared Services (Saint-Hyacinthe): collected, but verification blocked duplicate/requisition confirmation.","url":"https://ca.indeed.com/viewjob?jk=2746c136eaa1b0ac"},
-    {"text":"Intact Financial — Développeur spécialiste DevOps, Shared Services (Laval): collected, but verification blocked duplicate/requisition confirmation.","url":"https://ca.indeed.com/viewjob?jk=659cd877a37f386e"},
-    {"text":"Intact Financial — Développeur spécialiste DevOps, Shared Services (Montréal): collected, but verification blocked duplicate/requisition confirmation.","url":"https://ca.indeed.com/viewjob?jk=d15ff8a05f29f722"},
-    {"text":"Intact Financial — Principal, Cloud Strategy & Autonomous Enterprise: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=69e6abe4c162723d"},
-    {"text":"APPTOZA — Project Manager-DevOps: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=700155fa41bd617e"},
-    {"text":"Epiphan Video — Senior QA Automation Engineer: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=92ba813c3c65e237"},
-    {"text":"CMHC — Senior Specialist, Software Engineering (CI/CD & Automation): collected, but verification blocked full-description and cadence review.","url":"https://ca.indeed.com/viewjob?jk=2e3febb138b3e7f0"},
-    {"text":"MSP Operational — Copilot AI and Power Platform Consultant: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=9a9d9dce9cea7bf7"},
-    {"text":"Empire Life — Cloud Systems Administrator: collected, but verification blocked full-description review.","url":"https://ca.indeed.com/viewjob?jk=7d4ccc94d20056db"},
-    {"text":"Logic 2000 — Cloud Infrastructure Engineer: collected; an older row indicates clearance and SAS Viya gates, but the current copy could not be refreshed.","url":"https://ca.indeed.com/viewjob?jk=d79cce775c31e184"},
-    {"text":"Monark — DevOps Engineer: collected, but verification blocked remote-eligibility and full-description review.","url":"https://ca.indeed.com/viewjob?jk=ab191c224ce2d4af"},
-    {"text":"Accommodations Plus International — Observability Engineer: collected, but verification blocked workplace and full-description review.","url":"https://ca.indeed.com/viewjob?jk=3efb56042593c308"},
-    {"text":"NASDAQ — DevOps Cloud Engineer: collected, but verification blocked workplace and full-description review.","url":"https://ca.indeed.com/viewjob?jk=4ca8f4d73cc33b11"},
-    {"text":"Intact Financial — DevOps Specialist, Shared Services (Laval): collected; likely a location copy of the existing InProcess role, but requisition identity could not be confirmed.","url":"https://ca.indeed.com/viewjob?jk=8302cb83f8a1fd7c"},
-    {"text":"Intact Financial — DevOps Specialist, Shared Services (Montréal): collected; likely a copy of the existing InProcess role, but requisition identity could not be confirmed.","url":"https://ca.indeed.com/viewjob?jk=00d79d924f1682af"},
-    {"text":"Cloud Imperium Games — Principal DevOps (Montréal): collected, but verification blocked freshness, cadence and full-description review.","url":"https://ca.indeed.com/viewjob?jk=f8c769d468b0b785"},
+    {
+      "text": "Intact Financial — Conseiller(ère) en observabilité / DevOps (Saint-Hyacinthe): collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=11487a244b3a7566"
+    },
+    {
+      "text": "ISG Search — Principal Observability Engineer: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=fcc1d73286559ebb"
+    },
+    {
+      "text": "Intact Financial — Observability / DevOps Advisor (Saint-Hyacinthe): collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=7abe011ecb32bd6d"
+    },
+    {
+      "text": "Intact Financial — Conseiller(ère) en observabilité / DevOps (Montréal): collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=d84f8911b3d42924"
+    },
+    {
+      "text": "Intact Financial — Observability / DevOps Advisor (Montréal): collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=d66de104a86a5cb3"
+    },
+    {
+      "text": "Akamai — Manager Site Reliability Engineering: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=156c4f2f4842f88f"
+    },
+    {
+      "text": "Realign LLC — GCP Infrastructure & Cloud SRE Engineer: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=d97c84aaf2fa10a4"
+    },
+    {
+      "text": "Ontario Teachers' Pension Plan — SRE Lead, Product Enablement: collected, but verification blocked workplace and full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=5bb9711596eb35df"
+    },
+    {
+      "text": "Société québécoise des infrastructures — Ingénieur coordonnateur à l'exploitation: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=7fc2abfdfe36c58b"
+    },
+    {
+      "text": "Maderra Engineering — Lead Automation Specialist: collected, but verification blocked domain and eligibility review.",
+      "url": "https://ca.indeed.com/viewjob?jk=5e5d4e70d46ff7f4"
+    },
+    {
+      "text": "ISG Search — Principal Automation Engineer: collected, but verification blocked domain and workplace review.",
+      "url": "https://ca.indeed.com/viewjob?jk=dd31dc63576fa05e"
+    },
+    {
+      "text": "APPTOZA — Microsoft Power Platform Developer: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=95c7c5efb61c281e"
+    },
+    {
+      "text": "Future Electronics — Senior System Specialist (Cloud): collected, but verification blocked cadence and full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=dd93c28d9e1c486c"
+    },
+    {
+      "text": "Manpower — Analyse infrastructure IT/OT: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=4370ba8b93be956f"
+    },
+    {
+      "text": "Tangerine Bank — Cloud Engineer: collected, but verification blocked workplace and full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=21e65f872939cb49"
+    },
+    {
+      "text": "Morson International — Senior Cloud DevOps Engineer: collected; likely matches an existing skipped requisition, but verification blocked identity confirmation.",
+      "url": "https://ca.indeed.com/viewjob?jk=baab4ea4bc33eb81"
+    },
+    {
+      "text": "Cellcom Communications — Expert solutions Cloud et Télécommunications: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=f2652f9d17e36066"
+    },
+    {
+      "text": "Baker Tilly Trillium — Cloud QBO Conversion Technician: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=9eb04319c0386a58"
+    },
+    {
+      "text": "Intact Financial — Développeur spécialiste DevOps, Shared Services (Saint-Hyacinthe): collected, but verification blocked duplicate/requisition confirmation.",
+      "url": "https://ca.indeed.com/viewjob?jk=2746c136eaa1b0ac"
+    },
+    {
+      "text": "Intact Financial — Développeur spécialiste DevOps, Shared Services (Laval): collected, but verification blocked duplicate/requisition confirmation.",
+      "url": "https://ca.indeed.com/viewjob?jk=659cd877a37f386e"
+    },
+    {
+      "text": "Intact Financial — Développeur spécialiste DevOps, Shared Services (Montréal): collected, but verification blocked duplicate/requisition confirmation.",
+      "url": "https://ca.indeed.com/viewjob?jk=d15ff8a05f29f722"
+    },
+    {
+      "text": "Intact Financial — Principal, Cloud Strategy & Autonomous Enterprise: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=69e6abe4c162723d"
+    },
+    {
+      "text": "APPTOZA — Project Manager-DevOps: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=700155fa41bd617e"
+    },
+    {
+      "text": "Epiphan Video — Senior QA Automation Engineer: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=92ba813c3c65e237"
+    },
+    {
+      "text": "CMHC — Senior Specialist, Software Engineering (CI/CD & Automation): collected, but verification blocked full-description and cadence review.",
+      "url": "https://ca.indeed.com/viewjob?jk=2e3febb138b3e7f0"
+    },
+    {
+      "text": "MSP Operational — Copilot AI and Power Platform Consultant: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=9a9d9dce9cea7bf7"
+    },
+    {
+      "text": "Empire Life — Cloud Systems Administrator: collected, but verification blocked full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=7d4ccc94d20056db"
+    },
+    {
+      "text": "Logic 2000 — Cloud Infrastructure Engineer: collected; an older row indicates clearance and SAS Viya gates, but the current copy could not be refreshed.",
+      "url": "https://ca.indeed.com/viewjob?jk=d79cce775c31e184"
+    },
+    {
+      "text": "Monark — DevOps Engineer: collected, but verification blocked remote-eligibility and full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=ab191c224ce2d4af"
+    },
+    {
+      "text": "Accommodations Plus International — Observability Engineer: collected, but verification blocked workplace and full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=3efb56042593c308"
+    },
+    {
+      "text": "NASDAQ — DevOps Cloud Engineer: collected, but verification blocked workplace and full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=4ca8f4d73cc33b11"
+    },
+    {
+      "text": "Intact Financial — DevOps Specialist, Shared Services (Laval): collected; likely a location copy of the existing InProcess role, but requisition identity could not be confirmed.",
+      "url": "https://ca.indeed.com/viewjob?jk=8302cb83f8a1fd7c"
+    },
+    {
+      "text": "Intact Financial — DevOps Specialist, Shared Services (Montréal): collected; likely a copy of the existing InProcess role, but requisition identity could not be confirmed.",
+      "url": "https://ca.indeed.com/viewjob?jk=00d79d924f1682af"
+    },
+    {
+      "text": "Cloud Imperium Games — Principal DevOps (Montréal): collected, but verification blocked freshness, cadence and full-description review.",
+      "url": "https://ca.indeed.com/viewjob?jk=f8c769d468b0b785"
+    },
     {
       "text": "Cloud Imperium Games — Principal DevOps, Montréal (10+ years, production Kubernetes, on-call): the Indeed page shows no pay and no remote/hybrid statement, so eligibility cannot be scored.",
       "url": "https://ca.indeed.com/jobs?q=Principal+DevOps&l=Montr%C3%A9al%2C+QC&fromage=3"
+    }
+  ],
+  "could_not_validate": [
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Innosphere SDG — Senior Site Reliability Engineer (Canada) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=807b284085a9f6c7"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Adidas — Platform & Site Reliability Engineer (Woodbridge, ON) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=221b4a00ed603b31"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Intact — Principal(e), Stratégie infonuagique (Montréal copy) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=d14f9b583b09cdcf"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Compugen — Senior Technology Architect, Contract (Toronto) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=302c0b9f62677aa5"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): InfoTrack Canada — Cloud Infrastructure & DevSecOps Engineer (Toronto) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=2a585e0e30744a38"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Innosphere SDG — Technical Solutions Consultant — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=db50d4304d08a0bb"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Intact — Architecte de résilience / Resiliency Architect (Montréal) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=d46a7834595e64d3"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Randstad — Architecte Infrastructure et Associé (Saint-Laurent) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=b9afbbbd8d57f210"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Spectra Group — Senior DevOps Engineer (Halifax) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=7c9052b487a96414"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): CMHC — Spécialiste principal, ingénierie logicielle (Ottawa; several sibling requisitions) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=08ad871336784fba"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Prism Cloud — DevOps Engineer (AWS+GCP), Remote — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=82b5618c91582515"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Digioptimizer — Cloud Platform / Site Reliability Engineer, Remote — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=ddc4d8e928873931"
+    },
+    {
+      "text": "Not opened in full (Indeed returned HTTP 429, so no further Indeed requests were made this run): Intact — Principal, Software Engineering – Platform (Montréal) — plausible in-family or ambiguous title; unread.",
+      "url": "https://ca.indeed.com/viewjob?jk=85ae4979f3095aa9"
     }
   ]
 }

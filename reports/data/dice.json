@@ -1,41 +1,95 @@
 {
   "board": "Dice",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-07",
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Re-read October 5, 2026 — all 31 unique Dice postings from the six queries (DevOps 7, Platform 3, SRE 4, Cloud 11, DevSecOps 7, FDE 4) were opened and read in full. None is eligible and in scope: W-2-only or US-local DevOps contracts, entry-level pay, architects and security roles. 0 filed.",
+  "latest_update": "Latest update: October 7, 2026 — all 6 queries completed (30 unique postings fetched and read from their JobPosting data). None is eligible and in scope: W2-only US-local DevOps contracts, US-based AWS architecture, AI/data/Oracle roles. 0 filed.",
   "stats": [
     {
-      "value": 6,
-      "label": "queries attempted"
+      "value": "6 of 6",
+      "label": "queries attempted / completed"
     },
     {
-      "value": 6,
-      "label": "queries completed"
-    },
-    {
-      "value": 19,
-      "label": "unique reviewed"
+      "value": 30,
+      "label": "unique postings read"
     },
     {
       "value": 0,
-      "label": "new eligible, scored"
+      "label": "eligible and in scope"
     },
     {
-      "value": 9,
-      "label": "known pipeline postings shown"
-    },
-    {
-      "value": 3,
-      "label": "out of scope, scored 0, reviewed in full"
-    },
-    {
-      "value": 11,
-      "label": "screened out by title"
+      "value": 0,
+      "label": "auto-filed this run"
     }
   ],
   "rows": [
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "AI Platform DevOps Engineer (Columbus/Chicago/Minneapolis/Detroit…)",
+      "company": "TechniPros, LLC",
+      "location": "US cities (remote-eligible listing), W2 contract 12+ months",
+      "salary": "Not stated",
+      "gap": "W2 only, 'No C2C' — same TN-incompatible arrangement Marc skipped on 2026-09-21; US-city local list",
+      "url": "https://www.dice.com/job-detail/00a044c3-da52-4c4b-acb3-3a349e3cffa1",
+      "status": "Skipped — W2 only, no C2C"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "AI Platform DevOps Engineer (Kansas City/Denver/Phoenix/St. Louis/Nashville)",
+      "company": "TechniPros, LLC",
+      "location": "US cities, W2 contract 12+ months",
+      "salary": "Not stated",
+      "gap": "W2 only, 'No C2C' — TN-incompatible; US-local",
+      "url": "https://www.dice.com/job-detail/389675bd-e530-4858-a553-7b922ec6fb21",
+      "status": "Skipped — W2 only, no C2C"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "AWS CDK Architect — Remote",
+      "company": "RELQ Technologies",
+      "location": "Remote, US-based candidates only",
+      "salary": "Not stated",
+      "gap": "Open to candidates based in the US only; AWS CDK architecture at scale is the deliverable — AWS hard gate",
+      "url": "https://www.dice.com/job-detail/111c2e20-98b8-4380-8abd-d73ade4e5e51",
+      "status": "Skipped — US-based only, AWS-architect scope"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "AI Engineer / Forward Deployed Engineer",
+      "company": "Fynbosys Inc",
+      "location": "Remote",
+      "salary": "USD $70–80/hr",
+      "gap": "AI/ML application delivery with product teams, not infrastructure or reliability work",
+      "url": "https://www.dice.com/job-detail/d25004b7-b211-40df-9377-7a42ed75fa7a",
+      "status": "Out of scope — AI application engineering"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Principal AWS Solution Architect — Cloud Advisory",
+      "company": "Stefanini",
+      "location": "Remote",
+      "salary": "Not stated (market)",
+      "gap": "AWS advisory/partner-funding architecture; posting dated 2026-08-19, freshness unconfirmed",
+      "url": "https://www.dice.com/job-detail/d4abb444-5d0a-4ff7-bb98-98a2d1750f7f",
+      "status": "Out of scope — AWS advisory architecture"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Staff AI Architect, Remote",
+      "company": "Experian",
+      "location": "Remote (US)",
+      "salary": "USD $115,747+",
+      "gap": "AI architecture, not infrastructure/SRE",
+      "url": "https://www.dice.com/job-detail/b0ff1181-430e-4ca4-80da-46bba2c250bb",
+      "status": "Out of scope — AI architecture"
+    },
     {
       "score": 4,
       "family": "Platform",
@@ -204,6 +258,13 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 7 query audit",
+      "items": [
+        "Each query navigated separately in the browser; the search box showed the intended query and the chips showed Last 7 Days, Full Time, Contract, Remote and Willing to sponsor (3 verified chip matches per page). Rendered results / cards read / IDs by prefix: <b>DevOps Engineer</b> 2 / 6 (00a044c3, 389675bd, 0c4a0ea3, 3621599d, 00303875, 457578ed) · <b>Platform Engineer</b> 6 / 6 (285de217, 6c12046b, c2337141, dca134e6, d28cae75, a65fe932) · <b>Site Reliability Engineer</b> 1 / 4 (a54509cc, 31ae1943, 155c790c, 7cd6e739) · <b>Cloud Engineer</b> 11 / 11 (457578ed, c2337141, dca134e6, d28cae75, 83574f54, 082c4d37, 28523a62, 4ec5dfea, 2187d5b6, 63bd287d, 7e162cd4) · <b>DevSecOps Engineer</b> 1 / 5 (52465184, 111c2e20, 6a643080, d4abb444, b0ff1181) · <b>Forward Deployed Engineer</b> 1 / 2 (d25004b7, fcf4e3b5). All six Complete; extra cards beyond the rendered count are Dice's adjacent recommendations and were read as well.",
+        "30 unique postings after deduplication; every detail page's JobPosting JSON was fetched and read. The only genuinely DevOps-flavoured postings are two TechniPros AI Platform DevOps Engineer W2-only US-city listings (no C2C — incompatible with a Canadian corporation / TN path), RELQ's AWS CDK Architect (US-based candidates only, AWS architecture deliverable), and the carry-over Oct 5 postings (GlobalLogic ARM/Linux build roles, Mergen security engineer, Medinext entry-level support, Amzur local-only AWS developer). Everything else is data/AI engineering, Oracle Fusion, PHP application development or Tekcel8's GCP data-engineering requisitions (three copies), set aside as out of scope by count."
+      ]
+    },
+    {
       "heading": "October 5 full-read pass",
       "items": [
         "Every result’s detail page was fetched and its JobPosting data and description read, not just the card. Findings: TechniPros Senior DevOps Engineer (Atlanta/Charlotte/Tampa…) is W-2 only, no C2C — the same TN-incompatible arrangement Marc skipped on 2026-09-21; the NYC/Boston DevOps twin follows the same pattern. NET2ASPIRE DevOps Engineer is entry-level at USD $33–42k. Amzur AWS Cloud Developer must be local to Kansas City or Washington DC. Pioneer Software Architect (Drupal + Kafka + DevSecOps) is a 6-month architecture contract, not infrastructure delivery. The other results are SAP/Oracle/Salesforce consultants, QA, business analysts, AI-security engineers, ARM-kernel engineers and AI forward-deployed roles — read and set aside as outside the target families.",
@@ -251,6 +312,6 @@
       ]
     }
   ],
-  "method": "All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 2, 8, 0, 10, 2, and 1. Up to eight results per query were audited before deduplication, yielding 19 unique reviewed postings. Eight were known pipeline postings (TechniPros's two recurring reposts plus six previously-scored postings, all unchanged in content), one known posting (Shiro) was not resurfaced and was carried forward, and eleven were new but off-domain by title. No new eligible target-family posting was found this run; zero postings were auto-filed.",
+  "method": "October 7, 2026: six of six queries completed with verified filters; 30 unique postings read in full; none eligible and in scope; 0 filed. All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 2, 8, 0, 10, 2, and 1. Up to eight results per query were audited before deduplication, yielding 19 unique reviewed postings. Eight were known pipeline postings (TechniPros's two recurring reposts plus six previously-scored postings, all unchanged in content), one known posting (Shiro) was not resurfaced and was carried forward, and eleven were new but off-domain by title. No new eligible target-family posting was found this run; zero postings were auto-filed.",
   "could_not_validate": []
 }

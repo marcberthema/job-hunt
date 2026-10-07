@@ -1,0 +1,13 @@
+Madame, Monsieur,
+
+Je souhaite poser ma candidature au poste de consultant principal en infonuagique et DevOps, puisque son orientation vers la modernisation Azure, la transformation des pratiques de livraison et l'accompagnement des clients correspond étroitement aux mandats que j'ai dirigés au cours de ma carrière. Je possède 18 ans d'expérience en logiciel, systèmes et DevOps, ainsi qu'une expertise approfondie en Microsoft Azure, Terraform, Azure DevOps, GitHub Actions, CI/CD, observabilité et leadership technique. Je suis parfaitement bilingue en français et en anglais et incorporé au Canada.
+
+Chez Énergir, j'ai standardisé le CI/CD pour 12 équipes applicatives, neuf environnements d'exécution et plus de 70 applications. Dans plusieurs cas, j'ai dû comprendre rapidement des écosystèmes qui m'étaient nouveaux, analyser leurs contraintes de livraison et remplacer des processus manuels fragiles par des pipelines réutilisables intégrant des contrôles qualité. J'ai dirigé des travaux de modernisation Azure avec Terraform et Ansible, collaboré avec l'architecture d'entreprise à la conception de solutions résilientes et économiques, puis favorisé leur adoption au moyen de séances régulières d'accompagnement.
+
+Chez Desjardins, le mandat initial consistait à vérifier la configuration d'environ 250 dépôts JFrog d'entreprise. J'ai plutôt livré un service de surveillance en Python/FastAPI qui les testait toutes les quatre heures et publiait leurs indicateurs de santé dans Dynatrace, puis rendu le moteur de validation configurable et indépendant des outils. Cette conception a permis le libre-service des administrateurs et est devenue le filet de sécurité de régression d'une mise à niveau majeure. Elle illustre mon approche-conseil : résoudre le besoin exprimé, cerner le risque opérationnel plus large et recommander la solution appropriée plutôt que simplement la moins coûteuse.
+
+Mes réalisations les plus solides portent sur la modernisation concrète et sur ma capacité à influencer l'orientation technique auprès des équipes applicatives et des architectes. Mon expérience formelle en avant-vente et en rédaction d'énoncés de travail est moins étendue que celle d'un consultant principal ayant fait toute sa carrière en cabinet, une distinction que je préfère présenter avec transparence. J'apporte toutefois une longue expérience du cadrage de problèmes techniques ambigus, de l'évaluation des options, de la livraison des plateformes et de l'accompagnement de leurs utilisateurs. Je serais heureux de discuter de votre client, de l'admissibilité d'un résident de l'Ontario au télétravail et de la pertinence de mon parcours pour ce mandat.
+
+Veuillez agréer, Madame, Monsieur, mes salutations distinguées.
+
+Marc Berthelette

@@ -27,7 +27,7 @@ Ingénieur DevOps principal qui prend en charge des systèmes de production que 
 
 ### Énergir — Ingénieur DevOps principal
 
-**Montréal, QC | Septembre 2021 – Présent**
+**Montréal, QC | Septembre 2021 – Septembre 2026**
 
 - Pris en charge la standardisation CI/CD pour 12 équipes applicatives et plus de 70 applications sur neuf écosystèmes technologiques distincts — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce et Databricks — en abordant la plupart d'entre eux sans expérience préalable ; fait passer l'équipe Oracle du déploiement entièrement manuel à la livraison automatisée, après l'échec d'une tentative antérieure.
 - Reconstruit la livraison Salesforce sans expérience préalable de la plateforme — remplaçant les anciens scripts ANT par l'outillage officiel Salesforce CLI et développant un pipeline de validation testant chaque fusion candidate dans un bac à sable — faisant passer l'équipe d'un problème récurrent de fenêtres de déploiement ratées à une seule fenêtre manquée depuis la mise en place, avec une cadence fiable un mardi sur deux.

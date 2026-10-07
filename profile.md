@@ -145,7 +145,7 @@ Senior DevOps and Platform Engineering consultant with 18 years spent making unf
 ## Work Experience
 
 ### Énergir — Senior DevOps Engineer
-**Montréal, QC | September 2021 – Present**
+**Montréal, QC | September 2021 – September 30, 2026**
 
 - Standardized CI/CD delivery across nine distinct runtimes — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, and Databricks — for 12 application teams and 70+ applications, moving teams from manual deployments to automated pipelines with built-in quality gates. Entered most of those ecosystems with no prior experience and reverse-engineered each one before automating it.
 - Took the Oracle team from fully manual deployment to automated delivery — after an earlier attempt by another engineer had failed to deliver it.
