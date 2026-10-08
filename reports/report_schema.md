@@ -81,6 +81,7 @@ file, verify against this schema, not against an older version of that board's o
 - `score` (0–10, or `0`/`-1` for the excluded-but-reviewed cases below; required), `family`
   (`SRE` | `Platform` | `DevOps`, required), `title`, `company`, `url` (required).
 - `location`, `salary`, `gap` — optional, default to blank/"Not stated" in the rendered table.
+  New assessments must populate these using the shared candidate-matching policy. `gap` uses `Technical: <main gap>; Practical: Target/Compromise/Confirm/Ineligible — <evidence or uncertainty>; Resume: Platform/SRE`. Salary preserves currency, pay period, and base versus OTE/total-compensation distinctions. This uses existing rendered fields; no new JSON keys are necessary. Historical rows remain historical until reviewed again. Scores 0/-1 remain exclusion codes, not technical ratings.
 - `status` — this posting's pipeline or exclusion pill, starting with one of `New`, `InProcess`, `Applied`, `Skipped`,
   `Rejected`, `Expired`, `Out of scope`, or `Ineligible` (free text may follow, e.g.
   `Applied — Sep 18`), or omitted/blank when it isn't decided yet. `Skipped` means Marc decided

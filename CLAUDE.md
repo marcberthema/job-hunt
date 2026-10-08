@@ -19,6 +19,8 @@ and any strategic recommendation in this repo — don't soften a weak assessment
 
 ## Current Situation (as of 2026-08-19) — URGENT
 
+**Update 2026-10-08:** Énergir ended September 30; Marc is available immediately. The shared policy at `.agents/skills/_shared/candidate-matching.md` now governs matching, separate practical assessments, and selection of the Platform/SRE core resumes. Read it before applying the historical search priorities below. The ideal is $160k+ CAD base, fully remote from Ontario, with growth; workable below-ideal roles and contracts remain in scope under current profile floors. Elastic declined after interview for operating-scale experience; follow-up is complete.
+
 Marc's long-term consulting contract at Énergir will not be renewed — it ends in **just over 5
 weeks**. He is the main financial provider for his family and cannot afford a long gap between
 engagements. This changes priorities across the whole repo until he lands a new role:

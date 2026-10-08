@@ -5,6 +5,8 @@ description: Search Eluta and Canadian employer career sites for recent Canada-r
 
 # Check Eluta
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Discover recent Eluta jobs, validate them through full cached copies or employer pages, compare every eligible posting with Marc's profile, update `reports/eluta-job-search.html`, and auto-file qualifying jobs under the policy below. External access is strictly read-only: never apply, email, subscribe, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth

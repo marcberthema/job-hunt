@@ -5,6 +5,8 @@ description: Walk applications.md rows with Status New, highest score first, pre
 
 # Review
 
+Read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). For user-reported submission, interview progress, or employer outcomes, go directly to steps 6–8 without requiring a New queue.
+
 Walk every `New` row in `applications.md` one posting at a time, highest `Score` first, and help decide: apply or skip. The normal pursued path is `New → InProcess → Applied`: `InProcess` means the application materials are ready but Marc has not yet confirmed submission. (`Rejected` is a separate, later transition — see step 7 — and never happens directly from `New` or `InProcess`.)
 
 ## 1. Read the source of truth
@@ -24,6 +26,7 @@ Pop the top of the queue and present a fresh company/role summary:
 - **Role — Company**
 - **Source:** the URL, on its own line
 - **Board** and **Score** from the row
+- **Technical fit / Practical assessment / Resume:** use the shared labels and current ownership evidence. Show whether pay is base or total compensation, Ontario eligibility, and office cadence. Historical scores may predate corrected evidence; flag a stale score and explain the current mismatch without silently rewriting it. A score is not a recommendation by itself.
 - Fetch the live posting (unless it was already fetched earlier this same session) and summarize: what the company does, the role's actual responsibilities, required/nice-to-have skills, compensation, location/remote policy, and any notable flags (sponsorship, on-site cadence, salary vs. the profile's floors, employer rating, etc.) — not just the row's stored `Notes` field, which may be thin or stale.
 - If the posting can't be fetched (dead link, login wall), fall back to the row's `Notes` and say plainly that the summary is from stored data, not a live check.
 - Queue position, e.g. "Posting 1 of 9 remaining"
@@ -38,9 +41,9 @@ Ask: **Apply**, **Skip**, or **Stop**. One posting at a time — no batch/quick-
 
 - **Stop**: break out of the loop and go to step 5.
 
-- **Apply**: immediately draft (or refresh, if a draft already exists) the cover letter and tailored resume, grounded in `profile.md` and `resume/marc-berthelette-resume-en.md` — never invent experience that isn't documented there:
+- **Apply**: immediately draft (or refresh, if a draft already exists) the cover letter and complete tailored resume, grounded in `profile.md` and the selected current Platform/SRE core under the shared policy:
   - Cover letter → `resume/cover-letters/cover-letter-<company-slug>-<role-slug>.md`
-  - Tailored resume delta → `resume/tailored/<YYYY-MM-DD>-<company-slug>-<role-slug>-en.md`
+  - Complete tailored resume → `resume/tailored/<YYYY-MM-DD>-<company-slug>-<role-slug>-en.md` (or `-fr.md` for French); record the selected core in Notes and follow shared export guidance.
   - After both drafts are successfully saved, update the row: `Status → InProcess`, `Status Date → today`. Do not mark it `InProcess` if drafting failed or remains incomplete.
   - Mirror `InProcess` to every matching row in `reports/data/*.json`, matching by canonical URL first and company + exact role second, then rebuild each affected static report with `reports/build_report.py`. This makes pending external submissions visible on the static boards. Do not create a report row when no match exists.
   - Do **not** paste the cover letter (or resume delta) into the chat, ask how they plan to apply, or wait for submission confirmation. Confirm in one line that the drafts are saved (file paths only, not contents) and immediately advance to the next posting's summary. If the user wants to see or revise a draft, they'll ask for it by name.
@@ -56,6 +59,12 @@ Whenever the user says they submitted an application to a specific posting — i
 ## 7. Employer outcome (Applied → Rejected)
 
 Whenever the user reports that an employer passed on him for a posting that's currently `Status: Applied`, update that row: `Status → Rejected`, `Status Date → today`, and record any reason given in `Notes`. Mirror the status to matching report JSON rows and rebuild affected reports. This is the only path to `Rejected` — it always starts from `Applied`, never directly from `New`, `InProcess`, or `Skipped`. Like step 6, this can happen at any time, in any session, independent of an active review loop.
+
+## 8. Interview stages and outcome detail
+
+On user-reported progress, match the exact posting by URL first, then company and role. Preserve Board attribution and existing Notes. Append concise dated events: `Recruiter screen`, `Hiring-manager interview`, `Technical interview`, `Final interview`, or `Offer`, only when confirmed. Keep Status `Applied` during interviews; an offer is not acceptance or employment. If the actual event date is unknown, say `Reported YYYY-MM-DD; event date unknown` rather than inventing it. Stage and rejection reason are separate: label an employer explanation as reported feedback and keep assistant inference explicit. Do not treat silence as rejection.
+
+For a confirmed rejection, follow step 7, preserving interview history and adding the reason. In reporting funnel results, count confirmed stages by Board; distinguish unknown outcomes and recent applications. Never reset an Applied/Rejected row to New or change a historical score just because the outcome is known.
 
 ## Out of scope
 

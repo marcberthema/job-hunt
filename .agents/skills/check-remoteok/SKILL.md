@@ -5,6 +5,8 @@ description: Search RemoteOK for recent Canada-eligible remote SRE, Platform, De
 
 # Check RemoteOK
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Search RemoteOK, validate current postings, gate regional eligibility, compare every eligible result with Marc's profile, update `reports/remoteok-job-search.html`, and auto-file qualifying jobs under the policy below. External activity is read-only: never apply, save, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth

@@ -5,6 +5,8 @@ description: Search Braintrust for recent Canada-eligible remote SRE, Platform, 
 
 # Check Braintrust
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Search Braintrust, validate current postings, gate regional eligibility before scoring, compare every eligible result with Marc's profile, update `reports/braintrust-job-search.html`, and auto-file qualifying jobs under the policy below. All external activity is strictly read-only: never apply, save a job, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or change existing pipeline decisions.
 
 ## Source of truth

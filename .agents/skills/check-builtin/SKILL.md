@@ -5,6 +5,8 @@ description: Search Built In broadly for Canada-eligible remote and selected Eas
 
 # Check Built In
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Search Built In, validate full postings, compare every eligible result with Marc's profile, update `reports/builtin-job-search.html`, and auto-file qualifying jobs under the policy below. External discovery remains read-only: never submit applications or change third-party state. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth

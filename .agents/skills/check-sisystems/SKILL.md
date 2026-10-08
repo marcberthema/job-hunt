@@ -5,6 +5,8 @@ description: Search S.i. Systems for recent Canada-remote and selected Eastern O
 
 # Check S.i. Systems
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Search S.i. Systems, validate current postings, compare every eligible result with Marc's profile, update `reports/sisystems-job-search.html`, and auto-file qualifying jobs under the policy below. External activity is strictly read-only: never apply, email, save, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth

@@ -5,6 +5,8 @@ description: Search Canada's Job Bank for recent Canada-remote and selected East
 
 # Check Job Bank
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Search Job Bank, validate full postings, compare every eligible result with Marc's profile, update `reports/jobbank-job-search.html`, and auto-file qualifying jobs under the policy below. External access is strictly read-only: never apply, email, subscribe, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth

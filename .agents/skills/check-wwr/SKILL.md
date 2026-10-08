@@ -5,6 +5,8 @@ description: Search We Work Remotely for recent Canada-eligible remote SRE, Plat
 
 # Check We Work Remotely
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Search We Work Remotely, validate current postings, gate region eligibility, compare every eligible result with Marc's profile, update `reports/wwr-job-search.html`, and auto-file qualifying jobs under the policy below. External activity is strictly read-only: never apply, use "AI Auto-Apply," save, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth

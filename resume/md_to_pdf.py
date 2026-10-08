@@ -140,9 +140,16 @@ def convert(md):
     return body + '</div>'
 
 
-def build(md_path, pdf_path, lang='en', keep_html=False):
+def build(md_path, pdf_path, lang='en', keep_html=False, core_resume=False):
     md = io.open(md_path, encoding='utf-8').read()
     css = CSS + (FR_CSS if lang == 'fr' else '')
+    if core_resume:
+        css += """
+body { font-size:10.5pt; line-height:1.3; }
+h2 { font-size:13pt; }
+h3 { font-size:11pt; }
+.role:nth-of-type(3) { break-before:page; }
+"""
     doc = (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8">'
            f'<title>{os.path.basename(pdf_path)}</title><style>{css}</style></head>'
            f'<body>{convert(md)}</body></html>')
@@ -163,6 +170,8 @@ def main():
     ap.add_argument('output', nargs='?', help='Output PDF path (default: same name as input, .pdf)')
     ap.add_argument('--lang', choices=['en', 'fr'], default='en', help='Language (affects type scale for FR)')
     ap.add_argument('--keep-html', action='store_true', help='Keep the intermediate .print.html file')
+    ap.add_argument('--core-resume', action='store_true',
+                    help='Use larger resume typography and start the third role on page two')
     args = ap.parse_args()
 
     if not os.path.isfile(args.input):
@@ -172,7 +181,8 @@ def main():
     if not output.endswith('.pdf'):
         output += '.pdf'
 
-    pdf = build(args.input, output, lang=args.lang, keep_html=args.keep_html)
+    pdf = build(args.input, output, lang=args.lang, keep_html=args.keep_html,
+                core_resume=args.core_resume)
     print(f'{pdf} ({os.path.getsize(pdf)} bytes)')
 
 

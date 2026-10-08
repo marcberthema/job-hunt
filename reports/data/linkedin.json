@@ -108,7 +108,7 @@
         "<b>Best new match: Hunter Bond — Platform Engineer.</b> Montréal hybrid with CAD $180K base, strong Linux/Python/Terraform/Ansible/Puppet/Kubernetes alignment; office cadence is not disclosed and must be confirmed at two days/week or less.",
         "<b>Strong Azure contract lead: Raas Infotek — DevOps Architect.</b> Excellent Azure, Terraform, Ansible, CI/CD and reliability alignment; the poster-added 8+ years Terraform and 6+ years Python requirements are the main risk, and no rate was stated.",
         "<b>CANARIE</b> is a strong senior platform role in Ottawa, but the CAD $125K–$169K range partly falls below the hybrid floor and the cadence is undisclosed.",
-        "<b>Elastic</b> is an exact pipeline match already applied through Built In on Sep 18; the fresh LinkedIn posting confirms CAD $138.3K–$185.9K and active hiring.",
+        "<b>Elastic</b> matches the Built In application. Outcome reported October 8: rejected after interview for insufficient experience at the required operating scale; follow-up completed. Original discovery details remain historical.",
         "Excluded after full validation: Alpen Labs (must be based in the United States), QUANTEAM (four Montréal office days/week), Aptiv/Wind River (CAD $95K–$120K hybrid), and TELUS Health (CAD $49K–$89.7K). Chainlink remains scored low because deep Kubernetes internals/Operators, production AWS and Go are core requirements."
       ]
     },
@@ -730,10 +730,10 @@
       "family": "SRE",
       "title": "Senior Site Reliability Engineer (Observability and Analytics) Platform Infra",
       "company": "Elastic",
-      "status": "Applied — Sep 18 (pipeline match via Built In)",
+      "status": "Rejected — reported Oct 8 (pipeline match via Built In)",
       "location": "Remote — Canada",
       "salary": "CAD $138,300–$185,900/year",
-      "gap": "Go is only a plus; no material required-skill gap",
+      "gap": "Employer feedback reported Oct 8: insufficient experience at the operating scale required. Historical score retained; interview and rejection dates unconfirmed. Follow-up completed.",
       "url": "https://www.linkedin.com/jobs/view/4469190473/"
     },
     {

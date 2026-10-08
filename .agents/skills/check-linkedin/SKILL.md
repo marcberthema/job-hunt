@@ -5,6 +5,8 @@ description: Search LinkedIn and employer career sites for recent Canada-eligibl
 
 # Check LinkedIn
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Discover recent LinkedIn jobs through Marc's connected browser, validate them using full postings or employer sites, compare every eligible posting with Marc's profile, update `reports/linkedin-job-search.html`, and auto-file qualifying jobs under the policy below. LinkedIn access is strictly read-only: never apply, save, follow, connect, react, comment, post, message, submit a form, or change profile/account data. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth

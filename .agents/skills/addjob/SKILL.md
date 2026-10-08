@@ -5,6 +5,8 @@ description: Manually add a single job posting by URL — fetch it, score it aga
 
 # Add Job
 
+Read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md) before scoring or drafting. It supersedes older scoring and base-resume rules.
+
 Take a single job posting URL (or pasted posting text when a URL can't be fetched), score it against Marc's profile, produce a cover letter and tailored resume, and record it in `applications.md` with `Status: New`. This is the shared filing step every `check-*` skill calls once the user picks a posting to pursue — it never submits an application and never sets a row's status to `Applied`, `Skipped`, or `Rejected`.
 
 ## 1. Duplicate check
@@ -17,7 +19,7 @@ Fetch the URL. If it fails (timeout, 404, login wall) or the content doesn't loo
 
 ## 3. Read the source of truth
 
-Read `profile.md` and `resume/marc-berthelette-resume-en.md` completely before scoring or drafting anything.
+Read `profile.md`, the shared matching policy, and the selected current Platform or SRE core resume completely before scoring or drafting anything.
 
 ## 4. Extract fields
 
@@ -31,14 +33,14 @@ Read `profile.md` and `resume/marc-berthelette-resume-en.md` completely before s
 
 Score primarily on skill and domain fit against `profile.md`'s scoring notes: Azure depth, platform engineering/CI-CD/IaC scope, financial or energy sector relevance, autonomy vs. ticket-taking. Apply the profile's honesty rules for AWS, GCP, Kubernetes administration, programming languages, and people management.
 
-Do not let logistics drag the score down. On-site/hybrid requirements and below-target pay do not by themselves lower the score — a strong skill match stays high-scored even if it's on-site or under-rate. Surface those issues in the row's `Notes` field instead (e.g. "9/10 fit, but on-site").
+Keep technical fit separate from practical acceptability under the shared policy. Below-ideal pay is a compromise, not a technical penalty; confirmed hard eligibility/pay-floor failures use the schema's `-1` exclusion code. Record `Technical`, `Practical`, and `Resume` labels in Notes. User-requested filing of a weak/ineligible role may retain a record, but never describe it as a recommended match.
 
 Write a short rationale referencing concrete posting details, for the chat response — `applications.md` itself only needs the number.
 
 ## 6. Draft the cover letter and tailored resume
 
-- **Cover letter**: a short (3–4 paragraph) draft tailored to this role and company, grounded in `profile.md` and `resume/marc-berthelette-resume-en.md` — never invent experience that isn't documented there. Write it to `resume/cover-letters/cover-letter-<company-slug>-<role-slug>.md`.
-- **Tailored resume**: a resume delta — which existing experience/skills to lead with for this posting — applied against the base resume. Write it to `resume/tailored/<YYYY-MM-DD>-<company-slug>-<role-slug>-en.md`.
+- **Cover letter**: a short (3–4 paragraph) draft tailored to this role and company, grounded in `profile.md` and the selected current core resume. Write it to `resume/cover-letters/cover-letter-<company-slug>-<role-slug>.md`.
+- **Tailored resume**: a complete standalone resume based on the Platform or SRE core selected by responsibilities, not just title. Write it to `resume/tailored/<YYYY-MM-DD>-<company-slug>-<role-slug>-en.md`; use `-fr.md` for French. Record the chosen base in Notes and follow the shared export guidance.
 
 Slugs are lowercase, hyphenated, alphanumeric only. Follow the naming convention already used by existing files in those two folders.
 
@@ -51,7 +53,7 @@ Add one row to the table in `applications.md`:
 
 - `Date Found` and `Status Date`: today.
 - `Status`: `New`.
-- `Notes`: any logistics flags surfaced in step 5 (on-site, below-target rate, unstated details), or blank.
+- `Notes`: technical gap, practical classification with pay/location uncertainties, and selected resume base from step 5.
 
 Never set `Status` to `Applied`, `Skipped`, or `Rejected` from this skill — those transitions belong to the `review` skill only, once the user confirms a decision.
 

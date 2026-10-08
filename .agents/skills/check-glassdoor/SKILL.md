@@ -5,6 +5,8 @@ description: Search Glassdoor Canada for recent SRE, Platform, DevOps, Cloud, an
 
 # Check Glassdoor
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Search Glassdoor Canada, validate current postings, compare every result with Marc's profile, update `reports/glassdoor-job-search.html`, and auto-file qualifying jobs under the policy below. All external activity is strictly read-only: never apply, use Easy Apply, save a job, create an account, sign in, upload information, or submit a form. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth

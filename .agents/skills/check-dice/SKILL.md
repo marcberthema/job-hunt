@@ -5,6 +5,8 @@ description: Search Dice for recent sponsor-willing remote DevOps, Platform, SRE
 
 # Check Dice
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Search Dice, validate accessible postings, apply the eligibility gate, compare eligible jobs with Marc's profile, update `reports/dice-job-search.html`, and auto-file qualifying jobs under the policy below. External discovery is read-only: do not sign in, submit forms, or apply. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Input and role rotation

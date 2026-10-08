@@ -5,6 +5,8 @@ description: Search Indeed and employer career sites for Canada-eligible remote 
 
 # Check Indeed
 
+Before any assessment, read and follow [shared candidate matching and resume selection](../_shared/candidate-matching.md). It governs current evidence, technical scoring, separate practical assessment, and core-resume choice, superseding conflicting wording below.
+
 Discover Indeed jobs through public search access, validate them against authoritative postings, compare every eligible result with Marc's profile, update `reports/indeed-job-search.html`, and auto-file qualifying jobs under the policy below. External access is read-only: do not apply, sign in, solve CAPTCHAs, or bypass controls. Do not create per-job artifact files or alter existing pipeline decisions.
 
 ## Source of truth
