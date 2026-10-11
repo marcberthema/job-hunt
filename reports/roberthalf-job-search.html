@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Robert Half job search — 2026-10-05</title>
+<title>Robert Half job search — 2026-10-07</title>
 <style>
 :root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e;--amber:#9a6700;--amber-bg:#fff8c5}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b;--amber:#e3b341;--amber-bg:#3b2e00}}
@@ -22,17 +22,15 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
 </head>
 <body><main>
 <header>
-  <div class="eyebrow">Robert Half Technology · Canada</div>
-  <h1>SRE, Platform &amp; DevOps opportunities</h1>
-  <p class="lede">Robert Half Technology (Canada) inventory searched across six target-family keywords, scoped to Contract / Temporary to Hire only. Scores measure technical and domain fit only.</p>
-  <p class="latest">Re-read October 5, 2026 — 17 keyword/skill searches (the six defaults plus infrastructure, systems, cloud architect, Azure, Kubernetes, Terraform, SRE, DevOps, Linux, automation and release) collected 43 unique postings across up to three pages each; the 34 whose text loaded were read in full. Only the Azure Cloud Engineer part-time contract (filed earlier) is in the target families.</p>
+  <div class="eyebrow">Candidate intelligence · Robert Half Canada</div>
+  <h1>Contract SRE, Platform &amp; DevOps opportunities</h1>
+  <p class="lede">Six path-based keyword searches filtered in the rendered UI to Contract / Temporary to Hire.</p>
+  <p class="latest">October 7, 2026 — six contract searches completed; one unique result was already Skipped and no new role qualified.</p>
   <div class="stats">
     <div class="stat"><b>6</b><span>searches completed</span></div>
-    <div class="stat"><b>1</b><span>unique contract postings found</span></div>
-    <div class="stat"><b>0</b><span>eligible validated</span></div>
-    <div class="stat"><b>1</b><span>geographic exclusions</span></div>
-    <div class="stat"><b>0</b><span>inaccessible</span></div>
-    <div class="stat"><b>1</b><span>pipeline matches</span></div>
+    <div class="stat"><b>4</b><span>query matches reviewed</span></div>
+    <div class="stat"><b>1</b><span>unique posting</span></div>
+    <div class="stat"><b>0</b><span>auto-filed</span></div>
   </div>
 </header>
 <section>
@@ -49,21 +47,19 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<aside class="notes"><h2>October 5 full-read pass</h2><ul><li>Searched 17 keywords/skills on the path-based search (up to three pages each), de-duplicated to 43 postings, fetched each detail page and scored the description text. Highest infrastructure/cloud content: Acheson AB Azure Cloud Engineer (already filed), Calgary Systems Administrator, Georgetown ON IT Architect (outside the reachable cities) and a Toronto laptop-deployment technician role; the rest are controllers, buyers, project managers, developers and network-security administrators. Nine detail pages did not load text and are unscored (all non-IT titles).</li></ul><h2>October 5 query audit</h2><ul><li>Path-based search pages /ca/en/jobs/all/<keyword> fetched in the browser (HTTP 200): devops-engineer 7 · platform-engineer 5 · site-reliability-engineer 2 · cloud-engineer 3 · devsecops-engineer 6 · forward-deployed-engineer 4. All results unscoped (Permanent and non-Technology roles included) — the contract chip was not applied per page, so counts include non-contract roles. Only two roles are in-family: Azure Cloud Engineer (Acheson/Edmonton AB, remote on Mountain-time hours) and a Systems Engineer that is actually a Business Systems Analyst (Edmonton). Senior Director Engineering (Toronto) is an existing Skipped row. No CAPTCHA.</li></ul><h2>Search limitations — documented retrieval method still broken, refined workaround</h2><ul><li>The SKILL.md-documented URL pattern <code>https://www.roberthalf.com/ca/en/jobs?jobType=CONTRACT&specialty=TECHNOLOGY&keywords=&lt;term&gt;</code> is still not tested as a revival candidate this run since the working UI-driven method (see below) is already reliable and faster to execute manually; no evidence it has been fixed.</li>
-<li>Working method used this run: submit each keyword through the on-page search box (redirects to <code>https://www.roberthalf.com/ca/en/jobs/all/&lt;keyword-slug&gt;</code>), then open the page's own <b>Job Type</b> filter chip. When <b>Contract / Temporary to Hire</b> appears as an option, select it and apply — this reliably scopes to contract-only postings client-side. When the chip only offers Permanent/Temporary (no Contract/Temporary to Hire option at all), that keyword has zero contract results and is recorded as such without reviewing the Permanent/Temporary noise.</li>
-<li>This is a skill-maintenance item: <code>.agents/skills/check-roberthalf/SKILL.md</code>'s Access section already documents this UI workaround as of the 2026-09-21 run; no further edit needed.</li></ul><h2>Per-keyword audit (Contract / Temporary to Hire only)</h2><ul><li><b>DevOps Engineer</b> — 11 total results, 1 under Contract/Temp-to-Hire: Senior Director Engineering (Toronto, ON). Complete.</li>
-<li><b>Platform Engineer</b> — 6 total results, 0 under Contract/Temp-to-Hire (only Permanent(5)/Temporary(1) offered). Zero results.</li>
-<li><b>Site Reliability Engineer</b> — 2 total results, 0 under Contract/Temp-to-Hire (only Permanent(2) offered). Zero results.</li>
-<li><b>Cloud Engineer</b> — 7 total results, 0 under Contract/Temp-to-Hire (only Permanent(4)/Temporary(3) offered — note: one Temporary result, "Cloud Systems Analyst" in Toronto at $25-35/hr, is a Temporary listing, not Contract/Temp-to-Hire, and is also far below the rate floor and outside the target family). Zero results.</li>
-<li><b>DevSecOps Engineer</b> — 7 total results, 1 under Contract/Temp-to-Hire: the same Senior Director Engineering posting (deduplicated). Complete.</li>
-<li><b>Forward Deployed Engineer</b> — 3 total results, 0 under Contract/Temp-to-Hire (only Permanent(2)/Temporary(1) offered). Zero results.</li></ul><h2>Run notes</h2><ul><li>All six mandatory queries completed (Complete or Zero results) — no incomplete or blocked queries this run.</li>
-<li>No CAPTCHA or blocking challenge encountered.</li>
-<li>All retrieval was read-only; no application, account, or form action was used.</li>
-<li>0 auto-filed (0 qualifying — the sole contract posting found is a known Skipped row in applications.md, so it was not re-filed), 1 already present in applications.md, 0 below-threshold/not-filed.</li></ul></aside>
+<aside class="notes"><h2>Query audit</h2><ul><li>DevOps Engineer: 1 contract result — Complete.</li>
+<li>Platform Engineer: 0 — Zero results.</li>
+<li>Site Reliability Engineer: 1 result (same posting) — Complete.</li>
+<li>Cloud Engineer: 1 result (same posting) — Complete.</li>
+<li>DevSecOps Engineer: 1 result (same posting) — Complete.</li>
+<li>Forward Deployed Engineer: 0 — Zero results.</li>
+<li>The documented path-based search plus UI-derived <code>emptype=Temp-to-Perm</code> filter worked; the older keyword/jobType query-string method remains unreliable.</li>
+<li>No CAPTCHA or verification challenge appeared.</li></ul></aside>
+<p class="method">The search UI was used to establish the working path URL and Contract / Temporary to Hire filter, then all six mandatory path-based searches were rendered independently. One unique posting appeared across four queries and was already Skipped in the ledger.</p>
 
 </main>
 <script>
-const jobs = [{"score": -1, "family": "DevOps", "title": "Senior Director Engineering", "company": "Robert Half client (undisclosed)", "location": "Toronto, ON — on-site/hybrid implied (\"local engineering presence,\" \"represent the Toronto development centre\")", "salary": "CAD $123.50–$143.00/hour (Contract / Temporary to Hire)", "gap": "Toronto is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal) — hard geography gate on its own. Separately, the role requires formal budget and headcount ownership across engineering/QA/DevOps/SRE functions (10+ years progressive engineering leadership) — a genuine mismatch against Marc's 'leads without authority' positioning, which has the substance of cross-team technical leadership but no formal management title, tenure, or P&L/headcount authority at director scale.", "url": "https://www.roberthalf.com/ca/en/job/toronto-on/senior-director-engineering/05090-0013492132-caen", "status": "Skipped"}, {"score": 6, "family": "Platform", "title": "Azure Cloud Engineer — Senior Azure Infrastructure Consultant (part-time contract)", "company": "Robert Half client (undisclosed, Alberta)", "location": "Remote on Mountain-time business hours; some early-morning overlap with Australian stakeholders", "salary": "CAD $59.38–$68.75/hr", "gap": "Azure networking/SASE security and hub-and-spoke architecture depth is thinner than the Bicep/Terraform and governance work; part-time and ends December 2026; rate unconfirmed against the $90/hr part-time floor", "url": "https://www.roberthalf.com/ca/en/job/acheson-ab/azure-cloud-engineer/05110-0013512087-caen", "status": "Applied"}, {"score": 0, "family": "Platform", "title": "Systems Engineer (Business Systems Analyst)", "company": "Robert Half client (undisclosed)", "location": "Edmonton, AB", "salary": "Not stated", "gap": "Business-systems/ERP analysis role under a Systems Engineer title — not infrastructure work", "url": "https://www.roberthalf.com/ca/en/job/edmonton-ab/systems-engineer/05110-0013506310-caen", "status": "Skipped — out of scope (business systems analyst)"}];
+const jobs = [{"score": -1, "family": "Platform", "title": "Senior Director Engineering", "company": "Robert Half client", "location": "Toronto, ON", "salary": "CAD $123.50–$143/hour", "gap": "Toronto location is outside the reachable-city range, and the role requires 10+ years organizational engineering leadership, budgets and headcount ownership.", "url": "https://www.roberthalf.com/ca/en/job/toronto-on/senior-director-engineering/05090-0013492132-caen", "status": "Skipped"}];
 const $=s=>document.querySelector(s),rowsEl=$("#rows");let key="score",dir=-1;
 const esc=s=>String(s).replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
 const statusPill=status=>{
