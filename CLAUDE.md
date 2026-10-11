@@ -63,9 +63,16 @@ job-hunt/
     data/<board>.json       ← Structured scoring output per board, written by its check-* skill
     index.html             ← Nav hub across every board's report
     <board>-job-search.html ← Rendered from data/<board>.json, refreshed on every check-* run
+  .agents/skills/_shared/
+    candidate-matching.md   ← Scoring, practical assessment (Target/Compromise/Confirm/Ineligible), resume routing
+    read-in-full.md         ← Open and score every in-family posting from its full description
+    automatic-filing.md     ← check-* skills auto-append qualifying (score >= 5) New rows
   resume/
+    platform/               ← Core resume: Platform/DevOps (default)
+    sre/                    ← Core resume: SRE (reliability/observability dominate)
     cover-letters/          ← One cover letter per posting pursued
-    tailored/                ← One tailored resume delta per posting pursued
+    tailored/               ← One complete standalone tailored resume per posting pursued
+    older/                  ← Superseded general/French resumes (reference only)
 ```
 
 ---
@@ -138,9 +145,12 @@ This mirrors the Brayd workflow but without GitHub Projects or slash commands fo
 ## Skills
 
 All in `.agents/skills/`, portable across Claude Code and ChatGPT/Codex — invoke by asking in
-plain language, not a slash command. Every `check-*` skill is discovery-only: it scores results
-into that board's `reports/<board>-job-search.html` and never files anything on its own. `addjob`
-and `review` are the only two that touch `applications.md`.
+plain language, not a slash command. Every `check-*` skill scores results into that board's
+`reports/<board>-job-search.html` and, per `_shared/automatic-filing.md`, auto-appends qualifying
+postings (score >= 5, full description read, current, eligible, deduplicated) to `applications.md`
+as `New` rows — nothing else. Cover letters and tailored resumes are never drafted during discovery;
+`addjob` (single URL) and `review` (after you choose Apply) do that, and only `review` sets `Applied`.
+Before scoring, matching, or drafting, every skill reads `_shared/candidate-matching.md`.
 
 | Skill | Purpose |
 |---|---|
@@ -179,6 +189,7 @@ The site is a pure HTML/CSS personal consulting site with no build step. Deploy 
 - **`profile.md` is always read first** by any skill before doing anything
 - **One row per posting** in `applications.md` — never a file per job
 - **No API tokens** — everything runs within your Claude subscription via Claude Code, or the equivalent on ChatGPT/Codex
+- **Matching policy** — `.agents/skills/_shared/candidate-matching.md` governs scoring (technical fit only), the separate Practical label, and which core resume (`resume/platform/` default, `resume/sre/` when reliability dominates) to use. It overrides older skill/profile wording and any reference to `resume/marc-berthelette-resume-en.md`
 - **Read postings in full, never filter by company** — every `check-*` skill follows `.agents/skills/_shared/read-in-full.md`: open and score every in-family or ambiguous result from its full description, deduplicate by posting (URL/requisition, then employer + exact role), don't skip on title alone, and report anything unopened with the reason. Same rules apply from Claude Code or ChatGPT/Codex
 - **Manual approval gate** — no skill ever submits an application without your explicit confirmation; only the `review` skill sets `Status: Applied`, and only once you confirm submission
 - **Git tracks everything** — commit after each `check-*` run and after each review session

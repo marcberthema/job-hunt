@@ -11,7 +11,7 @@ Search Robert Half Technology, validate current postings, compare every result w
 
 ## Source of truth
 
-Before scoring, read `profile.md` and `resume/marc-berthelette-resume-en.md` completely. Their current contents override older commands, specifications, plans, job files, and historical source notes. Never invent or strengthen experience.
+Before scoring, read `profile.md`, `.agents/skills/_shared/candidate-matching.md`, and the core resume `resume/platform/marc-berthelette-resume-en.md` (plus `resume/sre/marc-berthelette-resume-en.md` when evaluating SRE duties) completely. Their current contents override older commands, specifications, plans, job files, and historical source notes. Never invent or strengthen experience.
 
 ## Access
 

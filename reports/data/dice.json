@@ -1,26 +1,26 @@
 {
   "board": "Dice",
-  "run_date": "2026-10-07",
+  "run_date": "2026-10-09",
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Latest update: October 7, 2026 — all 6 queries completed (30 unique postings fetched and read from their JobPosting data). None is eligible and in scope: W2-only US-local DevOps contracts, US-based AWS architecture, AI/data/Oracle roles. 0 filed.",
+  "latest_update": "Latest update: October 9, 2026 — all 6 Dice queries ran with Last 7 Days / Full-time+Contract / Remote / Willing-to-sponsor chips verified; 1 new qualifying posting (Tror Senior SRE, Corp-to-Corp) auto-filed. Everything else was US-local, W2-only, GCP-gated or out of scope.",
   "stats": [
     {
       "value": "6 of 6",
       "label": "queries attempted / completed"
     },
     {
-      "value": 30,
+      "value": 28,
       "label": "unique postings read"
     },
     {
-      "value": 0,
-      "label": "eligible and in scope"
+      "value": 9,
+      "label": "rows added this run"
     },
     {
-      "value": 0,
-      "label": "auto-filed this run"
+      "value": 1,
+      "label": "auto-filed this run (Tror)"
     }
   ],
   "rows": [
@@ -254,9 +254,115 @@
       "gap": "Opened in full: principal solution-architecture contract for a Drupal/Kafka public portal — architecture-led, not infrastructure delivery",
       "url": "https://www.dice.com/jobs?filters.workplaceTypes=Remote&filters.willingToSponsor=true&q=Forward%20Deployed%20Engineer",
       "status": "Skipped — out of scope (software architecture)"
+    },
+    {
+      "score": 6,
+      "family": "SRE",
+      "title": "Senior SRE / Production Reliability Engineer — 100% Remote",
+      "company": "Tror",
+      "location": "Remote (US client; contract, Corp-to-Corp or W2)",
+      "salary": "Depends on experience; 12-month contract",
+      "gap": "Technical: Production monitoring, RCA, synthetic checks, Python automation, DNS/WAF/load-balancer troubleshooting fit; telephony/contact-centre (Five9), IBM MQ/DB2 and a 10+ year SRE bar are the gaps; Practical: Confirm — listing says Able to Sponsor and allows Corp-to-Corp, which suits an incorporated Canadian contractor; confirm cross-border C2C, hours and client before applying; Resume: SRE.",
+      "url": "https://www.dice.com/job-detail/b055da43-a802-4aa9-89ab-cdc532f3c547",
+      "status": "InProcess"
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "SRE Lead (DevOps / SRE Cloud Lead) — W2, Remote",
+      "company": "Trebecon LLC",
+      "location": "Remote (US)",
+      "salary": "Depends on experience; 2-year W2 contract",
+      "gap": "Technical: GCP is the primary platform and Argo CD expertise plus 3+ years leading cloud-ops teams are required — hard GCP gate; Practical: Confirm — W2 only means TN sponsorship, not C2C; Resume: SRE.",
+      "url": "https://www.dice.com/job-detail/81a08943-8cea-43f8-be20-3a52a868df23"
+    },
+    {
+      "score": 0,
+      "family": "SRE",
+      "title": "Orchestrator — Senior Engineer",
+      "company": "GlobalLogic Inc.",
+      "location": "Remote (US)",
+      "salary": "USD base $130–145k posted",
+      "gap": "Out of scope — Perl/Go/Python orchestrator service development (ARM, NUMA, nested virtualization), not platform or reliability work",
+      "url": "https://www.dice.com/job-detail/a6663b91-f32e-49f2-8861-de809104b9e7",
+      "status": "Out of scope"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "(Remote) Tolling Azure Cloud Engineer",
+      "company": "NovaLink Solutions (same VDOT requisition also posted by NimbusAITech, Data Capital, Innosoul, Stellar Professionals)",
+      "location": "Remote but candidates must be local to Virginia",
+      "salary": "Not stated (one repost shows $67/h)",
+      "gap": "Technical: Azure administration (AVD, Entra ID, Key Vault, M365) — Windows/sysadmin-leaning; Practical: Ineligible — Virginia residency and fingerprint background check; Resume: Platform.",
+      "url": "https://www.dice.com/job-detail/5af1063d-a2c3-44e6-ae70-cb9a9123a7aa",
+      "status": "Ineligible — Virginia residents only"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer (Columbus/Chicago/Minneapolis/Detroit/Madison)",
+      "company": "TechniPros, LLC",
+      "location": "US cities, W2 12+ months",
+      "salary": "Not stated",
+      "gap": "Technical: AWS, Azure, Kubernetes, Terraform, Jenkins, Ansible, Python — a generic fit; Practical: Ineligible — W2 only, no C2C; same recurring TechniPros template already skipped; Resume: Platform.",
+      "url": "https://www.dice.com/job-detail/aea908c7-d91d-4fbc-aafa-d84dc9c0bb3e",
+      "status": "Ineligible — W2 only, no C2C"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Forward Deployed Engineer — 100% remote /C2C/",
+      "company": "Intellisoft Technologies",
+      "location": "Remote",
+      "salary": "Depends on experience",
+      "gap": "Out of scope — AI/MCP/Databricks data integration consulting, not infrastructure",
+      "url": "https://www.dice.com/job-detail/0d0e2704-2425-4b30-89aa-30ef1e575321",
+      "status": "Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "RSA (Sr. Forward Deployed Engineer)",
+      "company": "dBestWorkz LLC",
+      "location": "Remote",
+      "salary": "$70–80/h posted",
+      "gap": "Out of scope — Forward-deployed customer implementation (RSA product), not platform/SRE work",
+      "url": "https://www.dice.com/job-detail/d53b5baf-7852-4d74-805d-ff0d2772124c",
+      "status": "Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Forward Deployment Engineer",
+      "company": "(Dice listing)",
+      "location": "Remote",
+      "salary": "Not stated",
+      "gap": "Out of scope — forward-deployed customer implementation",
+      "url": "https://www.dice.com/job-detail/e7789168-9599-409d-af9a-12c6905e0ec2",
+      "status": "Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Cloud Support Engineer — Entry Level",
+      "company": "Medinext Global LLC",
+      "location": "Remote",
+      "salary": "$70–90k posted (USD)",
+      "gap": "Out of scope — entry-level support",
+      "url": "https://www.dice.com/job-detail/83574f54-390f-4582-b59b-20f31cc70289",
+      "status": "Out of scope"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 9 query audit",
+      "items": [
+        "DevOps Engineer → 2 results (both TechniPros W2) · Platform Engineer → 7 · Site Reliability Engineer → 3 (Tror, Trebecon, GlobalLogic) · Cloud Engineer → 7 (Azure/Virginia and GCP data-engineering reposts) · DevSecOps Engineer → 2 (TechniPros) · Forward Deployed Engineer → 2. Filter chips verified on each render; every result reviewed (all fit inside the 8-per-query boundary).",
+        "Platform-query noise: Tekcel8 and TechniPros reposts for Senior Data Engineer (Google Cloud), QA, Business Analyst, AI/ML platform and agentic roles were read from the card and the first listing and are out of scope (data/AI application work); they are counted, not individually listed.",
+        "The Tror post is the only new one that is Corp-to-Corp, remote and sponsor-willing. Treat the 10+ years SRE ask and the telephony/MQ/DB2 stack as real gaps."
+      ]
+    },
     {
       "heading": "October 7 query audit",
       "items": [

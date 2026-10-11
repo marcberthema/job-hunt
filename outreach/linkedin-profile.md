@@ -1,5 +1,7 @@
 # LinkedIn Profile Draft — Senior/Staff SRE Repositioning
 
+> Superseded 2026-10-09 by [consulting-first LinkedIn copy](linkedin-profile-2026-10.md). Keep this file as the record of the September live update; do not reuse its older experience-depth claims. Consulting sites are saved in [the pinned consulting directory](consulting-sites.md).
+
 > Drafted 2026-09-11, matching the resume repositioning in resume/marc-berthelette-resume-en.md.
 > Source facts: profile.md. No invented metrics — same honesty standard as the resumes.
 > Not yet applied to the live LinkedIn profile — draft for review first.

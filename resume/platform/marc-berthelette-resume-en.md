@@ -12,7 +12,7 @@ Senior DevOps engineer with nearly 18 years across infrastructure, software deve
 
 ## Technical Skills
 
-**Cloud & Infrastructure:** Microsoft Azure, Terraform/Ansible workflows, Linux, Puppet\
+**Cloud & Infrastructure:** Microsoft Azure, AWS (EC2, S3, Route 53, VPC), Terraform/Ansible workflows, Linux, Puppet\
 **CI/CD & Platforms:** Azure DevOps, GitHub Actions, Jenkins, JFrog Artifactory\
 **Containers & Delivery:** Kubernetes application deployments, Docker, ArgoCD\
 **Monitoring & Observability:** Dynatrace, Splunk, Elasticsearch, Logstash, Kibana\
@@ -28,7 +28,8 @@ Senior DevOps engineer with nearly 18 years across infrastructure, software deve
 - Rebuilt Salesforce delivery using Salesforce CLI and sandbox validation of candidate merges; reduced recurring missed deployment windows to one miss since launch.
 - Automated Oracle releases, removing the need for a weekly approved emergency-access account for routine deployments; added tests catching recurring file-encoding issues.
 - Versioned ArcGIS map services and properties; delivered service-account deployments to dev, test, and production, replacing deployments from developers' laptops.
-- Used another team's Terraform/Ansible workflows to migrate Nexus, Jenkins, and Vault environments to Azure; reduced MuleSoft releases from 15 manual steps to a few Jenkins jobs.
+- Helped a team move team-owned Nexus, Jenkins, and Vault environments from manual Azure portal operations to Infrastructure as Code, using another team's Terraform and Ansible workflows; later introduced Azure Key Vault in place of HashiCorp Vault.
+- Reduced MuleSoft production releases from a 15-step manual checklist to a few Jenkins jobs.
 - Created the delivery roadmap as informal primary owner for the first three years; onboarded developers and DevOps engineers and served as their primary support contact.
 
 **Key technologies:** Azure, Jenkins, SonarQube, Terraform, Ansible, Nexus, Salesforce CLI, Oracle, MuleSoft, ArcGIS
@@ -52,9 +53,10 @@ Concurrent contract alongside the Énergir engagement.
 - Centralized Jenkins Pipeline as Code for 10–15 developers supporting 80+ applications and 20+ clients, standardizing delivery steps and adding release visibility through Jira.
 - Automated OS patching and kernel reboots across 600+ servers, reducing maintenance to a monthly verification check; managed configuration with Puppet and Spacewalk.
 - Built a fleet software inventory platform exposing application versions, vulnerability exposure, end-of-life software, and TLS certificate assessments to product owners.
-- Supported a 24/7 production on-call rotation; built ELK log aggregation and Bash remediation for an unresponsive Elasticsearch cluster to reduce manual intervention.
+- Supported a 24/7 production on-call rotation; built ELK log aggregation and automated restart of an unresponsive Elasticsearch cluster to reduce manual intervention.
+- Built a client's AWS migration target environment over about six months (EC2, S3, Route 53, VPC, memcached on EC2, serverless relational database), provisioned by hand with no prior AWS experience; the client cancelled the migration before cutover.
 
-**Key technologies:** Jenkins, Linux, Puppet, Spacewalk, Bash, Elasticsearch, Logstash, Kibana, PRTG, Jira
+**Key technologies:** Jenkins, Linux, Puppet, Spacewalk, AWS, Bash, Elasticsearch, Logstash, Kibana, PRTG, Jira
 
 ### SOVO Technologies — Lead Technician → Software Engineer
 

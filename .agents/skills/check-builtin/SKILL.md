@@ -14,7 +14,8 @@ Search Built In, validate full postings, compare every eligible result with Marc
 Before scoring, read these files completely:
 
 1. `profile.md`
-2. `resume/marc-berthelette-resume-en.md`
+2. `.agents/skills/_shared/candidate-matching.md`
+3. `resume/platform/marc-berthelette-resume-en.md` (plus `resume/sre/marc-berthelette-resume-en.md` when evaluating SRE duties)
 
 Use the current contents even when they conflict with older `.claude/commands`, `specs`, plans, job files, or prior run notes. Never invent or strengthen experience beyond those sources.
 

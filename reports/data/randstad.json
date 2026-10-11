@@ -1,37 +1,41 @@
 {
   "board": "Randstad",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-09",
   "eyebrow": "Randstad Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "First-page Technologies inventory, validated from Randstad's full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Re-read October 5, 2026 — instead of the first page only, all 18 pages of the Technologies category (518 postings) were collected and every in-family title was opened in full. One new role filed: DevOps Engineer at a Montréal medical-technology leader (fully remote, Eastern hours, 6-month contract, Azure/AVS/Terraform/Packer/GitHub Actions; score 6). The earlier ‘nothing in the target families’ result came from reading only page 1 of 18.",
+  "latest_update": "Latest update: October 9, 2026 — all 18 Technologies category pages collected (529 postings, HTTP 200); no new qualifying posting. The Montréal Azure/Terraform/Packer DevOps contract is already Applied; every other platform/SRE title is Toronto/Vancouver hybrid or on-site.",
   "stats": [
     {
-      "value": 30,
-      "label": "postings reviewed"
+      "value": "18 of 18",
+      "label": "category pages collected"
     },
     {
-      "value": 3,
-      "label": "plausible matches"
+      "value": 529,
+      "label": "unique postings collected"
     },
     {
-      "value": 0,
-      "label": "eligible validated"
+      "value": 20,
+      "label": "plausible postings opened in full"
     },
     {
-      "value": 2,
-      "label": "geographic exclusions"
-    },
-    {
-      "value": 0,
-      "label": "inaccessible"
+      "value": 14,
+      "label": "rows added this run"
     },
     {
       "value": 0,
-      "label": "pipeline matches"
+      "label": "auto-filed this run"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 9 pass audit",
+      "items": [
+        "Pages 1–18 of <code>/jobs/s-technologies/</code> returned HTTP 200 with real inventory; pages 19+ returned the empty fallback and were not used. 529 postings parsed from the page analytics blocks; 100 were title-plausible (DevOps, platform, cloud, infrastructure, SRE, systems, release); 20 were opened in full and read.",
+        "The remaining ~80 title-plausible cards (QA, security analysts, data engineers, network, project/product, help desk) and the other ~430 postings were unrelated occupations and were not opened — counted, not individually listed.",
+        "Already in the ledger: Montréal medical-technology DevOps (47520194, Applied), Toronto bank Senior DevOps (47438198, Skipped), Operational Engineer 1733 telephony (also on S.i. Systems)."
+      ]
+    },
     {
       "heading": "October 5 full-read pass — all pages",
       "items": [
@@ -135,7 +139,148 @@
       "gap": "Owns multi-cloud AWS and GCP with Terraform — AWS/GCP depth gate",
       "url": "https://www.randstad.ca/jobs/senior-devops_montreal_47420561/",
       "status": ""
+    },
+    {
+      "title": "Cloud Services Specialist - Cloudflare and Web Platforms",
+      "company": "Randstad client (BrokerLink / insurance)",
+      "location": "Toronto-indexed; 100% remote across Canada excluding Québec",
+      "salary": "CAD $85–$95/hr; 6-month contract, 35 h/week",
+      "family": "Platform",
+      "url": "https://www.randstad.ca/jobs/cloud-services-specialist-cloudflare-and-web-platforms_toronto_47411837/",
+      "score": 4,
+      "gap": "Technical: Lead Cloudflare (Workers, WAF, Zero Trust, DNS, load balancing) and direct external web vendors; Marc has no Cloudflare experience and the role is vendor-management heavy; Practical: Compromise — remote across Canada excluding Québec (Ontario fits); short contract with extension potential; Resume: Platform."
+    },
+    {
+      "title": "Platform Engineer (GitHub Enterprise, CI/CD, developer productivity)",
+      "company": "Randstad client (financial services)",
+      "location": "Toronto, ON — hybrid 2 days moving to 4",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://www.randstad.ca/jobs/platform-engineer_toronto_47489958/",
+      "score": -1,
+      "status": "Ineligible — Toronto hybrid moving to 4 days, outside reachable cities",
+      "gap": "Strong technical fit — CI/CD, GitHub Actions, release automation, developer experience; Practical: Ineligible — Toronto hybrid moving to 4 days, outside reachable cities."
+    },
+    {
+      "title": "Platform Engineer (Kubernetes, IDP)",
+      "company": "Randstad client",
+      "location": "Vancouver, BC — hybrid 4 days onsite",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://www.randstad.ca/jobs/platform-engineer_vancouver_47560071/",
+      "score": -1,
+      "status": "Ineligible — Vancouver hybrid 4 days, outside reachable cities; Kubernetes/service-mesh depth required",
+      "gap": "Practical: Ineligible — Vancouver hybrid 4 days, outside reachable cities; Kubernetes/service-mesh depth required."
+    },
+    {
+      "title": "Senior DevOps/Cloud Engineer (AWS)",
+      "company": "Randstad client",
+      "location": "North York / Toronto — fully on-site 5 days",
+      "salary": "Not stated",
+      "family": "DevOps",
+      "url": "https://www.randstad.ca/jobs/senior-devops-cloud-engineer_north-york_47407451/",
+      "score": -1,
+      "status": "Ineligible — on-site 5 days in Toronto; AWS serverless depth",
+      "gap": "Practical: Ineligible — on-site 5 days in Toronto; AWS serverless depth."
+    },
+    {
+      "title": "Site Reliability Engineer / Senior Database Platform Engineer",
+      "company": "Randstad client",
+      "location": "Toronto, ON — hybrid 4 days on-site",
+      "salary": "Not stated",
+      "family": "SRE",
+      "url": "https://www.randstad.ca/jobs/site-reliability-engineer-tdjp00058343_toronto_47168876/",
+      "score": -1,
+      "status": "Ineligible — Toronto hybrid 4 days, outside reachable cities; database-platform scope",
+      "gap": "Practical: Ineligible — Toronto hybrid 4 days, outside reachable cities; database-platform scope."
+    },
+    {
+      "title": "Lead Site Reliability Engineer - AIOps Modernization",
+      "company": "Randstad client (global enterprise)",
+      "location": "Toronto, ON — permanent, cadence not stated",
+      "salary": "Not stated",
+      "family": "SRE",
+      "url": "https://www.randstad.ca/jobs/lead-site-reliability-engineer-aiops-modernization_toronto_47345386/",
+      "score": 3,
+      "gap": "Technical: 10+ years IT operations/SRE leadership, Grafana + ServiceNow ITOM and AI remediation expected; Marc has observability and automation but not that governance/leadership scale; Practical: Confirm — Toronto location with no remote statement, so eligibility unresolved; permanent; Resume: SRE."
+    },
+    {
+      "title": "Senior DevOps Specialist (AWS/EKS, Ansible, Terraform, GitLab)",
+      "company": "Randstad client",
+      "location": "Montréal, QC — permanent, cadence not stated",
+      "salary": "Not stated",
+      "family": "DevOps",
+      "url": "https://www.randstad.ca/jobs/senior-devops-specialist_montreal_46988660/",
+      "score": 3,
+      "gap": "Technical: Technical-lead scope on AWS/EKS with Wireshark-level network debugging, IAM and penetration-test security; AWS/EKS ownership is the gap; Practical: Confirm — Montréal hybrid days not stated; confirm <=2; closes 2026-10-31; Resume: Platform."
+    },
+    {
+      "title": "DevOps Programmer",
+      "company": "Randstad client (public sector)",
+      "location": "Charlottetown, PEI — onsite/hybrid",
+      "salary": "Not stated",
+      "family": "DevOps",
+      "url": "https://www.randstad.ca/jobs/devops-programmer_charlottetown_47277181/",
+      "score": -1,
+      "status": "Ineligible — Charlottetown onsite/hybrid, outside reachable cities",
+      "gap": "Practical: Ineligible — Charlottetown onsite/hybrid, outside reachable cities."
+    },
+    {
+      "title": "Senior Cloud Development and Administration Specialist",
+      "company": "Randstad client",
+      "location": "Toronto, ON — hybrid/onsite",
+      "salary": "Not stated",
+      "family": "DevOps",
+      "url": "https://www.randstad.ca/jobs/senior-cloud-development-and-administration-specialist_toronto_47218487/",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — full-stack Java/Angular application development with CI/CD administration on the side"
+    },
+    {
+      "title": "System Administrator Infra",
+      "company": "Randstad client (IT company)",
+      "location": "Saint-Laurent / Montréal — hybrid",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://www.randstad.ca/jobs/system-administrator-infra_saint-laurent_47243195/",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — Windows Server/AD/VMware/Veeam administration"
+    },
+    {
+      "title": "Systems Engineers – End-to-End Software Diagnostics and Observability",
+      "company": "Randstad client (automotive)",
+      "location": "Kanata, ON — hybrid 4 days",
+      "salary": "Not stated",
+      "family": "SRE",
+      "url": "https://www.randstad.ca/jobs/systems-engineers-end-to-end-software-diagnostics-and-observability_kanata_47495138/",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — vehicle diagnostics systems engineering"
+    },
+    {
+      "title": "Sr. Embedded Build, Release and Integration Developer",
+      "company": "Randstad client (embedded products)",
+      "location": "Mississauga, ON — permanent",
+      "salary": "Not stated",
+      "family": "DevOps",
+      "url": "https://www.randstad.ca/jobs/sr-embedded-build-release-and-integration-developer_mississauga_47483063/",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — embedded firmware build/integration"
+    },
+    {
+      "title": "Software Developers – Telemetry and Observability Platform",
+      "company": "Randstad client (automotive)",
+      "location": "Kanata, ON — hybrid 4 days",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://www.randstad.ca/jobs/software-developers-telemetry-and-observability-platform_kanata_47494900/",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — application software development"
     }
   ],
-  "could_not_validate": []
+  "could_not_validate": [],
+  "method": "October 9 run: full Technologies category crawl over HTTP, every plausible detail page read via its structured JobPosting data. "
 }

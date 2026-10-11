@@ -1,10 +1,10 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-10-06",
+  "run_date": "2026-10-10",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "Re-read October 6, 2026 — Glassdoor’s DevOps, Platform, Cloud, SRE and DevSecOps queries were read from the description pane (about 90 unique postings; FDE returned 0). 2 roles filed: Koonkie Cloud Services DevOps Engineer (7) and CDPQ IaC Microsoft 365 & Azure (6); nothing new from the SRE and DevSecOps queries.",
+  "latest_update": "Latest update: October 10, 2026 — Marc asked for the last 72 hours only. All six queries ran with Glassdoor's “Last 3 days” filter; 26 postings read in full and scored, 1 auto-filed (MDA Space, score 5). Not every query rendered its full result set (see audit), so this is not a claim of full coverage.",
   "stats": [
     {
       "value": 6,
@@ -12,22 +12,308 @@
     },
     {
       "value": 6,
-      "label": "keyword searches completed"
+      "label": "keyword searches executed (last-3-days filter)"
     },
     {
-      "value": 48,
-      "label": "result appearances reviewed today"
+      "value": "≈240",
+      "label": "result cards collected across queries"
     },
     {
-      "value": 5,
-      "label": "new postings validated today"
+      "value": 26,
+      "label": "postings read in full and scored today"
     },
     {
-      "value": 0,
-      "label": "auto-filed today (none cleared score ≥5)"
+      "value": 1,
+      "label": "auto-filed today (MDA Space, score 5)"
     }
   ],
   "rows": [
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "Développeur/ingénieur en automatisation de circuits électroniques et DevOps",
+      "company": "MDA Space",
+      "location": "Sainte-Anne-de-Bellevue, QC (Montréal area) — on-site/hybrid cadence not stated",
+      "salary": "Not stated (Glassdoor est. CAD $72K–$94K/year)",
+      "gap": "Technical: Jenkins/GitLab CI engineering, Python/Bash/PowerShell automation, Linux, vSphere, Azure automation, monitoring and Docker/Kubernetes fit; gaps are electronics-design (FPGA/PCB/EDA) tooling administration, engineering-tool licensing and capacity planning. Practical: Confirm — office cadence not stated (listing says in person), pay is only a Glassdoor estimate (Montréal FTE floor $120k), French required (native). Different requisition from the MDA CI/CD process specialist skipped 2026-10-07. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291107778",
+      "status": "Skipped"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevOps & Cloud Systems - Fullstack Developer",
+      "company": "BrightOrder",
+      "location": "Fully remote (Canada)",
+      "salary": "CAD $95,000–$105,000/year",
+      "gap": "Technical: Python, CI/CD, Docker/Kubernetes, monitoring and RCA fit, but the role is full-stack development (React, TypeScript, Go, REST/GraphQL, Postgres/Aurora) with intermediate AWS ECS/EKS/Lambda — React/Go/AWS depth are material gaps. Practical: Compromise — remote and eligible; base straddles the $100k remote floor and is far under the $160k ideal. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290842689",
+      "status": "Not filed — below threshold (4)"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Senior Cloud Infrastructure Engineer",
+      "company": "Skip (Just Eat Takeaway.com)",
+      "location": "Remote (Canada)",
+      "salary": "CAD $103,000–$135,000/year",
+      "gap": "Technical: required production Kubernetes platform operations with Kyverno policy, AWS ECS/EKS/IAM/Security Hub, Keycloak identity, Python and Go — Marc is a Kubernetes user not a cluster owner, AWS is bounded/dated and he has no Go or Keycloak. Practical: Compromise — remote and eligible, base below ideal, on-call. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291367563",
+      "status": "Not filed — below threshold (3)"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Principle Engineer / VP of Engineering",
+      "company": "Foreplay",
+      "location": "Remote (Canada or US, Eastern-time overlap)",
+      "salary": "Not stated",
+      "gap": "Technical: player-coach owning about 80 bare-metal servers, 40 services, ClickHouse and a GPU fleet while growing a team from 4 to 7–8 — needs distributed-systems architecture ownership and people leadership Marc has not held. Practical: Confirm — pay not stated, small bootstrapped company, hiring model not stated. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291358741",
+      "status": "Not filed — below threshold (3)"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Staff Software Engineer, Gaming AI",
+      "company": "Unity",
+      "location": "Montréal, QC — cadence not stated",
+      "salary": "Not stated (Glassdoor est. CAD $104K–$135K/year)",
+      "gap": "Technical: Staff-level full-stack cloud services on GCP/K8s for a game-creation AI platform with DevOps as a side duty; GCP is zero-evidence and the core is software architecture. Practical: Confirm — office cadence not stated, pay only a Glassdoor estimate. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291257150",
+      "status": "Not filed — below threshold (3)"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior DevOps Developer-Analyst",
+      "company": "Maarut",
+      "location": "Lévis, QC — in person",
+      "salary": "CAD $75.00–$80.00/hour",
+      "gap": "Ineligible geography: the full posting says in person in Lévis (Québec City area), outside Marc's reachable hybrid cities. It also demands advanced GitHub Actions at organisation scale and ServiceNow/Jira workflow integration and excludes Jenkins-only profiles. Same mandate text as the Chrome Technologies posting skipped 2026-10-09.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010289696877",
+      "status": "Ineligible — Lévis in person"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "GCP Infrastructure & Cloud SRE Engineer - Kubernetes, Terraform, GitHub Actions, Jenkins, ArgoCD",
+      "company": "Apptoza",
+      "location": "Toronto, ON — 2–3 days/week on-site",
+      "salary": "CAD $45.00–$50.00/hour",
+      "gap": "Ineligible: Toronto hybrid is outside the reachable cities, the rate is below the contract floor, and GCP/GKE is required (zero GCP evidence).",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010289929153",
+      "status": "Ineligible — Toronto 2–3 days; GCP; pay below floor"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Sr. Release and Integration Engineer",
+      "company": "InnoPhase IoT",
+      "location": "Vancouver, BC — hybrid",
+      "salary": "CAD $80,000–$120,000/year",
+      "gap": "Ineligible geography: Vancouver hybrid. The scope is embedded-firmware release engineering (C, SoC/ASIC flows, wireless toolchains), not delivery-platform work.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010289701077",
+      "status": "Ineligible — Vancouver hybrid"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Technical Specialist II (Senior DevOps/SRE)",
+      "company": "BMO Financial Group",
+      "location": "Toronto, ON — minimum 3 days/week in office",
+      "salary": "CAD $70,000–$150,000/year",
+      "gap": "Ineligible: Toronto, 3 office days. Also requires strong AWS (CDK/TypeScript), financial-services experience, ServiceNow/ITSM and RHEL clustering (Veritas) at large scale. Different role from the BMO Senior Cloud Engineer skipped 2026-07-07.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010288766818",
+      "status": "Ineligible — Toronto 3 days/week"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Principal Associate, Software Engineering",
+      "company": "Capital One",
+      "location": "Toronto, ON — hybrid, 3 days/week",
+      "salary": "CAD $148,200–$169,100/year + incentive",
+      "gap": "Ineligible geography: Toronto, 3 office days. The developer-productivity scope (GitHub ecosystem, Dev Containers, enterprise CI/CD, AI developer tooling) would otherwise be relevant; it also needs 4+ years of application development in Java/TypeScript/Python/Go.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010289451541",
+      "status": "Ineligible — Toronto 3 days/week"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Consultant – Application Release & Platform Operations",
+      "company": "CGI",
+      "location": "Halifax, NS (Atlantic Canada) — hybrid, 3 days/week",
+      "salary": "CAD $65,000–$125,000/year",
+      "gap": "Ineligible geography: the posting requires being located in, or relocating to, Atlantic Canada with three on-site days.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291123566",
+      "status": "Ineligible — Atlantic Canada relocation"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "IT Professionals – Multiple Client Opportunities",
+      "company": "Talent Grid",
+      "location": "Toronto, ON — onsite/hybrid",
+      "salary": "CAD $100,000–$130,000/year",
+      "gap": "Ineligible: a recruiter funnel for about 13 Toronto client openings (including Terraform Developer, Platform Engineer AI/ML, SRE Azure & Databricks), not one requisition; every role needs a Toronto workplace.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290530050",
+      "status": "Ineligible — Toronto recruiter funnel"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Adobe Site Reliability Engineer (SRE) – CDN & Web Performance",
+      "company": "Staffmax Staffing and Recruiting",
+      "location": "Toronto, ON — no remote option stated",
+      "salary": "CAD $120,000–$130,000/year",
+      "gap": "Ineligible: Toronto with no remote option stated in the full text. The same requisition also appears from Talent Grid (CAD $130K–$160K) and I8IS – Infiniti Software Solutions (CAD $130K). The scope is CDN/WAF/Core Web Vitals specialism, which Marc lacks.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290876994",
+      "status": "Ineligible — Toronto; CDN/WAF specialism"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Kubernetes Platform Engineer",
+      "company": "Prophecy Technologies",
+      "location": "Montréal, QC — hybrid/onsite",
+      "salary": "CAD $55.00–$60.00/hour",
+      "gap": "Ineligible: the rate is well below the $80/hour contract floor for a 40-hour week. It also requires extensive container-platform build experience (Kubernetes/OpenShift with full GitOps).",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291153772",
+      "status": "Ineligible — pay below contract floor"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Packet Core Engineer - SDM",
+      "company": "Acentury",
+      "location": "Toronto, ON — hybrid",
+      "salary": "CAD $80.00–$110.00/hour",
+      "gap": "Out of scope: mobile packet-core network (HLR/HSS/UDM, 3GPP 4G/5G) engineering; Toronto hybrid as well.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010289606204",
+      "status": "Out of scope — telecom packet core"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "RCC Lead",
+      "company": "Cyient",
+      "location": "Longueuil, QC — in person",
+      "salary": "CAD $90,000–$120,000/year",
+      "gap": "Out of scope: aerospace manufacturing root-cause analysis (Six Sigma, SAP MRP), not IT.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010289745641",
+      "status": "Out of scope — manufacturing RCA"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Technical Lead – Treasury",
+      "company": "Realign",
+      "location": "Toronto, ON — onsite",
+      "salary": "CAD $145,000/year",
+      "gap": "Out of scope: treasury and payment platform support (Kyriba, Bottomline, Informatica); also Toronto onsite and Reliability clearance with five years' Canadian residence.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290977796",
+      "status": "Out of scope — treasury platforms"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Forward deployed Engineer",
+      "company": "Realign",
+      "location": "Toronto, ON — onsite",
+      "salary": "CAD $163,000/year",
+      "gap": "Out of scope: data/AI engineering (PySpark, Claude, RAG, MLOps) with 10–14 years required; Toronto onsite.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290977802",
+      "status": "Out of scope — data/AI engineering, Toronto"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Bilingual Senior Specialist, Security Applications (AppSec)",
+      "company": "Canada Mortgage and Housing Corporation (CMHC)",
+      "location": "Ottawa, ON / Montréal / Toronto — hybrid",
+      "salary": "CAD $104,180–$130,225/year",
+      "gap": "Out of scope: an enterprise application-security governance role (7+ years AppSec, CSSLP/CISSP expected, Secret clearance), not delivery/platform. Different role from the CMHC postings already Applied or Skipped.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291017487",
+      "status": "Out of scope — application-security governance"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Systems Engineer, Lead Consultant Identity & Authentication",
+      "company": "Allstate",
+      "location": "Remote (Ontario)",
+      "salary": "CAD $94,000–$144,000/year",
+      "gap": "Out of scope: enterprise IAM engineering (AD DS/ADFS/Entra ID/ADCS, Kerberos, SAML, OIDC, SCOM, 5+ years) — remote and eligible, but not a platform/DevOps role.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291216205",
+      "status": "Out of scope — enterprise IAM/Active Directory"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "MLOps Engineer",
+      "company": "Planitar Inc.",
+      "location": "Waterloo, ON — hybrid",
+      "salary": "CAD $120,000–$150,000/year",
+      "gap": "Out of scope: ML platform for floor-plan generation (PyTorch/ONNX, model registries, GPU compute); Waterloo hybrid is also outside the reachable cities.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291178332",
+      "status": "Out of scope — ML platform; Waterloo hybrid"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Software Developer",
+      "company": "Compusult Limited",
+      "location": "Ottawa, ON — in person",
+      "salary": "Not stated",
+      "gap": "Out of scope: .NET/C# web application development for federal clients, requiring Canadian citizenship and clearance eligibility.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010289706808",
+      "status": "Out of scope — .NET application development"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Python Java Sr Software Engineer - Montreal",
+      "company": "RELX / Elsevier",
+      "location": "Montréal, QC — cadence not stated",
+      "salary": "CAD $78,600–$131,000/year",
+      "gap": "Out of scope: Java/Python data-harvesting application engineering for Elsevier's Research Data Platform (the same posting appears under Elsevier); DevOps is only a team value, with Kubernetes/Terraform as plus.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291111077",
+      "status": "Out of scope — data application engineering"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Software Development Manager",
+      "company": "BrightOrder",
+      "location": "Fully remote (Canada)",
+      "salary": "CAD $110,000–$120,000/year",
+      "gap": "Out of scope: player-coach software engineering manager requiring 3+ years managing direct reports and full-stack coding on AWS.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290865052",
+      "status": "Out of scope — engineering management"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Staff Software Engineer",
+      "company": "Valsoft",
+      "location": "Canada (remote or location not stated)",
+      "salary": "Not stated",
+      "gap": "Out of scope: software architecture and legacy-system modernisation on a three-person team; DevOps is incidental.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290986514",
+      "status": "Out of scope — software architecture"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Principal Software Engineer, MarTech Platforms & Digital Enablement",
+      "company": "Sun Life",
+      "location": "Toronto, ON",
+      "salary": "CAD $100,000–$143,000/year",
+      "gap": "Out of scope: MarTech and Snowflake customer-data platform engineering (APIs, microservices, event-driven); Toronto. The same posting appears twice.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291136477",
+      "status": "Out of scope — MarTech data platform"
+    },
     {
       "score": -1,
       "family": "Platform",
@@ -306,6 +592,26 @@
   ],
   "could_not_validate": [
     {
+      "text": "Apptoza “Senior AWS SageMaker / MLOps Engineer” (Toronto, CAD $50–55/hour) — set aside unopened on its title: ML engineering, Toronto, hourly rate under the contract floor.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010289578846"
+    },
+    {
+      "text": "Export Development Canada “Senior AI Developer - EN 428” (four city copies incl. Montréal) — set aside unopened on its title: AI application development.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010288711595"
+    },
+    {
+      "text": "Hasbro “Principal Network Engineer” (Montréal) and Moneris “Network Engineer” (Toronto) — set aside unopened: network engineering, not platform/DevOps.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290735863"
+    },
+    {
+      "text": "Aadhcode Solutions “Lead Security & Cryptography Engineer” (Remote) — set aside unopened on its title: security/cryptography specialism.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290792785"
+    },
+    {
+      "text": "Unity “Senior Machine Learning Engineer” and “Senior Software Engineer, QA” (Montréal), AtkinsRéalis “Staff Data Developer” (Montréal) — set aside unopened: ML, QA and data roles.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291257151"
+    },
+    {
       "text": "Olive Systems \"Forward Deployed Engineer — One Process, Multiple Opportunities\" (Remote) is not an actual job requisition — it's a staffing/matching funnel (\"MakeHire\") for Forward Deployed Engineer roles at US companies, with no specific employer, compensation, or Canada eligibility stated. Read in full; could not be scored as a posting.",
       "url": "https://www.glassdoor.ca/Job/canada-forward-deployed-engineer-jobs-SRCH_IL.0,6_IN3_KO7,32.htm"
     },
@@ -319,6 +625,20 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 10 last-72-hours pass — partial coverage",
+      "items": [
+        "<b>Filter:</b> every query used the “Last 3 days” filter (URL parameter <code>fromAge=3</code>, confirmed as the active chip). Cards carry age tags of 24h or 2d.",
+        "<b>DevOps Engineer</b> — Glassdoor reported 22 results; 14 cards rendered and there was no working “show more” control. All 14 read in full from their own posting pages. <i>Incomplete — 8 results not rendered.</i>",
+        "<b>Platform Engineer</b> — reported 228 results; 120 cards loaded (the ranking turned to noise after about 30: construction, mechanical, electrical, finance). About 16 plausible titles opened and read in full; the rest set aside as non-IT. <i>Incomplete — 108 cards not loaded.</i>",
+        "<b>Site Reliability Engineer</b> — reported 51; 40 cards loaded, all noise apart from the Adobe SRE requisition (three agency copies), Apptoza and BMO already read. <i>Incomplete — 11 not loaded.</i>",
+        "<b>Cloud Engineer</b> — reported 115; 60 cards loaded, no new in-family titles beyond those read under the other queries (plus BrightOrder, Valsoft). <i>Incomplete — 55 not loaded.</i>",
+        "<b>DevSecOps Engineer</b> — reported 6; 4 cards rendered (CGI, CMHC AppSec, two copies of Sun Life), all read. <i>Incomplete — 2 not rendered.</i>",
+        "<b>Forward Deployed Engineer</b> — reported 6; 4 cards rendered (two AML Oceanographic electrical engineer roles, McKesson Data Specialist, Realign FDE). Realign read; the others are not IT. <i>Incomplete — 2 not rendered.</i>",
+        "<b>Reconciliation:</b> 26 postings read in full from their own pages; about 240 cards collected (counting repeats across queries); non-IT titles (mechanical, electrical, construction, finance, HR) set aside without opening and counted, not listed. No new row reached the score 8+ band; the only auto-file is MDA Space (5).",
+        "<b>Page access:</b> opening each posting by <code>/job-listing/j?jl=&lt;id&gt;</code> worked. Once, a scripted click followed a link to <code>fr.glassdoor.ca</code> and a brief “Just a moment…” check page appeared; it cleared on its own after about eight seconds with no interaction, and I did not click, solve or bypass anything. Because the skill says to stop on a verification page, this is reported here for transparency."
+      ]
+    },
     {
       "heading": "October 6 full-read pass — complete",
       "items": [
@@ -363,5 +683,5 @@
       ]
     }
   ],
-  "method": "All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
+  "method": "Oct 10, 2026 (last-72-hours request): all six mandatory Canada queries were executed independently in a rendered browser with the “Last 3 days” filter, but none rendered its complete reported result count (DevOps 14 of 22, Platform 120 of 228, SRE 40 of 51, Cloud 60 of 115, DevSecOps 4 of 6, FDE 4 of 6). Every in-family or ambiguous card that did render was opened from its own posting page and read in full; non-IT cards were counted and set aside. Platform Engineer and Site Reliability Engineer remain noisy on this site, as in prior runs. Prior rows and statuses below are preserved from the October 6 run. All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
 }

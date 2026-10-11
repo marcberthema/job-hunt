@@ -1,21 +1,25 @@
 {
   "board": "S.i. Systems",
-  "run_date": "2026-10-07",
+  "run_date": "2026-10-09",
   "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 7, 2026 — all 8 mandatory queries plus 4 narrowing variants completed (46 unique postings, every one fetched in full). No new qualifying roles: every in-family posting was either already in the ledger, Toronto/other-city hybrid or on-site, clearance-gated, a manager role, or out of scope. 0 filed.",
+  "latest_update": "Latest update: October 9, 2026 — all 8 mandatory queries rerun (no WAF/CAPTCHA); 43 unique postings, nothing new qualifies — the only DevOps/SRE/Platform roles are Toronto-area hybrid contracts or already in the ledger.",
   "stats": [
     {
-      "value": "12 of 12",
-      "label": "queries complete (8 mandatory + 4 variants)"
+      "value": "8 of 8",
+      "label": "queries complete"
     },
     {
-      "value": 46,
-      "label": "unique postings fetched in full"
+      "value": 43,
+      "label": "unique postings collected"
     },
     {
-      "value": 9,
+      "value": 18,
+      "label": "read in full (all plausible DevOps/SRE/Platform/Cloud titles)"
+    },
+    {
+      "value": 2,
       "label": "rows added this run"
     },
     {
@@ -24,6 +28,14 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 9 query audit (real browser, expertise=3, no challenge or WAF page)",
+      "items": [
+        "DevOps Engineer 20 cards · Senior DevOps Engineer 20 · Site Reliability Engineer 20 · Platform Engineer 20 · Cloud Engineer 20 · DevSecOps Engineer 17 · Infrastructure Engineer 20 · Senior Infrastructure Engineer 20 — all rendered past the loading state with the correct <code>q=</code> and <code>expertise=3</code>; 43 unique requisitions after deduplication.",
+        "18 plausible postings read in full from their detail pages. 30 of 43 were already represented in this report; the rest were the system-administrator and network titles listed above or clearly unrelated titles (network designers, DBAs, analysts, clearance-gated administrators) set aside without opening — counted, not individually listed.",
+        "Reminder: the two best technical fits are Toronto financial-services contracts — Platform Engineer (GitHub Enterprise, CI/CD; hybrid 2→4 days) and SRE (Python, GitHub Actions; no remote option stated). Neither is take-able from Smiths Falls unless the client confirms remote."
+      ]
+    },
     {
       "heading": "October 7 query audit (real browser, no challenge or WAF page)",
       "items": [
@@ -392,6 +404,28 @@
       "url": "https://www.sisystems.com/jobs/senior-bilingual-im-it-advisor-enterprise-systems-to-lead-enterprise-infrastructure-modernization-using-microsoft-365-and-hybrid-cloud-operations/330032003500340035003500/",
       "status": "Skipped — Ottawa on-site",
       "engagement": "Permanent"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "System Administrator (7+ years) — Azure, AWS and Google Workspace",
+      "company": "S.i. Systems client",
+      "location": "Toronto or Vancouver — hybrid, 3 days onsite downtown",
+      "salary": "Hourly rate negotiable; 1-year contract + extension, 37.5 h/week",
+      "gap": "Technical: Cloud systems-administration role (Azure VMs/networking/backup, Key Vault) — sysadmin-leaning, 7+ yrs Azure/AWS/Workspace; Practical: Ineligible — Toronto/Vancouver hybrid 3 office days, outside reachable cities; Resume: Platform.",
+      "url": "https://www.sisystems.com/jobs/system-administrator-7-years-to-manage-and-maintain-cloud-platforms-us/330032003700370035003300/",
+      "status": "Ineligible — Toronto/Vancouver hybrid 3 days"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Network Engineer — application migrations & hybrid cloud connectivity (Azure/AWS, F5, DNS/IPAM) 4808",
+      "company": "S.i. Systems client",
+      "location": "Toronto, Winnipeg or London",
+      "salary": "Hourly rate negotiable; contract to Nov 2027",
+      "gap": "Out of scope — network engineering (firewalls, F5, DNS/IPAM); no CI/CD, platform or reliability ownership",
+      "url": "https://www.sisystems.com/jobs/senior-network-engineer-application-migrations-hybrid-cloud-connectivity-azure-aws-firewalls-f5-dns-ipam-4808/330032003700370030003500/",
+      "status": "Out of scope"
     }
   ],
   "could_not_validate": [

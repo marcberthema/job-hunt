@@ -15,7 +15,7 @@ Senior DevOps engineer focused on production reliability, observability, and aut
 **Reliability & Operations:** Production incident response, root cause analysis, on-call support, automated remediation, Linux\
 **Monitoring & Observability:** Dynatrace, Splunk, Elasticsearch, Logstash, Kibana, PRTG\
 **Programming & Scripting:** Python, FastAPI, Bash, Java, C++, SQL\
-**Cloud & Infrastructure:** Microsoft Azure, Terraform/Ansible workflows, Puppet\
+**Cloud & Infrastructure:** Microsoft Azure, AWS (EC2, S3, Route 53, VPC), Terraform/Ansible workflows, Puppet\
 **Containers & Delivery:** Kubernetes application deployments, Docker, ArgoCD, Azure DevOps, GitHub Actions, Jenkins, JFrog Artifactory
 
 ## Work Experience
@@ -53,8 +53,9 @@ Concurrent contract alongside the Énergir engagement.
 - Built centralized ELK log aggregation and managed fleet configuration with Puppet and Spacewalk, supporting incident investigation and consistent system configuration.
 - Created a software inventory platform exposing fleet-wide application versions, vulnerability exposure, end-of-life software, and TLS certificate assessments to product owners.
 - Standardized Jenkins pipelines for 80+ applications and 20+ clients, helping 10–15 developers maintain consistent build and release processes.
+- Built a client's AWS migration target environment over about six months (EC2, S3, Route 53, VPC, memcached on EC2, serverless relational database), provisioned by hand with no prior AWS experience; the client cancelled the migration before cutover.
 
-**Key technologies:** Linux, Bash, Elasticsearch, Logstash, Kibana, PRTG, Puppet, Spacewalk, Jenkins
+**Key technologies:** Linux, AWS, Bash, Elasticsearch, Logstash, Kibana, PRTG, Puppet, Spacewalk, Jenkins
 
 ### SOVO Technologies — Lead Technician → Software Engineer
 

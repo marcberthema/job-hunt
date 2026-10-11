@@ -1,49 +1,41 @@
 {
   "board": "RemoteOK",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-09",
   "eyebrow": "RemoteOK · read-only API search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical and domain fit only.",
-  "latest_update": "Re-read October 5, 2026 — all 99 API postings had their full descriptions scored for DevOps/SRE/infrastructure content, not just their titles. None is eligible and in scope; the highest-scoring items are US-only software engineers and a Redwood City SDE. 0 filed.",
+  "latest_update": "Latest update: October 9, 2026 — RemoteOK API (HTTP 200, 99 jobs) fully reviewed: nothing in the DevOps/SRE/Platform family is open to Canada. The latest-100 inventory is mostly sales, HR, annotation and software roles.",
   "stats": [
     {
+      "value": "1 of 1",
+      "label": "inventory passes complete (latest-100 API)"
+    },
+    {
       "value": 99,
-      "label": "API jobs"
-    },
-    {
-      "value": 24,
-      "label": "recent ≤14d"
-    },
-    {
-      "value": 3,
-      "label": "plausible"
+      "label": "job objects reviewed"
     },
     {
       "value": 0,
-      "label": "eligible"
+      "label": "eligible target-family postings"
+    },
+    {
+      "value": 5,
+      "label": "rows added this run"
     },
     {
       "value": 0,
-      "label": "unclear"
-    },
-    {
-      "value": 1,
-      "label": "ineligible"
-    },
-    {
-      "value": 1,
-      "label": "inaccessible"
-    },
-    {
-      "value": 0,
-      "label": "stale candidates"
-    },
-    {
-      "value": 0,
-      "label": "pipeline matches"
+      "label": "auto-filed this run"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 9 inventory audit",
+      "items": [
+        "Endpoint <code>https://remoteok.com/api</code> → HTTP 200, JSON, 100 objects (1 metadata + 99 jobs), dated 2026-07-30 to 2026-10-07. Per-family match counts: DevOps 0 · Senior DevOps 0 · SRE 0 · Platform 1 (RedMimicry, Germany) · Cloud 0 · DevSecOps 0 · Infrastructure 1 (Arango, Go software) · adjacent 3 (Mirantis, AWeber, KPI Solutions).",
+        "API descriptions are truncated to ~300 characters; canonical pages show only a summary behind the apply wall, so Arango/Mirantis are classified on title and visible summary only.",
+        "Pay was excluded from scoring at Marc's request."
+      ]
+    },
     {
       "heading": "October 5 full-read pass",
       "items": [
@@ -96,7 +88,63 @@
       "gap": "Despite the ‘Deployment Engineer’ title, the actual work is warehouse-automation hardware/software commissioning — pick-to-light systems, overhead illuminators, AutoStore/T-sort integration, on-site installation and IQ/UAT sign-off for a supply-chain systems integrator. Not a software CI/CD or infrastructure deployment role; no cloud, IaC, or platform-engineering component. Reviewed in full, unchanged since the 2026-09-21 run.",
       "url": "https://remoteok.com/remote-jobs/remote-software-deployment-engineer-kpi-solutions-1137408",
       "status": "Skipped"
+    },
+    {
+      "title": "Platform and Integration Engineer, Security Telemetry",
+      "company": "RedMimicry",
+      "location": "Mostly remote within Germany; monthly Berlin visits",
+      "salary": "EUR 53,000–59,000 (32 h/week)",
+      "family": "Platform",
+      "url": "https://remoteOK.com/remote-jobs/remote-platform-and-integration-engineer-security-telemetry-redmimicry-1137465",
+      "score": -1,
+      "status": "Ineligible — Germany residence, part-time fixed-term",
+      "gap": "Practical: Ineligible — Germany residence, part-time fixed-term."
+    },
+    {
+      "title": "Operations Engineer II",
+      "company": "AWeber",
+      "location": "Uluberia, India (remote)",
+      "salary": "Not stated",
+      "family": "SRE",
+      "url": "https://remoteOK.com/remote-jobs/remote-operations-engineer-ii-aweber-1136778",
+      "score": -1,
+      "status": "Ineligible — India-based location; Canada not named",
+      "gap": "Practical: Ineligible — India-based location; Canada not named."
+    },
+    {
+      "title": "Software Engineer (Go, Kubernetes-native AI infrastructure)",
+      "company": "Mirantis",
+      "location": "Remote — \"probably worldwide\" (RemoteOK inference)",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-mirantis-1137387",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — Go product software engineering for a Kubernetes vendor, not platform/SRE operations"
+    },
+    {
+      "title": "Consultant Implementation Engineer",
+      "company": "Harbor (Intapp)",
+      "location": "Remote, US or Canada",
+      "salary": "Not stated",
+      "family": "DevOps",
+      "url": "https://remoteOK.com/remote-jobs/remote-consultant-implementation-engineer-harbor-1136987",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — professional-services software implementation for law/accounting firms, not infrastructure"
+    },
+    {
+      "title": "Golang Kubernetes Engineer",
+      "company": "Arango",
+      "location": "Remote — \"probably worldwide\"; description truncated on RemoteOK",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://remoteOK.com/remote-jobs/remote-golang-kubernetes-engineer-arango-1137400",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — Go software development of Kubernetes components for a database vendor (title and visible summary); full description is truncated behind RemoteOK's apply wall"
     }
   ],
-  "could_not_validate": []
+  "could_not_validate": [],
+  "method": "October 9 run: single RemoteOK API fetch, all plausible target-family postings checked on their canonical pages. "
 }

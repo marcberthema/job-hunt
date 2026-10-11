@@ -1,34 +1,30 @@
 {
   "board": "Procom",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-09",
   "eyebrow": "Procom contractor portal · read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.",
-  "latest_update": "Re-read October 5, 2026 — all 29 unique Procom postings (DevOps 7, Platform 21, SRE 1, Cloud 23, DevSecOps 4) were opened and read in full, including page 2 of the Platform and Cloud results. No new in-family role beyond the BMO Azure security contract already filed and the Ottawa Azure DevOps requisition already Skipped.",
+  "latest_update": "Latest update: October 9, 2026 — all 6 portal queries ran. The strongest posting is the same Ottawa Senior Azure Cloud DevOps Specialist (RQ01840, score 8) that is already marked Skipped in the ledger; nothing new qualified.",
   "stats": [
     {
-      "value": 6,
-      "label": "keywords searched"
+      "value": "6 of 6",
+      "label": "queries attempted / completed"
     },
     {
-      "value": 21,
-      "label": "unique postings reviewed"
+      "value": "9 · 14 · 1 · 16 · 2 · 2",
+      "label": "results: DevOps · Platform · SRE · Cloud · DevSecOps · FDE"
     },
     {
-      "value": 0,
-      "label": "eligible, scored 5+"
-    },
-    {
-      "value": 1,
-      "label": "pipeline match"
+      "value": "~30",
+      "label": "unique postings read from cards; 4 opened in full"
     },
     {
       "value": 5,
-      "label": "out of scope / ineligible, reviewed"
+      "label": "rows added this run"
     },
     {
-      "value": 2,
-      "label": "expired"
+      "value": 0,
+      "label": "auto-filed this run"
     }
   ],
   "rows": [
@@ -139,7 +135,7 @@
       "salary": "CAD $72–$90/hr",
       "gap": "None material on skills (Azure, enterprise CI/CD, Python, Kubernetes/OpenShift); rate straddles the $80/hr floor; hybrid cadence unconfirmed",
       "url": "https://myprocom-portal.procomservices.com/jobs/senior-azure-cloud-devops-specialist-ottawa-8ee7422b",
-      "status": "Skipped — same requisition already Skipped (Morson Talent row, 2026-09-15)"
+      "status": "InProcess"
     },
     {
       "score": 0,
@@ -162,9 +158,71 @@
       "gap": "Toronto is outside the reachable cities and the hourly range is below the $80/hr contract floor",
       "url": "https://myprocom-portal.procomservices.com/jobs?loginType=contractor&lang=en&keyword=Cloud+Engineer",
       "status": "Skipped — Toronto hybrid, rate below floor"
+    },
+    {
+      "title": "Senior Cloud DevOps Engineer (IAM cloud platform)",
+      "company": "Procom (anonymous IAM-software client)",
+      "location": "Ottawa, ON — hybrid 3 days/week in office",
+      "salary": "CAD $54–$72/hr; 13-month contract",
+      "family": "DevOps",
+      "url": "https://myprocom-portal.procomservices.com/jobs/senior-cloud-devops-engineer-ottawa-e2b33d90",
+      "score": 4,
+      "gap": "Technical: Must-haves: 8+ years production cloud ops, strong Kubernetes (EKS/GKE/OpenShift), Terraform, GitLab CI, AWS or GCP; Marc has GitLab-adjacent CI/CD and Terraform use but no production Kubernetes or AWS/GCP depth; Practical: Compromise — Ottawa hybrid 3 days (above the 2-day comfort line), low hourly range; Reliability-level clearance not stated; Resume: Platform."
+    },
+    {
+      "title": "Senior Full stack Developer (Java, Angular, Openshift) — forward-deployed",
+      "company": "Procom (financial services client)",
+      "location": "Mississauga, ON — hybrid 3 days",
+      "salary": "CAD $63–$84/hr",
+      "family": "DevOps",
+      "url": "https://myprocom-portal.procomservices.com/jobs?loginType=contractor&lang=en&keyword=Forward+Deployed+Engineer",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — Java/Python application development"
+    },
+    {
+      "title": "Senior Performance Engineer",
+      "company": "Procom (financial services client)",
+      "location": "Southlake, TX — hybrid 4 days; no sponsorship",
+      "salary": "USD $65/hr",
+      "family": "SRE",
+      "url": "https://myprocom-portal.procomservices.com/jobs?loginType=contractor&lang=en&keyword=Platform+Engineer",
+      "score": -1,
+      "status": "Ineligible — US-only location, no sponsorship, 4 office days",
+      "gap": "Practical: Ineligible — US-only location, no sponsorship, 4 office days."
+    },
+    {
+      "title": "Platform & Integration Software Engineer",
+      "company": "Procom Team",
+      "location": "Toronto, ON — hybrid/remote",
+      "salary": "CAD $110–140k/yr",
+      "family": "Platform",
+      "url": "https://myprocom-portal.procomservices.com/jobs?loginType=contractor&lang=en&keyword=Platform+Engineer",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — integration software development"
+    },
+    {
+      "title": "Senior Data Engineer - Databricks/Snowflake",
+      "company": "Procom",
+      "location": "Toronto, ON — hybrid",
+      "salary": "CAD $68–$90/hr",
+      "family": "Platform",
+      "url": "https://myprocom-portal.procomservices.com/jobs?loginType=contractor&lang=en&keyword=DevOps+Engineer",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — data engineering"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 9 query audit (real browser, no challenge)",
+      "items": [
+        "Procom portal result counts: DevOps Engineer 9 · Platform Engineer 14 · Site Reliability Engineer 1 (Flextrack, already Skipped) · Cloud Engineer 16 · DevSecOps Engineer 2 (BMO Azure — no longer accepting; BMO AWS) · Forward Deployed Engineer 2 (Mississauga full-stack ×2).",
+        "<b>Needs your call:</b> Senior Azure Cloud DevOps Specialist (RQ01840), Ottawa, CAD $72–90/hr, 13-month contract — full read: Azure, enterprise GitLab CI/CD, Python, Kubernetes/OpenShift all match; requirement is Secret/CGP/Trade-Controlled clearance and 3 office days in Ottawa. The ledger has it Skipped because a Morson Talent copy was skipped on 2026-09-15 with score 2 and no notes. I did not change the status.",
+        "The remaining cards (embedded C++/BSP, AI engineer, QA, Houston project engineer, desktop support, Salesforce integration) are out of scope and were not individually rowed."
+      ]
+    },
     {
       "heading": "October 5 full-read pass",
       "items": [
@@ -199,6 +257,6 @@
       ]
     }
   ],
-  "method": "Six-keyword default rotation (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer) run browser-driven against the real contractor portal. 21 unique postings encountered and reviewed across the four keywords that returned results; two returned zero results outright. Zero eligible target-family postings scored 5 or above this run — the one known pipeline match (Flextrack Salesforce DevOps Engineer) remains Skipped per applications.md. Two new out-of-scope/ineligible postings identified (a Toronto-hybrid CyberArk/PKI security-platform role, and a Toronto-hybrid MCAP systems-engineer role outside the reachable-city range), plus confirmation that a previously logged QA Automation Engineer posting has been removed from the portal. No jobs qualified for automatic filing this run.",
+  "method": "October 9 run: six Procom portal queries; the Ottawa Azure DevOps posting was re-read in full. Six-keyword default rotation (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer) run browser-driven against the real contractor portal. 21 unique postings encountered and reviewed across the four keywords that returned results; two returned zero results outright. Zero eligible target-family postings scored 5 or above this run — the one known pipeline match (Flextrack Salesforce DevOps Engineer) remains Skipped per applications.md. Two new out-of-scope/ineligible postings identified (a Toronto-hybrid CyberArk/PKI security-platform role, and a Toronto-hybrid MCAP systems-engineer role outside the reachable-city range), plus confirmation that a previously logged QA Automation Engineer posting has been removed from the portal. No jobs qualified for automatic filing this run.",
   "could_not_validate": []
 }

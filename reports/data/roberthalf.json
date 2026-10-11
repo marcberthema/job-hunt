@@ -1,37 +1,40 @@
 {
   "board": "Robert Half",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-09",
   "eyebrow": "Robert Half Technology · Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Robert Half Technology (Canada) inventory searched across six target-family keywords, scoped to Contract / Temporary to Hire only. Scores measure technical and domain fit only.",
-  "latest_update": "Re-read October 5, 2026 — 17 keyword/skill searches (the six defaults plus infrastructure, systems, cloud architect, Azure, Kubernetes, Terraform, SRE, DevOps, Linux, automation and release) collected 43 unique postings across up to three pages each; the 34 whose text loaded were read in full. Only the Azure Cloud Engineer part-time contract (filed earlier) is in the target families.",
+  "latest_update": "Latest update: October 9, 2026 — all 6 queries ran in the browser (path-based search URL works again without clicking the search box). The only IT infrastructure posting is the Alberta Senior Azure Infrastructure Consultant already Applied; nothing new.",
   "stats": [
     {
-      "value": 6,
-      "label": "searches completed"
+      "value": "6 of 6",
+      "label": "queries attempted / completed"
     },
     {
-      "value": 1,
-      "label": "unique contract postings found"
+      "value": "6 · 6 · 3 · 3 · 6 · 3",
+      "label": "results: DevOps · Platform · SRE · Cloud · DevSecOps · FDE"
+    },
+    {
+      "value": 13,
+      "label": "unique results reviewed"
+    },
+    {
+      "value": 7,
+      "label": "rows added this run"
     },
     {
       "value": 0,
-      "label": "eligible validated"
-    },
-    {
-      "value": 1,
-      "label": "geographic exclusions"
-    },
-    {
-      "value": 0,
-      "label": "inaccessible"
-    },
-    {
-      "value": 1,
-      "label": "pipeline matches"
+      "label": "auto-filed this run"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 9 query audit (real browser)",
+      "items": [
+        "<code>/ca/en/jobs/all/&lt;keyword&gt;</code> loaded keyword-matched results directly; job-type filtering was not needed because every non-IT result was visible and the single contract IT role is the Azure Cloud Engineer (Acheson, AB; remote on MST hours; part-time contract; CAD $59.38–$68.75/hr) already Applied.",
+        "Result sets overlap heavily: 13 unique postings across the six queries."
+      ]
+    },
     {
       "heading": "October 5 full-read pass",
       "items": [
@@ -106,7 +109,85 @@
       "gap": "Business-systems/ERP analysis role under a Systems Engineer title — not infrastructure work",
       "url": "https://www.roberthalf.com/ca/en/job/edmonton-ab/systems-engineer/05110-0013506310-caen",
       "status": "Skipped — out of scope (business systems analyst)"
+    },
+    {
+      "title": "Cyber Security Analyst",
+      "company": "Robert Half client",
+      "location": "Calgary, AB — onsite, permanent",
+      "salary": "Not stated",
+      "family": "SRE",
+      "url": "https://www.roberthalf.com/ca/en/jobs/all/devsecops-engineer",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — security analyst, on-site Calgary"
+    },
+    {
+      "title": "Network Security Consultant",
+      "company": "Robert Half client",
+      "location": "Enoch, AB — onsite, temporary",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://www.roberthalf.com/ca/en/jobs/all/devsecops-engineer",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — network security consulting, on-site"
+    },
+    {
+      "title": "Senior Front End Developer",
+      "company": "Robert Half client",
+      "location": "Toronto, ON — onsite, temporary",
+      "salary": "CAD $78.85–$91.30/hr",
+      "family": "DevOps",
+      "url": "https://www.roberthalf.com/ca/en/job/toronto-on/senior-front-end-developer/05010-0013515075-caen",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — front-end development"
+    },
+    {
+      "title": "Software Developer",
+      "company": "Robert Half client",
+      "location": "Windsor, ON — onsite, permanent",
+      "salary": "CAD $78,000–$80,000/yr",
+      "family": "DevOps",
+      "url": "https://www.roberthalf.com/ca/en/job/windsor-on/software-developer/05090-0013496390-caen",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — software development"
+    },
+    {
+      "title": "Software Developer (Java)",
+      "company": "Robert Half client",
+      "location": "Toronto, ON — onsite, permanent",
+      "salary": "CAD $100,000–$130,000/yr",
+      "family": "DevOps",
+      "url": "https://www.roberthalf.com/ca/en/job/toronto-on/software-developer-java/05090-0013518636-caen",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — Java software development"
+    },
+    {
+      "title": "Quality Assurance Engineer",
+      "company": "Robert Half client",
+      "location": "Calgary, AB — onsite, permanent",
+      "salary": "Not stated",
+      "family": "SRE",
+      "url": "https://www.roberthalf.com/ca/en/jobs/all/site-reliability-engineer",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — QA engineering"
+    },
+    {
+      "title": "Engineering Superintendent / Construction & Project Managers",
+      "company": "Robert Half clients",
+      "location": "Quesnel, Abbotsford, Sherwood Park — onsite",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://www.roberthalf.com/ca/en/jobs/all/platform-engineer",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — construction and civil project management"
     }
   ],
-  "could_not_validate": []
+  "could_not_validate": [],
+  "method": "October 9 run: six Robert Half searches, every card read. "
 }

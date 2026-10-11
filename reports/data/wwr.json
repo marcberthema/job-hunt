@@ -1,38 +1,30 @@
 {
   "board": "We Work Remotely",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-09",
   "eyebrow": "We Work Remotely · region-gated",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Six-keyword rotation against We Work Remotely, region eligibility confirmed from each posting's own detail page (the site's generic 'Anywhere in the World' tag is not trustworthy on its own).",
-  "latest_update": "Re-read October 5, 2026 — nine queries (the six defaults plus Infrastructure Engineer, SRE and DevOps) collected 28 unique postings, and all 28 were opened and read in full. One strong lead — EPAM Lead Cloud Engineer (Azure/AKS internal developer platform) — carries only WWR’s generic ‘Anywhere in the World’ tag and EPAM’s own listings show the equivalent role as Poland-remote, so Canada eligibility is unconfirmed. 0 filed.",
+  "latest_update": "Latest update: October 9, 2026 — all 6 queries ran; two new postings qualify (BlueGeko IT Infrastructure Engineer, EPAM Lead Cloud Engineer) and were auto-filed. The Proxify Azure roles remain CET-only.",
   "stats": [
     {
-      "value": 6,
-      "label": "searches completed"
+      "value": "6 of 6",
+      "label": "queries attempted / completed"
     },
     {
       "value": 16,
-      "label": "results reviewed (title + dedup pass)"
+      "label": "unique results reviewed"
     },
     {
-      "value": 4,
-      "label": "pipeline/known matches (unchanged)"
+      "value": "3 + 0 + 0",
+      "label": "SRE · DevSecOps · FDE queries (zero results)"
     },
     {
-      "value": 0,
-      "label": "new scored (in-scope)"
-    },
-    {
-      "value": 2,
-      "label": "ineligible (known, resurfaced)"
+      "value": 10,
+      "label": "rows added this run"
     },
     {
       "value": 2,
-      "label": "out of scope (known, resurfaced)"
-    },
-    {
-      "value": 0,
-      "label": "could not validate"
+      "label": "auto-filed this run"
     }
   ],
   "rows": [
@@ -167,6 +159,115 @@
       "gap": "Posting restricts to US residents/authorization",
       "url": "https://weworkremotely.com/remote-jobs/search?term=Site+Reliability+Engineer",
       "status": "Skipped — US-only"
+    },
+    {
+      "title": "IT Infrastructure Engineer (Full-Time / Remote)",
+      "company": "BlueGeko",
+      "location": "Anywhere in the World (region field)",
+      "salary": "USD $100,000 or more",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/bluegeko-it-infrastructure-engineer",
+      "score": 5,
+      "gap": "Technical: Windows/Linux servers, VMware/virtualization, networking, backups and cloud admin match the SOVO and Tink infrastructure history; role is systems-administration scope, below Marc's CI/CD/platform seniority and needs only 4+ years; Practical: Compromise/Confirm — full-time remote, worldwide region; confirm Canada contracting/employment basis; USD pay stated; Resume: Platform.",
+      "status": "Skipped"
+    },
+    {
+      "title": "Lead Cloud Engineer (Unified Automation Platform, Azure/AKS)",
+      "company": "EPAM Systems",
+      "location": "Anywhere in the World (region field); time-zone hours not stated",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/epam-systems-lead-cloud-engineer",
+      "score": 5,
+      "gap": "Technical: Azure Terraform/OpenTofu modules, Ansible, Azure DevOps CI/CD and golden-image pipelines fit; operating AKS clusters in production and 1+ year of leadership are the stretches; Practical: Confirm — region Anywhere in the World but EPAM project hours/time zone not stated; engagement type and pay not stated; Resume: Platform.",
+      "status": "InProcess"
+    },
+    {
+      "title": "Cloud Engineer",
+      "company": "BeyondTrust",
+      "location": "HQ Remote Canada; Remote United States; region Anywhere in the World",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/beyondtrust-cloud-engineer",
+      "score": 4,
+      "gap": "Technical: AWS core services, Transit Gateway/PrivateLink networking and Terraform modules are the daily work; Marc's AWS is bounded and dated; Practical: Confirm — remote Canada listed; pay not stated; Resume: Platform."
+    },
+    {
+      "title": "Engineering Manager, Cloud Engineering",
+      "company": "LaunchDarkly",
+      "location": "Anywhere in the World",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/launchdarkly-engineering-manager-cloud-engineering",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — people-management role"
+    },
+    {
+      "title": "Security Software Engineer, IAM",
+      "company": "Vercel",
+      "location": "Anywhere in the World",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — identity/security software engineering"
+    },
+    {
+      "title": "Security Engineer, Cloud",
+      "company": "Vercel",
+      "location": "Anywhere in the World",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/vercel-security-engineer-cloud",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — cloud security engineering"
+    },
+    {
+      "title": "Senior Software Engineer, Application Security",
+      "company": "Discord",
+      "location": "Anywhere in the World",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — application security software engineering"
+    },
+    {
+      "title": "Enterprise Sales Engineer - FED",
+      "company": "Datadog",
+      "location": "United States of America",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/datadog-enterprise-sales-engineer-fed",
+      "score": -1,
+      "status": "Ineligible — US federal sales engineering, US-only",
+      "gap": "Practical: Ineligible — US federal sales engineering, US-only."
+    },
+    {
+      "title": "Engineering Manager, Notifications Platform",
+      "company": "Reddit",
+      "location": "Anywhere in the World",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/reddit-engineering-manager-notifications-platform",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — product engineering management"
+    },
+    {
+      "title": "Analytics Engineering Manager, Data Platform & Governance",
+      "company": "LawnStarter",
+      "location": "Brazil-based",
+      "salary": "Not stated",
+      "family": "Platform",
+      "url": "https://weworkremotely.com/remote-jobs/lawnstarter-analytics-engineering-manager-data-platform-governance-2",
+      "score": -1,
+      "status": "Ineligible — Brazil residence; also data-analytics management",
+      "gap": "Practical: Ineligible — Brazil residence; also data-analytics management."
     }
   ],
   "could_not_validate": [
@@ -176,6 +277,13 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 9 query audit (real browser)",
+      "items": [
+        "DevOps Engineer 10 · Platform Engineer 5 · Site Reliability Engineer 0 · Cloud Engineer 6 · DevSecOps Engineer 0 · Forward Deployed Engineer 0 — result pages rendered normally each time. Region lines were read on each candidate's page rather than from the generic 'Anywhere in the World' tag.",
+        "Proxify AB Senior DevOps/Cloud Engineer (Azure) say 'CET +/- 3 hours only' and thehivecareers.co is geo-locked to Barbados/US — already scored -1 here."
+      ]
+    },
     {
       "heading": "October 5 full-read pass",
       "items": [
@@ -203,5 +311,5 @@
       ]
     }
   ],
-  "method": "Bare-title rotation per the check-wwr skill's six mandatory queries (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer), each searched independently via weworkremotely.com/remote-jobs/search?term=. Eligibility gated on each posting's own detail-page location line, never the decorative \"Anywhere in the World\" tag. This run found no new inventory since 2026-09-21 — the same 7 in-family postings resurfaced under the same URLs, already reflected in applications.md and this report. Repository notes (job_sources.md) continue to show single-broad-term searches (\"DevOps\", \"Cloud\", \"Platform\") surfacing more volume historically than this skill's mandated bare-title rotation; the bare-title rotation was used here per the skill's written mandatory-query list."
+  "method": "October 9 run: six WWR queries in a real browser, candidates opened and region lines read individually. Bare-title rotation per the check-wwr skill's six mandatory queries (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer), each searched independently via weworkremotely.com/remote-jobs/search?term=. Eligibility gated on each posting's own detail-page location line, never the decorative \"Anywhere in the World\" tag. This run found no new inventory since 2026-09-21 — the same 7 in-family postings resurfaced under the same URLs, already reflected in applications.md and this report. Repository notes (job_sources.md) continue to show single-broad-term searches (\"DevOps\", \"Cloud\", \"Platform\") surfacing more volume historically than this skill's mandated bare-title rotation; the bare-title rotation was used here per the skill's written mandatory-query list."
 }

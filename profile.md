@@ -20,6 +20,19 @@
 
 ## Engagement Preferences
 
+**Priority updated 2026-10-09:** Marc strongly prefers consulting over permanent employment. Prioritize remote full-time consulting contracts and part-time/project consulting opportunities; keep FTE as a fallback for income stability, not an equally preferred engagement. Temporary remote IT bridge gigs use the separate CAD $35/hour after-platform-fees floor below; do not apply that floor to normal full-time consulting. This supersedes older wording that gives the engagement tracks equal priority or requires landing an FTE before pursuing any freelance work.
+
+### Temporary remote IT bridge work — active (2026-10-09)
+
+Marc is actively open to temporary remote IT freelance/part-time work, including Upwork-style marketplaces, while pursuing permanent employment or a full-time contract. This is immediate bridge income, not the longer-term fractional/retainer business-building track.
+
+- **Acceptance floor: CAD $35/hour after platform fees, before tax.** This is a minimum acceptable rate, not necessarily the advertised rate. Preserve the posting's currency and verify conversion when evaluating non-CAD rates; do not assume USD and CAD are interchangeable.
+- Prefer work grounded in existing experience: pipeline fixes, deployment automation, Linux troubleshooting, Python/Bash scripting, API integrations, monitoring, and artifact-repository support. Work must be remote and eligible from Ontario, with scope/scheduling compatible with interviews and the continuing full-time search.
+- This explicit exception supersedes the older $90/hour minimum and paused-part-time-search instructions **only for temporary remote IT bridge gigs**. Full-time employment/contract floors and long-term consulting targets remain unchanged. Do not reject an otherwise suitable bridge gig merely for junior scope or lack of a cloud component.
+- Label these opportunities `Track: Temporary IT bridge` and identify the practical compromise separately from technical fit. Do not present them as meeting the ideal full-time target or as sufficient to cover all household bills.
+- Assess hourly net as the quoted rate less the actual applicable platform fees. For fixed-price work, estimate net proceeds divided by realistic total delivery hours, including required meetings and revisions; flag unknown scope or fees rather than declaring the floor met. Report proposal costs, payout timing, and other known charges separately. Verify current platform fees before using them; do not hard-code a marketplace-wide fee assumption.
+- Regular board searches retain their normal scope. When bridge/freelance/part-time sourcing is requested, apply this exception without asking again whether that track is allowed. This does not authorize submitting proposals, spending platform credits, or accepting contracts automatically.
+
 | Field | Details |
 |-------|---------|
 | **Primary positioning** | Senior/Staff SRE · Platform Engineering · DevOps · Reliability Consultant (broadened 2026-09-11 — see Notes for Claude) |

@@ -1,42 +1,30 @@
 {
   "board": "Job Bank",
-  "run_date": "2026-10-05",
+  "run_date": "2026-10-09",
   "eyebrow": "Job Bank Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default rotation validated against full Job Bank detail pages. Scores measure technical and domain fit only; excluded-but-reviewed postings are scored 0 (out of scope) or -1 (ineligible) rows rather than a separate list.",
-  "latest_update": "Re-read October 5, 2026 — the three default queries plus five extended occupation-code queries (Platform, DevSecOps, Infrastructure, Cloud DevOps, Systems Engineer Cloud) were run and every in-family result opened in full. Two strong-looking roles were excluded on arrangement: Vancouver on-site (Remarcable Senior DevOps) and a Montréal Azure Cloud Engineer needing 3 office days. 0 filed.",
+  "latest_update": "Latest update: October 9, 2026 — all 3 queries ran over HTTP: DevOps Engineer 4 results, Cloud Engineer 5, Site Reliability Engineer 0. Nothing qualifies; every Toronto contract is on-site or hybrid 3+ days and two 'DevOps' hits are mechanical and RF engineering.",
   "stats": [
     {
-      "value": 3,
-      "label": "queries"
+      "value": "3 of 3",
+      "label": "queries attempted / completed"
     },
     {
-      "value": 7,
-      "label": "results reviewed"
-    },
-    {
-      "value": 7,
-      "label": "plausible matches"
+      "value": 9,
+      "label": "unique results reviewed"
     },
     {
       "value": 0,
-      "label": "eligible"
+      "label": "eligible roles"
     },
     {
-      "value": 6,
-      "label": "geographic exclusions"
-    },
-    {
-      "value": 1,
-      "label": "unrelated-role exclusions"
+      "value": 4,
+      "label": "rows added this run"
     },
     {
       "value": 0,
-      "label": "inaccessible"
-    },
-    {
-      "value": 0,
-      "label": "pipeline matches"
+      "label": "auto-filed this run"
     }
   ],
   "rows": [
@@ -171,10 +159,60 @@
       "gap": "Strong fit on skills (Azure APIM, Entra ID, Key Vault, Terraform, CI/CD, containers) but 3 office days a week needs a rate well above target and this sits at the Montréal floor",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50389261",
       "status": "Skipped — Montréal hybrid 3 days"
+    },
+    {
+      "title": "AWS Cloud Engineer (listed as DevOps Engineer)",
+      "company": "AptPay Inc",
+      "location": "Toronto, ON — work arrangement not stated",
+      "salary": "CAD $110,000–$120,000/yr",
+      "family": "Platform",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50440559",
+      "score": 3,
+      "gap": "Technical: Multi-AZ AWS (WAF, ASG, KMS, Aurora, EKS, CloudFormation) with 5+ years AWS is the day job; Marc's AWS is bounded and dated; Practical: Confirm — Toronto, remote/on-site not stated, so eligibility unresolved; Resume: Platform."
+    },
+    {
+      "title": "GCP Infrastructure & Cloud SRE Engineer",
+      "company": "Astra North Infoteck Inc.",
+      "location": "Toronto, ON — hybrid 3 days on-site",
+      "salary": "CAD $10,000 monthly",
+      "family": "SRE",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50458279",
+      "score": -1,
+      "status": "Ineligible — Toronto hybrid 3 days, outside reachable cities; GCP/GKE primary",
+      "gap": "GCP is zero-experience (hard gate); Practical: Ineligible — Toronto hybrid 3 days, outside reachable cities; GCP/GKE primary."
+    },
+    {
+      "title": "Cybersecurity Engineer (listed as DevOps Engineer)",
+      "company": "Venuiti",
+      "location": "Waterloo, ON — 100% in person",
+      "salary": "CAD $100,000–$125,000/yr",
+      "family": "DevOps",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50438260",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — software/cybersecurity engineering, 100% in-person Waterloo, citizenship for clearance"
+    },
+    {
+      "title": "RF Engineer (listed as DevOps Engineer)",
+      "company": "Swiftlink Technologies",
+      "location": "Richmond, BC",
+      "salary": "CAD $90,000–$110,000/yr",
+      "family": "DevOps",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50447969",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — RF/analog chip design"
     }
   ],
   "could_not_validate": [],
   "notes_sections": [
+    {
+      "heading": "October 9 query audit (HTTP 200 each)",
+      "items": [
+        "DevOps Engineer (4 results: AptPay 50440559, Farley Group 50410160, Swiftlink 50447969, Venuiti 50438260) · Cloud Engineer (5: Astra North 50458279, Source Code 50419706 / 50298477 / 50290511, 49 Solutions 50371867) · Site Reliability Engineer (0 results). All nine detail pages opened; five were already rows in this report.",
+        "Overlap with Indeed/Talent.com is expected; nothing here is new to the ledger."
+      ]
+    },
     {
       "heading": "October 5 full-read pass",
       "items": [
@@ -200,5 +238,5 @@
       ]
     }
   ],
-  "method": "Direct HTTP retrieval against jobbank.gc.ca's search and detail pages for the 3-query default rotation (locationstring=Remote, discovery-only, not proof of eligibility). 7 plausible postings opened and read in full via their Job Bank detail pages; 6 excluded on the geography gate (reachable-city range: Ottawa, Kingston, Brockville, Cornwall, Montréal) and scored -1/Ineligible, 1 excluded on domain mismatch and scored 0/Out of scope — all as rows per reports/report_schema.md, rather than a separate footer list. 0 eligible, 0 pipeline matches, 0 inaccessible, 0 auto-filed."
+  "method": "October 9 run: three Job Bank queries over direct HTTP, every result's detail page read. Direct HTTP retrieval against jobbank.gc.ca's search and detail pages for the 3-query default rotation (locationstring=Remote, discovery-only, not proof of eligibility). 7 plausible postings opened and read in full via their Job Bank detail pages; 6 excluded on the geography gate (reachable-city range: Ottawa, Kingston, Brockville, Cornwall, Montréal) and scored -1/Ineligible, 1 excluded on domain mismatch and scored 0/Out of scope — all as rows per reports/report_schema.md, rather than a separate footer list. 0 eligible, 0 pipeline matches, 0 inaccessible, 0 auto-filed."
 }
