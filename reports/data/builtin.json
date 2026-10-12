@@ -1,29 +1,84 @@
 {
   "board": "BuiltIn",
-  "run_date": "2026-10-09",
+  "run_date": "2026-10-12",
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 9, 2026 — 9 remote role queries + 36 hybrid city passes rerun (153 remote postings fetched in full; 118 rows added, most already in the ledger); 1 new qualifying posting auto-filed (Mogo). Pay was excluded from scoring at Marc's request.",
+  "latest_update": "October 12, 2026 — past-48-hour run: all 9 remote role queries, 36 hybrid city passes and 3 hub passes completed over direct HTTP; only 6 postings in the remote inventory are newer than the October 9 run (highest prior ID 11593824) — none qualified (Resend 3, JET 3, Tailscale already Applied, Circle and Supabase out of scope). 0 auto-filed.",
   "stats": [
     {
-      "value": "45 of 45",
-      "label": "role/city passes completed (hub passes not repeated)"
+      "value": "48 of 48",
+      "label": "passes completed (9 remote + 36 hybrid city + 3 hub)"
     },
     {
-      "value": "153+6",
-      "label": "unique postings fetched in full"
+      "value": 6,
+      "label": "postings newer than the October 9 run (ID above 11593824)"
     },
     {
-      "value": 118,
-      "label": "rows added this run"
+      "value": 5,
+      "label": "new rows read in full"
     },
     {
-      "value": 1,
-      "label": "auto-filed this run (Mogo)"
+      "value": 0,
+      "label": "auto-filed this run"
     }
   ],
   "rows": [
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Platform Engineer",
+      "company": "Resend",
+      "location": "Remote — fully remote, Americas working hours (Canada eligibility implied, not stated)",
+      "salary": "USD $150,000–$180,000",
+      "gap": "Technical: 8+ years, AWS CDK/Terraform authorship, distributed systems, Datadog/Grafana and Node/TypeScript/Go preferred — AWS is the operating environment and Marc's AWS is the dated by-hand Tink build. Practical: Confirm — USD pay, Canadian hiring/contracting model unstated. Same posting as the Jobgether copy found on LinkedIn (4477271949). Resume: Platform.",
+      "url": "https://builtin.com/job/platform-engineer/11603618",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "Senior Cloud Infrastructure Engineer",
+      "company": "Just Eat Takeaway.com (JET)",
+      "location": "Remote — Canada",
+      "salary": "$102,600–$135,000 (currency not labelled)",
+      "gap": "Technical: production AWS ECS/EKS/IAM/Security Hub, Kubernetes operations with Kyverno, Keycloak, Go/Python and CVE image pipelines — AWS and Kubernetes ownership gaps. Practical: Compromise — pay below ideal. Same requisition as the Jobgether copy on LinkedIn (4477290791). Resume: Platform.",
+      "url": "https://builtin.com/job/senior-cloud-infrastructure-engineer/11602959",
+      "status": ""
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Infrastructure Engineer",
+      "company": "Tailscale",
+      "location": "Remote — Canada",
+      "salary": "CAD $218,420–$273,360 (per posting)",
+      "gap": "Technical: software-engineer-scope infrastructure with observability, CD, IaC, production Kubernetes/AWS and Go; gaps Go and managed-AWS operating depth. Practical: Target on pay; growth unconfirmed. Pipeline status mirrors the existing manual Applied row (2026-07-07). Resume: Platform.",
+      "url": "https://builtin.com/job/infrastructure-engineer/11607966",
+      "status": "Applied — existing pipeline row (Tailscale Infrastructure Engineer, 2026-07-07)"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Lead Engineer, AI Platform",
+      "company": "Circle",
+      "location": "Remote — fully remote",
+      "salary": "Not stated",
+      "gap": "Out of scope: LLM-agent, evaluation-pipeline and Rails/Python product engineering at 7+ years.",
+      "url": "https://builtin.com/job/lead-engineer-ai-platform/11601300",
+      "status": "Skipped — Out of scope: AI agent product engineering"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Platform Engineer, Managed Postgres",
+      "company": "Supabase",
+      "location": "Remote — hires globally (In-Office or Remote label)",
+      "salary": "Not stated",
+      "gap": "Out of scope: TypeScript/Go distributed-systems service development for a database platform.",
+      "url": "https://builtin.com/job/platform-engineer-managed-postgres/11600814",
+      "status": "Skipped — Out of scope: TypeScript/Go platform software"
+    },
     {
       "score": 5,
       "family": "Platform",
@@ -1992,6 +2047,104 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 12 run — past 48 hours (complete)",
+      "items": [
+        "Built In has no posted-date filter. Freshness came from posting IDs (IDs rise with time): any ID above 11593824, the newest ID in the October 9 report, counts as new, cross-checked against the page's 'N Days Ago' label. Six remote-inventory postings qualified; all six were opened in full (Software Engineer II, Fullstack (Ads Platform) 11602068 was set aside by title as application development).",
+        "<b>Hybrid route finding:</b> with a search term the hybrid route works for Ottawa only when <code>state=Ontario</code> is spelled out ('ON' returns the generic page), and returned 0–3 non-DevOps cards. For Montréal, <code>state=Quebec</code> plus any search term returns 0 cards; the unfiltered Montréal hybrid inventory is only 12 postings (none DevOps/SRE/Platform, none newer than 11598294, an HR role). The Ottawa unfiltered hybrid inventory shows no new infrastructure roles either. Kingston and Cornwall return no cards.",
+        "<b>Hub passes:</b> the Toronto, Vancouver and Calgary hub routes return the national remote set plus the same eight older postings (IDs 4.7M–10.7M, all pre-window); the other seven hubs were not rerun because the route does not change inventory.",
+        "No auto-filing: Resend (3) and JET (3) fall below 5 on AWS and Kubernetes ownership, Tailscale is already Applied, Circle and Supabase are out of scope."
+      ]
+    },
+    {
+      "heading": "October 12 pass audit",
+      "items": [
+        "<b>remote — Site Reliability Engineer</b> · <code>https://builtin.com/jobs/remote/dev-ops?search=Site+Reliability+Engineer</code> · rendered 25 · reviewed 25 · Complete · IDs: 11333544,11593493,11478421,11433395,11422899,11326830,11586109,11562444,10213232,9785615,10145126,10971481,10964995,11316943,11299911,11290634,11250234,9656968,11211507,9080747,9008570,10798621,1262474,10735321,9005403",
+        "<b>remote — Reliability Engineer</b> · <code>https://builtin.com/jobs/remote/dev-ops?search=Reliability+Engineer</code> · rendered 25 · reviewed 25 · Complete · IDs: 9828122,11333544,11336272,11593493,11586109,11562444,11478421,11433395,11422899,11326830,11316943,11299911,11290634,11250234,10011879,11211507,9008570,10028204,9589624,10795336,9024257,10299737,10213232,9785615,10649510",
+        "<b>remote — Platform Engineer</b> · <code>https://builtin.com/jobs/remote/dev-ops?search=Platform+Engineer</code> · rendered 25 · reviewed 25 · Complete · IDs: 11602068,11601300,11585328,11603618,11600814,11579842,11530089,11528355,11452423,11450829,11364337,11333544,11333419,11404533,11174594,11172883,11167353,10555162,11232195,10951748,11136513,11589073,11122706,11121160,11582957",
+        "<b>remote — Infrastructure Engineer</b> · <code>https://builtin.com/jobs/remote/dev-ops?search=Infrastructure+Engineer</code> · rendered 25 · reviewed 25 · Complete · IDs: 11452431,11450831,11607966,11602959,11584738,10602257,11493659,11295309,11534829,11499872,11447243,11404533,10972335,10992490,10972880,10808929,11337443,10886400,10884006,11262477,11233917,9345808,4460810,8854642,8321875",
+        "<b>remote — Cloud Engineer</b> · <code>https://builtin.com/jobs/remote/dev-ops?search=Cloud+Engineer</code> · rendered 25 · reviewed 25 · Complete · IDs: 11538162,11380165,11342457,10951748,11602959,11593824,11589073,11544321,11527609,10477506,11394560,11024737,10915515,11262477,10295081,10291774,11187701,11168711,10033061,10989700,10908240,1262460,10689558,10656604,10644281",
+        "<b>remote — DevOps Engineer</b> · <code>https://builtin.com/jobs/remote/dev-ops?search=DevOps+Engineer</code> · rendered 25 · reviewed 25 · Complete · IDs: 11593493,11544321,11466766,11377928,11447621,11379471,11252102,11343374,11593824,11187585,11520869,11520300,10487805,11490066,11379158,10305886,11195141,11186361,8791015,10778433,11125369,10670017,11026798,10989047,10601570",
+        "<b>remote — DevSecOps Engineer</b> · <code>https://builtin.com/jobs/remote/dev-ops?search=DevSecOps+Engineer</code> · rendered 3 · reviewed 3 · Complete · IDs: 11414829,10305886,9462402",
+        "<b>remote — Azure DevOps Engineer</b> · <code>https://builtin.com/jobs/remote/dev-ops?search=Azure+DevOps+Engineer</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>remote — Forward Deployed Engineer</b> · <code>https://builtin.com/jobs/remote/dev-ops?search=Forward+Deployed+Engineer</code> · rendered 25 · reviewed 25 · Complete · IDs: 11546180,11345563,11489082,11481528,11360445,11415314,11357388,11354967,11312105,11233930,11215712,7209985,11129954,11123442,11090556,11027016,10987970,9193342,9713083,9593154,10869749,10865436,10864414,10863856,9342547",
+        "<b>hybrid Ottawa — Site Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Site+Reliability+Engineer&amp;city=Ottawa&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Reliability+Engineer&amp;city=Ottawa&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Platform Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Platform+Engineer&amp;city=Ottawa&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Infrastructure Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Infrastructure+Engineer&amp;city=Ottawa&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Cloud Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Cloud+Engineer&amp;city=Ottawa&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevOps+Engineer&amp;city=Ottawa&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — DevSecOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevSecOps+Engineer&amp;city=Ottawa&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Azure DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Azure+DevOps+Engineer&amp;city=Ottawa&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Forward Deployed Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Forward+Deployed+Engineer&amp;city=Ottawa&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Site Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Site+Reliability+Engineer&amp;city=Kingston&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Reliability+Engineer&amp;city=Kingston&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Platform Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Platform+Engineer&amp;city=Kingston&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Infrastructure Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Infrastructure+Engineer&amp;city=Kingston&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Cloud Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Cloud+Engineer&amp;city=Kingston&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevOps+Engineer&amp;city=Kingston&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — DevSecOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevSecOps+Engineer&amp;city=Kingston&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Azure DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Azure+DevOps+Engineer&amp;city=Kingston&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Forward Deployed Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Forward+Deployed+Engineer&amp;city=Kingston&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Site Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Site+Reliability+Engineer&amp;city=Cornwall&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Reliability+Engineer&amp;city=Cornwall&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Platform Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Platform+Engineer&amp;city=Cornwall&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Infrastructure Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Infrastructure+Engineer&amp;city=Cornwall&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Cloud Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Cloud+Engineer&amp;city=Cornwall&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevOps+Engineer&amp;city=Cornwall&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — DevSecOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevSecOps+Engineer&amp;city=Cornwall&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Azure DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Azure+DevOps+Engineer&amp;city=Cornwall&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Forward Deployed Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Forward+Deployed+Engineer&amp;city=Cornwall&amp;state=ON&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Site Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Site+Reliability+Engineer&amp;city=Montr%C3%A9al&amp;state=QC&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Reliability+Engineer&amp;city=Montr%C3%A9al&amp;state=QC&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Platform Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Platform+Engineer&amp;city=Montr%C3%A9al&amp;state=QC&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Infrastructure Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Infrastructure+Engineer&amp;city=Montr%C3%A9al&amp;state=QC&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Cloud Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Cloud+Engineer&amp;city=Montr%C3%A9al&amp;state=QC&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevOps+Engineer&amp;city=Montr%C3%A9al&amp;state=QC&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — DevSecOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevSecOps+Engineer&amp;city=Montr%C3%A9al&amp;state=QC&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Azure DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Azure+DevOps+Engineer&amp;city=Montr%C3%A9al&amp;state=QC&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Forward Deployed Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Forward+Deployed+Engineer&amp;city=Montr%C3%A9al&amp;state=QC&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hub Toronto — DevOps Engineer</b> · <code>https://builtin.com/jobs/remote?search=DevOps+Engineer&amp;city=Toronto&amp;state=ON&amp;country=CAN</code> · rendered 25 · reviewed 25 · Complete · IDs: 11593493,11466766,11377928,11447621,11379471,11252102,11593824,11187585,11520869,11520300,10487805,11490066,11379158,8791015,11125369,10989047,10601570,9691584,10381653,4723743,10716371,9962863,9876625,10252465,10145449",
+        "<b>hub Vancouver — DevOps Engineer</b> · <code>https://builtin.com/jobs/remote?search=DevOps+Engineer&amp;city=Vancouver&amp;state=BC&amp;country=CAN</code> · rendered 25 · reviewed 25 · Complete · IDs: 11593493,11466766,11377928,11447621,11379471,11252102,11593824,11187585,11520869,11520300,10487805,11490066,11379158,8791015,11125369,10989047,10601570,9691584,10381653,4723743,10716371,9962863,9876625,10252465,10145449",
+        "<b>hub Calgary — DevOps Engineer</b> · <code>https://builtin.com/jobs/remote?search=DevOps+Engineer&amp;city=Calgary&amp;state=AB&amp;country=CAN</code> · rendered 25 · reviewed 25 · Complete · IDs: 11593493,11466766,11377928,11447621,11379471,11252102,11593824,11187585,11520869,11520300,10487805,11490066,11379158,8791015,11125369,10989047,10601570,9691584,10381653,4723743,10716371,9962863,9876625,10252465,10145449",
+        "<b>hybrid Ottawa — Site Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Site+Reliability+Engineer&amp;city=Ottawa&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Reliability+Engineer&amp;city=Ottawa&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Platform Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Platform+Engineer&amp;city=Ottawa&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Infrastructure Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Infrastructure+Engineer&amp;city=Ottawa&amp;state=Ontario&amp;country=CAN</code> · rendered 1 · reviewed 1 · Complete · IDs: 9193342",
+        "<b>hybrid Ottawa — Cloud Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Cloud+Engineer&amp;city=Ottawa&amp;state=Ontario&amp;country=CAN</code> · rendered 2 · reviewed 2 · Complete · IDs: 10200099,10257283",
+        "<b>hybrid Ottawa — DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevOps+Engineer&amp;city=Ottawa&amp;state=Ontario&amp;country=CAN</code> · rendered 2 · reviewed 2 · Complete · IDs: 11341326,11340439",
+        "<b>hybrid Ottawa — DevSecOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevSecOps+Engineer&amp;city=Ottawa&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Azure DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Azure+DevOps+Engineer&amp;city=Ottawa&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Ottawa — Forward Deployed Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Forward+Deployed+Engineer&amp;city=Ottawa&amp;state=Ontario&amp;country=CAN</code> · rendered 3 · reviewed 3 · Complete · IDs: 11018983,9193342,8727711",
+        "<b>hybrid Kingston — Site Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Site+Reliability+Engineer&amp;city=Kingston&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Reliability+Engineer&amp;city=Kingston&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Platform Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Platform+Engineer&amp;city=Kingston&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Infrastructure Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Infrastructure+Engineer&amp;city=Kingston&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Cloud Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Cloud+Engineer&amp;city=Kingston&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevOps+Engineer&amp;city=Kingston&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — DevSecOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevSecOps+Engineer&amp;city=Kingston&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Azure DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Azure+DevOps+Engineer&amp;city=Kingston&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Kingston — Forward Deployed Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Forward+Deployed+Engineer&amp;city=Kingston&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Site Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Site+Reliability+Engineer&amp;city=Cornwall&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Reliability+Engineer&amp;city=Cornwall&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Platform Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Platform+Engineer&amp;city=Cornwall&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Infrastructure Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Infrastructure+Engineer&amp;city=Cornwall&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Cloud Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Cloud+Engineer&amp;city=Cornwall&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevOps+Engineer&amp;city=Cornwall&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — DevSecOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevSecOps+Engineer&amp;city=Cornwall&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Azure DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Azure+DevOps+Engineer&amp;city=Cornwall&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Cornwall — Forward Deployed Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Forward+Deployed+Engineer&amp;city=Cornwall&amp;state=Ontario&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Site Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Site+Reliability+Engineer&amp;city=Montr%C3%A9al&amp;state=Quebec&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Reliability Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Reliability+Engineer&amp;city=Montr%C3%A9al&amp;state=Quebec&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Platform Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Platform+Engineer&amp;city=Montr%C3%A9al&amp;state=Quebec&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Infrastructure Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Infrastructure+Engineer&amp;city=Montr%C3%A9al&amp;state=Quebec&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Cloud Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Cloud+Engineer&amp;city=Montr%C3%A9al&amp;state=Quebec&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevOps+Engineer&amp;city=Montr%C3%A9al&amp;state=Quebec&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — DevSecOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=DevSecOps+Engineer&amp;city=Montr%C3%A9al&amp;state=Quebec&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Azure DevOps Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Azure+DevOps+Engineer&amp;city=Montr%C3%A9al&amp;state=Quebec&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none",
+        "<b>hybrid Montréal — Forward Deployed Engineer</b> · <code>https://builtin.com/jobs/hybrid?search=Forward+Deployed+Engineer&amp;city=Montr%C3%A9al&amp;state=Quebec&amp;country=CAN</code> · rendered 0 · reviewed 0 · Zero results · IDs: none"
+      ]
+    },
+    {
       "heading": "October 9 pass audit (direct HTTP, 2–3 s spacing, HTTP 200 throughout; pay excluded from scores)",
       "items": [
         "<b>Fully Remote role queries</b> (<code>/jobs/remote/dev-ops?search=</code>): Site Reliability Engineer 25 · Reliability Engineer 25 · Platform Engineer 25 · Infrastructure Engineer 25 · Cloud Engineer 25 · DevOps Engineer 25 · DevSecOps Engineer 3 · Azure DevOps Engineer 0 (zero results) · Forward Deployed Engineer 25 → 153 unique posting URLs, all fetched and read from the static HTML.",
@@ -2073,5 +2226,5 @@
       ]
     }
   ],
-  "method": "October 9 rerun: direct-HTTP role queries and hybrid city passes, every in-family result read in full from the posting text; scores follow the shared candidate-matching policy (technical fit only, practical assessment separate in the Biggest-gap column). October 7, 2026: 62 of 62 Built In passes completed over direct HTTP (3-second spacing, no block); 174 unique postings, 113 untracked ones read in full; 0 filed. Rendered-browser run on September 24, 2026. All nine mandatory Fully Remote role-query passes and all eleven remote-hub discovery passes were completed, with complete first pages reviewed before deduplication. Five fresh plausible postings were opened in full: Vena and MLabs were eligible and auto-filed; Samsara was US-only; GitLab and Proofpoint lacked explicit Canadian location eligibility. Built In's location control repeatedly resolved typed Eastern Ontario cities to Toronto, and the browser session timed out while applying Hybrid state across the direct city routes. The four reachable-city hybrid passes therefore remain incomplete; this report does not claim a complete overall rotation."
+  "method": "Oct 12 (complete): past-48-hour run by direct HTTP, 2.5-second spacing, HTTP 200 throughout. October 9 rerun: direct-HTTP role queries and hybrid city passes, every in-family result read in full from the posting text; scores follow the shared candidate-matching policy (technical fit only, practical assessment separate in the Biggest-gap column). October 7, 2026: 62 of 62 Built In passes completed over direct HTTP (3-second spacing, no block); 174 unique postings, 113 untracked ones read in full; 0 filed. Rendered-browser run on September 24, 2026. All nine mandatory Fully Remote role-query passes and all eleven remote-hub discovery passes were completed, with complete first pages reviewed before deduplication. Five fresh plausible postings were opened in full: Vena and MLabs were eligible and auto-filed; Samsara was US-only; GitLab and Proofpoint lacked explicit Canadian location eligibility. Built In's location control repeatedly resolved typed Eastern Ontario cities to Toronto, and the browser session timed out while applying Hybrid state across the direct city routes. The four reachable-city hybrid passes therefore remain incomplete; this report does not claim a complete overall rotation."
 }

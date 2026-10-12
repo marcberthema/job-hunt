@@ -1,30 +1,22 @@
 {
   "board": "Eluta",
-  "run_date": "2026-10-09",
+  "run_date": "2026-10-12",
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 9, 2026 — all 30 passes (10 remote role queries + 20 city passes) completed; Eluta showed one User Verification page mid-run that cleared itself without any interaction. Previously unreadable Workday/ATS shells were recovered through Eluta's cache_open record: Wind River Senior DevOps (Kanata hybrid) now scores 6 and was auto-filed.",
+  "latest_update": "October 12, 2026 — INCOMPLETE: all 10 remote role queries and 3 of 20 city passes collected; Eluta then redirected to its 'User Verification' (reCAPTCHA) page, which I did not bypass, so the other 17 city passes and every cache read were blocked. Five new in-family remote results are listed under Could not validate; 0 filed.",
   "stats": [
     {
-      "value": "30 of 30",
-      "label": "passes attempted / completed"
+      "value": "13 of 30",
+      "label": "passes completed (10 remote + 3 Ottawa city passes)"
     },
     {
-      "value": 175,
-      "label": "unique cache IDs collected"
+      "value": 17,
+      "label": "city passes incomplete (User Verification)"
     },
     {
-      "value": "~60",
-      "label": "plausible in-family postings opened (cache or cache_open)"
-    },
-    {
-      "value": 9,
-      "label": "rows added this run"
-    },
-    {
-      "value": 1,
-      "label": "auto-filed this run (Wind River)"
+      "value": 0,
+      "label": "auto-filed this run"
     }
   ],
   "rows": [
@@ -585,6 +577,26 @@
   ],
   "could_not_validate": [
     {
+      "text": "Intermediate DevOps Engineer ($110,000, job-boards.greenhouse.io) — cache blocked by Eluta User Verification; employer URL not recoverable from the result card.",
+      "url": "https://www.eluta.ca/cache?u=25401987:job-boards.greenhouse.io"
+    },
+    {
+      "text": "AI-First DevOps Engineer ($155,000, talentmanagementsolution.wd3.myworkdayjobs.com) — cache blocked by Eluta User Verification; Workday shell not recoverable.",
+      "url": "https://www.eluta.ca/cache?u=25003641:talentmanagementsolution.wd3.myworkdayjobs.com"
+    },
+    {
+      "text": "Site Reliability Engineer ($125,000, jobs.lever.co) — cache blocked by Eluta User Verification; employer posting not identified.",
+      "url": "https://www.eluta.ca/cache?u=25014231:jobs.lever.co"
+    },
+    {
+      "text": "Spécialiste DevOps / DevOps Specialist (Portage CyberTech, Gatineau QC, posted today) — cache blocked by Eluta User Verification; Gatineau is outside the reachable cities unless remote.",
+      "url": "https://www.eluta.ca/cache?u=25131230:portagecybertech.bamboohr.com"
+    },
+    {
+      "text": "Cloud Platform Engineer (Accenture, posted today, $25.41 and $74,000 variants) — cache blocked; appears to be an entry-level scope.",
+      "url": "https://www.eluta.ca/cache?u=25107000:www.accenture.com"
+    },
+    {
       "text": "Senior Software Engineer (Platform - DevOps) — CTO.ai (Vancouver BC - Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
       "url": "https://www.eluta.ca/cache?u=19675816:careers.risepeople.com"
     },
@@ -658,6 +670,49 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 12 pass audit (past 48 hours) — INCOMPLETE",
+      "items": [
+        "Eluta shows a posted age on each result; ages up to two days (today, 1–2 days, hours) were treated as in-window. Results with no age shown were checked against the ledger.",
+        "The first 13 searches completed; from Ottawa Infrastructure Engineer onward every request (including cache pages) was redirected to <code>/sandbox</code>, the reCAPTCHA human-verification page. I did not click through. To finish, open Eluta in your own browser, clear the check, and ask me to rerun the city passes with longer spacing.",
+        "Most in-window remote results were already in the ledger (Web.com, Vena, Kinaxis, Coalition, ClubRunner, Huron, CaseWare, Barracuda, commonsku, Bounteous) and were not rescored."
+      ]
+    },
+    {
+      "heading": "October 12 pass list",
+      "items": [
+        "<b>remote — DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25269978,19675816,25432235,25419015,25415266,25411503,25401987,25398046,25003641,25360818",
+        "<b>remote — Senior DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24911233,25475117,25472986,25302403,25269978,25468742,25461583,24572360,25246784,19675816",
+        "<b>remote — Staff DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25480426,25272472,25140775,25460339,25233166,25398046,25190160,25339662,25314173,25416179",
+        "<b>remote — Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25275110,25475117,25246784,25443500,25036861,25338843,25195032,25014231,25190160,25367768",
+        "<b>remote — Senior Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24911233,25475117,24895127,25249854,25246784,25443500,25054806,25190160,25367768,24987206",
+        "<b>remote — Staff Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25480426,25140775,25054806,25051977,25190160,24933437,25149957,25126699,25313663,25347610",
+        "<b>remote — Cloud Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25281029,25302403,25461319,25460339,24572360,25457528,25441873,25054806,25214890,25153505",
+        "<b>remote — DevSecOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24489060,24255525,25413666,25306496,25382128,24521470,25472267,25463370,25449145,25249029",
+        "<b>remote — Infrastructure Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24265467,24056245,25112143,24600871,25407113,25214890,25205566,24592341,25319240,25125923",
+        "<b>remote — Senior Infrastructure Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24911233,25276585,25279450,25284621,25104227,25104519,25475680,25475117,25472986,25471122",
+        "<b>Ottawa, ON — DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25446301,25446689,24998229,25131230,25455123,25451622,25321858,24608961,25285466,25410704",
+        "<b>Ottawa, ON — Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25476229,25429702,25427875,25387579,25199330,25321858,25305018,24433655,25396867,25131230",
+        "<b>Ottawa, ON — Cloud Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25476229,25090793,25427875,25404206,25387579,24998226,24998244,25107004,25184831,25107000",
+        "<b>Ottawa, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Kingston, ON — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Kingston, ON — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Kingston, ON — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Kingston, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Brockville, ON — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Brockville, ON — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Brockville, ON — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Brockville, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Cornwall, ON — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Cornwall, ON — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Cornwall, ON — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Cornwall, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Montreal, QC — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Montreal, QC — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Montreal, QC — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+        "<b>Montreal, QC — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none"
+      ]
+    },
     {
       "heading": "October 9 pass audit",
       "items": [
@@ -766,5 +821,5 @@
       ]
     }
   ],
-  "method": "October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
+  "method": "Oct 12 (INCOMPLETE, 13 of 30 passes): verification page hit mid-run. October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
 }

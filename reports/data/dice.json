@@ -1,29 +1,47 @@
 {
   "board": "Dice",
-  "run_date": "2026-10-09",
+  "run_date": "2026-10-12",
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "Latest update: October 9, 2026 — all 6 Dice queries ran with Last 7 Days / Full-time+Contract / Remote / Willing-to-sponsor chips verified; 1 new qualifying posting (Tror Senior SRE, Corp-to-Corp) auto-filed. Everything else was US-local, W2-only, GCP-gated or out of scope.",
+  "latest_update": "October 12, 2026 — all 6 Dice queries ran (Last 3 Days / Full-time+Contract / Remote / Willing to sponsor verified): 10 rendered results across 2 non-empty queries, 0 auto-filed. The only infrastructure postings were a Virginia state-agency Azure Cloud Engineer contract (score 4, posted by five agencies) and a Texas W2 DevOps role already Skipped.",
   "stats": [
     {
       "value": "6 of 6",
-      "label": "queries attempted / completed"
+      "label": "queries attempted and completed"
     },
     {
-      "value": 28,
-      "label": "unique postings read"
+      "value": 2,
+      "label": "scored rows this run"
     },
     {
-      "value": 9,
-      "label": "rows added this run"
-    },
-    {
-      "value": 1,
-      "label": "auto-filed this run (Tror)"
+      "value": 0,
+      "label": "auto-filed this run"
     }
   ],
   "rows": [
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Tolling Azure Cloud Engineer (VDOT Tolling, Mechanicsville VA)",
+      "company": "Analytics Solutions (agency; same requisition also posted by NimbusAITech, RICEFW, Cyber Resource Provider and others)",
+      "location": "Remote (Virginia state contract); in-person interview in Mechanicsville VA required",
+      "salary": "USD $55–$67/hour on agency copies (W2/C2C); not stated on this copy",
+      "gap": "Technical: Azure administration, Windows Server, PowerShell/Python, Key Vault/Entra ID, AKS support and rotational help-desk duty for a Virginia state agency — Azure fits but the scope is cloud operations/help desk with PCI governance, 12+ years requested on this copy, and Marc's Windows and Entra depth is thin. Flags: TN-sponsorship path — 'Able to Sponsor' appears on the Analytics Solutions copy; fingerprint background check and US-state-government contract, confirm Canadian contractor eligibility and whether C2C is truly allowed; pay below the CAD $80/hour long-contract floor at current USD rates is unconfirmed. Resume: Platform.",
+      "url": "https://www.dice.com/job-detail/06a9fc32-95ea-41e1-92c3-db5820cc36de",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "DevOps Engineer — Dallas/Austin/Houston/San Antonio TX",
+      "company": "TechniPros, LLC",
+      "location": "Remote or Dallas, TX (Dice workplace tag: On-site); 12-month W2 contract",
+      "salary": "Depends on experience",
+      "gap": "Technical: AWS/Azure platform engineering with mandatory Kubernetes, OpenShift, ArgoCD, GitOps, Helm and OpenTelemetry — mandatory-skill gaps in cluster platform ownership; Jenkins/GitHub Actions/Python fit. Flags: TN-sponsorship path — 'Able to Sponsor', W2 only (no C2C), Texas on-site tag conflicts with the Remote filter; confirm. Pipeline status mirrors the existing Skipped TechniPros DevOps Engineer row (2026-09-19). Resume: Platform.",
+      "url": "https://www.dice.com/job-detail/a3eb8f08-73f3-4c9d-aaac-528d063499ce",
+      "status": "Skipped — existing pipeline row (TechniPros DevOps Engineer, 2026-09-19)"
+    },
     {
       "score": -1,
       "family": "DevOps",
@@ -356,6 +374,20 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 12 query audit (past 48 hours)",
+      "items": [
+        "<b>DevOps Engineer</b> · filters verified in the rendered chips: Last 3 Days, Full Time, Contract, Remote, Willing to sponsor (Dice has no 48-hour option; Last 3 Days used and posting ages checked) · rendered 1 result (+3 adjacent TechniPros cards) · all cards inspected · Complete · IDs: a3eb8f08-73f3-4c9d-aaac-528d063499ce,1c2c0877-61fb-4fd1-8eb8-b70b7b41570a,fce4d63a-9b81-474c-9cb7-323b0e244d2c,699b8f49-c58b-483a-ad59-8a22b4c28cff",
+        "<b>Platform Engineer</b> · filters verified in the rendered chips: Last 3 Days, Full Time, Contract, Remote, Willing to sponsor (Dice has no 48-hour option; Last 3 Days used and posting ages checked) · rendered 2 results (5 cards) · all cards inspected · Complete · IDs: 2f1d07e0-4d04-4b3a-ad5d-5055795cb238,188ff9a6-b4ac-444b-bd0e-fb184f0aace3,cd9523ea-0ed1-4019-8fd4-9e0020d866b6,af73ebce-dd04-4968-98eb-2d721dddd624,18918704-b1d4-434e-8f54-0065f3fb5b3b",
+        "<b>Site Reliability Engineer</b> · filters verified in the rendered chips: Last 3 Days, Full Time, Contract, Remote, Willing to sponsor (Dice has no 48-hour option; Last 3 Days used and posting ages checked) · rendered 0 results · all cards inspected · Zero results · IDs: none",
+        "<b>Cloud Engineer</b> · filters verified in the rendered chips: Last 3 Days, Full Time, Contract, Remote, Willing to sponsor (Dice has no 48-hour option; Last 3 Days used and posting ages checked) · rendered 7 results (11 cards) · all cards inspected · Complete · IDs: 06a9fc32-95ea-41e1-92c3-db5820cc36de,5d0d9608-3de7-45db-891c-8bab74df9d2c,edd24925-3b25-46d8-8e1c-cdc2de23ce39,56facac5-c2e5-4823-9271-78c2c8e9b147,df42152c-b29d-4789-9aa5-0d6bb3b6c81e,b1dfa8e4-61f4-48be-8acd-51f8f042551e,2d01d409-f6b3-48a9-a4f8-4b14d885da77,92056c44-740d-4b4f-8a6a-1b42ad92dcca,6b140b1c-f704-402e-b41d-9e115bbb010d,1e5d35a6-1c05-4d84-8f72-ab3c90fe725f,084754af-80d5-446c-8fac-d393b664df79",
+        "<b>DevSecOps Engineer</b> · filters verified in the rendered chips: Last 3 Days, Full Time, Contract, Remote, Willing to sponsor (Dice has no 48-hour option; Last 3 Days used and posting ages checked) · rendered 0 results · all cards inspected · Zero results · IDs: none",
+        "<b>Forward Deployed Engineer</b> · filters verified in the rendered chips: Last 3 Days, Full Time, Contract, Remote, Willing to sponsor (Dice has no 48-hour option; Last 3 Days used and posting ages checked) · rendered 0 results · all cards inspected · Zero results · IDs: none",
+        "Dice has no 48-hour posted-date filter, so the Last 3 Days option was used; every candidate's own 'Posted … ago' text was read (all were between 10 minutes and 2 days old).",
+        "Roughly 14 other cards in the Platform Engineer and Cloud Engineer results were set aside by title as application development, Salesforce/Dynamics/Power Platform, QA, business-analyst or identity-security roles (Power Platform and Dynamics developers, SailPoint, Java/.NET full-stack, Gen AI, Oracle Fusion); none are in the three target families.",
+        "The Virginia VDOT Tolling Azure Cloud Engineer requisition appeared under five agencies (Analytics Solutions, NimbusAITech, RICEFW, Cyber Resource Provider x2); I opened two copies in full and read the rest from Dice's similar-jobs summaries, and scored one row."
+      ]
+    },
+    {
       "heading": "October 9 query audit",
       "items": [
         "DevOps Engineer → 2 results (both TechniPros W2) · Platform Engineer → 7 · Site Reliability Engineer → 3 (Tror, Trebecon, GlobalLogic) · Cloud Engineer → 7 (Azure/Virginia and GCP data-engineering reposts) · DevSecOps Engineer → 2 (TechniPros) · Forward Deployed Engineer → 2. Filter chips verified on each render; every result reviewed (all fit inside the 8-per-query boundary).",
@@ -418,6 +450,6 @@
       ]
     }
   ],
-  "method": "October 7, 2026: six of six queries completed with verified filters; 30 unique postings read in full; none eligible and in scope; 0 filed. All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 2, 8, 0, 10, 2, and 1. Up to eight results per query were audited before deduplication, yielding 19 unique reviewed postings. Eight were known pipeline postings (TechniPros's two recurring reposts plus six previously-scored postings, all unchanged in content), one known posting (Shiro) was not resurfaced and was carried forward, and eleven were new but off-domain by title. No new eligible target-family posting was found this run; zero postings were auto-filed.",
+  "method": "Oct 12 (complete, 6 of 6 queries): Last 3 Days filter. October 7, 2026: six of six queries completed with verified filters; 30 unique postings read in full; none eligible and in scope; 0 filed. All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 2, 8, 0, 10, 2, and 1. Up to eight results per query were audited before deduplication, yielding 19 unique reviewed postings. Eight were known pipeline postings (TechniPros's two recurring reposts plus six previously-scored postings, all unchanged in content), one known posting (Shiro) was not resurfaced and was carried forward, and eleven were new but off-domain by title. No new eligible target-family posting was found this run; zero postings were auto-filed.",
   "could_not_validate": []
 }
