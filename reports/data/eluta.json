@@ -4,15 +4,19 @@
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "October 12, 2026 — INCOMPLETE: all 10 remote role queries and 3 of 20 city passes collected; Eluta then redirected to its 'User Verification' (reCAPTCHA) page, which I did not bypass, so the other 17 city passes and every cache read were blocked. Five new in-family remote results are listed under Could not validate; 0 filed.",
+  "latest_update": "October 12, 2026 — COMPLETE after the verification page was cleared: all 10 remote role queries and all 20 city passes ran (17 city passes rerun at 7-second spacing, no new challenge). 4 new rows read from Eluta's cache: Practice Better Intermediate DevOps (5, freshness unconfirmed), Boson AI SRE (2), AlayaCare DevSecOps (out of scope) and CMHC cloud operations (Secret clearance). Most in-window Montréal and Ottawa results were already in the report. 0 auto-filed.",
   "stats": [
     {
-      "value": "13 of 30",
-      "label": "passes completed (10 remote + 3 Ottawa city passes)"
+      "value": "30 of 30",
+      "label": "passes completed (10 remote + 20 city)"
     },
     {
-      "value": 17,
-      "label": "city passes incomplete (User Verification)"
+      "value": 4,
+      "label": "new rows scored from cache pages"
+    },
+    {
+      "value": 4,
+      "label": "could not validate (empty Workday/Eightfold/BambooHR shells, entry-level)"
     },
     {
       "value": 0,
@@ -20,6 +24,50 @@
     }
   ],
   "rows": [
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "Intermediate DevOps Engineer",
+      "company": "Practice Better",
+      "location": "Remote — Canada only (posting says Canadian-based candidates)",
+      "salary": "$110,000 (per Eluta card; currency not labelled)",
+      "gap": "Technical: AWS infrastructure with Terraform/OpenTofu, CI/CD, incident response, SLOs and observability for a .NET/Rails stack — Terraform is a use-not-author skill and the AWS requirement meets the dated Tink build; 'intermediate' level is below Marc's seniority. Practical: Compromise — base about $110k, below the ideal, above the $100k remote floor. Cached copy indexed 25 Sep 2026 and the card shows no age, so freshness is unconfirmed; not auto-filed. Resume: Platform.",
+      "url": "https://www.eluta.ca/cache?u=25401987:job-boards.greenhouse.io",
+      "status": "Freshness unconfirmed — cached copy 25 Sep 2026"
+    },
+    {
+      "score": 2,
+      "family": "SRE",
+      "title": "Site Reliability Engineer — AI training infrastructure",
+      "company": "Boson AI",
+      "location": "Remote or Toronto",
+      "salary": "$125,000 (per Eluta card)",
+      "gap": "Technical: GPU clusters, high-performance networking, storage and scheduler operations for AI training — no matching evidence. Cached copy indexed 14 Jul 2026, so likely stale. Practical: Confirm. Resume: SRE.",
+      "url": "https://www.eluta.ca/cache?u=25014231:jobs.lever.co",
+      "status": "Freshness unconfirmed — cached copy 14 Jul 2026"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Staff DevSecOps Specialist",
+      "company": "AlayaCare",
+      "location": "Montréal (remote/hybrid not stated)",
+      "salary": "Not stated",
+      "gap": "Out of scope: staff-level security-program role in the Information Security team (vulnerability-management tooling and security engineering direction). Cached copy indexed 21 Sep 2026.",
+      "url": "https://www.eluta.ca/cache?u=25354086:job-boards.greenhouse.io",
+      "status": "Skipped — Out of scope: security engineering"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Bilingual Senior Specialist, Cloud Infrastructure Operations Engineering",
+      "company": "CMHC",
+      "location": "Hybrid — Montréal, Ottawa or Toronto; days not stated",
+      "salary": "CAD $104,180–$130,225",
+      "gap": "Hard gate: Secret security clearance required. Otherwise a plausible cloud-operations role (permanent, bilingual BBB). Cached copy indexed 8 Oct 2026. Resume: Platform.",
+      "url": "https://www.eluta.ca/cache?u=25468645:careers.cmhc-schl.gc.ca",
+      "status": "Skipped — Ineligible: Secret clearance"
+    },
     {
       "score": 4,
       "family": "Platform",
@@ -577,32 +625,24 @@
   ],
   "could_not_validate": [
     {
-      "text": "Intermediate DevOps Engineer ($110,000, job-boards.greenhouse.io) — cache blocked by Eluta User Verification; employer URL not recoverable from the result card.",
-      "url": "https://www.eluta.ca/cache?u=25401987:job-boards.greenhouse.io"
-    },
-    {
-      "text": "AI-First DevOps Engineer ($155,000, talentmanagementsolution.wd3.myworkdayjobs.com) — cache blocked by Eluta User Verification; Workday shell not recoverable.",
+      "text": "AI-First DevOps Engineer ($155,000, talentmanagementsolution.wd3.myworkdayjobs.com) — Eluta's cache is an empty Workday shell indexed 13 Jul 2026; the employer posting was not recoverable.",
       "url": "https://www.eluta.ca/cache?u=25003641:talentmanagementsolution.wd3.myworkdayjobs.com"
     },
     {
-      "text": "Site Reliability Engineer ($125,000, jobs.lever.co) — cache blocked by Eluta User Verification; employer posting not identified.",
-      "url": "https://www.eluta.ca/cache?u=25014231:jobs.lever.co"
-    },
-    {
-      "text": "Spécialiste DevOps / DevOps Specialist (Portage CyberTech, Gatineau QC, posted today) — cache blocked by Eluta User Verification; Gatineau is outside the reachable cities unless remote.",
+      "text": "Spécialiste DevOps / DevOps Specialist (Portage CyberTech, Gatineau QC) — cache is an empty BambooHR shell indexed 6 Aug 2026; Gatineau is outside the reachable cities unless remote.",
       "url": "https://www.eluta.ca/cache?u=25131230:portagecybertech.bamboohr.com"
     },
     {
-      "text": "Cloud Platform Engineer (Accenture, posted today, $25.41 and $74,000 variants) — cache blocked; appears to be an entry-level scope.",
+      "text": "RPE - System Reliability Engineering Specialist (Hybrid), Morgan Stanley, Montréal — shown as posted today on Eluta; the cache is an empty Eightfold shell indexed 28 Aug 2026. Related to the Morgan Stanley role already filed from LinkedIn.",
+      "url": "https://www.eluta.ca/cache?u=24568835:morganstanley.eightfold.ai"
+    },
+    {
+      "text": "Cloud Platform Engineer (Accenture, $25.41/hour and $74,000 variants) — readable cache shows only site navigation in the first lines; appears entry-level and was not scored.",
       "url": "https://www.eluta.ca/cache?u=25107000:www.accenture.com"
     },
     {
       "text": "Senior Software Engineer (Platform - DevOps) — CTO.ai (Vancouver BC - Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
       "url": "https://www.eluta.ca/cache?u=19675816:careers.risepeople.com"
-    },
-    {
-      "text": "AI-First DevOps Engineer — Jonas Software (Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25003641:talentmanagementsolution.wd3.myworkdayjobs.com"
     },
     {
       "text": "Senior Cloud Engineer — BMO Financial Group (Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
@@ -631,10 +671,6 @@
     {
       "text": "Senior DevOps / Platform Engineer — Cloud — Dominion Dynamics Inc. (Ottawa, ON): Eluta cache is an empty JavaScript shell (500 characters) and no current employer text was reachable without a heavier JS session; unread.",
       "url": "https://www.eluta.ca/cache?u=24932521:jobs.ashbyhq.com"
-    },
-    {
-      "text": "Spécialiste DevOps / DevOps Specialist — Portage CyberTech (Gatineau, QC): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25131230:portagecybertech.bamboohr.com"
     },
     {
       "text": "Zscaler Site Reliability Engineer (SRE) — DXC Technology Company (Ottawa, ON): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
@@ -670,6 +706,35 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 12 rerun — city passes (completes the earlier partial run)",
+      "items": [
+        "The user cleared Eluta's reCAPTCHA in Chrome; the 17 blocked city passes (Ottawa Infrastructure, Kingston, Brockville, Cornwall and Montréal x 4) then ran without another challenge.",
+        "<b>Ottawa, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Kingston, ON — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Kingston, ON — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Kingston, ON — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 3 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Kingston, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Brockville, ON — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Brockville, ON — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 4 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Brockville, ON — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Brockville, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 6 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Cornwall, ON — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Cornwall, ON — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 1 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Cornwall, ON — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Cornwall, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 4 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Montreal, QC — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Montreal, QC — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Montreal, QC — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+        "<b>Montreal, QC — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)"
+      ]
+    },
+    {
+      "heading": "October 12 note on the earlier partial run",
+      "items": [
+        "The previous note on this date recorded 13 of 30 passes. This rerun supersedes it: 30 of 30 passes are now complete."
+      ]
+    },
     {
       "heading": "October 12 pass audit (past 48 hours) — INCOMPLETE",
       "items": [
@@ -821,5 +886,5 @@
       ]
     }
   ],
-  "method": "Oct 12 (INCOMPLETE, 13 of 30 passes): verification page hit mid-run. October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
+  "method": "Oct 12 (COMPLETE, 30 of 30 passes after verification was cleared). Oct 12 (INCOMPLETE, 13 of 30 passes): verification page hit mid-run. October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
 }
