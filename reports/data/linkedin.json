@@ -1,29 +1,90 @@
 {
   "board": "LinkedIn",
-  "run_date": "2026-10-09",
+  "run_date": "2026-10-12",
   "eyebrow": "LinkedIn · authenticated read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Full descriptions validated on LinkedIn. Scores measure skill and domain fit.",
-  "latest_update": "October 9, 2026 — past-24-hour run COMPLETE: all 67 mandatory passes executed (14 phrase + 33 hub + 20 city), ~200 further postings read or screened, 2 filed (Chrome Technologies 5, AGFA 7). AGFA Team Lead DevOps (7) validated on the employer page as Remote and filed as New. The additional hub and page-3 passes found no new eligible roles.",
+  "latest_update": "October 12, 2026 — past-48-hour run: all 84 pass queries executed (14 phrase x 3 pages, 22 hub, 20 city); 134 unique postings (99 full descriptions fetched), 6 new rows auto-filed (National Bank 7; La Caisse DevSecOps 6; Myticas Azure Platform 6; Morgan Stanley 6; Petal 5; Render 5). Hub passes returned the Canada-wide set (see notes).",
   "stats": [
     {
-      "value": "67 of 67",
-      "label": "mandatory passes completed (14 phrase + 33 hub + 20 city), past 24 hours"
+      "value": "84 of 84",
+      "label": "pass queries completed, past 48 hours (14 phrase x 3 pages + 22 hub + 20 city)"
     },
     {
-      "value": "~290",
-      "label": "unique listings collected (30-result cap per pass)"
+      "value": 745,
+      "label": "result cards collected; 134 unique postings"
     },
     {
-      "value": "~60",
-      "label": "full descriptions read; ~35 workplace labels read"
+      "value": 99,
+      "label": "full descriptions fetched; 87 workplace labels read"
     },
     {
-      "value": 1,
+      "value": 6,
       "label": "auto-filed this run"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 12 run — past 48 hours (complete)",
+      "items": [
+        "Ran every mandatory pass with <code>f_TPR=r172800</code> through the logged-in session's read-only requests: 14 Canada-remote phrases (pages 1–3, 30 results each), 11 hubs x 2 titles (page 1) and Ottawa/Kingston/Cornwall/Montréal x 5 titles (page 1). No HTTP errors, CAPTCHA, checkpoint or login loss.",
+        "<b>Hub-pass limitation:</b> the 22 hub passes (Toronto, Vancouver, Montréal, Calgary, Ottawa, Edmonton, Kitchener-Waterloo, Halifax, Winnipeg, Québec City, Victoria x DevOps / Site Reliability Platform Engineer Remote) returned nearly the same Canada-wide set because the public listing endpoint ignores the hub in a Remote search; they added no new postings. A third title (Platform Engineer Remote) was not re-run per hub, since the Canada-wide phrase passes already cover it to page 3. Hub and city passes were read to page 1 only (10 results).",
+        "Collected 745 result cards; 134 unique postings; 99 had their full description fetched and read (all 81 first-page uniques plus 18 of the 53 new page-2/3 uniques), with the job-page workplace label read for the 87 that were in-family or ambiguous. 35 page-2/3 postings were set aside by title without opening — software, sales/pre-sales, product, security, Rust/mobile, civil/water-engineering and similar (for example Canonical packaging, Red Hat Ansible solution architect, SurveyMonkey and Blackpoint software engineers, GFT water-pipeline engineer).",
+        "Kingston: four of five passes returned 0 results and the Infrastructure Engineer pass returned 3 non-DevOps cards. Cornwall: four passes returned 0 and Infrastructure Engineer returned 2 non-DevOps cards. Neither city had a reachable DevOps/SRE/Platform role in the window.",
+        "Auto-filed (score >= 5, full description read, current, eligible, not in ledger): National Bank of Canada Senior DevOps Integrator (7), La Caisse DevSecOps principal (6), Myticas Platform Engineer - Azure (6), Morgan Stanley Platform Integration and Monitoring Lead (6), Petal Developer, Cloud (5), Render Dev Velocity (5). Cadence or pay is unstated on most — each carries a Practical: Confirm label.",
+        "Known pipeline matches preserved: Xsolla SRE Monetization (Skipped), Tailscale Infrastructure Engineer (Applied), Elastic Senior SRE (Rejected), Chrome Technologies DevOps backend (Skipped), Myticas DevOps Specialist - Kubernetes (Skipped). Not re-filed.",
+        "Not filed on purpose: ANVIL Senior Infrastructure Engineer (5) needs a Top Secret clearance eligibility confirmation; Atmail (4), CAE (4), EPAM Azure/Terraform (4) and CARET (4) fall below 5 on core-requirement gaps. The Mercor $85/hour listing is per-task AI evaluation work, not a delivery role — only a possible bridge-income option once hours and fees are known.",
+        "Pass audit (job IDs are the last 8 digits, prefix 44; each pass lists rendered cards): see the pass-audit section below."
+      ]
+    },
+    {
+      "heading": "October 12 pass audit (48 hours)",
+      "items": [
+        "<b>Phrase pass — DevOps Consultant Remote</b> · Canada · 48h · rendered 30 (p1 10, p2 10, p3 10) · reviewed 30 · Complete · p1: 97561053,60505268,77290791,77233832,24616469,06150583,78509536,75621686,77246340,10395795 · p2: 77274778,77293067,60500277,69190473,32101442,68498829,33373551,39253468,66923933,60385625 · p3: 77526482,77280152,78079694,75695806,77230306,68035290,50752519,66866511,76010159,69257142",
+        "<b>Phrase pass — DevOps Specialist Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 24616469,77290791,60505268,75621686,78509536,77246340,77293067,77274778,33373551,32101442 · p2: 69190473,10395795,97561053,77233832,39253468,33376506,60385625,76020449,23064405,76010159 · p3: 75695806,77526482,60518019,77585338,78079694,69257142,23077503,66866511,23082347,65564009",
+        "<b>Phrase pass — DevOps Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 24616469,77290791,75621686,60505268,77271949,32101442,33373551,10395795,78509536,77274778 · p2: 69190473,77246340,77233832,60385625,23064405,39253468,33376506,23077503,69687431,97561053 · p3: 23082347,50347531,75695806,76010159,78075717,60377264,77526482,69257142,60518019,77585338",
+        "<b>Phrase pass — Senior DevOps Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 77290791,10395795,69190473,78509536,77246340,60385625,23064405,77293067,77233832,77274778 · p2: 23077503,50347531,76010159,23082347,75695806,69257142,60518019,67558545,75621686,41663114 · p3: 39253468,78079694,18845866,77526482,69283710,69687431,50752519,50518845,67899622,74573051",
+        "<b>Phrase pass — Staff DevOps Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 10395795,77290791,77246340,49246271,77293067,78509536,69687431,75621686,69190473,60385625 · p2: 77274778,23064405,24616469,77233832,32101442,76010159,75695806,18845866,39253468,23077503 · p3: 11548564,67899622,50347531,60518019,23082347,78075717,33373551,50518845,69283710,67558545",
+        "<b>Phrase pass — Senior Site Reliability Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 69190473,78509536,77246340,10395795,77290791,50347531,77274778,23077503,60385625,23082347 · p2: 77293067,23064405,77233832,76028342,78075717,67558545,75621686,39253468,77236739,68024155 · p3: 67899622,50656078,60518019,76027460,69687431,50518845,41663114,68035290,28779722,74573051",
+        "<b>Phrase pass — Platform Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 10395795,60385625,23077503,75621686,32101442,33373551,24616469,77271949,60505268,23082347 · p2: 23064405,77290791,77233832,14780148,69687431,49246271,50347531,67558545,51044762,11548564 · p3: 77274778,59455093,59441166,78509536,50656078,69190473,28779722,76028342,64661626,14758330",
+        "<b>Phrase pass — Senior Platform Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 10395795,23064405,60385625,77290791,23077503,77233832,69687431,23082347,67558545,50347531 · p2: 76028342,49246271,77508631,69190473,50656078,76027460,78509536,11548564,59441166,64661626 · p3: 59455093,28779722,77246340,51044762,19648119,78524885,75621686,01959666,14758330,41226017",
+        "<b>Phrase pass — Cloud Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 60505268,77233832,77290791,24616469,75621686,77293067,10395795,23077503,33373551,23082347 · p2: 60385625,60377264,77274778,77246340,69687431,49246271,78509536,14780148,69190473,50347531 · p3: 78524885,97561053,39253468,06150583,14758330,50656078,23064405,59455093,59441166,69283710",
+        "<b>Phrase pass — Infrastructure Engineer SRE Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 69190473,77246340,78509536,75621686,77274778,10395795,77290791,60505268,76020449,24616469 · p2: 77271949,39253468,23077503,23082347,50347531,77233832,33373551,60377264,60385625,32101442 · p3: 78075717,14780148,68035290,60518019,67899622,77236739,69687431,50518845,68024155,23064405",
+        "<b>Phrase pass — DevSecOps Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 77280152,77290791,19544477,24616469,66866511,60500286,60505268,18845866,77293067,78075717 · p2: 75695806,60546039,76010159,77526482,39253468,77233832,83814313,23064405,33373551,10395795 · p3: 69190473,50518845,32101442,75621686,77285306,77230306,59856100,77585338,41663114,77576854",
+        "<b>Phrase pass — Deployment Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 60505268,77285682,24616469,33373551,97561053,77293067,10395795,77233832,66923933,60377264 · p2: 75621686,77284739,77290791,60385625,77274778,32101442,33376506,58980791,78509536,69224884 · p3: 42193995,50752519,68024155,69190473,60517089,59455093,23064405,39253468,59441166,23077503",
+        "<b>Phrase pass — Professional Services DevOps Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 97561053,60505268,24616469,77290791,77233832,10395795,77293067,75621686,60385625,78509536 · p2: 77274778,32101442,33373551,77246340,06150583,69190473,66923933,23064405,60500277,50752519 · p3: 39253468,77526482,75695806,78079694,78524885,23077503,76010159,77280152,23082347,77585338",
+        "<b>Phrase pass — Forward Deployed Engineer Remote</b> · Canada · 48h · rendered 30 · reviewed 30 · Complete · p1: 83485843,50357329,50359079,30615926,83498349,49204639,77284739,38738893,66923933,50388146 · p2: 77285682,58051689,42467466,77285432,58443892,77274591,10395795,75951515,58980791,50739865 · p3: 11548564,75693644,50616420,41620041,78372754,50619304,50636983,66921823,78524885,78372753",
+        "<b>Hub pass — DevOps Engineer Remote @ Toronto</b> · p1 · rendered 10 · reviewed 10 · Complete · 24616469,77290791,75621686,60505268,77271949,32101442,33373551,10395795,78509536,69190473",
+        "<b>Hub pass — Site Reliability Platform Engineer Remote @ Toronto</b> · rendered 10 · Complete · 75621686,69190473,77246340,78509536,77290791,10395795,77293067,24616469,23077503,60505268",
+        "<b>Hub pass — DevOps Engineer Remote @ Vancouver</b> · rendered 10 · Complete · 24616469,77290791,75621686,77271949,32101442,33373551,78509536,77274778,69190473,77246340",
+        "<b>Hub pass — Site Reliability Platform Engineer Remote @ Vancouver</b> · rendered 10 · Complete · 75621686,69190473,77246340,78509536,77290791,77274778,77293067,24616469,23082347,50347531",
+        "<b>Hub pass — DevOps Engineer Remote @ Montréal</b> · rendered 10 · Complete · 24616469,77290791,75621686,77271949,32101442,33373551,78509536,69190473,77246340,77233832",
+        "<b>Hub pass — Site Reliability Platform Engineer Remote @ Montréal</b> · rendered 10 · Complete · 75621686,69190473,77246340,78509536,77290791,77293067,24616469,39253468,50347531,33373551",
+        "<b>Hub pass — DevOps Engineer Remote @ Calgary</b> · rendered 10 · Complete · 24616469,77290791,75621686,77271949,32101442,33373551,78509536,69190473,77246340,77233832",
+        "<b>Hub pass — Site Reliability Platform Engineer Remote @ Calgary</b> · rendered 10 · Complete · 75621686,69190473,77246340,78509536,77290791,77293067,24616469,50347531,33373551,32101442",
+        "<b>Hub pass — DevOps Engineer Remote @ Ottawa</b> · rendered 10 · Complete · 24616469,77290791,75621686,77271949,32101442,33373551,78509536,69190473,77246340,77233832",
+        "<b>Hub pass — Site Reliability Platform Engineer Remote @ Ottawa</b> · rendered 10 · Complete · 75621686,69190473,77246340,78509536,77290791,77293067,24616469,50347531,33373551,32101442",
+        "<b>Hub pass — DevOps Engineer Remote @ Edmonton</b> · rendered 10 · Complete · same ten IDs as Calgary (24616469,77290791,75621686,77271949,32101442,33373551,78509536,69190473,77246340,77233832)",
+        "<b>Hub pass — Site Reliability Platform Engineer Remote @ Edmonton</b> · rendered 10 · Complete · same ten IDs as Calgary SRE pass",
+        "<b>Hub passes — Kitchener-Waterloo, Halifax, Winnipeg, Québec City (DevOps Engineer Remote and Site Reliability Platform Engineer Remote, 8 passes)</b> · rendered 10 each · Complete · DevOps pass IDs identical to the Calgary DevOps pass; SRE pass IDs identical to the Calgary SRE pass",
+        "<b>Hub pass — DevOps Engineer Remote @ Victoria</b> · rendered 10 · Complete · 24616469,77290791,75621686,77271949,32101442,33373551,78509536,77274778,69190473,77246340",
+        "<b>Hub pass — Site Reliability Platform Engineer Remote @ Victoria</b> · rendered 10 · Complete · 75621686,69190473,77246340,78509536,77290791,77274778,77293067,24616469,23082347,50347531",
+        "<b>City hybrid pass — Cloud Platform Engineer @ Ottawa</b> · no workplace filter, labels read per posting · rendered 10 · Complete · 77219796,69520667,34256783,34072752,50752519,20127975,77221649,60147325,14247214,50739865",
+        "<b>City hybrid pass — Platform Engineer @ Ottawa</b> · rendered 10 · Complete · 34256783,77219796,34072752,50752519,20127975,69520667,14247214,50739865,77221649,60147325",
+        "<b>City hybrid pass — DevOps Engineer @ Ottawa</b> · rendered 10 · Complete · 77219796,50752519,69520667,34256783,34072752,77221649,14247214,60147325,20127975,77004728",
+        "<b>City hybrid pass — Site Reliability Engineer @ Ottawa</b> · rendered 10 · Complete · 77219796,34256783,77004728,69520667,50752519,34072752,20127975,77221649,41629992,14247214",
+        "<b>City hybrid pass — Infrastructure Engineer @ Ottawa</b> · rendered 10 · Complete · 69520667,77219796,50752519,34256783,77218920,34072752,42144714,50739865,30606958,60147325",
+        "<b>City hybrid passes — Kingston (Cloud Platform Engineer, Platform Engineer, DevOps Engineer, Site Reliability Engineer)</b> · rendered 0 each · Zero results · none",
+        "<b>City hybrid pass — Infrastructure Engineer @ Kingston</b> · rendered 3 · reviewed 3 · Complete · 30292969,42402180,13846356 (non-DevOps)",
+        "<b>City hybrid passes — Cornwall (Cloud Platform Engineer, Platform Engineer, DevOps Engineer, Site Reliability Engineer)</b> · rendered 0 each · Zero results · none",
+        "<b>City hybrid pass — Infrastructure Engineer @ Cornwall</b> · rendered 2 · reviewed 2 · Complete · 69189964,68494459 (non-DevOps)",
+        "<b>City hybrid pass — Cloud Platform Engineer @ Montréal</b> · rendered 10 · Complete · 50690215,76010159,75695806,58015848,39253468,77526482,18845866,38436238,68035290,04462193",
+        "<b>City hybrid pass — Platform Engineer @ Montréal</b> · rendered 10 · Complete · 50690215,76010159,75695806,18845866,39253468,77526482,68035290,58015848,59441166,11548564",
+        "<b>City hybrid pass — DevOps Engineer @ Montréal</b> · rendered 10 · Complete · 75695806,76010159,77526482,18845866,39253468,50690215,58015848,68035290,75699501,77258950",
+        "<b>City hybrid pass — Site Reliability Engineer @ Montréal</b> · rendered 10 · Complete · 39253468,68035290,58015848,75695806,76010159,50690215,18845866,77286918,59441166,75699501",
+        "<b>City hybrid pass — Infrastructure Engineer @ Montréal</b> · rendered 10 · Complete · 58015848,50690215,76010159,75695806,39253468,33362256,77283962,77254908,77505111,68035290"
+      ]
+    },
     {
       "heading": "October 9 run — past 24 hours (complete)",
       "items": [
@@ -162,6 +223,14 @@
   ],
   "could_not_validate": [
     {
+      "text": "Jobgether partner — Platform Engineer (email-infrastructure company): LinkedIn text contained no duties or requirements, so only a partial score was possible; the partner employer is unnamed.",
+      "url": "https://www.linkedin.com/jobs/view/4477271949/"
+    },
+    {
+      "text": "Exposant 3 — Spécialiste en environnement de développement: older LinkedIn ID inside the two-day result set, so freshness is unconfirmed; no employer page was found.",
+      "url": "https://www.linkedin.com/jobs/view/4397561053/"
+    },
+    {
       "text": "SecurityScorecard — Senior Forward Deployed Engineer: fresh Greater Ottawa remote LinkedIn result; a complete current employer description was not recovered during this run.",
       "url": "https://www.linkedin.com/jobs/view/4469346704/"
     },
@@ -207,6 +276,908 @@
     }
   ],
   "rows": [
+    {
+      "score": 7,
+      "family": "Platform",
+      "title": "Senior DevOps Integrator (Intégrateur senior DevOps)",
+      "company": "National Bank of Canada",
+      "location": "Hybrid — Montréal; days not stated; confirm <=2",
+      "salary": "Not stated",
+      "gap": "Technical: GitHub/Jenkins CI/CD platform ownership, Terraform, Python/Groovy, 24/7 on-call and a developer-experience team — direct match to the Énergir/Tink Jenkins standardization story; gaps are 'hands-on AWS' (Marc's AWS is the shallow Tink build), Go and Kubernetes/GitOps depth (ArgoCD used, clusters not owned). Practical: Confirm — base pay and office cadence not stated (Montréal floor $120k; confirm <=2 days); French and English required (Marc is bilingual). Same requisition posted in French as 4476010159. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4475695806/",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "Platform",
+      "title": "Développeur(-euse) DevSecOps principal(e) — Plateforme de développement",
+      "company": "La Caisse (CDPQ)",
+      "location": "Hybrid — Montréal; days not stated; confirm <=2",
+      "salary": "Not stated",
+      "gap": "Technical: self-service CI/CD pipelines, Azure DevOps, shift-left quality/security gates, code-quality and artifact-management tooling (SonarQube/Artifactory/Nexus), Python — very close to Marc's platform record; gaps are the 'expertise of AWS environments', secure-development/vulnerability management depth and TypeScript/.NET. Practical: Confirm — base pay and cadence not stated (Montréal floor $120k); posting is in French. Differs from the CDPQ IaC role already Skipped. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4418845866/",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "Platform",
+      "title": "Platform Engineer - Azure (35991)",
+      "company": "Myticas Consulting",
+      "location": "Remote — Canada (LinkedIn label)",
+      "salary": "Not stated",
+      "gap": "Technical: Azure landing zones, private endpoints/hub-spoke networking, Azure Policy, Bicep/Terraform, Azure DevOps pipelines — Azure is Marc's core cloud, but landing-zone and Azure networking build-out are not documented hands-on and IaC was another team's Terraform. Practical: Confirm — rate, contract length and Canada contracting terms not stated (recruiter req; role looks like a consulting contract). Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4477230306/",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "SRE",
+      "title": "Senior Platform Integration and Monitoring Lead (Hybrid)",
+      "company": "Morgan Stanley",
+      "location": "Hybrid — Montréal; days not stated; confirm <=2",
+      "salary": "Not stated",
+      "gap": "Technical: ~200-host market-data platform operations, Python/shell automation, monitoring and health-check frameworks, change/upgrade execution and AI-assisted automation with guardrails — fits the Tink fleet-automation, Desjardins monitoring and Énergir AI-practice evidence; gaps are market-data domain, a 'Lead' mandate (no formal lead title) and 6+ years running large production estates. Practical: Confirm — base pay and in-office days not stated (Montréal floor $120k); French and English required. Resume: SRE.",
+      "url": "https://www.linkedin.com/jobs/view/4468035290/",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Developer, Cloud (Developer II, Cloud Infrastructure)",
+      "company": "Petal",
+      "location": "Remote — Canada (LinkedIn label)",
+      "salary": "Not stated",
+      "gap": "Technical: Azure Terraform/OpenTofu, AKS operations, GitLab CI, developer-platform golden paths and observability — Azure and CI/CD are strengths; gaps are writing Terraform modules from scratch, running AKS/Helm/Gateway API in production, and GitLab CI; 'Developer II' suggests a mid-level scope. Practical: Confirm — base pay, level and Ontario eligibility not stated; may sit below Marc's seniority/pay. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4424616469/",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Software Engineer, Dev Velocity (all levels)",
+      "company": "Render",
+      "location": "Remote — Canada (LinkedIn label)",
+      "salary": "Not stated",
+      "gap": "Technical: internal developer platform, CI/CD speed, flaky-test and build tooling, DORA metrics and toil reduction match the Énergir pipeline story; gap is that Go is the primary language and the role is software-engineer scope (Marc's tooling language is Python), plus Kubernetes/Terraform only as a user. Practical: Confirm — base pay not stated, Canadian hiring/contracting model and 'all levels' seniority unconfirmed. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4432101442/",
+      "status": "New"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Senior Infrastructure Engineer (Forward Deployed)",
+      "company": "ANVIL",
+      "location": "Hybrid — Ottawa office; days not stated; up to 30% travel",
+      "salary": "CAD $140,000–$180,000 (base range; currency inferred)",
+      "gap": "Technical: deploying and securing software on customer Kubernetes/OpenShift and Linux estates with Helm, TLS/PKI and customer-facing discovery — plausible via Énergir delivery work, but 7+ years, 3+ years container platforms, hypervisors and defence-customer travel are real gaps. Practical: Confirm — requires eligibility for a Government of Canada Top Secret clearance (not established for Marc), office cadence unstated, travel; not auto-filed because legal eligibility is unresolved. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4450752519/",
+      "status": ""
+    },
+    {
+      "score": 5,
+      "family": "SRE",
+      "title": "Site Reliability Engineer (Monetization)",
+      "company": "Xsolla",
+      "location": "Remote — Montréal, QC (LinkedIn label)",
+      "salary": "CAD $120,000–$160,000 (as stated; currency not labelled)",
+      "gap": "Technical: SLOs/SLIs on Datadog, Helm/Terraform/Kubernetes app infrastructure, CI/CD and incident response — but GCP, Go/PHP backend development and GKE are gaps (GCP is zero). Practical: Compromise — base range tops out at the ideal. Pipeline status mirrors the existing Skipped Eluta row. Resume: SRE.",
+      "url": "https://www.linkedin.com/jobs/view/4439253468/",
+      "status": "Skipped — existing pipeline row (Xsolla SRE Monetization, Eluta 2026-08-25)"
+    },
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Infrastructure Engineer",
+      "company": "Tailscale",
+      "location": "Remote — Canada",
+      "salary": "CAD $218,420–$273,360 (base; per posting)",
+      "gap": "Technical: software-engineer scope with observability, CD, IaC, production Kubernetes/AWS operations and Go; gaps are Go, distributed-systems depth and operating managed AWS services. Practical: Target on pay if hired in Canada; growth unconfirmed. Pipeline status mirrors the existing manual Applied row (2026-07-07). Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4475621686/",
+      "status": "Applied — existing pipeline row (Tailscale Infrastructure Engineer, 2026-07-07)"
+    },
+    {
+      "score": 5,
+      "family": "DevOps",
+      "title": "DÉVELOPPEUR BACKEND DEVOPS (ref. 2251/MTL/0710)",
+      "company": "Chrome Technologies",
+      "location": "Hybrid — Montréal; days not stated; confirm <=2",
+      "salary": "Not stated",
+      "gap": "Technical: advanced GitHub Actions at org scale, ServiceNow/Jira integration, Ansible, Python/TypeScript — same database/backup-deployment mandate as the Chrome Technologies row already Skipped. Practical: Confirm — permanent agency position, pay and cadence unstated. Pipeline status mirrors the existing Skipped row. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4477526482/",
+      "status": "Skipped — existing pipeline row (Chrome Technologies, 4476294213)"
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Platform Engineer (Platform Operations, 12-month contract)",
+      "company": "Atmail",
+      "location": "Remote — North America (BC listing)",
+      "salary": "Not stated",
+      "gap": "Technical: AWS is the job — 'strong AWS experience provisioning, managing and troubleshooting production infrastructure', Terraform/CloudFormation, advanced Linux, MySQL; Marc's AWS is the dated, by-hand Tink build, never production-operated. Python/Bash, incident handling and Linux are real strengths. Practical: Confirm — 12-month contract (matches consulting preference) but pay, North American-hours coverage and initial late-hours onboarding unstated. Resume: SRE.",
+      "url": "https://www.linkedin.com/jobs/view/4477274778/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Infrastructure Operations Engineer-EN",
+      "company": "CAE",
+      "location": "Hybrid — Montréal; days not stated; confirm <=2",
+      "salary": "Not stated",
+      "gap": "Technical: Windows Server, Active Directory, certificates and RDS are the core, alongside Azure/OpenShift automation and a VMware-to-OpenShift Virtualization migration; Marc's Windows/AD evidence is dated (SOVO) and OpenShift is untouched. Practical: Confirm — bilingual required; pay and cadence unstated. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4458015848/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Cloud & Infrastructure Engineer (Azure & Terraform)",
+      "company": "EPAM Systems",
+      "location": "Remote — Canada",
+      "salary": "CAD $155,000–$168,000",
+      "gap": "Technical: Azure Landing Zones, Entra ID/OIDC federation, hub-and-spoke networking and from-scratch Terraform modules with state surgery — Azure is a strength, but Marc used another team's Terraform and has no documented landing-zone or Entra build. Practical: Target on pay; growth unconfirmed. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4477233832/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Infrastructure Engineer",
+      "company": "CARET",
+      "location": "Remote — Toronto, ON (LinkedIn label)",
+      "salary": "CAD $163,000–$200,000 (base range; currency inferred)",
+      "gap": "Technical: Windows Server/Hyper-V/VMware/Active Directory administration, backups, PowerShell with Ansible/Terraform — traditional systems administration; Marc's Windows/AD work is old and his last nine years are Linux/Azure delivery. Practical: Target on pay if truly Ontario-remote (confirm). Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4460377264/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Software Engineer, Developer Experience",
+      "company": "Thumbtack",
+      "location": "Remote — Victoria, BC listing",
+      "salary": "USD/CAD not stated: $180,200–$233,200",
+      "gap": "Technical: builds AI-native developer workflows, cloud dev environments and an internal platform as a software engineer (6+ years); Marc's platform delivery fits the theme but not the product-engineering depth. Practical: Confirm — currency, Ontario hiring and pay basis unstated. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4423064405/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Software Engineer - Cloud Images",
+      "company": "Canonical",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Technical: Jenkins/Python build and image-publication pipelines for Ubuntu on public clouds, but the job is Ubuntu feature development and cloud-partner engagement; Python-on-Linux software depth and cloud-image internals are gaps. Practical: Confirm — pay not stated; long hiring process, frequent travel. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4433373551/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "SRE",
+      "title": "Data Reliability Engineer",
+      "company": "Rockland Tech Hub",
+      "location": "Remote — Greater Vancouver label; Canada-wide eligibility unconfirmed",
+      "salary": "Not stated",
+      "gap": "Technical: data-pipeline/warehouse reliability, RCA and on-call at a small IT-staffing/software firm; Marc's data-platform reliability evidence is thin (Databricks/Oracle delivery, not data-system operations). Practical: Confirm — employer, client, pay and eligibility unclear. Resume: SRE.",
+      "url": "https://www.linkedin.com/jobs/view/4476020449/",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "Senior Cloud Infrastructure Engineer",
+      "company": "Jobgether (partner company)",
+      "location": "Remote — Canada",
+      "salary": "Pay shown $102,600–$135,000 (currency not labelled)",
+      "gap": "Technical: production AWS (ECS/EKS/IAM/Security Hub), Kubernetes operation and Kyverno policy, Keycloak, Go/Python and container-image hardening — core ownership gaps in AWS and Kubernetes; Marc is a Kubernetes user and AWS is dated. Practical: Compromise — pay below ideal; partner company unnamed. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4477290791/",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Compute Platform SRE Lead",
+      "company": "EPAM Systems",
+      "location": "Remote — Canada",
+      "salary": "CAD $150,000–$165,000",
+      "gap": "Technical: 7+ years AWS and GCP, 24x7 KTLO monitoring across GCP/AWS/Azure, US/UK/AU-hours overlap and on-call; GCP is zero and AWS shallow. Practical: Compromise — shift work and managed-services engagement. Resume: SRE.",
+      "url": "https://www.linkedin.com/jobs/view/4477246340/",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "DevOps & Cloud Systems - Fullstack Developer",
+      "company": "Jobgether (partner company)",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Technical: roughly half software development (Python/TypeScript/Go, React, many databases) plus AWS ECS/EKS/Lambda; Marc lacks the full-stack application scope and AWS production depth. Practical: Confirm — pay unstated. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4477293067/",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Spécialiste en environnement de développement",
+      "company": "Exposant 3",
+      "location": "Remote — Québec label; residency not stated",
+      "salary": "Not stated",
+      "gap": "Technical: consulting-mandate analyst/architect role (8 years analyst/software architect, person-day project sizes of 1,000–4,000+) — not delivery engineering. Freshness unconfirmed: the LinkedIn ID is older than the two-day window. Practical: Confirm — Québec residency may be implied. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4397561053/",
+      "status": "Freshness unconfirmed — older listing in the two-day result set"
+    },
+    {
+      "score": 2,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer, Data Infrastructure",
+      "company": "Chainlink Labs",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Technical: production Kafka/Redpanda and Flink at scale, Terraform and Kubernetes operations, 99.9% availability ownership — operating-scale gap. Practical: Confirm — pay not stated. Resume: SRE.",
+      "url": "https://www.linkedin.com/jobs/view/4478509536/",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "Senior Platform Engineer (GenAI/GPU)",
+      "company": "Quantiphi",
+      "location": "Remote — US East/Canada, Toronto listing",
+      "salary": "Not stated",
+      "gap": "Technical: Slurm, multi-GPU CUDA/NCCL tuning and LLM infrastructure at 8+ years — no matching evidence. Practical: Confirm — pay unstated. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4410395795/",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "AWS Solutions Architect",
+      "company": "Avahi",
+      "location": "Remote — Toronto listing",
+      "salary": "Not stated",
+      "gap": "Technical: AWS solution scoping and architecture is the deliverable (hard AWS gate). Practical: Confirm. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4406150583/",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "Principal Architect",
+      "company": "Caylent",
+      "location": "Remote — Canada",
+      "salary": "USD/CAD not stated: $180,000–$202,000",
+      "gap": "Technical: 10+ years AWS cloud architecture and consulting leadership (hard AWS/architect gate; profile says not to lead with Architect scope). Practical: Confirm. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4450388146/",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "Senior Cloud Network Architect",
+      "company": "WSP in Canada",
+      "location": "Hybrid — Montréal; days not stated",
+      "salary": "CAD $135,200–$179,100 (top band)",
+      "gap": "Technical: 8–10+ years Azure network architecture with BGP/OSPF/SD-WAN expertise — no matching evidence. Practical: Confirm cadence. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4438436238/",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Platform Engineer",
+      "company": "Jobgether (partner company)",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Technical: AWS-focused platform role for an email-infrastructure company; the LinkedIn text contains no duties list or requirements, so only a partial assessment is possible — AWS focus is a likely gap. Practical: Confirm — partner and pay unnamed. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4477271949/",
+      "status": "Freshness unconfirmed — requirements not accessible"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Azure Integration Developer / Azure Cloud Engineer (35266)",
+      "company": "Myticas Consulting",
+      "location": "Remote — Ottawa listing",
+      "salary": "Not stated",
+      "gap": "Out of scope: Azure Functions/Logic Apps/Data Factory integration development; not platform delivery",
+      "url": "https://www.linkedin.com/jobs/view/4477221649/",
+      "status": "Skipped — Out of scope: Azure Functions/Logic Apps/Data Factory integration developm"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Software Engineer - Infrastructure",
+      "company": "Confluent, an IBM Company",
+      "location": "Remote — Toronto listing",
+      "salary": "CAD $144,200–$169,400",
+      "gap": "Out of scope: Kora storage-engine development in Java/Scala/Go",
+      "url": "https://www.linkedin.com/jobs/view/4423077503/",
+      "status": "Skipped — Out of scope: Kora storage-engine development in Java/Scala/Go"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Software Engineer - Infrastructure",
+      "company": "Confluent, an IBM Company",
+      "location": "Remote — British Columbia listing",
+      "salary": "CAD $144,200–$169,400",
+      "gap": "Out of scope: Kora storage-engine development in Java/Scala/Go",
+      "url": "https://www.linkedin.com/jobs/view/4423082347/",
+      "status": "Skipped — Out of scope: Kora storage-engine development in Java/Scala/Go"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Staff Software Engineer - Data Platform",
+      "company": "Pantheon",
+      "location": "Remote — Canada",
+      "salary": "CAD $135,800–$169,700",
+      "gap": "Out of scope: staff data-platform software engineering on Snowflake/GCP/Airflow",
+      "url": "https://www.linkedin.com/jobs/view/4449246271/",
+      "status": "Skipped — Out of scope: staff data-platform software engineering on Snowflake/GCP/Ai"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Principal Software Developer - Databases",
+      "company": "Autodesk",
+      "location": "Remote — New Brunswick listing",
+      "salary": "$131,000–$191,400 (currency not labelled)",
+      "gap": "Out of scope: database-engine and fleet software development",
+      "url": "https://www.linkedin.com/jobs/view/4469687431/",
+      "status": "Skipped — Out of scope: database-engine and fleet software development"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Backend Engineer",
+      "company": "Midnite",
+      "location": "Remote — Canada",
+      "salary": "$170,000–$220,000 (currency not labelled)",
+      "gap": "Out of scope: backend application development",
+      "url": "https://www.linkedin.com/jobs/view/4450347531/",
+      "status": "Skipped — Out of scope: backend application development"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior AI Platform Developer",
+      "company": "Petal",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Out of scope: AI product development at 10+ years",
+      "url": "https://www.linkedin.com/jobs/view/4467558545/",
+      "status": "Skipped — Out of scope: AI product development at 10+ years"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Infrastructure & Product Security Engineer",
+      "company": "Takumi Security",
+      "location": "Remote — Canada",
+      "salary": "USD $170,000–$290,000",
+      "gap": "Out of scope: product security engineering",
+      "url": "https://www.linkedin.com/jobs/view/4477280152/",
+      "status": "Skipped — Out of scope: product security engineering"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Data Implementation Engineer",
+      "company": "ODAIA",
+      "location": "Remote — Toronto listing",
+      "salary": "Not stated",
+      "gap": "Out of scope: customer data implementation, not infrastructure",
+      "url": "https://www.linkedin.com/jobs/view/4477285682/",
+      "status": "Skipped — Out of scope: customer data implementation, not infrastructure"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Data Implementation Engineer",
+      "company": "ODAIA",
+      "location": "Remote — Toronto listing",
+      "salary": "CAD $115,000–$130,000",
+      "gap": "Out of scope: customer data implementation, not infrastructure",
+      "url": "https://www.linkedin.com/jobs/view/4477284739/",
+      "status": "Skipped — Out of scope: customer data implementation, not infrastructure"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Channel Solutions Engineer",
+      "company": "TrendAI",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Out of scope: pre-sales solutions engineering",
+      "url": "https://www.linkedin.com/jobs/view/4383485843/",
+      "status": "Skipped — Out of scope: pre-sales solutions engineering"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Solutions Engineer",
+      "company": "TrendAI",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Out of scope: pre-sales solutions engineering",
+      "url": "https://www.linkedin.com/jobs/view/4383498349/",
+      "status": "Skipped — Out of scope: pre-sales solutions engineering"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Solutions Engineer - Commercial (New Business)",
+      "company": "Tailscale",
+      "location": "Remote — Canada",
+      "salary": "CAD $201,000–$268,000",
+      "gap": "Out of scope: pre-sales solutions engineering",
+      "url": "https://www.linkedin.com/jobs/view/4449204639/",
+      "status": "Skipped — Out of scope: pre-sales solutions engineering"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Principal Engineer — DevX & AI",
+      "company": "Xsolla",
+      "location": "Remote — Montréal listing",
+      "salary": "$150,000–$195,000 (currency not labelled)",
+      "gap": "Out of scope: public-API/SDK architecture for a storefront platform at 10+ years",
+      "url": "https://www.linkedin.com/jobs/view/4411548564/",
+      "status": "Skipped — Out of scope: public-API/SDK architecture for a storefront platform at 10+"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Software Developer, API Platform and Ecosystem",
+      "company": "MaintainX",
+      "location": "Remote — Montréal listing",
+      "salary": "CAD $107,000–$195,000",
+      "gap": "Out of scope: public REST API application development",
+      "url": "https://www.linkedin.com/jobs/view/4459441166/",
+      "status": "Skipped — Out of scope: public REST API application development"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Backend Engineer, Deployment Environments",
+      "company": "GitLab",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Out of scope: backend feature development in Ruby/Go",
+      "url": "https://www.linkedin.com/jobs/view/4460385625/",
+      "status": "Skipped — Out of scope: backend feature development in Ruby/Go"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Full Stack Developer, Data Integrations",
+      "company": "Solink",
+      "location": "Hybrid — Ottawa",
+      "salary": "CAD $115,800–$145,000",
+      "gap": "Out of scope: full-stack application development",
+      "url": "https://www.linkedin.com/jobs/view/4414247214/",
+      "status": "Skipped — Out of scope: full-stack application development"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Software Engineer - Magnet One",
+      "company": "Magnet Forensics",
+      "location": "Remote — Ottawa listing",
+      "salary": "$90,000–$140,000 (currency not labelled)",
+      "gap": "Out of scope: application software engineering",
+      "url": "https://www.linkedin.com/jobs/view/4441629992/",
+      "status": "Skipped — Out of scope: application software engineering"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Développeur Full Stack – Senior",
+      "company": "Insse inc.",
+      "location": "Hybrid — Montréal",
+      "salary": "Not stated",
+      "gap": "Out of scope: full-stack application development",
+      "url": "https://www.linkedin.com/jobs/view/4477258950/",
+      "status": "Skipped — Out of scope: full-stack application development"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Integration Engineer (Forward Deployed)",
+      "company": "ANVIL",
+      "location": "Hybrid — Ottawa",
+      "salary": "$125,000–$165,000 (currency not labelled)",
+      "gap": "Out of scope: defence data-integration engineering; Top Secret clearance",
+      "url": "https://www.linkedin.com/jobs/view/4450739865/",
+      "status": "Skipped — Out of scope: defence data-integration engineering"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Cloud Platform - Senior Engineer Storage",
+      "company": "Aptiv (Wind River)",
+      "location": "Hybrid — Ottawa",
+      "salary": "CAD $110,000–$120,000",
+      "gap": "Out of scope: Ceph/StarlingX distributed-storage software development",
+      "url": "https://www.linkedin.com/jobs/view/4434256783/",
+      "status": "Skipped — Out of scope: Ceph/StarlingX distributed-storage software development"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Cloud Networking Senior Engineer",
+      "company": "Aptiv (Wind River)",
+      "location": "Ottawa (workplace label not shown)",
+      "salary": "CAD $95,000–$120,000",
+      "gap": "Out of scope: Kubernetes CNI/SR-IOV networking software development",
+      "url": "https://www.linkedin.com/jobs/view/4434072752/",
+      "status": "Skipped — Out of scope: Kubernetes CNI/SR-IOV networking software development"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Cloud Engineer - Fully Remote | Upto $85/hr",
+      "company": "Mercor",
+      "location": "Remote — Toronto listing",
+      "salary": "$85/hour headline, but $400 per accepted task (currency not labelled)",
+      "gap": "Out of scope: AI-output evaluation gig paid per accepted task, not a delivery role; possible bridge-income option only if hours and fees are confirmed",
+      "url": "https://www.linkedin.com/jobs/view/4477285306/",
+      "status": "Skipped — Out of scope: AI-output evaluation gig paid per accepted task, not a deliv"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior PHP/Laravel Developer with Infrastructure & DevOps Experience",
+      "company": "Jobgether (partner company)",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Out of scope: 70% PHP/Laravel application development",
+      "url": "https://www.linkedin.com/jobs/view/4477508631/",
+      "status": "Skipped — Out of scope: 70% PHP/Laravel application development"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Sr. Software Engineer - Platform",
+      "company": "ClearGov",
+      "location": "Remote — Calgary listing",
+      "salary": "Not stated",
+      "gap": "Out of scope: full-stack Angular/Java product development",
+      "url": "https://www.linkedin.com/jobs/view/4459856100/",
+      "status": "Skipped — Out of scope: full-stack Angular/Java product development"
+    },
+    {
+      "score": 0,
+      "family": "SRE",
+      "title": "Ignition Lead support Engineer - Remote",
+      "company": "Cognizant",
+      "location": "Remote — Mississauga listing",
+      "salary": "Not stated",
+      "gap": "Out of scope: industrial IIoT/SCADA application support",
+      "url": "https://www.linkedin.com/jobs/view/4468024155/",
+      "status": "Skipped — Out of scope: industrial IIoT/SCADA application support"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Software Engineer (AI Infrastructure)",
+      "company": "Alignerr",
+      "location": "Remote — Toronto listing",
+      "salary": "Not stated",
+      "gap": "Out of scope: AI-training software contract work",
+      "url": "https://www.linkedin.com/jobs/view/4474573051/",
+      "status": "Skipped — Out of scope: AI-training software contract work"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Software Engineer, Data Infrastructure",
+      "company": "Cohere",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Out of scope: petabyte-scale distributed storage engineering",
+      "url": "https://www.linkedin.com/jobs/view/4414780148/",
+      "status": "Skipped — Out of scope: petabyte-scale distributed storage engineering"
+    },
+    {
+      "score": 0,
+      "family": "SRE",
+      "title": "Administrateur(trice) systèmes I",
+      "company": "Hydro-Québec",
+      "location": "Hybrid — Montréal; 5-day schedule",
+      "salary": "Not stated",
+      "gap": "Out of scope: junior systems administration, temporary assignment",
+      "url": "https://www.linkedin.com/jobs/view/4477283962/",
+      "status": "Skipped — Out of scope: junior systems administration, temporary assignment"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "AI Engineer",
+      "company": "LGS, an IBM Company",
+      "location": "On-site — Montréal",
+      "salary": "Not stated",
+      "gap": "Out of scope: AI engineering; on-site",
+      "url": "https://www.linkedin.com/jobs/view/4404462193/",
+      "status": "Skipped — Out of scope: AI engineering"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Member of Technical Staff (General Software Engineer, Infrastructure)",
+      "company": "Perplexity",
+      "location": "Hybrid — Toronto",
+      "salary": "Not stated",
+      "gap": "Out of scope: distributed-systems software engineering; Toronto hybrid",
+      "url": "https://www.linkedin.com/jobs/view/4467899622/",
+      "status": "Skipped — Out of scope: distributed-systems software engineering"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Azure Cloud Engineer, Deloitte Global Technology",
+      "company": "Deloitte",
+      "location": "Hybrid — Toronto",
+      "salary": "Not stated",
+      "gap": "Hard gate: Toronto hybrid, outside the reachable cities; remote not offered",
+      "url": "https://www.linkedin.com/jobs/view/4460505268/",
+      "status": "Skipped — Ineligible: Toronto hybrid, outside the reachable cities"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Security & AI DevSecOps Expert (Hybrid)",
+      "company": "Ateko, backed by Bell",
+      "location": "Hybrid — Toronto",
+      "salary": "Not stated",
+      "gap": "Hard gate: Toronto hybrid, outside the reachable cities",
+      "url": "https://www.linkedin.com/jobs/view/4466866511/",
+      "status": "Skipped — Ineligible: Toronto hybrid, outside the reachable cities"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Cloud Security Lead, Deloitte Global Technology",
+      "company": "Deloitte",
+      "location": "Hybrid — Toronto",
+      "salary": "Not stated",
+      "gap": "Hard gate: Toronto hybrid, outside the reachable cities",
+      "url": "https://www.linkedin.com/jobs/view/4460500286/",
+      "status": "Skipped — Ineligible: Toronto hybrid, outside the reachable cities"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "SimCorp",
+      "location": "Hybrid — Toronto",
+      "salary": "Not stated",
+      "gap": "Hard gate: Toronto hybrid, outside the reachable cities (Azure SaaS SRE — real fit on skill alone)",
+      "url": "https://www.linkedin.com/jobs/view/4478075717/",
+      "status": "Skipped — Ineligible: Toronto hybrid, outside the reachable cities (Azure SaaS SRE"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "SimCorp",
+      "location": "Hybrid — Toronto",
+      "salary": "Not stated",
+      "gap": "Hard gate: Toronto hybrid, outside the reachable cities (second SimCorp requisition)",
+      "url": "https://www.linkedin.com/jobs/view/4478079694/",
+      "status": "Skipped — Ineligible: Toronto hybrid, outside the reachable cities (second SimCorp"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Specialist - Kubernetes (35700)",
+      "company": "Myticas Consulting",
+      "location": "On-site — Ottawa",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site; existing Skipped pipeline row",
+      "url": "https://www.linkedin.com/jobs/view/4477219796/",
+      "status": "Skipped — Ineligible: fully on-site"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior Specialist, Systems Administration",
+      "company": "L3Harris Technologies",
+      "location": "On-site — Ottawa",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site",
+      "url": "https://www.linkedin.com/jobs/view/4469520667/",
+      "status": "Skipped — Ineligible: fully on-site"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Sr. Delivery Consultant - Application Modernization",
+      "company": "Amazon Web Services",
+      "location": "On-site — Ottawa",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site; AWS delivery consulting",
+      "url": "https://www.linkedin.com/jobs/view/4460147325/",
+      "status": "Skipped — Ineligible: fully on-site"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Level 2/3 Network Administrator & Project Lead",
+      "company": "Myticas Consulting",
+      "location": "On-site — Ottawa",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site; network administration",
+      "url": "https://www.linkedin.com/jobs/view/4477218920/",
+      "status": "Skipped — Ineligible: fully on-site"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Bilingual Senior AWS Platform Engineer",
+      "company": "KPMG Canada",
+      "location": "On-site — Boisbriand, QC",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site north of Montréal; AWS-centred",
+      "url": "https://www.linkedin.com/jobs/view/4450690215/",
+      "status": "Skipped — Ineligible: fully on-site north of Montréal"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Administrateur.rice Systèmes et Applications",
+      "company": "Ubisoft",
+      "location": "On-site — Montréal",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site",
+      "url": "https://www.linkedin.com/jobs/view/4475699501/",
+      "status": "Skipped — Ineligible: fully on-site"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Spécialiste infrastructure, Systèmes d'information",
+      "company": "ADM Aéroports de Montréal",
+      "location": "On-site — Montréal",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site",
+      "url": "https://www.linkedin.com/jobs/view/4433362256/",
+      "status": "Skipped — Ineligible: fully on-site"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Production / Application Support Engineer",
+      "company": "Tata Consultancy Services",
+      "location": "On-site — Montréal",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site",
+      "url": "https://www.linkedin.com/jobs/view/4477286918/",
+      "status": "Skipped — Ineligible: fully on-site"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Network and Infra Integrator",
+      "company": "Tata Consultancy Services",
+      "location": "On-site — Montréal",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site",
+      "url": "https://www.linkedin.com/jobs/view/4477254908/",
+      "status": "Skipped — Ineligible: fully on-site"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior Network Engineer - Data Center & Cloud",
+      "company": "Tata Consultancy Services",
+      "location": "On-site — Montréal",
+      "salary": "Not stated",
+      "gap": "Hard gate: fully on-site",
+      "url": "https://www.linkedin.com/jobs/view/4477505111/",
+      "status": "Skipped — Ineligible: fully on-site"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior DevOps/MLOps",
+      "company": "Global Relay",
+      "location": "Hybrid — Vancouver",
+      "salary": "Not stated",
+      "gap": "Hard gate: Vancouver hybrid, outside the reachable cities",
+      "url": "https://www.linkedin.com/jobs/view/4469257142/",
+      "status": "Skipped — Ineligible: Vancouver hybrid, outside the reachable cities"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Senior DevOps / Blockchain Infrastructure Engineer - Operate",
+      "company": "Deloitte",
+      "location": "Hybrid — Toronto",
+      "salary": "Not stated",
+      "gap": "Hard gate: Toronto hybrid, outside the reachable cities",
+      "url": "https://www.linkedin.com/jobs/view/4460518019/",
+      "status": "Skipped — Ineligible: Toronto hybrid, outside the reachable cities"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "GitOps Administrator / DevOps Engineer (Azure)",
+      "company": "Yochana",
+      "location": "Hybrid — Calgary",
+      "salary": "Not stated",
+      "gap": "Hard gate: Calgary hybrid, outside the reachable cities",
+      "url": "https://www.linkedin.com/jobs/view/4477585338/",
+      "status": "Skipped — Ineligible: Calgary hybrid, outside the reachable cities"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps/Cloud Engineer",
+      "company": "impact.com",
+      "location": "On-site — Victoria",
+      "salary": "Not stated",
+      "gap": "Hard gate: Victoria on-site; GCP/Jenkins/Gradle",
+      "url": "https://www.linkedin.com/jobs/view/4465564009/",
+      "status": "Skipped — Ineligible: Victoria on-site"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior System Development Engineer",
+      "company": "Motorola Solutions",
+      "location": "Hybrid — Greater Vancouver",
+      "salary": "Not stated",
+      "gap": "Hard gate: Vancouver hybrid, outside the reachable cities",
+      "url": "https://www.linkedin.com/jobs/view/4441663114/",
+      "status": "Skipped — Ineligible: Vancouver hybrid, outside the reachable cities"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Cloud, Automation & AI Engineer - Senior Consultant",
+      "company": "Deloitte",
+      "location": "Toronto (workplace label not shown)",
+      "salary": "Not stated",
+      "gap": "Hard gate: Toronto-based consulting role, no remote option stated",
+      "url": "https://www.linkedin.com/jobs/view/4469283710/",
+      "status": "Skipped — Ineligible: Toronto-based consulting role, no remote option stated"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Lead Platform Engineer",
+      "company": "Thomson Reuters",
+      "location": "Hybrid — Toronto",
+      "salary": "Not stated",
+      "gap": "Hard gate: Toronto hybrid, outside the reachable cities",
+      "url": "https://www.linkedin.com/jobs/view/4450518845/",
+      "status": "Skipped — Ineligible: Toronto hybrid, outside the reachable cities"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer – Adobe Cloud & Edge Delivery",
+      "company": "N2P Systems",
+      "location": "Hybrid — Toronto",
+      "salary": "Not stated",
+      "gap": "Hard gate: Toronto hybrid, outside the reachable cities",
+      "url": "https://www.linkedin.com/jobs/view/4477236739/",
+      "status": "Skipped — Ineligible: Toronto hybrid, outside the reachable cities"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior Full Stack Developer – Cloud & Platform Engineering",
+      "company": "Yochana",
+      "location": "Hybrid — Calgary",
+      "salary": "Not stated",
+      "gap": "Hard gate: Calgary hybrid, outside the reachable cities",
+      "url": "https://www.linkedin.com/jobs/view/4477576854/",
+      "status": "Skipped — Ineligible: Calgary hybrid, outside the reachable cities"
+    },
     {
       "score": 7,
       "family": "Platform",
@@ -2725,5 +3696,5 @@
       "status": "Ineligible — GTA on-site"
     }
   ],
-  "method": "Oct 9 (complete, 67 of 67 passes): October 8 past-24-hour run (authenticated, strictly read-only): 67 of 67 mandatory passes completed with f_TPR=r86400; 280 unique postings collected, all descriptions fetched, 77 workplace labels read and ~50 postings read in detail. Per-pass result cap of 30 (3 pages) was reached on 51 passes. Authenticated, strictly read-only LinkedIn search on September 24, 2026. Seven of 45 mandatory passes completed with reconciled rendered counts and LinkedIn IDs; several additional phrase pages were reached but could not be audited after repeated browser-control resets, so the overall run is incomplete. Completed passes used Canada, Remote, and f_TPR=r172800 and reviewed the visible first-page results (7 per pass, 35 unique IDs after deduplication). Two current full descriptions were validated: Blackpoint Cyber on LinkedIn and Autodesk on its employer site. Both matched existing applications.md company/title decisions and were not re-filed. SecurityScorecard remained unvalidated. No new posting cleared every automatic-filing gate. Historical rows and prior pipeline decisions remain preserved below."
+  "method": "Oct 12 (complete, 84 of 84 queries): past-48-hour run via authenticated, strictly read-only requests. Oct 9 (complete, 67 of 67 passes): October 8 past-24-hour run (authenticated, strictly read-only): 67 of 67 mandatory passes completed with f_TPR=r86400; 280 unique postings collected, all descriptions fetched, 77 workplace labels read and ~50 postings read in detail. Per-pass result cap of 30 (3 pages) was reached on 51 passes. Authenticated, strictly read-only LinkedIn search on September 24, 2026. Seven of 45 mandatory passes completed with reconciled rendered counts and LinkedIn IDs; several additional phrase pages were reached but could not be audited after repeated browser-control resets, so the overall run is incomplete. Completed passes used Canada, Remote, and f_TPR=r172800 and reviewed the visible first-page results (7 per pass, 35 unique IDs after deduplication). Two current full descriptions were validated: Blackpoint Cyber on LinkedIn and Autodesk on its employer site. Both matched existing applications.md company/title decisions and were not re-filed. SecurityScorecard remained unvalidated. No new posting cleared every automatic-filing gate. Historical rows and prior pipeline decisions remain preserved below."
 }
