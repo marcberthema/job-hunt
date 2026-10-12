@@ -1,26 +1,22 @@
 {
   "board": "S.i. Systems",
-  "run_date": "2026-10-09",
+  "run_date": "2026-10-12",
   "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 9, 2026 — all 8 mandatory queries rerun (no WAF/CAPTCHA); 43 unique postings, nothing new qualifies — the only DevOps/SRE/Platform roles are Toronto-area hybrid contracts or already in the ledger.",
+  "latest_update": "October 12, 2026 — all 8 default queries completed in a real browser (no challenge); 43 unique requisitions, 38 already in the report; 5 new requisitions read in full — none eligible (Oshawa 2 days on-site, Toronto hybrid or no remote stated, one executive role). 0 auto-filed.",
   "stats": [
     {
       "value": "8 of 8",
-      "label": "queries complete"
+      "label": "queries attempted and completed"
     },
     {
       "value": 43,
-      "label": "unique postings collected"
+      "label": "unique requisitions seen"
     },
     {
-      "value": 18,
-      "label": "read in full (all plausible DevOps/SRE/Platform/Cloud titles)"
-    },
-    {
-      "value": 2,
-      "label": "rows added this run"
+      "value": 5,
+      "label": "new this run (all excluded)"
     },
     {
       "value": 0,
@@ -28,6 +24,21 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 12 query audit",
+      "items": [
+        "<b>DevOps Engineer</b> · expertise=3 · rendered q value verified · displayed 21 results · reviewed 20 cards · Complete",
+        "<b>Senior DevOps Engineer</b> · expertise=3 · rendered q value verified · displayed 36 results · reviewed 20 cards · Complete",
+        "<b>Site Reliability Engineer</b> · expertise=3 · rendered q value verified · displayed 29 results · reviewed 20 cards · Complete",
+        "<b>Platform Engineer</b> · expertise=3 · rendered q value verified · displayed 26 results · reviewed 20 cards · Complete",
+        "<b>Cloud Engineer</b> · expertise=3 · rendered q value verified · displayed 33 results · reviewed 20 cards · Complete",
+        "<b>DevSecOps Engineer</b> · expertise=3 · rendered q value verified · displayed 17 results · reviewed 17 cards · Complete",
+        "<b>Infrastructure Engineer</b> · expertise=3 · rendered q value verified · displayed 53 results · reviewed 20 cards · Complete",
+        "<b>Senior Infrastructure Engineer</b> · expertise=3 · rendered q value verified · displayed 0 results · reviewed 0 cards · Zero results (No Results)",
+        "S.i. Systems shows posting dates only on some requisitions; the 38 requisitions already in the report keep their earlier status. New ones carry start dates and open vacancy notices.",
+        "The five new requisitions: Azure & Databricks DevOps (Oshawa), Kubernetes Engineer (energy, Toronto), Systems Engineer (Azure/M365, Toronto hybrid), Systems Administrator (Windows, Toronto) and Cloud Leader."
+      ]
+    },
     {
       "heading": "October 9 query audit (real browser, expertise=3, no challenge or WAF page)",
       "items": [
@@ -86,8 +97,63 @@
       ]
     }
   ],
-  "method": "October 7, 2026: 12 of 12 queries completed in a real browser with no challenge; 46 unique postings, all fetched in full; no eligible new role cleared the filing bar. Eight independent searches were executed with expertise=3 in a rendered browser. Each query reached a real listing state and the first eight results were captured before deduplication. The soft keyword filter repeatedly returned the same small Networks and Infrastructure inventory as the September 21 run — same counts, same recurring requisition set. Current descriptions and applications.md statuses were reconciled; 12 previously validated rows remain, with no new eligible role and no inaccessible posting.",
+  "method": "Oct 12 (complete, 8 of 8 queries). October 7, 2026: 12 of 12 queries completed in a real browser with no challenge; 46 unique postings, all fetched in full; no eligible new role cleared the filing bar. Eight independent searches were executed with expertise=3 in a rendered browser. Each query reached a real listing state and the first eight results were captured before deduplication. The soft keyword filter repeatedly returned the same small Networks and Infrastructure inventory as the September 21 run — same counts, same recurring requisition set. Current descriptions and applications.md statuses were reconciled; 12 previously validated rows remain, with no new eligible role and no inaccessible posting.",
   "rows": [
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Technical Specialist (Azure & Databricks DevOps Engineer) - ID 26-086",
+      "company": "S.i. Systems client",
+      "location": "Hybrid — Oshawa, ON, 2 days/week on-site; 12-month contract (Nov 23, 2026 – Nov 23, 2027), 35 h/week",
+      "salary": "Hourly: negotiable",
+      "gap": "Hard gate: Oshawa is outside the reachable cities and the role is on-site 2 days a week with no remote option. Technical would otherwise be about 6 — Azure, Terraform use, Azure DevOps/GitHub Actions CI/CD and Databricks deployment automation match Énergir/Databricks delivery, but Unity Catalog and workspace administration are untested. Resume: Platform.",
+      "url": "https://www.sisystems.com/jobs/technical-specialist-azure-databricks-devops-engineer-id-26-086/330032003600310030003100/",
+      "status": "Skipped — Ineligible: Oshawa 2 days on-site"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Kubernetes Engineer - cloud-native infrastructure (energy sector client) - Job ID 25-183",
+      "company": "S.i. Systems client (energy)",
+      "location": "Toronto; remote option not stated; contract to May 31, 2027",
+      "salary": "Hourly: up to $93.00",
+      "gap": "Hard gate: Toronto with no remote or hybrid arrangement stated. Technical would be about 3 — Kubernetes design, service mesh (Istio/Envoy), software-defined networking, Pulumi/Terraform module building and .NET/Node/Java programming are core ownership gaps. Resume: Platform.",
+      "url": "https://www.sisystems.com/jobs/kubernetes-engineer-design-and-implement-cloud-native-infrastructure-using-kubernetes-and-container-orchestration-platforms-for-our-energy-sector-client-job-id-25-183/330032003000300039003200/",
+      "status": "Skipped — Ineligible: Toronto, no remote stated"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Systems Engineer to lead infrastructure modernization (Azure, Microsoft 365, hybrid cloud)",
+      "company": "S.i. Systems client (financial services)",
+      "location": "Hybrid — Toronto; 3-month contract (to Oct 23, 2026)",
+      "salary": "Hourly: negotiable",
+      "gap": "Hard gate: Toronto hybrid outside the reachable cities, short engagement. Technical about 3: 10+ years Windows/M365/Entra/VMware administration — not Marc's recent evidence. Resume: Platform.",
+      "url": "https://www.sisystems.com/jobs/systems-engineer-to-lead-infrastructure-modernization-using-microsoft-azure-microsoft-365-and-hybrid-cloud-environments/330032003400320033003200/",
+      "status": "Skipped — Ineligible: Toronto hybrid"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Systems Administrator — Windows infrastructure, PowerShell, Terraform, Ansible, SCCM, AWS",
+      "company": "S.i. Systems client (financial services)",
+      "location": "Toronto; permanent; remote not stated",
+      "salary": "CAD $105,000–$135,000",
+      "gap": "Hard gate: Toronto permanent role with no remote arrangement stated. Technical about 3: Windows/SCCM/Active Directory administration is the core. Resume: Platform.",
+      "url": "https://www.sisystems.com/jobs/systems-administrator-to-implement-and-maintain-windows-based-infrastructure-using-powershell-terraform-ansible-sccm-and-aws/330032003700380036003700/",
+      "status": "Skipped — Ineligible: Toronto, no remote stated"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Cloud Leader — executive leadership of a managed-services portfolio",
+      "company": "S.i. Systems client",
+      "location": "Not stated",
+      "salary": "Not stated",
+      "gap": "Out of scope: executive portfolio and P&L leadership, not hands-on delivery.",
+      "url": "https://www.sisystems.com/jobs/cloud-leader-to-provide-executive-leadership-for-the-organization-s-managed-services-portfolio-owning-vision-strategy-delivery-and-overall-performance/330032003200300034003300/",
+      "status": "Skipped — Out of scope: executive leadership"
+    },
     {
       "score": -1,
       "family": "Platform",

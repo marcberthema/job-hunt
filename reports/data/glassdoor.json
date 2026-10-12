@@ -1,33 +1,91 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-10-10",
+  "run_date": "2026-10-12",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "Latest update: October 10, 2026 — Marc asked for the last 72 hours only. All six queries ran with Glassdoor's “Last 3 days” filter; 26 postings read in full and scored, 1 auto-filed (MDA Space, score 5). Not every query rendered its full result set (see audit), so this is not a claim of full coverage.",
+  "latest_update": "October 12, 2026 — all 6 Glassdoor queries ran with the Last 3 days filter; 4 completed or zero (DevOps, SRE, DevSecOps, Forward Deployed) and 2 only partly rendered (Platform 30 of 47, Cloud 21 of 30). The only infrastructure postings were an Actalent AWS migration contract needing Secret clearance, a Montréal Kubernetes contract at $55–60/hour and Toronto roles. 0 auto-filed.",
   "stats": [
     {
-      "value": 6,
-      "label": "keyword searches attempted"
+      "value": "6 attempted / 4 fully rendered",
+      "label": "queries"
     },
     {
-      "value": 6,
-      "label": "keyword searches executed (last-3-days filter)"
+      "value": 7,
+      "label": "scored rows this run"
     },
     {
-      "value": "≈240",
-      "label": "result cards collected across queries"
-    },
-    {
-      "value": 26,
-      "label": "postings read in full and scored today"
-    },
-    {
-      "value": 1,
-      "label": "auto-filed today (MDA Space, score 5)"
+      "value": 0,
+      "label": "auto-filed this run"
     }
   ],
   "rows": [
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "DevOps Engineer — AWS cloud migration (four Actalent copies: Ottawa, Calgary, Montreal, Saskatoon)",
+      "company": "Actalent",
+      "location": "Hybrid — Ottawa, 12 on-site days a month; one-year contract",
+      "salary": "CAD $55–$65/hour",
+      "gap": "Hard gate: Secret security clearance required, plus pay below the CAD $80/hour long-contract floor and senior AWS migration expertise as the deliverable (Marc's AWS is the dated by-hand Tink build). Same requisition listed for Ottawa (1010292299142), Saskatoon (…186), Calgary (…175) and Montreal (…179). Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010292299142",
+      "status": "Skipped — Ineligible: Secret clearance required"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Site Reliability Engineer – CDN, Edge & Web Performance",
+      "company": "Talent Grid",
+      "location": "Toronto; workplace not stated",
+      "salary": "CAD $130,000–$160,000",
+      "gap": "Hard gate: Toronto, outside the reachable cities. Appears to be the same Adobe Experience Manager/CDN reliability role as the N2P Systems posting. Resume: SRE.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290961579",
+      "status": "Skipped — Ineligible: Toronto"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Site Reliability Engineer – Adobe Experience Manager",
+      "company": "N2P Systems",
+      "location": "Hybrid — Toronto",
+      "salary": "CAD $120,000",
+      "gap": "Hard gate: Toronto hybrid, outside the reachable cities (same posting scored from LinkedIn 4477236739). Resume: SRE.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010291649973",
+      "status": "Skipped — Ineligible: Toronto hybrid"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Platform Engineering Manager",
+      "company": "WCG Services",
+      "location": "Toronto",
+      "salary": "CAD $120,000–$130,000",
+      "gap": "Hard gate: Toronto, outside the reachable cities; manager scope (people management). Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010106755224",
+      "status": "Skipped — Ineligible: Toronto"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Network & Systems Engineer",
+      "company": "Coextro",
+      "location": "Mississauga",
+      "salary": "CAD $80,000–$100,000",
+      "gap": "Out of scope: network and systems administration in Mississauga; pay below the Ontario FTE floor.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010290945934",
+      "status": "Skipped — Out of scope: network/systems administration"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "BI Platform Operations Engineer",
+      "company": "EPAM Systems",
+      "location": "Toronto",
+      "salary": "CAD $83,000–$120,000",
+      "gap": "Out of scope: business-intelligence platform operations in Toronto.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010292412566",
+      "status": "Skipped — Out of scope: BI platform operations"
+    },
     {
       "score": 5,
       "family": "DevOps",
@@ -626,6 +684,19 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 12 query audit (Last 3 days)",
+      "items": [
+        "<b>DevOps Engineer</b> · Canada scope · Last 3 days chip active · Glassdoor 4 reported · 4 of 4 (9 cards incl. adjacent) · Complete",
+        "<b>Platform Engineer</b> · Canada scope · Last 3 days chip active · Glassdoor 47 reported · 30 loaded · Incomplete - 17 cards not loaded",
+        "<b>Site Reliability Engineer</b> · Canada scope · Last 3 days chip active · Glassdoor 13 reported · 13 loaded · Complete",
+        "<b>Cloud Engineer</b> · Canada scope · Last 3 days chip active · Glassdoor 30 reported · 21 loaded · Incomplete - 9 cards not loaded",
+        "<b>DevSecOps Engineer</b> · Canada scope · Last 3 days chip active · Glassdoor 0 reported · none (filler cards only) · Zero results",
+        "<b>Forward Deployed Engineer</b> · Canada scope · Last 3 days chip active · Glassdoor 0 reported · none (filler cards only) · Zero results",
+        "Glassdoor has no 48-hour option; the cards' own age tags (24h, 2d) were used and anything older was set aside.",
+        "About 40 cards across Platform and Cloud were non-IT or non-DevOps (mechanical/electrical engineering, robotics, building services, sales, data science, product management) and were counted and set aside without opening."
+      ]
+    },
+    {
       "heading": "October 10 last-72-hours pass — partial coverage",
       "items": [
         "<b>Filter:</b> every query used the “Last 3 days” filter (URL parameter <code>fromAge=3</code>, confirmed as the active chip). Cards carry age tags of 24h or 2d.",
@@ -683,5 +754,5 @@
       ]
     }
   ],
-  "method": "Oct 10, 2026 (last-72-hours request): all six mandatory Canada queries were executed independently in a rendered browser with the “Last 3 days” filter, but none rendered its complete reported result count (DevOps 14 of 22, Platform 120 of 228, SRE 40 of 51, Cloud 60 of 115, DevSecOps 4 of 6, FDE 4 of 6). Every in-family or ambiguous card that did render was opened from its own posting page and read in full; non-IT cards were counted and set aside. Platform Engineer and Site Reliability Engineer remain noisy on this site, as in prior runs. Prior rows and statuses below are preserved from the October 6 run. All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
+  "method": "Oct 12 (INCOMPLETE: Platform and Cloud cards only partly rendered). Oct 10, 2026 (last-72-hours request): all six mandatory Canada queries were executed independently in a rendered browser with the “Last 3 days” filter, but none rendered its complete reported result count (DevOps 14 of 22, Platform 120 of 228, SRE 40 of 51, Cloud 60 of 115, DevSecOps 4 of 6, FDE 4 of 6). Every in-family or ambiguous card that did render was opened from its own posting page and read in full; non-IT cards were counted and set aside. Platform Engineer and Site Reliability Engineer remain noisy on this site, as in prior runs. Prior rows and statuses below are preserved from the October 6 run. All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
 }
