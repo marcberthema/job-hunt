@@ -1,68 +1,53 @@
 {
   "board": "RemoteOK",
-  "run_date": "2026-10-09",
+  "run_date": "2026-10-12",
   "eyebrow": "RemoteOK · read-only API search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 9, 2026 — RemoteOK API (HTTP 200, 99 jobs) fully reviewed: nothing in the DevOps/SRE/Platform family is open to Canada. The latest-100 inventory is mostly sales, HR, annotation and software roles.",
+  "latest_update": "Latest update: October 12, 2026 — RemoteOK API returned 99 jobs; the only plausible platform posting requires Germany residence and monthly Berlin attendance. No eligible posting or automatic filing.",
   "stats": [
     {
       "value": "1 of 1",
-      "label": "inventory passes complete (latest-100 API)"
+      "label": "inventory passes complete"
     },
     {
       "value": 99,
-      "label": "job objects reviewed"
+      "label": "API job objects reviewed"
+    },
+    {
+      "value": 1,
+      "label": "plausible target-family postings"
     },
     {
       "value": 0,
-      "label": "eligible target-family postings"
+      "label": "eligible current postings"
     },
     {
-      "value": 5,
-      "label": "rows added this run"
+      "value": 1,
+      "label": "region exclusions"
     },
     {
       "value": 0,
       "label": "auto-filed this run"
+    },
+    {
+      "value": 6,
+      "label": "historical rows retained; not revalidated"
     }
   ],
   "notes_sections": [
     {
-      "heading": "October 9 inventory audit",
+      "heading": "Inventory audit",
       "items": [
-        "Endpoint <code>https://remoteok.com/api</code> → HTTP 200, JSON, 100 objects (1 metadata + 99 jobs), dated 2026-07-30 to 2026-10-07. Per-family match counts: DevOps 0 · Senior DevOps 0 · SRE 0 · Platform 1 (RedMimicry, Germany) · Cloud 0 · DevSecOps 0 · Infrastructure 1 (Arango, Go software) · adjacent 3 (Mirantis, AWeber, KPI Solutions).",
-        "API descriptions are truncated to ~300 characters; canonical pages show only a summary behind the apply wall, so Arango/Mirantis are classified on title and visible summary only.",
-        "Pay was excluded from scoring at Marc's request."
+        "https://remoteok.com/api — HTTP 200 application/json; 99 job objects after metadata; latest-100 boundary contains all 99; 99 reviewed; plausible ID 1137465; Complete.",
+        "Family match counts by title: DevOps 0; SRE 0; Platform 1; Cloud 0; DevSecOps 0; Infrastructure 0. The remaining titles are outside the target family.",
+        "One plausible full description read from API; one location exclusion; zero canonical pages needed after the hard location gate."
       ]
     },
     {
-      "heading": "October 5 full-read pass",
+      "heading": "Historical postings",
       "items": [
-        "Scored every one of the 99 postings’ description text (not the title) for DevOps, SRE, reliability, CI/CD, infrastructure, Kubernetes, Terraform, observability and deployment mentions. The top scorers were Evolve Staff Software Engineer (13; Remote – US only), Delinea Staff SDE SDM (9; Redwood City), a Java developer (8) and a Boston MTS role (7); only KPI Solutions’ Software Deployment Engineer (5) is a deployment role, and it is the warehouse-automation hardware position already recorded as out of scope. No posting mentions Canada eligibility alongside meaningful infrastructure work. The API’s ~100-item window still shows no turnover in target-family postings since 2026-09-19."
-      ]
-    },
-    {
-      "heading": "October 5 run",
-      "items": [
-        "Direct curl of remoteok.com/api returned HTTP 200 with 99 job objects; inventory has not turned over (newest relevant posting dated 2026-09-19). KPI Solutions remains out of scope (warehouse-automation role), Arango remains unvalidated (Premium-gated requirements), Tessera Labs is an Oracle Fusion ERP lead (out of scope). Fourth consecutive run with zero target-family turnover."
-      ]
-    },
-    {
-      "heading": "Could not validate",
-      "items": [
-        "<b>Golang Kubernetes Engineer — Arango</b> (posted September 16, plausible Platform-family fit): the API description is still truncated to marketing boilerplate and an anti-spam instruction with no real requirements; re-checked the canonical detail page directly via HTTP this run — it still gates salary and full requirements behind a Premium unlock. Not scored per the validation rule — a snippet is not sufficient. <a href=\"https://remoteok.com/remote-jobs/remote-golang-kubernetes-engineer-arango-1137400\">View posting</a>. (Repeat unresolved case from the 2026-09-19 and 2026-09-21 runs — still incomplete in the current inventory window.)"
-      ]
-    },
-    {
-      "heading": "Search limitations",
-      "items": [
-        "The public API returned 99 job objects (direct HTTP access worked cleanly this run, no 403 or block encountered); 24 were dated within the preferred 14-day window (since 2026-09-08).",
-        "The API is a latest-inventory feed, not a dedicated keyword-search endpoint — the full returned inventory was reviewed for target titles, tags, and description signals.",
-        "The same three bare-'devops'/'cloud'-tagged generalist postings from the prior run resurfaced (DESARROLLADOR FULL STACK — Kruger NearShore/Rekluti; Staff Software Development Engineer SDM — Delinea; Staff Software Engineer — Evolve) but their titles and full tag sets read as generalist full-stack/identity-platform/software-engineering roles, not DevOps/Platform/SRE center of gravity — screened out by title and tag review, not opened in full.",
-        "No eligible, unclear, or known-pipeline target-family role surfaced this run. No CAPTCHA, verification page, or write-side action occurred.",
-        "Several RemoteOK postings scored in the 2026-08-25 run (Akuity, DoiT, Lemon.io, Livepeer, Shakepay — all Skipped in applications.md as of 2026-09-19) remain off the API's ~100-item latest-inventory window and were not part of today's inventory.",
-        "Inventory has been effectively static for three consecutive runs (2026-09-19, 2026-09-21, 2026-09-22) — the same Harper/KPI Solutions/Arango trio is the entire plausible candidate pool each time, with zero turnover. Worth checking less frequently than daily until the API window rolls over further."
+        "6 previously reported rows were outside today's search boundary. They are retained for reference and are excluded from current opportunity counts."
       ]
     }
   ],
@@ -70,11 +55,22 @@
     {
       "score": -1,
       "family": "Platform",
+      "title": "Platform and Integration Engineer Security Telemetry",
+      "company": "RedMimicry",
+      "location": "Mostly remote within Germany; Berlin monthly",
+      "salary": "EUR 53,000–59,000/year at 32 hours/week",
+      "gap": "Technical: Security telemetry integration may fit platform work, but no full assessment follows the location gate; Practical: Ineligible — Germany residence and monthly Berlin attendance required; Resume: Platform.",
+      "url": "https://remoteOK.com/remote-jobs/remote-platform-and-integration-engineer-security-telemetry-redmimicry-1137465",
+      "status": "Skipped — Germany location required"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
       "title": "Engineering Manager, TLM Platform",
       "company": "Harper",
       "location": "San Francisco — “Based in SF or willing to relocate,” fully on-site, no remote option",
       "salary": "USD $225,000–$275,000/year",
-      "gap": "Real substance — owns infrastructure, developer productivity, and SRE/production support, with hands-on AWS/GCP, Kubernetes, and Docker requirements — but on-site San Francisco with no remote option is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal), a hard geography gate on its own. Separately it's a formal Engineering Manager role (flexible on tenure but still people-management scope), a different shape than Marc's ‘leads without authority’ positioning. Reviewed in full via the canonical detail page. Repeat posting, unchanged since the 2026-09-18/09-19/09-21 runs, still live.",
+      "gap": "Real substance — owns infrastructure, developer productivity, and SRE/production support, with hands-on AWS/GCP, Kubernetes, and Docker requirements — but on-site San Francisco with no remote option is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal), a hard geography gate on its own. Separately it's a formal Engineering Manager role (flexible on tenure but still people-management scope), a different shape than Marc's ‘leads without authority’ positioning. Reviewed in full via the canonical detail page. Repeat posting, unchanged since the 2026-09-18/09-19/09-21 runs, still live. Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://remoteok.com/remote-jobs/remote-engineering-manager-tlm-platform-harper-1137380",
       "status": "Skipped"
     },
@@ -85,20 +81,9 @@
       "company": "KPI Solutions",
       "location": "Cincinnati, OH (on-site delivery, plus remote/office phases)",
       "salary": "Not stated",
-      "gap": "Despite the ‘Deployment Engineer’ title, the actual work is warehouse-automation hardware/software commissioning — pick-to-light systems, overhead illuminators, AutoStore/T-sort integration, on-site installation and IQ/UAT sign-off for a supply-chain systems integrator. Not a software CI/CD or infrastructure deployment role; no cloud, IaC, or platform-engineering component. Reviewed in full, unchanged since the 2026-09-21 run.",
+      "gap": "Despite the ‘Deployment Engineer’ title, the actual work is warehouse-automation hardware/software commissioning — pick-to-light systems, overhead illuminators, AutoStore/T-sort integration, on-site installation and IQ/UAT sign-off for a supply-chain systems integrator. Not a software CI/CD or infrastructure deployment role; no cloud, IaC, or platform-engineering component. Reviewed in full, unchanged since the 2026-09-21 run. Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://remoteok.com/remote-jobs/remote-software-deployment-engineer-kpi-solutions-1137408",
       "status": "Skipped"
-    },
-    {
-      "title": "Platform and Integration Engineer, Security Telemetry",
-      "company": "RedMimicry",
-      "location": "Mostly remote within Germany; monthly Berlin visits",
-      "salary": "EUR 53,000–59,000 (32 h/week)",
-      "family": "Platform",
-      "url": "https://remoteOK.com/remote-jobs/remote-platform-and-integration-engineer-security-telemetry-redmimicry-1137465",
-      "score": -1,
-      "status": "Ineligible — Germany residence, part-time fixed-term",
-      "gap": "Practical: Ineligible — Germany residence, part-time fixed-term."
     },
     {
       "title": "Operations Engineer II",
@@ -108,8 +93,8 @@
       "family": "SRE",
       "url": "https://remoteOK.com/remote-jobs/remote-operations-engineer-ii-aweber-1136778",
       "score": -1,
-      "status": "Ineligible — India-based location; Canada not named",
-      "gap": "Practical: Ineligible — India-based location; Canada not named."
+      "status": "Freshness unconfirmed — outside October 12 inventory",
+      "gap": "Practical: Ineligible — India-based location; Canada not named. Freshness: previously reported; outside the October 12 collection boundary, current availability not verified."
     },
     {
       "title": "Software Engineer (Go, Kubernetes-native AI infrastructure)",
@@ -119,8 +104,8 @@
       "family": "Platform",
       "url": "https://remoteOK.com/remote-jobs/remote-software-engineer-mirantis-1137387",
       "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — Go product software engineering for a Kubernetes vendor, not platform/SRE operations"
+      "status": "Freshness unconfirmed — outside October 12 inventory",
+      "gap": "Out of scope — Go product software engineering for a Kubernetes vendor, not platform/SRE operations Freshness: previously reported; outside the October 12 collection boundary, current availability not verified."
     },
     {
       "title": "Consultant Implementation Engineer",
@@ -130,8 +115,8 @@
       "family": "DevOps",
       "url": "https://remoteOK.com/remote-jobs/remote-consultant-implementation-engineer-harbor-1136987",
       "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — professional-services software implementation for law/accounting firms, not infrastructure"
+      "status": "Freshness unconfirmed — outside October 12 inventory",
+      "gap": "Out of scope — professional-services software implementation for law/accounting firms, not infrastructure Freshness: previously reported; outside the October 12 collection boundary, current availability not verified."
     },
     {
       "title": "Golang Kubernetes Engineer",
@@ -141,10 +126,10 @@
       "family": "Platform",
       "url": "https://remoteOK.com/remote-jobs/remote-golang-kubernetes-engineer-arango-1137400",
       "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — Go software development of Kubernetes components for a database vendor (title and visible summary); full description is truncated behind RemoteOK's apply wall"
+      "status": "Freshness unconfirmed — outside October 12 inventory",
+      "gap": "Out of scope — Go software development of Kubernetes components for a database vendor (title and visible summary); full description is truncated behind RemoteOK's apply wall Freshness: previously reported; outside the October 12 collection boundary, current availability not verified."
     }
   ],
   "could_not_validate": [],
-  "method": "October 9 run: single RemoteOK API fetch, all plausible target-family postings checked on their canonical pages. "
+  "method": "October 12 run: one complete latest-100 API inventory pass. Full API description and location requirement reviewed for the single plausible platform role. Historical rows omitted because they were not in today’s latest-100 boundary; no claim of current availability for them."
 }

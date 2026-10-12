@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Robert Half job search — 2026-10-09</title>
+<title>Robert Half job search — 2026-10-12</title>
 <style>
 :root{color-scheme:light dark;--bg:#f4f6f8;--panel:#fff;--ink:#15202b;--muted:#64748b;--line:#dbe2ea;--blue:#0969da;--soft:#f8fafc;--red:#b42318;--green:#18794e;--amber:#9a6700;--amber-bg:#fff8c5}
 @media(prefers-color-scheme:dark){:root{--bg:#0d1117;--panel:#161b22;--ink:#e6edf3;--muted:#9da7b3;--line:#30363d;--blue:#58a6ff;--soft:#0d1117;--red:#ff7b72;--green:#56d38b;--amber:#e3b341;--amber-bg:#3b2e00}}
@@ -25,12 +25,11 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
   <div class="eyebrow">Robert Half Technology · Canada</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
   <p class="lede">Robert Half Technology (Canada) inventory searched across six target-family keywords, scoped to Contract / Temporary to Hire only. Scores measure technical and domain fit only.</p>
-  <p class="latest">Latest update: October 9, 2026 — all 6 queries ran in the browser (path-based search URL works again without clicking the search box). The only IT infrastructure posting is the Alberta Senior Azure Infrastructure Consultant already Applied; nothing new.</p>
+  <p class="latest">Latest update: October 12, 2026 — six Robert Half path-based searches returned current result cards. The only infrastructure contract remains the Azure consultant role already Applied; no new qualifying contract.</p>
   <div class="stats">
     <div class="stat"><b>6 of 6</b><span>queries attempted / completed</span></div>
-    <div class="stat"><b>6 · 6 · 3 · 3 · 6 · 3</b><span>results: DevOps · Platform · SRE · Cloud · DevSecOps · FDE</span></div>
-    <div class="stat"><b>13</b><span>unique results reviewed</span></div>
-    <div class="stat"><b>7</b><span>rows added this run</span></div>
+    <div class="stat"><b>13</b><span>unique result cards reviewed</span></div>
+    <div class="stat"><b>0</b><span>new qualifying contracts</span></div>
     <div class="stat"><b>0</b><span>auto-filed this run</span></div>
   </div>
 </header>
@@ -48,19 +47,13 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<aside class="notes"><h2>October 9 query audit (real browser)</h2><ul><li><code>/ca/en/jobs/all/&lt;keyword&gt;</code> loaded keyword-matched results directly; job-type filtering was not needed because every non-IT result was visible and the single contract IT role is the Azure Cloud Engineer (Acheson, AB; remote on MST hours; part-time contract; CAD $59.38–$68.75/hr) already Applied.</li>
-<li>Result sets overlap heavily: 13 unique postings across the six queries.</li></ul><h2>October 5 full-read pass</h2><ul><li>Searched 17 keywords/skills on the path-based search (up to three pages each), de-duplicated to 43 postings, fetched each detail page and scored the description text. Highest infrastructure/cloud content: Acheson AB Azure Cloud Engineer (already filed), Calgary Systems Administrator, Georgetown ON IT Architect (outside the reachable cities) and a Toronto laptop-deployment technician role; the rest are controllers, buyers, project managers, developers and network-security administrators. Nine detail pages did not load text and are unscored (all non-IT titles).</li></ul><h2>October 5 query audit</h2><ul><li>Path-based search pages /ca/en/jobs/all/<keyword> fetched in the browser (HTTP 200): devops-engineer 7 · platform-engineer 5 · site-reliability-engineer 2 · cloud-engineer 3 · devsecops-engineer 6 · forward-deployed-engineer 4. All results unscoped (Permanent and non-Technology roles included) — the contract chip was not applied per page, so counts include non-contract roles. Only two roles are in-family: Azure Cloud Engineer (Acheson/Edmonton AB, remote on Mountain-time hours) and a Systems Engineer that is actually a Business Systems Analyst (Edmonton). Senior Director Engineering (Toronto) is an existing Skipped row. No CAPTCHA.</li></ul><h2>Search limitations — documented retrieval method still broken, refined workaround</h2><ul><li>The SKILL.md-documented URL pattern <code>https://www.roberthalf.com/ca/en/jobs?jobType=CONTRACT&specialty=TECHNOLOGY&keywords=&lt;term&gt;</code> is still not tested as a revival candidate this run since the working UI-driven method (see below) is already reliable and faster to execute manually; no evidence it has been fixed.</li>
-<li>Working method used this run: submit each keyword through the on-page search box (redirects to <code>https://www.roberthalf.com/ca/en/jobs/all/&lt;keyword-slug&gt;</code>), then open the page's own <b>Job Type</b> filter chip. When <b>Contract / Temporary to Hire</b> appears as an option, select it and apply — this reliably scopes to contract-only postings client-side. When the chip only offers Permanent/Temporary (no Contract/Temporary to Hire option at all), that keyword has zero contract results and is recorded as such without reviewing the Permanent/Temporary noise.</li>
-<li>This is a skill-maintenance item: <code>.agents/skills/check-roberthalf/SKILL.md</code>'s Access section already documents this UI workaround as of the 2026-09-21 run; no further edit needed.</li></ul><h2>Per-keyword audit (Contract / Temporary to Hire only)</h2><ul><li><b>DevOps Engineer</b> — 11 total results, 1 under Contract/Temp-to-Hire: Senior Director Engineering (Toronto, ON). Complete.</li>
-<li><b>Platform Engineer</b> — 6 total results, 0 under Contract/Temp-to-Hire (only Permanent(5)/Temporary(1) offered). Zero results.</li>
-<li><b>Site Reliability Engineer</b> — 2 total results, 0 under Contract/Temp-to-Hire (only Permanent(2) offered). Zero results.</li>
-<li><b>Cloud Engineer</b> — 7 total results, 0 under Contract/Temp-to-Hire (only Permanent(4)/Temporary(3) offered — note: one Temporary result, "Cloud Systems Analyst" in Toronto at $25-35/hr, is a Temporary listing, not Contract/Temp-to-Hire, and is also far below the rate floor and outside the target family). Zero results.</li>
-<li><b>DevSecOps Engineer</b> — 7 total results, 1 under Contract/Temp-to-Hire: the same Senior Director Engineering posting (deduplicated). Complete.</li>
-<li><b>Forward Deployed Engineer</b> — 3 total results, 0 under Contract/Temp-to-Hire (only Permanent(2)/Temporary(1) offered). Zero results.</li></ul><h2>Run notes</h2><ul><li>All six mandatory queries completed (Complete or Zero results) — no incomplete or blocked queries this run.</li>
-<li>No CAPTCHA or blocking challenge encountered.</li>
-<li>All retrieval was read-only; no application, account, or form action was used.</li>
-<li>0 auto-filed (0 qualifying — the sole contract posting found is a known Skipped row in applications.md, so it was not re-filed), 1 already present in applications.md, 0 below-threshold/not-filed.</li></ul></aside>
-<p class="method">October 9 run: six Robert Half searches, every card read. </p>
+<aside class="notes"><h2>Query audit</h2><ul><li>devops-engineer — HTTP 200; 6 rendered results, 6 reviewed; IDs 05110-0013512087-caen, 05110-0013506310-caen, 05010-0013515075-caen, 05090-0013496390-caen, 05090-0013492132-caen, 05090-0013518636-caen; Complete.</li>
+<li>platform-engineer — HTTP 200; 6 rendered results, 6 reviewed; IDs 05110-0013506310-caen, 05150-0013510847-caen, 05110-0013512087-caen, 05150-0013516286-caen, 05150-0013159713-caen, 05110-0013496908-caen; Complete.</li>
+<li>site-reliability-engineer — HTTP 200; 3 rendered results, 3 reviewed; IDs 05110-0013506310-caen, 05000-0013521605-caen, 05150-0013510847-caen; Complete.</li>
+<li>cloud-engineer — HTTP 200; 3 rendered results, 3 reviewed; IDs 05110-0013512087-caen, 05110-0013506310-caen, 05150-0013510847-caen; Complete.</li>
+<li>devsecops-engineer — HTTP 200; 6 rendered results, 6 reviewed; IDs 05110-0013506310-caen, 05110-0013512087-caen, 05090-0013492132-caen, 05000-0013515102-caen, 05110-0013518315-caen, 05010-0013515075-caen; Complete.</li>
+<li>forward-deployed-engineer — HTTP 200; 3 rendered results, 3 reviewed; IDs 05110-0013506310-caen, 05110-0013512087-caen, 05150-0013510847-caen; Complete.</li></ul><h2>Access note</h2><ul><li>Path-based public search pages expose rendered cards, posting descriptions and engagement labels. Search results include permanent and unrelated roles; contract status was checked on the cards.</li></ul></aside>
+<p class="method">October 12 run: six path-based Robert Half searches completed over direct HTTP with rendered result cards and descriptions; contract and location labels reviewed. No new automatic filing; known pipeline decisions preserved.</p>
 
 </main>
 <script>

@@ -1,29 +1,21 @@
 {
   "board": "We Work Remotely",
-  "run_date": "2026-10-09",
+  "run_date": "2026-10-12",
   "eyebrow": "We Work Remotely · region-gated",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Six-keyword rotation against We Work Remotely, region eligibility confirmed from each posting's own detail page (the site's generic 'Anywhere in the World' tag is not trustworthy on its own).",
-  "latest_update": "Latest update: October 9, 2026 — all 6 queries ran; two new postings qualify (BlueGeko IT Infrastructure Engineer, EPAM Lead Cloud Engineer) and were auto-filed. The Proxify Azure roles remain CET-only.",
+  "latest_update": "Latest update: October 12, 2026 — incomplete We Work Remotely run: HTTP 403 and no interactive browser tool. Historical rows below were not revalidated today and are not new leads.",
   "stats": [
     {
-      "value": "6 of 6",
-      "label": "queries attempted / completed"
+      "value": "0 of 6",
+      "label": "mandatory queries completed"
     },
     {
-      "value": 16,
-      "label": "unique results reviewed"
+      "value": 0,
+      "label": "current postings validated"
     },
     {
-      "value": "3 + 0 + 0",
-      "label": "SRE · DevSecOps · FDE queries (zero results)"
-    },
-    {
-      "value": 10,
-      "label": "rows added this run"
-    },
-    {
-      "value": 2,
+      "value": 0,
       "label": "auto-filed this run"
     }
   ],
@@ -70,7 +62,7 @@
       "salary": "Not stated",
       "gap": "Requires expert-level Kubernetes operator/controller development plus strong Go or Python for building custom platform tooling — beyond Marc's provisioning-level Kubernetes depth (CKA in progress, not complete) and he has no Go experience.",
       "url": "https://weworkremotely.com/remote-jobs/proxify-ab-senior-platform-engineer",
-      "status": "New"
+      "status": "Freshness unconfirmed — not checked October 12"
     },
     {
       "score": -1,
@@ -190,7 +182,8 @@
       "family": "Platform",
       "url": "https://weworkremotely.com/remote-jobs/beyondtrust-cloud-engineer",
       "score": 4,
-      "gap": "Technical: AWS core services, Transit Gateway/PrivateLink networking and Terraform modules are the daily work; Marc's AWS is bounded and dated; Practical: Confirm — remote Canada listed; pay not stated; Resume: Platform."
+      "gap": "Technical: AWS core services, Transit Gateway/PrivateLink networking and Terraform modules are the daily work; Marc's AWS is bounded and dated; Practical: Confirm — remote Canada listed; pay not stated; Resume: Platform.",
+      "status": "Freshness unconfirmed — not checked October 12"
     },
     {
       "title": "Engineering Manager, Cloud Engineering",
@@ -200,7 +193,7 @@
       "family": "Platform",
       "url": "https://weworkremotely.com/remote-jobs/launchdarkly-engineering-manager-cloud-engineering",
       "score": 0,
-      "status": "Out of scope",
+      "status": "Freshness unconfirmed — not checked October 12",
       "gap": "Out of scope — people-management role"
     },
     {
@@ -211,7 +204,7 @@
       "family": "Platform",
       "url": "https://weworkremotely.com/remote-jobs/vercel-security-software-engineer-iam",
       "score": 0,
-      "status": "Out of scope",
+      "status": "Freshness unconfirmed — not checked October 12",
       "gap": "Out of scope — identity/security software engineering"
     },
     {
@@ -222,7 +215,7 @@
       "family": "Platform",
       "url": "https://weworkremotely.com/remote-jobs/vercel-security-engineer-cloud",
       "score": 0,
-      "status": "Out of scope",
+      "status": "Freshness unconfirmed — not checked October 12",
       "gap": "Out of scope — cloud security engineering"
     },
     {
@@ -233,7 +226,7 @@
       "family": "Platform",
       "url": "https://weworkremotely.com/remote-jobs/discord-senior-software-engineer-application-security",
       "score": 0,
-      "status": "Out of scope",
+      "status": "Freshness unconfirmed — not checked October 12",
       "gap": "Out of scope — application security software engineering"
     },
     {
@@ -244,7 +237,7 @@
       "family": "Platform",
       "url": "https://weworkremotely.com/remote-jobs/datadog-enterprise-sales-engineer-fed",
       "score": -1,
-      "status": "Ineligible — US federal sales engineering, US-only",
+      "status": "Freshness unconfirmed — not checked October 12",
       "gap": "Practical: Ineligible — US federal sales engineering, US-only."
     },
     {
@@ -255,7 +248,7 @@
       "family": "Platform",
       "url": "https://weworkremotely.com/remote-jobs/reddit-engineering-manager-notifications-platform",
       "score": 0,
-      "status": "Out of scope",
+      "status": "Freshness unconfirmed — not checked October 12",
       "gap": "Out of scope — product engineering management"
     },
     {
@@ -266,7 +259,7 @@
       "family": "Platform",
       "url": "https://weworkremotely.com/remote-jobs/lawnstarter-analytics-engineering-manager-data-platform-governance-2",
       "score": -1,
-      "status": "Ineligible — Brazil residence; also data-analytics management",
+      "status": "Freshness unconfirmed — not checked October 12",
       "gap": "Practical: Ineligible — Brazil residence; also data-analytics management."
     }
   ],
@@ -278,38 +271,16 @@
   ],
   "notes_sections": [
     {
-      "heading": "October 9 query audit (real browser)",
+      "heading": "Query audit",
       "items": [
-        "DevOps Engineer 10 · Platform Engineer 5 · Site Reliability Engineer 0 · Cloud Engineer 6 · DevSecOps Engineer 0 · Forward Deployed Engineer 0 — result pages rendered normally each time. Region lines were read on each candidate's page rather than from the generic 'Anywhere in the World' tag.",
-        "Proxify AB Senior DevOps/Cloud Engineer (Azure) say 'CET +/- 3 hours only' and thehivecareers.co is geo-locked to Barbados/US — already scored -1 here."
-      ]
-    },
-    {
-      "heading": "October 5 full-read pass",
-      "items": [
-        "Beyond the six default queries I searched Infrastructure Engineer, SRE and DevOps and fetched every result’s detail page, then scored the description text (28 postings; the first run opened only 3 of them). Real region lines were read, not WWR’s generic tag. Highest DevOps content: a principal infrastructure role (US only), JFrog Senior Professional Services DevOps (already Applied), Proxify Senior DevOps (Azure, CET ±3h) and Proxify Senior Platform/Cloud Engineer, Datadog advocates and Vercel security (US), Fastly Senior SRE – Networks (US), and the <b>EPAM Lead Cloud Engineer</b> described below.",
-        "<b>EPAM Lead Cloud Engineer</b> (posted 5 days ago, apply by Oct 30): an Azure/AKS internal-developer-platform role — Terraform/OpenTofu modules, AKS operations, Backstage golden paths, image-factory pipelines, 5+ yrs Azure IaC and 1+ yr leadership — squarely in Marc’s lane and EPAM is where he has two Applied rows. But WWR’s region line is only the generic tag, the text asks for B2+ English, and EPAM’s own site lists the matching Lead Cloud DevOps Engineer (AKS) as Poland-remote. Not filed; worth a direct check on careers.epam.com for a Canada requisition."
-      ]
-    },
-    {
-      "heading": "October 5 query audit",
-      "items": [
-        "Rendered in-browser, first page per query: DevOps Engineer 8 · Platform Engineer 6 · Site Reliability Engineer Zero results · Cloud Engineer 4 · DevSecOps Engineer Zero results · Forward Deployed Engineer Zero results. Real results (not the generic Anywhere tag) were read per posting. JFrog Senior Professional Services DevOps remains Applied; Proxify Senior Platform Engineer remains New. No CAPTCHA."
-      ]
-    },
-    {
-      "heading": "Per-query audit — 2026-09-22",
-      "items": [
-        "<b>DevOps Engineer</b>: 9 results, reviewed. Complete. In-family hits: JFrog Senior Professional Services DevOps Engineer (known, Applied), JFrog Professional Services DevOps Engineer (known, Ineligible — US East Coast only), Lemon.io Senior DevOps Engineer (known/cross-board duplicate, Skipped — Golang/K8s gap). Out-of-family by title, not opened: Software Engineer and Security Operations Engineer (CircleCI), Engineering Manager, Notifications (Discord), Senior Software Engineer (CircleCI), Application Security Engineer II (Abnormal).",
-        "<b>Platform Engineer</b>: 4 results, reviewed. Complete. In-family hit: Proxify AB Senior Platform Engineer (known, New, score 4 — Kubernetes operator/Go gap). Out-of-family by title, not opened: Analytics Engineering Manager, Data Platform & Governance (LawnStarter, listed twice), Lead Engineer (Drupal / Web Platforms) (Current) — data-analytics management and CMS web development respectively, not infrastructure/DevOps.",
-        "<b>Site Reliability Engineer</b>: 0 results. Zero results — confirms the persistent multi-word-phrase gap on this site's search.",
-        "<b>Cloud Engineer</b>: 1 result, reviewed. Complete. Proxify AB Senior Cloud Engineer (Azure) — known, Ineligible (CET±3 timezone excludes Canada).",
-        "<b>DevSecOps Engineer</b>: 0 results. Zero results — confirms the persistent multi-word-phrase gap.",
-        "<b>Forward Deployed Engineer</b>: 1 result, reviewed. Complete. Databricks AI Engineer - FDE — known, Out of scope (application-layer GenAI, not infrastructure).",
-        "All 6 mandatory queries: Complete or Zero results — no CAPTCHA, block, or access failure encountered this run.",
-        "Net for this run: every posting surfaced across all 6 queries was already known from the 2026-09-21 run (same URLs) or clearly out of the SRE/Platform/DevOps family by title. Zero new candidates, zero new filings. This board's live inventory has not meaningfully turned over in the 24 hours since the last check."
+        "devops-engineer — Incomplete: HTTP 403 and no interactive browser tool; 0 rendered results reviewed; IDs none.",
+        "platform-engineer — Incomplete: HTTP 403 and no interactive browser tool; 0 rendered results reviewed; IDs none.",
+        "site-reliability-engineer — Incomplete: HTTP 403 and no interactive browser tool; 0 rendered results reviewed; IDs none.",
+        "cloud-engineer — Incomplete: HTTP 403 and no interactive browser tool; 0 rendered results reviewed; IDs none.",
+        "devsecops-engineer — Incomplete: HTTP 403 and no interactive browser tool; 0 rendered results reviewed; IDs none.",
+        "forward-deployed-engineer — Incomplete: HTTP 403 and no interactive browser tool; 0 rendered results reviewed; IDs none."
       ]
     }
   ],
-  "method": "October 9 run: six WWR queries in a real browser, candidates opened and region lines read individually. Bare-title rotation per the check-wwr skill's six mandatory queries (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer), each searched independently via weworkremotely.com/remote-jobs/search?term=. Eligibility gated on each posting's own detail-page location line, never the decorative \"Anywhere in the World\" tag. This run found no new inventory since 2026-09-21 — the same 7 in-family postings resurfaced under the same URLs, already reflected in applications.md and this report. Repository notes (job_sources.md) continue to show single-broad-term searches (\"DevOps\", \"Cloud\", \"Platform\") surfacing more volume historically than this skill's mandated bare-title rotation; the bare-title rotation was used here per the skill's written mandatory-query list."
+  "method": "October 12 attempted run: six mandatory We Work Remotely searches could not be completed because HTTP 403 and no interactive browser tool. Historical rows are retained for reference only. No current eligibility, freshness or automatic filing is claimed."
 }

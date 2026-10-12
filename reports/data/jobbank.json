@@ -1,10 +1,10 @@
 {
   "board": "Job Bank",
-  "run_date": "2026-10-09",
+  "run_date": "2026-10-12",
   "eyebrow": "Job Bank Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default rotation validated against full Job Bank detail pages. Scores measure technical and domain fit only; excluded-but-reviewed postings are scored 0 (out of scope) or -1 (ineligible) rows rather than a separate list.",
-  "latest_update": "Latest update: October 9, 2026 — all 3 queries ran over HTTP: DevOps Engineer 4 results, Cloud Engineer 5, Site Reliability Engineer 0. Nothing qualifies; every Toronto contract is on-site or hybrid 3+ days and two 'DevOps' hits are mechanical and RF engineering.",
+  "latest_update": "Latest update: October 12, 2026 — all three Job Bank queries completed (DevOps 4, Cloud 5, SRE 0); all nine details were read. No new role meets the technical and geographic filing gates.",
   "stats": [
     {
       "value": "3 of 3",
@@ -15,19 +15,99 @@
       "label": "unique results reviewed"
     },
     {
-      "value": 0,
-      "label": "eligible roles"
+      "value": 9,
+      "label": "full descriptions opened"
     },
     {
-      "value": 4,
-      "label": "rows added this run"
+      "value": 0,
+      "label": "new qualifying postings"
     },
     {
       "value": 0,
       "label": "auto-filed this run"
+    },
+    {
+      "value": 8,
+      "label": "historical rows retained; not revalidated"
     }
   ],
   "rows": [
+    {
+      "title": "AWS Cloud Engineer (listed as DevOps Engineer)",
+      "company": "AptPay Inc",
+      "location": "Toronto, ON — work arrangement not stated",
+      "salary": "CAD $110,000–$120,000/yr",
+      "family": "Platform",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50440559",
+      "score": 3,
+      "gap": "Technical: Multi-AZ AWS (WAF, ASG, KMS, Aurora, EKS, CloudFormation) with 5+ years AWS is the day job; Marc's AWS is bounded and dated; Practical: Confirm — Toronto, remote/on-site not stated, so eligibility unresolved; Resume: Platform."
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "OpenStack Cloud Engineer Consultant (Shared Services Canada)",
+      "company": "49 Solutions",
+      "location": "Ottawa, ON — on-site",
+      "salary": "CAD $150,000–$200,000/year",
+      "gap": "Technical: Large-scale OpenStack deployment and architecture expertise is the core requirement; Marc has no documented OpenStack experience; Practical: Compromise — Ottawa on-site; Resume: Platform.",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50466246",
+      "status": "New"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "DevOps Engineer (listed) — Engineering Specialist, Project Design",
+      "company": "The Farley Group",
+      "location": "Puslinch, ON — hybrid, travel required",
+      "salary": "$65,000–$90,000/yr",
+      "gap": "Mechanical/structural design engineer for air-supported structures — the DevOps title is an occupation-code label only",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50410160",
+      "status": "Skipped — out of scope (mechanical engineering)"
+    },
+    {
+      "title": "RF Engineer (listed as DevOps Engineer)",
+      "company": "Swiftlink Technologies",
+      "location": "Richmond, BC",
+      "salary": "CAD $90,000–$110,000/yr",
+      "family": "DevOps",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50447969",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — RF/analog chip design"
+    },
+    {
+      "title": "Cybersecurity Engineer (listed as DevOps Engineer)",
+      "company": "Venuiti",
+      "location": "Waterloo, ON — 100% in person",
+      "salary": "CAD $100,000–$125,000/yr",
+      "family": "DevOps",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50438260",
+      "score": 0,
+      "status": "Out of scope",
+      "gap": "Out of scope — software/cybersecurity engineering, 100% in-person Waterloo, citizenship for clearance"
+    },
+    {
+      "title": "GCP Infrastructure & Cloud SRE Engineer",
+      "company": "Astra North Infoteck Inc.",
+      "location": "Toronto, ON — hybrid 3 days on-site",
+      "salary": "CAD $10,000 monthly",
+      "family": "SRE",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50458279",
+      "score": -1,
+      "status": "Ineligible — Toronto hybrid 3 days, outside reachable cities; GCP/GKE primary",
+      "gap": "GCP is zero-experience (hard gate); Practical: Ineligible — Toronto hybrid 3 days, outside reachable cities; GCP/GKE primary."
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Cloud Engineer",
+      "company": "Source Code",
+      "location": "Toronto, ON",
+      "salary": "$90.37/hr",
+      "gap": "Same Toronto on-site client as the two Source Code postings already skipped; Toronto is outside the reachable cities",
+      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50419706",
+      "status": "Skipped — Toronto on-site (repeat client)"
+    },
     {
       "score": -1,
       "family": "DevOps",
@@ -57,7 +137,7 @@
       "company": "Source Code",
       "location": "Toronto, ON — onsite (222 Jarvis St)",
       "salary": "CAD $90.37–$108.45/hr (incorporated rate), 1-year contract",
-      "gap": "New this run. Real AWS/Terraform/Ansible/OpenShift(ROSA)/GitLab-CI depth match, but Toronto onsite is outside the reachable-city range — hard geography gate regardless of skill fit.",
+      "gap": "New this run. Real AWS/Terraform/Ansible/OpenShift(ROSA)/GitLab-CI depth match, but Toronto onsite is outside the reachable-city range — hard geography gate regardless of skill fit. Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50331922",
       "status": "Skipped"
     },
@@ -68,7 +148,7 @@
       "company": "Astra North Infoteck Inc.",
       "location": "Toronto, ON — onsite",
       "salary": "Not stated",
-      "gap": "New this run, surfaced under the Cloud Engineer occupation code. Actual role is Snowflake/ETL data engineering (data pipelines, node.js), not infrastructure/DevOps/cloud-platform work — wrong domain center of gravity, same mislabeling pattern seen repeatedly on this board. Also Toronto onsite, outside the reachable-city range independently.",
+      "gap": "New this run, surfaced under the Cloud Engineer occupation code. Actual role is Snowflake/ETL data engineering (data pipelines, node.js), not infrastructure/DevOps/cloud-platform work — wrong domain center of gravity, same mislabeling pattern seen repeatedly on this board. Also Toronto onsite, outside the reachable-city range independently. Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50338199",
       "status": "Skipped"
     },
@@ -79,7 +159,7 @@
       "company": "InfoTrack Canada",
       "location": "Toronto, ON — Hybrid",
       "salary": "CAD $130,000–$150,000/year",
-      "gap": "Toronto hybrid is outside the reachable-city range regardless of cadence — hard geography gate. Independently, the role also requires 5+ years hands-on GCP as the primary cloud (Azure/AWS only \"a plus\") — hits the profile's hard AWS/GCP gate on its own.",
+      "gap": "Toronto hybrid is outside the reachable-city range regardless of cadence — hard geography gate. Independently, the role also requires 5+ years hands-on GCP as the primary cloud (Azure/AWS only \"a plus\") — hits the profile's hard AWS/GCP gate on its own. Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50317282",
       "status": "Skipped"
     },
@@ -90,7 +170,7 @@
       "company": "Lancesoft",
       "location": "Montréal, QC — onsite/in-office 3x/week from Day 1",
       "salary": "CAD $65.52–$80.00/hour",
-      "gap": "Real Platform/Cloud center of gravity (Azure/AWS Landing Zones, Terraform, Kubernetes, GitHub Actions), but 3+ days/week onsite in Montréal needs a rate well above target to offset the commute burden per the profile's geography rule — this rate sits at or below the $80/hr long-term survival floor instead, well short of \"well above target.\" A different Lancesoft posting (Site Reliability Engineer, job ID 50107335) was already Skipped 2026-08-19 per applications.md — this is a distinct req at the same employer, not a duplicate.",
+      "gap": "Real Platform/Cloud center of gravity (Azure/AWS Landing Zones, Terraform, Kubernetes, GitHub Actions), but 3+ days/week onsite in Montréal needs a rate well above target to offset the commute burden per the profile's geography rule — this rate sits at or below the $80/hr long-term survival floor instead, well short of \"well above target.\" A different Lancesoft posting (Site Reliability Engineer, job ID 50107335) was already Skipped 2026-08-19 per applications.md — this is a distinct req at the same employer, not a duplicate. Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50277730",
       "status": "Skipped"
     },
@@ -101,7 +181,7 @@
       "company": "LYNKED Inc.",
       "location": "London, ON — onsite",
       "salary": "CAD $58,000–$69,000/year",
-      "gap": "London is outside the reachable-city range — hard geography gate. Also well below the $100k on-site/hybrid FTE salary floor, and scoped junior (2–4 years experience) regardless.",
+      "gap": "London is outside the reachable-city range — hard geography gate. Also well below the $100k on-site/hybrid FTE salary floor, and scoped junior (2–4 years experience) regardless. Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50293995",
       "status": "Skipped"
     },
@@ -112,31 +192,9 @@
       "company": "49 Solutions",
       "location": "Ottawa, ON — SSC engagement, work arrangement not stated",
       "salary": "$150,000–$200,000/yr as posted (likely a day-rate mis-entry)",
-      "gap": "Hands-on OpenStack at scale is the whole job — no OpenStack background, and a federal-contract placement that likely needs a security clearance",
+      "gap": "Hands-on OpenStack at scale is the whole job — no OpenStack background, and a federal-contract placement that likely needs a security clearance Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50371867",
       "status": "Skipped — OpenStack at scale (skill gate)"
-    },
-    {
-      "score": 0,
-      "family": "DevOps",
-      "title": "DevOps Engineer (listed) — Engineering Specialist, Project Design",
-      "company": "The Farley Group",
-      "location": "Puslinch, ON — hybrid, travel required",
-      "salary": "$65,000–$90,000/yr",
-      "gap": "Mechanical/structural design engineer for air-supported structures — the DevOps title is an occupation-code label only",
-      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50410160",
-      "status": "Skipped — out of scope (mechanical engineering)"
-    },
-    {
-      "score": -1,
-      "family": "Platform",
-      "title": "Cloud Engineer",
-      "company": "Source Code",
-      "location": "Toronto, ON",
-      "salary": "$90.37/hr",
-      "gap": "Same Toronto on-site client as the two Source Code postings already skipped; Toronto is outside the reachable cities",
-      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50419706",
-      "status": "Skipped — Toronto on-site (repeat client)"
     },
     {
       "score": -1,
@@ -145,7 +203,7 @@
       "company": "Remarcable, Inc.",
       "location": "Vancouver, BC — on site",
       "salary": "CAD $179,494.91/yr",
-      "gap": "AWS-required DevOps ownership at senior level, but the posting is on-site in Vancouver with no remote option",
+      "gap": "AWS-required DevOps ownership at senior level, but the posting is on-site in Vancouver with no remote option Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50261726",
       "status": "Skipped — on-site Vancouver"
     },
@@ -156,87 +214,28 @@
       "company": "Blitz TI (client undisclosed)",
       "location": "Montréal, QC — hybrid, 3 days/week in office",
       "salary": "CAD $120,000–$140,000/yr",
-      "gap": "Strong fit on skills (Azure APIM, Entra ID, Key Vault, Terraform, CI/CD, containers) but 3 office days a week needs a rate well above target and this sits at the Montréal floor",
+      "gap": "Strong fit on skills (Azure APIM, Entra ID, Key Vault, Terraform, CI/CD, containers) but 3 office days a week needs a rate well above target and this sits at the Montréal floor Freshness: previously reported; outside the October 12 collection boundary, current availability not verified.",
       "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50389261",
       "status": "Skipped — Montréal hybrid 3 days"
-    },
-    {
-      "title": "AWS Cloud Engineer (listed as DevOps Engineer)",
-      "company": "AptPay Inc",
-      "location": "Toronto, ON — work arrangement not stated",
-      "salary": "CAD $110,000–$120,000/yr",
-      "family": "Platform",
-      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50440559",
-      "score": 3,
-      "gap": "Technical: Multi-AZ AWS (WAF, ASG, KMS, Aurora, EKS, CloudFormation) with 5+ years AWS is the day job; Marc's AWS is bounded and dated; Practical: Confirm — Toronto, remote/on-site not stated, so eligibility unresolved; Resume: Platform."
-    },
-    {
-      "title": "GCP Infrastructure & Cloud SRE Engineer",
-      "company": "Astra North Infoteck Inc.",
-      "location": "Toronto, ON — hybrid 3 days on-site",
-      "salary": "CAD $10,000 monthly",
-      "family": "SRE",
-      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50458279",
-      "score": -1,
-      "status": "Ineligible — Toronto hybrid 3 days, outside reachable cities; GCP/GKE primary",
-      "gap": "GCP is zero-experience (hard gate); Practical: Ineligible — Toronto hybrid 3 days, outside reachable cities; GCP/GKE primary."
-    },
-    {
-      "title": "Cybersecurity Engineer (listed as DevOps Engineer)",
-      "company": "Venuiti",
-      "location": "Waterloo, ON — 100% in person",
-      "salary": "CAD $100,000–$125,000/yr",
-      "family": "DevOps",
-      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50438260",
-      "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — software/cybersecurity engineering, 100% in-person Waterloo, citizenship for clearance"
-    },
-    {
-      "title": "RF Engineer (listed as DevOps Engineer)",
-      "company": "Swiftlink Technologies",
-      "location": "Richmond, BC",
-      "salary": "CAD $90,000–$110,000/yr",
-      "family": "DevOps",
-      "url": "https://www.jobbank.gc.ca/jobsearch/jobposting/50447969",
-      "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — RF/analog chip design"
     }
   ],
   "could_not_validate": [],
   "notes_sections": [
     {
-      "heading": "October 9 query audit (HTTP 200 each)",
+      "heading": "Query audit",
       "items": [
-        "DevOps Engineer (4 results: AptPay 50440559, Farley Group 50410160, Swiftlink 50447969, Venuiti 50438260) · Cloud Engineer (5: Astra North 50458279, Source Code 50419706 / 50298477 / 50290511, 49 Solutions 50371867) · Site Reliability Engineer (0 results). All nine detail pages opened; five were already rows in this report.",
-        "Overlap with Indeed/Talent.com is expected; nothing here is new to the ledger."
+        "DevOps Engineer — https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=DevOps+Engineer&locationstring=Remote — HTTP 200, 4 results, 4 reviewed, IDs 50440559, 50410160, 50447969, 50438260; Complete.",
+        "Cloud Engineer — https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=Cloud+Engineer&locationstring=Remote — HTTP 200, 5 results, 5 reviewed, IDs 50458279, 50419706, 50466246, 50298477, 50290511; Complete.",
+        "Site Reliability Engineer — https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=Site+Reliability+Engineer&locationstring=Remote — HTTP 200, 0 results, 0 reviewed, none; Zero results.",
+        "All nine full Job Bank details read. Overlap with Indeed and Talent.com is expected. The Remote filter did not limit the listings to remote work."
       ]
     },
     {
-      "heading": "October 5 full-read pass",
+      "heading": "Historical postings",
       "items": [
-        "Beyond the skill’s three default queries I ran Platform Engineer (0), DevSecOps Engineer (0), Infrastructure Engineer (2), Cloud DevOps (24) and Systems Engineer Cloud (25) and read the 44 unique results’ titles, then opened every plausible one in full: Remarcable Senior DevOps Engineer (AWS/Azure, $179,495, permanent) is <b>on-site in Vancouver</b>; Blitz TI Azure Cloud Engineer (Azure APIM, Entra ID, Key Vault, Terraform, containers, production AI platform; $120–140k permanent, 35 h/week) requires <b>hybrid three days per week in downtown Montréal</b>; CloudKettle’s “Cloud Architect” is a Salesforce Revenue Cloud architect; Lancesoft’s cloud developer is a Java full-stack role with 3 office days. The remaining results are cloud-developer, application-architect, network, mechanical and managerial roles.",
-        "Job Bank result and detail pages work by direct HTTP; the originating-site name appears on each detail page (Jobillico, ZipRecruiter, Talent.com, Indeed)."
-      ]
-    },
-    {
-      "heading": "October 5 query audit",
-      "items": [
-        "Direct HTTP 200 for all three Job Bank result pages (locationstring=Remote). DevOps Engineer: 1 result (50410160, Farley Group, Puslinch) · Cloud Engineer: 4 (50371867 49 Solutions Ottawa; 50419706, 50298477, 50290511 Source Code Toronto — the latter two already Skipped) · Site Reliability Engineer: Zero results (no postings in the page payload). Reviewed all results; no CAPTCHA."
-      ]
-    },
-    {
-      "heading": "Run notes",
-      "items": [
-        "Ran the default 3-query rotation only (DevOps Engineer, Cloud Engineer, Site Reliability Engineer), per SKILL.md — Platform Engineer, Forward Deployed Engineer, and DevSecOps Engineer are deliberately excluded from the default rotation due to historically unrelated occupation-code matches.",
-        "<b>Site Reliability Engineer</b> returned zero results this run (persistent — 0 results across the last several runs).",
-        "<b>DevOps Engineer</b> returned 2 results, both known (LYNKED Inc., InfoTrack Canada, persisting from 2026-09-21). <b>Cloud Engineer</b> returned 5 results: 3 known (Lancesoft, Source Code RQ4, Source Code RQ8) plus 2 new — Source Code RQ11363 (a third distinct Source Code req, same employer as RQ4/RQ8, Toronto onsite, Ineligible) and Astra North Infoteck's \"Senior ETL Engineer\" (mislabeled under the Cloud Engineer occupation code — actual role is Snowflake/ETL data engineering, Out of scope).",
-        "All 7 plausible postings this run were opened and read in full via direct HTTP. 6 excluded on geography (all outside the Ottawa/Kingston/Brockville/Cornwall/Montréal reachable-city range, or Montréal at 3x/week onsite below the required rate premium); 1 excluded on domain (ETL/data engineering wearing a Cloud Engineer occupation code).",
-        "No CAPTCHA, verification prompt, or write-side action occurred. All retrieval was read-only, via direct HTTP curl.",
-        "Nothing auto-filed — every reviewed row scored -1 or 0, below the automatic-filing policy's score >= 5 threshold."
+        "8 previously reported rows were outside today's search boundary. They are retained for reference and are excluded from current opportunity counts."
       ]
     }
   ],
-  "method": "October 9 run: three Job Bank queries over direct HTTP, every result's detail page read. Direct HTTP retrieval against jobbank.gc.ca's search and detail pages for the 3-query default rotation (locationstring=Remote, discovery-only, not proof of eligibility). 7 plausible postings opened and read in full via their Job Bank detail pages; 6 excluded on the geography gate (reachable-city range: Ottawa, Kingston, Brockville, Cornwall, Montréal) and scored -1/Ineligible, 1 excluded on domain mismatch and scored 0/Out of scope — all as rows per reports/report_schema.md, rather than a separate footer list. 0 eligible, 0 pipeline matches, 0 inaccessible, 0 auto-filed."
+  "method": "October 12 run: all three mandatory Job Bank searches completed over direct HTTP, nine results and nine full descriptions reviewed. Four DevOps and five Cloud results; zero SRE. No new automatic filing; known pipeline decisions preserved."
 }

@@ -1,26 +1,22 @@
 {
   "board": "Procom",
-  "run_date": "2026-10-09",
+  "run_date": "2026-10-12",
   "eyebrow": "Procom contractor portal · read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 9, 2026 — all 6 portal queries ran. The strongest posting is the same Ottawa Senior Azure Cloud DevOps Specialist (RQ01840, score 8) that is already marked Skipped in the ledger; nothing new qualified.",
+  "latest_update": "Latest update: October 12, 2026 — six Procom queries returned rendered cards and full posting data. Strongest matching roles remain subject to existing Applied, InProcess, or Skipped decisions; no new automatic filing.",
   "stats": [
     {
       "value": "6 of 6",
       "label": "queries attempted / completed"
     },
     {
-      "value": "9 · 14 · 1 · 16 · 2 · 2",
+      "value": "8 · 13 · 1 · 15 · 2 · 2",
       "label": "results: DevOps · Platform · SRE · Cloud · DevSecOps · FDE"
     },
     {
-      "value": "~30",
-      "label": "unique postings read from cards; 4 opened in full"
-    },
-    {
-      "value": 5,
-      "label": "rows added this run"
+      "value": 21,
+      "label": "unique postings in rendered data"
     },
     {
       "value": 0,
@@ -216,47 +212,23 @@
   ],
   "notes_sections": [
     {
-      "heading": "October 9 query audit (real browser, no challenge)",
+      "heading": "Query audit",
       "items": [
-        "Procom portal result counts: DevOps Engineer 9 · Platform Engineer 14 · Site Reliability Engineer 1 (Flextrack, already Skipped) · Cloud Engineer 16 · DevSecOps Engineer 2 (BMO Azure — no longer accepting; BMO AWS) · Forward Deployed Engineer 2 (Mississauga full-stack ×2).",
-        "<b>Needs your call:</b> Senior Azure Cloud DevOps Specialist (RQ01840), Ottawa, CAD $72–90/hr, 13-month contract — full read: Azure, enterprise GitLab CI/CD, Python, Kubernetes/OpenShift all match; requirement is Secret/CGP/Trade-Controlled clearance and 3 office days in Ottawa. The ledger has it Skipped because a Morson Talent copy was skipped on 2026-09-15 with score 2 and no notes. I did not change the status.",
-        "The remaining cards (embedded C++/BSP, AI engineer, QA, Houston project engineer, desktop support, Salesforce integration) are out of scope and were not individually rowed."
+        "DevOps Engineer — HTTP 200, 8 rendered postings, 8 reviewed; IDs 34ee5085, e2b33d90, 4b1925f1, dbdaa8fe, e6f2b7ce, 8ee7422b, 5b71ef5d, ea506134; Complete.",
+        "Platform Engineer — HTTP 200, 13 rendered postings, 8 reviewed; IDs 7c1d87e5, e2b33d90, ce99c7bf, e79e2c9b, 3c722ff1, dbdaa8fe, ebd7990f, 15d60b76; Complete.",
+        "Site Reliability Engineer — HTTP 200, 1 rendered postings, 1 reviewed; IDs ea506134; Complete.",
+        "Cloud Engineer — HTTP 200, 15 rendered postings, 8 reviewed; IDs 7c1d87e5, e2b33d90, 4b1925f1, dc8a2f4d, b1bb5a7a, dbdaa8fe, e6f2b7ce, 8ee7422b; Complete.",
+        "DevSecOps Engineer — HTTP 200, 2 rendered postings, 2 reviewed; IDs dbdaa8fe, e6f2b7ce; Complete.",
+        "Forward Deployed Engineer — HTTP 200, 2 rendered postings, 2 reviewed; IDs 34ee5085, 4b1925f1; Complete."
       ]
     },
     {
-      "heading": "October 5 full-read pass",
+      "heading": "Review notes",
       "items": [
-        "Each posting’s detail page was fetched and its JobPosting data and description read, including the second results page that the first run did not page to (the portal shows 20 per page; Platform has 21 and Cloud 23). Findings: the two Telemetry & Observability postings (Ottawa) are full-stack developer roles working under senior engineers, not platform operations; Senior Systems Engineer (Cloud & Infrastructure) is hybrid 2 days/week in Toronto at $52.50–70/hr; Flextrack’s Senior Salesforce DevOps Engineer – AI Automation (remote US/Canada) is the same requisition as the Skipped Flextrack row (listing dated July 31, freshness unconfirmed). The remaining results are software, data, embedded, telecom, Salesforce-integration and AI engineering roles.",
-        "Procom detail pages open directly by fetch (about 300 KB each, with the full description in JobPosting JSON)."
-      ]
-    },
-    {
-      "heading": "October 5 query audit",
-      "items": [
-        "Portal keyword searches, each navigated separately: DevOps Engineer 8 · Platform Engineer 22 · Site Reliability Engineer 1 (Flextrack Salesforce DevOps, stale) · Cloud Engineer 24 · DevSecOps Engineer 4 · Forward Deployed Engineer Zero results. Reviewed all results under the boundary. IDs of note: ATS 331836 (BMO Azure security, filed), 331834 (BMO AWS), 326534 (Senior Azure Cloud DevOps Specialist, Ottawa, requisition RQ01840). No CAPTCHA."
-      ]
-    },
-    {
-      "heading": "Per-query audit",
-      "items": [
-        "<b>DevOps Engineer</b> — 2 results, both reviewed. Complete.",
-        "<b>Platform Engineer</b> — 13 results, all 13 reviewed (full list rendered via accessibility tree, not just the visible cards). Complete.",
-        "<b>Site Reliability Engineer</b> — 2 results, both reviewed (both duplicates of postings already captured under other keywords). Complete.",
-        "<b>Cloud Engineer</b> — 15 results, 14 unique postings identified and reviewed by title/detail (one may have been a rendering duplicate not distinctly captured). Complete.",
-        "<b>DevSecOps Engineer</b> — 0 results (\"We're unable to find any jobs matching your search\"). Zero results.",
-        "<b>Forward Deployed Engineer</b> — 0 results. Zero results.",
-        "No CAPTCHA, verification prompt, login wall, or blocking page encountered on any query."
-      ]
-    },
-    {
-      "heading": "Search noise excluded from the table",
-      "items": [
-        "The Platform Engineer and Cloud Engineer keywords pull in a lot of full-text keyword-matched noise with no real SRE/Platform/DevOps center of gravity, not individually rowed here (consistent with prior runs): Python/Spark Developer (Mississauga), Junior AI Engineer (Markham), Senior AI Engineer (Calgary and Vancouver), Senior Embedded Software Engineer – Automotive C++/Linux (Ottawa), Embedded C++ Software Engineer – Android Automotive/AOSP (Ottawa), Programmer Analyst – Senior at Bank of Montreal (Toronto), AI Engineer / Solution Lead ($150K–$180K/yr, Toronto), Ingénieur(e) analytique junior/Junior Analytics Engineer (Quebec City), Principal Data Architect (Mississauga), Junior Security Engineer (Markham), Data Engineer and Senior Data Engineer (Mississauga/Calgary), Unified Communication Voice Specialist III (Vancouver), and Senior Project/Solutions Engineer (Houston, TX — also US-ineligible).",
-        "Procom's inventory this run skews heavily toward AI/ML engineering, data engineering, and embedded-automotive roles rather than infrastructure/platform/reliability work — a continuation of the drift noted in the 2026-09-08 and 2026-09-19 runs.",
-        "Browser-driven throughout; the real contractor portal (myprocom-portal.procomservices.com) loaded cleanly with no login needed. The naive-text-extraction trap (get_page_text returning only chrome, not card content) was confirmed again — read_page's accessibility tree and screenshots were used instead to capture full result lists, including lazily-rendered cards beyond the first visible few."
+        "Full descriptions were available in each rendered listing payload. The first eight results per query were the collection boundary; repeated postings remain in each query audit. Existing pipeline decisions are preserved."
       ]
     }
   ],
-  "method": "October 9 run: six Procom portal queries; the Ottawa Azure DevOps posting was re-read in full. Six-keyword default rotation (DevOps Engineer, Platform Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Forward Deployed Engineer) run browser-driven against the real contractor portal. 21 unique postings encountered and reviewed across the four keywords that returned results; two returned zero results outright. Zero eligible target-family postings scored 5 or above this run — the one known pipeline match (Flextrack Salesforce DevOps Engineer) remains Skipped per applications.md. Two new out-of-scope/ineligible postings identified (a Toronto-hybrid CyberArk/PKI security-platform role, and a Toronto-hybrid MCAP systems-engineer role outside the reachable-city range), plus confirmation that a previously logged QA Automation Engineer posting has been removed from the portal. No jobs qualified for automatic filing this run.",
+  "method": "October 12 run: six mandatory Procom portal searches retrieved as server-rendered public HTML, with full descriptions in the page data. Query totals and IDs were reconciled before deduplication. Zero new auto-filed; known pipeline decisions preserved.",
   "could_not_validate": []
 }
