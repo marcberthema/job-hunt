@@ -285,7 +285,7 @@
       "salary": "Not stated",
       "gap": "Technical: GitHub/Jenkins CI/CD platform ownership, Terraform, Python/Groovy, 24/7 on-call and a developer-experience team — direct match to the Énergir/Tink Jenkins standardization story; gaps are 'hands-on AWS' (Marc's AWS is the shallow Tink build), Go and Kubernetes/GitOps depth (ArgoCD used, clusters not owned). Practical: Confirm — base pay and office cadence not stated (Montréal floor $120k; confirm <=2 days); French and English required (Marc is bilingual). Same requisition posted in French as 4476010159. Resume: Platform.",
       "url": "https://www.linkedin.com/jobs/view/4475695806/",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 6,
@@ -296,7 +296,7 @@
       "salary": "Not stated",
       "gap": "Technical: self-service CI/CD pipelines, Azure DevOps, shift-left quality/security gates, code-quality and artifact-management tooling (SonarQube/Artifactory/Nexus), Python — very close to Marc's platform record; gaps are the 'expertise of AWS environments', secure-development/vulnerability management depth and TypeScript/.NET. Practical: Confirm — base pay and cadence not stated (Montréal floor $120k); posting is in French. Differs from the CDPQ IaC role already Skipped. Resume: Platform.",
       "url": "https://www.linkedin.com/jobs/view/4418845866/",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 6,
@@ -307,7 +307,7 @@
       "salary": "Not stated",
       "gap": "Technical: Azure landing zones, private endpoints/hub-spoke networking, Azure Policy, Bicep/Terraform, Azure DevOps pipelines — Azure is Marc's core cloud, but landing-zone and Azure networking build-out are not documented hands-on and IaC was another team's Terraform. Practical: Confirm — rate, contract length and Canada contracting terms not stated (recruiter req; role looks like a consulting contract). Resume: Platform.",
       "url": "https://www.linkedin.com/jobs/view/4477230306/",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 6,
@@ -318,7 +318,7 @@
       "salary": "Not stated",
       "gap": "Technical: ~200-host market-data platform operations, Python/shell automation, monitoring and health-check frameworks, change/upgrade execution and AI-assisted automation with guardrails — fits the Tink fleet-automation, Desjardins monitoring and Énergir AI-practice evidence; gaps are market-data domain, a 'Lead' mandate (no formal lead title) and 6+ years running large production estates. Practical: Confirm — base pay and in-office days not stated (Montréal floor $120k); French and English required. Resume: SRE.",
       "url": "https://www.linkedin.com/jobs/view/4468035290/",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 5,
@@ -329,7 +329,7 @@
       "salary": "Not stated",
       "gap": "Technical: Azure Terraform/OpenTofu, AKS operations, GitLab CI, developer-platform golden paths and observability — Azure and CI/CD are strengths; gaps are writing Terraform modules from scratch, running AKS/Helm/Gateway API in production, and GitLab CI; 'Developer II' suggests a mid-level scope. Practical: Confirm — base pay, level and Ontario eligibility not stated; may sit below Marc's seniority/pay. Resume: Platform.",
       "url": "https://www.linkedin.com/jobs/view/4424616469/",
-      "status": "New"
+      "status": "InProcess"
     },
     {
       "score": 5,
@@ -340,7 +340,7 @@
       "salary": "Not stated",
       "gap": "Technical: internal developer platform, CI/CD speed, flaky-test and build tooling, DORA metrics and toil reduction match the Énergir pipeline story; gap is that Go is the primary language and the role is software-engineer scope (Marc's tooling language is Python), plus Kubernetes/Terraform only as a user. Practical: Confirm — base pay not stated, Canadian hiring/contracting model and 'all levels' seniority unconfirmed. Resume: Platform.",
       "url": "https://www.linkedin.com/jobs/view/4432101442/",
-      "status": "New"
+      "status": "Skipped"
     },
     {
       "score": 5,
