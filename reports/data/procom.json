@@ -4,19 +4,19 @@
   "eyebrow": "Procom contractor portal · read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 12, 2026 — six Procom queries returned rendered cards and full posting data. Strongest matching roles remain subject to existing Applied, InProcess, or Skipped decisions; no new automatic filing.",
+  "latest_update": "October 12, 2026 — all 6 Procom portal queries rendered real result lists (DevOps 8, Platform 13, SRE 1 placeholder, Cloud 15, DevSecOps 2, Forward Deployed 2); no in-family posting is under 48 hours old. The newest are the Ottawa Senior Cloud DevOps Engineer (4d ago, $54–72/hr, hybrid) and the Bank of Montreal DevSecOps pair (1 week), all already in the report. 0 new rows, 0 auto-filed.",
   "stats": [
     {
       "value": "6 of 6",
-      "label": "queries attempted / completed"
-    },
-    {
-      "value": "8 · 13 · 1 · 15 · 2 · 2",
-      "label": "results: DevOps · Platform · SRE · Cloud · DevSecOps · FDE"
+      "label": "queries completed"
     },
     {
       "value": 21,
-      "label": "unique postings in rendered data"
+      "label": "unique postings seen"
+    },
+    {
+      "value": 0,
+      "label": "new in-family postings under 48 hours"
     },
     {
       "value": 0,
@@ -212,6 +212,13 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 12 query audit",
+      "items": [
+        "DevOps Engineer: 8 cards · Platform Engineer: 13 · Site Reliability Engineer: 1 card (no matching SRE posting) · Cloud Engineer: 15 · DevSecOps Engineer: 2 · Forward Deployed Engineer: 2 · all rendered with the keyword verified in the URL · Complete. Procom ATS IDs seen include 326534, 327041, 331834, 331836, 332062, 332066, 330133, 331540, 331325, 332003, 332036, 332039, 332051, 314937, 283833, 330459, 330698.",
+        "Matches against existing rows: Senior Azure Cloud DevOps Specialist (InProcess), Senior Cloud DevOps Engineer (IAM), both Bank of Montreal DevSecOps roles, the Mississauga full-stack role (Out of scope) and Senior Performance Engineer (Ineligible). The remaining cards were embedded C++, data engineering, QA or US-located roles."
+      ]
+    },
+    {
       "heading": "Query audit",
       "items": [
         "DevOps Engineer — HTTP 200, 8 rendered postings, 8 reviewed; IDs 34ee5085, e2b33d90, 4b1925f1, dbdaa8fe, e6f2b7ce, 8ee7422b, 5b71ef5d, ea506134; Complete.",
@@ -229,6 +236,6 @@
       ]
     }
   ],
-  "method": "October 12 run: six mandatory Procom portal searches retrieved as server-rendered public HTML, with full descriptions in the page data. Query totals and IDs were reconciled before deduplication. Zero new auto-filed; known pipeline decisions preserved.",
+  "method": "Oct 12 (complete, 6 of 6 queries). October 12 run: six mandatory Procom portal searches retrieved as server-rendered public HTML, with full descriptions in the page data. Query totals and IDs were reconciled before deduplication. Zero new auto-filed; known pipeline decisions preserved.",
   "could_not_validate": []
 }

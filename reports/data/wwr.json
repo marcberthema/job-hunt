@@ -4,15 +4,15 @@
   "eyebrow": "We Work Remotely · region-gated",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Six-keyword rotation against We Work Remotely, region eligibility confirmed from each posting's own detail page (the site's generic 'Anywhere in the World' tag is not trustworthy on its own).",
-  "latest_update": "Latest update: October 12, 2026 — incomplete We Work Remotely run: HTTP 403 and no interactive browser tool. Historical rows below were not revalidated today and are not new leads.",
+  "latest_update": "October 12, 2026 — all 6 We Work Remotely queries ran in a browser (previously blocked by HTTP 403): DevOps and Cloud returned results, Platform returned only management/data roles, and Site Reliability, DevSecOps and Forward Deployed returned zero. No target-family posting is under 48 hours old; the newest are BeyondTrust Cloud Engineer (5d, Remote Canada or US) and BlueGeko IT Infrastructure Engineer (4d, London). 0 new rows, 0 auto-filed.",
   "stats": [
     {
-      "value": "0 of 6",
-      "label": "mandatory queries completed"
+      "value": "6 of 6",
+      "label": "queries completed"
     },
     {
       "value": 0,
-      "label": "current postings validated"
+      "label": "new in-family postings under 48 hours"
     },
     {
       "value": 0,
@@ -271,6 +271,15 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 12 query audit",
+      "items": [
+        "DevOps Engineer · 12 results (Senior Engineer .NET, Cyber Defense Engineer UK, IT Infrastructure Engineer BlueGeko, Security Software Engineer IAM, Cloud Engineer BeyondTrust, Engineering Manager Cloud Engineering and others) · Complete.",
+        "Platform Engineer · 5 results (engineering/analytics management and one Senior Platform Engineer 27 days old) · Complete.",
+        "Site Reliability Engineer · 0 · Zero results. Cloud Engineer · 3 · Complete. DevSecOps Engineer · 0 · Zero results. Forward Deployed Engineer · 0 · Zero results.",
+        "Only two cards are under 48 hours old: a Senior Engineer (.NET) role (software) and a UK-only Cyber Defense Engineer. The BeyondTrust Cloud Engineer role (Remote Canada or US) is a known employer role already tracked in the ledger."
+      ]
+    },
+    {
       "heading": "Query audit",
       "items": [
         "devops-engineer — Incomplete: HTTP 403 and no interactive browser tool; 0 rendered results reviewed; IDs none.",
@@ -282,5 +291,5 @@
       ]
     }
   ],
-  "method": "October 12 attempted run: six mandatory We Work Remotely searches could not be completed because HTTP 403 and no interactive browser tool. Historical rows are retained for reference only. No current eligibility, freshness or automatic filing is claimed."
+  "method": "Oct 12 (complete, 6 of 6 queries, rendered browser). October 12 attempted run: six mandatory We Work Remotely searches could not be completed because HTTP 403 and no interactive browser tool. Historical rows are retained for reference only. No current eligibility, freshness or automatic filing is claimed."
 }

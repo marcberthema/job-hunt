@@ -4,38 +4,34 @@
   "eyebrow": "RemoteOK · read-only API search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 12, 2026 — RemoteOK API returned 99 jobs; the only plausible platform posting requires Germany residence and monthly Berlin attendance. No eligible posting or automatic filing.",
+  "latest_update": "October 12, 2026 — RemoteOK API returned 199 job objects (latest-100 boundary reviewed). Only 4 postings were under 48 hours old and none are in the three target families; three older plausible roles were read and scored (RedMimicry Germany-only, Arango Go/Kubernetes, KPI warehouse deployment). 0 auto-filed.",
   "stats": [
     {
       "value": "1 of 1",
-      "label": "inventory passes complete"
+      "label": "API inventory retrieved (HTTP 200)"
     },
     {
-      "value": 99,
-      "label": "API job objects reviewed"
-    },
-    {
-      "value": 1,
-      "label": "plausible target-family postings"
+      "value": 100,
+      "label": "latest jobs in the review boundary"
     },
     {
       "value": 0,
-      "label": "eligible current postings"
-    },
-    {
-      "value": 1,
-      "label": "region exclusions"
+      "label": "target-family postings under 48 hours old"
     },
     {
       "value": 0,
       "label": "auto-filed this run"
-    },
-    {
-      "value": 6,
-      "label": "historical rows retained; not revalidated"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 12 inventory audit",
+      "items": [
+        "Endpoint https://remoteok.com/api · HTTP 200 · JSON · 199 job objects after removing metadata; the latest 100 (99 with positions) were reviewed.",
+        "Family match counts across the latest 100 by title/tag: DevOps 0 · SRE 0 · Platform 1 (RedMimicry) · Cloud 0 · DevSecOps 0 · Infrastructure 0 · plus Arango Go/Kubernetes and KPI deployment engineering. Every other title was sales, marketing, design, product, clinical-data or generic software engineering.",
+        "Posting ages: the newest four are 32, 56, 64 and 80 hours old (Marketing and Sales Administrator, Clinical Data Manager, Sales Development Rep, Product Design Lead); the next target-adjacent posting is seven days old."
+      ]
+    },
     {
       "heading": "Inventory audit",
       "items": [
@@ -52,6 +48,17 @@
     }
   ],
   "rows": [
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Software Deployment Engineer I/II",
+      "company": "KPI Solutions",
+      "location": "Cincinnati; warehouse-system site installs",
+      "salary": "Not stated",
+      "gap": "Out of scope: installs and supports warehouse execution/material-handling control systems on customer sites; posted 2026-09-19, US-based.",
+      "url": "https://remoteOK.com/remote-jobs/remote-software-deployment-engineer-kpi-solutions-1137408",
+      "status": "Skipped — Out of scope: warehouse systems deployment"
+    },
     {
       "score": -1,
       "family": "Platform",
@@ -131,5 +138,5 @@
     }
   ],
   "could_not_validate": [],
-  "method": "October 12 run: one complete latest-100 API inventory pass. Full API description and location requirement reviewed for the single plausible platform role. Historical rows omitted because they were not in today’s latest-100 boundary; no claim of current availability for them."
+  "method": "Oct 12 (complete): API inventory, no browser fallback needed. October 12 run: one complete latest-100 API inventory pass. Full API description and location requirement reviewed for the single plausible platform role. Historical rows omitted because they were not in today’s latest-100 boundary; no claim of current availability for them."
 }

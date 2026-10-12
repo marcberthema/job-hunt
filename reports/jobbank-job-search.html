@@ -25,14 +25,12 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
   <div class="eyebrow">Job Bank Canada · read-only search</div>
   <h1>SRE, Platform &amp; DevOps opportunities</h1>
   <p class="lede">Default rotation validated against full Job Bank detail pages. Scores measure technical and domain fit only; excluded-but-reviewed postings are scored 0 (out of scope) or -1 (ineligible) rows rather than a separate list.</p>
-  <p class="latest">Latest update: October 12, 2026 — all three Job Bank queries completed (DevOps 4, Cloud 5, SRE 0); all nine details were read. No new role meets the technical and geographic filing gates.</p>
+  <p class="latest">October 12, 2026 — all three Job Bank queries completed (DevOps 4, Cloud 5, SRE 0); all nine returned postings were already in the report and none is newer than October 8. 0 new rows, 0 auto-filed.</p>
   <div class="stats">
-    <div class="stat"><b>3 of 3</b><span>queries attempted / completed</span></div>
-    <div class="stat"><b>9</b><span>unique results reviewed</span></div>
-    <div class="stat"><b>9</b><span>full descriptions opened</span></div>
-    <div class="stat"><b>0</b><span>new qualifying postings</span></div>
+    <div class="stat"><b>3 of 3</b><span>queries completed</span></div>
+    <div class="stat"><b>9</b><span>postings returned, all already tracked</span></div>
+    <div class="stat"><b>0</b><span>new postings</span></div>
     <div class="stat"><b>0</b><span>auto-filed this run</span></div>
-    <div class="stat"><b>8</b><span>historical rows retained; not revalidated</span></div>
   </div>
 </header>
 <section>
@@ -49,11 +47,14 @@ th{background:var(--soft);color:var(--muted);font-size:11px;text-transform:upper
     <tbody id="rows"></tbody>
   </table></div>
 </section>
-<aside class="notes"><h2>Query audit</h2><ul><li>DevOps Engineer — https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=DevOps+Engineer&locationstring=Remote — HTTP 200, 4 results, 4 reviewed, IDs 50440559, 50410160, 50447969, 50438260; Complete.</li>
+<aside class="notes"><h2>October 12 query audit</h2><ul><li>DevOps Engineer · searchstring=DevOps Engineer, locationstring=Remote, date-sorted · 4 results · IDs 50447969, 50440559, 50438260, 50410160 · Complete.</li>
+<li>Cloud Engineer · 5 results · IDs 50458279, 50419706, 50466246, 50290511, 50298477 · Complete.</li>
+<li>Site Reliability Engineer · 0 results · Zero results.</li>
+<li>All nine IDs were already in this report; their newest posting dates are October 8 (Cloud Engineer, Toronto), October 7 and October 6.</li></ul><h2>Query audit</h2><ul><li>DevOps Engineer — https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=DevOps+Engineer&locationstring=Remote — HTTP 200, 4 results, 4 reviewed, IDs 50440559, 50410160, 50447969, 50438260; Complete.</li>
 <li>Cloud Engineer — https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=Cloud+Engineer&locationstring=Remote — HTTP 200, 5 results, 5 reviewed, IDs 50458279, 50419706, 50466246, 50298477, 50290511; Complete.</li>
 <li>Site Reliability Engineer — https://www.jobbank.gc.ca/jobsearch/jobsearch?searchstring=Site+Reliability+Engineer&locationstring=Remote — HTTP 200, 0 results, 0 reviewed, none; Zero results.</li>
 <li>All nine full Job Bank details read. Overlap with Indeed and Talent.com is expected. The Remote filter did not limit the listings to remote work.</li></ul><h2>Historical postings</h2><ul><li>8 previously reported rows were outside today's search boundary. They are retained for reference and are excluded from current opportunity counts.</li></ul></aside>
-<p class="method">October 12 run: all three mandatory Job Bank searches completed over direct HTTP, nine results and nine full descriptions reviewed. Four DevOps and five Cloud results; zero SRE. No new automatic filing; known pipeline decisions preserved.</p>
+<p class="method">Oct 12 (complete, 3 of 3 queries). October 12 run: all three mandatory Job Bank searches completed over direct HTTP, nine results and nine full descriptions reviewed. Four DevOps and five Cloud results; zero SRE. No new automatic filing; known pipeline decisions preserved.</p>
 
 </main>
 <script>

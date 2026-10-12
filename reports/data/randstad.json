@@ -4,34 +4,34 @@
   "eyebrow": "Randstad Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "First-page Technologies inventory, validated from Randstad's full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 12, 2026 — all 18 Randstad Technologies pages returned 517 listings; 18 plausible postings were read in full. The eligible Montréal DevOps contract is already Applied; no new role qualifies for automatic filing.",
+  "latest_update": "October 12, 2026 — Technologies category retrieved over direct HTTP, all 18 pages (517 listings). No DevOps/SRE/Platform posting is under 48 hours old; the newest in-family postings (Vancouver Platform Engineer, Oct 6, 4 days on-site; Toronto Platform Engineer, Sep 23, hybrid) were already scored. 0 new rows, 0 auto-filed.",
   "stats": [
     {
       "value": "18 of 18",
-      "label": "category pages collected"
+      "label": "category pages retrieved (HTTP 200)"
     },
     {
       "value": 517,
-      "label": "unique category postings collected"
+      "label": "listings in the category"
     },
     {
-      "value": 18,
-      "label": "plausible postings opened in full"
-    },
-    {
-      "value": 0,
-      "label": "new qualifying postings"
+      "value": 70,
+      "label": "plausible titles screened; 17 opened for dates and duties"
     },
     {
       "value": 0,
-      "label": "auto-filed this run"
-    },
-    {
-      "value": 7,
-      "label": "historical rows retained; not revalidated"
+      "label": "new or auto-filed this run"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 12 inventory audit",
+      "items": [
+        "URL https://www.randstad.ca/jobs/s-technologies/ then /page-2/ … /page-18/ · HTTP 200 on every page (page 19 empty) · 30 listings per page, 7 on the last · 517 unique listing URLs · Complete.",
+        "70 listing slugs were plausible for DevOps/SRE/platform/cloud/infrastructure/engineer; 17 were opened for datePosted, location arrangement, pay and duties. Dates ranged from 2026-06-09 to 2026-10-06; none is newer than five days. Every in-family result was already in the report (Platform Engineer Vancouver and Toronto, Senior DevOps Terraform/Azure Toronto, Senior DevOps/Cloud North York on-site, DevOps Engineer Montréal Applied, Lead SRE AIOps Toronto and others).",
+        "Newly opened and judged out of scope or ineligible: Principal Forward Deployed Engineer (AI leadership), Director Managed Services Cloud (executive), Kanata telemetry and diagnostics roles (embedded vehicle systems, 4 days on-site), Embedded Build/Release Developer (Mississauga), Infrastructure Architect (MSP partner) and Charlottetown DevOps Programmer. These were screened from their summaries and not added as separate rows because none is within the 48-hour window."
+      ]
+    },
     {
       "heading": "Inventory audit",
       "items": [
@@ -321,5 +321,5 @@
     }
   ],
   "could_not_validate": [],
-  "method": "October 12 run: complete 18-page Randstad Technologies category scan (517 listings), 18 plausible full descriptions read. The category page boundary is complete; direct detail URLs are shown. Zero new auto-filed, one already Applied, other roles excluded or below threshold."
+  "method": "Oct 12 (complete, 18 of 18 pages). October 12 run: complete 18-page Randstad Technologies category scan (517 listings), 18 plausible full descriptions read. The category page boundary is complete; direct detail URLs are shown. Zero new auto-filed, one already Applied, other roles excluded or below threshold."
 }

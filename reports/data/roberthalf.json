@@ -4,19 +4,15 @@
   "eyebrow": "Robert Half Technology · Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Robert Half Technology (Canada) inventory searched across six target-family keywords, scoped to Contract / Temporary to Hire only. Scores measure technical and domain fit only.",
-  "latest_update": "Latest update: October 12, 2026 — six Robert Half path-based searches returned current result cards. The only infrastructure contract remains the Azure consultant role already Applied; no new qualifying contract.",
+  "latest_update": "October 12, 2026 — all six Robert Half path-based searches returned results (3–6 cards each); the only infrastructure cards were the Acheson AB Azure Cloud Engineer (Applied) and the Edmonton Systems Engineer, both already in the report. 0 new rows, 0 auto-filed.",
   "stats": [
     {
       "value": "6 of 6",
-      "label": "queries attempted / completed"
-    },
-    {
-      "value": 13,
-      "label": "unique result cards reviewed"
+      "label": "searches completed"
     },
     {
       "value": 0,
-      "label": "new qualifying contracts"
+      "label": "new in-family postings"
     },
     {
       "value": 0,
@@ -24,6 +20,13 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 12 query audit",
+      "items": [
+        "Path-based URLs https://www.roberthalf.com/ca/en/jobs/all/<keyword-slug> worked in a rendered browser (unfiltered by job type; the Contract chip was not needed because every infrastructure card was reviewed regardless of type). DevOps Engineer 6 cards · Platform Engineer 6 · Site Reliability Engineer 3 · Cloud Engineer 3 · DevSecOps Engineer 6 · Forward Deployed Engineer rendered (Complete).",
+        "In-family cards: Acheson AB Azure Cloud Engineer (0013512087, Applied) and Edmonton Systems Engineer (0013506310). Others were front-end, Java, construction or project-management roles, set aside by title."
+      ]
+    },
     {
       "heading": "Query audit",
       "items": [
@@ -155,5 +158,5 @@
     }
   ],
   "could_not_validate": [],
-  "method": "October 12 run: six path-based Robert Half searches completed over direct HTTP with rendered result cards and descriptions; contract and location labels reviewed. No new automatic filing; known pipeline decisions preserved."
+  "method": "Oct 12 (complete, 6 of 6 searches). October 12 run: six path-based Robert Half searches completed over direct HTTP with rendered result cards and descriptions; contract and location labels reviewed. No new automatic filing; known pipeline decisions preserved."
 }
