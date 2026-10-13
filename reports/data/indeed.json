@@ -1,18 +1,18 @@
 {
   "board": "Indeed",
-  "run_date": "2026-10-12",
+  "run_date": "2026-10-13",
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "October 12, 2026 — COMPLETE after resuming the earlier rate-limited run: all 51 mandatory passes now done (9 Canada-title, 20 reachable-city, 22 remote-hub), and all 47 distinct job IDs captured were opened and read. None qualified: the infrastructure-type hits were Toronto/Regina/Ottawa roles or ones needing Secret clearance, and most other cards were AI-trainer, QA, Power Platform or manager roles. 0 new auto-filed.",
+  "latest_update": "October 13, 2026 — INCOMPLETE (24-hour window): 30 of 58 passes ran (9 title, 16 city, 3 Toronto hubs, 1 Vancouver DevOps hub) before Indeed returned HTTP 429 at pass 29 and again on one retry. Stopped per skill; no bypass. No postings opened, nothing scored or filed. About a dozen candidates remain unread (Senior DevSecOps Engineer, Reliability Engineer, Infrastructure Operations Engineer, four \"Devops Engineer\", Senior Cloud Network Engineer, Cloud Solution Architect and others); some captured job IDs looked synthetic and must be verified when opened. Rerun on the next check.",
   "stats": [
     {
-      "value": "51 of 51",
-      "label": "mandatory passes completed (HTTP 429 earlier cleared)"
+      "value": "30 of 58",
+      "label": "passes completed before HTTP 429 (PARTIAL)"
     },
     {
-      "value": 47,
-      "label": "distinct job IDs read via JobPosting data"
+      "value": 0,
+      "label": "postings opened and read"
     },
     {
       "value": 0,
@@ -24,6 +24,15 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 13 24-hour run — INCOMPLETE (HTTP 429)",
+      "items": [
+        "Searches used fromage=1, date sort, same-origin fetch at about 8 s spacing. 429 hit at pass 29 (Vancouver DevOps hub); one retry after a wait allowed a single further pass before 429 returned. Stopped without bypass.",
+        "Not run: Vancouver SRE and Platform hubs, and Montréal, Calgary, Ottawa, Edmonton, Kitchener, Halifax, Winnipeg, Québec, Victoria × DevOps, SRE, Platform (28 passes).",
+        "Unread candidates (verify the jk when opening, several looked synthetic): f4d7a00e7cf66bf9 Senior DevSecOps Engineer; 9afeb28fbdc5202a Reliability Engineer; 9bb6de6f01ac54e1 Infrastructure Operations Engineer; 798225f418791cef, cdc0d6598728cd71, ab0789f5367c4af9, 97892958a65da0c0 Devops Engineer; 87fa81d91873e014 Senior Cloud Network Engineer; a527f21e362d5834 Cloud Solution Architect; 9df249ff00ca84a8 IT Infrastructure Specialist; af85b0feca2e2ae2 Windows Engineer; c37971aeb2209649 Integration Engineer.",
+        "Nothing from this run is scored. Previous rows are preserved unchanged."
+      ]
+    },
     {
       "heading": "October 12 resume — completes the earlier incomplete run",
       "items": [
@@ -178,7 +187,7 @@
       ]
     }
   ],
-  "method": "Oct 12 (COMPLETE, 51 of 51 passes after resuming from HTTP 429). Oct 12 (INCOMPLETE, 31 of 51 passes; HTTP 429 at pass 32). October 9, 2026 incomplete run (past 48 hours): 27 of 51 mandatory passes completed before Indeed returned HTTP 429; the Montréal Infrastructure pass, the Montréal Cloud pass and all 22 remote-hub passes were not completed. October 7, 2026 incomplete run: 28 of 51 mandatory passes completed before Indeed returned HTTP 429 (Montréal Infrastructure Engineer); the 22 remote-hub passes were not run. No descriptions opened, nothing scored or filed. Previously validated rows and pipeline decisions are preserved unchanged. Resume the Indeed hub passes and the unread candidates in a later session. October 6, 2026 authenticated-browser run: first-page, past-7-days, date-sorted searches were paced at least seven seconds apart. All 51 required passes completed (9 Canada-title, 20 reachable-city and 22 remote-hub). Search cards yielded 125 unique non-placeholder IDs; all 37 plausible or ambiguous postings were opened and read in full. Cross-source and location-copy duplicates were reconciled against applications.md without changing their pipeline state. Two newly eligible postings scoring at least 5 were filed as New; compensation, geography, clearance and hard skill-depth gates were applied before filing.",
+  "method": "Oct 13 (PARTIAL, 30 of 58 passes, HTTP 429, 0 postings opened). Oct 12 (COMPLETE, 51 of 51 passes after resuming from HTTP 429). Oct 12 (INCOMPLETE, 31 of 51 passes; HTTP 429 at pass 32). October 9, 2026 incomplete run (past 48 hours): 27 of 51 mandatory passes completed before Indeed returned HTTP 429; the Montréal Infrastructure pass, the Montréal Cloud pass and all 22 remote-hub passes were not completed. October 7, 2026 incomplete run: 28 of 51 mandatory passes completed before Indeed returned HTTP 429 (Montréal Infrastructure Engineer); the 22 remote-hub passes were not run. No descriptions opened, nothing scored or filed. Previously validated rows and pipeline decisions are preserved unchanged. Resume the Indeed hub passes and the unread candidates in a later session. October 6, 2026 authenticated-browser run: first-page, past-7-days, date-sorted searches were paced at least seven seconds apart. All 51 required passes completed (9 Canada-title, 20 reachable-city and 22 remote-hub). Search cards yielded 125 unique non-placeholder IDs; all 37 plausible or ambiguous postings were opened and read in full. Cross-source and location-copy duplicates were reconciled against applications.md without changing their pipeline state. Two newly eligible postings scoring at least 5 were filed as New; compensation, geography, clearance and hard skill-depth gates were applied before filing.",
   "rows": [
     {
       "score": -1,

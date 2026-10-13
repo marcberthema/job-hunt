@@ -1,25 +1,61 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-10-12",
+  "run_date": "2026-10-13",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "October 12, 2026 — all 6 Glassdoor queries ran with the Last 3 days filter; 4 completed or zero (DevOps, SRE, DevSecOps, Forward Deployed) and 2 only partly rendered (Platform 30 of 47, Cloud 21 of 30). The only infrastructure postings were an Actalent AWS migration contract needing Secret clearance, a Montréal Kubernetes contract at $55–60/hour and Toronto roles. 0 auto-filed.",
+  "latest_update": "October 13, 2026 — past-24-hour run: all 6 queries executed but 3 are partial (Glassdoor shows only 20 of 33 Platform, 10 of 20 Cloud and 6 of 8 SRE results and offers no way to load the rest). One new qualifying role auto-filed: LANK Consulting Senior Platform Engineer (score 5, remote, CAD $130–145k).",
   "stats": [
     {
-      "value": "6 attempted / 4 fully rendered",
-      "label": "queries"
+      "value": "6 of 6 attempted",
+      "label": "queries executed; 3 partial (card cap), 3 complete (2 zero-result, 1 single result)"
     },
     {
-      "value": 7,
-      "label": "scored rows this run"
+      "value": 3,
+      "label": "new scored rows"
     },
     {
-      "value": 0,
+      "value": 1,
       "label": "auto-filed this run"
     }
   ],
   "rows": [
+    {
+      "score": 5,
+      "family": "Platform",
+      "title": "Senior Platform Engineer",
+      "company": "LANK Consulting",
+      "location": "Remote — Canada (Ontario eligibility unconfirmed)",
+      "salary": "$130,000–$145,000 (employer provided; currency not labelled)",
+      "gap": "Technical: platform standards and release-governance role (pipeline templates, quality gates, artifact management, self-service, mentoring) fits Marc's Jenkins/SonarQube standardization; gap is expert Azure Bicep/Terraform module architecture and policy-as-code. Practical: Confirm — below $160k ideal, agency posting with unnamed client, contract vs permanent and Ontario eligibility unstated. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010292876543",
+      "status": "New — auto-filed 2026-10-13",
+      "duplicate": "No matching ledger row"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Senior Software Developer, Site Reliability",
+      "company": "Google",
+      "location": "On-site — Waterloo, ON",
+      "salary": "$182,000–$186,000 (employer provided)",
+      "gap": "Hard gate: on-site in Waterloo; software-developer SRE scope (also seen on LinkedIn).",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010293946840",
+      "status": "Skipped — Ineligible: on-site Waterloo",
+      "duplicate": "Same posting on LinkedIn (4477994373)"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Windows Engineer",
+      "company": "Aleixo Technologies",
+      "location": "Toronto, ON",
+      "salary": "$100,000–$135,000 (employer provided)",
+      "gap": "Out of scope: Windows systems engineering, not DevOps/SRE/platform delivery; Toronto location unconfirmed as remote.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010292866280",
+      "status": "Skipped — Out of scope: Windows systems engineering",
+      "duplicate": ""
+    },
     {
       "score": -1,
       "family": "DevOps",
@@ -684,6 +720,18 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 13 query audit (past 24 hours)",
+      "items": [
+        "<b>DevOps Engineer</b> · Last day filter, Canada · page title count 0 · Zero results · IDs: none (the five cards shown are fallback matches aged 4–13 days)",
+        "<b>Platform Engineer</b> · Last day filter, Canada · 33 results · 20 cards visible, 13 unreachable (no pager) · Incomplete — card cap · IDs inspected include 1010292876543 (LANK), 1010293946840 (Google), 1010292866280 (Aleixo); the rest were non-infrastructure roles",
+        "<b>Site Reliability Engineer</b> · Last day filter · 8 results · 6 cards visible · Incomplete — card cap · IDs: 1010293946840 (Google, in-family) plus unrelated roles",
+        "<b>Cloud Engineer</b> · Last day filter · 20 results · 10 cards visible, none in-family beyond Windows/network roles · Incomplete — card cap",
+        "<b>DevSecOps Engineer</b> · Last day filter · 1 result · 6 cards visible · Complete · IDs: no in-family posting within 24 hours (Rentsync SRE is 13 days old)",
+        "<b>Forward Deployed Engineer</b> · Last day filter · 0 results · Zero results · IDs: none",
+        "Search URLs need the exact keyword-length index (KO7,n); two wrong guesses truncated the keyword and were rerun with the correct value before counting. Glassdoor's job ID is read from the data-jobid attribute and opened through /job-listing/j?jl=<id>."
+      ]
+    },
+    {
       "heading": "October 12 query audit (Last 3 days)",
       "items": [
         "<b>DevOps Engineer</b> · Canada scope · Last 3 days chip active · Glassdoor 4 reported · 4 of 4 (9 cards incl. adjacent) · Complete",
@@ -754,5 +802,5 @@
       ]
     }
   ],
-  "method": "Oct 12 (INCOMPLETE: Platform and Cloud cards only partly rendered). Oct 10, 2026 (last-72-hours request): all six mandatory Canada queries were executed independently in a rendered browser with the “Last 3 days” filter, but none rendered its complete reported result count (DevOps 14 of 22, Platform 120 of 228, SRE 40 of 51, Cloud 60 of 115, DevSecOps 4 of 6, FDE 4 of 6). Every in-family or ambiguous card that did render was opened from its own posting page and read in full; non-IT cards were counted and set aside. Platform Engineer and Site Reliability Engineer remain noisy on this site, as in prior runs. Prior rows and statuses below are preserved from the October 6 run. All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
+  "method": "Oct 13 (PARTIAL — 3 of 6 queries capped by Glassdoor's visible-card limit): Last-day filter. Oct 12 (INCOMPLETE: Platform and Cloud cards only partly rendered). Oct 10, 2026 (last-72-hours request): all six mandatory Canada queries were executed independently in a rendered browser with the “Last 3 days” filter, but none rendered its complete reported result count (DevOps 14 of 22, Platform 120 of 228, SRE 40 of 51, Cloud 60 of 115, DevSecOps 4 of 6, FDE 4 of 6). Every in-family or ambiguous card that did render was opened from its own posting page and read in full; non-IT cards were counted and set aside. Platform Engineer and Site Reliability Engineer remain noisy on this site, as in prior runs. Prior rows and statuses below are preserved from the October 6 run. All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
 }

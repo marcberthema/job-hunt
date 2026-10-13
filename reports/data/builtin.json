@@ -1,22 +1,18 @@
 {
   "board": "BuiltIn",
-  "run_date": "2026-10-12",
+  "run_date": "2026-10-13",
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
-  "latest_update": "October 12, 2026 — past-48-hour run: all 9 remote role queries, 36 hybrid city passes and 3 hub passes completed over direct HTTP; only 6 postings in the remote inventory are newer than the October 9 run (highest prior ID 11593824) — none qualified (Resend 3, JET 3, Tailscale already Applied, Circle and Supabase out of scope). 0 auto-filed.",
+  "latest_update": "October 13, 2026 — past-24-hour run: all 55 passes completed (9 remote + 36 hybrid city + 10 hub); 165 unique postings, of which 4 were posted yesterday (IDs above 11,619,000); none scored 5 or higher; 0 filed.",
   "stats": [
     {
-      "value": "48 of 48",
-      "label": "passes completed (9 remote + 36 hybrid city + 3 hub)"
+      "value": "55 of 55",
+      "label": "passes completed (9 remote + 36 hybrid city + 10 hub)"
     },
     {
-      "value": 6,
-      "label": "postings newer than the October 9 run (ID above 11593824)"
-    },
-    {
-      "value": 5,
-      "label": "new rows read in full"
+      "value": 4,
+      "label": "postings within the last day (all four read in full)"
     },
     {
       "value": 0,
@@ -24,6 +20,50 @@
     }
   ],
   "rows": [
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Parallel Domain",
+      "location": "Remote — Canada and US Pacific Northwest",
+      "salary": "CAD $145,000–$185,000 base + equity",
+      "gap": "Technical: multi-region AWS with Terraform modules, EKS operation at scale (autoscaling, RBAC, GPU and Windows node pools), VPC networking and IAM governance — Marc is a Kubernetes user and his AWS is the dated Tink build; incident response, observability and Python/Bash fit. Practical: Compromise — base straddles the ideal. Same posting found on LinkedIn (4476087215). Resume: SRE.",
+      "url": "https://builtin.com/job/senior-site-reliability-engineer/11623798",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "Senior Software Engineer, Infrastructure (via Raydar, client unnamed)",
+      "company": "Raydar",
+      "location": "Remote — Canada or US",
+      "salary": "USD $250,000–$325,000 base",
+      "gap": "Technical: requires currently writing production application code (6+ years software engineering) plus early-stage AI infrastructure and deep cloud experience — explicitly not a pure DevOps/SRE seat. Practical: Confirm — recruiter posting for an unnamed client, USD pay. Resume: Platform.",
+      "url": "https://builtin.com/job/senior-software-engineer-infrastructure/11622683",
+      "status": ""
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Platform Engineer",
+      "company": "Vectara",
+      "location": "Remote — US only (Palo Alto office preferred 2–3 days)",
+      "salary": "Not stated",
+      "gap": "Hard gate: posting supports remote applicants from the US only; also junior level (2+ years) with Kubernetes clusters, GPU/vLLM and Java 21 backend work.",
+      "url": "https://builtin.com/job/platform-engineer/11619813",
+      "status": "Skipped — Ineligible: US-only remote"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Staff Software Engineer (Cloud API)",
+      "company": "Cyberhaven",
+      "location": "Remote or Hybrid (7 locations)",
+      "salary": "USD $220,000–$260,000",
+      "gap": "Out of scope: staff software engineering on data-security product APIs and microservices, not infrastructure or delivery.",
+      "url": "https://builtin.com/job/staff-software-engineer-cloud-api/11625622",
+      "status": "Skipped — Out of scope: product software engineering"
+    },
     {
       "score": 3,
       "family": "Platform",
@@ -2047,6 +2087,14 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 13 run — past 24 hours (complete)",
+      "items": [
+        "Method: Built In has no date filter in its listing HTML, so every pass was fetched over HTTP (2.5 s spacing) and unique job pages were ranked by ID; the 36 highest IDs were opened and their 'Posted' labels read. Only the four IDs above 11,619,000 read 'Posted Yesterday'; the next newest was 3 days old.",
+        "Passes: 9 remote title passes (25 results each; Azure DevOps 0), 36 hybrid city passes (Ottawa returned 1–3 per title; Kingston, Cornwall and Montréal returned 0 with the search term — Montréal hybrid inventory was enumerated unfiltered on 2026-10-12 with no relevant roles), and 10 hub DevOps passes (25 each; the first Québec attempt errored and was rerun successfully).",
+        "Newest postings: Cyberhaven (out of scope), Parallel Domain SRE (score 3), Raydar infrastructure (score 2), Vectara (US-only remote)."
+      ]
+    },
+    {
       "heading": "October 12 run — past 48 hours (complete)",
       "items": [
         "Built In has no posted-date filter. Freshness came from posting IDs (IDs rise with time): any ID above 11593824, the newest ID in the October 9 report, counts as new, cross-checked against the page's 'N Days Ago' label. Six remote-inventory postings qualified; all six were opened in full (Software Engineer II, Fullstack (Ads Platform) 11602068 was set aside by title as application development).",
@@ -2226,5 +2274,5 @@
       ]
     }
   ],
-  "method": "Oct 12 (complete): past-48-hour run by direct HTTP, 2.5-second spacing, HTTP 200 throughout. October 9 rerun: direct-HTTP role queries and hybrid city passes, every in-family result read in full from the posting text; scores follow the shared candidate-matching policy (technical fit only, practical assessment separate in the Biggest-gap column). October 7, 2026: 62 of 62 Built In passes completed over direct HTTP (3-second spacing, no block); 174 unique postings, 113 untracked ones read in full; 0 filed. Rendered-browser run on September 24, 2026. All nine mandatory Fully Remote role-query passes and all eleven remote-hub discovery passes were completed, with complete first pages reviewed before deduplication. Five fresh plausible postings were opened in full: Vena and MLabs were eligible and auto-filed; Samsara was US-only; GitLab and Proofpoint lacked explicit Canadian location eligibility. Built In's location control repeatedly resolved typed Eastern Ontario cities to Toronto, and the browser session timed out while applying Hybrid state across the direct city routes. The four reachable-city hybrid passes therefore remain incomplete; this report does not claim a complete overall rotation."
+  "method": "Oct 13 (complete, 55 of 55 passes): HTTP discovery plus ID/age ranking. Oct 12 (complete): past-48-hour run by direct HTTP, 2.5-second spacing, HTTP 200 throughout. October 9 rerun: direct-HTTP role queries and hybrid city passes, every in-family result read in full from the posting text; scores follow the shared candidate-matching policy (technical fit only, practical assessment separate in the Biggest-gap column). October 7, 2026: 62 of 62 Built In passes completed over direct HTTP (3-second spacing, no block); 174 unique postings, 113 untracked ones read in full; 0 filed. Rendered-browser run on September 24, 2026. All nine mandatory Fully Remote role-query passes and all eleven remote-hub discovery passes were completed, with complete first pages reviewed before deduplication. Five fresh plausible postings were opened in full: Vena and MLabs were eligible and auto-filed; Samsara was US-only; GitLab and Proofpoint lacked explicit Canadian location eligibility. Built In's location control repeatedly resolved typed Eastern Ontario cities to Toronto, and the browser session timed out while applying Hybrid state across the direct city routes. The four reachable-city hybrid passes therefore remain incomplete; this report does not claim a complete overall rotation."
 }

@@ -1,18 +1,18 @@
 {
   "board": "Dice",
-  "run_date": "2026-10-12",
+  "run_date": "2026-10-13",
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "October 12, 2026 — all 6 Dice queries ran (Last 3 Days / Full-time+Contract / Remote / Willing to sponsor verified): 10 rendered results across 2 non-empty queries, 0 auto-filed. The only infrastructure postings were a Virginia state-agency Azure Cloud Engineer contract (score 4, posted by five agencies) and a Texas W2 DevOps role already Skipped.",
+  "latest_update": "October 13, 2026 — past-24-hour run: all 6 queries completed with the Today filter; 10 result slots (6 unique new postings plus Tror and the Analytics Solutions Azure posting already in the pipeline/report). Nothing new scored 5 or higher; none filed.",
   "stats": [
     {
       "value": "6 of 6",
-      "label": "queries attempted and completed"
+      "label": "queries attempted and completed (Today filter)"
     },
     {
-      "value": 2,
-      "label": "scored rows this run"
+      "value": 5,
+      "label": "new scored rows this run"
     },
     {
       "value": 0,
@@ -20,6 +20,61 @@
     }
   ],
   "rows": [
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Senior Cloud DevOps Engineer – Platform Engineering (Atlanta/Charlotte/Tampa/Raleigh/Durham/Orlando/Columbia)",
+      "company": "TechniPros, LLC",
+      "location": "Remote or US southeast office; W2 only, no C2C",
+      "salary": "Depends on experience (contract)",
+      "gap": "Technical: self-service developer platform on AWS/Azure with GitHub Actions/Jenkins, ArgoCD GitOps, Terraform and Crossplane and Kubernetes/OpenShift cluster management — delivery platform theme fits Énergir work, but cluster ownership, Terraform module authorship and AWS depth are gaps. Practical: Confirm — W2-only contract means a TN path through the agency; pay unstated. Resume: Platform.",
+      "url": "https://www.dice.com/job-detail/601111a1-629a-4494-8838-b80cae2a8332",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "AI Platform DevOps Engineer (New York/Boston/Hartford/Princeton/Newark, 12+ months)",
+      "company": "TechniPros, LLC",
+      "location": "Remote (US); W2 only, no C2C",
+      "salary": "Depends on experience (contract)",
+      "gap": "Technical: Kubernetes clusters and GPU workloads for AI/ML platforms, MLOps automation and model-deployment CI/CD across Azure/AWS/GCP — Marc has no MLOps/GPU or cluster-ownership evidence. Practical: Confirm — TN path via W2 agency; pay unstated. Same series as the two AI Platform DevOps rows already ineligible by city. Resume: Platform.",
+      "url": "https://www.dice.com/jobs?filters.postedDate=ONE&filters.employmentType=FULLTIME%7CCONTRACTS&filters.workplaceTypes=Remote&filters.willingToSponsor=true&countryCode2=CA&language=en&q=DevOps%20Engineer",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Azure Cloud Engineer / Administrator / Networking / Systems Admin (Madison, WI)",
+      "company": "Symphony Corporation",
+      "location": "Remote tag; posting names Madison, WI; full-time",
+      "salary": "Depends on experience",
+      "gap": "Technical: Azure resource and AKS/Helm administration, governance policies, Entra ID — administration-heavy scope; Marc's AKS is application-level only. Practical: Confirm — full-time US role (TN/W2 path, 'Able to Sponsor' shown), onsite expectation unclear. Resume: Platform.",
+      "url": "https://www.dice.com/jobs?filters.postedDate=ONE&filters.employmentType=FULLTIME%7CCONTRACTS&filters.workplaceTypes=Remote&filters.willingToSponsor=true&countryCode2=CA&language=en&q=Cloud%20Engineer",
+      "status": ""
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Cloud FinOps SME",
+      "company": "TechClub Inc.",
+      "location": "Remote or Dallas, TX (contract)",
+      "salary": "Depends on experience",
+      "gap": "Out of scope: cloud cost-management/FinOps advisory, not delivery or reliability engineering.",
+      "url": "https://www.dice.com/jobs?filters.postedDate=ONE&filters.employmentType=FULLTIME%7CCONTRACTS&filters.workplaceTypes=Remote&filters.willingToSponsor=true&countryCode2=CA&language=en&q=Cloud%20Engineer",
+      "status": "Skipped — Out of scope: FinOps advisory"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Agentic AI Engineer / AI/ML Engineer (Dallas/Austin/Houston/San Antonio)",
+      "company": "TechniPros, LLC",
+      "location": "Remote or Texas (contract)",
+      "salary": "Depends on experience",
+      "gap": "Out of scope: AI/ML application engineering, not platform/DevOps work.",
+      "url": "https://www.dice.com/jobs?filters.postedDate=ONE&filters.employmentType=FULLTIME%7CCONTRACTS&filters.workplaceTypes=Remote&filters.willingToSponsor=true&countryCode2=CA&language=en&q=Platform%20Engineer",
+      "status": "Skipped — Out of scope: AI/ML application engineering"
+    },
     {
       "score": 4,
       "family": "Platform",
@@ -374,6 +429,17 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 13 query audit (past 24 hours)",
+      "items": [
+        "<b>DevOps Engineer</b> · chips verified in the rendered page: Today, Full Time, Contract, Remote, Willing to sponsor (Dice offers Today/Last 3 Days/Last 7 Days; Today used for the 24-hour window) · rendered 2 results · both opened · Complete · IDs: TechniPros AI Platform DevOps Engineer (New York series), TechniPros Senior Cloud DevOps Engineer (601111a1-629a-4494-8838-b80cae2a8332)",
+        "<b>Platform Engineer</b> · same chips · rendered 4 results · opened/inspected · Complete · IDs: Tror Data & AI Application Engineer/Platform Team Lead (already InProcess), TechniPros Agentic AI Engineer, TechniPros AI/ML Engineer, TechniPros Senior Cloud DevOps Engineer",
+        "<b>Site Reliability Engineer</b> · same chips · rendered 0 results (2 in Last 7 Days, none today) · Zero results · IDs: none",
+        "<b>Cloud Engineer</b> · same chips · rendered 4 results · all opened or summarized · Complete · IDs: Symphony Azure Cloud Engineer, Analytics Solutions (06a9fc32-95ea-41e1-92c3-db5820cc36de), TechClub Cloud FinOps SME, TechniPros Senior Cloud DevOps (601111a1-629a-4494-8838-b80cae2a8332)",
+        "<b>DevSecOps Engineer</b> · same chips · rendered 0 results (0 in Last 7 Days) · Zero results · IDs: none",
+        "<b>Forward Deployed Engineer</b> · same chips · rendered 0 results (2 in Last 7 Days, none today) · Zero results · IDs: none"
+      ]
+    },
+    {
       "heading": "October 12 query audit (past 48 hours)",
       "items": [
         "<b>DevOps Engineer</b> · filters verified in the rendered chips: Last 3 Days, Full Time, Contract, Remote, Willing to sponsor (Dice has no 48-hour option; Last 3 Days used and posting ages checked) · rendered 1 result (+3 adjacent TechniPros cards) · all cards inspected · Complete · IDs: a3eb8f08-73f3-4c9d-aaac-528d063499ce,1c2c0877-61fb-4fd1-8eb8-b70b7b41570a,fce4d63a-9b81-474c-9cb7-323b0e244d2c,699b8f49-c58b-483a-ad59-8a22b4c28cff",
@@ -450,6 +516,6 @@
       ]
     }
   ],
-  "method": "Oct 12 (complete, 6 of 6 queries): Last 3 Days filter. October 7, 2026: six of six queries completed with verified filters; 30 unique postings read in full; none eligible and in scope; 0 filed. All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 2, 8, 0, 10, 2, and 1. Up to eight results per query were audited before deduplication, yielding 19 unique reviewed postings. Eight were known pipeline postings (TechniPros's two recurring reposts plus six previously-scored postings, all unchanged in content), one known posting (Shiro) was not resurfaced and was carried forward, and eleven were new but off-domain by title. No new eligible target-family posting was found this run; zero postings were auto-filed.",
+  "method": "Oct 13 (complete, 6 of 6 queries): Today filter. Oct 12 (complete, 6 of 6 queries): Last 3 Days filter. October 7, 2026: six of six queries completed with verified filters; 30 unique postings read in full; none eligible and in scope; 0 filed. All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 2, 8, 0, 10, 2, and 1. Up to eight results per query were audited before deduplication, yielding 19 unique reviewed postings. Eight were known pipeline postings (TechniPros's two recurring reposts plus six previously-scored postings, all unchanged in content), one known posting (Shiro) was not resurfaced and was carried forward, and eleven were new but off-domain by title. No new eligible target-family posting was found this run; zero postings were auto-filed.",
   "could_not_validate": []
 }

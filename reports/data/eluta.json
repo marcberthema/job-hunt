@@ -1,22 +1,22 @@
 {
   "board": "Eluta",
-  "run_date": "2026-10-12",
+  "run_date": "2026-10-13",
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "October 12, 2026 — COMPLETE after the verification page was cleared: all 10 remote role queries and all 20 city passes ran (17 city passes rerun at 7-second spacing, no new challenge). 4 new rows read from Eluta's cache: Practice Better Intermediate DevOps (5, freshness unconfirmed), Boson AI SRE (2), AlayaCare DevSecOps (out of scope) and CMHC cloud operations (Secret clearance). Most in-window Montréal and Ottawa results were already in the report. 0 auto-filed.",
+  "latest_update": "October 13, 2026 — past-24-hour run: all 30 passes completed (10 remote + 20 city) after a mid-run verification block that Marc cleared; no new qualifying posting. Same-day postings were already in the pipeline (Wind River Senior DevOps, InProcess; McKesson, Skipped) or are empty Workday/BambooHR shells (Morgan Stanley SRE Specialist, Laivly Senior Cloud Engineer, Wind River Cloud Networking). 0 filed.",
   "stats": [
     {
       "value": "30 of 30",
       "label": "passes completed (10 remote + 20 city)"
     },
     {
-      "value": 4,
-      "label": "new rows scored from cache pages"
+      "value": 0,
+      "label": "new rows scored (no in-family posting indexed within 24 hours that was not already known or unreadable)"
     },
     {
-      "value": 4,
-      "label": "could not validate (empty Workday/Eightfold/BambooHR shells, entry-level)"
+      "value": 3,
+      "label": "same-day items that could not be validated"
     },
     {
       "value": 0,
@@ -625,6 +625,18 @@
   ],
   "could_not_validate": [
     {
+      "text": "RPE – System Reliability Engineering Specialist (Hybrid), Morgan Stanley Montréal — indexed today but Eluta's cache is an empty Eightfold shell; the employer posting was not recovered. Related LinkedIn role already InProcess.",
+      "url": "https://www.eluta.ca/cache?u=24568835:morganstanley.eightfold.ai"
+    },
+    {
+      "text": "Senior Cloud Engineer, Laivly Inc. (Winnipeg MB, remote) — indexed today; empty BambooHR shell, employer page not recovered.",
+      "url": "https://www.eluta.ca/cache?u=25173360:laivly.bamboohr.com"
+    },
+    {
+      "text": "Cloud Networking Senior Engineer, Wind River (Kanata) — indexed today; empty Workday shell, and networking-centred by title; not scored.",
+      "url": "https://www.eluta.ca/cache?u=24998226:aptiv.wd5.myworkdayjobs.com"
+    },
+    {
       "text": "AI-First DevOps Engineer ($155,000, talentmanagementsolution.wd3.myworkdayjobs.com) — Eluta's cache is an empty Workday shell indexed 13 Jul 2026; the employer posting was not recoverable.",
       "url": "https://www.eluta.ca/cache?u=25003641:talentmanagementsolution.wd3.myworkdayjobs.com"
     },
@@ -706,6 +718,14 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 13 run — past 24 hours (complete)",
+      "items": [
+        "The first 13 passes ran by script at 4 s spacing; Eluta then redirected to its reCAPTCHA sandbox. The run stopped, Marc cleared the verification in his browser, and the remaining 17 city passes were rerun at 9 s spacing with no further block. No verification was bypassed.",
+        "Passes: 10 remote title passes (10 cards each), Ottawa 4 titles, Kingston 4, Brockville 4, Cornwall 4 and Montréal 4 — all returned 200 on the final run; Kingston/Brockville/Cornwall results were mostly non-IT.",
+        "Within 24 hours (card age 'today' or hours): Wind River Senior DevOps Engineer (already InProcess), McKesson platform operations (already Skipped, French copy), plus the three unreadable shells above and several non-family postings. All dated cache pages for in-family remote roles (Practice Better, Mogo/Orion DevOps Staff Platform, CaseWare Staff SRE, Instacart, Tailscale Customer Reliability, Boson AI, ClubRunner, Babylist, Artificial.Agency, AlayaCare) were indexed between 14 Jul and 1 Oct and are outside the 24-hour window."
+      ]
+    },
     {
       "heading": "October 12 rerun — city passes (completes the earlier partial run)",
       "items": [
@@ -886,5 +906,5 @@
       ]
     }
   ],
-  "method": "Oct 12 (COMPLETE, 30 of 30 passes after verification was cleared). Oct 12 (INCOMPLETE, 13 of 30 passes): verification page hit mid-run. October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
+  "method": "Oct 13 (complete, 30 of 30 passes). Oct 12 (COMPLETE, 30 of 30 passes after verification was cleared). Oct 12 (INCOMPLETE, 13 of 30 passes): verification page hit mid-run. October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
 }
