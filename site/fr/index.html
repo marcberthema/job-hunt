@@ -34,7 +34,7 @@
 <p class="eyebrow">Consultant senior DevOps et ingénierie de plateforme</p>
 <h1>Des déploiements fiables.<br>Moins de travail manuel.</h1>
 <p class="intro">Je suis <strong>Marc Berthelette</strong>. J’aide les équipes de développement à remplacer les processus de livraison fragiles par des pipelines fiables, une automatisation concrète et une surveillance utile.</p>
-<p class="hero-proof">Mes réalisations comprennent des pipelines de livraison pour 12 équipes et plus de 70 applications chez Énergir, ainsi que la validation automatisée d’environ 250 dépôts chez Desjardins.</p>
+<p class="hero-proof">Cinq ans de consultation chez Énergir, avec quatre renouvellements : des outils de livraison partagés dans un environnement comptant 12 équipes et plus de 70 applications. Chez Desjardins, la validation automatisée du téléchargement d’artefacts dans environ 250 dépôts.</p>
 <div class="actions"><a class="button" href="#contact">Discutons de votre besoin</a><a class="button secondary" href="../assets/marc-berthelette-resume-en.pdf" download>Télécharger le CV (PDF, anglais)</a>
 </div>
 </div>
@@ -65,14 +65,14 @@
 <div class="case-grid">
 <article class="case">
 <p class="client">Énergir · Pratiques de livraison</p>
-<h3>Une livraison cohérente pour 12 équipes</h3>
+<h3>Des pipelines partagés, testés à chaque commit</h3>
 <dl>
 <dt>Le problème</dt>
-<dd>Les pratiques de livraison variaient selon les équipes et les technologies.</dd>
+<dd>Les équipes maintenaient plusieurs pipelines Jenkins réalisant les mêmes tâches, ce qui compliquait les changements et le diagnostic.</dd>
 <dt>La solution livrée</dt>
-<dd>Des modèles Jenkins centralisés, avec des étapes communes et des contrôles qualité obligatoires.</dd>
+<dd>Un dépôt de pipelines partagés, avec des tests unitaires à chaque commit, une couverture JaCoCo d’environ 80–90 % et des applications exemples pour les tests d’intégration manuels.</dd>
 <dt>Le résultat</dt>
-<dd>Environ 50 développeurs et plus de 70 applications ont bénéficié d’une base de livraison commune.</dd>
+<dd>Toutes les équipes utilisant déjà Jenkins ont adopté ces pipelines, avec des diagnostics distinguant les défauts du pipeline des problèmes applicatifs.</dd>
 </dl>
 </article>
 <article class="case">
@@ -82,21 +82,21 @@
 <dt>Le problème</dt>
 <dd>Les mises en production MuleSoft reposaient sur une procédure manuelle de 15 étapes.</dd>
 <dt>La solution livrée</dt>
-<dd>Quelques tâches Jenkins remplaçant la procédure, avec une partie de la préparation effectuée avant la fenêtre de déploiement.</dd>
+<dd>Une automatisation Jenkins construisant chaque version une seule fois, pour que l’assurance qualité teste exactement l’artefact ensuite déployé en production.</dd>
 <dt>Le résultat</dt>
-<dd>Un petit ensemble de tâches reproductibles a remplacé la succession d’opérations manuelles.</dd>
+<dd>La préparation se faisait avant la fenêtre de production. Le développeur sélectionnait une version testée à déployer et pouvait revenir en arrière en redéployant un artefact précédent.</dd>
 </dl>
 </article>
 <article class="case">
 <p class="client">Desjardins · Santé de la plateforme</p>
-<h3>250 dépôts vérifiés toutes les quatre heures</h3>
+<h3>La validation d’environ 250 dépôts</h3>
 <dl>
 <dt>Le problème</dt>
-<dd>Les administrateurs avaient besoin de valider la configuration des dépôts Artifactory de façon reproductible.</dd>
+<dd>L’équipe devait vérifier la configuration Artifactory et l’accès aux artefacts externes, notamment à travers les restrictions des pare-feu.</dd>
 <dt>La solution livrée</dt>
-<dd>Un service Python/FastAPI publiant les résultats des vérifications dans Dynatrace.</dd>
+<dd>Un processus Python/FastAPI créant une instance Artifactory, appliquant la configuration d’une référence Git choisie et testant les téléchargements sans utiliser de copies en cache.</dd>
 <dt>Le résultat</dt>
-<dd>Les vérifications régulières rendaient les problèmes de configuration visibles. Le même outil a aussi servi aux tests de non-régression lors d’une mise à niveau.</dd>
+<dd>Déployée par ArgoCD/GitOps, la suite s’exécutait selon un horaire et publiait dans Dynatrace la version de configuration et les résultats par artefact, rendant les échecs de téléchargement visibles.</dd>
 </dl>
 </article>
 </div>
@@ -155,7 +155,7 @@
 <p class="eyebrow">À propos de Marc</p>
 <h2>Un ingénieur qui mène les idées à leur réalisation.</h2>
 <p>Près de 18 ans d’expérience en infrastructure, développement logiciel et exploitation, notamment dans les secteurs de l’énergie et des services financiers.</p>
-<p>Mon travail comprend la livraison des outils, l’accompagnement des équipes et le soutien quand un problème survient. Chez Énergir, j’ai créé la feuille de route de livraison durant mes trois premières années et accompagné l’intégration des développeurs et des ingénieurs DevOps.</p>
+<p>J’identifie les améliorations, je démontre l’approche et je travaille avec les équipes qui utiliseront la solution. Chez Énergir, j’ai migré environ cinq applications Node.js vers une configuration chargée à l’exécution, au moyen de demandes de fusion révisées par les équipes, pour déployer la même version testée dans chaque environnement.</p>
 <p class="expertise"><strong>Outils principaux :</strong> Jenkins, Python, Bash, Linux, Azure et automatisation de la livraison. Expérience complémentaire en déploiements applicatifs Kubernetes et utilisation de processus Terraform/Ansible existants.</p>
 <div class="actions"><a href="../assets/marc-berthelette-resume-en.pdf" download>Télécharger le CV (PDF, anglais) ↓</a>
 </div>
@@ -163,23 +163,23 @@
 <ol class="timeline">
 <li>
 <h3>Énergir</h3>
-<p class="date">Ingénieur DevOps senior · Sept. 2021 – Sept. 2026</p>
-<p>Livraison centralisée pour 12 équipes. Automatisation des déploiements Oracle et Salesforce, et livraison de déploiements ArcGIS versionnés.</p>
+<p class="date">Ingénieur DevOps senior, contrat · Sept. 2021 – Sept. 2026</p>
+<p>Création de pipelines partagés et élimination des incidents récurrents d’encodage Oracle. Signalement d’un risque de livraison Salesforce, suivi de correctifs en 48 heures et d’une livraison à temps. Outillage ArcGIS validé jusqu’à l’environnement de test.</p>
 </li>
 <li>
 <h3>Desjardins</h3>
 <p class="date">Ingénieur DevOps senior, contrat · Oct. 2025 – Mars 2026</p>
-<p>Validation des dépôts et environnements de test Artifactory à la demande. Mandat réalisé en parallèle de celui chez Énergir.</p>
+<p>Validation planifiée du téléchargement d’artefacts, avec suivi de la configuration et résultats dans Dynatrace. Mandat réalisé en parallèle de celui chez Énergir.</p>
 </li>
 <li>
 <h3>Tink</h3>
 <p class="date">Ingénieur DevOps · Janv. 2018 – Août 2021</p>
-<p>Standardisation des pipelines Jenkins et automatisation des correctifs sur plus de 600 serveurs. Création d’outils d’inventaire logiciel et de visibilité opérationnelle.</p>
+<p>Déploiement progressif des correctifs sur plus de 600 serveurs, avec suivi de progression et des échecs. Inventaire pour analyser les vulnérabilités, planifier les fins de vie, évaluer le TLS et suivre les versions pour les opérations, les responsables de produit et l’assurance qualité.</p>
 </li>
 <li>
 <h3>SOVO Technologies</h3>
 <p class="date">Technicien en chef → Ingénieur logiciel · Nov. 2008 – Déc. 2017</p>
-<p>Responsabilité de l’infrastructure, encadrement des techniciens et développement de logiciels de planification et d’évaluation de la reconnaissance vocale.</p>
+<p>Pilotage et réalisation de travaux de redondance pour le sous-titrage en direct, avec un second technicien, sous des exigences strictes de disponibilité et de latence. Développement de logiciels de planification et d’évaluation de la reconnaissance vocale.</p>
 </li>
 </ol>
 </div>

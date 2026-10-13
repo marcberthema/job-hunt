@@ -34,7 +34,7 @@
 <p class="eyebrow">Senior DevOps & Platform Engineering Consultant</p>
 <h1>Reliable deployments.<br>Less manual work.</h1>
 <p class="intro">I’m <strong>Marc Berthelette</strong>. I help engineering teams replace fragile release processes with dependable pipelines, practical automation, and useful monitoring.</p>
-<p class="hero-proof">My work includes delivery pipelines supporting 12 teams and 70+ applications at Énergir, and automated health checks for approximately 250 repositories at Desjardins.</p>
+<p class="hero-proof">Five years of consulting at Énergir, renewed four times: shared delivery tooling in an environment spanning 12 teams and 70+ applications. At Desjardins, automated artifact-retrieval validation across approximately 250 repositories.</p>
 <div class="actions"><a class="button" href="#contact">Discuss an engagement</a><a class="button secondary" href="./assets/marc-berthelette-resume-en.pdf" download>Download résumé (PDF)</a>
 </div>
 </div>
@@ -65,14 +65,14 @@
 <div class="case-grid">
 <article class="case">
 <p class="client">Énergir · Delivery standards</p>
-<h3>Consistent delivery across 12 teams</h3>
+<h3>Shared pipelines, tested on every commit</h3>
 <dl>
 <dt>The problem</dt>
-<dd>Delivery practices varied across application teams and technology stacks.</dd>
+<dd>Teams maintained multiple Jenkins pipelines doing the same work, making changes and troubleshooting harder.</dd>
 <dt>What I built</dt>
-<dd>Centralized Jenkins templates with shared stages and mandatory quality checks.</dd>
+<dd>A shared pipeline repository with per-commit unit tests, approximately 80–90% JaCoCo coverage, and sample applications for manual integration testing.</dd>
 <dt>What changed</dt>
-<dd>Approximately 50 developers and 70+ applications used a consistent delivery foundation.</dd>
+<dd>All teams already deploying through Jenkins adopted the shared pipelines, with clearer reporting to distinguish pipeline defects from application issues.</dd>
 </dl>
 </article>
 <article class="case">
@@ -82,21 +82,21 @@
 <dt>The problem</dt>
 <dd>MuleSoft production releases depended on a 15-step manual checklist.</dd>
 <dt>What I built</dt>
-<dd>Replaced the checklist with a few Jenkins jobs, with some preparation running before the release window.</dd>
+<dd>Jenkins automation built each release once, allowing QA to test the exact artifact that would later be deployed to production.</dd>
 <dt>What changed</dt>
-<dd>The release workflow became a small set of repeatable jobs instead of a manual sequence.</dd>
+<dd>Release preparation moved ahead of the production window. Developers selected a tested version to deploy and could roll back by redeploying a previous artifact.</dd>
 </dl>
 </article>
 <article class="case">
 <p class="client">Desjardins · Platform health</p>
-<h3>250 repositories checked every four hours</h3>
+<h3>Validation across 250 repositories</h3>
 <dl>
 <dt>The problem</dt>
-<dd>Administrators needed a repeatable way to validate Artifactory repository configuration.</dd>
+<dd>The platform team needed to verify both Artifactory configuration and access to upstream artifacts, including through firewall restrictions.</dd>
 <dt>What I built</dt>
-<dd>A Python/FastAPI validation service publishing repository health results to Dynatrace.</dd>
+<dd>A Python/FastAPI workflow that provisioned Artifactory, applied configuration from a selected Git reference, and tested artifact downloads without using cached copies.</dd>
 <dt>What changed</dt>
-<dd>Scheduled checks made configuration problems visible; the same harness also supported upgrade regression testing.</dd>
+<dd>Deployed through ArgoCD/GitOps, the suite ran on a schedule and reported configuration versions and artifact-level results in Dynatrace, making failed retrievals visible.</dd>
 </dl>
 </article>
 </div>
@@ -155,7 +155,7 @@
 <p class="eyebrow">About Marc</p>
 <h2>An engineer who follows through.</h2>
 <p>Nearly 18 years across infrastructure, software development, and production operations, including energy and financial services.</p>
-<p>My work includes implementing delivery tooling, helping teams adopt it, and supporting it when something breaks. At Énergir, I created the delivery roadmap during my first three years and onboarded developers and DevOps engineers.</p>
+<p>I identify improvements, demonstrate the approach, and work with the teams who will use it. At Énergir, I moved approximately five Node.js applications to runtime configuration through team-reviewed pull requests, so the same tested build could be promoted across environments.</p>
 <p class="expertise"><strong>Core tools:</strong> Jenkins, Python, Bash, Linux, Azure, and delivery automation. Additional experience with Kubernetes application deployments and existing Terraform/Ansible provisioning workflows.</p>
 <div class="actions"><a href="./assets/marc-berthelette-resume-en.pdf" download>Download résumé (PDF) ↓</a>
 </div>
@@ -163,23 +163,23 @@
 <ol class="timeline">
 <li>
 <h3>Énergir</h3>
-<p class="date">Senior DevOps Engineer · Sep 2021 – Sep 2026</p>
-<p>Centralized delivery across 12 teams. Automated Oracle and Salesforce releases and delivered versioned ArcGIS deployments.</p>
+<p class="date">Senior DevOps Engineer, contract · Sep 2021 – Sep 2026</p>
+<p>Built shared pipelines and eliminated recurring Oracle encoding incidents. Escalated Salesforce validation failures, prompting fixes within 48 hours and an on-time release. Built ArcGIS deployment tooling, validated through the test environment.</p>
 </li>
 <li>
 <h3>Desjardins</h3>
 <p class="date">Senior DevOps Engineer, contract · Oct 2025 – Mar 2026</p>
-<p>Built repository validation and on-demand Artifactory test environments. Concurrent with the Énergir engagement.</p>
+<p>Delivered scheduled artifact-retrieval validation with configuration tracking and Dynatrace reporting. Concurrent with the Énergir engagement.</p>
 </li>
 <li>
 <h3>Tink</h3>
 <p class="date">DevOps Engineer · Jan 2018 – Aug 2021</p>
-<p>Standardized Jenkins pipelines and automated OS patching across 600+ servers. Built software inventory and operational visibility tools.</p>
+<p>Introduced staged patching across 600+ servers with progress and failure reporting. Built fleet inventory for vulnerability analysis, end-of-life planning, TLS scoring, and release visibility for Ops, product owners, and QA.</p>
 </li>
 <li>
 <h3>SOVO Technologies</h3>
 <p class="date">Lead Technician → Software Engineer · Nov 2008 – Dec 2017</p>
-<p>Owned company infrastructure, led technicians, and developed production scheduling and voice-recognition evaluation software.</p>
+<p>Led redundancy work for live-captioning infrastructure under strict client availability and latency requirements, supported by a second technician. Developed production scheduling and speech-recognition evaluation software.</p>
 </li>
 </ol>
 </div>
