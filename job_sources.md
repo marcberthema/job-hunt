@@ -65,6 +65,7 @@ Confirm the role details still match before treating it as validated. Every `che
 | Catalant | Fractional/project-based expert-consulting marketplace, similar model to BTG | Same as BTG — added 2026-09-13 for the post-FTE retainer-building phase, application/vetting-based rather than browsable | 2026-09-13 |
 | GLG (Gerson Lehrman Group) | Paid expert-network consultations (by the call/project, not sustained retainer work) | Added 2026-09-13 — same category as the Ethos gig-income exception already in `profile.md`; genuinely flexible, stacks easily alongside a FTE. Lower per-engagement value than a real retainer client but zero ongoing time commitment | 2026-09-13 |
 | Coleman Research | Paid expert-network consultations, similar model to GLG | Same as GLG — added 2026-09-13 | 2026-09-13 |
+| Remote Rocketship (remoterocketship.com) | Remote-job aggregator with ghost-job score and Canada filter (DevOps/Cloud/Infra/Build-Release/Automation/SRE titles, contract + full-time, worldwide + Canada) | **Parked 2026-10-13 — pin.** One-off pass of page 1 (20 of 215): nothing new at 5+; 6 of 20 already in the ledger from LinkedIn/Built In; its DevOps tag is unreliable; descriptions are summaries, and the site shows a no-subscription banner. If revisited: weekly sweep only, ghost score <=20%, confirm on the employer page. | 2026-10-13 |
 
 ---
 
