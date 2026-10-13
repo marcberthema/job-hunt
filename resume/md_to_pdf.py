@@ -148,6 +148,11 @@ def build(md_path, pdf_path, lang='en', keep_html=False, core_resume=False):
 body { font-size:10.5pt; line-height:1.3; }
 h2 { font-size:13pt; }
 h3 { font-size:11pt; }
+li { margin-bottom:3pt; }
+@page {
+  @bottom-left { content:"Marc Berthelette"; font-family:Arial,sans-serif; font-size:8pt; color:#444; }
+  @bottom-right { content:counter(page) " / " counter(pages); font-family:Arial,sans-serif; font-size:8pt; color:#444; }
+}
 .role:nth-of-type(3) { break-before:page; }
 """
     doc = (f'<!doctype html><html lang="{lang}"><head><meta charset="utf-8">'

@@ -4,15 +4,15 @@
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "October 13, 2026 — past-24-hour run: all 6 queries executed but 3 are partial (Glassdoor shows only 20 of 33 Platform, 10 of 20 Cloud and 6 of 8 SRE results and offers no way to load the rest). One new qualifying role auto-filed: LANK Consulting Senior Platform Engineer (score 5, remote, CAD $130–145k).",
+  "latest_update": "October 13, 2026 — past-24-hour run, PARTIAL: rerun later the same day showed more cards (Platform 27 of 46, Cloud 13 of 24, SRE 7 of 11) but Glassdoor offers no way to load the rest. Seven further cards were opened and read; none qualify (ALTEN Kubernetes Ottawa and CDPQ AI platform Montréal are ineligible on office days; five are out of scope). Still one filed role: LANK Consulting Senior Platform Engineer (score 5). The remaining unlisted cards cannot be viewed anonymously.",
   "stats": [
     {
       "value": "6 of 6 attempted",
-      "label": "queries executed; 3 partial (card cap), 3 complete (2 zero-result, 1 single result)"
+      "label": "queries executed on rerun; all 3 non-empty queries still partial (Platform 27 of 46, Cloud 13 of 24, SRE 7 of 11 cards visible; no load-more control)"
     },
     {
-      "value": 3,
-      "label": "new scored rows"
+      "value": 10,
+      "label": "new scored rows today"
     },
     {
       "value": 1,
@@ -20,6 +20,90 @@
     }
   ],
   "rows": [
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Information Technology Specialist (Kubernetes)",
+      "company": "ALTEN Canada",
+      "location": "On-site — Ottawa, 4 days per week",
+      "salary": "$75–$85 per hour (employer provided)",
+      "gap": "Hard gate: on-site in Ottawa 4 days a week and Controlled Goods plus Reliability clearance eligibility mandatory. Also needs 5+ years of production Kubernetes/AKS cluster ownership (Marc is an application-level user, not a cluster owner).",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010294087994",
+      "status": "Skipped — Ineligible: Ottawa 4 days on-site, clearance",
+      "duplicate": ""
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Premier(-ère) concepteur(-rice), Plateforme d'intelligence artificielle",
+      "company": "Caisse de dépôt et placement du Québec",
+      "location": "Hybrid — Montréal, 4 days per week in office",
+      "salary": "$76K–$105K (Glassdoor estimate)",
+      "gap": "Hard gate: four office days a week exceeds the two-day Montréal limit. Technically an AI/MLOps/LLMOps platform role needing 7+ years in data/AI/platform engineering and model deployment at scale, which Marc lacks.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010294098229",
+      "status": "Skipped — Ineligible: Montréal 4 office days",
+      "duplicate": ""
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Integration Engineer",
+      "company": "Tido Inc.",
+      "location": "Remote — Canada/US",
+      "salary": "$40–$65 per hour (employer provided)",
+      "gap": "Out of scope: healthcare HL7/FHIR/EHR integration-engine work, not DevOps/SRE/platform delivery.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010293058440",
+      "status": "Skipped — Out of scope: healthcare integration engineering",
+      "duplicate": ""
+    },
+    {
+      "score": 0,
+      "family": "SRE",
+      "title": "Reliability Engineer",
+      "company": "CBRE (Global Workplace Solutions)",
+      "location": "On-site — Mississauga, ON",
+      "salary": "$100K–$120K (employer provided)",
+      "gap": "Out of scope: facilities reliability engineering (failure analysis, predictive maintenance of building systems), not software reliability; also on-site.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010294089551",
+      "status": "Skipped — Out of scope: facilities reliability, on-site",
+      "duplicate": ""
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Streaming Data Engineer",
+      "company": "PLATO",
+      "location": "Remote — Canada",
+      "salary": "$75–$95 per hour (employer provided)",
+      "gap": "Out of scope: streaming data pipelines (Bronze/Silver/Gold layers) for data engineering; enhanced security clearance referenced.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010294121164",
+      "status": "Skipped — Out of scope: data engineering",
+      "duplicate": ""
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Security Architect",
+      "company": "Xalient",
+      "location": "Remote — Canada or Chicago, home based",
+      "salary": "Competitive (not stated)",
+      "gap": "Out of scope: Zscaler/Palo Alto security architecture and pre-sales advisory, not DevOps/SRE/platform delivery.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010293950567",
+      "status": "Skipped — Out of scope: network security architecture",
+      "duplicate": ""
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Network Security Engineer",
+      "company": "Asset Inventories",
+      "location": "Montréal, QC",
+      "salary": "up to $135K (employer provided)",
+      "gap": "Out of scope: network security (CCNP, VPN, firewalls), not DevOps/SRE/platform delivery.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010292932000",
+      "status": "Skipped — Out of scope: network security",
+      "duplicate": ""
+    },
     {
       "score": 5,
       "family": "Platform",
@@ -720,6 +804,14 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 13 rerun — more cards, still capped",
+      "items": [
+        "Glassdoor count headers: Platform 46, Cloud 24, SRE 11. Visible: 27, 13 and 7. The list shows no Show more jobs control and scrolling does not load more, so the remainder could not be reached.",
+        "Opened in full: ALTEN, CDPQ, Tido, CBRE, PLATO, Xalient, Asset Inventories (rows added). Not opened because the title is clearly outside the three families: Cognizant Network Engineer (Oakville), Forward Financing Genesys Systems Engineer, Trimble Implementation and Training Consultant, Lenovo, Affirm, Noverbill, Diligent and other sales, support, electrical and management roles.",
+        "No new role scores 5 or higher."
+      ]
+    },
+    {
       "heading": "October 13 query audit (past 24 hours)",
       "items": [
         "<b>DevOps Engineer</b> · Last day filter, Canada · page title count 0 · Zero results · IDs: none (the five cards shown are fallback matches aged 4–13 days)",
@@ -802,5 +894,5 @@
       ]
     }
   ],
-  "method": "Oct 13 (PARTIAL — 3 of 6 queries capped by Glassdoor's visible-card limit): Last-day filter. Oct 12 (INCOMPLETE: Platform and Cloud cards only partly rendered). Oct 10, 2026 (last-72-hours request): all six mandatory Canada queries were executed independently in a rendered browser with the “Last 3 days” filter, but none rendered its complete reported result count (DevOps 14 of 22, Platform 120 of 228, SRE 40 of 51, Cloud 60 of 115, DevSecOps 4 of 6, FDE 4 of 6). Every in-family or ambiguous card that did render was opened from its own posting page and read in full; non-IT cards were counted and set aside. Platform Engineer and Site Reliability Engineer remain noisy on this site, as in prior runs. Prior rows and statuses below are preserved from the October 6 run. All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
+  "method": "Oct 13 rerun (PARTIAL: Platform 27 of 46, Cloud 13 of 24, SRE 7 of 11 cards). Oct 13 (PARTIAL — 3 of 6 queries capped by Glassdoor's visible-card limit): Last-day filter. Oct 12 (INCOMPLETE: Platform and Cloud cards only partly rendered). Oct 10, 2026 (last-72-hours request): all six mandatory Canada queries were executed independently in a rendered browser with the “Last 3 days” filter, but none rendered its complete reported result count (DevOps 14 of 22, Platform 120 of 228, SRE 40 of 51, Cloud 60 of 115, DevSecOps 4 of 6, FDE 4 of 6). Every in-family or ambiguous card that did render was opened from its own posting page and read in full; non-IT cards were counted and set aside. Platform Engineer and Site Reliability Engineer remain noisy on this site, as in prior runs. Prior rows and statuses below are preserved from the October 6 run. All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
 }
