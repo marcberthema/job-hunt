@@ -1,0 +1,44 @@
+name: Deploy website
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'site/**'
+      - '.github/workflows/deploy-site.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: cloudflare-pages-production
+  cancel-in-progress: false
+
+jobs:
+  deploy:
+    if: github.ref == 'refs/heads/main'
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Check out website
+        uses: actions/checkout@v6
+
+      - name: Check configuration and published files
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+        run: |
+          test -n "$CLOUDFLARE_API_TOKEN" || { echo '::error::Set the CLOUDFLARE_API_TOKEN repository secret.'; exit 1; }
+          test -n "$CLOUDFLARE_ACCOUNT_ID" || { echo '::error::Set the CLOUDFLARE_ACCOUNT_ID repository secret.'; exit 1; }
+          test -s site/index.html
+          test -s site/fr/index.html
+          test -s site/assets/style.css
+          test -s site/assets/marc-berthelette-resume-en.pdf
+
+      - name: Deploy to Cloudflare Pages
+        uses: cloudflare/wrangler-action@v4
+        with:
+          apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          command: pages deploy site --project-name=marcberthelette --branch=main

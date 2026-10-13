@@ -1,704 +1,223 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Consultant senior SRE et en ingénierie de plateforme — fiabilité, observabilité, CI/CD, migrations infonuagiques et automatisation.">
-  <title>Marc Berthelette — Consultant senior SRE &amp; ingénierie de plateforme</title>
-  <style>
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-
-    :root {
-      --bg: #ffffff;
-      --surface: #f8fafc;
-      --fg: #0f172a;
-      --body: #334155;
-      --muted: #64748b;
-      --accent: #0078d4;
-      --accent-light: #eff6ff;
-      --accent-border: #bfdbfe;
-      --border: #e2e8f0;
-      --tag-bg: #f1f5f9;
-      --tag-fg: #1e293b;
-      --max: 720px;
-    }
-
-    @media (prefers-color-scheme: dark) {
-      :root {
-        --bg: #0f1117;
-        --surface: #161b27;
-        --fg: #f1f5f9;
-        --body: #cbd5e1;
-        --muted: #94a3b8;
-        --accent: #60a5fa;
-        --accent-light: #1e2d4a;
-        --accent-border: #1d4ed8;
-        --border: #1e293b;
-        --tag-bg: #1e293b;
-        --tag-fg: #e2e8f0;
-      }
-    }
-
-    html { scroll-behavior: smooth; }
-
-    body {
-      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-      background: var(--bg);
-      color: var(--body);
-      line-height: 1.65;
-      font-size: 1rem;
-    }
-
-    .container {
-      max-width: var(--max);
-      margin: 0 auto;
-      padding: 0 1.5rem;
-    }
-
-    nav {
-      position: sticky;
-      top: 0;
-      background: var(--bg);
-      border-bottom: 1px solid var(--border);
-      z-index: 100;
-      backdrop-filter: blur(8px);
-      background: color-mix(in srgb, var(--bg) 90%, transparent);
-    }
-
-    nav .container {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 0.9rem;
-      padding-bottom: 0.9rem;
-    }
-
-    .nav-name {
-      font-weight: 700;
-      font-size: 0.95rem;
-      color: var(--fg);
-      text-decoration: none;
-      letter-spacing: -0.01em;
-    }
-
-    .nav-links {
-      display: flex;
-      gap: 1.5rem;
-      list-style: none;
-    }
-
-    .nav-links a {
-      font-size: 0.875rem;
-      color: var(--muted);
-      text-decoration: none;
-      transition: color 0.15s;
-    }
-
-    .nav-links a:hover { color: var(--accent); }
-
-    .hero {
-      padding: 5rem 0 4rem;
-    }
-
-    .hero-eyebrow {
-      font-size: 0.8rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.75rem;
-    }
-
-    .hero h1 {
-      font-size: clamp(2rem, 5vw, 2.75rem);
-      font-weight: 800;
-      letter-spacing: -0.03em;
-      color: var(--fg);
-      line-height: 1.15;
-      margin-bottom: 0.5rem;
-    }
-
-    .hero-title {
-      font-size: 1.1rem;
-      font-weight: 500;
-      color: var(--muted);
-      margin-bottom: 1.5rem;
-    }
-
-    .hero-desc {
-      font-size: 1.125rem;
-      line-height: 1.7;
-      max-width: 600px;
-      margin-bottom: 2rem;
-      color: var(--body);
-    }
-
-    .hero-ctas {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.75rem;
-    }
-
-    .btn-primary {
-      display: inline-block;
-      background: var(--accent);
-      color: #fff;
-      padding: 0.6rem 1.4rem;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      font-weight: 600;
-      text-decoration: none;
-      transition: opacity 0.15s;
-    }
-
-    .btn-primary:hover { opacity: 0.88; }
-
-    .btn-secondary {
-      display: inline-block;
-      border: 1px solid var(--border);
-      color: var(--fg);
-      padding: 0.6rem 1.4rem;
-      border-radius: 6px;
-      font-size: 0.9rem;
-      font-weight: 500;
-      text-decoration: none;
-      transition: border-color 0.15s;
-    }
-
-    .btn-secondary:hover { border-color: var(--accent); color: var(--accent); }
-
-    section {
-      padding: 3.5rem 0;
-      border-top: 1px solid var(--border);
-    }
-
-    .section-label {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent);
-      margin-bottom: 0.5rem;
-    }
-
-    section h2 {
-      font-size: 1.5rem;
-      font-weight: 700;
-      color: var(--fg);
-      letter-spacing: -0.02em;
-      margin-bottom: 1rem;
-    }
-
-    section p { margin-bottom: 0.85rem; }
-
-    .services-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-      gap: 1rem;
-      margin-top: 1.5rem;
-    }
-
-    .service-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1.25rem 1.25rem 1rem;
-    }
-
-    .service-icon {
-      font-size: 1.5rem;
-      margin-bottom: 0.6rem;
-    }
-
-    .service-card h3 {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: var(--fg);
-      margin-bottom: 0.4rem;
-    }
-
-    .service-card p {
-      font-size: 0.8rem;
-      color: var(--muted);
-      line-height: 1.5;
-      margin: 0;
-    }
-
-    .experience-list {
-      display: flex;
-      flex-direction: column;
-      gap: 2rem;
-      margin-top: 1rem;
-    }
-
-    .exp-role {
-      font-size: 1rem;
-      font-weight: 700;
-      color: var(--fg);
-    }
-
-    .exp-company {
-      font-size: 0.875rem;
-      color: var(--accent);
-      font-weight: 600;
-      margin-bottom: 0.2rem;
-    }
-
-    .exp-meta {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 0.6rem;
-    }
-
-    .exp-bullets {
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      gap: 0.35rem;
-    }
-
-    .exp-bullets li {
-      font-size: 0.875rem;
-      color: var(--body);
-      padding-left: 1rem;
-      position: relative;
-    }
-
-    .exp-bullets li::before {
-      content: "—";
-      position: absolute;
-      left: 0;
-      color: var(--muted);
-    }
-
-    .skill-groups {
-      display: flex;
-      flex-direction: column;
-      gap: 1.25rem;
-      margin-top: 1rem;
-    }
-
-    .skill-group h3 {
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-      margin-bottom: 0.5rem;
-    }
-
-    .tags {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.4rem;
-    }
-
-    .tag {
-      background: var(--tag-bg);
-      color: var(--tag-fg);
-      font-size: 0.8rem;
-      font-weight: 500;
-      padding: 0.25rem 0.65rem;
-      border-radius: 999px;
-      border: 1px solid var(--border);
-    }
-
-    .tag-accent {
-      background: var(--accent-light);
-      color: var(--accent);
-      border-color: var(--accent-border);
-    }
-
-    .engagement-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-      gap: 0.75rem;
-      margin-top: 1.5rem;
-    }
-
-    .eng-card {
-      background: var(--surface);
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      padding: 1rem;
-    }
-
-    .eng-card .eng-label {
-      font-size: 0.7rem;
-      text-transform: uppercase;
-      letter-spacing: 0.08em;
-      color: var(--muted);
-      font-weight: 600;
-      margin-bottom: 0.3rem;
-    }
-
-    .eng-card .eng-value {
-      font-size: 0.95rem;
-      font-weight: 700;
-      color: var(--fg);
-    }
-
-    .contact-box {
-      background: var(--accent-light);
-      border: 1px solid var(--accent-border);
-      border-radius: 10px;
-      padding: 2rem;
-      margin-top: 1.5rem;
-      text-align: center;
-    }
-
-    .contact-box p {
-      color: var(--body);
-      margin-bottom: 1.25rem;
-      font-size: 1rem;
-    }
-
-    .contact-links {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 0.75rem;
-    }
-
-    footer {
-      padding: 2rem 0;
-      border-top: 1px solid var(--border);
-      text-align: center;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    @media (max-width: 480px) {
-      .hero { padding: 3.5rem 0 2.5rem; }
-      .hero-ctas { flex-direction: column; }
-      .btn-primary, .btn-secondary { text-align: center; }
-      nav .container { padding-left: 1rem; padding-right: 1rem; }
-      .nav-name { display: none; }
-      .nav-links { width: 100%; justify-content: space-between; gap: 0.4rem; }
-      .nav-links a { font-size: 0.74rem; }
-    }
-  </style>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Marc Berthelette — Consultant DevOps et ingénierie de plateforme</title>
+<meta name="description" content="Marc Berthelette aide les équipes à fiabiliser leurs pipelines CI/CD, automatiser les déploiements et améliorer la surveillance. Basé en Ontario. Français et anglais.">
+<link rel="canonical" href="https://marcberthelette.com/fr/">
+<link rel="alternate" hreflang="en" href="https://marcberthelette.com/">
+<link rel="alternate" hreflang="fr" href="https://marcberthelette.com/fr/">
+<link rel="alternate" hreflang="x-default" href="https://marcberthelette.com/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Marc Berthelette — Consultant DevOps et ingénierie de plateforme">
+<meta property="og:description" content="Marc Berthelette aide les équipes à fiabiliser leurs pipelines CI/CD, automatiser les déploiements et améliorer la surveillance. Basé en Ontario. Français et anglais.">
+<meta property="og:url" content="https://marcberthelette.com/fr/">
+<meta property="og:locale" content="fr_CA">
+<meta name="theme-color" content="#102d4d">
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
-
-  <nav>
-    <div class="container">
-      <a href="/fr/" class="nav-name">Marc Berthelette</a>
-      <ul class="nav-links">
-        <li><a href="#services">Services</a></li>
-        <li><a href="#temps-partiel">Temps partiel</a></li>
-        <li><a href="#experience">Expérience</a></li>
-        <li><a href="#skills">Compétences</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="/">EN</a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <div class="container">
-
-    <div class="hero">
-      <p class="hero-eyebrow">Disponible pour des mandats à distance · Partout dans le monde</p>
-      <h1>Marc Berthelette</h1>
-      <p class="hero-title">Consultant senior SRE &amp; en ingénierie de plateforme · 18 ans d&#39;expérience</p>
-      <p class="hero-desc">
-        Je rends les systèmes complexes plus fiables, observables et sûrs à modifier. Je cherche les causes
-        des incidents récurrents, automatise les chemins de livraison fragiles et construis les signaux qui
-        permettent aux équipes d'agir avant les clients. Mon travail couvre plus de 70 applications chez Énergir,
-        la surveillance d'environ 250 dépôts d'entreprise chez Desjardins et l'automatisation d'un parc de plus
-        de 600 serveurs. Bilingue (FR/EN), incorporé au Canada, disponible partout dans le monde.
-      </p>
-      <div class="hero-ctas">
-        <a href="#contact" class="btn-primary">Me contacter</a>
-        <a href="#experience" class="btn-secondary">Voir mon expérience</a>
-      </div>
-    </div>
-
-    <section id="services">
-      <p class="section-label">Ce que je fais</p>
-      <h2>La fiabilité au service de la livraison</h2>
-      <p>
-        La fiabilité ne se limite pas à la disponibilité. Je relie les signaux de production, l'apprentissage
-        tiré des incidents, les standards de plateforme et l'automatisation afin que les équipes puissent livrer
-        avec confiance et réduire le travail opérationnel évitable.
-      </p>
-      <div class="services-grid">
-        <div class="service-card">
-          <div class="service-icon">🚀</div>
-          <h3>Fiabilité des services</h3>
-          <p>Objectifs de fiabilité pragmatiques, signaux de santé, alertes, analyse d'incidents et remédiation automatisée.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🏗️</div>
-          <h3>Observabilité</h3>
-          <p>Surveillance et tableaux de bord exploitables avec Dynatrace, Splunk, ELK et des services de validation sur mesure.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">☁️</div>
-          <h3>Livraison fiable</h3>
-          <p>Contrôles qualité CI/CD, validation des déploiements et pipelines autodiagnostiques qui préviennent les mauvaises mises en production.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🔭</div>
-          <h3>Automatisation de plateforme</h3>
-          <p>Environnements répétables avec Terraform, Ansible, Kubernetes et ArgoCD pour réduire la dérive et le travail manuel.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">🚢</div>
-          <h3>Résilience infonuagique</h3>
-          <p>Modernisation Azure pensée pour la reprise, l'évolutivité, la sécurité et des opérations durables.</p>
-        </div>
-        <div class="service-card">
-          <div class="service-icon">📐</div>
-          <h3>Habilitation des équipes</h3>
-          <p>Standards, documentation et ateliers qui permettent aux équipes applicatives de prendre en charge une livraison fiable.</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="temps-partiel">
-      <p class="section-label">Services à temps partiel et fractionnés</p>
-      <h2>Une expertise senior en fiabilité sans une embauche à temps plein</h2>
-      <p>
-        Pour les équipes qui ont besoin d'un responsable expérimenté pour un problème défini de plateforme
-        ou de fiabilité, j'offre des mandats ciblés à distance et un accompagnement fractionné continu. La portée,
-        les résultats, les attentes de réponse et les exclusions sont convenus dès le départ.
-      </p>
-      <div class="services-grid">
-        <div class="service-card"><div class="service-icon">🔧</div><h3>Redressement et modernisation CI/CD</h3><p>Diagnostic des livraisons lentes, fragiles ou manuelles; refonte des contrôles qualité, diagnostics et modèles réutilisables.</p></div>
-        <div class="service-card"><div class="service-icon">🧭</div><h3>Migration infonuagique et de plateforme</h3><p>Planification par étapes, automatisation des environnements, sécurisation de la bascule et préparation opérationnelle, particulièrement sur Azure.</p></div>
-        <div class="service-card"><div class="service-icon">📡</div><h3>Observabilité et amélioration des incidents</h3><p>Bilans de santé, tableaux de bord, alertes, analyse de cause racine et réduction du travail opérationnel répétitif.</p></div>
-        <div class="service-card"><div class="service-icon">🧱</div><h3>Revue d'infrastructure et d'IaC</h3><p>Revue de Terraform, Kubernetes, de la configuration et du nuage, avec risques priorisés et feuille de route de mise en œuvre.</p></div>
-        <div class="service-card"><div class="service-icon">🛡️</div><h3>Évaluation de l'état de préparation</h3><p>Évaluation du déploiement, du retour arrière, de la surveillance, des dépendances, de la reprise et des responsabilités.</p></div>
-        <div class="service-card"><div class="service-icon">🤝</div><h3>Partenaire SRE / plateforme fractionné</h3><p>Conseils seniors et améliorations pratiques pour les équipes dont les développeurs portent seuls la plateforme.</p></div>
-      </div>
-    </section>
-
-    <section id="experience">
-      <p class="section-label">Expérience</p>
-      <h2>Parcours professionnel</h2>
-      <div class="experience-list">
-
-        <div>
-          <p class="exp-role">Ingénieur DevOps senior</p>
-          <p class="exp-company">Énergir</p>
-          <p class="exp-meta">Montréal, QC · Septembre 2021 – Présent · Secteur énergétique</p>
-          <ul class="exp-bullets">
-            <li>Standardisation du CI/CD pour neuf écosystèmes technologiques distincts — Java, Node.js, Python, Spark, Oracle, CloudFoundry, MuleSoft, Salesforce, Databricks — au profit de 12 équipes applicatives et de plus de 70 applications, en abordant la plupart d'entre eux sans expérience préalable.</li>
-            <li>Reconstruction de la livraison Salesforce sans expérience préalable de la plateforme : remplacement des anciens scripts ANT par l'outillage officiel, puis conception d'un pipeline de validation en bac à sable testant chaque fusion candidate — faisant passer l'équipe des fenêtres de déploiement ratées à une mise en production fiable un mardi sur deux.</li>
-            <li>Passage de l'équipe Oracle du déploiement entièrement manuel à la livraison automatisée, après l'échec d'une tentative antérieure.</li>
-            <li>Réduction des faux positifs des pipelines et résultats de build autodiagnostiques, distinguant les erreurs de code applicatif des erreurs de pipeline afin que chaque équipe sache d'un coup d'œil de qui relève la défaillance.</li>
-            <li>Direction de la modernisation infonuagique vers Microsoft Azure avec Terraform et Ansible; analyses de cause racine sur les incidents critiques et mise en place de la surveillance et de la remédiation automatisée ayant réduit le MTTR.</li>
-            <li>Adoption du CI/CD favorisée auprès de 12 équipes hors de tout lien hiérarchique, par des sessions récurrentes d'habilitation (~6/an) transformant l'outillage livré en usage réel.</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="exp-role">Ingénieur DevOps senior <span style="font-weight:400;color:var(--muted);">(Contrat)</span></p>
-          <p class="exp-company">Desjardins</p>
-          <p class="exp-meta">Montréal, QC (À distance) · Octobre 2025 – Mars 2026 · Services financiers · Mandat mené en parallèle du poste chez Énergir</p>
-          <ul class="exp-bullets">
-            <li>Mandat de 6 mois en ingénierie de plateforme axé sur la consolidation de la plateforme JFrog Artifactory d'entreprise.</li>
-            <li>Développement d'un service de surveillance en Python/FastAPI testant la configuration d'environ 250 dépôts Artifactory toutes les 4 heures, avec publication des résultats vers des tableaux de bord Dynatrace segmentés par technologie.</li>
-            <li>Automatisation du provisionnement d'instances Artifactory à la demande via Kubernetes et ArgoCD, permettant aux administrateurs de tester les changements de configuration en toute sécurité.</li>
-            <li>Mise en place de politiques de cycle de vie des artefacts et d'alertes Splunk pour détecter les modifications manuelles effectuées hors du pipeline CI/CD.</li>
-            <li>Mandat étendu bien au-delà de sa portée initiale — vérifier la configuration des dépôts — en rendant la logique de validation agnostique de l'outil plutôt que spécifique à JFrog et l'ensemble des tests configurable; le même harnais a ensuite sécurisé la mise à niveau de la plateforme JFrog d'entreprise.</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="exp-role">Ingénieur DevOps</p>
-          <p class="exp-company">Tink</p>
-          <p class="exp-meta">Montréal, QC · Janvier 2018 – Août 2021</p>
-          <ul class="exp-bullets">
-            <li>Centralisation de Jenkins Pipeline as Code pour une équipe de 10 à 15 développeurs maintenant plus de 80 applications pour plus de 20 clients.</li>
-            <li>Automatisation des correctifs au niveau du système d'exploitation sur un parc de plus de 600 serveurs, incluant des redémarrages automatisés pour les mises à jour du noyau.</li>
-            <li>Mise en place d'une agrégation centralisée des journaux avec la suite ELK, permettant la détection proactive d'anomalies en production.</li>
-            <li>Construction des couches de calcul, de cache et de base de données de l'environnement cible AWS d'un client en migration — EC2, S3, Route 53, VPC, memcached auto-géré, base de données relationnelle sans serveur — sans expérience préalable d'AWS; le client a annulé la migration avant la bascule.</li>
-            <li>Conception et développement, de sa propre initiative, d'une plateforme d'inventaire logiciel répertoriant chaque application et version du parc de plus de 600 serveurs — exposant les vulnérabilités CVE, les logiciels en fin de vie et le score des certificats SSL/TLS aux chargés de produit, qui n'avaient jusque-là aucune visibilité.</li>
-          </ul>
-        </div>
-
-        <div>
-          <p class="exp-role">Technicien en chef → Ingénieur logiciel</p>
-          <p class="exp-company">SOVO Technologies</p>
-          <p class="exp-meta">Montréal, QC · Novembre 2008 – Décembre 2017</p>
-          <ul class="exp-bullets">
-            <li>Gestion de l'ensemble de l'infrastructure TI de l'entreprise — relocalisation de serveurs sans interruption de service, serveurs centraux redondants éliminant les points de défaillance uniques — tout en dirigeant une équipe de techniciens et en agissant comme dernière porte de contrôle qualité avant toute mise en production.</li>
-            <li>Développement de logiciels de production en parallèle du rôle d'infrastructure pendant environ sept ans avant que le titre ne l'officialise : le logiciel d'ordonnancement couvrant l'ensemble du cycle de planification du département, puis un système d'évaluation de la reconnaissance vocale et une infrastructure de dictionnaires multilingues.</li>
-          </ul>
-        </div>
-
-      </div>
-    </section>
-
-    <section id="skills">
-      <p class="section-label">Compétences techniques</p>
-      <h2>Expertises clés</h2>
-      <div class="skill-groups">
-
-        <div class="skill-group">
-          <h3>Plateformes infonuagiques &amp; DevOps</h3>
-          <div class="tags">
-            <span class="tag tag-accent">Microsoft Azure</span>
-            <span class="tag tag-accent">Azure DevOps</span>
-            <span class="tag">AWS (EC2, S3, Route 53, VPC)</span>
-            <span class="tag">GitHub Actions</span>
-            <span class="tag">Jenkins</span>
-            <span class="tag">JFrog Artifactory</span>
-            <span class="tag">Nexus</span>
-            <span class="tag">CloudFoundry</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Infrastructure as Code &amp; gestion de configuration</h3>
-          <div class="tags">
-            <span class="tag tag-accent">Terraform</span>
-            <span class="tag">Ansible</span>
-            <span class="tag">Puppet</span>
-            <span class="tag">Spacewalk</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Conteneurs &amp; orchestration</h3>
-          <div class="tags">
-            <span class="tag tag-accent">Kubernetes</span>
-            <span class="tag">Docker</span>
-            <span class="tag">ArgoCD</span>
-            <span class="tag">GitOps</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Fiabilité, observabilité &amp; sécurité</h3>
-          <div class="tags">
-            <span class="tag">Dynatrace</span>
-            <span class="tag">Splunk</span>
-            <span class="tag">Suite ELK</span>
-            <span class="tag">Elasticsearch</span>
-            <span class="tag">Kibana</span>
-            <span class="tag">PRTG</span>
-            <span class="tag">Architecture zero-trust</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Programmation &amp; scripting</h3>
-          <div class="tags">
-            <span class="tag">Python</span>
-            <span class="tag">FastAPI</span>
-            <span class="tag">Bash</span>
-            <span class="tag">SQL</span>
-            <span class="tag">C++</span>
-            <span class="tag">Java</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Systèmes d'exploitation &amp; web</h3>
-          <div class="tags">
-            <span class="tag">Red Hat Linux</span>
-            <span class="tag">CentOS</span>
-            <span class="tag">RockyOS</span>
-            <span class="tag">Ubuntu</span>
-            <span class="tag">Windows Server</span>
-            <span class="tag">Apache</span>
-            <span class="tag">Nginx</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Infrastructure &amp; réseautique</h3>
-          <div class="tags">
-            <span class="tag">VMware vSphere</span>
-            <span class="tag">Routage Cisco</span>
-            <span class="tag">NetScaler</span>
-            <span class="tag">Active Directory</span>
-            <span class="tag">Administration pare-feu / VPN</span>
-            <span class="tag">Sauvegarde &amp; reprise</span>
-          </div>
-        </div>
-
-        <div class="skill-group">
-          <h3>Méthodologies &amp; pratiques</h3>
-          <div class="tags">
-            <span class="tag tag-accent">Ingénierie de la fiabilité des sites (SRE)</span>
-            <span class="tag">Agile / Scrum</span>
-            <span class="tag">DevSecOps</span>
-            <span class="tag">Ingénierie de plateforme</span>
-            <span class="tag">Architecture cloud-native</span>
-            <span class="tag">Jira</span>
-            <span class="tag">ServiceNow</span>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-    <section>
-      <p class="section-label">Formation</p>
-      <h2>Diplômes &amp; accréditations</h2>
-      <p>
-        <strong>Baccalauréat en génie de la production automatisée</strong><br>
-        École de Technologie Supérieure (ÉTS) — Montréal, QC · 2005–2016 · Spécialité : Informatique industrielle
-      </p>
-      <p style="margin-top:0.75rem;">
-        <strong>DEC en techniques de l'informatique (Informatique de gestion)</strong><br>
-        Cégep André-Laurendeau — Montréal, QC · 2002–2005
-      </p>
-    </section>
-
-    <section>
-      <p class="section-label">Modalités</p>
-      <h2>Travailler avec moi</h2>
-      <p>
-        J'interviens comme contributeur individuel senior — à distance, partout dans le monde. Que vous
-        ayez besoin d'un leadership SRE fractionné, d'un contrat d'ingénierie de plateforme à durée
-        déterminée ou d'un spécialiste senior en fiabilité, je suis disponible rapidement en tant que société
-        incorporée canadienne, sans friction à l'intégration.
-      </p>
-      <p>
-        Parfaitement bilingue anglais–français — un avantage concret pour les mandats canadiens,
-        québécois et fédéraux.
-      </p>
-      <div class="engagement-grid">
-        <div class="eng-card">
-          <p class="eng-label">Types de mandat</p>
-          <p class="eng-value">Contrat · Fractionné · Emploi</p>
-        </div>
-        <div class="eng-card">
-          <p class="eng-label">Localisation</p>
-          <p class="eng-value">À distance · Partout dans le monde</p>
-        </div>
-        <div class="eng-card">
-          <p class="eng-label">Langues</p>
-          <p class="eng-value">Français · Anglais</p>
-        </div>
-      </div>
-    </section>
-
-    <section id="contact">
-      <p class="section-label">Contact</p>
-      <h2>Discutons</h2>
-      <div class="contact-box">
-        <p>
-          Disponible pour de nouveaux mandats dès maintenant. Parlez-moi de votre défi de fiabilité ou de
-          plateforme et nous verrons s'il y a une bonne adéquation.
-        </p>
-        <div class="contact-links">
-          <a href="mailto:marc@marcberthelette.com" class="btn-primary">marc@marcberthelette.com</a>
-          <a href="https://linkedin.com/in/marc-berthelette-3aba6917" class="btn-secondary" target="_blank" rel="noopener">LinkedIn</a>
-        </div>
-      </div>
-    </section>
-
-  </div>
-
-  <footer>
-    <p>© 2026 Marc Berthelette · Consultant senior SRE &amp; en ingénierie de plateforme · À distance · Partout dans le monde</p>
-  </footer>
-
+<a class="skip" href="#main">Aller au contenu</a>
+<header>
+<nav class="wrap" aria-label="Navigation principale"><a class="brand" href="./"><span aria-hidden="true">MB</span>Marc Berthelette</a>
+<div class="nav-links"><a href="#work">Réalisations</a><a href="#services">Services</a><a href="#about">À propos</a><a href="#contact">Contact</a><a class="language" href="../" lang="en" hreflang="en" aria-label="English version">EN</a>
+</div>
+</nav>
+</header>
+<main id="main">
+<div class="wrap hero">
+<div>
+<p class="eyebrow">Consultant senior DevOps et ingénierie de plateforme</p>
+<h1>Des déploiements fiables.<br>Moins de travail manuel.</h1>
+<p class="intro">Je suis <strong>Marc Berthelette</strong>. J’aide les équipes de développement à remplacer les processus de livraison fragiles par des pipelines fiables, une automatisation concrète et une surveillance utile.</p>
+<p class="hero-proof">Mes réalisations comprennent des pipelines de livraison pour 12 équipes et plus de 70 applications chez Énergir, ainsi que la validation automatisée d’environ 250 dépôts chez Desjardins.</p>
+<div class="actions"><a class="button" href="#contact">Discutons de votre besoin</a><a class="button secondary" href="../assets/marc-berthelette-resume-en.pdf" download>Télécharger le CV (PDF, anglais)</a>
+</div>
+</div>
+<aside class="availability" aria-label="Disponibilité">
+<p class="status">Disponible pour de nouveaux mandats</p>
+<h2>De l’expérience.<br>Du travail concret.</h2>
+<dl>
+<div>
+<dt>Basé à</dt>
+<dd>Smiths Falls, Ontario</dd>
+</div>
+<div>
+<dt>À distance</dt>
+<dd>Contrats et projets</dd>
+</div>
+<div>
+<dt>Langues</dt>
+<dd>Français et anglais</dd>
+</div>
+</dl><a href="https://www.linkedin.com/in/marc-berthelette-3aba6917">Me joindre sur LinkedIn ↗</a>
+</aside>
+</div>
+<section class="section work" id="work">
+<div class="wrap">
+<p class="eyebrow">Réalisations</p>
+<h2>Des problèmes concrets. Des solutions livrées.</h2>
+<p class="section-intro">Quelques exemples de systèmes livrés dans les secteurs de l’énergie et des services financiers.</p>
+<div class="case-grid">
+<article class="case">
+<p class="client">Énergir · Pratiques de livraison</p>
+<h3>Une livraison cohérente pour 12 équipes</h3>
+<dl>
+<dt>Le problème</dt>
+<dd>Les pratiques de livraison variaient selon les équipes et les technologies.</dd>
+<dt>La solution livrée</dt>
+<dd>Des modèles Jenkins centralisés, avec des étapes communes et des contrôles qualité obligatoires.</dd>
+<dt>Le résultat</dt>
+<dd>Environ 50 développeurs et plus de 70 applications ont bénéficié d’une base de livraison commune.</dd>
+</dl>
+</article>
+<article class="case">
+<p class="client">Énergir · Automatisation des déploiements</p>
+<h3>Une procédure de 15 étapes, automatisée</h3>
+<dl>
+<dt>Le problème</dt>
+<dd>Les mises en production MuleSoft reposaient sur une procédure manuelle de 15 étapes.</dd>
+<dt>La solution livrée</dt>
+<dd>Quelques tâches Jenkins remplaçant la procédure, avec une partie de la préparation effectuée avant la fenêtre de déploiement.</dd>
+<dt>Le résultat</dt>
+<dd>Un petit ensemble de tâches reproductibles a remplacé la succession d’opérations manuelles.</dd>
+</dl>
+</article>
+<article class="case">
+<p class="client">Desjardins · Santé de la plateforme</p>
+<h3>250 dépôts vérifiés toutes les quatre heures</h3>
+<dl>
+<dt>Le problème</dt>
+<dd>Les administrateurs avaient besoin de valider la configuration des dépôts Artifactory de façon reproductible.</dd>
+<dt>La solution livrée</dt>
+<dd>Un service Python/FastAPI publiant les résultats des vérifications dans Dynatrace.</dd>
+<dt>Le résultat</dt>
+<dd>Les vérifications régulières rendaient les problèmes de configuration visibles. Le même outil a aussi servi aux tests de non-régression lors d’une mise à niveau.</dd>
+</dl>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="services">
+<div class="wrap">
+<p class="eyebrow">Mes services</p>
+<h2>Un mandat clair. Une réalisation concrète.</h2>
+<div class="services">
+<article class="service">
+<p class="number" aria-hidden="true">01</p>
+<h3>CI/CD et déploiements automatisés</h3>
+<p>Fiabiliser les pipelines, remplacer les déploiements manuels et ajouter des validations qui détectent les problèmes avant la mise en production.</p>
+<p class="tools">Jenkins · Azure DevOps · GitHub Actions</p>
+</article>
+<article class="service">
+<p class="number" aria-hidden="true">02</p>
+<h3>Outillage et automatisation</h3>
+<p>Améliorer les outils de livraison, les dépôts d’artefacts et les processus Linux. Transformer les tâches récurrentes en automatisation maintenable.</p>
+<p class="tools">Python · Bash · Linux · Artifactory</p>
+</article>
+<article class="service">
+<p class="number" aria-hidden="true">03</p>
+<h3>Surveillance et fiabilité</h3>
+<p>Créer des vérifications de santé et des tableaux de bord utiles. Faciliter le diagnostic des défaillances et la détection des problèmes de configuration.</p>
+<p class="tools">Dynatrace · Splunk · ELK · FastAPI</p>
+</article>
+</div>
+</div>
+</section>
+<section class="section" id="approach" aria-labelledby="approach-title">
+<div class="wrap">
+<p class="eyebrow">Mon approche</p>
+<h2 id="approach-title">Ma façon de travailler</h2>
+<div class="formats">
+<article>
+<h3>Partir de ce qui fait mal.</h3>
+<p>« Si vous aviez une baguette magique et pouviez régler un seul problème, lequel choisiriez-vous en premier ? » C’est souvent ma première question. Ensemble, nous déterminons qui chaque problème touche, à quelle fréquence il survient et quelles en sont les conséquences. Cela nous donne un point de départ concret.</p>
+</article>
+<article>
+<h3>Résoudre le problème immédiat.</h3>
+<p>J’examine le fonctionnement actuel et je travaille avec l’équipe pour mettre en place une solution adaptée à son environnement. Les technologies en place orientent la mise en œuvre; le problème guide les décisions.</p>
+</article>
+<article>
+<h3>Tirer davantage de valeur de l’existant.</h3>
+<p>Une fois les problèmes immédiats réglés, je propose des pratiques et des fonctionnalités que l’équipe n’a peut-être pas encore explorées. Bien souvent, ses outils offrent plus de possibilités qu’elle ne l’imagine.</p>
+</article>
+</div>
+<p class="expertise"><strong>Par exemple :</strong> les journaux centralisés peuvent servir à bien plus qu’au dépannage après un incident. Ils peuvent révéler des erreurs récurrentes, une dégradation progressive et des signes avant-coureurs, même en l’absence de panne majeure. J’aide les équipes à transformer ces informations en surveillance utile pour intervenir plus tôt.</p>
+</div>
+</section>
+<section class="section" id="about">
+<div class="wrap about-grid">
+<div class="about-copy">
+<p class="eyebrow">À propos de Marc</p>
+<h2>Un ingénieur qui mène les idées à leur réalisation.</h2>
+<p>Près de 18 ans d’expérience en infrastructure, développement logiciel et exploitation, notamment dans les secteurs de l’énergie et des services financiers.</p>
+<p>Mon travail comprend la livraison des outils, l’accompagnement des équipes et le soutien quand un problème survient. Chez Énergir, j’ai créé la feuille de route de livraison durant mes trois premières années et accompagné l’intégration des développeurs et des ingénieurs DevOps.</p>
+<p class="expertise"><strong>Outils principaux :</strong> Jenkins, Python, Bash, Linux, Azure et automatisation de la livraison. Expérience complémentaire en déploiements applicatifs Kubernetes et utilisation de processus Terraform/Ansible existants.</p>
+<div class="actions"><a href="../assets/marc-berthelette-resume-en.pdf" download>Télécharger le CV (PDF, anglais) ↓</a>
+</div>
+</div>
+<ol class="timeline">
+<li>
+<h3>Énergir</h3>
+<p class="date">Ingénieur DevOps senior · Sept. 2021 – Sept. 2026</p>
+<p>Livraison centralisée pour 12 équipes. Automatisation des déploiements Oracle et Salesforce, et livraison de déploiements ArcGIS versionnés.</p>
+</li>
+<li>
+<h3>Desjardins</h3>
+<p class="date">Ingénieur DevOps senior, contrat · Oct. 2025 – Mars 2026</p>
+<p>Validation des dépôts et environnements de test Artifactory à la demande. Mandat réalisé en parallèle de celui chez Énergir.</p>
+</li>
+<li>
+<h3>Tink</h3>
+<p class="date">Ingénieur DevOps · Janv. 2018 – Août 2021</p>
+<p>Standardisation des pipelines Jenkins et automatisation des correctifs sur plus de 600 serveurs. Création d’outils d’inventaire logiciel et de visibilité opérationnelle.</p>
+</li>
+<li>
+<h3>SOVO Technologies</h3>
+<p class="date">Technicien en chef → Ingénieur logiciel · Nov. 2008 – Déc. 2017</p>
+<p>Responsabilité de l’infrastructure, encadrement des techniciens et développement de logiciels de planification et d’évaluation de la reconnaissance vocale.</p>
+</li>
+</ol>
+</div>
+</section>
+<section class="section engagements">
+<div class="wrap">
+<p class="eyebrow">Travailler ensemble</p>
+<h2>Une formule adaptée à votre équipe.</h2>
+<div class="formats">
+<article>
+<h3>Un projet ciblé</h3>
+<p>Un problème de livraison ou de plateforme bien défini, des livrables convenus, une mise en œuvre et un transfert de connaissances.</p>
+</article>
+<article>
+<h3>Un contrat de consultation</h3>
+<p>Du renfort technique pour faire avancer vos travaux de livraison et d’automatisation, en collaboration avec votre équipe.</p>
+</article>
+<article>
+<h3>Un accompagnement à temps partiel</h3>
+<p>Des améliorations continues et du soutien, avec des responsabilités, des délais de réponse et un périmètre convenus.</p>
+</article>
+</div>
+<p class="note">Incorporé au Canada et basé en Ontario. Mandats à distance pour des clients canadiens et internationaux lorsque permis. Également ouvert aux postes permanents correspondant à mon profil.</p>
+</div>
+</section>
+<section class="contact" id="contact">
+<div class="wrap contact-inner">
+<div>
+<p class="eyebrow">Contact</p>
+<h2>Un processus de livraison ou des travaux de plateforme à améliorer ?</h2>
+<p>Parlez-moi de votre objectif, de vos outils et de votre échéancier. Nous pourrons déterminer si un projet ciblé ou un mandat plus long répond à votre besoin.</p>
+</div>
+<div class="actions"><a class="button" href="mailto:marc.berthelette@gmail.com">Écrire à Marc →</a><a class="email" href="mailto:marc.berthelette@gmail.com">marc.berthelette@gmail.com</a><a href="https://www.linkedin.com/in/marc-berthelette-3aba6917">LinkedIn ↗</a>
+</div>
+</div>
+</section>
+</main>
+<footer>
+<div class="wrap"><span>© 2026 Marc Berthelette</span><span>DevOps et ingénierie de plateforme · Ontario, Canada</span>
+</div>
+</footer>
 </body>
 </html>
