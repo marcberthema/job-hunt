@@ -1,42 +1,69 @@
-# LinkedIn — consulting-first copy
+# LinkedIn — copy refreshed 2026-10-14
 
-Prepared 2026-10-09 from profile.md and Marc's clarifications. Ready-to-paste draft; not applied live. Supersedes September copy in linkedin-profile.md. Keep actual experience titles; do not add a current corporation role without its name and dates being confirmed. Énergir ended September 2026. Rates and financial urgency stay out of public copy.
+Rebuilt from the current Platform core resume and the 2026-10-13 resume fact review in profile.md. Ready to paste; not applied live (external sites are read-only for the agent). Keep actual experience titles. Énergir ended September 2026. Rates and financial urgency stay out of public copy. The French sections below are the older 2026-10-09 copy and still need the same corrections before they are published.
 
 ## Headline — EN
 
-Senior DevOps & Platform Engineering Consultant | CI/CD, Jenkins, Azure & Python | Deployment Automation & Production Reliability | FR/EN
+Senior DevOps & Platform Engineering Consultant | CI/CD, Jenkins, Azure & Python | Release Automation & Production Reliability | FR/EN
 
 ## About — EN
 
-I help engineering teams make deployments reliable and remove repetitive operational work.
+I help engineering teams make releases repeatable and remove manual operational work.
 
-My strength is getting productive in unfamiliar systems: understanding the workflow, finding the problems, and turning a practical plan into working automation. My experience spans nearly 18 years in infrastructure, software development, and production operations, including energy and financial services.
+I get productive quickly in unfamiliar systems: understand the workflow, find where it breaks, and turn a practical plan into tested automation, then work with the application teams so it actually gets used. That comes from nearly 18 years across infrastructure, software development, and production operations, including energy and financial services.
 
-At Énergir, I centralized delivery pipelines serving approximately 50 developers across 12 teams and 70+ applications. Teams shared consistent pipeline stages and mandatory quality checks. I also created the delivery roadmap during my first three years and onboarded developers and DevOps engineers.
+At Énergir (five-year consulting engagement, renewed four times), I initiated shared Jenkins pipelines used by every team already deploying through Jenkins, in an environment of about 50 developers, 12 teams, and 70+ applications. Shared pipeline code was tested on every commit at roughly 80-90% coverage.
 
-Examples of the work I deliver:
-• Turned a 15-step MuleSoft deployment checklist into a few Jenkins jobs.
-• Automated Oracle releases so routine deployments no longer required a weekly approved emergency-access account, with tests catching recurring file-encoding issues.
-• Replaced legacy Salesforce deployment scripts with Salesforce CLI and sandbox validation, surfacing problems before release night and reducing missed deployment windows.
-• Delivered version-controlled ArcGIS map-service deployments and properties across dev, test, and production through a service account, replacing laptop-based deployment.
-• Built a Python/FastAPI service at Desjardins validating approximately 250 Artifactory repositories every four hours and publishing results to Dynatrace.
-• Automated patching across 600+ servers at Tink and built tooling to expose software versions, vulnerability exposure, and end-of-life risk.
+Examples of the work:
+• Replaced a 15-step MuleSoft release checklist with version-based deployments of QA-tested artifacts, so release preparation moved ahead of the production window and rollback meant redeploying a previous version.
+• Built nightly Salesforce validation. When two weeks of failures were stuck on disputed ownership, I escalated to the project director; fixes across 4-5 teams followed within 48 hours and the project deployed on schedule.
+• Automated routine Oracle releases without emergency-access requests, and eliminated recurring encoding incidents with SQL checks and separate locale settings.
+• Migrated production Salesforce logs to direct Dynatrace ingestion and built dashboards that exposed previously hidden errors.
+• At Desjardins, built a Python/FastAPI workflow that provisioned Artifactory and tested artifact retrieval across about 250 repositories, deployed through ArgoCD and reporting to Dynatrace.
+• At Tink, replaced reactive patching across 600+ servers with staged, dependency-aware Spacewalk schedules.
 
-My core work covers Jenkins, Azure DevOps, GitHub Actions, Linux, Python/Bash, deployment automation, and observability. I work with Kubernetes application deployments and existing Terraform/Ansible provisioning workflows.
+Core tools: Jenkins, Azure DevOps, GitHub Actions, Linux, Python/Bash, Artifactory, Dynatrace, Splunk, ELK. I work with Kubernetes application deployments and with existing Terraform/Ansible provisioning workflows.
 
-Based in Ontario, bilingual French/English, and incorporated in Canada. Available immediately for remote consulting: full-time contracts, part-time support, and scoped projects. If your team needs help with fragile pipelines, manual releases, or operational tooling, let's talk.
+Based in Ontario, bilingual French/English, incorporated in Canada, available immediately. Open to remote consulting contracts and full-time roles. If your team has fragile pipelines, manual releases, or operational tooling that needs work, let's talk.
 
-## Énergir experience — EN
+## Experience — EN (paste each entry; dates as shown)
 
-Senior DevOps Engineer | September 2021 – September 2026
+**Énergir — Senior DevOps Engineer (Contract)** | September 2021 - September 2026
+Five-year consulting engagement, renewed four times.
+• Initiated shared Jenkins pipelines adopted by all Jenkins teams; approximately 80-90% JaCoCo coverage with per-commit unit tests and sample applications for integration testing.
+• Established "build once, deploy many"; migrated about five Node.js applications to runtime configuration through team-reviewed pull requests so one tested build serves every environment.
+• Replaced a 15-step MuleSoft checklist with version-based deployments of QA-tested artifacts, simplifying rollback.
+• Built nightly Salesforce validation; escalation of two weeks of failures prompted fixes across 4-5 teams within 48 hours and an on-schedule deployment.
+• Automated routine Oracle releases; eliminated encoding incidents with SQL checks and separate SQL/Forms locale settings.
+• Migrated production Salesforce logs to direct Dynatrace ingestion; expanded error parsing and dashboards.
+Skills: Jenkins, Azure, Python, JaCoCo, Salesforce CLI, Oracle, Dynatrace
 
-• Centralized Jenkins delivery pipelines for approximately 50 developers across 12 teams and 70+ applications, enforcing shared stages and mandatory SonarQube checks.
-• Created the delivery roadmap as informal primary owner during the first three years; onboarded developers and DevOps engineers and served as their primary contact for delivery problems.
-• Rebuilt Salesforce deployment using Salesforce CLI and sandbox validation, reducing recurring missed deployment windows to one miss after launch.
-• Reduced MuleSoft production deployment from a 15-step checklist to a few Jenkins jobs, allowing some preparation ahead of the release window.
-• Automated Oracle releases, removing emergency-account approval from routine deployments and catching recurring file-encoding issues through testing.
-• Learned ArcGIS delivery workflows and delivered versioned map services and properties to dev, test, and production through a service account. Phase one shipped at the end of the engagement; team adoption followed my departure.
-• Used another team's Terraform/Ansible workflows while helping migrate Nexus, Jenkins, and Vault environments to Azure.
+**Desjardins — Senior DevOps Engineer (Contract)** | October 2025 - March 2026 (concurrent with Énergir)
+• Built a Python/FastAPI workflow that provisioned Artifactory, applied configuration from a selected Git reference, and tested uncached artifact retrieval across about 250 repositories.
+• Deployed the suite through ArgoCD/GitOps on a schedule, publishing configuration-version and artifact-level results to Dynatrace.
+• Implemented artifact retention policies and Splunk alerts for configuration changes made outside CI/CD.
+Skills: Python, FastAPI, Artifactory, Kubernetes, ArgoCD, Dynatrace, Splunk
+
+**Tink — DevOps Engineer** | January 2018 - August 2021
+**SOVO Technologies — Lead Technician, then Software Engineer** | November 2008 - December 2017
+Use the bullets in resume/platform/marc-berthelette-resume-en.md unchanged.
+
+## Skills section
+
+Top 3 to pin: Jenkins, Azure DevOps, Python. Then: CI/CD, GitHub Actions, Linux, Artifactory, Dynatrace, Splunk, Kubernetes, ArgoCD, Terraform, Ansible, Docker, Bash. Avoid positioning Kubernetes and Terraform as core expertise.
+
+## Open items
+
+- Kubernetes at Énergir (about a year, not primary owner): add a line only after Marc gives the specifics, then add to profile.md.
+- Optional: a one-line "Open to work" setting for recruiters (Marc's choice; it is visible to recruiters only if he picks "recruiters only").
+- Optional: switch headline toward SRE when applying to SRE roles; the profile's 2026-09-11 headline is "Senior / Staff SRE · Platform Engineering · DevOps · Reliability".
+
+## Publication status
+
+- [ ] English headline and About applied live
+- [ ] English Énergir and Desjardins entries updated
+- [ ] Skills reordered
+- [ ] French sections corrected, then applied
 
 ## Titre — FR
 
