@@ -1,79 +1,76 @@
 # Marc Berthelette
 
-**Senior Platform / DevOps Engineer**
+**Senior DevOps Engineer — Automation, CI/CD and Guardrails for AI-Assisted Engineering**
 
-Smiths Falls, ON, Canada · Available for remote work · marc.berthelette@gmail.com\
-[linkedin.com/in/marc-berthelette-3aba6917](https://linkedin.com/in/marc-berthelette-3aba6917)\
-Bilingual: French (native) · English (fluent) · Available immediately
+Smiths Falls, ON, Canada · Remote · marc.berthelette@gmail.com\
+[marcberthelette.com](https://marcberthelette.com) · [LinkedIn](https://linkedin.com/in/marc-berthelette-3aba6917)\
+Bilingual: French / English · Incorporated in Canada · Available immediately
 
 ## Professional Summary
 
-Senior DevOps engineer with nearly 18 years across infrastructure, software development, and production operations. Standardized CI/CD for approximately 50 developers across 12 teams and 70+ applications at Énergir, introduced scope gates and human-validation checkpoints for AI-assisted engineering, and built Python-based platform monitoring and validation at Desjardins. Brings pipeline automation, observability, and incident root-cause experience in energy and financial services, with a focus on making deployments dependable and reducing manual work for engineering teams.
+Senior DevOps engineer with nearly 18 years across infrastructure, development and operations. Introduced AI-assisted engineering practices at Énergir with hard scope gates and human-validation checkpoints before any AI-generated code reaches production. Built shared CI/CD for 12 teams and 70+ applications and a Python/FastAPI validation service at Desjardins that reports to Dynatrace. Works from Python and Azure; Terraform and Kubernetes experience is as a user of platforms other teams operate.
 
 ## Technical Skills
 
-**CI/CD & Platforms:** Jenkins, GitHub Actions, Azure DevOps, SonarQube, JFrog Artifactory, Nexus\
-**Cloud & Infrastructure:** Microsoft Azure, Terraform/Ansible workflows, AWS (EC2, S3, Route 53, VPC), Linux, Puppet\
-**Containers & Delivery:** Docker, Kubernetes application deployments, ArgoCD\
-**Monitoring & Observability:** ELK (Elasticsearch, Logstash, Kibana), Dynatrace, Splunk, PRTG\
-**Programming & Scripting:** Python, FastAPI, Bash, Java, C++, SQL\
-**AI-Assisted Engineering:** Scope gates, human-validation checkpoints, and controlled promotion for AI-generated code
+**Automation & Programming:** Python, FastAPI, Bash, Java, C++, SQL\
+**CI/CD:** Jenkins, GitHub Actions, Azure DevOps, SonarQube quality gates, JFrog Artifactory\
+**Cloud & Infrastructure:** Azure, Terraform/Ansible workflows (user of another team's modules), Linux, AWS migration environment\
+**Containers & Observability:** Kubernetes application deployments, ArgoCD, Docker, Dynatrace, Splunk, ELK
 
 ## Work Experience
 
-### Énergir — Senior DevOps Engineer
+### Énergir — Senior DevOps Engineer (Contract)
 
-**Montréal, QC | September 2021 – September 2026**
+**Montréal, QC | September 2021 – September 2026**\
+Five-year consulting engagement, renewed four times.
 
-- Introduced AI-assisted engineering practices into the team's tooling over roughly six to nine months, applying hard scope gates and human-validation checkpoints before any AI-generated code reached production; raised the lack of equivalent organizational safeguards with leadership.
-- Centralized Jenkins continuous integration and delivery (CI/CD) for approximately 50 developers across 12 teams and 70+ applications, enforcing shared stages and mandatory SonarQube checks.
-- Separated application-code errors from platform-pipeline errors in build reporting, cutting false-positive failures and letting teams see whether a result was theirs to fix.
-- Led root-cause analysis on critical production incidents; implemented proactive monitoring, observability dashboards, and automated remediation to reduce time to recover.
-- Helped a team move team-owned Nexus, Jenkins, and Vault environments from manual Azure portal operations to Infrastructure as Code, using another team's Terraform and Ansible workflows; later introduced Azure Key Vault in place of HashiCorp Vault.
-- Rebuilt Salesforce delivery using Salesforce CLI and sandbox validation of candidate merges; reduced recurring missed deployment windows to one miss since launch.
-- Automated Oracle releases, removing the need for a weekly approved emergency-access account for routine deployments; added tests catching recurring file-encoding issues.
-- Versioned ArcGIS map services and properties; delivered service-account deployments to dev, test, and production, replacing deployments from developers' laptops.
-- Reduced MuleSoft production releases from a 15-step manual checklist to a few Jenkins jobs.
-- Created the delivery roadmap as informal primary owner for the first three years; onboarded developers and DevOps engineers and served as their primary support contact.
+- Introduced AI-assisted engineering practices with hard scope gates and human-validation checkpoints before any AI-generated code reaches production.
+- Initiated shared Jenkins pipelines adopted by all teams already deploying through Jenkins, in an environment of about 50 developers, 12 teams and 70+ applications; achieved approximately 80–90% JaCoCo coverage of shared pipeline code with per-commit unit tests and built sample applications for integration testing.
+- Enforced shared stages and mandatory SonarQube checks in the shared pipelines so developers could not simply skip them.
+- Separated application-code errors from platform-pipeline errors in build reporting so teams could see whose fix a failure was.
+- Replaced legacy ANT deployment scripts with the official Salesforce CLI and built validation that deployed each candidate merge into a dedicated sandbox and ran the full test suite.
+- Migrated production Salesforce logs to direct Dynatrace ingestion; expanded error parsing and dashboards to help the team investigate previously hidden issues.
+- Replaced a 15-step MuleSoft checklist with version-based deployments of QA-tested artifacts, moving release preparation ahead of production windows and simplifying rollback.
+- Ran recurring enablement sessions (about six per year) with each application team after pipeline delivery; onboarded new DevOps engineers and developers and was the primary developer contact when the delivery ecosystem broke.
 
-**Key technologies:** Jenkins, SonarQube, Azure, Terraform, Ansible, Nexus, Salesforce CLI, Oracle, MuleSoft, ArcGIS
+**Key technologies:** Jenkins, SonarQube, Azure, Python, JaCoCo, Salesforce CLI, Oracle, Node.js, MuleSoft, Dynatrace
 
 ### Desjardins — Senior DevOps Engineer (Contract)
 
 **Montréal, QC (Remote) | October 2025 – March 2026**\
-Concurrent contract alongside the Énergir engagement.
+Concurrent with the Énergir engagement.
 
-- Built a Python/FastAPI service testing approximately 250 JFrog Artifactory remote repositories every four hours, publishing results to Dynatrace across seven package ecosystems.
-- Made validation logic reusable and test cases configurable; the harness also supported regression testing for the enterprise Artifactory upgrade.
-- Automated on-demand Artifactory environments using Kubernetes and ArgoCD so administrators could test configuration changes and upgrades safely.
-- Implemented artifact retention policies and Splunk alerts for configuration changes made outside CI/CD, improving platform governance and auditability.
+- Built a Python/FastAPI workflow that provisioned Artifactory, applied configuration from a selected Git reference, and tested uncached artifact retrieval across approximately 250 repositories.
+- Deployed the suite through ArgoCD/GitOps for scheduled execution, publishing configuration-version and artifact-level results to Dynatrace to expose configuration and upstream connectivity failures.
+- Made most validation logic tool-agnostic and the artifact test set configurable so platform administrators could add their own cases.
+- Implemented artifact retention policies and Splunk alerts for configuration changes made outside CI/CD.
 
-**Key technologies:** Python, FastAPI, JFrog Artifactory, Kubernetes, ArgoCD, GitHub Actions, Dynatrace, Splunk
+**Key technologies:** Python, FastAPI, Artifactory, Kubernetes, ArgoCD, Dynatrace, Splunk
 
 ### Tink — DevOps Engineer
 
 **Montréal, QC | January 2018 – August 2021**
 
-- Centralized Jenkins Pipeline as Code for 10–15 developers supporting 80+ applications and 20+ clients, standardizing delivery steps and adding release visibility through Jira.
-- Built ELK log aggregation for proactive detection of production anomalies and automated restart of an unresponsive Elasticsearch cluster, with paging if the probe stayed down, to reduce manual intervention.
-- Automated OS patching and kernel reboots across 600+ servers, reducing maintenance to a monthly verification check; managed configuration with Puppet and Spacewalk.
-- Built a fleet software inventory platform exposing application versions, vulnerability exposure, end-of-life software, and TLS certificate assessments to product owners.
-- Supported a 24/7 production on-call rotation.
-- Built a client's AWS migration target environment over about six months (EC2, S3, Route 53, VPC, memcached on EC2, serverless relational database), provisioned by hand with no prior AWS experience; the client cancelled the migration before cutover.
+- Replaced reactive patching across 600+ servers with staged Spacewalk schedules, environment/role groups, A/B frontend and middleware batches, and dependency-aware reboots.
+- Built fleet inventory across Unix and Windows servers to identify vulnerable applications and upcoming end-of-life upgrades; added TLS scoring and environment version tracking for Ops, product owners, and QA.
+- Automated PRTG-triggered response to Elasticsearch CPU saturation: attempted a process restart after two minutes and alerted on-call at five minutes if saturation persisted; supported a 24/7 rotation.
+- Built centralized ELK logging and managed fleet configuration with Puppet.
+- Built an AWS migration target using console provisioning (EC2, S3, Route 53, VPC, caching and database services); the client cancelled before production cutover.
 
-**Key technologies:** Jenkins, Linux, Puppet, Spacewalk, AWS, Bash, Elasticsearch, Logstash, Kibana, PRTG, Jira
+**Key technologies:** Linux, Jenkins, Puppet, Spacewalk, PRTG, ELK, AWS, Rocket.Chat
 
 ### SOVO Technologies — Lead Technician → Software Engineer
 
 **Montréal, QC | November 2008 – December 2017**
 
-- Managed company IT infrastructure and a technician team; delivered a server relocation without downtime and added redundancy to core servers.
-- Developed production scheduling, voice-recognition evaluation, and multilingual dictionary software; served as the final quality gate before production releases.
+- Led and performed most redundancy work across HAProxy, authentication, speech-recognition servers and file services with a second technician; supported live-captioning requirements of three minutes maximum downtime per broadcast and eight-second caption latency.
+- Owned IT planning and execution for two office relocations involving approximately 15–20 workstations, preparing networks and cabling and coordinating phased moves to minimize disruption.
+- Developed production scheduling, speech-recognition evaluation, and multilingual dictionary software; served as the final quality gate before production releases.
 
-**Key technologies:** C++, Java, SQL, Linux, Windows Server, Active Directory, VMware vSphere, Cisco networking
+**Key technologies:** HAProxy, Active Directory, VMware vSphere, Linux, Windows Server, C++, Java, SQL
 
 ## Education
 
-**Bachelor of Automated Manufacturing Engineering** — École de Technologie Supérieure (ÉTS), Montréal, QC | 2005 – 2016
+**Bachelor of Automated Manufacturing Engineering** — École de Technologie Supérieure (ÉTS), Montréal | 2016
 
-**DCS in Computer Science Technology** — Cégep André-Laurendeau, Montréal, QC | 2002 – 2005
+**DCS in Computer Science Technology** — Cégep André-Laurendeau, Montréal | 2005

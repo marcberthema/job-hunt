@@ -1,6 +1,6 @@
 # Marc Berthelette
 
-**Senior Site Reliability Engineer — Production Operations, Incident Response and Observability**
+**Senior Site Reliability Engineer — Incident Response, Observability and Automation**
 
 Smiths Falls, ON, Canada · Remote · marc.berthelette@gmail.com\
 [marcberthelette.com](https://marcberthelette.com) · [LinkedIn](https://linkedin.com/in/marc-berthelette-3aba6917)\
@@ -8,13 +8,13 @@ Bilingual: French / English · Incorporated in Canada · Available immediately
 
 ## Professional Summary
 
-Senior engineer with nearly 18 years across infrastructure, development, and operations, focused on production reliability: 24/7 on-call support, incident response and root cause analysis, fleet-wide patching automation, monitoring and alerting, and Linux and Windows server operations. Built Python/FastAPI validation services reporting to Dynatrace, and used Kubernetes and ArgoCD as an application and platform user rather than a cluster owner. Experience spans energy at Énergir, financial services at Desjardins, a 600+ server fleet at Tink, and live-captioning infrastructure with strict availability and latency requirements.
+Senior engineer with nearly 18 years across infrastructure, development and operations. Delivered production reliability through monitoring, incident response, fleet automation and preventive validation: a 24/7 on-call rotation and 600+ server fleet at Tink, production Salesforce logging moved to direct Dynatrace ingestion at Énergir, and a Python/FastAPI validation workflow at Desjardins run through ArgoCD. Azure is the main cloud. AWS experience is a hand-built migration environment, and Kubernetes and Terraform use is of platforms other teams operate.
 
 ## Technical Skills
 
 **Reliability:** Incident response, root cause analysis, on-call support, automated remediation, Linux\
 **Observability:** Dynatrace, Splunk, ELK, PRTG; Python, FastAPI, Bash\
-**Cloud & Infrastructure:** Azure, AWS (EC2, S3, Route 53, VPC; hand-built migration environment), Terraform/Ansible workflows (user of another team's modules), Puppet, Spacewalk, Linux and Windows Server, Active Directory, HAProxy\
+**Cloud & Infrastructure:** Azure, Terraform/Ansible workflows (user of another team's modules), AWS migration environment (EC2, S3, Route 53, VPC), Puppet, Spacewalk\
 **Delivery:** Jenkins, GitHub Actions, Azure DevOps, Artifactory, Kubernetes application deployments, ArgoCD
 
 ## Work Experience
@@ -24,13 +24,14 @@ Senior engineer with nearly 18 years across infrastructure, development, and ope
 **Montréal, QC | September 2021 – September 2026**\
 Five-year consulting engagement, renewed four times.
 
+- Migrated production Salesforce logging from Logstash to direct Dynatrace ingestion, reproducing existing processing; extracted DML error types, messages and originating classes and built dashboards that exposed previously hidden issues, then transferred ownership to a long-standing Salesforce team member.
 - Implemented four-hourly Jenkins smoke tests with Teams alerts to detect external dependency failures, including firewall changes; clarified pipeline-versus-application failure ownership.
-- Achieved approximately 80–90% JaCoCo coverage of shared pipeline code with per-commit tests; built sample applications for manual integration testing across supported technology stacks.
-- Eliminated recurring Oracle encoding incidents with SQL encoding checks and separate SQL/Forms locale settings; converted existing SQL files and documented procedures for developers.
-- Built nightly Salesforce validation; escalated persistent failures to the project director, prompting fixes across 4–5 teams within 48 hours and enabling the project to deploy on schedule.
-- Initiated and defined requirements for an availability dashboard covering Jenkins, Vault, Logstash and Nexus in development and production; a colleague implemented it.
+- Built nightly Salesforce validation; escalated two weeks of failures to the project director, prompting fixes across 4–5 teams within 48 hours. The project deployed on schedule.
+- Initiated shared Jenkins pipelines adopted by all teams already deploying through Jenkins, in an environment of about 50 developers, 12 teams and 70+ applications; achieved approximately 80–90% JaCoCo coverage of shared pipeline code with per-commit unit tests and built sample applications for integration testing.
+- Separated application-code errors from platform-pipeline errors in build reporting so teams could see whose fix a failure was.
+- Automated routine Oracle releases without emergency-access requests; manual steps retained approvals. Eliminated encoding incidents with SQL checks and separate SQL/Forms locale settings.
 
-**Key technologies:** Jenkins, Azure, Python, JaCoCo, Salesforce CLI, Oracle, Node.js, MuleSoft
+**Key technologies:** Jenkins, Azure, Python, Dynatrace, Logstash, JaCoCo, Salesforce CLI, Oracle
 
 ### Desjardins — Senior DevOps Engineer (Contract)
 
@@ -40,6 +41,7 @@ Concurrent with the Énergir engagement.
 - Built a Python/FastAPI workflow that provisioned Artifactory, applied configuration from a selected Git reference, and tested uncached artifact retrieval across approximately 250 repositories.
 - Deployed the suite through ArgoCD/GitOps for scheduled execution, publishing configuration-version and artifact-level results to Dynatrace to expose configuration and upstream connectivity failures.
 - Implemented artifact retention policies and Splunk alerts for configuration changes made outside CI/CD.
+- Made most validation logic tool-agnostic and the artifact test set configurable so platform administrators could add their own cases.
 
 **Key technologies:** Python, FastAPI, Artifactory, Kubernetes, ArgoCD, Dynatrace, Splunk
 
@@ -49,9 +51,10 @@ Concurrent with the Énergir engagement.
 
 - Automated PRTG-triggered response to Elasticsearch CPU saturation: attempted a process restart after two minutes and alerted on-call at five minutes if saturation persisted; supported a 24/7 rotation.
 - Replaced reactive patching across 600+ servers with staged Spacewalk schedules, environment/role groups, A/B frontend and middleware batches, and dependency-aware reboots.
-- Controlled package versions through client-specific repositories and reported update/reboot progress and failures to Rocket.Chat; existing PRTG monitoring provided service-health checks.
-- Built inventory across Unix and Windows servers for vulnerability impact analysis, end-of-life planning and TLS scoring; linked release versions and Jira references for Ops, product owners and QA.
-- Built centralized ELK logging and managed fleet configuration with Puppet. Built an AWS migration target through console provisioning; the client cancelled before production cutover.
+- Controlled updates through client-specific package repositories; published patch/reboot progress and failures to Rocket.Chat, with existing PRTG monitoring covering service health.
+- Built fleet inventory across Unix and Windows servers to identify vulnerable applications and upcoming end-of-life upgrades; added TLS scoring and environment version tracking for Ops, product owners, and QA.
+- Built centralized ELK logging and managed fleet configuration with Puppet.
+- Built an AWS migration target using console provisioning (EC2, S3, Route 53, VPC, caching and database services); the client cancelled before production cutover.
 
 **Key technologies:** Linux, Jenkins, Puppet, Spacewalk, PRTG, ELK, AWS, Rocket.Chat
 

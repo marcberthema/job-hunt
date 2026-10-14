@@ -2,76 +2,77 @@
 
 **Ingénieur DevOps principal — Plateformes CI/CD et automatisation de la qualité**
 
-Smiths Falls (Ontario), Canada · marc.berthelette@gmail.com\
-[linkedin.com/in/marc-berthelette-3aba6917](https://linkedin.com/in/marc-berthelette-3aba6917)\
-Bilingue : français (langue maternelle) · anglais (courant) · Disponible immédiatement
+Smiths Falls (Ontario), Canada · À distance · marc.berthelette@gmail.com\
+[marcberthelette.com](https://marcberthelette.com) · [LinkedIn](https://linkedin.com/in/marc-berthelette-3aba6917)\
+Bilingue : français / anglais · Constitué en société au Canada · Disponible immédiatement
 
 ## Sommaire professionnel
 
-Ingénieur DevOps principal comptant près de 18 ans d'expérience en infrastructure, développement logiciel et exploitation de production. A centralisé la livraison Jenkins pour environ 50 développeurs, 12 équipes et plus de 70 applications chez Énergir, avec des étapes communes et des contrôles SonarQube obligatoires. A conçu chez Desjardins un service Python/FastAPI validant environ 250 dépôts Artifactory. Connaît Azure, Azure DevOps, GitHub Actions, Terraform et Ansible (flux de travail gérés par une autre équipe), Kubernetes et ArgoCD, dans les secteurs de l'énergie et des services financiers. Vise des livraisons fiables et moins de travail manuel pour les équipes de développement.
+Ingénieur et consultant principal comptant près de 18 ans d'expérience en infrastructure, développement logiciel et exploitation. A bâti chez Énergir des outils de livraison partagés dans un environnement de 12 équipes et plus de 70 applications, avec des contrôles SonarQube obligatoires, puis a animé des séances d'accompagnement pour favoriser leur adoption. A automatisé chez Desjardins la validation de dépôts Artifactory avec Python/FastAPI et Dynatrace. Utilise Terraform/Ansible et Kubernetes à partir de plateformes gérées par d'autres équipes.
 
 ## Compétences techniques
 
-**CI/CD et plateformes :** Jenkins (standards de pipelines partagés), Azure DevOps, GitHub Actions, contrôles de qualité SonarQube, JFrog Artifactory, Nexus, Salesforce CLI\
+**CI/CD et plateformes :** Jenkins (pipelines partagés), Azure DevOps, GitHub Actions, contrôles de qualité SonarQube, JaCoCo, JFrog Artifactory, Nexus, Salesforce CLI\
 **Programmation et scripts :** Python, FastAPI, Bash, Java, C++, SQL\
-**Infonuagique et infrastructure :** Microsoft Azure, AWS (EC2, S3, Route 53, VPC), flux Terraform/Ansible (utilisateur de modules d'une autre équipe), Linux, Puppet\
-**Conteneurs et livraison :** Docker, déploiements applicatifs Kubernetes, ArgoCD\
-**Surveillance et observabilité :** Dynatrace, Splunk, Elasticsearch, Logstash, Kibana
+**Infonuagique et infrastructure :** Azure, flux Terraform/Ansible (utilisateur de modules d'une autre équipe), Linux, Puppet, environnement de migration AWS\
+**Conteneurs et observabilité :** déploiements applicatifs Kubernetes, Docker, ArgoCD, Dynatrace, Splunk, ELK
 
 ## Expérience professionnelle
 
-### Énergir — Ingénieur DevOps senior
+### Énergir — Ingénieur DevOps senior (contrat)
 
-**Montréal (Québec) | septembre 2021 – septembre 2026**
+**Montréal (Québec) | septembre 2021 – septembre 2026**\
+Mandat de consultation de cinq ans, renouvelé quatre fois.
 
-- A centralisé l'intégration et la livraison continues Jenkins pour environ 50 développeurs, 12 équipes et plus de 70 applications, avec des étapes communes et des contrôles SonarQube obligatoires que les développeurs ne pouvaient pas simplement contourner.
-- A favorisé l'adoption de la plateforme auprès de 12 équipes en dehors de toute ligne hiérarchique, au moyen de séances d'accompagnement récurrentes (environ six par année) après chaque livraison de pipeline.
-- A refait la livraison Salesforce avec Salesforce CLI et la validation de chaque fusion candidate dans un bac à sable; les fenêtres de déploiement manquées de façon récurrente se sont réduites à une seule depuis la mise en service.
-- A automatisé les livraisons Oracle après l'échec d'une tentative antérieure, éliminant le besoin d'un compte d'accès d'urgence approuvé chaque semaine pour les déploiements courants; a ajouté des tests détectant des problèmes récurrents d'encodage de fichiers.
-- A ramené les mises en production MuleSoft d'une liste de contrôle manuelle de 15 étapes à quelques tâches Jenkins.
-- A séparé les erreurs de code applicatif des erreurs de plateforme dans les rapports de build, réduisant les faux positifs et clarifiant la responsabilité de chaque correction.
-- A versionné des services cartographiques ArcGIS et livré des déploiements par compte de service vers les environnements de développement, de test et de production, remplaçant les déploiements depuis les portables des développeurs.
-- A aidé une équipe à faire passer ses environnements Nexus, Jenkins et Vault de l'exploitation manuelle dans le portail Azure à l'infrastructure en tant que code, avec les flux Terraform et Ansible d'une autre équipe; a ensuite introduit Azure Key Vault pour remplacer HashiCorp Vault.
-- A agi comme responsable principal informel de la feuille de route de livraison pendant les trois premières années, a été la personne-ressource des développeurs lors des pannes et a intégré de nouveaux ingénieurs DevOps et développeurs.
-- A introduit des pratiques d'ingénierie assistée par IA avec des limites de portée strictes et des points de validation humaine avant que du code généré par IA n'atteigne la production.
+- A initié des pipelines Jenkins partagés adoptés par toutes les équipes qui déployaient déjà avec Jenkins, dans un environnement d'environ 50 développeurs, 12 équipes et plus de 70 applications; a atteint une couverture JaCoCo d'environ 80 à 90 % avec des tests unitaires à chaque validation et bâti des applications d'exemple pour les tests d'intégration.
+- A imposé des étapes communes et des contrôles SonarQube obligatoires dans les pipelines partagés, que les développeurs ne pouvaient pas simplement contourner.
+- A séparé les erreurs de code applicatif des erreurs de pipeline dans les rapports de build afin que chaque équipe sache à qui revenait la correction.
+- A animé des séances d'accompagnement récurrentes (environ six par année) avec chaque équipe après la livraison des pipelines; a intégré de nouveaux ingénieurs DevOps et développeurs et a été la personne-ressource principale des développeurs lors des pannes.
+- A établi le principe « construire une fois, déployer partout » : a migré environ cinq applications Node.js vers une configuration à l'exécution au moyen de demandes de fusion révisées par les équipes, afin qu'un même build testé serve chaque environnement.
+- A remplacé une liste de contrôle MuleSoft de 15 étapes par des déploiements par version d'artefacts validés par l'assurance qualité, déplaçant la préparation avant les fenêtres de production et simplifiant le retour arrière.
+- A remplacé d'anciens scripts de déploiement ANT par Salesforce CLI et bâti une validation qui déploie chaque fusion candidate dans un bac à sable dédié et exécute la suite de tests complète.
+- A automatisé les livraisons Oracle courantes sans demande d'accès d'urgence (les étapes manuelles conservaient leurs approbations); a éliminé les incidents d'encodage au moyen de vérifications SQL et de paramètres régionaux distincts pour SQL et Forms.
+- A migré la journalisation Salesforce de production vers l'ingestion directe dans Dynatrace; a enrichi l'analyse des erreurs et les tableaux de bord pour aider l'équipe à examiner des problèmes auparavant invisibles.
 
-**Technologies clés :** Jenkins, SonarQube, Azure, Terraform, Ansible, Nexus, Salesforce CLI, Oracle, MuleSoft, ArcGIS
+**Technologies clés :** Jenkins, SonarQube, Azure, Python, JaCoCo, Salesforce CLI, Oracle, Node.js, MuleSoft, Dynatrace
 
 ### Desjardins — Ingénieur DevOps senior (contrat)
 
-**Montréal (Québec), télétravail | octobre 2025 – mars 2026** *(en parallèle du poste chez Énergir)*
+**Montréal (Québec), télétravail | octobre 2025 – mars 2026**\
+En parallèle du mandat chez Énergir.
 
-- A bâti un service Python/FastAPI testant environ 250 dépôts distants JFrog Artifactory toutes les quatre heures, avec publication des résultats dans Dynatrace pour sept écosystèmes de paquets.
-- A rendu la logique de validation réutilisable et les cas de test configurables; le même banc d'essai a servi de test de régression pour la mise à niveau d'entreprise d'Artifactory.
-- A automatisé le provisionnement d'environnements Artifactory à la demande avec Kubernetes et ArgoCD, pour permettre aux administrateurs de tester en toute sécurité les changements de configuration et les mises à niveau.
-- A mis en œuvre des politiques de rétention d'artefacts et des alertes Splunk détectant les modifications de configuration faites en dehors du CI/CD, améliorant la gouvernance et la traçabilité.
-- A travaillé avec GitHub Actions, Kubernetes et ArgoCD dans un grand environnement de services financiers.
+- A bâti un flux de travail Python/FastAPI qui provisionnait Artifactory, appliquait la configuration d'une référence Git choisie et testait la récupération d'artefacts sans cache sur environ 250 dépôts.
+- A déployé la suite par ArgoCD/GitOps pour une exécution planifiée, avec publication dans Dynatrace des résultats par version de configuration et par artefact afin de révéler les défaillances de configuration et de connectivité en amont.
+- A mis en œuvre des politiques de rétention d'artefacts et des alertes Splunk détectant les modifications de configuration faites en dehors du CI/CD.
+- A rendu la majeure partie de la logique de validation indépendante de l'outil et l'ensemble de tests configurable, pour que les administrateurs de la plateforme puissent ajouter leurs propres cas.
+- A travaillé avec Kubernetes, ArgoCD et GitHub Actions dans un grand environnement de services financiers.
 
-**Technologies clés :** Python, FastAPI, JFrog Artifactory, Kubernetes, ArgoCD, GitHub Actions, Dynatrace, Splunk
+**Technologies clés :** Python, FastAPI, GitHub Actions, Artifactory, Kubernetes, ArgoCD, Dynatrace, Splunk
 
 ### Tink — Ingénieur DevOps
 
 **Montréal (Québec) | janvier 2018 – août 2021**
 
-- A centralisé Jenkins Pipeline as Code pour 10 à 15 développeurs soutenant plus de 80 applications et plus de 20 clients, en uniformisant les étapes de livraison et en ajoutant de la visibilité des livraisons avec Jira.
-- A automatisé l'application des correctifs et les redémarrages de noyau sur plus de 600 serveurs, réduisant l'entretien à une vérification mensuelle; a géré la configuration avec Puppet et Spacewalk.
-- A créé une plateforme d'inventaire logiciel du parc exposant aux responsables de produit les versions d'applications, l'exposition aux vulnérabilités, les logiciels en fin de vie et l'état des certificats TLS.
-- A participé à une rotation de garde 24/7 en production; a mis en place l'agrégation de journaux ELK et le redémarrage automatisé d'une grappe Elasticsearch non réactive.
-- A construit pendant environ six mois l'environnement cible de migration AWS d'un client (EC2, S3, Route 53, VPC, memcached sur EC2, base de données relationnelle sans serveur), provisionné manuellement et sans expérience AWS préalable; le client a annulé la migration avant la bascule.
+- A uniformisé les pipelines Jenkins pour 10 à 15 développeurs soutenant plus de 80 applications et plus de 20 clients, en intégrant les détails de livraison et les références Jira aux rapports de déploiement.
+- A remplacé l'application réactive des correctifs sur plus de 600 serveurs par des calendriers Spacewalk échelonnés, des groupes par environnement et par rôle, des lots A/B pour le frontal et l'intergiciel et des redémarrages tenant compte des dépendances.
+- A contrôlé les mises à jour au moyen de dépôts de paquets propres à chaque client; a publié l'avancement des correctifs et des redémarrages, ainsi que les échecs, dans Rocket.Chat, la surveillance PRTG existante couvrant la santé des services.
+- A bâti un inventaire du parc de serveurs Unix et Windows pour repérer les applications vulnérables et les mises à niveau de fin de vie; a ajouté une évaluation TLS et le suivi des versions par environnement pour les opérations, les responsables de produit et l'assurance qualité.
+- A construit un environnement cible de migration AWS par provisionnement manuel dans la console (EC2, S3, Route 53, VPC, services de cache et de base de données); le client a annulé avant la bascule en production.
 
-**Technologies clés :** Jenkins, Linux, Puppet, Spacewalk, AWS, Bash, Elasticsearch, Logstash, Kibana, Jira
+**Technologies clés :** Linux, Jenkins, Puppet, Spacewalk, PRTG, ELK, AWS, Rocket.Chat
 
 ### SOVO Technologies — Technicien principal → Ingénieur logiciel
 
 **Montréal (Québec) | novembre 2008 – décembre 2017**
 
-- A géré l'infrastructure informatique de l'entreprise et une équipe de techniciens; a réalisé un déménagement de serveurs sans interruption et a rendu redondants les serveurs essentiels.
-- A développé des logiciels de planification de production, d'évaluation de reconnaissance vocale et de dictionnaire multilingue; a servi de dernière barrière de qualité avant les mises en production.
+- A dirigé et réalisé, avec un deuxième technicien, la majeure partie du travail de redondance (HAProxy, authentification, serveurs de reconnaissance vocale et serveurs de fichiers); soutenait des exigences de sous-titrage en direct d'au plus trois minutes d'interruption par diffusion et de huit secondes de latence.
+- A assuré la planification et l'exécution informatiques de deux déménagements de bureaux touchant environ 15 à 20 postes, en préparant réseaux et câblage et en coordonnant des déplacements par phases pour limiter les perturbations.
+- A développé des logiciels d'ordonnancement de production, d'évaluation de la reconnaissance vocale et de dictionnaires multilingues; a servi de dernier contrôle de qualité avant les mises en production.
 
-**Technologies clés :** C++, Java, SQL, Linux, Windows Server, Active Directory, VMware vSphere, réseau Cisco
+**Technologies clés :** HAProxy, Active Directory, VMware vSphere, Linux, Windows Server, C++, Java, SQL
 
 ## Formation
 
-**Baccalauréat en génie de la fabrication automatisée** — École de technologie supérieure (ÉTS), Montréal (Québec) | 2005 – 2016
+**Baccalauréat en génie de la fabrication automatisée** — École de technologie supérieure (ÉTS), Montréal | 2016
 
-**DEC en techniques de l'informatique** — Cégep André-Laurendeau, Montréal (Québec) | 2002 – 2005
+**DEC en techniques de l'informatique** — Cégep André-Laurendeau, Montréal | 2005
