@@ -1,25 +1,124 @@
 {
   "board": "BuiltIn",
-  "run_date": "2026-10-13",
+  "run_date": "2026-10-14",
   "eyebrow": "Candidate intelligence · Built In",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Nine independent remote title passes against Built In's current rendered job pages. Scores measure technical and domain fit only.",
-  "latest_update": "October 13, 2026 — past-24-hour run: all 55 passes completed (9 remote + 36 hybrid city + 10 hub); 165 unique postings, of which 4 were posted yesterday (IDs above 11,619,000); none scored 5 or higher; 0 filed.",
+  "latest_update": "October 14, 2026 — past-48-hour run: all 55 passes completed; 10 new postings read in full; best Smile Cloud Engineer Automation (6, filed under LinkedIn).",
   "stats": [
     {
       "value": "55 of 55",
       "label": "passes completed (9 remote + 36 hybrid city + 10 hub)"
     },
     {
-      "value": 4,
-      "label": "postings within the last day (all four read in full)"
+      "value": 10,
+      "label": "untracked postings above the Oct 9 high-water ID (all read in full)"
     },
     {
       "value": 0,
-      "label": "auto-filed this run"
+      "label": "filed by Built In this run (Smile filed from LinkedIn first)"
     }
   ],
   "rows": [
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Software Engineer II, Fullstack (Ads Platform)",
+      "company": "Unlisted (Built In)",
+      "location": "Remote",
+      "salary": "Not stated",
+      "gap": "Out of scope: full-stack application development (set aside by title on Oct 12; re-read as ads-platform feature work).",
+      "url": "https://builtin.com/job/software-engineer-ii-fullstack-ads-platform/11602068",
+      "status": "Skipped — Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Programmable Voice Engineer (CX Platform)",
+      "company": "Miratech",
+      "location": "Remote (Toronto, ON)",
+      "salary": "Not stated",
+      "gap": "Out of scope: FreeSWITCH/Kamailio/WebRTC voice software in Java.",
+      "url": "https://builtin.com/job/senior-programmable-voice-engineer-cx-platform/11673017",
+      "status": "Skipped — Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Staff Software Engineer (Customer Platform)",
+      "company": "Chainguard",
+      "location": "Remote — Canada, US, UK",
+      "salary": "Not stated",
+      "gap": "Out of scope: backend APIs for customer entitlements.",
+      "url": "https://builtin.com/job/staff-software-engineer-customer-platform/11663935",
+      "status": "Skipped — Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Forward Deployed Engineer - SDK Integration",
+      "company": "IMS",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Out of scope: mobile SDK (iOS/Android/Kotlin) integration support.",
+      "url": "https://builtin.com/job/senior-forward-deployed-engineer-sdk-integration/11633959",
+      "status": "Skipped — Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Forward Deployed Engineer (Founding)",
+      "company": "Nango",
+      "location": "Remote — North America/Europe",
+      "salary": "$120K–$200K (currency not labelled)",
+      "gap": "Out of scope: full-stack customer-facing integrations engineering.",
+      "url": "https://builtin.com/job/forward-deployed-engineer-founding/11668544",
+      "status": "Skipped — Out of scope"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Lead Engineer, AI Platform",
+      "company": "Circle (circle.so)",
+      "location": "Remote (60 locations)",
+      "salary": "Not stated",
+      "gap": "Out of scope: leads an AI-quality evaluation engineering team and builds evaluation/annotation tooling rather than infrastructure.",
+      "url": "https://builtin.com/job/lead-engineer-ai-platform/11601301",
+      "status": "Skipped — Out of scope"
+    },
+    {
+      "score": 2,
+      "family": "Platform",
+      "title": "Platform Engineer - Compute",
+      "company": "Supabase",
+      "location": "Fully remote (hires globally); Canada not specified",
+      "salary": "Not stated",
+      "gap": "Technical: requires Go/TypeScript, 5+ years AWS, 3+ years writing custom Kubernetes controllers and operating clusters with hundreds of thousands of pods — hard AWS/Kubernetes ownership gate. Practical: Confirm. Resume: Platform.",
+      "url": "https://builtin.com/job/platform-engineer-compute/11644907",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Developer Platform Engineer",
+      "company": "Embedding VC (portfolio company)",
+      "location": "In-Office or Remote — 7 locations; Canada eligibility not stated",
+      "salary": "Not stated",
+      "gap": "Technical: Go-primary developer platform with Kubernetes controllers, Bazel, dependency-graph tooling and GitOps at 10+ environments — a software-heavy platform build beyond Marc's evidence. Practical: Confirm — location and pay unstated. Resume: Platform.",
+      "url": "https://builtin.com/job/developer-platform-engineer/11667783",
+      "status": ""
+    },
+    {
+      "score": 6,
+      "family": "Platform",
+      "title": "Cloud Engineer, Automation (Remote Ontario)",
+      "company": "Smile Digital Health",
+      "location": "Remote — Ontario (Hiring Remotely in Toronto, ON; In-Office or Remote)",
+      "salary": "CAD $120K–$140K annually (Built In label)",
+      "gap": "Technical: shared Azure DevOps pipeline templates with quality gates, GitOps and automation of manual work fit the Jenkins consolidation; gaps are Terraform module design (user only), Helm/AKS authoring, Kafka operations and measured RTO/RPO disaster recovery. Practical: Compromise — below ideal base; Ontario remote eligible; growth unconfirmed. Auto-filed from LinkedIn 4479050355 the same day. Resume: Platform.",
+      "url": "https://builtin.com/job/cloud-engineer-automation-remote-ontario/11639696",
+      "status": "New"
+    },
     {
       "score": 3,
       "family": "SRE",
@@ -2087,6 +2186,13 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 14 run — past 48 hours (complete)",
+      "items": [
+        "Method: all 55 passes ran over direct HTTP at 2.5-second spacing (9 remote title passes, 36 hybrid city passes across Ottawa/Kingston/Cornwall/Montréal, 10 hub DevOps passes; the first Vancouver and Halifax requests failed to connect and were rerun successfully). Built In has no date filter, so freshness came from posting IDs above 11,593,824 (the October 9 high-water mark): 174 unique IDs collected, 10 untracked IDs above that mark, all 10 opened and read in full.",
+        "Remote passes returned 25 cards each (DevSecOps 3, Azure DevOps 0). Hybrid: Ottawa returned 0–3 non-DevOps cards per title, Kingston/Cornwall/Montréal 0. Newest postings: Smile Cloud Engineer Automation 11639696 (score 6, auto-filed under LinkedIn 4479050355), Supabase Platform Engineer Compute (2), Embedding VC Developer Platform Engineer (3), plus six out-of-scope roles. One electrical-reliability plant role (IPG, 11653735, Truro NS) was unrelated and not scored."
+      ]
+    },
+    {
       "heading": "October 13 run — past 24 hours (complete)",
       "items": [
         "Method: Built In has no date filter in its listing HTML, so every pass was fetched over HTTP (2.5 s spacing) and unique job pages were ranked by ID; the 36 highest IDs were opened and their 'Posted' labels read. Only the four IDs above 11,619,000 read 'Posted Yesterday'; the next newest was 3 days old.",
@@ -2274,5 +2380,5 @@
       ]
     }
   ],
-  "method": "Oct 13 (complete, 55 of 55 passes): HTTP discovery plus ID/age ranking. Oct 12 (complete): past-48-hour run by direct HTTP, 2.5-second spacing, HTTP 200 throughout. October 9 rerun: direct-HTTP role queries and hybrid city passes, every in-family result read in full from the posting text; scores follow the shared candidate-matching policy (technical fit only, practical assessment separate in the Biggest-gap column). October 7, 2026: 62 of 62 Built In passes completed over direct HTTP (3-second spacing, no block); 174 unique postings, 113 untracked ones read in full; 0 filed. Rendered-browser run on September 24, 2026. All nine mandatory Fully Remote role-query passes and all eleven remote-hub discovery passes were completed, with complete first pages reviewed before deduplication. Five fresh plausible postings were opened in full: Vena and MLabs were eligible and auto-filed; Samsara was US-only; GitLab and Proofpoint lacked explicit Canadian location eligibility. Built In's location control repeatedly resolved typed Eastern Ontario cities to Toronto, and the browser session timed out while applying Hybrid state across the direct city routes. The four reachable-city hybrid passes therefore remain incomplete; this report does not claim a complete overall rotation."
+  "method": "October 14 run: past 48 hours, 55 of 55 passes. Oct 13 (complete, 55 of 55 passes): HTTP discovery plus ID/age ranking. Oct 12 (complete): past-48-hour run by direct HTTP, 2.5-second spacing, HTTP 200 throughout. October 9 rerun: direct-HTTP role queries and hybrid city passes, every in-family result read in full from the posting text; scores follow the shared candidate-matching policy (technical fit only, practical assessment separate in the Biggest-gap column). October 7, 2026: 62 of 62 Built In passes completed over direct HTTP (3-second spacing, no block); 174 unique postings, 113 untracked ones read in full; 0 filed. Rendered-browser run on September 24, 2026. All nine mandatory Fully Remote role-query passes and all eleven remote-hub discovery passes were completed, with complete first pages reviewed before deduplication. Five fresh plausible postings were opened in full: Vena and MLabs were eligible and auto-filed; Samsara was US-only; GitLab and Proofpoint lacked explicit Canadian location eligibility. Built In's location control repeatedly resolved typed Eastern Ontario cities to Toronto, and the browser session timed out while applying Hybrid state across the direct city routes. The four reachable-city hybrid passes therefore remain incomplete; this report does not claim a complete overall rotation."
 }

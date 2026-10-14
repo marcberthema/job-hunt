@@ -1,17 +1,17 @@
 {
   "board": "Dice",
-  "run_date": "2026-10-13",
+  "run_date": "2026-10-14",
   "eyebrow": "Dice · remote · willing to sponsor",
   "title": "DevOps, Platform and SRE results",
   "lede": "Eligibility is checked before technical scoring. \"Able to Sponsor\" is treated as a lead requiring confirmation that TN work authorization is supported.",
-  "latest_update": "October 13, 2026 — past-24-hour run: all 6 queries completed with the Today filter; 10 result slots (6 unique new postings plus Tror and the Analytics Solutions Azure posting already in the pipeline/report). Nothing new scored 5 or higher; none filed.",
+  "latest_update": "October 14, 2026 — all 6 queries completed; 20 result slots; 3 new scored rows (EPAM Lead Azure Cloud Engineer 4, Innovative Consulting Datadog 3, TechniPros W2-only -1); nothing cleared the filing bar.",
   "stats": [
     {
       "value": "6 of 6",
-      "label": "queries attempted and completed (Today filter)"
+      "label": "queries attempted and completed (Last 7 Days filter)"
     },
     {
-      "value": 5,
+      "value": 3,
       "label": "new scored rows this run"
     },
     {
@@ -20,6 +20,39 @@
     }
   ],
   "rows": [
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "DevOps Engineer — Kansas City / Denver / Phoenix / St. Louis / Nashville",
+      "company": "TechniPros, LLC",
+      "location": "Remote or US office; W2 only, no C2C",
+      "salary": "Depends on experience (12-month contract)",
+      "gap": "Hard gate: W2-only with no corporation-to-corporation option, matching the recurring TechniPros rows Marc has already skipped; also expects production Kubernetes cluster management.",
+      "url": "https://www.dice.com/job-detail/faa0ca18-9906-4fc3-8948-b27e5b65ca7b",
+      "status": "Skipped — Ineligible: W2 only, no C2C"
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "AWS Cloud Observability & Datadog Engineer (Remote)",
+      "company": "Innovative Consulting Solutions, LLC",
+      "location": "Remote (US); C2C/independent contract, long term",
+      "salary": "Not stated",
+      "gap": "Technical: 5+ years AWS observability and Datadog architecture at enterprise scale — AWS hard gate and no Datadog evidence. Practical: Confirm — authorization unstated. Resume: SRE.",
+      "url": "https://www.dice.com/job-detail/c6aa8854-189d-4af0-8253-19b782942c32",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Lead Azure Cloud Engineer",
+      "company": "EPAM Systems",
+      "location": "Remote (US-based Dice listing); work authorization not stated",
+      "salary": "Not stated (full-time)",
+      "gap": "Technical: Azure landing zones, AKS operations, Terraform module development and AI-service integration at lead level — Kubernetes and Terraform authorship exceed Marc's evidence. Practical: Confirm — work authorization unstated (\"Confirm work authorization with recruiter before applying\"); posted 12 days ago, refreshed 9 hours ago. Resume: Platform.",
+      "url": "https://www.dice.com/job-detail/7d6a9a5e-f9b1-42e5-9e5d-38fc50e3372a",
+      "status": ""
+    },
     {
       "score": 4,
       "family": "Platform",
@@ -429,6 +462,13 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 14 run — all six queries (complete)",
+      "items": [
+        "Filters verified on every query: Last 7 Days, Full Time + Contract, Remote, Willing to sponsor, Canada country code. Results (reviewed all): DevOps Engineer 2 (TechniPros Kansas City, TechniPros Atlanta already tracked) · Platform Engineer 3 (Tror, Congensys Power Platform, TechniPros) · Site Reliability Engineer 2 (TechniPros, Innovative Consulting Datadog) · Cloud Engineer 9 · DevSecOps Engineer 0 · Forward Deployed Engineer 2 (Intellisoft, Kanshe Salesforce).",
+        "Dice job IDs inspected: faa0ca18, 601111a1, 39625dc3, ee3e4d55, 42d40e26, 2fa40994, 2f1d07e0, c6aa8854, 7c3ece36, 5af1063d, b2ca7998, 1a864a28, dc35d5b6, c3d28c0d, b24a2d70, 7d6a9a5e, 05c55071, bfa349c9, 0d0e2704, a329603a. Already tracked: 601111a1, 7c3ece36, 5af1063d/05c55071 (Virginia VDOT tolling requisition), b24a2d70, 0d0e2704. Set aside by title as non-infrastructure (AEM Developer, Oracle Cloud Security/SCM consultants, Power Platform developer, Senior Enterprise Architect AI, Tror Data & AI application engineer, Kanshe Salesforce Agentforce): 7."
+      ]
+    },
+    {
       "heading": "October 13 query audit (past 24 hours)",
       "items": [
         "<b>DevOps Engineer</b> · chips verified in the rendered page: Today, Full Time, Contract, Remote, Willing to sponsor (Dice offers Today/Last 3 Days/Last 7 Days; Today used for the 24-hour window) · rendered 2 results · both opened · Complete · IDs: TechniPros AI Platform DevOps Engineer (New York series), TechniPros Senior Cloud DevOps Engineer (601111a1-629a-4494-8838-b80cae2a8332)",
@@ -516,6 +556,6 @@
       ]
     }
   ],
-  "method": "Oct 13 (complete, 6 of 6 queries): Today filter. Oct 12 (complete, 6 of 6 queries): Last 3 Days filter. October 7, 2026: six of six queries completed with verified filters; 30 unique postings read in full; none eligible and in scope; 0 filed. All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 2, 8, 0, 10, 2, and 1. Up to eight results per query were audited before deduplication, yielding 19 unique reviewed postings. Eight were known pipeline postings (TechniPros's two recurring reposts plus six previously-scored postings, all unchanged in content), one known posting (Shiro) was not resurfaced and was carried forward, and eleven were new but off-domain by title. No new eligible target-family posting was found this run; zero postings were auto-filed.",
+  "method": "October 14 run: 6 of 6 queries. Oct 13 (complete, 6 of 6 queries): Today filter. Oct 12 (complete, 6 of 6 queries): Last 3 Days filter. October 7, 2026: six of six queries completed with verified filters; 30 unique postings read in full; none eligible and in scope; 0 filed. All six mandatory title queries were run independently in a rendered browser with Last 7 Days, Full Time and Contract, Remote, and Willing to sponsor visibly active. Counts were 2, 8, 0, 10, 2, and 1. Up to eight results per query were audited before deduplication, yielding 19 unique reviewed postings. Eight were known pipeline postings (TechniPros's two recurring reposts plus six previously-scored postings, all unchanged in content), one known posting (Shiro) was not resurfaced and was carried forward, and eleven were new but off-domain by title. No new eligible target-family posting was found this run; zero postings were auto-filed.",
   "could_not_validate": []
 }

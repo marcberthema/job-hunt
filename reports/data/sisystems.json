@@ -1,18 +1,18 @@
 {
   "board": "S.i. Systems",
-  "run_date": "2026-10-13",
+  "run_date": "2026-10-14",
   "eyebrow": "S.i. Systems · Networks and Infrastructure",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "S.i. Systems' Networks and Infrastructure category, validated from full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "October 13, 2026 — past-24-hour run: all 8 queries completed; the date-sorted results show no posting newer than 3 days (a Windows/systems administrator role), so nothing new fell in the window; 0 filed.",
+  "latest_update": "October 14, 2026 — past-48-hour run: all 8 queries completed; one posting in the window (Toronto SRE IV, hybrid 4 days, ineligible); 0 filed.",
   "stats": [
     {
       "value": "8 of 8",
       "label": "queries completed"
     },
     {
-      "value": 0,
-      "label": "postings within the last 24 hours"
+      "value": 1,
+      "label": "postings within the last 48 hours"
     },
     {
       "value": 0,
@@ -20,6 +20,13 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 14 run — past 48 hours (complete)",
+      "items": [
+        "All eight queries navigated separately in a rendered browser with expertise=3 and listings loaded: DevOps Engineer 21 results/20 cards · Senior DevOps Engineer 33/20 · Site Reliability Engineer 30/20 · Platform Engineer 26/20 · Cloud Engineer 33/20 · DevSecOps Engineer 17/17 · Infrastructure Engineer 51/20 · Senior Infrastructure Engineer 51/20 — Complete.",
+        "Only one unique posting was newer than 48 hours (7 hours ago): the Toronto SRE IV contract above. The next newest were 5 and 7 days old."
+      ]
+    },
     {
       "heading": "October 13 query audit (past 24 hours)",
       "items": [
@@ -107,8 +114,19 @@
       ]
     }
   ],
-  "method": "Oct 13 (complete, 8 of 8 queries): nothing within 24 hours. Oct 12 (complete, 8 of 8 queries). October 7, 2026: 12 of 12 queries completed in a real browser with no challenge; 46 unique postings, all fetched in full; no eligible new role cleared the filing bar. Eight independent searches were executed with expertise=3 in a rendered browser. Each query reached a real listing state and the first eight results were captured before deduplication. The soft keyword filter repeatedly returned the same small Networks and Infrastructure inventory as the September 21 run — same counts, same recurring requisition set. Current descriptions and applications.md statuses were reconciled; 12 previously validated rows remain, with no new eligible role and no inaccessible posting.",
+  "method": "October 14 run: 8 of 8 queries, 1 posting in the window. Oct 13 (complete, 8 of 8 queries): nothing within 24 hours. Oct 12 (complete, 8 of 8 queries). October 7, 2026: 12 of 12 queries completed in a real browser with no challenge; 46 unique postings, all fetched in full; no eligible new role cleared the filing bar. Eight independent searches were executed with expertise=3 in a rendered browser. Each query reached a real listing state and the first eight results were captured before deduplication. The soft keyword filter repeatedly returned the same small Networks and Infrastructure inventory as the September 21 run — same counts, same recurring requisition set. Current descriptions and applications.md statuses were reconciled; 12 previously validated rows remain, with no new eligible role and no inaccessible posting.",
   "rows": [
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer IV (8-10 years) — Databricks infrastructure and Azure cloud operations",
+      "company": "S.i. Systems client (financial services)",
+      "location": "Toronto — hybrid 4 days/week at 79 Wellington St W",
+      "salary": "Hourly: negotiable (12-month contract, Nov 9, 2026 – Nov 8, 2027)",
+      "gap": "Hard gate: Toronto is outside the reachable cities and the role is 4 office days weekly; also needs 8–10 years SRE and Databricks setup. Azure IaC/automation overlap is real but not take-able.",
+      "url": "https://www.sisystems.com/jobs/senior-site-reliability-engineer-iv-8-10-years-to-support-databricks-infrastructure-and-azure-cloud-operations-using-iac-devops-and-automation-tooling-58829/330032003700390032003800/",
+      "status": "Skipped — Ineligible: Toronto 4 office days"
+    },
     {
       "score": -1,
       "family": "DevOps",
