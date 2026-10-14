@@ -48,6 +48,8 @@ Concurrent with the Énergir engagement.
 
 **Montréal, QC | January 2018 – August 2021**
 
+Supported the entire development team of 10–15 developers and monitored a production fleet of 600+ servers supporting 80+ applications for 20+ clients.
+
 - Standardized Jenkins pipelines for 10–15 developers supporting 80+ applications and 20+ clients, integrating release details and Jira references into deployment reporting.
 - Replaced reactive patching across 600+ servers with staged Spacewalk schedules, environment/role groups, A/B frontend and middleware batches, and dependency-aware reboots.
 - Controlled updates through client-specific package repositories; published patch/reboot progress and failures to Rocket.Chat, with existing PRTG monitoring covering service health.

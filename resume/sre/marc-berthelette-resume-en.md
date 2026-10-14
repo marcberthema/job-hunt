@@ -48,6 +48,8 @@ Concurrent with the Énergir engagement.
 
 **Montréal, QC | January 2018 – August 2021**
 
+Supported the entire development team of 10–15 developers and monitored a production fleet of 600+ servers supporting 80+ applications for 20+ clients.
+
 - Automated PRTG-triggered response to Elasticsearch CPU saturation: attempted a process restart after two minutes and alerted on-call at five minutes if saturation persisted; supported a 24/7 rotation.
 - Replaced reactive patching across 600+ servers with staged Spacewalk schedules, environment/role groups, A/B frontend and middleware batches, and dependency-aware reboots.
 - Controlled package versions through client-specific repositories and reported update/reboot progress and failures to Rocket.Chat; existing PRTG monitoring provided service-health checks.

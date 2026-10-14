@@ -222,6 +222,8 @@ These clarifications supersede broader ownership language elsewhere in this prof
 - Expanded hands-on expertise with Kubernetes, ArgoCD, and GitHub Actions in a large-scale financial services environment.
 
 ### Tink — DevOps Engineer
+
+**Primary responsibility clarified 2026-10-14:** Supported the entire development team while monitoring the entire production fleet. Lead Tink descriptions with this operational remit; present automation, inventory and delivery improvements as initiatives supporting that responsibility.
 **Montréal, QC | January 2018 – August 2021**
 
 - Centralized Jenkins Pipeline as Code across a team of 10–15 developers maintaining 80+ applications for 20+ clients, standardizing pipeline steps regardless of underlying tech stack — improving deployment speed and reliability, and adding visibility through Jira integration.
@@ -275,6 +277,8 @@ Docker, Kubernetes (application/platform user; no production cluster ownership),
 ELK Stack (Elasticsearch, Logstash, Kibana), Dynatrace, Splunk, PRTG, Proactive monitoring & alerting, Incident response
 
 ### Programming & Scripting
+
+**Python positioning clarified 2026-10-14:** Marc is comfortable using Python and understands programming concepts, but does not claim Python expertise or senior software-engineering depth in its ecosystem. Much of his Python work used AI assistance. Describe Python as an automation tool and retain verified Python/FastAPI deliverables; do not position him as a Python specialist. Prefer Azure over Python in headline tool lists, without implying deeper Azure ownership than the verified experience supports.
 Bash, Python, FastAPI, C++, Java, SQL, NoSQL
 
 ### Operating Systems & Web
