@@ -24,13 +24,14 @@ Senior engineer with nearly 18 years across infrastructure, development, and ope
 **Montréal, QC | September 2021 – September 2026**\
 Five-year consulting engagement, renewed four times.
 
+- Migrated production Salesforce logging from Logstash to direct Dynatrace ingestion, reproducing existing processing and removing the intermediary from that logging path.
+- Extracted DML error types, messages and originating classes; built dashboards exposing hidden issues to Salesforce and transferred ownership to a long-standing team member.
 - Implemented four-hourly Jenkins smoke tests with Teams alerts to detect external dependency failures, including firewall changes; clarified pipeline-versus-application failure ownership.
 - Achieved approximately 80–90% JaCoCo coverage of shared pipeline code with per-commit tests; built sample applications for manual integration testing across supported technology stacks.
 - Eliminated recurring Oracle encoding incidents with SQL encoding checks and separate SQL/Forms locale settings; converted existing SQL files and documented procedures for developers.
 - Built nightly Salesforce validation; escalated persistent failures to the project director, prompting fixes across 4–5 teams within 48 hours and enabling the project to deploy on schedule.
-- Initiated and defined requirements for an availability dashboard covering Jenkins, Vault, Logstash and Nexus in development and production; a colleague implemented it.
 
-**Key technologies:** Jenkins, Azure, Python, JaCoCo, Salesforce CLI, Oracle, Node.js, MuleSoft
+**Key technologies:** Jenkins, Azure, Python, JaCoCo, Salesforce CLI, Oracle, Dynatrace, Logstash
 
 ### Desjardins — Senior DevOps Engineer (Contract)
 

@@ -157,6 +157,10 @@ Senior DevOps and Platform Engineering consultant with nearly 18 years across in
 
 ## Work Experience
 
+### Salesforce / Dynatrace production observability — confirmed 2026-10-13
+
+During the final six months at Énergir, Marc migrated the Salesforce logging path from a Logstash intermediary to direct Dynatrace ingestion, reproducing existing processing. It ran in production for several weeks before departure. Logstash remained running for two other teams; do not claim full service retirement. On his own initiative and with manager approval, he expanded parsing to extract DML error types/messages and originating classes and built dashboards that helped Salesforce investigate previously hidden issues. This established groundwork for future SLOs, not implemented SLOs or measured SLO compliance. He presented the solution to Salesforce and the Dynatrace platform owner, but transferred ownership to a long-standing Salesforce employee. Service-account migration remained pending because the organizational approach was not settled. Do not imply handoff to the Dynatrace owner or completed service-account governance.
+
 ### Resume fact review — 2026-10-13 (supersedes conflicting older wording below)
 
 These facts were confirmed directly with Marc in a detailed resume review. Use these boundaries in all future resumes, letters, scoring and website copy. The current English Platform and SRE resumes incorporate a selected subset; retain other confirmed achievements for tailoring.

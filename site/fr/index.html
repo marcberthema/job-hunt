@@ -99,6 +99,19 @@
 <dd>Déployée par ArgoCD/GitOps, la suite s’exécutait selon un horaire et publiait dans Dynatrace la version de configuration et les résultats par artefact, rendant les échecs de téléchargement visibles.</dd>
 </dl>
 </article>
+
+<article class="case">
+<p class="client">Énergir · Observabilité en production</p>
+<h3>Mieux comprendre les erreurs Salesforce</h3>
+<dl>
+<dt>Le problème</dt>
+<dd>Les journaux Salesforce transitaient par Logstash, tandis que des détails utiles sur les erreurs n’étaient pas exposés dans les tableaux de bord existants.</dd>
+<dt>La solution livrée</dt>
+<dd>Une ingestion directe dans Dynatrace, avec extraction des types d’erreurs DML, des messages et des classes à l’origine des erreurs, ainsi que des tableaux de bord pour les explorer.</dd>
+<dt>Le résultat</dt>
+<dd>L’équipe Salesforce pouvait explorer des problèmes jusque-là peu visibles. La solution a fonctionné en production pendant plusieurs semaines avant son transfert à un membre de longue date de l’équipe, posant les bases de futurs objectifs de niveau de service (SLO).</dd>
+</dl>
+</article>
 </div>
 </div>
 </section>
@@ -164,7 +177,7 @@
 <li>
 <h3>Énergir</h3>
 <p class="date">Ingénieur DevOps senior, contrat · Sept. 2021 – Sept. 2026</p>
-<p>Création de pipelines partagés et élimination des incidents récurrents d’encodage Oracle. Signalement d’un risque de livraison Salesforce, suivi de correctifs en 48 heures et d’une livraison à temps. Outillage ArcGIS validé jusqu’à l’environnement de test.</p>
+<p>Création de pipelines partagés et élimination des incidents récurrents d’encodage Oracle. Ingestion directe dans Dynatrace et tableaux de bord Salesforce enrichis, livrés en production. Signalement de validations bloquant une livraison, suivi de correctifs en 48 heures et d’une livraison à temps.</p>
 </li>
 <li>
 <h3>Desjardins</h3>

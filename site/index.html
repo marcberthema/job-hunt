@@ -99,6 +99,19 @@
 <dd>Deployed through ArgoCD/GitOps, the suite ran on a schedule and reported configuration versions and artifact-level results in Dynatrace, making failed retrievals visible.</dd>
 </dl>
 </article>
+
+<article class="case">
+<p class="client">Énergir · Production observability</p>
+<h3>More insight from Salesforce logs</h3>
+<dl>
+<dt>The problem</dt>
+<dd>Salesforce logs passed through Logstash, while useful error details were not exposed in the existing dashboards.</dd>
+<dt>What I built</dt>
+<dd>Direct Dynatrace ingestion with expanded parsing of DML error types, messages, and originating classes, plus dashboards to explore those details.</dd>
+<dt>What changed</dt>
+<dd>The Salesforce team could investigate previously hidden issues. The solution ran in production for several weeks before handoff to a long-standing team member, establishing groundwork for future SLOs.</dd>
+</dl>
+</article>
 </div>
 </div>
 </section>
@@ -164,7 +177,7 @@
 <li>
 <h3>Énergir</h3>
 <p class="date">Senior DevOps Engineer, contract · Sep 2021 – Sep 2026</p>
-<p>Built shared pipelines and eliminated recurring Oracle encoding incidents. Escalated Salesforce validation failures, prompting fixes within 48 hours and an on-time release. Built ArcGIS deployment tooling, validated through the test environment.</p>
+<p>Built shared pipelines and eliminated recurring Oracle encoding incidents. Delivered direct Dynatrace log ingestion and richer Salesforce error dashboards in production. Escalated release-blocking validation failures, prompting fixes within 48 hours and an on-time release.</p>
 </li>
 <li>
 <h3>Desjardins</h3>

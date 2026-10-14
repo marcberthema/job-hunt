@@ -29,8 +29,9 @@ Five-year consulting engagement, renewed four times.
 - Replaced a 15-step MuleSoft checklist with version-based deployments of QA-tested artifacts, moving release preparation ahead of production windows and simplifying rollback.
 - Built nightly Salesforce validation; escalated two weeks of failures to the project director, prompting fixes across 4–5 teams within 48 hours. The project deployed on schedule.
 - Automated routine Oracle releases without emergency-access requests; manual steps retained approvals. Eliminated encoding incidents with SQL checks and separate SQL/Forms locale settings.
+- Migrated production Salesforce logs to direct Dynatrace ingestion; expanded error parsing and dashboards to help the team investigate previously hidden issues.
 
-**Key technologies:** Jenkins, Azure, Python, JaCoCo, Salesforce CLI, Oracle, Node.js, MuleSoft
+**Key technologies:** Jenkins, Azure, Python, JaCoCo, Salesforce CLI, Oracle, Dynatrace, Logstash
 
 ### Desjardins — Senior DevOps Engineer (Contract)
 
