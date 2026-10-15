@@ -25,6 +25,8 @@ Search via:
 
 `<keyword-slug>` is the keyword lowercased with spaces as hyphens. `<N>` is approximately the keyword's character count including spaces, but the exact formula is not fully pinned down — always verify the result count in the page title (`"<count> ... jobs in Canada, <month> <year> | Glassdoor"`) before treating a query as exhausted, and retry with `<N>` adjusted by 1-2 if the count is 0. Using the on-page search box instead of constructing the URL directly is a reasonable alternative when the URL encoding proves unreliable.
 
+**Load the full result list with "Show more jobs" (verified 2026-10-15).** A search page renders only the first 30 cards, and the `Show more jobs` button appears only after the list is scrolled to its end — a DOM search before scrolling will not find it. Scroll the list to the bottom, click `Show more jobs` (a read-only paging control), wait about three seconds, and repeat until the button no longer appears or the card count stops growing. Example: "platform engineer", Last 3 days, rendered 30, then 60, 90, 120 and finally 129 cards, with the button gone, against a header count of 278. The header count can exceed the final card count because one posting is listed once per location (Export Development Canada's Sr. SQA Analyst appeared separately for Edmonton, Calgary and Vancouver), so record both numbers rather than treating the gap as a failure. Clicking this button is the only click this skill adds beyond navigation; never click Easy Apply, save, or any control that submits information.
+
 If the site presents a CAPTCHA, verification prompt, or blocking page, stop the run and report it immediately, naming the posting that triggered it. A "sign in to see salary insights" or similar community-content prompt can be ignored — the core job description remains readable without signing in; never click Sign In. Never bypass a real challenge. Close temporary tabs when finished.
 
 ## Search scope
@@ -38,13 +40,13 @@ If the user supplies a query, use it alone and review the first 15 results. Othe
 - DevSecOps Engineer
 - Forward Deployed Engineer
 
-Review up to eight results per keyword in the default rotation. If a keyword returns no relevant results after the retry above, continue to the next; if every keyword is empty, report that outcome.
+Load every card for each keyword with `Show more jobs` (see Browser access), then triage all of them. The earlier eight-per-keyword review limit is retired: it existed because only the first page was visible. Use the Last 3 days filter (`fromAge=3`) or tighter when the user asks for recent postings. If a keyword returns no relevant results after the retry above, continue to the next; if every keyword is empty, report that outcome.
 
 Deduplicate by company plus exact title.
 
 ## Run completeness and query audit
 
-All six default queries are mandatory and independent. For each query, navigate separately, verify the rendered search term and Canada scope, and record the result count, number reviewed, posting IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. Deduplicate only after this audit and retain repeated IDs under every query where they appeared.
+All six default queries are mandatory and independent. For each query, navigate separately, verify the rendered search term and Canada scope, and record the header result count, the cards loaded after exhausting `Show more jobs`, number reviewed, posting IDs or canonical URLs (or `none`), and `Complete`, `Zero results`, or `Incomplete - <reason>`. A query is `Complete` when the button has been exhausted (gone, or the card count stopped growing) and every in-family card was read; a header count above the final card count is expected when postings repeat per location and is noted, not treated as incomplete. A query is `Incomplete` only when the button was still available but loading stopped (block, error, session limit). Deduplicate only after this audit and retain repeated IDs under every query where they appeared.
 
 A CAPTCHA, verification page, login wall, or other block makes the affected query and overall run incomplete. Snippets and cached pages may recover an already discovered posting but cannot substitute for executing a mandatory Glassdoor query.
 
@@ -76,7 +78,7 @@ Check freshness from the canonical employer page, explicit closed/expired notice
 
 Before returning results, write this run's data to `reports/data/glassdoor.json` per `reports/report_schema.md`, then run `python3 reports/build_report.py glassdoor` to regenerate `reports/glassdoor-job-search.html` — never hand-author the HTML directly. Refresh the data file on every invocation, including runs with no validated jobs. Include every scored row, direct posting URLs, pipeline status, run date, and counts for searches completed, results reviewed, validated jobs, inaccessible postings, and known pipeline matches.
 
-Put the per-query audit in `notes_sections`, summarize it in `method`, and report searches attempted separately from searches completed plus unique results reviewed. Reconcile it before `latest_update`; claim completion only when all mandatory queries are `Complete` or `Zero results`. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
+Report loaded cards against the header count for every query. Put the per-query audit in `notes_sections`, summarize it in `method`, and report searches attempted separately from searches completed plus unique results reviewed. Reconcile it before `latest_update`; claim completion only when all mandatory queries are `Complete` or `Zero results`. Preserve matching `Applied`, `Skipped`, and `Rejected` statuses exactly and never reset a reviewed posting to `New`.
 
 Lead with the run totals. Sort validated jobs by score descending using exactly:
 
