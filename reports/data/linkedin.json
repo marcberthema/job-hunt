@@ -1,29 +1,38 @@
 {
   "board": "LinkedIn",
-  "run_date": "2026-10-14",
+  "run_date": "2026-10-15",
   "eyebrow": "LinkedIn · authenticated read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Full descriptions validated on LinkedIn. Scores measure skill and domain fit.",
-  "latest_update": "October 14, 2026 — past-48-hour run: all 45 passes executed; 85 unique postings, 73 new, 58 read in full; 6 auto-filed (best: Fidus Azure Platform & DevOps Architect 7, Optimum IT platform administrator 7, Smile Cloud Engineer Automation 6, MaintainX SRE 6).",
+  "latest_update": "October 15, 2026 — past-48-hour run: all 67 passes executed; 100 unique postings, 43 new to the ledger/reports; 1 auto-filed (ComPsych Senior DevOps, CAD $170–240k remote Canada, 7). Fidus Kitchener/Ottawa copies, Ciena Application Support SRE (Applied), Mozilla Cloud Engineering (Skipped) and Tecsys SRE (Applied) matched existing pipeline rows and were left untouched.",
   "stats": [
     {
-      "value": "45 of 45",
-      "label": "pass queries completed, past 48 hours (14 phrase + 11 hub + 20 city, first page each)"
+      "value": "67 of 67",
+      "label": "pass queries completed, past 48 hours (14 phrase + 33 hub + 20 city, first page each)"
     },
     {
-      "value": 85,
-      "label": "unique postings collected"
+      "value": 100,
+      "label": "unique postings collected (57 already in the ledger or an earlier report)"
     },
     {
-      "value": 58,
-      "label": "descriptions and workplace labels read in full"
+      "value": 43,
+      "label": "new postings; 25 read in full, the rest unrelated occupations or duplicates"
     },
     {
-      "value": 6,
-      "label": "new rows auto-filed this run"
+      "value": 1,
+      "label": "new row auto-filed this run (ComPsych)"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 15 run — past 48 hours (complete, 1 page per pass)",
+      "items": [
+        "<b>Method:</b> authenticated, read-only LinkedIn guest-endpoint queries with the past-48-hour filter (14 default phrases with location Canada, 3 remote phrases x 11 hubs, 5 titles x 4 reachable cities), then full descriptions and the page workplace label for every in-family or ambiguous new result. No LinkedIn state was changed.",
+        "<b>Pass audit:</b> 67 of 67 passes returned HTTP 200 with 10 cards each except Kingston (4 of 5 title searches returned zero results; Infrastructure Engineer returned results). Workplace filter was not applied at query time because the guest endpoint ignores it; labels were read per posting.",
+        "<b>Dedup:</b> 57 of 100 results were already in the ledger or earlier reports. Fidus Azure Platform &amp; DevOps Architect (Kitchener, Ottawa) is the same role as the New row filed 2026-10-14. Ciena Application Support Engineer is already Applied, Tecsys SRE is Applied (Glassdoor), Chrome Technologies Backend DevOps and Cohere Data Infrastructure were Skipped earlier, Mozilla/Thunderbird Senior Software Engineer, Cloud Engineering was Skipped (expired when reviewed) — status left unchanged. Mozilla is now showing as freshly indexed (Eluta shows 3 hours old, CAD $95–139k remote Canada); decide whether to reopen it in review.",
+        "<b>Set aside unopened (unrelated occupations / not in the three families):</b> about 20 postings — civil, electrical, mechanical and municipal roles, satellite flight software, quant/game developer postings, Affirm backend software engineer copies, Accenture data-centre specialist, EDC network delivery, GTI systems administrator (on-site), Nebius partner solutions architect, Redpanda security engineer, Jobgether application security."
+      ]
+    },
     {
       "heading": "October 14 run — past 48 hours (complete, 1 page per pass)",
       "items": [
@@ -4766,6 +4775,138 @@
       "gap": "Gate: Greater Toronto Area on-site.",
       "url": "https://www.linkedin.com/jobs/view/4466294855/",
       "status": "Ineligible — GTA on-site"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Software Engineer (Senior DevOps, Cloud Ops)",
+      "company": "ComPsych",
+      "location": "Remote — Canada (Ontario eligibility not stated)",
+      "salary": "CAD $170,000–$240,000/yr base",
+      "gap": "Technical: owns CI/CD standardization and infrastructure design across application teams with AI-directed pipelines, blue/green and canary deployments, policy-as-code, SAST/DAST/SCA gates, SLO-tied alerting and on-call; Marc's Jenkins/SonarQube standards and Azure delivery fit, but production AWS/Azure scale, Kubernetes/Helm and serverless depth are lighter. Practical: Target — base above $160k, remote Canada, growth unconfirmed; confirm Ontario eligibility. The sibling ComPsych Senior DevSecOps row is already Applied (2026-09-01). Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4461276256/",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Cloud Platform Engineer (Runway)",
+      "company": "GitLab",
+      "location": "Remote — Canada",
+      "salary": "USD $126,000–$213,000 (US-resident band; Canada band not stated)",
+      "gap": "Technical: operates production Kubernetes clusters including upgrades and scaling, owns ArgoCD ApplicationSets and Terraform modules — Marc is a Kubernetes/ArgoCD user, not a cluster owner (core gap). Practical: Confirm — Canada pay band and Ontario eligibility not stated. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4479729572/",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "SRE",
+      "title": "Principal Site Reliability Engineer, Platform Engineering: Dedicated",
+      "company": "GitLab",
+      "location": "Remote — Canada",
+      "salary": "USD $223,200–$380,400 (US-resident band)",
+      "gap": "Technical: principal-level technical direction for a multi-tenant single-tenant SaaS fleet, distributed-systems design and cross-team leadership — scale and ownership gap. Practical: Confirm — Canada band not stated. Resume: SRE.",
+      "url": "https://www.linkedin.com/jobs/view/4470996253/",
+      "status": ""
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Platform Engineer (Jobgether partner)",
+      "company": "Jobgether (partner company)",
+      "location": "Remote — Canada",
+      "salary": "CAD $160,000–$175,000/yr base",
+      "gap": "Out of scope: Python backend/distributed-systems engineer for a marketing-data platform (query execution, journey orchestration, APIs, on-call for own services), not platform/DevOps delivery. Practical: Target on pay and remote, but the work is software engineering.",
+      "url": "https://www.linkedin.com/jobs/view/4478838707/",
+      "status": "Skipped — Out of scope: backend software engineering"
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "Sr. Cloud Administrator (Jobgether partner)",
+      "company": "Jobgether (partner company)",
+      "location": "Remote — Canada or continental US",
+      "salary": "CAD $100,000–$135,000/yr",
+      "gap": "Technical: requires 5+ years strong AWS (ECS/Fargate, Lambda, MSK, CloudFormation), Windows/IIS/.NET and SOC 2/ISO administration — AWS depth gate. Practical: Compromise on pay. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4478830829/",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "BB CI Flow Support",
+      "company": "Ericsson",
+      "location": "Ottawa, ON (workplace label not verified)",
+      "salary": "Not stated",
+      "gap": "Technical: new-graduate scope monitoring Jenkins/GitLab/Spinnaker RAN pipelines; wireless/RAN background expected — junior scope. Practical: Confirm — pay and cadence not stated. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4469615577/",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "DevOps",
+      "title": "Senior Analyst, DevSecOps",
+      "company": "Intelcom | Dragonfly",
+      "location": "Montréal, QC hybrid (days not stated)",
+      "salary": "Not stated (Glassdoor estimate CAD $75,000–$92,000)",
+      "gap": "Technical: cloud-security specialist role requiring deep AWS/Azure security architecture and 5+ years cloud security — security-engineering gap. Practical: Confirm — cadence and pay not stated. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4479710776/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevOps Analyst",
+      "company": "TMX Group",
+      "location": "Montréal, QC hybrid — 2–3 office days",
+      "salary": "Not stated",
+      "gap": "Technical: Level 2 production support with Kubernetes/Helm/ArgoCD/Rancher, Ansible and Python — 1–3 years required, analyst-level scope and off-hours support. Practical: Compromise — 3 office days upper bound exceeds the two-day limit and pay is unstated (Montréal floor $120k). Resume: SRE.",
+      "url": "https://www.linkedin.com/jobs/view/4461309942/",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Platform (Observability) Engineer — fintech trading",
+      "company": "Hunter Bond (fintech client)",
+      "location": "Montréal, QC hybrid (days not stated)",
+      "salary": "CAD $150,000–$250,000/yr + bonus",
+      "gap": "Technical: owns a high-cardinality multi-region telemetry platform (Prometheus/VictoriaMetrics/Vector/OpenTelemetry) with Go or Rust code — scale and language gap. Practical: Confirm cadence. A different Hunter Bond Platform Engineer posting is already Applied. Resume: SRE.",
+      "url": "https://www.linkedin.com/jobs/view/4476464625/",
+      "status": ""
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "MONTREAL [HYBRID] - Linux Systems Administrator",
+      "company": "Quanteam (bank client)",
+      "location": "Montréal, QC hybrid (days not stated)",
+      "salary": "Not stated",
+      "gap": "Technical: Level 3 Red Hat Linux administration, patching, Python/FastAPI and PostgreSQL tooling for a bank — real overlap with Tink patching and FastAPI, but the centre of gravity is systems administration rather than platform or DevOps delivery. Practical: Confirm — cadence and pay not stated; a different Quanteam SRE posting was Skipped. Resume: Platform.",
+      "url": "https://www.linkedin.com/jobs/view/4476694750/",
+      "status": ""
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Developer AI Engineering",
+      "company": "National Bank of Canada",
+      "location": "Montréal, QC",
+      "salary": "Not stated",
+      "gap": "Out of scope: builds React/Python/Elixir AI applications (5+ years software development, 1–2 years AI) — application development with some deployment. ",
+      "url": "https://www.linkedin.com/jobs/view/4477064808/",
+      "status": "Skipped — Out of scope: AI application development"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Forward Deployed Agile Software Engineer (Jobgether partner)",
+      "company": "Jobgether (partner company)",
+      "location": "Remote — Canada",
+      "salary": "Not stated",
+      "gap": "Out of scope: builds AI agents, harnesses and full-stack applications with customers — software engineering, not infrastructure or delivery.",
+      "url": "https://www.linkedin.com/jobs/view/4478851257/",
+      "status": "Skipped — Out of scope: AI application engineering"
     }
   ],
   "method": "October 14 run: past 48 hours, 45 passes, first page each; 6 filed. Oct 13 (complete, 67 of 67 queries): past-24-hour run via authenticated, strictly read-only requests. Oct 12 (complete, 84 of 84 queries): past-48-hour run via authenticated, strictly read-only requests. Oct 9 (complete, 67 of 67 passes): October 8 past-24-hour run (authenticated, strictly read-only): 67 of 67 mandatory passes completed with f_TPR=r86400; 280 unique postings collected, all descriptions fetched, 77 workplace labels read and ~50 postings read in detail. Per-pass result cap of 30 (3 pages) was reached on 51 passes. Authenticated, strictly read-only LinkedIn search on September 24, 2026. Seven of 45 mandatory passes completed with reconciled rendered counts and LinkedIn IDs; several additional phrase pages were reached but could not be audited after repeated browser-control resets, so the overall run is incomplete. Completed passes used Canada, Remote, and f_TPR=r172800 and reviewed the visible first-page results (7 per pass, 35 unique IDs after deduplication). Two current full descriptions were validated: Blackpoint Cyber on LinkedIn and Autodesk on its employer site. Both matched existing applications.md company/title decisions and were not re-filed. SecurityScorecard remained unvalidated. No new posting cleared every automatic-filing gate. Historical rows and prior pipeline decisions remain preserved below."

@@ -1,22 +1,26 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-10-13",
+  "run_date": "2026-10-15",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "October 13, 2026 — past-24-hour run, PARTIAL: rerun later the same day showed more cards (Platform 27 of 46, Cloud 13 of 24, SRE 7 of 11) but Glassdoor offers no way to load the rest. Seven further cards were opened and read; none qualify (ALTEN Kubernetes Ottawa and CDPQ AI platform Montréal are ineligible on office days; five are out of scope). Still one filed role: LANK Consulting Senior Platform Engineer (score 5). The remaining unlisted cards cannot be viewed anonymously.",
+  "latest_update": "October 15, 2026 — last-3-days run, PARTIAL on card depth (Glassdoor renders only 7–30 cards per query): 89 unique cards, 8 relevant postings opened. Best: Go Logic Spécialiste DevOps CI/CD 7 (Jenkins to GitHub Actions migration, CAD $75–110k, not auto-filed). Nothing auto-filed.",
   "stats": [
     {
-      "value": "6 of 6 attempted",
-      "label": "queries executed on rerun; all 3 non-empty queries still partial (Platform 27 of 46, Cloud 13 of 24, SRE 7 of 11 cards visible; no load-more control)"
+      "value": "6 of 6",
+      "label": "queries executed, last 3 days (first page each; devops 11 of 24, platform 30 of 278, SRE 27 of 53, cloud 30 of 156, DevSecOps 10 of 18, forward deployed 7 of 11 cards)"
+    },
+    {
+      "value": 89,
+      "label": "unique postings collected"
     },
     {
       "value": 10,
-      "label": "new scored rows today"
+      "label": "new scored rows today (8 opened and read in full)"
     },
     {
-      "value": 1,
-      "label": "auto-filed this run"
+      "value": 0,
+      "label": "auto-filed this run (best, Go Logic CI/CD 7, has a pay ceiling below the Montréal floor)"
     }
   ],
   "rows": [
@@ -766,6 +770,116 @@
       "gap": "Toronto is outside the reachable cities; GCP/Kubernetes stack",
       "url": "https://www.glassdoor.ca/Job/canada-cloud-engineer-jobs-SRCH_IL.0,6_IN3_KO7,21.htm?fromAge=7&sortBy=date_desc",
       "status": "Skipped — Toronto"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Spécialiste DevOps CI/CD",
+      "company": "Go Logic (Canada)",
+      "location": "Montréal, QC — home, office or both (cadence unstated)",
+      "salary": "CAD $75,000–$110,000/yr (employer-provided)",
+      "gap": "Technical: migrating a client's repositories from Bitbucket/Jenkins to shared GitHub Actions workflows with Argo CD, Terraform Cloud and Vault OIDC — direct fit with Marc's Jenkins standardization across Java/Python/Terraform stacks; GitHub Actions is only light Desjardins experience and Vault OIDC/Terragrunt are gaps. Practical: Compromise — salary ceiling is below the $120k Montréal floor (the earlier GoLogic AI &amp; DevOps posting was Skipped for the same reason); remote eligibility from Ontario and employee-vs-contract status need confirming; French required (native). Not auto-filed because the stated pay violates the floor. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/spécialiste-devops-ci-cd-go-logic-canada-JV_IC2296722_KO0,24_KE25,40.htm?jl=1010295662623",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Azure Migration Specialist - 6 Month Contract (Veeam, VNet)",
+      "company": "Brydon Gama (staffing; Caribbean managed-cloud client)",
+      "location": "Remote — Canada, 20–30 hours/week",
+      "salary": "CAD $100–$115/hour (6-month contract)",
+      "gap": "Technical: screens hard on 3+ years production Azure VNet design (peering, UDRs, VPN Gateway/ExpressRoute) and 2+ years Veeam — Marc used Terraform-provisioned networking but has no named VNet design project or Veeam. Practical: Target on rate and remote, part-time bridge shape; real fit is poor. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/azure-migration-specialist-6-month-contract-brydon-gama-JV_KO0,43_KE44,55.htm?jl=1010295943156",
+      "status": ""
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Site Reliability Engineer (12-month contract)",
+      "company": "Global Technical Talent (bank client)",
+      "location": "Toronto, ON — hybrid, 4 office days/week",
+      "salary": "Not stated",
+      "gap": "Ineligible: hybrid four days per week in Toronto, outside the reachable cities. Technical fit would otherwise be Azure/Databricks/Terraform SRE with 8–10 years required.",
+      "url": "https://www.glassdoor.ca/job-listing/site-reliability-engineer-global-technical-talent-JV_IC2281069_KO0,25_KE26,49.htm?jl=1010295502325",
+      "status": "Skipped — Ineligible: Toronto hybrid 4 days/week"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "AI Platform Engineer-6",
+      "company": "Realign",
+      "location": "Halifax, NS — on-site 4 days/week",
+      "salary": "CAD $133,000 (employer-provided)",
+      "gap": "Ineligible: on-site four days per week in Halifax. Work is also AI-agent/LangChain software engineering inside a DevOps team.",
+      "url": "https://www.glassdoor.ca/job-listing/ai-platform-engineer-6-realign-llc-JV_IC2290928_KO0,22_KE23,34.htm?jl=1010296256191",
+      "status": "Skipped — Ineligible: Halifax on-site 4 days/week"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Développeur(euse) DevOps senior",
+      "company": "Base Camp Connect",
+      "location": "Lévis, QC (workplace not stated)",
+      "salary": "Not stated",
+      "gap": "Technical: generic CI/CD, cloud infrastructure and monitoring duties but the posting asks for 5–8 years of electronic and product design and gives no stack detail. Practical: Confirm — Lévis is outside the reachable cities unless remote is offered; pay and workplace not stated. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/développeur-euse-devops-senior-base-camp-connect-JV_IC2299214_KO0,30_KE31,48.htm?jl=1010296153625",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Infrastructure and Cloud Computing Analyst",
+      "company": "Beneva",
+      "location": "Québec, hybrid (days not stated)",
+      "salary": "Not stated",
+      "gap": "Technical: administers the Automic/$Universe job-orchestration platform with Linux/Windows, AWS, Terraform and Ansible — adjacent skills but a niche scheduler platform Marc has not run. Practical: Confirm — cadence, location and pay not stated; French posting. Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/infrastructure-and-cloud-computing-analyst-beneva-JV_KO0,42_KE43,49.htm?jl=1010294459111",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "SRE",
+      "title": "Senior BI Platform Operations Engineer",
+      "company": "Luxoft",
+      "location": "Toronto, ON (workplace not stated)",
+      "salary": "USD $90,000–$115,000 (NYC band); Canada is a subcontractor role",
+      "gap": "Technical: production support and administration of Tableau Server and Amazon QuickSight BI platforms — BI platform operations, not DevOps/SRE delivery. Practical: Confirm — subcontractor terms and workplace not stated.",
+      "url": "https://www.glassdoor.ca/job-listing/senior-bi-platform-operations-engineer-luxoft-JV_IC2281069_KO0,38_KE39,45.htm?jl=1010296607439",
+      "status": ""
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Staff Engineer (iOS)",
+      "company": "Tangerine",
+      "location": "Toronto, ON",
+      "salary": "CAD $100,000–$125,000 (Glassdoor estimate)",
+      "gap": "Out of scope: Staff iOS engineer building a mobile banking application.",
+      "url": "https://www.glassdoor.ca/job-listing/staff-engineer-tangerine-JV_IC2281069_KO0,14_KE15,24.htm?jl=1010296143412",
+      "status": "Skipped — Out of scope: iOS application development"
+    },
+    {
+      "score": 2,
+      "family": "DevOps",
+      "title": "Senior Analyst, DevSecOps",
+      "company": "Intelcom | Dragonfly",
+      "location": "Montréal, QC",
+      "salary": "CAD $75,000–$92,000 (Glassdoor estimate)",
+      "gap": "Technical: cloud-security engineering role needing deep AWS/Azure security architecture (see LinkedIn posting). Practical: Confirm.",
+      "url": "https://www.glassdoor.ca/job-listing/senior-analyst-devsecops-intelcom-JV_IC2296722_KO0,24_KE25,33.htm?jl=1010295999619",
+      "status": ""
+    },
+    {
+      "score": 2,
+      "family": "DevOps",
+      "title": "Analyste principal, DevSecOps",
+      "company": "Intelcom | Dragonfly",
+      "location": "Montréal, QC",
+      "salary": "CAD $55,000–$120,000 (Glassdoor estimate)",
+      "gap": "Technical: French-language twin of the Senior Analyst, DevSecOps cloud-security posting. Practical: Confirm.",
+      "url": "https://www.glassdoor.ca/job-listing/analyste-principal-devsecops-intelcom-JV_IC2296722_KO0,28_KE29,37.htm?jl=1010296296696",
+      "status": ""
     }
   ],
   "could_not_validate": [
@@ -803,6 +917,13 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 15 run — last 3 days (partial card depth)",
+      "items": [
+        "<b>Query audit:</b> keyword-length parameter corrected per query (KO7,22 devops engineer; 24 platform engineer; 32 site reliability engineer; 21 cloud engineer; 25 devsecops engineer; 32 forward deployed engineer) with the Last-3-days filter. Result counts: 24, 278, 53, 156, 18, 11; cards rendered 11, 30, 27, 30, 10, 7 (no load-more control), so the run is PARTIAL on depth even though all six queries executed.",
+        "<b>Dedup:</b> Tecsys SRE (Applied) and Tangerine, Realign and EDC rows appeared in earlier runs. Noise in the card set was mostly electrical, civil and mechanical engineering; the remaining plausible-but-unopened technical cards (Aleixo AWS Network Engineer, Asset Inventories Network Security Engineer, NTT DATA Salesforce Production Support Associate, EDC network and software roles, Capital One and Unity software engineers, PagerDuty Senior Engineering Manager Release Engineering) were set aside as network, security, support, application or people-management roles."
+      ]
+    },
     {
       "heading": "October 13 rerun — more cards, still capped",
       "items": [

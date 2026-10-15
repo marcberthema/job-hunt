@@ -1,22 +1,26 @@
 {
   "board": "Eluta",
-  "run_date": "2026-10-14",
+  "run_date": "2026-10-15",
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "October 14, 2026 — INCOMPLETE: 12 of 30 passes ran before Eluta served its human-verification page; 18 city passes pending until Marc clears it.",
+  "latest_update": "October 15, 2026 — COMPLETE: 30 of 30 passes, 175 unique cache IDs, no human-verification page. 2 auto-filed: Arctiq Senior SRE (client SRE CoE, remote contract, 6) and General Motors Autonomy Build &amp; Integration (remote Ontario, CAD $115–164.6k, 6). PLATO Infrastructure Engineer requires Secret clearance (Ineligible).",
   "stats": [
     {
-      "value": "12 of 30",
-      "label": "passes completed (10 remote + 2 Ottawa city) — run INCOMPLETE"
+      "value": "30 of 30",
+      "label": "passes completed (10 remote + 20 city), no verification page"
     },
     {
-      "value": 3,
-      "label": "new scored rows this run"
+      "value": 175,
+      "label": "unique cache IDs collected"
     },
     {
-      "value": 0,
-      "label": "auto-filed by Eluta (Smile filed from LinkedIn)"
+      "value": 9,
+      "label": "in-family results from the past 48 hours opened (7 read from cache or employer data)"
+    },
+    {
+      "value": 2,
+      "label": "auto-filed by Eluta this run (Arctiq SRE, GM Build & Integration)"
     }
   ],
   "rows": [
@@ -650,6 +654,61 @@
       "gap": "Out of scope — OpenStack SME consulting for Shared Services Canada; no OpenStack experience",
       "url": "https://www.eluta.ca/cache?u=25404206:apply.workable.com",
       "status": "Out of scope"
+    },
+    {
+      "score": 6,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer (SRE)",
+      "company": "Arctiq (client SRE Center of Excellence)",
+      "location": "Remote — Ontario-based (Toronto listed), Canada",
+      "salary": "Not stated (6–9 month contract, extension possible)",
+      "gap": "Technical: defines SLOs/SLIs, error budgets, DORA reporting and pipeline release gates in Dynatrace and ServiceNow for application teams, and joins on-call; Marc has Dynatrace dashboards/ingestion, Jenkins release gates and incident work but no implemented SLOs, and Kubernetes is user-level. Practical: Confirm — contract rate not stated (full-time contract floor $80/hr, $90/hr for shorter engagements), remote per employer listing. Posted 2026-10-14. Resume: SRE.",
+      "url": "https://arctiq.bamboohr.com/careers/342",
+      "status": "New"
+    },
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Senior Software Engineering - Autonomy Build & Integration",
+      "company": "General Motors of Canada",
+      "location": "Remote — Ontario (Markham optional)",
+      "salary": "CAD $115,000–$164,600/yr base",
+      "gap": "Technical: owns CI/CD, build, image and release-promotion workflows for ADAS software (Jenkins and GitHub Actions experience wanted, Python/Docker); gaps are C/C++ build systems (Bazel/CMake, Clang/GCC), automotive/QNX domain and 3+ years leading cross-team initiatives. Practical: Compromise — range tops out just above $160k, remote Ontario, growth unconfirmed; vacancy is a backfill. Resume: Platform.",
+      "url": "https://www.eluta.ca/cache_open?u=25312410:generalmotors.wd5.myworkdayjobs.com",
+      "status": "New"
+    },
+    {
+      "score": 3,
+      "family": "DevOps",
+      "title": "Senior Cloud Security Engineer (Remote Ontario)",
+      "company": "Smile Digital Health",
+      "location": "Remote — Ontario",
+      "salary": "Not stated",
+      "gap": "Technical: cloud security posture (Prisma Cloud, Defender for Cloud), threat modelling, SAST/DAST triage and RBAC governance — security-engineering centre of gravity beyond Marc's documented evidence. Practical: Confirm — pay not stated. Resume: Platform.",
+      "url": "https://www.eluta.ca/cache?u=25302403:jobs.lever.co",
+      "status": ""
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Senior Application Support Engineer (Remote Ontario)",
+      "company": "Smile Digital Health",
+      "location": "Remote — Ontario",
+      "salary": "Not stated",
+      "gap": "Technical: Tier-2 application support and Java bug fixes with Helm/Azure pipeline touch points and on-call — closer to support development than SRE or platform work. Practical: Confirm — pay not stated. Resume: SRE.",
+      "url": "https://www.eluta.ca/cache?u=25363152:jobs.lever.co",
+      "status": ""
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Infrastructure Engineer (remote contract)",
+      "company": "PLATO",
+      "location": "Remote — Canada (Fredericton, NB listed)",
+      "salary": "Not stated",
+      "gap": "Ineligible: Secret-level security clearance required at time of application (Marc holds none). Work is Azure/Terraform infrastructure for a federal client, contract 2026-11-01 to 2027-07-15, so otherwise a real fit.",
+      "url": "https://www.eluta.ca/cache?u=25486906:careers.platotech.com",
+      "status": "Skipped — Ineligible: Secret clearance required"
     }
   ],
   "could_not_validate": [
@@ -759,6 +818,15 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 15 run — past 48 hours (complete)",
+      "items": [
+        "<b>Pass audit:</b> 10 remote passes (DevOps, Senior DevOps, Staff DevOps, SRE, Senior SRE, Staff SRE, Cloud, DevSecOps, Infrastructure, Senior Infrastructure) each returned 10 cards. City passes for Ottawa, Montréal, Kingston, Brockville and Cornwall used DevOps, SRE, Cloud and Infrastructure Engineer. Zero-result passes rendered normally: Kingston DevOps; Brockville DevOps and Cloud; Cornwall DevOps and Cloud.",
+        "<b>Freshness:</b> Eluta exposes only a last-seen age, not a posting date. I opened every in-family result seen within about 2 days; older last-seen results were not reopened. The Arctiq listing carries an employer date of 2026-10-14 and the GM cache was indexed 2026-09-11 with the employer showing 'Posted Today'.",
+        "<b>Duplicates left unchanged:</b> Tailscale Infrastructure Engineer (Applied), Samsara Senior Software Engineer I/II - Infrastructure (already scored 2 on this report), Smile Cloud Engineer, Automation (already filed 2026-10-14), Tecsys DevOps Engineer (Cloud Infrastructure), and Mozilla Senior Software Engineer, Cloud Engineering (Skipped in the ledger; Eluta now shows it 3 hours old at CAD $95–139k remote Canada — worth deciding whether to reopen it).",
+        "<b>Cache shells:</b> the Arctiq and General Motors cache pages were empty shells; both were recovered through the cache_open structured representation, which carried the employer's full job data."
+      ]
+    },
     {
       "heading": "October 14 run — INCOMPLETE (12 of 30 passes; verification page)",
       "items": [

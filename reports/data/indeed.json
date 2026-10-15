@@ -1,22 +1,22 @@
 {
   "board": "Indeed",
-  "run_date": "2026-10-13",
+  "run_date": "2026-10-15",
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "October 13, 2026 — 24-hour window COMPLETE after the 429 cleared: all 58 passes done (the eight DevOps hub passes for Calgary to Victoria returned HTTP 200 with zero job cards, like Montréal) and all 24 candidate IDs opened via Indeed JobPosting data. None qualify: six in-family roles are ineligible on location (Regina, North York, Toronto, Oshawa, Calgary and the Actalent clearance copies) and the rest are out of scope. 0 new auto-filed.",
+  "latest_update": "October 15, 2026 — INCOMPLETE: about 52 of 62 passes ran (the first HTTP 429 cleared after a pause and the run resumed from Kitchener); a second 429 stopped the Kingston DevOps pass and 13 hybrid passes are pending. Of 48 collected IDs new to the ledger, 25 titles were fetched and only one in-family posting (Xsolla Platform Engineer, 3) was read in full; a Cloudflare verification page then ended validation. Nothing auto-filed.",
   "stats": [
     {
-      "value": "58 of 58",
-      "label": "passes completed (8 DevOps hub passes at 200 with zero cards, same as Montréal)"
+      "value": "about 52 of 62",
+      "label": "passes completed before HTTP 429 and a Cloudflare verification page — run INCOMPLETE"
     },
     {
-      "value": 24,
-      "label": "candidate postings opened (22 new rows, 2 already scored)"
+      "value": "13 pending",
+      "label": "Kingston (3), Cornwall (5) and Montréal (5) hybrid passes plus the Kingston DevOps pass did not run"
     },
     {
-      "value": 0,
-      "label": "qualifying postings"
+      "value": 48,
+      "label": "candidate job IDs not in the ledger or earlier reports; 25 titles fetched, 1 read in full"
     },
     {
       "value": 0,
@@ -24,6 +24,15 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 15 run — past 2 days (INCOMPLETE: rate limit, then Cloudflare verification)",
+      "items": [
+        "<b>Passes:</b> 9 role passes (Canada, Remote filter), 18 hub passes (Toronto, Vancouver, Montréal, Calgary, Ottawa, Edmonton x SRE/Platform/DevOps) and a first 429 at Kitchener SRE. After a pause the run resumed and completed Kitchener, Halifax, Winnipeg, Québec and Victoria hub passes and the Ottawa and Kingston (SRE, Platform) hybrid passes, then hit a second 429 at Kingston DevOps Engineer. <b>Not run:</b> Kingston DevOps/Cloud/Infrastructure, all five Cornwall passes and all five Montréal hybrid passes (13 passes).",
+        "<b>Candidates:</b> 60 unique IDs were collected, 12 of them placeholder/duplicate IDs; 48 had no ledger or report match. Titles were fetched for 25 and nearly all were unrelated (mainframe, product security, design engineers, pipeline TDs, solutions engineers, account managers). In-family: Platform Engineer (Xsolla, read in full, score 3), SRE North York, Linux Systems Specialist Tier 3 Ottawa, and Azure Migration Specialist 6-month contract (same posting as the Brydon Gama row on Glassdoor, score 3).",
+        "<b>Titles not fetched (IDs only, still unvalidated):</b> <a href=\"https://ca.indeed.com/viewjob?jk=2d383f23b78893c2\">2d383f</a>, <a href=\"https://ca.indeed.com/viewjob?jk=dae038720cef3905\">dae038</a>, <a href=\"https://ca.indeed.com/viewjob?jk=c219f9f395dcc42e\">c219f9</a>, <a href=\"https://ca.indeed.com/viewjob?jk=f45a7cb9e514cd99\">f45a7c</a>, <a href=\"https://ca.indeed.com/viewjob?jk=de89aa205e637ade\">de89aa</a>, <a href=\"https://ca.indeed.com/viewjob?jk=2bf1d9f237c12a6c\">2bf1d9</a>, <a href=\"https://ca.indeed.com/viewjob?jk=d007f545bc900ed3\">d007f5</a>, <a href=\"https://ca.indeed.com/viewjob?jk=326776cc59241d3d\">326776</a>, <a href=\"https://ca.indeed.com/viewjob?jk=c3d7db9909717564\">c3d7db</a>, <a href=\"https://ca.indeed.com/viewjob?jk=5b4f7433b3ac9689\">5b4f74</a>, <a href=\"https://ca.indeed.com/viewjob?jk=65149a97f5fa7b60\">65149a</a>, <a href=\"https://ca.indeed.com/viewjob?jk=8d2f0bfe13a38092\">8d2f0b</a>, <a href=\"https://ca.indeed.com/viewjob?jk=658ee62e219524db\">658ee6</a>, <a href=\"https://ca.indeed.com/viewjob?jk=6b7a578ab974caef\">6b7a57</a>, <a href=\"https://ca.indeed.com/viewjob?jk=d92568f9bdd3de33\">d92568</a>, <a href=\"https://ca.indeed.com/viewjob?jk=e8b8fe852926bdbd\">e8b8fe</a>, <a href=\"https://ca.indeed.com/viewjob?jk=939348f8aff0b5c8\">939348</a>, <a href=\"https://ca.indeed.com/viewjob?jk=9f14cf20e3653e26\">9f14cf</a>, <a href=\"https://ca.indeed.com/viewjob?jk=45c02cf804d62892\">45c02c</a>, <a href=\"https://ca.indeed.com/viewjob?jk=d8f339fae6b9b1cc\">d8f339</a>, <a href=\"https://ca.indeed.com/viewjob?jk=062bde11b1040f7f\">062bde</a>, <a href=\"https://ca.indeed.com/viewjob?jk=07f1fe3b759d972d\">07f1fe</a>.",
+        "<b>Resume:</b> rerun the remaining hybrid passes and open the IDs above in a later session once the Cloudflare check clears in Marc's own browser; no further requests were made after the verification page."
+      ]
+    },
     {
       "heading": "October 13 24-hour run — COMPLETE after resuming from HTTP 429",
       "items": [
@@ -1467,6 +1476,17 @@
       "gap": "Ineligible: Toronto hybrid is outside the reachable-city range; role is also customer-facing application/agent software engineering with only some deployment and observability duties. Practical: Ineligible — Toronto hybrid. Resume: Platform.",
       "url": "https://ca.indeed.com/viewjob?jk=df6d1c5e0073a086",
       "status": "Skipped — Toronto hybrid outside reachable range"
+    },
+    {
+      "score": 3,
+      "family": "Platform",
+      "title": "Platform Engineer",
+      "company": "Xsolla",
+      "location": "Remote (Canada eligibility not stated)",
+      "salary": "$100,000–$160,000/yr (currency not stated)",
+      "gap": "Technical: administers self-hosted Kubernetes clusters with GCP/AWS, Terraform/Terragrunt, Puppet/Ansible and Linux servers (4–7 years) — cluster-ownership and GCP/AWS depth gate. Practical: Confirm — Canada eligibility, currency and employer entity not stated. Resume: Platform.",
+      "url": "https://ca.indeed.com/viewjob?jk=f17793742a7a869a",
+      "status": ""
     }
   ],
   "_previously_blocked_candidates": [
@@ -1612,6 +1632,14 @@
     }
   ],
   "could_not_validate": [
+    {
+      "text": "Linux Systems Specialist - Senior | Tier 3, Ottawa, ON — plausible Linux operations role; full description not read because Indeed served a Cloudflare verification page.",
+      "url": "https://ca.indeed.com/viewjob?jk=1d9b52672d3e0777"
+    },
+    {
+      "text": "Site Reliability Engineer, North York, ON — in-family title; full description not read (rate limit / Cloudflare verification). Likely the same GTT/bank contract that Glassdoor shows as Toronto hybrid 4 days.",
+      "url": "https://ca.indeed.com/viewjob?jk=22e70f5e38362b2f"
+    },
     {
       "text": "Not opened in full (Indeed returned HTTP 429 on the fourth description fetch of October 9, so no further Indeed requests were made): Maarut — Senior DevOps Developer-Analyst (Lévis, QC, contract) — plausible in-family or ambiguous title; unread.",
       "url": "https://ca.indeed.com/viewjob?jk=281eb7dd81ad3203"
