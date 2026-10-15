@@ -55,6 +55,8 @@ Confirm the role details still match before treating it as validated. Every `che
 | Eagle | Canadian IT staffing agency, likely "Eagle Professional Resources" | **No-go: the website doesn't exist.** `eagle.ca` is an unrelated ISP/telecom business (internet/TV/phone) — wrong domain. Marc confirmed the real firm is likely named "Eagle Professional Resources" but no working website was found for it — unresolved, skip until a correct URL turns up | 2026-08-20 |
 | Jobillico | Quebec general job board | **No-go: not IT-focused, no contract/remote filter.** Manually checked by Marc (2026-08-20): does return some real postings (not broken, correcting the earlier "unrendered template" note — that may have been a transient error), but 0 contract offerings and no remote filter | 2026-08-20 |
 | Jobboom | Quebec general job board | **No-go: not IT-focused, negligible volume.** Manually checked by Marc (2026-08-20): only 7 hits for "devops" — too low volume to be worth automating | 2026-08-20 |
+| Himalayas (himalayas.app) | Remote-job board with country filters | **Blocked 2026-10-14:** HTTP 403 on plain fetch and a Cloudflare "Performing security verification" page in Chrome. Retry only if Marc clears it by hand; not automatable as is | 2026-10-14 |
+| Welcome to the Jungle | Culture-led job board, 4,500 companies across France, the UK and the US | **No-go 2026-10-14:** the logged-out `/en/jobs` page shows only a "match me to jobs" sign-up pitch, no listings. Footprint is France/UK/US, not Canada | 2026-10-14 |
 
 ## Manual only — no skill, worth checking by hand periodically
 
@@ -66,6 +68,7 @@ Confirm the role details still match before treating it as validated. Every `che
 | GLG (Gerson Lehrman Group) | Paid expert-network consultations (by the call/project, not sustained retainer work) | Added 2026-09-13 — same category as the Ethos gig-income exception already in `profile.md`; genuinely flexible, stacks easily alongside a FTE. Lower per-engagement value than a real retainer client but zero ongoing time commitment | 2026-09-13 |
 | Coleman Research | Paid expert-network consultations, similar model to GLG | Same as GLG — added 2026-09-13 | 2026-09-13 |
 | Remote Rocketship (remoterocketship.com) | Remote-job aggregator with ghost-job score and Canada filter (DevOps/Cloud/Infra/Build-Release/Automation/SRE titles, contract + full-time, worldwide + Canada) | **Parked 2026-10-13 — pin.** One-off pass of page 1 (20 of 215): nothing new at 5+; 6 of 20 already in the ledger from LinkedIn/Built In; its DevOps tag is unreliable; descriptions are summaries, and the site shows a no-subscription banner. If revisited: weekly sweep only, ghost score <=20%, confirm on the employer page. | 2026-10-13 |
+| Hiring Cafe (hiring.cafe, redirects to hiringcafe.com) | Job aggregator, ~256k jobs, Canada location and Remote/Hybrid filters, shows pay and years of experience on each card | **Tested 2026-10-14, loads in Chrome, no login.** Plain fetch gets HTTP 403, so use the browser. A `searchState` URL with query, Remote, Canada and a 2-day window returned just 1 result (a manager role), so the filter encoding needs tuning before this is worth a skill. Candidate for `check-hiringcafe` | 2026-10-14 |
 
 ---
 
