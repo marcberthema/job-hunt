@@ -1,26 +1,26 @@
 {
   "board": "Glassdoor",
-  "run_date": "2026-10-15",
+  "run_date": "2026-10-18",
   "eyebrow": "Candidate intelligence · Glassdoor Canada",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Glassdoor Canada pools listings that also surface via Indeed and other aggregators, alongside a smaller set of titles unique to this site — the score measures technical/domain fit only, not pay or location.",
-  "latest_update": "October 15, 2026 — last-3-days run, PARTIAL on card depth (Glassdoor renders only 7–30 cards per query): 89 unique cards, 8 relevant postings opened. Best: Go Logic Spécialiste DevOps CI/CD 7 (Jenkins to GitHub Actions migration, CAD $75–110k, not auto-filed). Nothing auto-filed.",
+  "latest_update": "October 18, 2026 — Last-week run: all 6 queries complete; 56 postings opened; 1 auto-filed (Go Logic Spécialiste DevOps CI/CD, 7).",
   "stats": [
     {
       "value": "6 of 6",
-      "label": "queries executed, last 3 days (first page each; devops 11 of 24, platform 30 of 278, SRE 27 of 53, cloud 30 of 156, DevSecOps 10 of 18, forward deployed 7 of 11 cards)"
+      "label": "queries completed, Last week filter"
     },
     {
-      "value": 89,
-      "label": "unique postings collected"
+      "value": 270,
+      "label": "cards loaded (184 unique)"
     },
     {
-      "value": 10,
-      "label": "new scored rows today (8 opened and read in full)"
+      "value": 56,
+      "label": "in-family postings opened and read"
     },
     {
-      "value": 0,
-      "label": "auto-filed this run (best, Go Logic CI/CD 7, has a pay ceiling below the Montréal floor)"
+      "value": 1,
+      "label": "new row auto-filed this run"
     }
   ],
   "rows": [
@@ -880,6 +880,257 @@
       "gap": "Technical: French-language twin of the Senior Analyst, DevSecOps cloud-security posting. Practical: Confirm.",
       "url": "https://www.glassdoor.ca/job-listing/analyste-principal-devsecops-intelcom-JV_IC2296722_KO0,28_KE29,37.htm?jl=1010296296696",
       "status": ""
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Spécialiste DevOps CI/CD",
+      "company": "Go Logic (Canada)",
+      "location": "Montréal — home, office or both (cadence not stated); permanent; French required",
+      "salary": "CAD $75,000–$110,000/year (employer provided)",
+      "gap": "Technical: migrating Bitbucket/Jenkins repositories to reusable GitHub Actions workflows (Java, Go, Python, Terraform, Argo CD, Vault) is Marc's Jenkins/shared-pipeline work almost verbatim; Terraform Cloud/Terragrunt and DataStage are gaps, GitHub Actions is only partly used; Practical: Compromise — range tops out at $110k, below the $120k Montréal hybrid floor and only fits the $100k remote floor if fully remote; cadence unconfirmed; consulting-firm placement at a client; Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010295662623",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Stellar Software Solutions",
+      "location": "Ottawa, ON — hybrid remote (days not stated)",
+      "salary": "CAD $90,000–$115,000/year (employer provided)",
+      "gap": "Technical: AWS, Kubernetes platform architecture, compliance (PCI-DSS/SOC 2) and 6+ years of cloud ownership; core AWS/Kubernetes ownership gap; Practical: Compromise — range straddles the $100k Ottawa floor; cadence unconfirmed; Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010298257414"
+    },
+    {
+      "score": 6,
+      "family": "Platform",
+      "title": "Cloud Engineer, Automation (Remote Ontario)",
+      "company": "Smile Digital Health",
+      "location": "Remote Ontario",
+      "salary": "CAD $120,000–$140,000/year (employer provided)",
+      "gap": "Technical: already assessed on 2026-10-14 (LinkedIn row); Azure DevOps shared-template consolidation and Azure fit; Practical: Compromise — $120–140k base below $160k ideal; Resume: Platform.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010294210108"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "AKS Platform Engineer (1891)",
+      "company": "Direct IT Recruiting",
+      "location": "Toronto, ON — hybrid, 2 days on-site; 6-month contract",
+      "salary": "$85–$95/hour (employer provided)",
+      "gap": "Hard gate: Toronto hybrid is outside the reachable cities. Also asks 6+ years as a platform engineer with proven AKS cluster, gateway/ingress/service-mesh ownership.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010296783049",
+      "status": "Skipped — Ineligible: Toronto hybrid"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "Tekstaff",
+      "location": "Toronto, ON — hybrid 4 days per week; 12-month contract",
+      "salary": "$80–$90/hour (employer provided)",
+      "gap": "Hard gate: Toronto 4 days in person. Also 7 years of Azure/Terraform-SALT-Ansible/Databricks as must-haves.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010295447513",
+      "status": "Skipped — Ineligible: Toronto 4 days on-site"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Terraform Developer",
+      "company": "Spectra Group",
+      "location": "Toronto, ON — hybrid 3–4 days on-site; contract",
+      "salary": "$90–$100/hour (employer provided)",
+      "gap": "Hard gate: Toronto 3–4 days on-site. Capital-markets cloud/data engineering with advanced Terraform authorship.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010296984431",
+      "status": "Skipped — Ineligible: Toronto 3-4 days on-site"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "AWS Network Engineer",
+      "company": "Aleixo Technologies",
+      "location": "Toronto, ON — hybrid",
+      "salary": "CAD $100,000–$135,000/year (employer provided)",
+      "gap": "Hard gate: Toronto hybrid; AWS networking (VPC, Direct Connect) architecture is the deliverable.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010294285433",
+      "status": "Skipped — Ineligible: Toronto hybrid, AWS networking"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Senior Site Reliability Engineer",
+      "company": "RBC",
+      "location": "Toronto, ON — no remote option stated",
+      "salary": "Not stated",
+      "gap": "Technical would be ~6 (Dynatrace/Catchpoint monitoring, PagerDuty incident handling, Python/GitHub, 2+ years asked), but the posting names Toronto only with no remote or hybrid terms; a different RBC SRE posting was Skipped on 2026-09-16.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010298621260",
+      "status": "Skipped — Ineligible: Toronto only, no remote evidence"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Spécialiste DevOps",
+      "company": "Devolutions",
+      "location": "Lavaltrie, QC — hybrid 3 days on-site",
+      "salary": "$65K–$90K (Glassdoor est.)",
+      "gap": "Hard gate: junior role, Lavaltrie is outside the reachable list, three office days a week.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010297131922",
+      "status": "Skipped — Ineligible: Lavaltrie 3 days on-site, junior"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Développeur(euse) DevOps senior",
+      "company": "Base Camp Connect",
+      "location": "Lévis, QC — remote not stated",
+      "salary": "Not stated",
+      "gap": "Lévis is outside the reachable cities and the posting gives no remote terms (opening reviewed in French); pipelines/cloud automation otherwise in family.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010296153625",
+      "status": "Skipped — Ineligible: Lévis QC, no remote evidence"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior Cloud Network Engineer",
+      "company": "Pinnacle",
+      "location": "North York, ON",
+      "salary": "$90K (employer provided)",
+      "gap": "Hard gate: network-engineering role in the GTA with no remote option shown; pay below the $100k remote floor.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010292316808",
+      "status": "Skipped — Ineligible: GTA network role, no remote option"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Systems & Security Administrator",
+      "company": "Eaglecom Inc",
+      "location": "Toronto, ON — hybrid 60% remote / 40% in office",
+      "salary": "CAD $100,000–$120,000 + bonus (employer provided)",
+      "gap": "Hard gate: Toronto hybrid; systems/security administration rather than platform engineering.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010295854775",
+      "status": "Skipped — Ineligible: Toronto hybrid"
+    },
+    {
+      "score": -1,
+      "family": "DevOps",
+      "title": "Forward Deployed Engineer | Early Career",
+      "company": "ReclaimLLM",
+      "location": "Remote",
+      "salary": "$50K–$70K (employer provided)",
+      "gap": "Hard gate: early-career customer-deployment role paying below the $100k remote floor.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010294160945",
+      "status": "Skipped — Ineligible: early-career pay below floor"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior MLOps Engineer",
+      "company": "Clariti",
+      "location": "Toronto, ON — remote company",
+      "salary": "$100K–$182K (Glassdoor est.)",
+      "gap": "ML training/serving infrastructure and MLOps tooling (MLflow, Kubeflow, GPU orchestration) with 3+ years MLOps; Marc has no ML platform evidence. Sister Clariti posting was Applied for a different role.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010296701640",
+      "status": "Skipped — Out of scope: ML infrastructure / MLOps"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Mainframe Production Operations Engineer",
+      "company": "IT For All Solutions (All IT Solutions)",
+      "location": "Ontario — remote contract",
+      "salary": "Not stated",
+      "gap": "z/OS mainframe automation migration (CA OPS/MVS to Tivoli System Automation, REXX, JCL) — no overlap.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010295471414",
+      "status": "Skipped — Out of scope: mainframe operations"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "AI Platform Engineer",
+      "company": "Precision Technologies Corp.",
+      "location": "Toronto, ON — 4 days on-site; contract",
+      "salary": "$55–$70/hour (employer provided)",
+      "gap": "Gen-AI application engineering (Python/React, LLM pipelines on AWS) with 4 on-site days.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010294354382",
+      "status": "Skipped — Out of scope: Gen-AI application engineering, Toronto on-site"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Devops AI Developer",
+      "company": "isgSearch",
+      "location": "Toronto, ON — contract",
+      "salary": "$118K–$182K (Glassdoor est.)",
+      "gap": "Posting body is a Data Scientist/application developer contract (C#/.NET, Blazor) at an insurer; DevOps is incidental.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010298318747",
+      "status": "Skipped — Out of scope: application development, Toronto"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Verification and Validation Developer - Infrastructure & Automation",
+      "company": "Octasic",
+      "location": "Montréal, QC",
+      "salary": "$78K–$135K (Glassdoor est.)",
+      "gap": "Hardware/SoC verification test-framework development, not delivery or reliability engineering.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010297001588",
+      "status": "Skipped — Out of scope: SoC verification tooling"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior Solution Architect - Data & AI",
+      "company": "Intact",
+      "location": "Montréal, QC — hybrid",
+      "salary": "CAD $128,300–$156,800 base (employer provided)",
+      "gap": "Data/AI solution architecture, not infrastructure or delivery.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010298950410",
+      "status": "Skipped — Out of scope: data & AI architecture"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Frontier Deployed Engineer",
+      "company": "Future Electronics",
+      "location": "Kirkland, QC — on-site amenities listed",
+      "salary": "$90K (employer provided)",
+      "gap": "AI/agentic business-solution engineering in an AI & Automation Center of Excellence.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010298119704",
+      "status": "Skipped — Out of scope: AI business-solution engineering"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Microsoft Platform Software Engineer",
+      "company": "Quest Software",
+      "location": "Nova Scotia",
+      "salary": "Not stated",
+      "gap": "C#/.NET product development with AI coding agents.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010297997682",
+      "status": "Skipped — Out of scope: C#/.NET product development"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Genesys Systems Engineer",
+      "company": "Forward Financing",
+      "location": "Alberta — remote-first",
+      "salary": "$105K–$128K (employer provided)",
+      "gap": "Genesys contact-centre platform support and Salesforce routing integration.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010293125901",
+      "status": "Skipped — Out of scope: contact-centre platform support"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Multiple Opportunities – Software, AI, Cybersecurity, Infrastructure & Implementation",
+      "company": "Talent Grid",
+      "location": "Montréal, QC — hybrid or on-site",
+      "salary": "$90K–$150K (employer provided)",
+      "gap": "Multi-role recruiter blast (network integrator, security engineer, Java/Spark, etc.); no single in-family role.",
+      "url": "https://www.glassdoor.ca/job-listing/j?jl=1010294143094",
+      "status": "Skipped — Out of scope: multi-role recruiter posting"
     }
   ],
   "could_not_validate": [
@@ -917,6 +1168,16 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 18 run — Last week (complete)",
+      "items": [
+        "<b>Run 2026-10-18 (Last week filter):</b> six default queries, each loaded to exhaustion with Show more jobs. Header count / cards loaded: DevOps Engineer 21/17, Platform Engineer 192/135, Site Reliability Engineer 54/45, Cloud Engineer 92/61, DevSecOps Engineer 12/7, Forward Deployed Engineer 5/5. The header-to-card gap is repeated postings per location, as documented. 270 cards, 184 unique.",
+        "<b>Opened in full:</b> 56 in-family or ambiguous titles (description retrieved from each job page); the other 128 cards were mechanical, electrical, civil, process, sales, data-engineering, intern, QA and similar occupations, not listed individually.",
+        "<b>Auto-filed (1):</b> Go Logic Spécialiste DevOps CI/CD (7) — a Bitbucket/Jenkins to GitHub Actions migration at a client, Montréal, $75–110k, French required. Pay tops out below the $120k Montréal hybrid floor, so the practical label is Compromise; it also fits the $100k remote floor only if fully remote.",
+        "<b>Duplicate:</b> Smile Digital Health Cloud Engineer, Automation was already filed from LinkedIn on 2026-10-14.",
+        "<b>Hard-gate pattern:</b> every Toronto contract (AKS, Tekstaff SRE, Spectra Terraform, Aleixo AWS network) is hybrid 2–4 days in Toronto, outside the reachable cities."
+      ]
+    },
     {
       "heading": "October 15 run — last 3 days (partial card depth)",
       "items": [
@@ -1015,5 +1276,5 @@
       ]
     }
   ],
-  "method": "Oct 13 rerun (PARTIAL: Platform 27 of 46, Cloud 13 of 24, SRE 7 of 11 cards). Oct 13 (PARTIAL — 3 of 6 queries capped by Glassdoor's visible-card limit): Last-day filter. Oct 12 (INCOMPLETE: Platform and Cloud cards only partly rendered). Oct 10, 2026 (last-72-hours request): all six mandatory Canada queries were executed independently in a rendered browser with the “Last 3 days” filter, but none rendered its complete reported result count (DevOps 14 of 22, Platform 120 of 228, SRE 40 of 51, Cloud 60 of 115, DevSecOps 4 of 6, FDE 4 of 6). Every in-family or ambiguous card that did render was opened from its own posting page and read in full; non-IT cards were counted and set aside. Platform Engineer and Site Reliability Engineer remain noisy on this site, as in prior runs. Prior rows and statuses below are preserved from the October 6 run. All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
+  "method": "<b>October 18 run (Last week, 6 of 6 queries complete):</b> browser-based, read-only; job descriptions read from each job page; 56 opened; 1 auto-filed (Go Logic Spécialiste DevOps CI/CD). Earlier runs follow. Oct 13 rerun (PARTIAL: Platform 27 of 46, Cloud 13 of 24, SRE 7 of 11 cards). Oct 13 (PARTIAL — 3 of 6 queries capped by Glassdoor's visible-card limit): Last-day filter. Oct 12 (INCOMPLETE: Platform and Cloud cards only partly rendered). Oct 10, 2026 (last-72-hours request): all six mandatory Canada queries were executed independently in a rendered browser with the “Last 3 days” filter, but none rendered its complete reported result count (DevOps 14 of 22, Platform 120 of 228, SRE 40 of 51, Cloud 60 of 115, DevSecOps 4 of 6, FDE 4 of 6). Every in-family or ambiguous card that did render was opened from its own posting page and read in full; non-IT cards were counted and set aside. Platform Engineer and Site Reliability Engineer remain noisy on this site, as in prior runs. Prior rows and statuses below are preserved from the October 6 run. All six mandatory Canada keyword queries were executed independently in a rendered browser and the first eight results of each were captured before deduplication (48 appearances). Platform and SRE queries remain highly noisy but were still audited in full. Five new postings were validated and scored; zero cleared the score ≥5 auto-file threshold. Existing validated rows and pipeline statuses (Applied: Tecsys, Intact) were preserved exactly, including prior score/family/gap text."
 }

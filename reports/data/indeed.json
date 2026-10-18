@@ -1,29 +1,38 @@
 {
   "board": "Indeed",
-  "run_date": "2026-10-15",
+  "run_date": "2026-10-18",
   "eyebrow": "Candidate intelligence · Indeed",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Canada-eligible remote roles plus hybrid roles in Ottawa, Kingston, Cornwall and Montréal. Skill scores exclude compensation and commute considerations.",
-  "latest_update": "October 15, 2026 — INCOMPLETE: about 52 of 62 passes ran (the first HTTP 429 cleared after a pause and the run resumed from Kitchener); a second 429 stopped the Kingston DevOps pass and 13 hybrid passes are pending. Of 48 collected IDs new to the ledger, 25 titles were fetched and only one in-family posting (Xsolla Platform Engineer, 3) was read in full; a Cloudflare verification page then ended validation. Nothing auto-filed.",
+  "latest_update": "October 18, 2026 — past-7-day run: all 78 passes complete; GoLogic Spécialiste DevOps CI/CD (7) matches the row filed from Glassdoor.",
   "stats": [
     {
-      "value": "about 52 of 62",
-      "label": "passes completed before HTTP 429 and a Cloudflare verification page — run INCOMPLETE"
+      "value": "78 of 78",
+      "label": "passes completed (9 zero-result)"
     },
     {
-      "value": "13 pending",
-      "label": "Kingston (3), Cornwall (5) and Montréal (5) hybrid passes plus the Kingston DevOps pass did not run"
+      "value": 81,
+      "label": "unique postings collected"
     },
     {
-      "value": 48,
-      "label": "candidate job IDs not in the ledger or earlier reports; 25 titles fetched, 1 read in full"
+      "value": 8,
+      "label": "in-family postings opened in full"
     },
     {
       "value": 0,
-      "label": "auto-filed this run"
+      "label": "new rows auto-filed from Indeed alone"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 18 run — fromage=7 (complete)",
+      "items": [
+        "<b>Run 2026-10-18 (fromage=7):</b> 78 of 78 passes complete — 9 role queries on Canada remote, 3 core roles × 11 hub cities (remote filter), 9 role queries × 4 reachable cities (Ottawa, Kingston, Cornwall, Montréal) without the remote filter. Nine passes rendered zero results (DevOps Engineer in several hubs and in Kingston/Cornwall); none was blocked. One earlier command-line session hit HTTP 429 and was discarded; this run used page requests spaced about ten seconds apart with no further blocks.",
+        "<b>Collected 81 unique postings; opened full descriptions for the in-family ones that were within seven days:</b> GoLogic, Stellar, EDC Principal Infrastructure Platform Architect, Culture Core Linux Specialist, ALTEN, Perseus, plus mainframe and MLOps copies. Software, QA, security, finance, payroll, translation and support roles were set aside as unrelated.",
+        "<b>Auto-filed:</b> none new on Indeed; GoLogic Spécialiste DevOps CI/CD is the same posting filed from Glassdoor earlier in this run.",
+        "<b>Stale results:</b> Indeed's 7-day filter still returned a handful of old listings (30+, 25 and 23 days) — listed under Could not validate rather than scored."
+      ]
+    },
     {
       "heading": "October 15 run — past 2 days (INCOMPLETE: rate limit, then Cloudflare verification)",
       "items": [
@@ -199,7 +208,7 @@
       ]
     }
   ],
-  "method": "Oct 13 (COMPLETE, 58 of 58 passes, 24 IDs opened). Earlier Oct 13 attempt: 30 of 58 passes before HTTP 429. Oct 12 (COMPLETE, 51 of 51 passes after resuming from HTTP 429). Oct 12 (INCOMPLETE, 31 of 51 passes; HTTP 429 at pass 32). October 9, 2026 incomplete run (past 48 hours): 27 of 51 mandatory passes completed before Indeed returned HTTP 429; the Montréal Infrastructure pass, the Montréal Cloud pass and all 22 remote-hub passes were not completed. October 7, 2026 incomplete run: 28 of 51 mandatory passes completed before Indeed returned HTTP 429 (Montréal Infrastructure Engineer); the 22 remote-hub passes were not run. No descriptions opened, nothing scored or filed. Previously validated rows and pipeline decisions are preserved unchanged. Resume the Indeed hub passes and the unread candidates in a later session. October 6, 2026 authenticated-browser run: first-page, past-7-days, date-sorted searches were paced at least seven seconds apart. All 51 required passes completed (9 Canada-title, 20 reachable-city and 22 remote-hub). Search cards yielded 125 unique non-placeholder IDs; all 37 plausible or ambiguous postings were opened and read in full. Cross-source and location-copy duplicates were reconciled against applications.md without changing their pipeline state. Two newly eligible postings scoring at least 5 were filed as New; compensation, geography, clearance and hard skill-depth gates were applied before filing.",
+  "method": "<b>October 18 run (past 7 days, 78 of 78 passes complete):</b> authenticated browser page requests (read-only) against Indeed result pages, mosaic job-card data parsed, descriptions opened for in-family results; 0 new rows auto-filed from Indeed alone. Earlier runs follow. Oct 13 (COMPLETE, 58 of 58 passes, 24 IDs opened). Earlier Oct 13 attempt: 30 of 58 passes before HTTP 429. Oct 12 (COMPLETE, 51 of 51 passes after resuming from HTTP 429). Oct 12 (INCOMPLETE, 31 of 51 passes; HTTP 429 at pass 32). October 9, 2026 incomplete run (past 48 hours): 27 of 51 mandatory passes completed before Indeed returned HTTP 429; the Montréal Infrastructure pass, the Montréal Cloud pass and all 22 remote-hub passes were not completed. October 7, 2026 incomplete run: 28 of 51 mandatory passes completed before Indeed returned HTTP 429 (Montréal Infrastructure Engineer); the 22 remote-hub passes were not run. No descriptions opened, nothing scored or filed. Previously validated rows and pipeline decisions are preserved unchanged. Resume the Indeed hub passes and the unread candidates in a later session. October 6, 2026 authenticated-browser run: first-page, past-7-days, date-sorted searches were paced at least seven seconds apart. All 51 required passes completed (9 Canada-title, 20 reachable-city and 22 remote-hub). Search cards yielded 125 unique non-placeholder IDs; all 37 plausible or ambiguous postings were opened and read in full. Cross-source and location-copy duplicates were reconciled against applications.md without changing their pipeline state. Two newly eligible postings scoring at least 5 were filed as New; compensation, geography, clearance and hard skill-depth gates were applied before filing.",
   "rows": [
     {
       "score": -1,
@@ -1487,6 +1496,102 @@
       "gap": "Technical: administers self-hosted Kubernetes clusters with GCP/AWS, Terraform/Terragrunt, Puppet/Ansible and Linux servers (4–7 years) — cluster-ownership and GCP/AWS depth gate. Practical: Confirm — Canada eligibility, currency and employer entity not stated. Resume: Platform.",
       "url": "https://ca.indeed.com/viewjob?jk=f17793742a7a869a",
       "status": ""
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "Spécialiste DevOps CI/CD",
+      "company": "GoLogic",
+      "location": "Montréal — home, office or both (cadence not stated); permanent; French required",
+      "salary": "CAD $75,000–$110,000/year",
+      "gap": "Technical: same posting as the Glassdoor row: Bitbucket/Jenkins to GitHub Actions migration with reusable workflows, Argo CD, Terraform Cloud; GitHub Actions depth and Terraform Cloud/Terragrunt are gaps; Practical: Compromise — top of range below the $120k Montréal hybrid floor; cadence unconfirmed; Resume: Platform.",
+      "url": "https://ca.indeed.com/viewjob?jk=d736777f05520a1e",
+      "status": "New"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "Senior DevOps Engineer",
+      "company": "Stellar Software Solutions",
+      "location": "Ottawa, ON — hybrid remote",
+      "salary": "CAD $90,000–$115,000/year",
+      "gap": "Technical: AWS/Kubernetes ownership and compliance frameworks across 6+ years; core cloud ownership gap; Practical: Compromise — range straddles the $100k Ottawa floor; Resume: Platform.",
+      "url": "https://ca.indeed.com/viewjob?jk=0c05b47e2c9acea0"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Information Technology Specialist (Kubernetes)",
+      "company": "Alten Canada",
+      "location": "Ottawa, ON — on-site 4 days per week",
+      "salary": "$75–$85/hour",
+      "gap": "Hard gate: on-site Ottawa, clearance eligibility and Kubernetes cluster ownership (also reviewed on the Glassdoor board).",
+      "url": "https://ca.indeed.com/viewjob?jk=7cc83afb066d86ba",
+      "status": "Skipped — Ineligible: Ottawa 4 days on-site, clearance"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Principal Infrastructure Platform Architect (Level 19) - 038 EN",
+      "company": "Export Development Canada",
+      "location": "Ottawa, ON — hybrid, two office days rising to three from September 2026",
+      "salary": "CAD $112,006–$149,341/year",
+      "gap": "Technical: principal architect scope over enterprise infrastructure platforms exceeds Marc's evidence of architecture ownership; Practical: Compromise — three office days now required (soft flag), range below $160k; application deadline 2026-10-27; Resume: Platform.",
+      "url": "https://ca.indeed.com/viewjob?jk=8d2f0bfe13a38092"
+    },
+    {
+      "score": 4,
+      "family": "Platform",
+      "title": "Linux Systems Specialist - Senior | Tier 3",
+      "company": "Culture Core Group (Crafty Penguins)",
+      "location": "Remote — company in Lethbridge, AB; Ottawa/Edmonton/Winnipeg Indeed copies",
+      "salary": "$90,000–$120,000/year",
+      "gap": "Technical: Linux/Kubernetes/hypervisor (KVM, Proxmox) client-support consulting; Marc's Linux fleet work fits, hypervisor and low-level debugging breadth are gaps; role is Tier-3 support rather than platform engineering; Practical: Compromise — $90–$120k remote, consulting-firm customer support; pay below $160k ideal; Resume: Platform.",
+      "url": "https://ca.indeed.com/viewjob?jk=1d9b52672d3e0777"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Technical Services Engineer",
+      "company": "Perseus Group",
+      "location": "Remote — Pacific time hours",
+      "salary": "$80,000–$90,000/year",
+      "gap": "Service-desk/local-IT support with a hosting initiative; also below the $100k remote floor.",
+      "url": "https://ca.indeed.com/viewjob?jk=b50dec74b6b01fba",
+      "status": "Skipped — Out of scope: IT support and desktop administration"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Integration Specialist - Oracle/Mulesoft",
+      "company": "Alten Canada",
+      "location": "Toronto client; must be based in Ontario",
+      "salary": "$80–$90/hour",
+      "gap": "MuleSoft integration architecture and Oracle Fusion implementation (5+ years each) — integration development, not delivery tooling.",
+      "url": "https://ca.indeed.com/viewjob?jk=bae63896d5aa869f",
+      "status": "Skipped — Out of scope: MuleSoft/Oracle Fusion integration development"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Mainframe Production Operations Engineer",
+      "company": "All IT Solutions",
+      "location": "Ontario — remote contract",
+      "salary": "Not stated",
+      "gap": "z/OS mainframe automation migration; no overlap.",
+      "url": "https://ca.indeed.com/viewjob?jk=96433825fc9c9e32",
+      "status": "Skipped — Out of scope: mainframe operations"
+    },
+    {
+      "score": 0,
+      "family": "Platform",
+      "title": "Senior MLOps Engineer",
+      "company": "Clariti Cloud Inc.",
+      "location": "Toronto, ON",
+      "salary": "Not stated",
+      "gap": "ML training/serving infrastructure; see Glassdoor row.",
+      "url": "https://ca.indeed.com/viewjob?jk=891ed8834e732203",
+      "status": "Skipped — Out of scope: ML infrastructure / MLOps"
     }
   ],
   "_previously_blocked_candidates": [
@@ -1632,6 +1737,34 @@
     }
   ],
   "could_not_validate": [
+    {
+      "text": "Xsolla — Platform Engineer, remote, $100,000–$160,000: Indeed shows 30+ days; outside the 7-day window and not opened.",
+      "url": "https://ca.indeed.com/viewjob?jk=f17793742a7a869a"
+    },
+    {
+      "text": "Monark — DevOps Engineer, White Rock BC, $80,000–$100,000: 30+ days old and not opened.",
+      "url": "https://ca.indeed.com/viewjob?jk=ab191c224ce2d4af"
+    },
+    {
+      "text": "Hookdeck — Platform Engineer, remote: 30+ days old and not opened.",
+      "url": "https://ca.indeed.com/viewjob?jk=86defccaa509fe1f"
+    },
+    {
+      "text": "CGI — Administrateur(trice) cloud/DevOps, Montréal, $60,000–$110,000: 30+ days old and not opened.",
+      "url": "https://ca.indeed.com/viewjob?jk=5b81eec9e34e45c1"
+    },
+    {
+      "text": "Recutify — SRE, North York ON: 30+ days old and not opened.",
+      "url": "https://ca.indeed.com/viewjob?jk=22e70f5e38362b2f"
+    },
+    {
+      "text": "NASDAQ — DevOps Cloud Engineer, Toronto, $86,000–$118,000: 30+ days old and not opened.",
+      "url": "https://ca.indeed.com/viewjob?jk=4ca8f4d73cc33b11"
+    },
+    {
+      "text": "Logic 2000 — Cloud Infrastructure Engineer, remote contract ($1,400–$1,500/day): 25 days old and not opened.",
+      "url": "https://ca.indeed.com/viewjob?jk=d79cce775c31e184"
+    },
     {
       "text": "Linux Systems Specialist - Senior | Tier 3, Ottawa, ON — plausible Linux operations role; full description not read because Indeed served a Cloudflare verification page.",
       "url": "https://ca.indeed.com/viewjob?jk=1d9b52672d3e0777"

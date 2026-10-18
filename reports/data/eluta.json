@@ -1,26 +1,26 @@
 {
   "board": "Eluta",
-  "run_date": "2026-10-15",
+  "run_date": "2026-10-18",
   "eyebrow": "Eluta.ca · Canadian employer career-page index",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "October 15, 2026 — COMPLETE: 30 of 30 passes, 175 unique cache IDs, no human-verification page. 2 auto-filed: Arctiq Senior SRE (client SRE CoE, remote contract, 6) and General Motors Autonomy Build &amp; Integration (remote Ontario, CAD $115–164.6k, 6). PLATO Infrastructure Engineer requires Secret clearance (Ineligible).",
+  "latest_update": "October 18, 2026 — INCOMPLETE: 12 of 35 passes ran before Eluta's human-verification page; 6 postings validated via employer pages; 0 auto-filed.",
   "stats": [
     {
-      "value": "30 of 30",
-      "label": "passes completed (10 remote + 20 city), no verification page"
+      "value": "12 of 35",
+      "label": "passes completed before Eluta's verification page"
     },
     {
-      "value": 175,
-      "label": "unique cache IDs collected"
+      "value": 94,
+      "label": "unique postings collected"
     },
     {
-      "value": 9,
-      "label": "in-family results from the past 48 hours opened (7 read from cache or employer data)"
+      "value": 6,
+      "label": "validated through employer pages"
     },
     {
-      "value": 2,
-      "label": "auto-filed by Eluta this run (Arctiq SRE, GM Build & Integration)"
+      "value": 0,
+      "label": "new rows auto-filed"
     }
   ],
   "rows": [
@@ -709,9 +709,161 @@
       "gap": "Ineligible: Secret-level security clearance required at time of application (Marc holds none). Work is Azure/Terraform infrastructure for a federal client, contract 2026-11-01 to 2027-07-15, so otherwise a real fit.",
       "url": "https://www.eluta.ca/cache?u=25486906:careers.platotech.com",
       "status": "Skipped — Ineligible: Secret clearance required"
+    },
+    {
+      "score": 7,
+      "family": "DevOps",
+      "title": "DevOps Specialist (6 months)",
+      "company": "CIRA",
+      "location": "Ottawa, ON — hybrid (blend of remote and in-office)",
+      "salary": "CAD $106,000–$117,000 (fixed term)",
+      "gap": "Technical: reusable GitLab CI/CD components, Java/Maven pipelines, runners, coaching teams to own their pipelines — close to Énergir shared-Jenkins work; GitLab itself and Java development depth are gaps; Practical: Compromise — 6-month fixed term, below $160k; same posting already Applied on LinkedIn (row 4444060323, 2026-09-08); employer page still lists it, dated 2026-07-23; Resume: Platform.",
+      "url": "https://Cira.bamboohr.com/careers/340",
+      "status": "Applied — Sep 8 (existing ledger row)"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevOps Engineer",
+      "company": "Case IQ, Inc.",
+      "location": "Remote (location not stated)",
+      "salary": "CAD $110,000–$130,000",
+      "gap": "Technical: Azure/AWS mixed infrastructure (AKS, Docker Swarm, ECS, Lambda, DynamoDB) and AIOps adoption; breadth of AWS services and Kubernetes ownership are gaps; Practical: Compromise — below $160k; employer page dated 2026-09-14, so freshness is a month old; Resume: Platform.",
+      "url": "https://caseiq.bamboohr.com/careers/337"
+    },
+    {
+      "score": 3,
+      "family": "SRE",
+      "title": "Senior Cloud Site Reliability Engineer",
+      "company": "Solace",
+      "location": "Ottawa, ON — hybrid",
+      "salary": "Not stated",
+      "gap": "Technical: 'expert-level' multi-cloud SaaS incident handling, cloud networking and 24x7 on-call; employer page dated 2026-02-27, so freshness is unconfirmed; Practical: Confirm — pay and cadence not stated; Resume: Platform.",
+      "url": "https://solace.bamboohr.com/careers/731"
+    },
+    {
+      "score": 4,
+      "family": "DevOps",
+      "title": "DevOps Engineer II (Contract)",
+      "company": "Spring Financial Inc.",
+      "location": "Remote contract",
+      "salary": "$612,000–$857,000 MXN/year listed",
+      "gap": "Technical: intermediate DevOps scope at a fintech (continuous delivery, observability, VPC/VPN, patching); description read in part; Practical: Confirm — pay is listed in Mexican pesos, so Canadian contractor eligibility is unresolved; Resume: Platform.",
+      "url": "https://springfinancial.bamboohr.com/careers/299"
+    },
+    {
+      "score": 2,
+      "family": "SRE",
+      "title": "Senior SysOps Engineer",
+      "company": "Techdinamics",
+      "location": "Remote contract",
+      "salary": "Not stated",
+      "gap": "Technical: AWS CloudFormation/Control Tower SysOps; employer page dated 2025-10-10; Practical: Expired risk — posting is a year old; Resume: Platform.",
+      "url": "https://techdinamics.bamboohr.com/careers/52",
+      "status": "Expired — employer page dated 2025-10-10"
     }
   ],
   "could_not_validate": [
+    {
+      "text": "Mogo Inc. — DevOps Staff Platform Engineer (Vancouver, posted today): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Staff+DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Bounteous Canada — Senior DevOps Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Senior+DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Think Research Corporation — Senior Cloud Engineer (Toronto, posted today): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "BMO Financial Group — Senior Cloud Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Kinaxis Inc. — Staff Cloud Engineer, Cloud Platform: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "ServiceNow — Staff Site Reliability Engineer (Toronto): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "CaseWare International — Staff Site Reliability Engineer (Toronto): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "theScore — Senior Site Reliability Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Senior+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Baby List — Staff Engineer, Site Reliability: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Boson AI — Site Reliability Engineer (Toronto): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Xsolla — Site Reliability Engineer (Monetization), Montréal: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Cerence Technologies — Site Reliability Engineering Team Lead: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Tailscale — Infrastructure Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Infrastructure+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Cresta Intelligence — Infrastructure Engineer/SRE: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Infrastructure+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "1Password — Senior Staff Cloud Platform Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Leap Tools — DevOps Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Green Patch Inc. — Intermediate DevOps Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "commonsku — DevOps Engineer II (Toronto): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Carbon60 — Cloud Platform Engineer (GCP): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Grantek Systems Integration — Leader, AI Platform Engineer (Burlington): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Infrastructure+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Smile CDR — Senior Cloud Security Engineer (Remote Ontario): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+    },
+    {
+      "text": "Kinaxis — Cloud Engineer 2, Site Reliability Engineering (Ottawa, 9 days old): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&l=Ottawa%2C+ON"
+    },
+    {
+      "text": "Mist Mobility Integrated Systems — DevOps Engineer ×2 (Ottawa, 13 days old): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&l=Ottawa%2C+ON"
+    },
+    {
+      "text": "Portage CyberTech — Spécialiste DevOps (CitizenOne), Gatineau: Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&l=Ottawa%2C+ON"
+    },
+    {
+      "text": "Entrust — Senior Platform Architect, Infrastructure Cloud Operations (Ottawa): Eluta cache page blocked by human verification and no employer page located; not scored.",
+      "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&l=Ottawa%2C+ON"
+    },
     {
       "text": "PLATO Infrastructure Engineer (remote contract, Fredericton NB): Eluta cache blocked by the verification page, so the posting was not read; PLATO roles carry an Indigenous-identity requirement under the profile red flags.",
       "url": "https://www.eluta.ca/cache?u=25486906:careers.platotech.com"
@@ -818,6 +970,14 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 18 run — incomplete (verification page)",
+      "items": [
+        "<b>Run incomplete — Eluta human-verification page.</b> 12 of 35 mandatory passes rendered normally (10 remote-filter role passes + Ottawa DevOps and Ottawa SRE). After the Ottawa SRE pass, Eluta redirected every request, including cache pages, to its 'are you a human?' check, from both the command line and the browser. Per the skill, nothing was clicked through: the 23 remaining city passes (Ottawa ×3, Kingston ×5, Brockville ×5, Cornwall ×5, Montréal ×5) are <b>Incomplete</b>. To resume, clear the check in your own browser, then re-run the city passes a few seconds apart.",
+        "<b>What was validated anyway:</b> employer ATS pages (BambooHR JSON) for CIRA, Arctiq, Case IQ, Solace, Spring Financial and Techdinamics. CIRA DevOps Specialist is the same posting already Applied on 2026-09-08. Arctiq's SRE contract is already a ledger row (New); it was not auto-filed here because Canada eligibility and rate are not stated.",
+        "<b>Collected 94 unique postings from the 12 completed passes</b> (7-day Eluta filter; some results carried ages of 9–13 days). Postings that overlap other boards or the ledger (NVIDIA, Smile, Coalition, Barracuda, Wind River, General Motors, CMHC) were not re-filed. In-family Eluta-only results without an accessible employer page are listed under Could not validate."
+      ]
+    },
     {
       "heading": "October 15 run — past 48 hours (complete)",
       "items": [
@@ -1022,5 +1182,5 @@
       ]
     }
   ],
-  "method": "October 14 run: INCOMPLETE, 12 of 30 passes (verification page). Oct 13 (complete, 30 of 30 passes). Oct 12 (COMPLETE, 30 of 30 passes after verification was cleared). Oct 12 (INCOMPLETE, 13 of 30 passes): verification page hit mid-run. October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
+  "method": "<b>October 18 run (INCOMPLETE, 12 of 35 passes):</b> Eluta served a human-verification page; nothing was bypassed. Remote role passes and two Ottawa passes rendered; cache pages were blocked, so validation used employer career pages. Earlier runs follow. October 14 run: INCOMPLETE, 12 of 30 passes (verification page). Oct 13 (complete, 30 of 30 passes). Oct 12 (COMPLETE, 30 of 30 passes after verification was cleared). Oct 12 (INCOMPLETE, 13 of 30 passes): verification page hit mid-run. October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
 }
