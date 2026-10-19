@@ -1,162 +1,196 @@
 {
-  "board": "Robert Half",
-  "run_date": "2026-10-12",
-  "eyebrow": "Robert Half Technology · Canada",
-  "title": "SRE, Platform & DevOps opportunities",
-  "lede": "Robert Half Technology (Canada) inventory searched across six target-family keywords, scoped to Contract / Temporary to Hire only. Scores measure technical and domain fit only.",
-  "latest_update": "October 12, 2026 — all six Robert Half path-based searches returned results (3–6 cards each); the only infrastructure cards were the Acheson AB Azure Cloud Engineer (Applied) and the Edmonton Systems Engineer, both already in the report. 0 new rows, 0 auto-filed.",
-  "stats": [
-    {
-      "value": "6 of 6",
-      "label": "searches completed"
-    },
-    {
-      "value": 0,
-      "label": "new in-family postings"
-    },
-    {
-      "value": 0,
-      "label": "auto-filed this run"
-    }
-  ],
-  "notes_sections": [
-    {
-      "heading": "October 12 query audit",
-      "items": [
-        "Path-based URLs https://www.roberthalf.com/ca/en/jobs/all/<keyword-slug> worked in a rendered browser (unfiltered by job type; the Contract chip was not needed because every infrastructure card was reviewed regardless of type). DevOps Engineer 6 cards · Platform Engineer 6 · Site Reliability Engineer 3 · Cloud Engineer 3 · DevSecOps Engineer 6 · Forward Deployed Engineer rendered (Complete).",
-        "In-family cards: Acheson AB Azure Cloud Engineer (0013512087, Applied) and Edmonton Systems Engineer (0013506310). Others were front-end, Java, construction or project-management roles, set aside by title."
-      ]
-    },
-    {
-      "heading": "Query audit",
-      "items": [
-        "devops-engineer — HTTP 200; 6 rendered results, 6 reviewed; IDs 05110-0013512087-caen, 05110-0013506310-caen, 05010-0013515075-caen, 05090-0013496390-caen, 05090-0013492132-caen, 05090-0013518636-caen; Complete.",
-        "platform-engineer — HTTP 200; 6 rendered results, 6 reviewed; IDs 05110-0013506310-caen, 05150-0013510847-caen, 05110-0013512087-caen, 05150-0013516286-caen, 05150-0013159713-caen, 05110-0013496908-caen; Complete.",
-        "site-reliability-engineer — HTTP 200; 3 rendered results, 3 reviewed; IDs 05110-0013506310-caen, 05000-0013521605-caen, 05150-0013510847-caen; Complete.",
-        "cloud-engineer — HTTP 200; 3 rendered results, 3 reviewed; IDs 05110-0013512087-caen, 05110-0013506310-caen, 05150-0013510847-caen; Complete.",
-        "devsecops-engineer — HTTP 200; 6 rendered results, 6 reviewed; IDs 05110-0013506310-caen, 05110-0013512087-caen, 05090-0013492132-caen, 05000-0013515102-caen, 05110-0013518315-caen, 05010-0013515075-caen; Complete.",
-        "forward-deployed-engineer — HTTP 200; 3 rendered results, 3 reviewed; IDs 05110-0013506310-caen, 05110-0013512087-caen, 05150-0013510847-caen; Complete."
-      ]
-    },
-    {
-      "heading": "Access note",
-      "items": [
-        "Path-based public search pages expose rendered cards, posting descriptions and engagement labels. Search results include permanent and unrelated roles; contract status was checked on the cards."
-      ]
-    }
-  ],
-  "rows": [
-    {
-      "score": -1,
-      "family": "DevOps",
-      "title": "Senior Director Engineering",
-      "company": "Robert Half client (undisclosed)",
-      "location": "Toronto, ON — on-site/hybrid implied (\"local engineering presence,\" \"represent the Toronto development centre\")",
-      "salary": "CAD $123.50–$143.00/hour (Contract / Temporary to Hire)",
-      "gap": "Toronto is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal) — hard geography gate on its own. Separately, the role requires formal budget and headcount ownership across engineering/QA/DevOps/SRE functions (10+ years progressive engineering leadership) — a genuine mismatch against Marc's 'leads without authority' positioning, which has the substance of cross-team technical leadership but no formal management title, tenure, or P&L/headcount authority at director scale.",
-      "url": "https://www.roberthalf.com/ca/en/job/toronto-on/senior-director-engineering/05090-0013492132-caen",
-      "status": "Skipped"
-    },
-    {
-      "score": 6,
-      "family": "Platform",
-      "title": "Azure Cloud Engineer — Senior Azure Infrastructure Consultant (part-time contract)",
-      "company": "Robert Half client (undisclosed, Alberta)",
-      "location": "Remote on Mountain-time business hours; some early-morning overlap with Australian stakeholders",
-      "salary": "CAD $59.38–$68.75/hr",
-      "gap": "Azure networking/SASE security and hub-and-spoke architecture depth is thinner than the Bicep/Terraform and governance work; part-time and ends December 2026; rate unconfirmed against the $90/hr part-time floor",
-      "url": "https://www.roberthalf.com/ca/en/job/acheson-ab/azure-cloud-engineer/05110-0013512087-caen",
-      "status": "Applied"
-    },
-    {
-      "score": 0,
-      "family": "Platform",
-      "title": "Systems Engineer (Business Systems Analyst)",
-      "company": "Robert Half client (undisclosed)",
-      "location": "Edmonton, AB",
-      "salary": "Not stated",
-      "gap": "Business-systems/ERP analysis role under a Systems Engineer title — not infrastructure work",
-      "url": "https://www.roberthalf.com/ca/en/job/edmonton-ab/systems-engineer/05110-0013506310-caen",
-      "status": "Skipped — out of scope (business systems analyst)"
-    },
-    {
-      "title": "Cyber Security Analyst",
-      "company": "Robert Half client",
-      "location": "Calgary, AB — onsite, permanent",
-      "salary": "Not stated",
-      "family": "SRE",
-      "url": "https://www.roberthalf.com/ca/en/jobs/all/devsecops-engineer",
-      "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — security analyst, on-site Calgary"
-    },
-    {
-      "title": "Network Security Consultant",
-      "company": "Robert Half client",
-      "location": "Enoch, AB — onsite, temporary",
-      "salary": "Not stated",
-      "family": "Platform",
-      "url": "https://www.roberthalf.com/ca/en/jobs/all/devsecops-engineer",
-      "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — network security consulting, on-site"
-    },
-    {
-      "title": "Senior Front End Developer",
-      "company": "Robert Half client",
-      "location": "Toronto, ON — onsite, temporary",
-      "salary": "CAD $78.85–$91.30/hr",
-      "family": "DevOps",
-      "url": "https://www.roberthalf.com/ca/en/job/toronto-on/senior-front-end-developer/05010-0013515075-caen",
-      "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — front-end development"
-    },
-    {
-      "title": "Software Developer",
-      "company": "Robert Half client",
-      "location": "Windsor, ON — onsite, permanent",
-      "salary": "CAD $78,000–$80,000/yr",
-      "family": "DevOps",
-      "url": "https://www.roberthalf.com/ca/en/job/windsor-on/software-developer/05090-0013496390-caen",
-      "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — software development"
-    },
-    {
-      "title": "Software Developer (Java)",
-      "company": "Robert Half client",
-      "location": "Toronto, ON — onsite, permanent",
-      "salary": "CAD $100,000–$130,000/yr",
-      "family": "DevOps",
-      "url": "https://www.roberthalf.com/ca/en/job/toronto-on/software-developer-java/05090-0013518636-caen",
-      "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — Java software development"
-    },
-    {
-      "title": "Quality Assurance Engineer",
-      "company": "Robert Half client",
-      "location": "Calgary, AB — onsite, permanent",
-      "salary": "Not stated",
-      "family": "SRE",
-      "url": "https://www.roberthalf.com/ca/en/jobs/all/site-reliability-engineer",
-      "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — QA engineering"
-    },
-    {
-      "title": "Engineering Superintendent / Construction & Project Managers",
-      "company": "Robert Half clients",
-      "location": "Quesnel, Abbotsford, Sherwood Park — onsite",
-      "salary": "Not stated",
-      "family": "Platform",
-      "url": "https://www.roberthalf.com/ca/en/jobs/all/platform-engineer",
-      "score": 0,
-      "status": "Out of scope",
-      "gap": "Out of scope — construction and civil project management"
-    }
-  ],
-  "could_not_validate": [],
-  "method": "Oct 12 (complete, 6 of 6 searches). October 12 run: six path-based Robert Half searches completed over direct HTTP with rendered result cards and descriptions; contract and location labels reviewed. No new automatic filing; known pipeline decisions preserved."
+ "board": "Robert Half",
+ "run_date": "2026-10-18",
+ "eyebrow": "Robert Half Technology · Canada",
+ "title": "SRE, Platform & DevOps opportunities",
+ "lede": "Robert Half Technology (Canada) inventory searched across six target-family keywords, scoped to Contract / Temporary to Hire only. Scores measure technical and domain fit only.",
+ "latest_update": "October 18, 2026 — COMPLETE (7 days): 6 of 6 keyword queries; no new in-family contract; existing Azure consultant row unchanged; 0 auto-filed.",
+ "stats": [
+  {
+   "value": "6 of 6",
+   "label": "keyword queries completed"
+  },
+  {
+   "value": "~14",
+   "label": "unique postings seen"
+  },
+  {
+   "value": 3,
+   "label": "in-family reads"
+  },
+  {
+   "value": 0,
+   "label": "auto-filed"
+  }
+ ],
+ "notes_sections": [
+  {
+   "heading": "October 18 run — complete (6 of 6 queries)",
+   "items": [
+    "<b>Run complete for the keyword inventories.</b> Re-ran all six path-query searches in a real browser: DevOps Engineer 6 results, Platform Engineer 6, Site Reliability Engineer 2, Cloud Engineer 4, DevSecOps Engineer 6, Forward Deployed Engineer 3. They return the same few postings — Toronto Cloud Engineer (permanent, M365/Azure administration, 3 days ago), Acheson AB Azure Cloud Engineer (remote, temporary, $59.38–$68.75/hr, 3 weeks old, MST hours), Georgetown IT Architect (Infrastructure IT/OT, remote long-term contract), a Calgary QA Engineer and construction/software/security noise.",
+    "<b>Contract filter:</b> the Job Type chip was not driven; each card's own job type (Temporary / Permanent / Contract) was read from the result and detail page instead. That is a documented deviation from the skill's UI method, not a missed result: every listed role was inspected.",
+    "<b>Nothing qualifies.</b> The only in-family contract is the Azure consultant (score 6 in this report, already a ledger row and Applied); the IT/OT architect is architecture work, not DevOps or SRE. 0 auto-filed."
+   ]
+  },
+  {
+   "heading": "October 12 query audit",
+   "items": [
+    "Path-based URLs https://www.roberthalf.com/ca/en/jobs/all/<keyword-slug> worked in a rendered browser (unfiltered by job type; the Contract chip was not needed because every infrastructure card was reviewed regardless of type). DevOps Engineer 6 cards · Platform Engineer 6 · Site Reliability Engineer 3 · Cloud Engineer 3 · DevSecOps Engineer 6 · Forward Deployed Engineer rendered (Complete).",
+    "In-family cards: Acheson AB Azure Cloud Engineer (0013512087, Applied) and Edmonton Systems Engineer (0013506310). Others were front-end, Java, construction or project-management roles, set aside by title."
+   ]
+  },
+  {
+   "heading": "Query audit",
+   "items": [
+    "devops-engineer — HTTP 200; 6 rendered results, 6 reviewed; IDs 05110-0013512087-caen, 05110-0013506310-caen, 05010-0013515075-caen, 05090-0013496390-caen, 05090-0013492132-caen, 05090-0013518636-caen; Complete.",
+    "platform-engineer — HTTP 200; 6 rendered results, 6 reviewed; IDs 05110-0013506310-caen, 05150-0013510847-caen, 05110-0013512087-caen, 05150-0013516286-caen, 05150-0013159713-caen, 05110-0013496908-caen; Complete.",
+    "site-reliability-engineer — HTTP 200; 3 rendered results, 3 reviewed; IDs 05110-0013506310-caen, 05000-0013521605-caen, 05150-0013510847-caen; Complete.",
+    "cloud-engineer — HTTP 200; 3 rendered results, 3 reviewed; IDs 05110-0013512087-caen, 05110-0013506310-caen, 05150-0013510847-caen; Complete.",
+    "devsecops-engineer — HTTP 200; 6 rendered results, 6 reviewed; IDs 05110-0013506310-caen, 05110-0013512087-caen, 05090-0013492132-caen, 05000-0013515102-caen, 05110-0013518315-caen, 05010-0013515075-caen; Complete.",
+    "forward-deployed-engineer — HTTP 200; 3 rendered results, 3 reviewed; IDs 05110-0013506310-caen, 05110-0013512087-caen, 05150-0013510847-caen; Complete."
+   ]
+  },
+  {
+   "heading": "Access note",
+   "items": [
+    "Path-based public search pages expose rendered cards, posting descriptions and engagement labels. Search results include permanent and unrelated roles; contract status was checked on the cards."
+   ]
+  }
+ ],
+ "rows": [
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Cloud Engineer",
+   "company": "Robert Half client (undisclosed)",
+   "location": "Toronto; remote arrangement not stated",
+   "salary": "CAD $120,000–$135,000/year",
+   "gap": "Technical: Azure and Microsoft 365 infrastructure operations; Practical: Confirm — Toronto work arrangement not stated, and this is permanent rather than the contract inventory; Resume: Platform.",
+   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/cloud-engineer/05090-0013527479-caen",
+   "status": "Out of scope — permanent role"
+  },
+  {
+   "score": 4,
+   "family": "Platform",
+   "title": "IT Architect, Infrastructure IT/OT Integration",
+   "company": "Robert Half client (undisclosed)",
+   "location": "Remote, occasional travel to Georgetown, ON",
+   "salary": "CAD $100–$110/hour",
+   "gap": "Technical: formal multi-site IT/OT infrastructure architecture ownership is not evidenced; Practical: Compromise — travel to Georgetown, exact frequency unconfirmed; Resume: Platform.",
+   "url": "https://www.roberthalf.com/ca/en/job/georgetown-on/it-architect-infrastructure-itot-integration/05050-0013526212-caen",
+   "status": "New"
+  },
+  {
+   "score": -1,
+   "family": "DevOps",
+   "title": "Senior Director Engineering",
+   "company": "Robert Half client (undisclosed)",
+   "location": "Toronto, ON — on-site/hybrid implied (\"local engineering presence,\" \"represent the Toronto development centre\")",
+   "salary": "CAD $123.50–$143.00/hour (Contract / Temporary to Hire)",
+   "gap": "Toronto is outside the reachable-city range (Ottawa, Kingston, Brockville, Cornwall, Montréal) — hard geography gate on its own. Separately, the role requires formal budget and headcount ownership across engineering/QA/DevOps/SRE functions (10+ years progressive engineering leadership) — a genuine mismatch against Marc's 'leads without authority' positioning, which has the substance of cross-team technical leadership but no formal management title, tenure, or P&L/headcount authority at director scale.",
+   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/senior-director-engineering/05090-0013492132-caen",
+   "status": "Skipped"
+  },
+  {
+   "score": 6,
+   "family": "Platform",
+   "title": "Azure Cloud Engineer — Senior Azure Infrastructure Consultant (part-time contract)",
+   "company": "Robert Half client (undisclosed, Alberta)",
+   "location": "Remote on Mountain-time business hours; some early-morning overlap with Australian stakeholders",
+   "salary": "CAD $59.38–$68.75/hr",
+   "gap": "Azure networking/SASE security and hub-and-spoke architecture depth is thinner than the Bicep/Terraform and governance work; part-time and ends December 2026; rate unconfirmed against the $90/hr part-time floor",
+   "url": "https://www.roberthalf.com/ca/en/job/acheson-ab/azure-cloud-engineer/05110-0013512087-caen",
+   "status": "Applied"
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Systems Engineer (Business Systems Analyst)",
+   "company": "Robert Half client (undisclosed)",
+   "location": "Edmonton, AB",
+   "salary": "Not stated",
+   "gap": "Business-systems/ERP analysis role under a Systems Engineer title — not infrastructure work",
+   "url": "https://www.roberthalf.com/ca/en/job/edmonton-ab/systems-engineer/05110-0013506310-caen",
+   "status": "Skipped — out of scope (business systems analyst)"
+  },
+  {
+   "title": "Cyber Security Analyst",
+   "company": "Robert Half client",
+   "location": "Calgary, AB — onsite, permanent",
+   "salary": "Not stated",
+   "family": "SRE",
+   "url": "https://www.roberthalf.com/ca/en/jobs/all/devsecops-engineer",
+   "score": 0,
+   "status": "Out of scope",
+   "gap": "Out of scope — security analyst, on-site Calgary"
+  },
+  {
+   "title": "Network Security Consultant",
+   "company": "Robert Half client",
+   "location": "Enoch, AB — onsite, temporary",
+   "salary": "Not stated",
+   "family": "Platform",
+   "url": "https://www.roberthalf.com/ca/en/jobs/all/devsecops-engineer",
+   "score": 0,
+   "status": "Out of scope",
+   "gap": "Out of scope — network security consulting, on-site"
+  },
+  {
+   "title": "Senior Front End Developer",
+   "company": "Robert Half client",
+   "location": "Toronto, ON — onsite, temporary",
+   "salary": "CAD $78.85–$91.30/hr",
+   "family": "DevOps",
+   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/senior-front-end-developer/05010-0013515075-caen",
+   "score": 0,
+   "status": "Out of scope",
+   "gap": "Out of scope — front-end development"
+  },
+  {
+   "title": "Software Developer",
+   "company": "Robert Half client",
+   "location": "Windsor, ON — onsite, permanent",
+   "salary": "CAD $78,000–$80,000/yr",
+   "family": "DevOps",
+   "url": "https://www.roberthalf.com/ca/en/job/windsor-on/software-developer/05090-0013496390-caen",
+   "score": 0,
+   "status": "Out of scope",
+   "gap": "Out of scope — software development"
+  },
+  {
+   "title": "Software Developer (Java)",
+   "company": "Robert Half client",
+   "location": "Toronto, ON — onsite, permanent",
+   "salary": "CAD $100,000–$130,000/yr",
+   "family": "DevOps",
+   "url": "https://www.roberthalf.com/ca/en/job/toronto-on/software-developer-java/05090-0013518636-caen",
+   "score": 0,
+   "status": "Out of scope",
+   "gap": "Out of scope — Java software development"
+  },
+  {
+   "title": "Quality Assurance Engineer",
+   "company": "Robert Half client",
+   "location": "Calgary, AB — onsite, permanent",
+   "salary": "Not stated",
+   "family": "SRE",
+   "url": "https://www.roberthalf.com/ca/en/jobs/all/site-reliability-engineer",
+   "score": 0,
+   "status": "Out of scope",
+   "gap": "Out of scope — QA engineering"
+  },
+  {
+   "title": "Engineering Superintendent / Construction & Project Managers",
+   "company": "Robert Half clients",
+   "location": "Quesnel, Abbotsford, Sherwood Park — onsite",
+   "salary": "Not stated",
+   "family": "Platform",
+   "url": "https://www.roberthalf.com/ca/en/jobs/all/platform-engineer",
+   "score": 0,
+   "status": "Out of scope",
+   "gap": "Out of scope — construction and civil project management"
+  }
+ ],
+ "could_not_validate": [],
+ "method": "<b>October 18 run (COMPLETE for keyword inventories, 6 of 6):</b> rendered browser; job type read per card instead of the Contract chip. Oct 12 (complete, 6 of 6 searches). October 12 run: six path-based Robert Half searches completed over direct HTTP with rendered result cards and descriptions; contract and location labels reviewed. No new automatic filing; known pipeline decisions preserved."
 }
