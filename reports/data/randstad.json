@@ -1,29 +1,37 @@
 {
   "board": "Randstad",
-  "run_date": "2026-10-12",
+  "run_date": "2026-10-18",
   "eyebrow": "Randstad Canada · read-only search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "First-page Technologies inventory, validated from Randstad's full job descriptions. Scores measure technical and domain fit only.",
-  "latest_update": "October 12, 2026 — Technologies category retrieved over direct HTTP, all 18 pages (517 listings). No DevOps/SRE/Platform posting is under 48 hours old; the newest in-family postings (Vancouver Platform Engineer, Oct 6, 4 days on-site; Toronto Platform Engineer, Sep 23, hybrid) were already scored. 0 new rows, 0 auto-filed.",
+  "latest_update": "October 18, 2026 — COMPLETE: 18 of 18 Technologies pages, 518 unique listings; 72 dated October 11–18, five ambiguous titles read in full, no eligible target-family lead; 0 auto-filed.",
   "stats": [
     {
       "value": "18 of 18",
       "label": "category pages retrieved (HTTP 200)"
     },
     {
-      "value": 517,
-      "label": "listings in the category"
+      "value": 518,
+      "label": "unique Technologies listings"
     },
     {
-      "value": 70,
-      "label": "plausible titles screened; 17 opened for dates and duties"
+      "value": 72,
+      "label": "postings dated October 11–18"
     },
     {
       "value": 0,
-      "label": "new or auto-filed this run"
+      "label": "auto-filed this run"
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 18 seven-day inventory audit",
+      "items": [
+        "Technologies category pages 1–18 all HTTP 200; 30 cards on pages 1–17 and 8 on page 18; 518 unique listing IDs; Complete.",
+        "72 listings dated October 11–18. Five plausible or ambiguous engineering titles opened and full structured JobPosting descriptions read: IDs 47616442, 47614587, 47601880, 47602072, 47607788. Others were plainly unrelated application, QA, business, support, embedded or management roles.",
+        "No current eligible target-family role cleared geographic and domain gates. Historical rows remain for reference."
+      ]
+    },
     {
       "heading": "October 12 inventory audit",
       "items": [
@@ -47,6 +55,61 @@
     }
   ],
   "rows": [
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Conseiller.ère principal.e en livraison Agile - Release Train Engineer",
+      "company": "Randstad client",
+      "location": "Montréal or Québec City hybrid; cadence not stated",
+      "salary": "Not stated",
+      "gap": "Technical: Agile program facilitation rather than release engineering or platform operation; Practical: Confirm — Montréal cadence and pay; Resume: Platform.",
+      "url": "https://www.randstad.ca/jobs/conseillerere-principale-en-livraison-agile-release-train-engineer_quebec_47607788/",
+      "status": "Out of scope — Agile facilitation"
+    },
+    {
+      "score": 0,
+      "family": "DevOps",
+      "title": "Senior Automation Developer",
+      "company": "Randstad client",
+      "location": "Toronto on-site, 5 days/week",
+      "salary": "Not stated",
+      "gap": "Technical: test automation and QA framework ownership, outside target families; Practical: Ineligible — Toronto on-site; Resume: Platform.",
+      "url": "https://www.randstad.ca/jobs/senior-automation-developer_toronto_47602072/",
+      "status": "Out of scope — QA automation"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Senior DataOps/Cloud Data Engineer",
+      "company": "Randstad client",
+      "location": "Toronto on-site, 5 days/week",
+      "salary": "Not stated",
+      "gap": "Technical: Databricks data-pipeline engineering; Practical: Ineligible — Toronto on-site; Resume: Platform.",
+      "url": "https://www.randstad.ca/jobs/senior-dataopscloud-data-engineer_toronto_47614587/",
+      "status": "Ineligible — Toronto on-site"
+    },
+    {
+      "score": -1,
+      "family": "Platform",
+      "title": "Database Administrator - Remote",
+      "company": "Randstad public-sector client",
+      "location": "Remote within Alberta only",
+      "salary": "CAD $63–$79/hour incorporated",
+      "gap": "Technical: database and backup administration rather than delivery platform; Practical: Ineligible — Alberta residence required; Resume: Platform.",
+      "url": "https://www.randstad.ca/jobs/database-administrator-remote_edmonton_47616442/",
+      "status": "Ineligible — Alberta only"
+    },
+    {
+      "score": -1,
+      "family": "SRE",
+      "title": "Site Reliability Engineer IV",
+      "company": "Randstad client",
+      "location": "Toronto hybrid; outside reachable cities",
+      "salary": "CAD $75.05–$89.34/hour",
+      "gap": "Technical: Azure/Databricks SRE and IaC ownership; Practical: Ineligible — Toronto hybrid; Resume: SRE.",
+      "url": "https://www.randstad.ca/jobs/site-reliability-engineer-iv_toronto_47601880/",
+      "status": "Ineligible — Toronto hybrid"
+    },
     {
       "score": 6,
       "family": "DevOps",
@@ -322,5 +385,5 @@
     }
   ],
   "could_not_validate": [],
-  "method": "Oct 12 (complete, 18 of 18 pages). October 12 run: complete 18-page Randstad Technologies category scan (517 listings), 18 plausible full descriptions read. The category page boundary is complete; direct detail URLs are shown. Zero new auto-filed, one already Applied, other roles excluded or below threshold."
+  "method": "October 18 complete seven-day Technologies category scan via direct HTTP and structured JobPosting detail pages. Oct 12 (complete, 18 of 18 pages). October 12 run: complete 18-page Randstad Technologies category scan (517 listings), 18 plausible full descriptions read. The category page boundary is complete; direct detail URLs are shown. Zero new auto-filed, one already Applied, other roles excluded or below threshold."
 }

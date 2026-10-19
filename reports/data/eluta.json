@@ -231,7 +231,7 @@
    "salary": "Not stated",
    "gap": "Ineligible — Montréal cadence is 3 office days/week (French copy of the BTP SRE requisition)",
    "url": "https://www.eluta.ca/cache?u=25177131:jobs.sap.com",
-   "status": "Skipped — Montréal 3 office days"
+   "status": "Skipped — 3 office days"
   },
   {
    "score": -1,
@@ -664,7 +664,7 @@
    "salary": "Not stated (6–9 month contract, extension possible)",
    "gap": "Technical: defines SLOs/SLIs, error budgets, DORA reporting and pipeline release gates in Dynatrace and ServiceNow for application teams, and joins on-call; Marc has Dynatrace dashboards/ingestion, Jenkins release gates and incident work but no implemented SLOs, and Kubernetes is user-level. Practical: Confirm — contract rate not stated (full-time contract floor $80/hr, $90/hr for shorter engagements), remote per employer listing. Posted 2026-10-14. Resume: SRE.",
    "url": "https://arctiq.bamboohr.com/careers/342",
-   "status": "New"
+   "status": "InProcess — drafts saved 2026-10-18"
   },
   {
    "score": 6,
@@ -675,7 +675,7 @@
    "salary": "CAD $115,000–$164,600/yr base",
    "gap": "Technical: owns CI/CD, build, image and release-promotion workflows for ADAS software (Jenkins and GitHub Actions experience wanted, Python/Docker); gaps are C/C++ build systems (Bazel/CMake, Clang/GCC), automotive/QNX domain and 3+ years leading cross-team initiatives. Practical: Compromise — range tops out just above $160k, remote Ontario, growth unconfirmed; vacancy is a backfill. Resume: Platform.",
    "url": "https://www.eluta.ca/cache_open?u=25312410:generalmotors.wd5.myworkdayjobs.com",
-   "status": "New"
+   "status": "InProcess — drafts saved 2026-10-18"
   },
   {
    "score": 3,
@@ -771,7 +771,7 @@
    "salary": "CAD $90,000–$110,000/yr",
    "gap": "Technical: Jenkins pipelines and shared pipeline libraries, GitLab CI YAML, release ownership and Linux build-server administration match Marc's Jenkins shared-pipeline work closely; GitLab administration and on-prem Windows/Linux build infrastructure (no public cloud) are partial; Practical: Compromise — fully on-site in Ottawa, base range straddles the $100k Ottawa floor, export-control screening; confirm days on site and offer; Resume: Platform.",
    "url": "https://mmist.bamboohr.com/careers/195",
-   "status": ""
+   "status": "Skipped"
   },
   {
    "score": 5,
@@ -782,7 +782,7 @@
    "salary": "Not stated",
    "gap": "Technical: production incident response, RCA, monitoring tooling and Linux/CI-CD fit; required Kubernetes experience is user-level only and the follow-the-sun on-call SRE scope is a stretch; Practical: Confirm — 3 office days exceeds the 2-day comfort limit and pay is not stated against the $120k Montréal floor; Resume: SRE.",
    "url": "https://www.eluta.ca/cache?u=25177131:jobs.sap.com",
-   "status": ""
+   "status": "Skipped — 3 office days"
   },
   {
    "score": 4,
@@ -1013,7 +1013,7 @@
    "salary": "Not stated",
    "gap": "Technical: Azure, observability (Grafana) and incident response; same requisition R-100000344 already filed as Expert SRE; Practical: Confirm; Resume: SRE.",
    "url": "https://www.eluta.ca/cache?u=25516460:giro.wd10.myworkdayjobs.com",
-   "status": "New — existing ledger row (GIRO Expert SRE)"
+   "status": "InProcess — drafts saved 2026-10-18"
   }
  ],
  "could_not_validate": [

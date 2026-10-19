@@ -1,0 +1,13 @@
+Dear Vsync Solutions Team,
+
+I am applying for the Bilingual Senior Azure Cloud Platform Engineer contract. Azure platform work, GitHub-based delivery pipelines and release engineering, and working in French and English with enterprise teams are the combination I have spent the past five years on.
+
+At Énergir I helped a team move team-owned Sonatype Nexus, Jenkins controllers and agents, and HashiCorp Vault in development and production from manual Azure portal operations to infrastructure as code. Terraform provisioned the resource groups, networking and virtual machines; Ansible configured the hosts, including Docker. I later introduced Azure Storage accounts for Terraform state and Azure Key Vault to replace HashiCorp Vault. On the delivery side, I initiated shared Jenkins pipelines used by every team already deploying through Jenkins, in an environment of about 50 developers, 12 teams and 70+ applications, with mandatory SonarQube checks that could not be skipped and roughly 80–90% JaCoCo coverage on the shared code. I moved about five Node.js applications to runtime configuration through team-reviewed pull requests so one tested build could serve every environment, and replaced a 15-step MuleSoft checklist with version-based deployments of QA-tested artifacts. At Desjardins I built a Python/FastAPI workflow, deployed through ArgoCD, that provisioned Artifactory and tested artifact retrieval across about 250 repositories, publishing results to Dynatrace, and I worked with GitHub Actions in that environment.
+
+To be direct about fit: your posting asks for deep Azure administration and advanced Terraform for complex production provisioning. My Terraform and Ansible work used workflows that another team owned, so I have not authored modules or designed landing zones, and my Azure experience is the documented Nexus, Jenkins and Vault environments rather than enterprise subscription governance, Azure networking and DNS design, or Azure AI infrastructure. My GitHub Actions experience is real but smaller than my Jenkins experience. What I bring is release engineering and platform delivery with a record of learning unfamiliar platforms by working out how they actually behave before changing them, which is how I entered Salesforce, MuleSoft, Oracle and Databricks delivery with no prior experience in any of them.
+
+Je suis bilingue (le français est ma langue maternelle), établi en Ontario, constitué en société au Canada et disponible immédiatement. I would like to understand the engagement before going further: could you share the daily or hourly rate, the term, the client's location and office expectations, and whether a contract through my own corporation is possible?
+
+Sincerely,
+Marc Berthelette
+marc.berthelette@gmail.com

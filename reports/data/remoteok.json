@@ -1,22 +1,22 @@
 {
   "board": "RemoteOK",
-  "run_date": "2026-10-12",
+  "run_date": "2026-10-18",
   "eyebrow": "RemoteOK · read-only API search",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Latest RemoteOK inventory validated for target-family scope and Canadian regional eligibility. Scores measure technical and domain fit only.",
-  "latest_update": "October 12, 2026 — RemoteOK API returned 199 job objects (latest-100 boundary reviewed). Only 4 postings were under 48 hours old and none are in the three target families; three older plausible roles were read and scored (RedMimicry Germany-only, Arango Go/Kubernetes, KPI warehouse deployment). 0 auto-filed.",
+  "latest_update": "October 18, 2026 — COMPLETE: RemoteOK API HTTP 200, 99 job objects; latest 100 boundary contains 99; 31 posted October 11–18, none has a target-family role after title and description screening. 0 auto-filed.",
   "stats": [
     {
       "value": "1 of 1",
-      "label": "API inventory retrieved (HTTP 200)"
+      "label": "API inventory completed"
     },
     {
-      "value": 100,
-      "label": "latest jobs in the review boundary"
+      "value": 99,
+      "label": "latest job objects reviewed"
     },
     {
       "value": 0,
-      "label": "target-family postings under 48 hours old"
+      "label": "target-family postings in seven-day window"
     },
     {
       "value": 0,
@@ -24,6 +24,14 @@
     }
   ],
   "notes_sections": [
+    {
+      "heading": "October 18 latest-100 inventory audit",
+      "items": [
+        "https://remoteok.com/api — HTTP 200, JSON, 99 job objects after metadata; all 99 within latest-100 boundary; Complete.",
+        "31 dated October 11–18; target-family counts: DevOps 0, SRE 0, Platform 0, Cloud 0, DevSecOps 0, Infrastructure 0. Titles and descriptions screened; the remaining roles are software, sales, marketing, product, data, IT management, and unrelated work.",
+        "Historical rows are outside this requested seven-day window and are retained as reference; no current availability is inferred for them."
+      ]
+    },
     {
       "heading": "October 12 inventory audit",
       "items": [
@@ -138,5 +146,5 @@
     }
   ],
   "could_not_validate": [],
-  "method": "Oct 12 (complete): API inventory, no browser fallback needed. October 12 run: one complete latest-100 API inventory pass. Full API description and location requirement reviewed for the single plausible platform role. Historical rows omitted because they were not in today’s latest-100 boundary; no claim of current availability for them."
+  "method": "October 18 complete seven-day run via direct RemoteOK JSON API; latest-100 mandatory inventory reviewed, no browser fallback needed. Oct 12 (complete): API inventory, no browser fallback needed. October 12 run: one complete latest-100 API inventory pass. Full API description and location requirement reviewed for the single plausible platform role. Historical rows omitted because they were not in today’s latest-100 boundary; no claim of current availability for them."
 }

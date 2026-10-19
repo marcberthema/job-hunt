@@ -1,22 +1,22 @@
 {
   "board": "Procom",
-  "run_date": "2026-10-12",
+  "run_date": "2026-10-18",
   "eyebrow": "Procom contractor portal · read-only",
   "title": "SRE, Platform & DevOps opportunities",
   "lede": "Default six-keyword rotation against myprocom-portal.procomservices.com. Scores measure technical and domain fit only.",
-  "latest_update": "October 12, 2026 — all 6 Procom portal queries rendered real result lists (DevOps 8, Platform 13, SRE 1 placeholder, Cloud 15, DevSecOps 2, Forward Deployed 2); no in-family posting is under 48 hours old. The newest are the Ottawa Senior Cloud DevOps Engineer (4d ago, $54–72/hr, hybrid) and the Bank of Montreal DevSecOps pair (1 week), all already in the report. 0 new rows, 0 auto-filed.",
+  "latest_update": "October 18, 2026 — six of six Procom keyword pages returned complete server-rendered card lists; 19 unique IDs. One recent in-family posting (Salesforce SRE) is already Applied; 0 auto-filed.",
   "stats": [
     {
       "value": "6 of 6",
-      "label": "queries completed"
+      "label": "queries completed over server-rendered HTTP"
     },
     {
-      "value": 21,
-      "label": "unique postings seen"
+      "value": 19,
+      "label": "unique posting IDs in returned lists"
     },
     {
-      "value": 0,
-      "label": "new in-family postings under 48 hours"
+      "value": 1,
+      "label": "seven-day in-family posting, already Applied"
     },
     {
       "value": 0,
@@ -24,6 +24,17 @@
     }
   ],
   "rows": [
+    {
+      "score": 6,
+      "family": "DevOps",
+      "title": "Site Reliability Engineer - Salesforce",
+      "company": "Procom (client unnamed)",
+      "location": "Remote within Canada; Pacific hours",
+      "salary": "CAD $83–$110/hour",
+      "gap": "Technical: Salesforce deployment and release automation fit; gap is 5+ years of Apex/metadata administration through GitHub Actions or Bitbucket; Practical: Compromise — 1 a.m. Eastern releases twice monthly and four-month initial term; Resume: Platform.",
+      "url": "https://myprocom-portal.procomservices.com/jobs/site-reliability-engineer-salesforce-burnaby-7fad0a76",
+      "status": "Applied"
+    },
     {
       "score": 6,
       "family": "DevOps",
@@ -212,6 +223,18 @@
   ],
   "notes_sections": [
     {
+      "heading": "October 18 seven-day query audit",
+      "items": [
+        "DevOps Engineer — HTTP 200, 8 cards, first 8 reviewed; IDs 7fad0a76, 34ee5085, e2b33d90, 4b1925f1, dbdaa8fe, e6f2b7ce, 8ee7422b, 5b71ef5d; Complete (server-rendered HTML).",
+        "Platform Engineer — HTTP 200, 11 cards, first 8 reviewed; IDs ce99c7bf, 15d60b76, e79e2c9b, 7fad0a76, e2b33d90, dbdaa8fe, ebd7990f, d1ec1a7e; Complete (server-rendered HTML).",
+        "Site Reliability Engineer — HTTP 200, 1 cards, first 1 reviewed; IDs 7fad0a76; Complete (server-rendered HTML).",
+        "Cloud Engineer — HTTP 200, 14 cards, first 8 reviewed; IDs 40151d4a, 7fad0a76, e2b33d90, 4b1925f1, dc8a2f4d, b1bb5a7a, dbdaa8fe, e6f2b7ce; Complete (server-rendered HTML).",
+        "DevSecOps Engineer — HTTP 200, 2 cards, first 2 reviewed; IDs dbdaa8fe, e6f2b7ce; Complete (server-rendered HTML).",
+        "Forward Deployed Engineer — HTTP 200, 2 cards, first 2 reviewed; IDs 34ee5085, 4b1925f1; Complete (server-rendered HTML).",
+        "Site Reliability Engineer - Salesforce posted October 13; full description read from server-rendered JobPosting data; ledger already Applied. Other in-family cards in query boundary were older than seven days."
+      ]
+    },
+    {
       "heading": "October 12 query audit",
       "items": [
         "DevOps Engineer: 8 cards · Platform Engineer: 13 · Site Reliability Engineer: 1 card (no matching SRE posting) · Cloud Engineer: 15 · DevSecOps Engineer: 2 · Forward Deployed Engineer: 2 · all rendered with the keyword verified in the URL · Complete. Procom ATS IDs seen include 326534, 327041, 331834, 331836, 332062, 332066, 330133, 331540, 331325, 332003, 332036, 332039, 332051, 314937, 283833, 330459, 330698.",
@@ -236,6 +259,6 @@
       ]
     }
   ],
-  "method": "Oct 12 (complete, 6 of 6 queries). October 12 run: six mandatory Procom portal searches retrieved as server-rendered public HTML, with full descriptions in the page data. Query totals and IDs were reconciled before deduplication. Zero new auto-filed; known pipeline decisions preserved.",
+  "method": "October 18 complete seven-day Procom scan: all six public contractor-portal pages returned full server-rendered card lists over HTTP; detail for the one recent in-family posting was read in full. Oct 12 (complete, 6 of 6 queries). October 12 run: six mandatory Procom portal searches retrieved as server-rendered public HTML, with full descriptions in the page data. Query totals and IDs were reconciled before deduplication. Zero new auto-filed; known pipeline decisions preserved.",
   "could_not_validate": []
 }

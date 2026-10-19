@@ -1,0 +1,17 @@
+Dear ComPsych Cloud Ops Hiring Team,
+
+I am applying for the Senior DevOps Engineer role on the Cloud Ops team. What stands out in the posting is the emphasis on building shared standards across application teams instead of solving the same problem differently each time, and on proving that tests and security gates actually prove what they claim. That has been my work for the past five years.
+
+At Énergir I initiated the consolidation of duplicated Jenkins pipelines into shared pipelines used by every team already deploying through Jenkins, in an environment of about 50 developers, 12 teams and 70+ applications. Mandatory SonarQube checks could not be skipped, the shared pipeline code carried roughly 80–90% JaCoCo coverage with unit tests on every commit, and sample applications let us run integration tests against the pipelines themselves. I moved about five Node.js applications to runtime configuration through team-reviewed pull requests so one tested build could serve every environment, and replaced a 15-step MuleSoft checklist with version-based deployments of QA-tested artifacts where rollback meant redeploying a previous version. I separated application-code failures from platform-pipeline failures in build reporting so developers knew at a glance whose fix it was, and I ran recurring enablement sessions with each team so the standard was adopted rather than ignored.
+
+On the AI side, I introduced AI-assisted engineering practices into my team's tooling over the past several months, with hard scope gates and human-validation checkpoints before any generated code reaches production. I also flagged to leadership that the organization had no equivalent safeguards; the concern was not acted on. That experience is why the posting's framing, with humans keeping judgment and accountability, resonates with me.
+
+At Desjardins I built a Python/FastAPI workflow that provisioned Artifactory, applied configuration from a chosen Git reference, and tested uncached artifact retrieval across about 250 repositories on a schedule through ArgoCD, publishing results to Dynatrace. I also added Splunk alerts for configuration changes made outside CI/CD. At Tink I was part of a 24/7 on-call rotation supporting all production systems and applications.
+
+To be direct about fit: my Azure work is the documented Nexus, Jenkins and Vault environments, provisioned with Terraform and configured with Ansible workflows that another team owned, so I have used Terraform in production but I have not authored its modules. My AWS experience is a six-month console-built migration environment at Tink that the client cancelled before cutover, not a production estate. My Kubernetes work is application deployment through ArgoCD to clusters other teams operate, and I have not written Helm charts or serverless functions. I use AI assistance heavily in my Python and automation work, but I would not call agentic AI my primary delivery surface in a team setting yet. I have not worked under HIPAA or HITRUST. I learn unfamiliar platforms by working out how they actually behave before changing them, which is how I entered Salesforce, MuleSoft, Oracle and Databricks delivery with no prior experience in any of them.
+
+I am based in Ontario, bilingual in French and English, and available immediately. Could you confirm that this remote role is open to candidates in Ontario, and how much of the role's AWS or Azure focus is already decided?
+
+Sincerely,
+Marc Berthelette
+marc.berthelette@gmail.com
