@@ -1,1186 +1,1407 @@
 {
-  "board": "Eluta",
-  "run_date": "2026-10-18",
-  "eyebrow": "Eluta.ca · Canadian employer career-page index",
-  "title": "SRE, Platform & DevOps opportunities",
-  "lede": "Continuation run: the 4 default remote passes and 4 reachable-city hybrid passes not completed in the 2026-09-21 run. Scores measure technical and domain fit only.",
-  "latest_update": "October 18, 2026 — INCOMPLETE: 12 of 35 passes ran before Eluta's human-verification page; 6 postings validated via employer pages; 0 auto-filed.",
-  "stats": [
-    {
-      "value": "12 of 35",
-      "label": "passes completed before Eluta's verification page"
-    },
-    {
-      "value": 94,
-      "label": "unique postings collected"
-    },
-    {
-      "value": 6,
-      "label": "validated through employer pages"
-    },
-    {
-      "value": 0,
-      "label": "new rows auto-filed"
-    }
-  ],
-  "rows": [
-    {
-      "score": 2,
-      "family": "Platform",
-      "title": "Senior Software Engineer I/II - Infrastructure",
-      "company": "Samsara",
-      "location": "Remote — Canada",
-      "salary": "CAD $142,800–$184,800/yr base",
-      "gap": "Technical: leads multi-account, multi-region AWS compute/stateful-systems infrastructure at scale — hard AWS/cluster-ownership gate. Practical: Compromise/Target on pay; posting dated 2026-09-25 (Eluta last-seen 1 day). Resume: Platform.",
-      "url": "https://www.samsara.com/company/careers/roles/7997916?gh_jid=7997916",
-      "status": ""
-    },
-    {
-      "score": 6,
-      "family": "Platform",
-      "title": "Infrastructure Engineer (Remote, Canada)",
-      "company": "Tailscale",
-      "location": "Remote — Canada",
-      "salary": "CAD $218,420–$273,360/yr base",
-      "gap": "Technical: CI/CD, infrastructure as code, observability and incident ownership fit; Kubernetes in production is a plus and AWS preferred, Go a plus. Practical: Target on pay. Already Applied on 2026-07-07 (Manual row, same title) — not re-filed. Resume: Platform.",
-      "url": "https://job-boards.greenhouse.io/tailscale/jobs/4733403005",
-      "status": "Applied — existing pipeline row (Tailscale, Infrastructure Engineer)"
-    },
-    {
-      "score": 6,
-      "family": "Platform",
-      "title": "Cloud Engineer, Automation (Remote Ontario)",
-      "company": "Smile Digital Health",
-      "location": "Remote — Ontario (Toronto ON, Work Remotely)",
-      "salary": "CAD $120,000–$140,000/yr (per LinkedIn/Built In)",
-      "gap": "Technical/Practical: see LinkedIn 4479050355; employer Lever copy indexed by Eluta (cache 25488595, plus a Smile CDR duplicate 25488811). Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=25488595:jobs.lever.co",
-      "status": "New"
-    },
-    {
-      "score": 5,
-      "family": "DevOps",
-      "title": "Intermediate DevOps Engineer",
-      "company": "Practice Better",
-      "location": "Remote — Canada only (posting says Canadian-based candidates)",
-      "salary": "$110,000 (per Eluta card; currency not labelled)",
-      "gap": "Technical: AWS infrastructure with Terraform/OpenTofu, CI/CD, incident response, SLOs and observability for a .NET/Rails stack — Terraform is a use-not-author skill and the AWS requirement meets the dated Tink build; 'intermediate' level is below Marc's seniority. Practical: Compromise — base about $110k, below the ideal, above the $100k remote floor. Cached copy indexed 25 Sep 2026 and the card shows no age, so freshness is unconfirmed; not auto-filed. Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=25401987:job-boards.greenhouse.io",
-      "status": "Freshness unconfirmed — cached copy 25 Sep 2026"
-    },
-    {
-      "score": 2,
-      "family": "SRE",
-      "title": "Site Reliability Engineer — AI training infrastructure",
-      "company": "Boson AI",
-      "location": "Remote or Toronto",
-      "salary": "$125,000 (per Eluta card)",
-      "gap": "Technical: GPU clusters, high-performance networking, storage and scheduler operations for AI training — no matching evidence. Cached copy indexed 14 Jul 2026, so likely stale. Practical: Confirm. Resume: SRE.",
-      "url": "https://www.eluta.ca/cache?u=25014231:jobs.lever.co",
-      "status": "Freshness unconfirmed — cached copy 14 Jul 2026"
-    },
-    {
-      "score": 0,
-      "family": "DevOps",
-      "title": "Staff DevSecOps Specialist",
-      "company": "AlayaCare",
-      "location": "Montréal (remote/hybrid not stated)",
-      "salary": "Not stated",
-      "gap": "Out of scope: staff-level security-program role in the Information Security team (vulnerability-management tooling and security engineering direction). Cached copy indexed 21 Sep 2026.",
-      "url": "https://www.eluta.ca/cache?u=25354086:job-boards.greenhouse.io",
-      "status": "Skipped — Out of scope: security engineering"
-    },
-    {
-      "score": -1,
-      "family": "Platform",
-      "title": "Bilingual Senior Specialist, Cloud Infrastructure Operations Engineering",
-      "company": "CMHC",
-      "location": "Hybrid — Montréal, Ottawa or Toronto; days not stated",
-      "salary": "CAD $104,180–$130,225",
-      "gap": "Hard gate: Secret security clearance required. Otherwise a plausible cloud-operations role (permanent, bilingual BBB). Cached copy indexed 8 Oct 2026. Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=25468645:careers.cmhc-schl.gc.ca",
-      "status": "Skipped — Ineligible: Secret clearance"
-    },
-    {
-      "score": 4,
-      "family": "Platform",
-      "title": "DevOps Staff Platform Engineer (agentic-engineering platform)",
-      "company": "Mogo Inc. (Orion)",
-      "location": "Remote — Canada company, fully remote; Canada eligibility implied by listing",
-      "salary": "CAD $135,000–$170,000",
-      "gap": "Wants genuine production cloud depth in AWS and/or OCI plus Staff-level agent-execution platform ownership; AI-validation practice is a real overlap",
-      "url": "https://www.eluta.ca/cache?u=25398046:mogo.applytojob.com",
-      "status": ""
-    },
-    {
-      "score": 4,
-      "family": "SRE",
-      "title": "Staff Engineer, Site Reliability",
-      "company": "Babylist",
-      "location": "Remote — Canada",
-      "salary": "Not stated",
-      "gap": "AWS at scale (EKS, RDS, networking) and production Kubernetes operations",
-      "url": "https://www.eluta.ca/cache?u=24933437:job-boards.greenhouse.io",
-      "status": ""
-    },
-    {
-      "score": 5,
-      "family": "SRE",
-      "title": "Senior DevOps Engineer (Koïos Intelligence)",
-      "company": "Koïos Intelligence Inc.",
-      "location": "Montréal, QC — on-site teamwork emphasised; cadence not stated",
-      "salary": "Not stated",
-      "gap": "Posting text carries a 2023-07-19 date and asks for 8+ years; stale",
-      "url": "https://www.eluta.ca/cache?u=21223767:koiosintelligence.ca",
-      "status": "Likely expired — page dated 2023-07-19"
-    },
-    {
-      "score": 3,
-      "family": "Platform",
-      "title": "Senior Cloud Engineer",
-      "company": "Think Research",
-      "location": "Remote — Canada",
-      "salary": "CAD $130,000–$150,000",
-      "gap": "GCP deployments plus DBA support and 24x7 production duties; not a platform-engineering centre",
-      "url": "https://www.eluta.ca/cache?u=25441873:recruiting.ultipro.ca",
-      "status": ""
-    },
-    {
-      "score": 3,
-      "family": "SRE",
-      "title": "Site Reliability Consultant",
-      "company": "Pythian Services Inc.",
-      "location": "Ottawa, ON",
-      "salary": "Not stated",
-      "gap": "Operating Kubernetes/Istio clusters with Go, PKI and Google Cloud; Kubernetes administration depth",
-      "url": "https://www.eluta.ca/cache?u=24896837:ats.rippling.com",
-      "status": ""
-    },
-    {
-      "score": 0,
-      "family": "DevOps",
-      "title": "Customer Reliability Engineer",
-      "company": "Tailscale Inc.",
-      "location": "Remote — Canada",
-      "salary": "CAD $154,100–$192,960",
-      "gap": "Customer-escalation/support engineering rather than infrastructure or reliability engineering",
-      "url": "https://www.eluta.ca/cache?u=25195032:job-boards.greenhouse.io",
-      "status": "Skipped — Out of scope: customer escalation support"
-    },
-    {
-      "score": 0,
-      "family": "Platform",
-      "title": "Cloud Infrastructure Engineer, Level 2 (SAS Viya)",
-      "company": "Donna Cona Inc.",
-      "location": "Ottawa, ON — incorporated sub-contract",
-      "salary": "Not stated",
-      "gap": "SAS Viya 4 platform administration with 5 years AWS and Reliability clearance — analytics-platform administration, not SRE/platform/DevOps",
-      "url": "https://www.eluta.ca/cache?u=25347472:www.donnacona.com",
-      "status": "Skipped — Out of scope: SAS Viya administration"
-    },
-    {
-      "score": 0,
-      "family": "Platform",
-      "title": "Platform & Infrastructure Engineer (quantum control hardware)",
-      "company": "Q-Block Computing Inc.",
-      "location": "Ottawa, ON",
-      "salary": "Not stated",
-      "gap": "Embedded Linux and networking for quantum control hardware; government clearance may apply",
-      "url": "https://www.eluta.ca/cache?u=24533979:q-block-computing.breezy.hr",
-      "status": "Skipped — Out of scope: embedded/hardware infrastructure"
-    },
-    {
-      "score": 0,
-      "family": "Platform",
-      "title": "Staff Software Engineer - Electricity Markets",
-      "company": "GE Vernova Inc.",
-      "location": "Remote (Ontario listed among locations)",
-      "salary": "CAD $126,418–$189,627",
-      "gap": "Writing and supporting the Market Management System software itself; Kubernetes appears only in passing",
-      "url": "https://www.eluta.ca/cache?u=25404746:careers.gevernova.com",
-      "status": "Skipped — Out of scope: market-system software engineering"
-    },
-    {
-      "score": 0,
-      "family": "Platform",
-      "title": "Staff Engineer (Platform)",
-      "company": "Later Media Inc.",
-      "location": "Remote; Vancouver office",
-      "salary": "OTE CAD $170,000–$200,000",
-      "gap": "Backend C#/TypeScript service development at Staff level, with infrastructure as a secondary duty",
-      "url": "https://www.eluta.ca/cache?u=25233166:job-boards.greenhouse.io",
-      "status": "Skipped — Out of scope: backend services"
-    },
-    {
-      "score": -1,
-      "family": "Platform",
-      "title": "DevOps Engineer - BTP Site Reliability Engineering team",
-      "company": "SAP Canada Inc.",
-      "location": "Montréal, QC — hybrid, in office 3 days/week",
-      "salary": "Not stated",
-      "gap": "Ineligible — Montréal cadence is 3 office days/week",
-      "url": "https://www.eluta.ca/cache?u=25177136:jobs.sap.com",
-      "status": "Skipped — Montréal 3 office days"
-    },
-    {
-      "score": -1,
-      "family": "SRE",
-      "title": "DevOps Engineer - Équipe de Site Reliability",
-      "company": "SAP Canada Inc.",
-      "location": "Montréal, QC — hybrid, in office 3 days/week",
-      "salary": "Not stated",
-      "gap": "Ineligible — Montréal cadence is 3 office days/week (French copy of the BTP SRE requisition)",
-      "url": "https://www.eluta.ca/cache?u=25177131:jobs.sap.com",
-      "status": "Skipped — Montréal 3 office days"
-    },
-    {
-      "score": -1,
-      "family": "DevOps",
-      "title": "DevOps Engineer (on-premises, no public cloud)",
-      "company": "Mist Mobility Integrated Systems Technology",
-      "location": "Ottawa, ON — on-site",
-      "salary": "Not stated",
-      "gap": "Ineligible — on-site only; secure on-premises defense-aerospace environment with no public cloud",
-      "url": "https://www.eluta.ca/cache?u=25446301:mmist.bamboohr.com",
-      "status": "Skipped — Ottawa on-site"
-    },
-    {
-      "score": -1,
-      "family": "DevOps",
-      "title": "DevOps Engineer II (Contract)",
-      "company": "Spring Financial Inc.",
-      "location": "Mexico (Remote) per employer page",
-      "salary": "Not stated",
-      "gap": "Ineligible — employer listing is Spring Technology Mexico, remote for Mexico-based candidates",
-      "url": "https://www.eluta.ca/cache?u=25415266:springfinancial.bamboohr.com",
-      "status": "Skipped — Mexico-based role"
-    },
-    {
-      "score": -1,
-      "family": "Platform",
-      "title": "Senior Infrastructure Engineer (hardware/systems integration)",
-      "company": "Jatom Systems Inc.",
-      "location": "Kanata, ON",
-      "salary": "Not stated",
-      "gap": "Ineligible — Top Secret clearance and hardware deployment scope",
-      "url": "https://www.eluta.ca/cache?u=25333717:recruiting.ultipro.ca",
-      "status": "Skipped — Top Secret clearance"
-    },
-    {
-      "score": 6,
-      "family": "SRE",
-      "title": "Senior Site Reliability Engineer I",
-      "company": "Braze",
-      "status": "Skipped",
-      "location": "Toronto ON, tagged Remote (full-time)",
-      "salary": "CAD $153,815–$277,000/year (OTE $172,000–$308,400)",
-      "gap": "Deep hands-on NGINX ingress-layer mastery and Ruby/Go programming are both explicitly required — Marc's languages are Python/Bash/C++/Java, not Ruby or Go. Kubernetes, Terraform/Ansible IaC, SLO/error-budget ownership, on-call/RCA practice, and observability (Prometheus/Grafana/Datadog nice-to-have) all overlap well otherwise.",
-      "url": "https://www.eluta.ca/search?q=Senior+DevOps+Engineer&filter-remote_jobs=only"
-    },
-    {
-      "score": 6,
-      "family": "SRE",
-      "title": "Senior Site Reliability Engineer",
-      "company": "theScore",
-      "location": "Work Remotely (Canada)",
-      "salary": "CAD $145,000–$193,000/year",
-      "gap": "Scored from the Eluta listing summary only — the inline expansion didn't reliably open for this posting despite repeated attempts, so full requirements (in particular any hard GCP/AWS ownership bar) are unconfirmed. What the summary shows is a strong match: GCP/AWS infrastructure ownership, ArgoCD/Helm/GitHub Actions platform tooling, observability and incident response across regulated jurisdictions (sports betting).",
-      "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer&filter-remote_jobs=only"
-    },
-    {
-      "score": 7,
-      "family": "SRE",
-      "title": "Senior Lead Engineer, Platform Operations & Observability / Ingénieur principal, Opérations de plateforme et observabilité",
-      "company": "McKesson Canada",
-      "status": "New",
-      "location": "Saint-Laurent (Montréal), QC — hybrid, 2 days/week mandatory (Mon/Wed) at the Dobrin office",
-      "salary": "CAD $94,400–$157,300/year",
-      "gap": "Range's low end sits below the $120k Montréal hybrid-FTE floor, but the top clears it comfortably and 7+ years SRE/Platform/DevOps seniority plus healthcare-regulated scope argues for upper-range placement — confirm in conversation. Otherwise an excellent match: incident management/RCA/MTTR ownership, CI/CD and change governance, Dynatrace explicitly preferred (direct Desjardins overlap), Azure/Kubernetes preferred, technical leadership and mentorship without formal people-management — mirrors Marc's 'leads without authority' positioning.",
-      "url": "https://careers.mckesson.com/en/job/saint-laurent/senior-lead-engineer-platform-operations-and-observability/733/99226810112"
-    },
-    {
-      "score": 5,
-      "family": "DevOps",
-      "title": "Ingénieur(e) DevOps / DevOps Engineer - Dynamics 365 & Azure DevOps",
-      "company": "Genetec Inc.",
-      "status": "New",
-      "location": "Montréal, QC — office cadence not stated (free on-site parking/gym mentioned, but no explicit days/week; treat as hybrid pending confirmation)",
-      "salary": "Not stated",
-      "gap": "Strong Azure DevOps administration/CI-CD/IaC (Terraform, Bicep, ARM) overlap with Marc's depth, but the role is Dynamics 365 F&O/CE- and Power Platform/Dataverse-specific — Marc has no D365 exposure, a real gap against a '5+ years D365 DevOps' bar. Bilingual FR/EN requirement is a Marc strength.",
-      "url": "https://apply.workable.com/genetec-inc/j/831CC24E50"
-    },
-    {
-      "score": 4,
-      "family": "SRE",
-      "title": "DevOps Engineer - BTP Site Reliability Engineering team",
-      "company": "SAP Canada Inc.",
-      "status": "New",
-      "location": "Montréal, QC — hybrid, 3 days/week in-office",
-      "salary": "CAD $95,000–$135,000/year",
-      "gap": "3 days/week on-site needs a well-above-target rate to be worth it per profile.md's reachable-city rule; $95-135K doesn't clear that bar (barely reaches the $120k Montréal floor at the very top). Otherwise a real skill match: Kubernetes, Linux, CI/CD, multi-cloud (AWS/Azure/GCP), Python/Go/Bash. Not eligible for employer-sponsored work authorization — irrelevant to Marc as a Canadian citizen/resident.",
-      "url": "https://jobs.sap.com/job/Montreal-DevOps-Engineer-BTP-Site-Reliability-Engineering-team-Queb-H3B-0B3/1426752233/"
-    },
-    {
-      "score": 4,
-      "family": "DevOps",
-      "title": "DevOps Engineer (Cloud Infrastructure)",
-      "company": "Tecsys Inc.",
-      "status": "New",
-      "location": "Montréal, QC — described as \"digital-first\" with flexible/hybrid offices; exact days/week not stated",
-      "salary": "Not stated",
-      "gap": "Heavily AWS-centric (\"complex, hybrid architectures\" on AWS) with no Azure mention — Marc's AWS story is dated and by-hand, no IaC, a weak answer if AWS ownership is the actual deliverable here. Tecsys already has a separate, different-req Site Reliability Engineer posting Applied via Glassdoor (2026-09-19) — same employer, distinct role, not a duplicate.",
-      "url": "https://freehire.me/jobs/devops-engineer-cloud-infrastructure-tecsys-glsqkcrz"
-    },
-    {
-      "score": 3,
-      "family": "SRE",
-      "title": "Staff Engineer, Site Reliability",
-      "company": "Baby List, Inc.",
-      "status": "New",
-      "location": "Work Remotely (Canada/US)",
-      "salary": "Not stated",
-      "gap": "Hard AWS-ownership-at-scale gate: \"deep hands-on Terraform expertise\" as IaC owner, \"proven AWS experience at scale\" (EKS, RDS, networking, DNS, CDNs), and production Kubernetes debugging are all explicit musts. No Azure mentioned at all — Marc's dated, by-hand, non-IaC AWS experience doesn't clear this bar.",
-      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer&filter-remote_jobs=only"
-    },
-    {
-      "score": -1,
-      "family": "SRE",
-      "title": "Site Reliability Engineer",
-      "company": "HostPapa Inc. (managed.com / CloudBlue)",
-      "status": "Skipped — role excludes Ontario residents",
-      "location": "Work Remotely — posting states \"anticipated that this position will be performed outside of Ontario\"",
-      "salary": "Not stated",
-      "gap": "Explicit statement that the role will be performed outside Ontario — Marc is based in Smiths Falls, ON, so this is a hard geographic eligibility gate against him specifically, the inverse of the usual residency-requirement rule. Otherwise a strong skill match (SLIs/SLOs, Kubernetes, Datadog/Grafana/Elastic, Python/Bash, Azure-preferred) — the gate alone rules it out.",
-      "url": "https://www.eluta.ca/search?q=Senior+Site+Reliability+Engineer&filter-remote_jobs=only"
-    },
-    {
-      "score": 0,
-      "family": "DevOps",
-      "title": "Manager, Fixed Wireless New Technology & Performance",
-      "company": "Xplore Inc.",
-      "status": "Skipped — telecom RF/fixed-wireless engineering management, not DevOps/SRE/Platform IC work",
-      "location": "Cornwall, ON",
-      "salary": "Not stated",
-      "gap": "Title mentions a DevOps team the role partners with, but the job itself is network-performance/RF engineering management for fixed wireless technology — wrong domain and a people-management scope, not an IC infrastructure role.",
-      "url": "https://www.eluta.ca/search?q=DevOps+Engineer&l=Cornwall%2C+ON"
-    },
-    {
-      "score": -1,
-      "family": "DevOps",
-      "title": "DevOps Engineer II (Contract)",
-      "company": "Spring Financial",
-      "location": "Remote — Mexico residents",
-      "salary": "MXN $612,000–$857,000/yr",
-      "gap": "The posting offers remote work from Mexico, not Canada",
-      "url": "https://freehire.me/jobs/devops-engineer-ii-contract-springfinancial-theyqfuj",
-      "status": "Skipped — region: Mexico only"
-    },
-    {
-      "score": -1,
-      "family": "Platform",
-      "title": "Senior DevOps / Platform Engineer — Cloud",
-      "company": "Dominion Dynamics",
-      "location": "Ottawa, ON — on-site (Ottawa/Toronto)",
-      "salary": "CAD $117,000–$156,000 (estimate)",
-      "gap": "Role is on-site and reports to the Head of Security; sovereign-hosting focus",
-      "url": "https://jobs.ashbyhq.com/Dominion%20Dynamics/524d2ece-f27a-469d-b00e-503cc40869ac",
-      "status": "Skipped — on-site"
-    },
-    {
-      "score": -1,
-      "family": "SRE",
-      "title": "Zscaler Site Reliability Engineer (SRE)",
-      "company": "DXC Technology",
-      "location": "Ottawa, ON — exclusively on-site at a client location",
-      "salary": "CAD $115,000–$155,000",
-      "gap": "Requires a Canadian government security clearance, Canadian citizenship and 10 years verifiable residency, and on-site Ottawa",
-      "url": "https://www.workopolis.com/jobsearch/viewjob/di6TjW7EaEG063zt904FtKrPMLSYXK0mhNZIbN2ur0QAQ38AFPbmFOx89ki8IFXX",
-      "status": "Skipped — clearance and on-site"
-    },
-    {
-      "score": 4,
-      "family": "DevOps",
-      "title": "Senior DevOps Engineer",
-      "company": "Koïos Intelligence",
-      "location": "Montréal, QC — work arrangement not stated",
-      "salary": "CAD $80,075–$120,725 (estimate)",
-      "gap": "GCP, Kubernetes, Helm, Jaeger and Bitbucket stack with a 7+ year bar — GCP hard gate; pay estimate sits mostly below the $120k Montréal hybrid floor",
-      "url": "https://ca.linkedin.com/jobs/view/senior-devops-at-ko%C3%AFos-intelligence-3249873532",
-      "status": ""
-    },
-    {
-      "score": 7,
-      "family": "DevOps",
-      "title": "Data Platform DevOps Engineer - Senior Consultant",
-      "company": "Deloitte LLP",
-      "location": "Montréal/Ottawa and other Canadian locations — permanent, hybrid (office days not stated; confirm <=2)",
-      "salary": "CAD $80,000–$138,000/yr",
-      "gap": "Bilingual French/English required (a strength); Snowflake and Databricks listed as assets — Databricks is a direct Énergir match; hybrid cadence and the top of the pay band vs the $120k Montréal floor to confirm",
-      "url": "https://www.eluta.ca/cache?u=25404511:careers.deloitte.ca",
-      "status": "Skipped"
-    },
-    {
-      "score": 6,
-      "family": "DevOps",
-      "title": "DevOps Engineer",
-      "company": "Brain Finance",
-      "location": "Montréal, QC — hybrid, team in office Wednesdays (1 day/week)",
-      "salary": "Not stated",
-      "gap": "AWS and/or GCP with Terraform and CI/CD — either cloud accepted, but no Azure; 4–5 years asked; pay unconfirmed against the $120k Montréal floor",
-      "url": "https://www.eluta.ca/cache?u=25081863:www.brainfinance.com",
-      "status": "Skipped"
-    },
-    {
-      "score": 6,
-      "family": "SRE",
-      "title": "Cloud Site Reliability Engineer II",
-      "company": "Barracuda Networks",
-      "location": "Ottawa, ON — hybrid, office days not stated (confirm <=2)",
-      "salary": "CAD $100,000–$120,000/yr",
-      "gap": "Level II (2–4 yrs) is below Marc’s seniority; Loki/Mimir/Tempo/Grafana telemetry on multi-cluster EKS rather than his Dynatrace/Splunk/ELK background",
-      "url": "https://www.eluta.ca/cache?u=25387579:jobs.jobvite.com",
-      "status": "Skipped"
-    },
-    {
-      "score": 5,
-      "family": "Platform",
-      "title": "Senior Software Engineer – Data & ML Platform",
-      "company": "GoMaterials",
-      "location": "Remote — Canada",
-      "salary": "Not stated",
-      "gap": "Python/SQL data-pipeline ownership and ML/OR tooling is the core; Azure, Terraform/Bicep, CI/CD and observability are real, but this is data-platform engineering more than infrastructure",
-      "url": "https://www.eluta.ca/cache?u=25412523:jobs.lever.co",
-      "status": "Skipped"
-    },
-    {
-      "score": 5,
-      "family": "DevOps",
-      "title": "DevOps Engineer II",
-      "company": "commonsku",
-      "location": "Remote — Canada (Toronto-listed)",
-      "salary": "CAD $110,000–$130,000/yr",
-      "gap": "Intermediate scope (3+ yrs) reporting alongside a Senior DevOps; AWS, Kubernetes, Terraform stack",
-      "url": "https://www.eluta.ca/cache?u=25419015:commonsku.na.teamtailor.com",
-      "status": "Applied"
-    },
-    {
-      "score": 4,
-      "family": "Platform",
-      "title": "Senior Software Engineer, Infrastructure Platform",
-      "company": "Degree, Inc.",
-      "location": "Remote — British Columbia or Ontario residents only (eligible)",
-      "salary": "CAD $123,750–$165,000",
-      "gap": "\"Deep AWS experience in production\" plus hands-on Kubernetes — AWS depth is hard-gated",
-      "url": "https://www.eluta.ca/search?q=Senior%20Infrastructure%20Engineer&filter-remote_jobs=only",
-      "status": ""
-    },
-    {
-      "score": 4,
-      "family": "Platform",
-      "title": "Senior Cloud Engineer",
-      "company": "Think Research",
-      "location": "Remote — Toronto-listed",
-      "salary": "$130,000–$150,000",
-      "gap": "Requires 10+ yrs HA architecture, 5+ yrs Kubernetes, 3+ yrs database administration, GCP/AWS/Azure — Kubernetes and DBA depth gate",
-      "url": "https://www.eluta.ca/search?q=Cloud%20Engineer&filter-remote_jobs=only",
-      "status": ""
-    },
-    {
-      "score": 0,
-      "family": "Platform",
-      "title": "Staff Software Engineer – Electricity Markets",
-      "company": "GE Vernova",
-      "location": "Remote",
-      "salary": "CAD $126,418–$189,627",
-      "gap": "Opened in full: technical lead for an electricity Market Management System (power systems, optimization, customer design work) — DevOps/CI-CD appears once; not an operations or deployment role",
-      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
-      "status": "Skipped — out of scope (market-systems lead)"
-    },
-    {
-      "score": 0,
-      "family": "Platform",
-      "title": "Software Consulting Engineer – T&D",
-      "company": "GE Vernova",
-      "location": "Remote",
-      "salary": "Not stated",
-      "gap": "Opened in full: grid/T&D software consulting — \"deploy\" appears as customer-solution delivery, no infrastructure or reliability scope",
-      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
-      "status": "Skipped — out of scope (T&D software consulting)"
-    },
-    {
-      "score": 3,
-      "family": "Platform",
-      "title": "Staff Engineer (Platform)",
-      "company": "Later Media",
-      "location": "Remote — Canada",
-      "salary": "CAD $175,000–$250,000",
-      "gap": "Backend service development in C#/TypeScript with some Kubernetes/AWS; software-engineering centred",
-      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
-      "status": ""
-    },
-    {
-      "score": 3,
-      "family": "Platform",
-      "title": "Staff Software Development Engineer",
-      "company": "Wagepoint",
-      "location": "Remote — Canada",
-      "salary": "Not stated",
-      "gap": "Full-stack staff engineer with cloud infrastructure and incident response as one of several duties",
-      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
-      "status": ""
-    },
-    {
-      "score": 4,
-      "family": "Platform",
-      "title": "Site Reliability Consultant",
-      "company": "Pythian Services",
-      "location": "Ottawa-area, remote/hybrid not stated",
-      "salary": "Not stated",
-      "gap": "Hands-on Kubernetes, Istio and Linux operations across AWS/GCP — Kubernetes administration depth gate",
-      "url": "https://www.eluta.ca/search?q=Site%20Reliability%20Engineer&l=Ottawa%2C%20ON",
-      "status": ""
-    },
-    {
-      "score": 4,
-      "family": "DevOps",
-      "title": "Senior DevOps Engineering Tools Specialist",
-      "company": "Mannarino Systems & Software",
-      "location": "Saint-Laurent (Montréal), QC — hybrid/remote tag",
-      "salary": "Not stated",
-      "gap": "Administers Jenkins/GitLab/Bitbucket/Artifactory with end-user support duties — tools-support scope",
-      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&l=Montreal%2C%20QC",
-      "status": ""
-    },
-    {
-      "score": 4,
-      "family": "SRE",
-      "title": "Cloud Security Engineer (Azure)",
-      "company": "Smile Digital Health",
-      "location": "Remote — Canada",
-      "salary": "CAD $130,000–$140,000",
-      "gap": "Security-architecture centred (Defender for Cloud, Prisma CSPM) rather than delivery or reliability; Marc already has an Applied Smile Azure platform role",
-      "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
-      "status": ""
-    },
-    {
-      "score": 6,
-      "family": "DevOps",
-      "title": "Senior DevOps Engineer (cloud platform products, Wind River Kanata)",
-      "company": "Wind River International Limited",
-      "location": "Kanata (Ottawa), ON — hybrid, cadence not stated",
-      "salary": "CAD $95,000–$120,000 (+ bonus) per Eluta listing",
-      "gap": "Technical: Build/release engineering, CI/CD reliability and developer experience for a Kubernetes/StarlingX product — Python/Linux and 3–5 years DevOps fit; deep Kubernetes platform internals and contributing to distributed-systems architecture are the stretch; Practical: Compromise/Confirm — Ottawa-area hybrid, office-day cadence not stated; pay below ideal; Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=24998229:aptiv.wd5.myworkdayjobs.com",
-      "status": "Applied"
-    },
-    {
-      "score": 3,
-      "family": "SRE",
-      "title": "Site Reliability Engineering Team Lead (Principal SRE)",
-      "company": "Cerence Technologies Inc.",
-      "location": "Remote - Canada / Montréal listed as additional locations",
-      "salary": "Not stated",
-      "gap": "Technical: 8+ years SRE, SLO governance and team technical leadership of a cloud-native AI platform — seniority/ownership gap; Practical: Confirm — Canada remote option listed; pay not stated; Resume: SRE.",
-      "url": "https://www.eluta.ca/cache?u=25338843:cerence.wd5.myworkdayjobs.com"
-    },
-    {
-      "score": 3,
-      "family": "Platform",
-      "title": "Senior GCP Platform Enablement Engineer (Cloud Platform Engineer, GCP)",
-      "company": "Carbon60 / OpsGuru",
-      "location": "Canada (onshore), Toronto-listed, remote",
-      "salary": "CAD $85–110/hour contract",
-      "gap": "Technical: GCP landing-zone foundation with Terraform modules, IAM, networking and guardrails — GCP is zero-experience (hard gate); Practical: Compromise — 14–16 week contract, hourly range stated; Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=25461319:carbon60.bamboohr.com"
-    },
-    {
-      "score": 3,
-      "family": "Platform",
-      "title": "Développeur(se) DevOps / DevOps Engineer — internal developer platform",
-      "company": "Unity Technologies",
-      "location": "Montréal, QC — workplace not stated in cached record",
-      "salary": "CAD $83,300–$124,900",
-      "gap": "Technical: Shared multi-tenant Kubernetes and strong GCP required; this is engineering of a platform used by hundreds of developers — K8s/GCP depth gap; Practical: Confirm — Montréal cadence not stated; Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=25179209:unitytech.wd1.myworkdayjobs.com"
-    },
-    {
-      "score": 4,
-      "family": "DevOps",
-      "title": "Développeur(euse) CloudOps / CloudOps Developer",
-      "company": "Genetec Inc.",
-      "location": "Montréal, QC — hybrid, days not stated; confirm <=2",
-      "salary": "Not stated",
-      "gap": "Technical: Automation tooling in C# and PowerShell plus production incident/RCA work for cloud operations; Marc has SRE-style RCA and scripting but not C#; Practical: Confirm — hybrid Montréal cadence not stated; French listing; Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=25250080:apply.workable.com"
-    },
-    {
-      "score": 4,
-      "family": "DevOps",
-      "title": "Site Reliability Engineer / Full Stack Engineer",
-      "company": "Lockheed Martin Canada Inc.",
-      "location": "Montréal, QC — hybrid, telework >=50%",
-      "salary": "CAD $102,750–$134,750",
-      "gap": "Technical: AWS (VPC/EC2/S3/Lambda/IAM), Terraform or CloudFormation, Ansible, VMware, C#/Python/Perl; AWS is the shallow area, VMware and Ansible are fits; Practical: Compromise — Montréal hybrid ~2–3 office days; defence employer, no clearance required before start; Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=25470612:lockheedmartin.eightfold.ai"
-    },
-    {
-      "score": 4,
-      "family": "Platform",
-      "title": "Infrastructure Operations Engineer (Azure, OpenShift, hybrid infrastructure)",
-      "company": "CAE Inc.",
-      "location": "Montréal, QC — cadence not stated",
-      "salary": "Not stated",
-      "gap": "Technical: 5+ years infrastructure operations across Azure, OpenShift, RDS and VMware migration — sysadmin-leaning platform operations; Azure fits, OpenShift/virtualization migration does not; Practical: Confirm — Montréal on-site/hybrid cadence not stated; Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=25241469:cae.wd3.myworkdayjobs.com"
-    },
-    {
-      "score": 0,
-      "family": "Platform",
-      "title": "Senior Platform Architect, Infrastructure & Cloud Operations",
-      "company": "Entrust Corporation",
-      "location": "Ottawa, ON",
-      "salary": "Not stated",
-      "gap": "Out of scope — architecture role on an on-premises VMware/Windows SaaS platform, availability design rather than delivery/automation",
-      "url": "https://www.eluta.ca/cache?u=24608961:entrust.wd1.myworkdayjobs.com",
-      "status": "Out of scope"
-    },
-    {
-      "score": 0,
-      "family": "Platform",
-      "title": "OpenStack Cloud Engineer Consultant for SSC",
-      "company": "49 Solutions Inc.",
-      "location": "Ottawa, ON — hybrid",
-      "salary": "CAD $150,000–$200,000",
-      "gap": "Out of scope — OpenStack SME consulting for Shared Services Canada; no OpenStack experience",
-      "url": "https://www.eluta.ca/cache?u=25404206:apply.workable.com",
-      "status": "Out of scope"
-    },
-    {
-      "score": 6,
-      "family": "SRE",
-      "title": "Senior Site Reliability Engineer (SRE)",
-      "company": "Arctiq (client SRE Center of Excellence)",
-      "location": "Remote — Ontario-based (Toronto listed), Canada",
-      "salary": "Not stated (6–9 month contract, extension possible)",
-      "gap": "Technical: defines SLOs/SLIs, error budgets, DORA reporting and pipeline release gates in Dynatrace and ServiceNow for application teams, and joins on-call; Marc has Dynatrace dashboards/ingestion, Jenkins release gates and incident work but no implemented SLOs, and Kubernetes is user-level. Practical: Confirm — contract rate not stated (full-time contract floor $80/hr, $90/hr for shorter engagements), remote per employer listing. Posted 2026-10-14. Resume: SRE.",
-      "url": "https://arctiq.bamboohr.com/careers/342",
-      "status": "New"
-    },
-    {
-      "score": 6,
-      "family": "DevOps",
-      "title": "Senior Software Engineering - Autonomy Build & Integration",
-      "company": "General Motors of Canada",
-      "location": "Remote — Ontario (Markham optional)",
-      "salary": "CAD $115,000–$164,600/yr base",
-      "gap": "Technical: owns CI/CD, build, image and release-promotion workflows for ADAS software (Jenkins and GitHub Actions experience wanted, Python/Docker); gaps are C/C++ build systems (Bazel/CMake, Clang/GCC), automotive/QNX domain and 3+ years leading cross-team initiatives. Practical: Compromise — range tops out just above $160k, remote Ontario, growth unconfirmed; vacancy is a backfill. Resume: Platform.",
-      "url": "https://www.eluta.ca/cache_open?u=25312410:generalmotors.wd5.myworkdayjobs.com",
-      "status": "New"
-    },
-    {
-      "score": 3,
-      "family": "DevOps",
-      "title": "Senior Cloud Security Engineer (Remote Ontario)",
-      "company": "Smile Digital Health",
-      "location": "Remote — Ontario",
-      "salary": "Not stated",
-      "gap": "Technical: cloud security posture (Prisma Cloud, Defender for Cloud), threat modelling, SAST/DAST triage and RBAC governance — security-engineering centre of gravity beyond Marc's documented evidence. Practical: Confirm — pay not stated. Resume: Platform.",
-      "url": "https://www.eluta.ca/cache?u=25302403:jobs.lever.co",
-      "status": ""
-    },
-    {
-      "score": 3,
-      "family": "SRE",
-      "title": "Senior Application Support Engineer (Remote Ontario)",
-      "company": "Smile Digital Health",
-      "location": "Remote — Ontario",
-      "salary": "Not stated",
-      "gap": "Technical: Tier-2 application support and Java bug fixes with Helm/Azure pipeline touch points and on-call — closer to support development than SRE or platform work. Practical: Confirm — pay not stated. Resume: SRE.",
-      "url": "https://www.eluta.ca/cache?u=25363152:jobs.lever.co",
-      "status": ""
-    },
-    {
-      "score": -1,
-      "family": "Platform",
-      "title": "Infrastructure Engineer (remote contract)",
-      "company": "PLATO",
-      "location": "Remote — Canada (Fredericton, NB listed)",
-      "salary": "Not stated",
-      "gap": "Ineligible: Secret-level security clearance required at time of application (Marc holds none). Work is Azure/Terraform infrastructure for a federal client, contract 2026-11-01 to 2027-07-15, so otherwise a real fit.",
-      "url": "https://www.eluta.ca/cache?u=25486906:careers.platotech.com",
-      "status": "Skipped — Ineligible: Secret clearance required"
-    },
-    {
-      "score": 7,
-      "family": "DevOps",
-      "title": "DevOps Specialist (6 months)",
-      "company": "CIRA",
-      "location": "Ottawa, ON — hybrid (blend of remote and in-office)",
-      "salary": "CAD $106,000–$117,000 (fixed term)",
-      "gap": "Technical: reusable GitLab CI/CD components, Java/Maven pipelines, runners, coaching teams to own their pipelines — close to Énergir shared-Jenkins work; GitLab itself and Java development depth are gaps; Practical: Compromise — 6-month fixed term, below $160k; same posting already Applied on LinkedIn (row 4444060323, 2026-09-08); employer page still lists it, dated 2026-07-23; Resume: Platform.",
-      "url": "https://Cira.bamboohr.com/careers/340",
-      "status": "Applied — Sep 8 (existing ledger row)"
-    },
-    {
-      "score": 4,
-      "family": "DevOps",
-      "title": "DevOps Engineer",
-      "company": "Case IQ, Inc.",
-      "location": "Remote (location not stated)",
-      "salary": "CAD $110,000–$130,000",
-      "gap": "Technical: Azure/AWS mixed infrastructure (AKS, Docker Swarm, ECS, Lambda, DynamoDB) and AIOps adoption; breadth of AWS services and Kubernetes ownership are gaps; Practical: Compromise — below $160k; employer page dated 2026-09-14, so freshness is a month old; Resume: Platform.",
-      "url": "https://caseiq.bamboohr.com/careers/337"
-    },
-    {
-      "score": 3,
-      "family": "SRE",
-      "title": "Senior Cloud Site Reliability Engineer",
-      "company": "Solace",
-      "location": "Ottawa, ON — hybrid",
-      "salary": "Not stated",
-      "gap": "Technical: 'expert-level' multi-cloud SaaS incident handling, cloud networking and 24x7 on-call; employer page dated 2026-02-27, so freshness is unconfirmed; Practical: Confirm — pay and cadence not stated; Resume: Platform.",
-      "url": "https://solace.bamboohr.com/careers/731"
-    },
-    {
-      "score": 4,
-      "family": "DevOps",
-      "title": "DevOps Engineer II (Contract)",
-      "company": "Spring Financial Inc.",
-      "location": "Remote contract",
-      "salary": "$612,000–$857,000 MXN/year listed",
-      "gap": "Technical: intermediate DevOps scope at a fintech (continuous delivery, observability, VPC/VPN, patching); description read in part; Practical: Confirm — pay is listed in Mexican pesos, so Canadian contractor eligibility is unresolved; Resume: Platform.",
-      "url": "https://springfinancial.bamboohr.com/careers/299"
-    },
-    {
-      "score": 2,
-      "family": "SRE",
-      "title": "Senior SysOps Engineer",
-      "company": "Techdinamics",
-      "location": "Remote contract",
-      "salary": "Not stated",
-      "gap": "Technical: AWS CloudFormation/Control Tower SysOps; employer page dated 2025-10-10; Practical: Expired risk — posting is a year old; Resume: Platform.",
-      "url": "https://techdinamics.bamboohr.com/careers/52",
-      "status": "Expired — employer page dated 2025-10-10"
-    }
-  ],
-  "could_not_validate": [
-    {
-      "text": "Mogo Inc. — DevOps Staff Platform Engineer (Vancouver, posted today): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Staff+DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Bounteous Canada — Senior DevOps Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Senior+DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Think Research Corporation — Senior Cloud Engineer (Toronto, posted today): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "BMO Financial Group — Senior Cloud Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Kinaxis Inc. — Staff Cloud Engineer, Cloud Platform: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "ServiceNow — Staff Site Reliability Engineer (Toronto): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "CaseWare International — Staff Site Reliability Engineer (Toronto): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "theScore — Senior Site Reliability Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Senior+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Baby List — Staff Engineer, Site Reliability: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Boson AI — Site Reliability Engineer (Toronto): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Xsolla — Site Reliability Engineer (Monetization), Montréal: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Cerence Technologies — Site Reliability Engineering Team Lead: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Tailscale — Infrastructure Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Infrastructure+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Cresta Intelligence — Infrastructure Engineer/SRE: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Infrastructure+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "1Password — Senior Staff Cloud Platform Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Leap Tools — DevOps Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Green Patch Inc. — Intermediate DevOps Engineer: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "commonsku — DevOps Engineer II (Toronto): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Carbon60 — Cloud Platform Engineer (GCP): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Grantek Systems Integration — Leader, AI Platform Engineer (Burlington): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Infrastructure+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Smile CDR — Senior Cloud Security Engineer (Remote Ontario): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
-    },
-    {
-      "text": "Kinaxis — Cloud Engineer 2, Site Reliability Engineering (Ottawa, 9 days old): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&l=Ottawa%2C+ON"
-    },
-    {
-      "text": "Mist Mobility Integrated Systems — DevOps Engineer ×2 (Ottawa, 13 days old): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&l=Ottawa%2C+ON"
-    },
-    {
-      "text": "Portage CyberTech — Spécialiste DevOps (CitizenOne), Gatineau: Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&l=Ottawa%2C+ON"
-    },
-    {
-      "text": "Entrust — Senior Platform Architect, Infrastructure Cloud Operations (Ottawa): Eluta cache page blocked by human verification and no employer page located; not scored.",
-      "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&l=Ottawa%2C+ON"
-    },
-    {
-      "text": "PLATO Infrastructure Engineer (remote contract, Fredericton NB): Eluta cache blocked by the verification page, so the posting was not read; PLATO roles carry an Indigenous-identity requirement under the profile red flags.",
-      "url": "https://www.eluta.ca/cache?u=25486906:careers.platotech.com"
-    },
-    {
-      "text": "Thumbtack Software Engineer, AI/ML Infrastructure (Ashby): not opened because the Eluta cache fetch returned the verification redirect; AI/ML infrastructure title only.",
-      "url": "https://www.eluta.ca/cache?u=25178356:jobs.ashbyhq.com"
-    },
-    {
-      "text": "Samsara Manager II, Software Engineering, Infrastructure (Canada): people-management title not read in full.",
-      "url": "https://www.samsara.com/company/careers/roles/8221852?gh_jid=8221852"
-    },
-    {
-      "text": "RPE – System Reliability Engineering Specialist (Hybrid), Morgan Stanley Montréal — indexed today but Eluta's cache is an empty Eightfold shell; the employer posting was not recovered. Related LinkedIn role already InProcess.",
-      "url": "https://www.eluta.ca/cache?u=24568835:morganstanley.eightfold.ai"
-    },
-    {
-      "text": "Senior Cloud Engineer, Laivly Inc. (Winnipeg MB, remote) — indexed today; empty BambooHR shell, employer page not recovered.",
-      "url": "https://www.eluta.ca/cache?u=25173360:laivly.bamboohr.com"
-    },
-    {
-      "text": "Cloud Networking Senior Engineer, Wind River (Kanata) — indexed today; empty Workday shell, and networking-centred by title; not scored.",
-      "url": "https://www.eluta.ca/cache?u=24998226:aptiv.wd5.myworkdayjobs.com"
-    },
-    {
-      "text": "AI-First DevOps Engineer ($155,000, talentmanagementsolution.wd3.myworkdayjobs.com) — Eluta's cache is an empty Workday shell indexed 13 Jul 2026; the employer posting was not recoverable.",
-      "url": "https://www.eluta.ca/cache?u=25003641:talentmanagementsolution.wd3.myworkdayjobs.com"
-    },
-    {
-      "text": "Spécialiste DevOps / DevOps Specialist (Portage CyberTech, Gatineau QC) — cache is an empty BambooHR shell indexed 6 Aug 2026; Gatineau is outside the reachable cities unless remote.",
-      "url": "https://www.eluta.ca/cache?u=25131230:portagecybertech.bamboohr.com"
-    },
-    {
-      "text": "RPE - System Reliability Engineering Specialist (Hybrid), Morgan Stanley, Montréal — shown as posted today on Eluta; the cache is an empty Eightfold shell indexed 28 Aug 2026. Related to the Morgan Stanley role already filed from LinkedIn.",
-      "url": "https://www.eluta.ca/cache?u=24568835:morganstanley.eightfold.ai"
-    },
-    {
-      "text": "Cloud Platform Engineer (Accenture, $25.41/hour and $74,000 variants) — readable cache shows only site navigation in the first lines; appears entry-level and was not scored.",
-      "url": "https://www.eluta.ca/cache?u=25107000:www.accenture.com"
-    },
-    {
-      "text": "Senior Software Engineer (Platform - DevOps) — CTO.ai (Vancouver BC - Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=19675816:careers.risepeople.com"
-    },
-    {
-      "text": "Senior Cloud Engineer — BMO Financial Group (Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=24572360:bmo.wd3.myworkdayjobs.com"
-    },
-    {
-      "text": "Senior Software Engineer, Site Reliability Engineering — Thumbtack, Inc. (Work Remotely): Eluta cache is an empty JavaScript shell (505 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25443500:jobs.ashbyhq.com"
-    },
-    {
-      "text": "Senior Cloud Engineer — Jones Lang LaSalle IP, Inc. / JLL (Toronto ON - Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25409663:jll.wd1.myworkdayjobs.com"
-    },
-    {
-      "text": "Senior Staff Cloud Platform Engineer — 1Password (Work Remotely): Eluta cache is an empty JavaScript shell (487 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25457528:jobs.ashbyhq.com"
-    },
-    {
-      "text": "Staff Software Engineer, Infrastructure — Docker Inc. (Work Remotely): Eluta cache is an empty JavaScript shell (487 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25407113:jobs.ashbyhq.com"
-    },
-    {
-      "text": "DevOps Engineer — Mist Mobility Integrated Systems Technology / MMIST (Ottawa, ON): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25446689:mmist.bamboohr.com"
-    },
-    {
-      "text": "Senior DevOps / Platform Engineer — Cloud — Dominion Dynamics Inc. (Ottawa, ON): Eluta cache is an empty JavaScript shell (500 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=24932521:jobs.ashbyhq.com"
-    },
-    {
-      "text": "Zscaler Site Reliability Engineer (SRE) — DXC Technology Company (Ottawa, ON): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25321858:dxctechnology.wd1.myworkdayjobs.com"
-    },
-    {
-      "text": "Data Engineer (DevOps) — Tecsys Inc. (Montréal, QC): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25159434:apply.workable.com"
-    },
-    {
-      "text": "DevOps Engineer (Cloud Infrastructure) — Tecsys Inc. (Montréal, QC): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25275987:apply.workable.com"
-    },
-    {
-      "text": "Senior Infrastructure Engineer (Forward Deployed) — ANVIL (Ottawa, ON): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=25153653:anvil.bamboohr.com"
-    },
-    {
-      "text": "Site Reliability Engineer — Tecsys Inc. (Montréal, QC): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=24639106:apply.workable.com"
-    },
-    {
-      "text": "RPE - System Reliability Engineering Specialist (Hybrid) — Morgan Stanley Services Canada Corp. (Montréal, QC): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
-      "url": "https://www.eluta.ca/cache?u=24568835:morganstanley.eightfold.ai"
-    },
-    {
-      "text": "Degree, Inc. \"Senior Software Engineer, Infrastructure Platform\" ($123,750–$165,000 CAD, remote) — plausible Platform-family fit (AWS infrastructure, Kubernetes, distributed systems, deployment tooling, internal developer platforms) but Eluta's inline expansion and cache link both failed to open on repeated attempts this run; the listing snippet alone isn't sufficient for scoring per the skill's rule. Worth a retry next run.",
-      "url": "https://www.eluta.ca/search?q=Senior+Infrastructure+Engineer&filter-remote_jobs=only"
-    },
-    {
-      "text": "JLL — Senior Cloud Engineer (CAD $140–170k, Toronto, remote tag): Eluta’s cached copy is an empty shell and no employer page was found.",
-      "url": "https://www.eluta.ca/search?q=Cloud%20Engineer&filter-remote_jobs=only"
-    }
-  ],
-  "notes_sections": [
-    {
-      "heading": "October 18 run — incomplete (verification page)",
-      "items": [
-        "<b>Run incomplete — Eluta human-verification page.</b> 12 of 35 mandatory passes rendered normally (10 remote-filter role passes + Ottawa DevOps and Ottawa SRE). After the Ottawa SRE pass, Eluta redirected every request, including cache pages, to its 'are you a human?' check, from both the command line and the browser. Per the skill, nothing was clicked through: the 23 remaining city passes (Ottawa ×3, Kingston ×5, Brockville ×5, Cornwall ×5, Montréal ×5) are <b>Incomplete</b>. To resume, clear the check in your own browser, then re-run the city passes a few seconds apart.",
-        "<b>What was validated anyway:</b> employer ATS pages (BambooHR JSON) for CIRA, Arctiq, Case IQ, Solace, Spring Financial and Techdinamics. CIRA DevOps Specialist is the same posting already Applied on 2026-09-08. Arctiq's SRE contract is already a ledger row (New); it was not auto-filed here because Canada eligibility and rate are not stated.",
-        "<b>Collected 94 unique postings from the 12 completed passes</b> (7-day Eluta filter; some results carried ages of 9–13 days). Postings that overlap other boards or the ledger (NVIDIA, Smile, Coalition, Barracuda, Wind River, General Motors, CMHC) were not re-filed. In-family Eluta-only results without an accessible employer page are listed under Could not validate."
-      ]
-    },
-    {
-      "heading": "October 15 run — past 48 hours (complete)",
-      "items": [
-        "<b>Pass audit:</b> 10 remote passes (DevOps, Senior DevOps, Staff DevOps, SRE, Senior SRE, Staff SRE, Cloud, DevSecOps, Infrastructure, Senior Infrastructure) each returned 10 cards. City passes for Ottawa, Montréal, Kingston, Brockville and Cornwall used DevOps, SRE, Cloud and Infrastructure Engineer. Zero-result passes rendered normally: Kingston DevOps; Brockville DevOps and Cloud; Cornwall DevOps and Cloud.",
-        "<b>Freshness:</b> Eluta exposes only a last-seen age, not a posting date. I opened every in-family result seen within about 2 days; older last-seen results were not reopened. The Arctiq listing carries an employer date of 2026-10-14 and the GM cache was indexed 2026-09-11 with the employer showing 'Posted Today'.",
-        "<b>Duplicates left unchanged:</b> Tailscale Infrastructure Engineer (Applied), Samsara Senior Software Engineer I/II - Infrastructure (already scored 2 on this report), Smile Cloud Engineer, Automation (already filed 2026-10-14), Tecsys DevOps Engineer (Cloud Infrastructure), and Mozilla Senior Software Engineer, Cloud Engineering (Skipped in the ledger; Eluta now shows it 3 hours old at CAD $95–139k remote Canada — worth deciding whether to reopen it).",
-        "<b>Cache shells:</b> the Arctiq and General Motors cache pages were empty shells; both were recovered through the cache_open structured representation, which carried the employer's full job data."
-      ]
-    },
-    {
-      "heading": "October 14 run — INCOMPLETE (12 of 30 passes; verification page)",
-      "items": [
-        "The 10 remote title passes (DevOps, Senior DevOps, Staff DevOps, SRE, Senior SRE, Staff SRE, Cloud, DevSecOps, Infrastructure, Senior Infrastructure) returned HTTP 200 with 10 cards each over direct HTTP at 9-second spacing, as did Ottawa DevOps Engineer and Ottawa Site Reliability Engineer. Eluta then redirected to its \"User Verification\" page (HTTP 302) on Ottawa Cloud Engineer; the run stopped without bypassing it. The remaining 18 city passes (Ottawa Cloud/Infrastructure, Kingston, Brockville, Cornwall and Montréal × 4 titles) were not run and the same page also blocked the browser tab. Marc needs to clear the check in Chrome before they can be rerun.",
-        "Remote inventory: 95 unique cache IDs across the 10 passes; 27 showed an age of under 3 days. In-family within that window: Smile Cloud Engineer Automation (filed under LinkedIn), Tailscale Infrastructure Engineer (already Applied; read from the employer Greenhouse API), Samsara infrastructure roles (employer API). Cache pages themselves could not be fetched once verification started."
-      ]
-    },
-    {
-      "heading": "October 13 run — past 24 hours (complete)",
-      "items": [
-        "The first 13 passes ran by script at 4 s spacing; Eluta then redirected to its reCAPTCHA sandbox. The run stopped, Marc cleared the verification in his browser, and the remaining 17 city passes were rerun at 9 s spacing with no further block. No verification was bypassed.",
-        "Passes: 10 remote title passes (10 cards each), Ottawa 4 titles, Kingston 4, Brockville 4, Cornwall 4 and Montréal 4 — all returned 200 on the final run; Kingston/Brockville/Cornwall results were mostly non-IT.",
-        "Within 24 hours (card age 'today' or hours): Wind River Senior DevOps Engineer (already InProcess), McKesson platform operations (already Skipped, French copy), plus the three unreadable shells above and several non-family postings. All dated cache pages for in-family remote roles (Practice Better, Mogo/Orion DevOps Staff Platform, CaseWare Staff SRE, Instacart, Tailscale Customer Reliability, Boson AI, ClubRunner, Babylist, Artificial.Agency, AlayaCare) were indexed between 14 Jul and 1 Oct and are outside the 24-hour window."
-      ]
-    },
-    {
-      "heading": "October 12 rerun — city passes (completes the earlier partial run)",
-      "items": [
-        "The user cleared Eluta's reCAPTCHA in Chrome; the 17 blocked city passes (Ottawa Infrastructure, Kingston, Brockville, Cornwall and Montréal x 4) then ran without another challenge.",
-        "<b>Ottawa, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Kingston, ON — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Kingston, ON — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Kingston, ON — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 3 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Kingston, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Brockville, ON — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Brockville, ON — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 4 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Brockville, ON — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Brockville, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 6 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Cornwall, ON — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Cornwall, ON — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 1 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Cornwall, ON — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Cornwall, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 4 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Montreal, QC — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Montreal, QC — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Montreal, QC — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
-        "<b>Montreal, QC — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)"
-      ]
-    },
-    {
-      "heading": "October 12 note on the earlier partial run",
-      "items": [
-        "The previous note on this date recorded 13 of 30 passes. This rerun supersedes it: 30 of 30 passes are now complete."
-      ]
-    },
-    {
-      "heading": "October 12 pass audit (past 48 hours) — INCOMPLETE",
-      "items": [
-        "Eluta shows a posted age on each result; ages up to two days (today, 1–2 days, hours) were treated as in-window. Results with no age shown were checked against the ledger.",
-        "The first 13 searches completed; from Ottawa Infrastructure Engineer onward every request (including cache pages) was redirected to <code>/sandbox</code>, the reCAPTCHA human-verification page. I did not click through. To finish, open Eluta in your own browser, clear the check, and ask me to rerun the city passes with longer spacing.",
-        "Most in-window remote results were already in the ledger (Web.com, Vena, Kinaxis, Coalition, ClubRunner, Huron, CaseWare, Barracuda, commonsku, Bounteous) and were not rescored."
-      ]
-    },
-    {
-      "heading": "October 12 pass list",
-      "items": [
-        "<b>remote — DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25269978,19675816,25432235,25419015,25415266,25411503,25401987,25398046,25003641,25360818",
-        "<b>remote — Senior DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24911233,25475117,25472986,25302403,25269978,25468742,25461583,24572360,25246784,19675816",
-        "<b>remote — Staff DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25480426,25272472,25140775,25460339,25233166,25398046,25190160,25339662,25314173,25416179",
-        "<b>remote — Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25275110,25475117,25246784,25443500,25036861,25338843,25195032,25014231,25190160,25367768",
-        "<b>remote — Senior Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24911233,25475117,24895127,25249854,25246784,25443500,25054806,25190160,25367768,24987206",
-        "<b>remote — Staff Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25480426,25140775,25054806,25051977,25190160,24933437,25149957,25126699,25313663,25347610",
-        "<b>remote — Cloud Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25281029,25302403,25461319,25460339,24572360,25457528,25441873,25054806,25214890,25153505",
-        "<b>remote — DevSecOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24489060,24255525,25413666,25306496,25382128,24521470,25472267,25463370,25449145,25249029",
-        "<b>remote — Infrastructure Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24265467,24056245,25112143,24600871,25407113,25214890,25205566,24592341,25319240,25125923",
-        "<b>remote — Senior Infrastructure Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24911233,25276585,25279450,25284621,25104227,25104519,25475680,25475117,25472986,25471122",
-        "<b>Ottawa, ON — DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25446301,25446689,24998229,25131230,25455123,25451622,25321858,24608961,25285466,25410704",
-        "<b>Ottawa, ON — Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25476229,25429702,25427875,25387579,25199330,25321858,25305018,24433655,25396867,25131230",
-        "<b>Ottawa, ON — Cloud Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25476229,25090793,25427875,25404206,25387579,24998226,24998244,25107004,25184831,25107000",
-        "<b>Ottawa, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Kingston, ON — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Kingston, ON — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Kingston, ON — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Kingston, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Brockville, ON — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Brockville, ON — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Brockville, ON — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Brockville, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Cornwall, ON — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Cornwall, ON — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Cornwall, ON — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Cornwall, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Montreal, QC — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Montreal, QC — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Montreal, QC — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
-        "<b>Montreal, QC — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none"
-      ]
-    },
-    {
-      "heading": "October 9 pass audit",
-      "items": [
-        "Remote (<code>filter-remote_jobs=only</code>): DevOps Engineer 199 · Senior DevOps Engineer 97 · Staff DevOps Engineer 23 · Site Reliability Engineer 102 · Senior Site Reliability Engineer 50 · Staff Site Reliability Engineer 20 · Cloud Engineer 722 · DevSecOps Engineer 18 · Infrastructure Engineer 755 · Senior Infrastructure Engineer 373 (first 10 collected on each).",
-        "City passes (DevOps / SRE / Cloud / Infrastructure Engineer): Ottawa 71 / 100 / 250 / 528 · Kingston 0 / 12 (collected) / 3 / 66 · Brockville 1 / 4 / 1 / 6 collected · Cornwall 1 / 1 / 1 / 4 collected · Montréal 296 / 351 / 608 / 1617. Several Kingston/Brockville/Cornwall results are civil/industrial matches for 'infrastructure' or 'site' and were set aside as unrelated occupations.",
-        "<b>Method fix:</b> the first pass of city searches hit Eluta's 'User Verification' interstitial after about 13 searches; it was not clicked or bypassed and cleared on its own, after which the interrupted passes were rerun with 3-second spacing.",
-        "<b>Recovery path:</b> Eluta cache pages that are empty shells can be read from <code>https://www.eluta.ca/cache_open?u=&lt;id&gt;:&lt;domain&gt;</code>, which returns the employer's JSON (Workday, BambooHR, Workable, Eightfold). Cache IDs are eight digits — a slicing slip in my first extraction dropped the leading digit, which is why early cache fetches returned 'Page not found'.",
-        "Known rows (already scored 2026-10-07, not rescored): Mogo, Babylist, theScore, Think Research, Degree, Later, Tecsys, SAP Montréal, MMIST (Ottawa on-site), DXC (clearance + on-site) and others in the table below."
-      ]
-    },
-    {
-      "heading": "October 7 pass audit (user cleared one Eluta verification page mid-run)",
-      "items": [
-        "<b>Remote passes (10 of 10 Complete)</b>, <code>filter-remote_jobs=only</code>, first 10 results each: DevOps Engineer · Senior DevOps Engineer · Staff DevOps Engineer · Site Reliability Engineer · Senior Site Reliability Engineer · Staff Site Reliability Engineer · Cloud Engineer · DevSecOps Engineer · Infrastructure Engineer · Senior Infrastructure Engineer — 10 results each.",
-        "<b>City passes (16 of 16 Complete)</b> with the city accepted in the location field and no Remote filter, for DevOps Engineer, Site Reliability Engineer and Infrastructure Engineer: Ottawa 10/10/10 · Kingston 0/10/10 · Brockville 0/4/6 · Cornwall 4 (DevOps)/1 (SRE)/4 (Infrastructure) · Montréal 10/10/10. Kingston and Brockville DevOps pages rendered normally and showed Eluta's broadened fallback or zero hits; the SRE/Infrastructure pages mostly returned civil, electrical, environmental and maintenance roles for those cities.",
-        "<b>Verification event:</b> Eluta displayed its 'are you a human?' page on the Cornwall pass; I stopped without clicking through, you cleared it in your own browser, and the remaining passes and cache fetches ran at 7–9 second spacing without a second block. Cornwall DevOps was rerun afterwards.",
-        "157 unique cache IDs; the rest of the pool is non-engineering (civil, electrical, nursing, maintenance, sales) or software-engineering roles. 56 in-family or ambiguous postings were fetched through the cache path: 31 returned real text and were scored; 23 returned the 712-character shell and are listed under Could not validate; Mist Mobility and Spring Financial were recovered from their BambooHR pages and scored.",
-        "Roles already in the ledger were matched and left alone: StackAdapt (both), Bounteous, Vena, Practice Better, Leap Tools, theScore/Penn, CaseWare, Xsolla (SRE and Platform), Boson AI, Tecsys, Valtech, Kinaxis, Barracuda, CMHC, Empire Life and Cresta."
-      ]
-    },
-    {
-      "heading": "October 5 full-read pass (Marc: open more, do not filter by company)",
-      "items": [
-        "Re-read every Eluta result instead of triaging on title/company. Method: each result’s cached copy (<code>/cache?u=&lt;id&gt;</code>) was fetched, giving full text for 69 remote results and 33 Ottawa/Montréal city results (cache pages for about 8 city results were empty JavaScript shells). Roles were scored on the full description regardless of whether the employer already appears in <code>applications.md</code>; duplicates were matched on employer + role only.",
-        "<b>Five new roles filed:</b> Deloitte Data Platform DevOps Senior Consultant (7), Brain Finance DevOps Engineer (6), Barracuda Cloud SRE II (6), GoMaterials Senior Software Engineer – Data &amp; ML Platform (5), commonsku DevOps Engineer II (5).",
-        "<b>GE Vernova checked on Marc’s hypothesis</b> (a domain-software employer may still need DevOps/SRE): both postings opened in full — the Electricity Markets role is a market-management-system technical lead and the T&amp;D role is grid software consulting; neither has real deployment or reliability scope, so both scored 0.",
-        "Cached copies are Eluta snapshots (indexed dates range from June to October 5) — freshness is not confirmed for older ones."
-      ]
-    },
-    {
-      "heading": "October 5 city-pass retry (after Marc cleared Eluta’s human check)",
-      "items": [
-        "Marc cleared the human-verification page in the browser, then each pass was re-run by navigation (no in-page fetches), one per page load: <b>Montréal DevOps Engineer 10</b> and <b>Montréal Site Reliability Engineer 10</b> results; <b>Kingston, Brockville and Cornwall DevOps Engineer: 0 blocks each</b> (the pages rendered normally — genuine Zero results). The earlier zeros for those cities and Montréal were the verification block, not real. Ottawa was completed earlier. All geography passes are now Complete or Zero results at the DevOps/SRE level.",
-        "Montréal results reviewed from the listing only (Eluta’s cache path was not used): Koïos Intelligence Senior DevOps Engineer scored 4 (GCP/Kubernetes stack, $80–121k estimate); Valtech Site Reliability Expert is the same title already Skipped on 2026-09-19; SAP and Tecsys DevOps/SRE roles are already in the ledger. Brain Finance DevOps Engineer, Unity DevOps, Mannarino DevOps Tools Specialist, Morgan Stanley System Reliability Specialist (hybrid) and Deloitte Data Platform DevOps Senior Consultant were not opened."
-      ]
-    },
-    {
-      "heading": "October 5 pass audit",
-      "items": [
-        "Remote queries (filter-remote_jobs=only, first 10 results each): DevOps Engineer 10 · Senior DevOps Engineer 10 · Staff DevOps Engineer 10 · Site Reliability Engineer 10 · Senior Site Reliability Engineer 10 · Staff Site Reliability Engineer 10 · Cloud Engineer 10 · DevSecOps Engineer 10 · Infrastructure Engineer 10 · Senior Infrastructure Engineer 10 — 69 unique results; 27 matched employers already in applications.md. City passes (DevOps Engineer and Site Reliability Engineer, no remote filter): Ottawa 10/10 · Kingston 0/0 · Brockville 0/0 · Cornwall 0/0 · Montréal 0/0 — the zero returns for Montréal conflict with the 280 results seen on 2026-09-22, so the city value is not being accepted through a direct URL and that pass is Incomplete. Cache-page validation was not attempted this run; four candidates were checked against employer or aggregator copies instead."
-      ]
-    },
-    {
-      "heading": "September 22 pass audit (continuation of 2026-09-21's leftover scope)",
-      "items": [
-        "Remote-only passes completed, first 10 results reviewed each: Staff DevOps Engineer (26 total), Senior Site Reliability Engineer (53 total), Staff Site Reliability Engineer (26 total), Senior Infrastructure Engineer (379 total, only first 10 reviewed — extremely broad term). DevOps Engineer spot-re-verified (191 total) — same top-10 inventory as 2026-09-21, no change, not re-scored.",
-        "City passes: Kingston, ON | DevOps Engineer | Complete — Zero results. Brockville, ON | DevOps Engineer | Complete — Zero results. Cornwall, ON | DevOps Engineer | Complete — 1 result (Xplore Inc., scored Out of scope). Montréal, QC | DevOps Engineer | 280 total results, first 10 reviewed | Complete.",
-        "Eluta's inline \"Show more\" expansion and the cache-link fallback were both unreliable again this run — worked for HostPapa and Baby List, failed for Degree Inc. and Genetec/McKesson/SAP/Tecsys (recovered via WebSearch to each employer's own canonical career page instead, per job_sources.md's employer-canonical-URL convention).",
-        "Ottawa city pass and the 6 remote keywords already completed 2026-09-21 (DevOps Engineer, Senior DevOps Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Infrastructure Engineer) were not re-run today given same-day inventory turnover is typically low — DevOps Engineer's spot-check above confirms this. Worth a full fresh pass on all 10 remote keywords + Ottawa next time inventory has had more days to turn over.",
-        "No CAPTCHA, sign-in, application, alert subscription, email action or other write-side action occurred."
-      ]
-    },
-    {
-      "heading": "September 21 pass audit",
-      "items": [
-        "Remote-only passes completed, first 10 results reviewed each: DevOps Engineer (190), Senior DevOps Engineer (99), Staff DevOps Engineer (25), Site Reliability Engineer (108), Senior Site Reliability Engineer (52), Staff Site Reliability Engineer (28), Cloud Engineer (698), DevSecOps Engineer (14), Infrastructure Engineer (739), and Senior Infrastructure Engineer (374).",
-        "Ottawa | DevOps Engineer | 61 rendered results; first 10 reviewed | Complete. Montréal | DevOps Engineer | first 10 reviewed | Complete.",
-        "Kingston, Brockville and Cornwall | DevOps Engineer | attempted through the visible city field | Incomplete — the rendered page did not reliably preserve/accept the requested city and returned inconsistent inventory, so these are not claimed as zero-result passes.",
-        "No CAPTCHA, sign-in, application, alert subscription, email action or other write-side action occurred."
-      ]
-    },
-    {
-      "heading": "Correction — same-day scoring error",
-      "items": [
-        "<b>Mogo/Orion Digital \"DevOps Staff Platform Engineer\"</b> was scored 7 and reported as a top new pick earlier today via the BuiltIn run, then resurfaced here on Eluta. It's the exact same posting already logged <code>Rejected</code> in applications.md on 2026-09-16 (score 4) — missed during the BuiltIn dedup check because applications.md recorded the company as \"Orion Digital\" (the legal/parent entity) while BuiltIn and Eluta both show the consumer brand \"Mogo.\" <code>reports/data/builtin.json</code> has been corrected to reflect this as a pipeline match, not a fresh recommendation. Flagging here too since it was reported to Marc as a top pick earlier in the same session."
-      ]
-    },
-    {
-      "heading": "Recurring hard-gate — PLATO",
-      "items": [
-        "<b>PLATO</b> (an Indigenous-owned staffing/recruitment firm — Marc does not qualify per the Indigenous-membership hiring requirement in profile.md's Red Flags) appeared 4 separate times across today's searches under different postings: \"DevOps Engineer (Azure ARO) remote contract\" ($75-100/hr), \"QA Automation Engineer (Salesforce Financial Services Cloud)\", \"DevSecOps\"-adjacent copy on the same ARO posting, and \"Infrastructure Engineer (remote contract)\" ($75-100/hr). All hard-gated, none scored, consistent with the standing profile.md rule."
-      ]
-    },
-    {
-      "heading": "Pipeline matches confirmed this run — not rescored/refiled",
-      "items": [
-        "Already <code>Applied</code>: Case IQ DevOps Engineer, Web.com/Newfold Senior DevOps Engineer AI Platform, Warner Music DevOps Engineer, Jonas/Computrition AI-First DevOps Engineer, Empire Life DevSecOps Engineer (Infrastructure), Cresta Infrastructure Engineer/SRE, Xsolla Platform Engineer (DevOps Engineer), Movable Ink Senior Site Reliability Engineer, Autodesk Senior DevOps Developer, Tailscale Infrastructure Engineer (same company+title as a Manual-filed 2026-07-07 row; this run surfaced full comp, $218,420–$273,360 CAD, worth Marc double-checking it's the same req given the 2.5-month gap).",
-        "Already <code>Rejected</code>: Mogo/Orion Digital DevOps Staff Platform Engineer (see correction above), StackAdapt DevOps Engineer (Kubernetes team), Leap Tools DevOps Engineer, Movable Ink Lead Site Reliability Engineer, BMO Financial Group Senior Cloud Engineer.",
-        "Already <code>New</code>: Xsolla Site Reliability Engineer (Monetization), Valtech Digital Site Reliability Expert, Magnet Forensics Senior Site Reliability Engineer (Cloud Networking & IaC — a different role than the newly-seen \"Director, Cloud Engineering\" at the same company, see below).",
-        "StackAdapt's \"Senior DevOps Engineer (Kubernetes team)\" also resurfaced here — same cross-posted role already covered by today's BuiltIn/LinkedIn correction note (LinkedIn scored it 4, BuiltIn's fuller read scored it 7)."
-      ]
-    },
-    {
-      "heading": "Not opened this run — plausible backlog for next pass",
-      "items": [
-        "Toronto/GTA on-site or hybrid, not validated for cadence: Fullscript \"Director of Engineering, Developer Infrastructure\" (Ottawa-tagged but likely leadership scope), Cerence \"Site Reliability Engineering Team Lead\" (Principal/people-management scope), Magnet Forensics \"Director, Cloud Engineering\" (leadership scope, distinct from the known New SRE role at the same company).",
-        "Genuinely worth a follow-up open next run: Xsolla \"Backend Software Engineer (Infrastructure-Focused)\" ($130-160K, Kubernetes-as-first-class-concern) and Xsolla \"Senior Network/Infrastructure Engineer\" (Montréal QC, $120-160K — a reachable city, not yet validated for office cadence).",
-        "Ottawa-area, not validated for onsite/hybrid/remote cadence: Sander Geophysics \"System Administrator, DevOps and Infrastructure\" (Terraform/OpenTofu, Prometheus/Grafana/Loki, VMware/Proxmox — real overlap), Wind River International ×2 (Kanata — \"Senior DevOps Engineer\" $95-120K and \"Member of Technical Staff - DevOps\" $110-139K), Portage CyberTech \"Spécialiste DevOps / DevOps Specialist\" (Gatineau QC, hybrid — Gatineau is across the river from Ottawa but not on the explicit reachable-city list; worth asking Marc whether to treat it as Ottawa-equivalent before scoring), Mist Mobility DevOps Engineer (Ottawa, on-site, $90-110K — likely below the $100K remote floor's spirit and probably fully on-site, low priority).",
-        "Junior/intern scope, not opened: Kinaxis Co-op/Intern SRE, Vena Solutions Site Reliability Developer 1 (2+ years), Vosyn ×2 Master's-level internships (equity-only, no cash comp).",
-        "Skipped keywords entirely this run: Staff DevOps Engineer, Senior Site Reliability Engineer, Staff Site Reliability Engineer, Senior Infrastructure Engineer (4 of the 10 default remote keywords). Skipped city passes entirely: Kingston, Brockville, Cornwall, Montréal (4 of the 5 default hybrid passes) — Ottawa was the only city pass run this time."
-      ]
-    },
-    {
-      "heading": "Scope exclusions — reviewed and excluded",
-      "items": [
-        "Not target-family center of gravity: ServiceNow Senior Database Engineer, Vancity Senior Integration Engineer, Architecture in Motion Senior Data Engineer (AI LLM Solutions — also offshore-only locations: Pakistan/Mexico/India/Morocco), Infoblox Senior Sales Engineer, Riva Senior Engineering Manager, Roofr Senior Security Engineer, StackAdapt Senior Quality Engineer, Laivly Senior Cloud Engineer (repeat AWS-hard-gate exclusion per job_sources.md history), Clir Cloud Network Engineer (junior, $40-45K), Smile CDR/Smile Digital Health Senior Cloud Security Engineer (security-architecture center of gravity, cross-posted twice), Grantek \"Leader, AI Platform Engineer\" (leadership), Arctic Wolf \"VP, Endpoint Platform Engineering\" (executive), Empire Life Machine Learning Engineer, MEDFAR Cloud Security Specialist (security + a known Quebec-residency flag from prior runs), Cybeats Technical Customer Success Manager ×2, Nesto Senior Security Developer ×2, Ada \"Security and Infrastructure Engineer\" (security-operations center of gravity), Affirm \"Senior Software Engineer, Backend (Batch Infrastructure)\" (reads as an EM-track people-leadership role, not IC), Thumbtack \"Staff Software Engineer, AI/ML Infrastructure\" (ML-infra specialization, not core DevOps/Platform/SRE), Dominion Dynamics \"Senior DevOps/Platform Engineer\" (Ottawa/Toronto, explicitly On-Site, defense/sovereignty-flavored)."
-      ]
-    },
-    {
-      "heading": "Run notes",
-      "items": [
-        "Eluta's result pages now show a real snippet directly in search results (a change from prior runs) and, for most postings, an inline \"Show more\" expansion that reveals the full posting without needing the cache-link workaround — used successfully for Braze and Kinaxis. It did not work reliably for every posting (theScore), consistent with prior runs' documented unreliability; scored from the listing summary in that case per established practice in this repo's history.",
-        "Ran DevOps Engineer, Senior DevOps Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, and Infrastructure Engineer as remote-filtered passes, plus one Ottawa city pass (unfiltered by remote, since hybrid discovery intentionally doesn't use the remote filter). Stopped there given the scope already covered today across 8 other boards — the remaining 4 remote keywords and 4 city passes (Kingston, Brockville, Cornwall, Montréal) are a reasonable next-run target, not run this time.",
-        "\"Cloud Engineer\" and \"Infrastructure Engineer\" are both extremely broad terms on this site (695 and 728 total results respectively) — only the first page of each was reviewed, consistent with the skill's 10-result-per-query boundary.",
-        "No CAPTCHA, verification prompt, or write-side action occurred."
-      ]
-    }
-  ],
-  "method": "<b>October 18 run (INCOMPLETE, 12 of 35 passes):</b> Eluta served a human-verification page; nothing was bypassed. Remote role passes and two Ottawa passes rendered; cache pages were blocked, so validation used employer career pages. Earlier runs follow. October 14 run: INCOMPLETE, 12 of 30 passes (verification page). Oct 13 (complete, 30 of 30 passes). Oct 12 (COMPLETE, 30 of 30 passes after verification was cleared). Oct 12 (INCOMPLETE, 13 of 30 passes): verification page hit mid-run. October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
+ "board": "Eluta",
+ "run_date": "2026-10-18",
+ "eyebrow": "Eluta.ca · Canadian employer career-page index",
+ "title": "SRE, Platform & DevOps opportunities",
+ "lede": "Full run of all 35 mandatory passes (10 remote, 25 reachable-city). Scores measure technical and domain fit only.",
+ "latest_update": "October 18, 2026 — COMPLETE: 35 of 35 passes (27 with results, 8 zero-result city passes); 194 unique postings; 24 read in full or via employer pages; 2 newly auto-filed (MMIST DevOps Engineer 6, SAP SRE 5).",
+ "stats": [
+  {
+   "value": "35 of 35",
+   "label": "passes completed"
+  },
+  {
+   "value": 194,
+   "label": "unique postings collected"
+  },
+  {
+   "value": 24,
+   "label": "read in full"
+  },
+  {
+   "value": 2,
+   "label": "new rows auto-filed"
+  }
+ ],
+ "rows": [
+  {
+   "score": 2,
+   "family": "Platform",
+   "title": "Senior Software Engineer I/II - Infrastructure",
+   "company": "Samsara",
+   "location": "Remote — Canada",
+   "salary": "CAD $142,800–$184,800/yr base",
+   "gap": "Technical: leads multi-account, multi-region AWS compute/stateful-systems infrastructure at scale — hard AWS/cluster-ownership gate. Practical: Compromise/Target on pay; posting dated 2026-09-25 (Eluta last-seen 1 day). Resume: Platform.",
+   "url": "https://www.samsara.com/company/careers/roles/7997916?gh_jid=7997916",
+   "status": ""
+  },
+  {
+   "score": 6,
+   "family": "Platform",
+   "title": "Infrastructure Engineer (Remote, Canada)",
+   "company": "Tailscale",
+   "location": "Remote — Canada",
+   "salary": "CAD $218,420–$273,360/yr base",
+   "gap": "Technical: CI/CD, infrastructure as code, observability and incident ownership fit; Kubernetes in production is a plus and AWS preferred, Go a plus. Practical: Target on pay. Already Applied on 2026-07-07 (Manual row, same title) — not re-filed. Resume: Platform.",
+   "url": "https://job-boards.greenhouse.io/tailscale/jobs/4733403005",
+   "status": "Applied — existing pipeline row (Tailscale, Infrastructure Engineer)"
+  },
+  {
+   "score": 6,
+   "family": "Platform",
+   "title": "Cloud Engineer, Automation (Remote Ontario)",
+   "company": "Smile Digital Health",
+   "location": "Remote — Ontario (Toronto ON, Work Remotely)",
+   "salary": "CAD $120,000–$140,000/yr (per LinkedIn/Built In)",
+   "gap": "Technical/Practical: see LinkedIn 4479050355; employer Lever copy indexed by Eluta (cache 25488595, plus a Smile CDR duplicate 25488811). Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25488595:jobs.lever.co",
+   "status": "New"
+  },
+  {
+   "score": 5,
+   "family": "DevOps",
+   "title": "Intermediate DevOps Engineer",
+   "company": "Practice Better",
+   "location": "Remote — Canada only (posting says Canadian-based candidates)",
+   "salary": "$110,000 (per Eluta card; currency not labelled)",
+   "gap": "Technical: AWS infrastructure with Terraform/OpenTofu, CI/CD, incident response, SLOs and observability for a .NET/Rails stack — Terraform is a use-not-author skill and the AWS requirement meets the dated Tink build; 'intermediate' level is below Marc's seniority. Practical: Compromise — base about $110k, below the ideal, above the $100k remote floor. Cached copy indexed 25 Sep 2026 and the card shows no age, so freshness is unconfirmed; not auto-filed. Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25401987:job-boards.greenhouse.io",
+   "status": "Freshness unconfirmed — cached copy 25 Sep 2026"
+  },
+  {
+   "score": 2,
+   "family": "SRE",
+   "title": "Site Reliability Engineer — AI training infrastructure",
+   "company": "Boson AI",
+   "location": "Remote or Toronto",
+   "salary": "$125,000 (per Eluta card)",
+   "gap": "Technical: GPU clusters, high-performance networking, storage and scheduler operations for AI training — no matching evidence. Cached copy indexed 14 Jul 2026, so likely stale. Practical: Confirm. Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25014231:jobs.lever.co",
+   "status": "Freshness unconfirmed — cached copy 14 Jul 2026"
+  },
+  {
+   "score": 0,
+   "family": "DevOps",
+   "title": "Staff DevSecOps Specialist",
+   "company": "AlayaCare",
+   "location": "Montréal (remote/hybrid not stated)",
+   "salary": "Not stated",
+   "gap": "Out of scope: staff-level security-program role in the Information Security team (vulnerability-management tooling and security engineering direction). Cached copy indexed 21 Sep 2026.",
+   "url": "https://www.eluta.ca/cache?u=25354086:job-boards.greenhouse.io",
+   "status": "Skipped — Out of scope: security engineering"
+  },
+  {
+   "score": -1,
+   "family": "Platform",
+   "title": "Bilingual Senior Specialist, Cloud Infrastructure Operations Engineering",
+   "company": "CMHC",
+   "location": "Hybrid — Montréal, Ottawa or Toronto; days not stated",
+   "salary": "CAD $104,180–$130,225",
+   "gap": "Hard gate: Secret security clearance required. Otherwise a plausible cloud-operations role (permanent, bilingual BBB). Cached copy indexed 8 Oct 2026. Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25468645:careers.cmhc-schl.gc.ca",
+   "status": "Skipped — Ineligible: Secret clearance"
+  },
+  {
+   "score": 4,
+   "family": "Platform",
+   "title": "DevOps Staff Platform Engineer (agentic-engineering platform)",
+   "company": "Mogo Inc. (Orion)",
+   "location": "Remote — Canada company, fully remote; Canada eligibility implied by listing",
+   "salary": "CAD $135,000–$170,000",
+   "gap": "Wants genuine production cloud depth in AWS and/or OCI plus Staff-level agent-execution platform ownership; AI-validation practice is a real overlap",
+   "url": "https://www.eluta.ca/cache?u=25398046:mogo.applytojob.com",
+   "status": ""
+  },
+  {
+   "score": 4,
+   "family": "SRE",
+   "title": "Staff Engineer, Site Reliability",
+   "company": "Babylist",
+   "location": "Remote — Canada",
+   "salary": "Not stated",
+   "gap": "AWS at scale (EKS, RDS, networking) and production Kubernetes operations",
+   "url": "https://www.eluta.ca/cache?u=24933437:job-boards.greenhouse.io",
+   "status": ""
+  },
+  {
+   "score": 5,
+   "family": "SRE",
+   "title": "Senior DevOps Engineer (Koïos Intelligence)",
+   "company": "Koïos Intelligence Inc.",
+   "location": "Montréal, QC — on-site teamwork emphasised; cadence not stated",
+   "salary": "Not stated",
+   "gap": "Posting text carries a 2023-07-19 date and asks for 8+ years; stale",
+   "url": "https://www.eluta.ca/cache?u=21223767:koiosintelligence.ca",
+   "status": "Likely expired — page dated 2023-07-19"
+  },
+  {
+   "score": 3,
+   "family": "Platform",
+   "title": "Senior Cloud Engineer",
+   "company": "Think Research",
+   "location": "Remote — Canada",
+   "salary": "CAD $130,000–$150,000",
+   "gap": "GCP deployments plus DBA support and 24x7 production duties; not a platform-engineering centre",
+   "url": "https://www.eluta.ca/cache?u=25441873:recruiting.ultipro.ca",
+   "status": ""
+  },
+  {
+   "score": 3,
+   "family": "SRE",
+   "title": "Site Reliability Consultant",
+   "company": "Pythian Services Inc.",
+   "location": "Ottawa, ON",
+   "salary": "Not stated",
+   "gap": "Operating Kubernetes/Istio clusters with Go, PKI and Google Cloud; Kubernetes administration depth",
+   "url": "https://www.eluta.ca/cache?u=24896837:ats.rippling.com",
+   "status": ""
+  },
+  {
+   "score": 0,
+   "family": "DevOps",
+   "title": "Customer Reliability Engineer",
+   "company": "Tailscale Inc.",
+   "location": "Remote — Canada",
+   "salary": "CAD $154,100–$192,960",
+   "gap": "Customer-escalation/support engineering rather than infrastructure or reliability engineering",
+   "url": "https://www.eluta.ca/cache?u=25195032:job-boards.greenhouse.io",
+   "status": "Skipped — Out of scope: customer escalation support"
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Cloud Infrastructure Engineer, Level 2 (SAS Viya)",
+   "company": "Donna Cona Inc.",
+   "location": "Ottawa, ON — incorporated sub-contract",
+   "salary": "Not stated",
+   "gap": "SAS Viya 4 platform administration with 5 years AWS and Reliability clearance — analytics-platform administration, not SRE/platform/DevOps",
+   "url": "https://www.eluta.ca/cache?u=25347472:www.donnacona.com",
+   "status": "Skipped — Out of scope: SAS Viya administration"
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Platform & Infrastructure Engineer (quantum control hardware)",
+   "company": "Q-Block Computing Inc.",
+   "location": "Ottawa, ON",
+   "salary": "Not stated",
+   "gap": "Embedded Linux and networking for quantum control hardware; government clearance may apply",
+   "url": "https://www.eluta.ca/cache?u=24533979:q-block-computing.breezy.hr",
+   "status": "Skipped — Out of scope: embedded/hardware infrastructure"
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Staff Software Engineer - Electricity Markets",
+   "company": "GE Vernova Inc.",
+   "location": "Remote (Ontario listed among locations)",
+   "salary": "CAD $126,418–$189,627",
+   "gap": "Writing and supporting the Market Management System software itself; Kubernetes appears only in passing",
+   "url": "https://www.eluta.ca/cache?u=25404746:careers.gevernova.com",
+   "status": "Skipped — Out of scope: market-system software engineering"
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Staff Engineer (Platform)",
+   "company": "Later Media Inc.",
+   "location": "Remote; Vancouver office",
+   "salary": "OTE CAD $170,000–$200,000",
+   "gap": "Backend C#/TypeScript service development at Staff level, with infrastructure as a secondary duty",
+   "url": "https://www.eluta.ca/cache?u=25233166:job-boards.greenhouse.io",
+   "status": "Skipped — Out of scope: backend services"
+  },
+  {
+   "score": -1,
+   "family": "Platform",
+   "title": "DevOps Engineer - BTP Site Reliability Engineering team",
+   "company": "SAP Canada Inc.",
+   "location": "Montréal, QC — hybrid, in office 3 days/week",
+   "salary": "Not stated",
+   "gap": "Ineligible — Montréal cadence is 3 office days/week",
+   "url": "https://www.eluta.ca/cache?u=25177136:jobs.sap.com",
+   "status": "Skipped — Montréal 3 office days"
+  },
+  {
+   "score": -1,
+   "family": "SRE",
+   "title": "DevOps Engineer - Équipe de Site Reliability",
+   "company": "SAP Canada Inc.",
+   "location": "Montréal, QC — hybrid, in office 3 days/week",
+   "salary": "Not stated",
+   "gap": "Ineligible — Montréal cadence is 3 office days/week (French copy of the BTP SRE requisition)",
+   "url": "https://www.eluta.ca/cache?u=25177131:jobs.sap.com",
+   "status": "Skipped — Montréal 3 office days"
+  },
+  {
+   "score": -1,
+   "family": "DevOps",
+   "title": "DevOps Engineer (on-premises, no public cloud)",
+   "company": "Mist Mobility Integrated Systems Technology",
+   "location": "Ottawa, ON — on-site",
+   "salary": "Not stated",
+   "gap": "Ineligible — on-site only; secure on-premises defense-aerospace environment with no public cloud",
+   "url": "https://www.eluta.ca/cache?u=25446301:mmist.bamboohr.com",
+   "status": "Skipped — Ottawa on-site"
+  },
+  {
+   "score": -1,
+   "family": "DevOps",
+   "title": "DevOps Engineer II (Contract)",
+   "company": "Spring Financial Inc.",
+   "location": "Mexico (Remote) per employer page",
+   "salary": "Not stated",
+   "gap": "Ineligible — employer listing is Spring Technology Mexico, remote for Mexico-based candidates",
+   "url": "https://www.eluta.ca/cache?u=25415266:springfinancial.bamboohr.com",
+   "status": "Skipped — Mexico-based role"
+  },
+  {
+   "score": -1,
+   "family": "Platform",
+   "title": "Senior Infrastructure Engineer (hardware/systems integration)",
+   "company": "Jatom Systems Inc.",
+   "location": "Kanata, ON",
+   "salary": "Not stated",
+   "gap": "Ineligible — Top Secret clearance and hardware deployment scope",
+   "url": "https://www.eluta.ca/cache?u=25333717:recruiting.ultipro.ca",
+   "status": "Skipped — Top Secret clearance"
+  },
+  {
+   "score": 6,
+   "family": "SRE",
+   "title": "Senior Site Reliability Engineer I",
+   "company": "Braze",
+   "status": "Skipped",
+   "location": "Toronto ON, tagged Remote (full-time)",
+   "salary": "CAD $153,815–$277,000/year (OTE $172,000–$308,400)",
+   "gap": "Deep hands-on NGINX ingress-layer mastery and Ruby/Go programming are both explicitly required — Marc's languages are Python/Bash/C++/Java, not Ruby or Go. Kubernetes, Terraform/Ansible IaC, SLO/error-budget ownership, on-call/RCA practice, and observability (Prometheus/Grafana/Datadog nice-to-have) all overlap well otherwise.",
+   "url": "https://www.eluta.ca/search?q=Senior+DevOps+Engineer&filter-remote_jobs=only"
+  },
+  {
+   "score": 6,
+   "family": "SRE",
+   "title": "Senior Site Reliability Engineer",
+   "company": "theScore",
+   "location": "Work Remotely (Canada)",
+   "salary": "CAD $145,000–$193,000/year",
+   "gap": "Scored from the Eluta listing summary only — the inline expansion didn't reliably open for this posting despite repeated attempts, so full requirements (in particular any hard GCP/AWS ownership bar) are unconfirmed. What the summary shows is a strong match: GCP/AWS infrastructure ownership, ArgoCD/Helm/GitHub Actions platform tooling, observability and incident response across regulated jurisdictions (sports betting).",
+   "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer&filter-remote_jobs=only"
+  },
+  {
+   "score": 7,
+   "family": "SRE",
+   "title": "Senior Lead Engineer, Platform Operations & Observability / Ingénieur principal, Opérations de plateforme et observabilité",
+   "company": "McKesson Canada",
+   "status": "New",
+   "location": "Saint-Laurent (Montréal), QC — hybrid, 2 days/week mandatory (Mon/Wed) at the Dobrin office",
+   "salary": "CAD $94,400–$157,300/year",
+   "gap": "Range's low end sits below the $120k Montréal hybrid-FTE floor, but the top clears it comfortably and 7+ years SRE/Platform/DevOps seniority plus healthcare-regulated scope argues for upper-range placement — confirm in conversation. Otherwise an excellent match: incident management/RCA/MTTR ownership, CI/CD and change governance, Dynatrace explicitly preferred (direct Desjardins overlap), Azure/Kubernetes preferred, technical leadership and mentorship without formal people-management — mirrors Marc's 'leads without authority' positioning.",
+   "url": "https://careers.mckesson.com/en/job/saint-laurent/senior-lead-engineer-platform-operations-and-observability/733/99226810112"
+  },
+  {
+   "score": 5,
+   "family": "DevOps",
+   "title": "Ingénieur(e) DevOps / DevOps Engineer - Dynamics 365 & Azure DevOps",
+   "company": "Genetec Inc.",
+   "status": "New",
+   "location": "Montréal, QC — office cadence not stated (free on-site parking/gym mentioned, but no explicit days/week; treat as hybrid pending confirmation)",
+   "salary": "Not stated",
+   "gap": "Strong Azure DevOps administration/CI-CD/IaC (Terraform, Bicep, ARM) overlap with Marc's depth, but the role is Dynamics 365 F&O/CE- and Power Platform/Dataverse-specific — Marc has no D365 exposure, a real gap against a '5+ years D365 DevOps' bar. Bilingual FR/EN requirement is a Marc strength.",
+   "url": "https://apply.workable.com/genetec-inc/j/831CC24E50"
+  },
+  {
+   "score": 4,
+   "family": "SRE",
+   "title": "DevOps Engineer - BTP Site Reliability Engineering team",
+   "company": "SAP Canada Inc.",
+   "status": "New",
+   "location": "Montréal, QC — hybrid, 3 days/week in-office",
+   "salary": "CAD $95,000–$135,000/year",
+   "gap": "3 days/week on-site needs a well-above-target rate to be worth it per profile.md's reachable-city rule; $95-135K doesn't clear that bar (barely reaches the $120k Montréal floor at the very top). Otherwise a real skill match: Kubernetes, Linux, CI/CD, multi-cloud (AWS/Azure/GCP), Python/Go/Bash. Not eligible for employer-sponsored work authorization — irrelevant to Marc as a Canadian citizen/resident.",
+   "url": "https://jobs.sap.com/job/Montreal-DevOps-Engineer-BTP-Site-Reliability-Engineering-team-Queb-H3B-0B3/1426752233/"
+  },
+  {
+   "score": 4,
+   "family": "DevOps",
+   "title": "DevOps Engineer (Cloud Infrastructure)",
+   "company": "Tecsys Inc.",
+   "status": "New",
+   "location": "Montréal, QC — described as \"digital-first\" with flexible/hybrid offices; exact days/week not stated",
+   "salary": "Not stated",
+   "gap": "Heavily AWS-centric (\"complex, hybrid architectures\" on AWS) with no Azure mention — Marc's AWS story is dated and by-hand, no IaC, a weak answer if AWS ownership is the actual deliverable here. Tecsys already has a separate, different-req Site Reliability Engineer posting Applied via Glassdoor (2026-09-19) — same employer, distinct role, not a duplicate.",
+   "url": "https://freehire.me/jobs/devops-engineer-cloud-infrastructure-tecsys-glsqkcrz"
+  },
+  {
+   "score": 3,
+   "family": "SRE",
+   "title": "Staff Engineer, Site Reliability",
+   "company": "Baby List, Inc.",
+   "status": "New",
+   "location": "Work Remotely (Canada/US)",
+   "salary": "Not stated",
+   "gap": "Hard AWS-ownership-at-scale gate: \"deep hands-on Terraform expertise\" as IaC owner, \"proven AWS experience at scale\" (EKS, RDS, networking, DNS, CDNs), and production Kubernetes debugging are all explicit musts. No Azure mentioned at all — Marc's dated, by-hand, non-IaC AWS experience doesn't clear this bar.",
+   "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer&filter-remote_jobs=only"
+  },
+  {
+   "score": -1,
+   "family": "SRE",
+   "title": "Site Reliability Engineer",
+   "company": "HostPapa Inc. (managed.com / CloudBlue)",
+   "status": "Skipped — role excludes Ontario residents",
+   "location": "Work Remotely — posting states \"anticipated that this position will be performed outside of Ontario\"",
+   "salary": "Not stated",
+   "gap": "Explicit statement that the role will be performed outside Ontario — Marc is based in Smiths Falls, ON, so this is a hard geographic eligibility gate against him specifically, the inverse of the usual residency-requirement rule. Otherwise a strong skill match (SLIs/SLOs, Kubernetes, Datadog/Grafana/Elastic, Python/Bash, Azure-preferred) — the gate alone rules it out.",
+   "url": "https://www.eluta.ca/search?q=Senior+Site+Reliability+Engineer&filter-remote_jobs=only"
+  },
+  {
+   "score": 0,
+   "family": "DevOps",
+   "title": "Manager, Fixed Wireless New Technology & Performance",
+   "company": "Xplore Inc.",
+   "status": "Skipped — telecom RF/fixed-wireless engineering management, not DevOps/SRE/Platform IC work",
+   "location": "Cornwall, ON",
+   "salary": "Not stated",
+   "gap": "Title mentions a DevOps team the role partners with, but the job itself is network-performance/RF engineering management for fixed wireless technology — wrong domain and a people-management scope, not an IC infrastructure role.",
+   "url": "https://www.eluta.ca/search?q=DevOps+Engineer&l=Cornwall%2C+ON"
+  },
+  {
+   "score": -1,
+   "family": "DevOps",
+   "title": "DevOps Engineer II (Contract)",
+   "company": "Spring Financial",
+   "location": "Remote — Mexico residents",
+   "salary": "MXN $612,000–$857,000/yr",
+   "gap": "The posting offers remote work from Mexico, not Canada",
+   "url": "https://freehire.me/jobs/devops-engineer-ii-contract-springfinancial-theyqfuj",
+   "status": "Skipped — region: Mexico only"
+  },
+  {
+   "score": -1,
+   "family": "Platform",
+   "title": "Senior DevOps / Platform Engineer — Cloud",
+   "company": "Dominion Dynamics",
+   "location": "Ottawa, ON — on-site (Ottawa/Toronto)",
+   "salary": "CAD $117,000–$156,000 (estimate)",
+   "gap": "Role is on-site and reports to the Head of Security; sovereign-hosting focus",
+   "url": "https://jobs.ashbyhq.com/Dominion%20Dynamics/524d2ece-f27a-469d-b00e-503cc40869ac",
+   "status": "Skipped — on-site"
+  },
+  {
+   "score": -1,
+   "family": "SRE",
+   "title": "Zscaler Site Reliability Engineer (SRE)",
+   "company": "DXC Technology",
+   "location": "Ottawa, ON — exclusively on-site at a client location",
+   "salary": "CAD $115,000–$155,000",
+   "gap": "Requires a Canadian government security clearance, Canadian citizenship and 10 years verifiable residency, and on-site Ottawa",
+   "url": "https://www.workopolis.com/jobsearch/viewjob/di6TjW7EaEG063zt904FtKrPMLSYXK0mhNZIbN2ur0QAQ38AFPbmFOx89ki8IFXX",
+   "status": "Skipped — clearance and on-site"
+  },
+  {
+   "score": 4,
+   "family": "DevOps",
+   "title": "Senior DevOps Engineer",
+   "company": "Koïos Intelligence",
+   "location": "Montréal, QC — work arrangement not stated",
+   "salary": "CAD $80,075–$120,725 (estimate)",
+   "gap": "GCP, Kubernetes, Helm, Jaeger and Bitbucket stack with a 7+ year bar — GCP hard gate; pay estimate sits mostly below the $120k Montréal hybrid floor",
+   "url": "https://ca.linkedin.com/jobs/view/senior-devops-at-ko%C3%AFos-intelligence-3249873532",
+   "status": ""
+  },
+  {
+   "score": 7,
+   "family": "DevOps",
+   "title": "Data Platform DevOps Engineer - Senior Consultant",
+   "company": "Deloitte LLP",
+   "location": "Montréal/Ottawa and other Canadian locations — permanent, hybrid (office days not stated; confirm <=2)",
+   "salary": "CAD $80,000–$138,000/yr",
+   "gap": "Bilingual French/English required (a strength); Snowflake and Databricks listed as assets — Databricks is a direct Énergir match; hybrid cadence and the top of the pay band vs the $120k Montréal floor to confirm",
+   "url": "https://www.eluta.ca/cache?u=25404511:careers.deloitte.ca",
+   "status": "Skipped"
+  },
+  {
+   "score": 6,
+   "family": "DevOps",
+   "title": "DevOps Engineer",
+   "company": "Brain Finance",
+   "location": "Montréal, QC — hybrid, team in office Wednesdays (1 day/week)",
+   "salary": "Not stated",
+   "gap": "AWS and/or GCP with Terraform and CI/CD — either cloud accepted, but no Azure; 4–5 years asked; pay unconfirmed against the $120k Montréal floor",
+   "url": "https://www.eluta.ca/cache?u=25081863:www.brainfinance.com",
+   "status": "Skipped"
+  },
+  {
+   "score": 6,
+   "family": "SRE",
+   "title": "Cloud Site Reliability Engineer II",
+   "company": "Barracuda Networks",
+   "location": "Ottawa, ON — hybrid, office days not stated (confirm <=2)",
+   "salary": "CAD $100,000–$120,000/yr",
+   "gap": "Level II (2–4 yrs) is below Marc’s seniority; Loki/Mimir/Tempo/Grafana telemetry on multi-cluster EKS rather than his Dynatrace/Splunk/ELK background",
+   "url": "https://www.eluta.ca/cache?u=25387579:jobs.jobvite.com",
+   "status": "Skipped"
+  },
+  {
+   "score": 5,
+   "family": "Platform",
+   "title": "Senior Software Engineer – Data & ML Platform",
+   "company": "GoMaterials",
+   "location": "Remote — Canada",
+   "salary": "Not stated",
+   "gap": "Python/SQL data-pipeline ownership and ML/OR tooling is the core; Azure, Terraform/Bicep, CI/CD and observability are real, but this is data-platform engineering more than infrastructure",
+   "url": "https://www.eluta.ca/cache?u=25412523:jobs.lever.co",
+   "status": "Skipped"
+  },
+  {
+   "score": 5,
+   "family": "DevOps",
+   "title": "DevOps Engineer II",
+   "company": "commonsku",
+   "location": "Remote — Canada (Toronto-listed)",
+   "salary": "CAD $110,000–$130,000/yr",
+   "gap": "Intermediate scope (3+ yrs) reporting alongside a Senior DevOps; AWS, Kubernetes, Terraform stack",
+   "url": "https://www.eluta.ca/cache?u=25419015:commonsku.na.teamtailor.com",
+   "status": "Applied"
+  },
+  {
+   "score": 4,
+   "family": "Platform",
+   "title": "Senior Software Engineer, Infrastructure Platform",
+   "company": "Degree, Inc.",
+   "location": "Remote — British Columbia or Ontario residents only (eligible)",
+   "salary": "CAD $123,750–$165,000",
+   "gap": "\"Deep AWS experience in production\" plus hands-on Kubernetes — AWS depth is hard-gated",
+   "url": "https://www.eluta.ca/search?q=Senior%20Infrastructure%20Engineer&filter-remote_jobs=only",
+   "status": ""
+  },
+  {
+   "score": 4,
+   "family": "Platform",
+   "title": "Senior Cloud Engineer",
+   "company": "Think Research",
+   "location": "Remote — Toronto-listed",
+   "salary": "$130,000–$150,000",
+   "gap": "Requires 10+ yrs HA architecture, 5+ yrs Kubernetes, 3+ yrs database administration, GCP/AWS/Azure — Kubernetes and DBA depth gate",
+   "url": "https://www.eluta.ca/search?q=Cloud%20Engineer&filter-remote_jobs=only",
+   "status": ""
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Staff Software Engineer – Electricity Markets",
+   "company": "GE Vernova",
+   "location": "Remote",
+   "salary": "CAD $126,418–$189,627",
+   "gap": "Opened in full: technical lead for an electricity Market Management System (power systems, optimization, customer design work) — DevOps/CI-CD appears once; not an operations or deployment role",
+   "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+   "status": "Skipped — out of scope (market-systems lead)"
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Software Consulting Engineer – T&D",
+   "company": "GE Vernova",
+   "location": "Remote",
+   "salary": "Not stated",
+   "gap": "Opened in full: grid/T&D software consulting — \"deploy\" appears as customer-solution delivery, no infrastructure or reliability scope",
+   "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+   "status": "Skipped — out of scope (T&D software consulting)"
+  },
+  {
+   "score": 3,
+   "family": "Platform",
+   "title": "Staff Engineer (Platform)",
+   "company": "Later Media",
+   "location": "Remote — Canada",
+   "salary": "CAD $175,000–$250,000",
+   "gap": "Backend service development in C#/TypeScript with some Kubernetes/AWS; software-engineering centred",
+   "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+   "status": ""
+  },
+  {
+   "score": 3,
+   "family": "Platform",
+   "title": "Staff Software Development Engineer",
+   "company": "Wagepoint",
+   "location": "Remote — Canada",
+   "salary": "Not stated",
+   "gap": "Full-stack staff engineer with cloud infrastructure and incident response as one of several duties",
+   "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+   "status": ""
+  },
+  {
+   "score": 4,
+   "family": "Platform",
+   "title": "Site Reliability Consultant",
+   "company": "Pythian Services",
+   "location": "Ottawa-area, remote/hybrid not stated",
+   "salary": "Not stated",
+   "gap": "Hands-on Kubernetes, Istio and Linux operations across AWS/GCP — Kubernetes administration depth gate",
+   "url": "https://www.eluta.ca/search?q=Site%20Reliability%20Engineer&l=Ottawa%2C%20ON",
+   "status": ""
+  },
+  {
+   "score": 4,
+   "family": "DevOps",
+   "title": "Senior DevOps Engineering Tools Specialist",
+   "company": "Mannarino Systems & Software",
+   "location": "Saint-Laurent (Montréal), QC — hybrid/remote tag",
+   "salary": "Not stated",
+   "gap": "Administers Jenkins/GitLab/Bitbucket/Artifactory with end-user support duties — tools-support scope",
+   "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&l=Montreal%2C%20QC",
+   "status": ""
+  },
+  {
+   "score": 4,
+   "family": "SRE",
+   "title": "Cloud Security Engineer (Azure)",
+   "company": "Smile Digital Health",
+   "location": "Remote — Canada",
+   "salary": "CAD $130,000–$140,000",
+   "gap": "Security-architecture centred (Defender for Cloud, Prisma CSPM) rather than delivery or reliability; Marc already has an Applied Smile Azure platform role",
+   "url": "https://www.eluta.ca/search?q=DevOps%20Engineer&filter-remote_jobs=only",
+   "status": ""
+  },
+  {
+   "score": 6,
+   "family": "DevOps",
+   "title": "Senior DevOps Engineer (cloud platform products, Wind River Kanata)",
+   "company": "Wind River International Limited",
+   "location": "Kanata (Ottawa), ON — hybrid, cadence not stated",
+   "salary": "CAD $95,000–$120,000 (+ bonus) per Eluta listing",
+   "gap": "Technical: Build/release engineering, CI/CD reliability and developer experience for a Kubernetes/StarlingX product — Python/Linux and 3–5 years DevOps fit; deep Kubernetes platform internals and contributing to distributed-systems architecture are the stretch; Practical: Compromise/Confirm — Ottawa-area hybrid, office-day cadence not stated; pay below ideal; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=24998229:aptiv.wd5.myworkdayjobs.com",
+   "status": "Applied"
+  },
+  {
+   "score": 3,
+   "family": "SRE",
+   "title": "Site Reliability Engineering Team Lead (Principal SRE)",
+   "company": "Cerence Technologies Inc.",
+   "location": "Remote - Canada / Montréal listed as additional locations",
+   "salary": "Not stated",
+   "gap": "Technical: 8+ years SRE, SLO governance and team technical leadership of a cloud-native AI platform — seniority/ownership gap; Practical: Confirm — Canada remote option listed; pay not stated; Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25338843:cerence.wd5.myworkdayjobs.com"
+  },
+  {
+   "score": 3,
+   "family": "Platform",
+   "title": "Senior GCP Platform Enablement Engineer (Cloud Platform Engineer, GCP)",
+   "company": "Carbon60 / OpsGuru",
+   "location": "Canada (onshore), Toronto-listed, remote",
+   "salary": "CAD $85–110/hour contract",
+   "gap": "Technical: GCP landing-zone foundation with Terraform modules, IAM, networking and guardrails — GCP is zero-experience (hard gate); Practical: Compromise — 14–16 week contract, hourly range stated; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25461319:carbon60.bamboohr.com"
+  },
+  {
+   "score": 3,
+   "family": "Platform",
+   "title": "Développeur(se) DevOps / DevOps Engineer — internal developer platform",
+   "company": "Unity Technologies",
+   "location": "Montréal, QC — workplace not stated in cached record",
+   "salary": "CAD $83,300–$124,900",
+   "gap": "Technical: Shared multi-tenant Kubernetes and strong GCP required; this is engineering of a platform used by hundreds of developers — K8s/GCP depth gap; Practical: Confirm — Montréal cadence not stated; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25179209:unitytech.wd1.myworkdayjobs.com"
+  },
+  {
+   "score": 4,
+   "family": "DevOps",
+   "title": "Développeur(euse) CloudOps / CloudOps Developer",
+   "company": "Genetec Inc.",
+   "location": "Montréal, QC — hybrid, days not stated; confirm <=2",
+   "salary": "Not stated",
+   "gap": "Technical: Automation tooling in C# and PowerShell plus production incident/RCA work for cloud operations; Marc has SRE-style RCA and scripting but not C#; Practical: Confirm — hybrid Montréal cadence not stated; French listing; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25250080:apply.workable.com"
+  },
+  {
+   "score": 4,
+   "family": "DevOps",
+   "title": "Site Reliability Engineer / Full Stack Engineer",
+   "company": "Lockheed Martin Canada Inc.",
+   "location": "Montréal, QC — hybrid, telework >=50%",
+   "salary": "CAD $102,750–$134,750",
+   "gap": "Technical: AWS (VPC/EC2/S3/Lambda/IAM), Terraform or CloudFormation, Ansible, VMware, C#/Python/Perl; AWS is the shallow area, VMware and Ansible are fits; Practical: Compromise — Montréal hybrid ~2–3 office days; defence employer, no clearance required before start; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25470612:lockheedmartin.eightfold.ai"
+  },
+  {
+   "score": 4,
+   "family": "Platform",
+   "title": "Infrastructure Operations Engineer (Azure, OpenShift, hybrid infrastructure)",
+   "company": "CAE Inc.",
+   "location": "Montréal, QC — cadence not stated",
+   "salary": "Not stated",
+   "gap": "Technical: 5+ years infrastructure operations across Azure, OpenShift, RDS and VMware migration — sysadmin-leaning platform operations; Azure fits, OpenShift/virtualization migration does not; Practical: Confirm — Montréal on-site/hybrid cadence not stated; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25241469:cae.wd3.myworkdayjobs.com"
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Senior Platform Architect, Infrastructure & Cloud Operations",
+   "company": "Entrust Corporation",
+   "location": "Ottawa, ON",
+   "salary": "Not stated",
+   "gap": "Out of scope — architecture role on an on-premises VMware/Windows SaaS platform, availability design rather than delivery/automation",
+   "url": "https://www.eluta.ca/cache?u=24608961:entrust.wd1.myworkdayjobs.com",
+   "status": "Out of scope"
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "OpenStack Cloud Engineer Consultant for SSC",
+   "company": "49 Solutions Inc.",
+   "location": "Ottawa, ON — hybrid",
+   "salary": "CAD $150,000–$200,000",
+   "gap": "Out of scope — OpenStack SME consulting for Shared Services Canada; no OpenStack experience",
+   "url": "https://www.eluta.ca/cache?u=25404206:apply.workable.com",
+   "status": "Out of scope"
+  },
+  {
+   "score": 6,
+   "family": "SRE",
+   "title": "Senior Site Reliability Engineer (SRE)",
+   "company": "Arctiq (client SRE Center of Excellence)",
+   "location": "Remote — Ontario-based (Toronto listed), Canada",
+   "salary": "Not stated (6–9 month contract, extension possible)",
+   "gap": "Technical: defines SLOs/SLIs, error budgets, DORA reporting and pipeline release gates in Dynatrace and ServiceNow for application teams, and joins on-call; Marc has Dynatrace dashboards/ingestion, Jenkins release gates and incident work but no implemented SLOs, and Kubernetes is user-level. Practical: Confirm — contract rate not stated (full-time contract floor $80/hr, $90/hr for shorter engagements), remote per employer listing. Posted 2026-10-14. Resume: SRE.",
+   "url": "https://arctiq.bamboohr.com/careers/342",
+   "status": "New"
+  },
+  {
+   "score": 6,
+   "family": "DevOps",
+   "title": "Senior Software Engineering - Autonomy Build & Integration",
+   "company": "General Motors of Canada",
+   "location": "Remote — Ontario (Markham optional)",
+   "salary": "CAD $115,000–$164,600/yr base",
+   "gap": "Technical: owns CI/CD, build, image and release-promotion workflows for ADAS software (Jenkins and GitHub Actions experience wanted, Python/Docker); gaps are C/C++ build systems (Bazel/CMake, Clang/GCC), automotive/QNX domain and 3+ years leading cross-team initiatives. Practical: Compromise — range tops out just above $160k, remote Ontario, growth unconfirmed; vacancy is a backfill. Resume: Platform.",
+   "url": "https://www.eluta.ca/cache_open?u=25312410:generalmotors.wd5.myworkdayjobs.com",
+   "status": "New"
+  },
+  {
+   "score": 3,
+   "family": "DevOps",
+   "title": "Senior Cloud Security Engineer (Remote Ontario)",
+   "company": "Smile Digital Health",
+   "location": "Remote — Ontario",
+   "salary": "Not stated",
+   "gap": "Technical: cloud security posture (Prisma Cloud, Defender for Cloud), threat modelling, SAST/DAST triage and RBAC governance — security-engineering centre of gravity beyond Marc's documented evidence. Practical: Confirm — pay not stated. Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25302403:jobs.lever.co",
+   "status": ""
+  },
+  {
+   "score": 3,
+   "family": "SRE",
+   "title": "Senior Application Support Engineer (Remote Ontario)",
+   "company": "Smile Digital Health",
+   "location": "Remote — Ontario",
+   "salary": "Not stated",
+   "gap": "Technical: Tier-2 application support and Java bug fixes with Helm/Azure pipeline touch points and on-call — closer to support development than SRE or platform work. Practical: Confirm — pay not stated. Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25363152:jobs.lever.co",
+   "status": ""
+  },
+  {
+   "score": -1,
+   "family": "Platform",
+   "title": "Infrastructure Engineer (remote contract)",
+   "company": "PLATO",
+   "location": "Remote — Canada (Fredericton, NB listed)",
+   "salary": "Not stated",
+   "gap": "Ineligible: Secret-level security clearance required at time of application (Marc holds none). Work is Azure/Terraform infrastructure for a federal client, contract 2026-11-01 to 2027-07-15, so otherwise a real fit.",
+   "url": "https://www.eluta.ca/cache?u=25486906:careers.platotech.com",
+   "status": "Skipped — Ineligible: Secret clearance required"
+  },
+  {
+   "score": 7,
+   "family": "DevOps",
+   "title": "DevOps Specialist (6 months)",
+   "company": "CIRA",
+   "location": "Ottawa, ON — hybrid (blend of remote and in-office)",
+   "salary": "CAD $106,000–$117,000 (fixed term)",
+   "gap": "Technical: reusable GitLab CI/CD components, Java/Maven pipelines, runners, coaching teams to own their pipelines — close to Énergir shared-Jenkins work; GitLab itself and Java development depth are gaps; Practical: Compromise — 6-month fixed term, below $160k; same posting already Applied on LinkedIn (row 4444060323, 2026-09-08); employer page still lists it, dated 2026-07-23; Resume: Platform.",
+   "url": "https://Cira.bamboohr.com/careers/340",
+   "status": "Applied — Sep 8 (existing ledger row)"
+  },
+  {
+   "score": 4,
+   "family": "DevOps",
+   "title": "DevOps Engineer",
+   "company": "Case IQ, Inc.",
+   "location": "Remote (location not stated)",
+   "salary": "CAD $110,000–$130,000",
+   "gap": "Technical: Azure/AWS mixed infrastructure (AKS, Docker Swarm, ECS, Lambda, DynamoDB) and AIOps adoption; breadth of AWS services and Kubernetes ownership are gaps; Practical: Compromise — below $160k; employer page dated 2026-09-14, so freshness is a month old; Resume: Platform.",
+   "url": "https://caseiq.bamboohr.com/careers/337"
+  },
+  {
+   "score": 3,
+   "family": "SRE",
+   "title": "Senior Cloud Site Reliability Engineer",
+   "company": "Solace",
+   "location": "Ottawa, ON — hybrid",
+   "salary": "Not stated",
+   "gap": "Technical: 'expert-level' multi-cloud SaaS incident handling, cloud networking and 24x7 on-call; employer page dated 2026-02-27, so freshness is unconfirmed; Practical: Confirm — pay and cadence not stated; Resume: Platform.",
+   "url": "https://solace.bamboohr.com/careers/731"
+  },
+  {
+   "score": 4,
+   "family": "DevOps",
+   "title": "DevOps Engineer II (Contract)",
+   "company": "Spring Financial Inc.",
+   "location": "Remote contract",
+   "salary": "$612,000–$857,000 MXN/year listed",
+   "gap": "Technical: intermediate DevOps scope at a fintech (continuous delivery, observability, VPC/VPN, patching); description read in part; Practical: Confirm — pay is listed in Mexican pesos, so Canadian contractor eligibility is unresolved; Resume: Platform.",
+   "url": "https://springfinancial.bamboohr.com/careers/299"
+  },
+  {
+   "score": 2,
+   "family": "SRE",
+   "title": "Senior SysOps Engineer",
+   "company": "Techdinamics",
+   "location": "Remote contract",
+   "salary": "Not stated",
+   "gap": "Technical: AWS CloudFormation/Control Tower SysOps; employer page dated 2025-10-10; Practical: Expired risk — posting is a year old; Resume: Platform.",
+   "url": "https://techdinamics.bamboohr.com/careers/52",
+   "status": "Expired — employer page dated 2025-10-10"
+  },
+  {
+   "score": 6,
+   "family": "DevOps",
+   "title": "DevOps Engineer",
+   "company": "Mist Mobility Integrated Systems Technology (MMIST)",
+   "location": "Ottawa, ON — on-site (no remote or hybrid stated)",
+   "salary": "CAD $90,000–$110,000/yr",
+   "gap": "Technical: Jenkins pipelines and shared pipeline libraries, GitLab CI YAML, release ownership and Linux build-server administration match Marc's Jenkins shared-pipeline work closely; GitLab administration and on-prem Windows/Linux build infrastructure (no public cloud) are partial; Practical: Compromise — fully on-site in Ottawa, base range straddles the $100k Ottawa floor, export-control screening; confirm days on site and offer; Resume: Platform.",
+   "url": "https://mmist.bamboohr.com/careers/195",
+   "status": ""
+  },
+  {
+   "score": 5,
+   "family": "SRE",
+   "title": "DevOps Engineer — Site Reliability Engineering (BTP)",
+   "company": "SAP Canada",
+   "location": "Montréal, QC — hybrid, 3 office days weekly",
+   "salary": "Not stated",
+   "gap": "Technical: production incident response, RCA, monitoring tooling and Linux/CI-CD fit; required Kubernetes experience is user-level only and the follow-the-sun on-call SRE scope is a stretch; Practical: Confirm — 3 office days exceeds the 2-day comfort limit and pay is not stated against the $120k Montréal floor; Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25177131:jobs.sap.com",
+   "status": ""
+  },
+  {
+   "score": 4,
+   "family": "SRE",
+   "title": "Senior Cloud Site Reliability Engineer",
+   "company": "Solace Corporation",
+   "location": "Ottawa, ON",
+   "salary": "Not stated",
+   "gap": "Technical: expert-level multi-cloud (AWS/Azure/GCP), cloud networking and Kubernetes debugging with 24x7 on-call and customer escalations exceed Marc's bounded AWS, zero GCP and user-level Kubernetes; employer page shows posted 2026-02-27 so freshness is unconfirmed; Practical: Confirm; Resume: SRE.",
+   "url": "https://solace.bamboohr.com/careers/731",
+   "status": "Freshness unconfirmed — employer page dated 2026-02-27"
+  },
+  {
+   "score": 4,
+   "family": "DevOps",
+   "title": "Spécialiste DevOps (Signature)",
+   "company": "Portage CyberTech",
+   "location": "Montréal, QC — hybrid, downtown",
+   "salary": "Not stated",
+   "gap": "Technical: CI/CD, Terraform and Docker fit but AWS-centred scope and a 1–3 year junior profile; French required; Practical: Confirm — junior level and pay not stated against the $120k Montréal floor; Resume: Platform.",
+   "url": "https://portagecybertech.bamboohr.com/careers/123",
+   "status": ""
+  },
+  {
+   "score": 3,
+   "family": "DevOps",
+   "title": "Spécialiste DevOps (CitizenOne)",
+   "company": "Portage CyberTech",
+   "location": "Gatineau, QC — hybrid",
+   "salary": "Not stated",
+   "gap": "Technical: junior learning-oriented role ('willing to learn', supervised releases) below Marc's seniority; Practical: Confirm — Gatineau is outside the listed reachable cities and pay is not stated; Resume: Platform.",
+   "url": "https://portagecybertech.bamboohr.com/careers/108",
+   "status": ""
+  },
+  {
+   "score": 4,
+   "family": "SRE",
+   "title": "Staff Site Reliability Engineer",
+   "company": "ServiceNow",
+   "location": "Remote (Canada, flexible)",
+   "salary": "Not stated",
+   "gap": "Technical: staff-level reliability scope for cloud-native validation and release platforms exceeds demonstrated operating scale; Government of Canada Reliability Status screening; Practical: Confirm; Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25510396:smartrecruiters.com",
+   "status": ""
+  },
+  {
+   "score": 5,
+   "family": "DevOps",
+   "title": "Senior Software Engineer, Cloud Engineering",
+   "company": "Mozilla Corporation",
+   "location": "Remote — Canada",
+   "salary": "Not stated",
+   "gap": "Technical: internal developer platform covering CI/CD, observability and Kubernetes optimisation fits the platform narrative; software-engineering depth and Kubernetes optimisation are gaps; Eluta snapshot is from 2026-09-09 so freshness is unconfirmed; Practical: Confirm — pay not stated; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=24936476:job-boards.greenhouse.io",
+   "status": "Freshness unconfirmed — Eluta snapshot 2026-09-09"
+  },
+  {
+   "score": 4,
+   "family": "SRE",
+   "title": "Staff Site Reliability Engineer",
+   "company": "CaseWare International",
+   "location": "Remote — Canada (Toronto office listed)",
+   "salary": "Not stated",
+   "gap": "Technical: staff-level SLO, Kubernetes and AWS architecture ownership beyond Marc's demonstrated scale; Eluta snapshot from 2026-08-18 so freshness is unconfirmed; Practical: Confirm; Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25190160:jobs.lever.co",
+   "status": "Freshness unconfirmed — Eluta snapshot 2026-08-18"
+  },
+  {
+   "score": 4,
+   "family": "SRE",
+   "title": "Site Reliability Engineer (Monetization)",
+   "company": "Xsolla Group",
+   "location": "Montréal, QC — remote",
+   "salary": "Not stated",
+   "gap": "Technical: GCP/GKE and strong Kubernetes/SLO ownership required; zero GCP; Eluta snapshot from 2026-07-17 so freshness is unconfirmed; Practical: Confirm; Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25036861:jobs.lever.co",
+   "status": "Freshness unconfirmed — Eluta snapshot 2026-07-17"
+  },
+  {
+   "score": 3,
+   "family": "Platform",
+   "title": "Senior Platform Architect, Infrastructure Cloud Operations",
+   "company": "Entrust Corporation",
+   "location": "Ottawa, ON",
+   "salary": "Not stated",
+   "gap": "Technical: architecture role over on-prem VMware/Windows microservices, availability architecture ownership — not Marc's demonstrated scope; Practical: Confirm; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=24608961:entrust.wd1.myworkdayjobs.com",
+   "status": ""
+  },
+  {
+   "score": 3,
+   "family": "DevOps",
+   "title": "Staff DevSecOps Specialist",
+   "company": "AlayaCare",
+   "location": "Montréal, QC",
+   "salary": "Not stated",
+   "gap": "Technical: security-engineering ownership (Cloudflare edge, Wiz cloud security, detections) rather than delivery platform; Practical: Confirm; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25354086:job-boards.greenhouse.io",
+   "status": ""
+  },
+  {
+   "score": 0,
+   "family": "DevOps",
+   "title": "Senior Analyst, DevSecOps",
+   "company": "Intelcom Courier Canada",
+   "location": "Montréal, QC",
+   "salary": "Not stated",
+   "gap": "Out of scope — cloud-security posture role requiring deep AWS/Azure security services and Terraform/ARM module expertise.",
+   "url": "https://www.eluta.ca/cache?u=25497955:intelcomgroup.wd3.myworkdayjobs.com",
+   "status": "Out of scope — cloud security engineering"
+  },
+  {
+   "score": 0,
+   "family": "Platform",
+   "title": "Senior Infrastructure Engineer",
+   "company": "Jatom Systems (JSI Telecom)",
+   "location": "Kanata, ON",
+   "salary": "Not stated",
+   "gap": "Out of scope — enterprise networking, data-centre and virtualisation infrastructure rather than DevOps/SRE.",
+   "url": "https://www.eluta.ca/cache?u=25333717:recruiting.ultipro.ca",
+   "status": "Out of scope — network/data-centre engineering"
+  },
+  {
+   "score": 8,
+   "family": "DevOps",
+   "title": "Senior Specialist, Software Engineering (CI/CD & Automation Engineering)",
+   "company": "CMHC",
+   "location": "Ottawa or Montréal — hybrid",
+   "salary": "CAD $104,180–$130,225/yr",
+   "gap": "Technical: reusable pipeline templates and paved roads on Azure DevOps/GitHub Actions; Practical: Compromise — office cadence not stated; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25451622:careers.cmhc-schl.gc.ca",
+   "status": "Applied — 2026-10-06 (existing ledger row)"
+  },
+  {
+   "score": 7,
+   "family": "SRE",
+   "title": "Cloud Site Reliability Senior Engineer",
+   "company": "Barracuda Networks",
+   "location": "Ottawa, ON — hybrid",
+   "salary": "CAD $110,000–$140,000 OTE",
+   "gap": "Technical: Kubernetes (Azure AKS), Terraform ownership and LGTM observability; Terraform authorship and multi-cluster Kubernetes are gaps; Practical: Compromise — office days not stated; Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25427875:jobs.jobvite.com",
+   "status": "Applied — 2026-10-06 (existing ledger row)"
+  },
+  {
+   "score": 5,
+   "family": "SRE",
+   "title": "Cloud Engineer 2, Site Reliability Engineering",
+   "company": "Kinaxis",
+   "location": "Ottawa — hybrid",
+   "salary": "CAD $90,000–$110,000 + 10% bonus",
+   "gap": "Technical: junior SRE operations role (2–4 years) across Azure/GCP with Terraform and ArgoCD; Practical: Compromise — below pay floor ambition; Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25476229:careers-kinaxis.icims.com",
+   "status": "Applied — 2026-10-07 (existing ledger row)"
+  },
+  {
+   "score": 5,
+   "family": "Platform",
+   "title": "Staff Cloud Engineer, Cloud Platform",
+   "company": "Kinaxis",
+   "location": "Remote — Canada",
+   "salary": "Not stated",
+   "gap": "Technical: staff-level GCP-preferred cloud platform with Terraform and Kubernetes ownership; Practical: Confirm; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25460339:careers-kinaxis.icims.com",
+   "status": "Skipped — 2026-10-07 (existing ledger row)"
+  },
+  {
+   "score": 7,
+   "family": "DevOps",
+   "title": "Senior DevOps Engineer (Contract)",
+   "company": "Bounteous",
+   "location": "Remote — Canada/Mexico",
+   "salary": "Not stated",
+   "gap": "Technical: end-to-end CI/CD, Jenkins, Terraform and Kubernetes; Practical: Confirm — contract rate not stated; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25432235:jobs.lever.co",
+   "status": "Applied — 2026-10-06 (existing ledger row)"
+  },
+  {
+   "score": 7,
+   "family": "Platform",
+   "title": "Advisor, Cloud Infrastructure Engineering",
+   "company": "CMHC",
+   "location": "Montréal or Ottawa — hybrid",
+   "salary": "CAD $129,175–$161,469/yr",
+   "gap": "Technical: advisory cloud infrastructure and AI-platform landing-zone design beyond Marc's architecture ownership; Practical: Compromise — office cadence not stated; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25411249:careers.cmhc-schl.gc.ca",
+   "status": "Skipped — 2026-10-05 (existing ledger row)"
+  },
+  {
+   "score": 5,
+   "family": "DevOps",
+   "title": "DevOps Engineer",
+   "company": "Leap Tools",
+   "location": "Remote — Canada",
+   "salary": "Not stated",
+   "gap": "Technical: Linux/Python platform operations; Practical: Compromise — compensation previously judged too low; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25411503:jobs.gem.com",
+   "status": "Skipped — 2026-09-16 (existing ledger row)"
+  },
+  {
+   "score": 6,
+   "family": "SRE",
+   "title": "Senior Site Reliability Engineer",
+   "company": "theScore (PENN Entertainment)",
+   "location": "Remote — Canada",
+   "salary": "Not stated",
+   "gap": "Technical: GCP/AWS compute, networking, ArgoCD and Helm at sports-betting scale; Practical: Confirm; Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25246784:job-boards.greenhouse.io",
+   "status": "Skipped — 2026-09-19 (duplicate of Applied PENN row)"
+  },
+  {
+   "score": 6,
+   "family": "DevOps",
+   "title": "DevOps IA",
+   "company": "Groupe Onepoint",
+   "location": "Montréal, QC — hybrid",
+   "salary": "Not stated",
+   "gap": "Technical: AI-flavoured DevOps delivery work; Eluta snapshot shows closing date 2026-08-26, so the posting is expired; Practical: Confirm; Resume: Platform.",
+   "url": "https://www.eluta.ca/cache?u=25184867:onepoint.wd3.myworkdayjobs.com",
+   "status": "Expired — closing date 2026-08-26 (existing ledger row Skipped)"
+  },
+  {
+   "score": 6,
+   "family": "SRE",
+   "title": "Site Reliability Engineer (SRE)",
+   "company": "GIRO",
+   "location": "Montréal, QC (Rosemont)",
+   "salary": "Not stated",
+   "gap": "Technical: Azure, observability (Grafana) and incident response; same requisition R-100000344 already filed as Expert SRE; Practical: Confirm; Resume: SRE.",
+   "url": "https://www.eluta.ca/cache?u=25516460:giro.wd10.myworkdayjobs.com",
+   "status": "New — existing ledger row (GIRO Expert SRE)"
+  }
+ ],
+ "could_not_validate": [
+  {
+   "text": "Mogo Inc. — DevOps Staff Platform Engineer (Vancouver, posted today): Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Staff+DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Think Research Corporation — Senior Cloud Engineer (Toronto, posted today): Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "BMO Financial Group — Senior Cloud Engineer: Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Baby List — Staff Engineer, Site Reliability: Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Boson AI — Site Reliability Engineer (Toronto): Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Cerence Technologies — Site Reliability Engineering Team Lead: Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Staff+Site+Reliability+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Tailscale — Infrastructure Engineer: Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Infrastructure+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Cresta Intelligence — Infrastructure Engineer/SRE: Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Infrastructure+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "1Password — Senior Staff Cloud Platform Engineer: Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Green Patch Inc. — Intermediate DevOps Engineer: Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "commonsku — DevOps Engineer II (Toronto): Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Carbon60 — Cloud Platform Engineer (GCP): Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Cloud+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Grantek Systems Integration — Leader, AI Platform Engineer (Burlington): Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Infrastructure+Engineer+posted%3A7&filter-remote_jobs=only"
+  },
+  {
+   "text": "Mist Mobility Integrated Systems — DevOps Engineer ×2 (Ottawa, 13 days old): Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=DevOps+Engineer+posted%3A7&l=Ottawa%2C+ON"
+  },
+  {
+   "text": "Entrust — Senior Platform Architect, Infrastructure Cloud Operations (Ottawa): Eluta cache page is an empty script shell and no employer page was located; not scored.",
+   "url": "https://www.eluta.ca/search?q=Site+Reliability+Engineer+posted%3A7&l=Ottawa%2C+ON"
+  },
+  {
+   "text": "PLATO Infrastructure Engineer (remote contract, Fredericton NB): Eluta cache blocked by the verification page, so the posting was not read; PLATO roles carry an Indigenous-identity requirement under the profile red flags.",
+   "url": "https://www.eluta.ca/cache?u=25486906:careers.platotech.com"
+  },
+  {
+   "text": "Thumbtack Software Engineer, AI/ML Infrastructure (Ashby): not opened because the Eluta cache fetch returned the verification redirect; AI/ML infrastructure title only.",
+   "url": "https://www.eluta.ca/cache?u=25178356:jobs.ashbyhq.com"
+  },
+  {
+   "text": "Samsara Manager II, Software Engineering, Infrastructure (Canada): people-management title not read in full.",
+   "url": "https://www.samsara.com/company/careers/roles/8221852?gh_jid=8221852"
+  },
+  {
+   "text": "RPE – System Reliability Engineering Specialist (Hybrid), Morgan Stanley Montréal — indexed today but Eluta's cache is an empty Eightfold shell; the employer posting was not recovered. Related LinkedIn role already InProcess.",
+   "url": "https://www.eluta.ca/cache?u=24568835:morganstanley.eightfold.ai"
+  },
+  {
+   "text": "Senior Cloud Engineer, Laivly Inc. (Winnipeg MB, remote) — indexed today; empty BambooHR shell, employer page not recovered.",
+   "url": "https://www.eluta.ca/cache?u=25173360:laivly.bamboohr.com"
+  },
+  {
+   "text": "Cloud Networking Senior Engineer, Wind River (Kanata) — indexed today; empty Workday shell, and networking-centred by title; not scored.",
+   "url": "https://www.eluta.ca/cache?u=24998226:aptiv.wd5.myworkdayjobs.com"
+  },
+  {
+   "text": "AI-First DevOps Engineer ($155,000, talentmanagementsolution.wd3.myworkdayjobs.com) — Eluta's cache is an empty Workday shell indexed 13 Jul 2026; the employer posting was not recoverable.",
+   "url": "https://www.eluta.ca/cache?u=25003641:talentmanagementsolution.wd3.myworkdayjobs.com"
+  },
+  {
+   "text": "RPE - System Reliability Engineering Specialist (Hybrid), Morgan Stanley, Montréal — shown as posted today on Eluta; the cache is an empty Eightfold shell indexed 28 Aug 2026. Related to the Morgan Stanley role already filed from LinkedIn.",
+   "url": "https://www.eluta.ca/cache?u=24568835:morganstanley.eightfold.ai"
+  },
+  {
+   "text": "Cloud Platform Engineer (Accenture, $25.41/hour and $74,000 variants) — readable cache shows only site navigation in the first lines; appears entry-level and was not scored.",
+   "url": "https://www.eluta.ca/cache?u=25107000:www.accenture.com"
+  },
+  {
+   "text": "Senior Software Engineer (Platform - DevOps) — CTO.ai (Vancouver BC - Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=19675816:careers.risepeople.com"
+  },
+  {
+   "text": "Senior Cloud Engineer — BMO Financial Group (Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=24572360:bmo.wd3.myworkdayjobs.com"
+  },
+  {
+   "text": "Senior Software Engineer, Site Reliability Engineering — Thumbtack, Inc. (Work Remotely): Eluta cache is an empty JavaScript shell (505 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=25443500:jobs.ashbyhq.com"
+  },
+  {
+   "text": "Senior Cloud Engineer — Jones Lang LaSalle IP, Inc. / JLL (Toronto ON - Work Remotely): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=25409663:jll.wd1.myworkdayjobs.com"
+  },
+  {
+   "text": "Senior Staff Cloud Platform Engineer — 1Password (Work Remotely): Eluta cache is an empty JavaScript shell (487 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=25457528:jobs.ashbyhq.com"
+  },
+  {
+   "text": "Staff Software Engineer, Infrastructure — Docker Inc. (Work Remotely): Eluta cache is an empty JavaScript shell (487 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=25407113:jobs.ashbyhq.com"
+  },
+  {
+   "text": "DevOps Engineer — Mist Mobility Integrated Systems Technology / MMIST (Ottawa, ON): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=25446689:mmist.bamboohr.com"
+  },
+  {
+   "text": "Senior DevOps / Platform Engineer — Cloud — Dominion Dynamics Inc. (Ottawa, ON): Eluta cache is an empty JavaScript shell (500 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=24932521:jobs.ashbyhq.com"
+  },
+  {
+   "text": "Zscaler Site Reliability Engineer (SRE) — DXC Technology Company (Ottawa, ON): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=25321858:dxctechnology.wd1.myworkdayjobs.com"
+  },
+  {
+   "text": "Data Engineer (DevOps) — Tecsys Inc. (Montréal, QC): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=25159434:apply.workable.com"
+  },
+  {
+   "text": "DevOps Engineer (Cloud Infrastructure) — Tecsys Inc. (Montréal, QC): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=25275987:apply.workable.com"
+  },
+  {
+   "text": "Senior Infrastructure Engineer (Forward Deployed) — ANVIL (Ottawa, ON): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=25153653:anvil.bamboohr.com"
+  },
+  {
+   "text": "Site Reliability Engineer — Tecsys Inc. (Montréal, QC): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=24639106:apply.workable.com"
+  },
+  {
+   "text": "RPE - System Reliability Engineering Specialist (Hybrid) — Morgan Stanley Services Canada Corp. (Montréal, QC): Eluta cache is an empty JavaScript shell (712 characters) and no current employer text was reachable without a heavier JS session; unread.",
+   "url": "https://www.eluta.ca/cache?u=24568835:morganstanley.eightfold.ai"
+  },
+  {
+   "text": "Degree, Inc. \"Senior Software Engineer, Infrastructure Platform\" ($123,750–$165,000 CAD, remote) — plausible Platform-family fit (AWS infrastructure, Kubernetes, distributed systems, deployment tooling, internal developer platforms) but Eluta's inline expansion and cache link both failed to open on repeated attempts this run; the listing snippet alone isn't sufficient for scoring per the skill's rule. Worth a retry next run.",
+   "url": "https://www.eluta.ca/search?q=Senior+Infrastructure+Engineer&filter-remote_jobs=only"
+  },
+  {
+   "text": "JLL — Senior Cloud Engineer (CAD $140–170k, Toronto, remote tag): Eluta’s cached copy is an empty shell and no employer page was found.",
+   "url": "https://www.eluta.ca/search?q=Cloud%20Engineer&filter-remote_jobs=only"
+  },
+  {
+   "text": "Eluta-only shells not read (empty script cache, no employer page found): Case IQ DevOps Engineer, Web.com AI Platform, Coalition SRE, Empire Life DevSecOps, Wind River Cloud Operations, McKesson Platform Operations & Observability, NVIDIA Robotics Simulation (NVIDIA is already in the ledger).",
+   "url": "https://www.eluta.ca/search?q=DevOps+Engineer&l=Ottawa%2C+ON"
+  }
+ ],
+ "notes_sections": [
+  {
+   "heading": "October 18 run — complete (35 of 35 passes)",
+   "items": [
+    "<b>Run complete.</b> Eluta's verification check was cleared and the remaining 23 passes ran, finishing the 12-pass partial run earlier today. Eight city searches returned zero Eluta results (Kingston DevOps/DevSecOps; Brockville DevOps/Cloud/DevSecOps; Cornwall DevOps/Cloud/DevSecOps).",
+    "<b>Filed:</b> MMIST DevOps Engineer (6, Ottawa on-site, $90–110k, Jenkins shared libraries) and SAP SRE for BTP (5, Montréal, 3 office days, pay unstated). Everything else in-family was already in the ledger, expired, stale or out of scope; Eluta's 'last 7 days' filter returned snapshots from June–September for several (Xsolla, CaseWare, Mozilla), which are marked Freshness unconfirmed rather than filed.",
+    "<b>Pass audit:</b> DevOps Engineer @ Remote filter: 10 results — Complete; Senior DevOps Engineer @ Remote filter: 10 results — Complete; Staff DevOps Engineer @ Remote filter: 10 results — Complete; Site Reliability Engineer @ Remote filter: 10 results — Complete; Senior Site Reliability Engineer @ Remote filter: 10 results — Complete; Staff Site Reliability Engineer @ Remote filter: 10 results — Complete; Cloud Engineer @ Remote filter: 10 results — Complete; DevSecOps Engineer @ Remote filter: 10 results — Complete; Infrastructure Engineer @ Remote filter: 10 results — Complete; Senior Infrastructure Engineer @ Remote filter: 10 results — Complete; DevOps Engineer @ Ottawa, ON: 10 results — Complete; Site Reliability Engineer @ Ottawa, ON: 10 results — Complete; Cloud Engineer @ Ottawa, ON: 10 results — Complete; Infrastructure Engineer @ Ottawa, ON: 10 results — Complete; DevSecOps Engineer @ Ottawa, ON: 10 results — Complete; DevOps Engineer @ Kingston, ON: 0 results — Zero results; Site Reliability Engineer @ Kingston, ON: 9 results — Complete; Cloud Engineer @ Kingston, ON: 3 results — Complete; Infrastructure Engineer @ Kingston, ON: 10 results — Complete; DevSecOps Engineer @ Kingston, ON: 0 results — Zero results; DevOps Engineer @ Brockville, ON: 0 results — Zero results; Site Reliability Engineer @ Brockville, ON: 4 results — Complete; Cloud Engineer @ Brockville, ON: 0 results — Zero results; Infrastructure Engineer @ Brockville, ON: 6 results — Complete; DevSecOps Engineer @ Brockville, ON: 0 results — Zero results; DevOps Engineer @ Cornwall, ON: 0 results — Zero results; Site Reliability Engineer @ Cornwall, ON: 1 results — Complete; Cloud Engineer @ Cornwall, ON: 0 results — Zero results; Infrastructure Engineer @ Cornwall, ON: 4 results — Complete; DevSecOps Engineer @ Cornwall, ON: 0 results — Zero results; DevOps Engineer @ Montreal, QC: 10 results — Complete; Site Reliability Engineer @ Montreal, QC: 10 results — Complete; Cloud Engineer @ Montreal, QC: 10 results — Complete; Infrastructure Engineer @ Montreal, QC: 10 results — Complete; DevSecOps Engineer @ Montreal, QC: 10 results — Complete"
+   ]
+  },
+  {
+   "heading": "October 18 run — incomplete (verification page)",
+   "items": [
+    "<b>Run incomplete — Eluta human-verification page.</b> 12 of 35 mandatory passes rendered normally (10 remote-filter role passes + Ottawa DevOps and Ottawa SRE). After the Ottawa SRE pass, Eluta redirected every request, including cache pages, to its 'are you a human?' check, from both the command line and the browser. Per the skill, nothing was clicked through: the 23 remaining city passes (Ottawa ×3, Kingston ×5, Brockville ×5, Cornwall ×5, Montréal ×5) are <b>Incomplete</b>. To resume, clear the check in your own browser, then re-run the city passes a few seconds apart.",
+    "<b>What was validated anyway:</b> employer ATS pages (BambooHR JSON) for CIRA, Arctiq, Case IQ, Solace, Spring Financial and Techdinamics. CIRA DevOps Specialist is the same posting already Applied on 2026-09-08. Arctiq's SRE contract is already a ledger row (New); it was not auto-filed here because Canada eligibility and rate are not stated.",
+    "<b>Collected 94 unique postings from the 12 completed passes</b> (7-day Eluta filter; some results carried ages of 9–13 days). Postings that overlap other boards or the ledger (NVIDIA, Smile, Coalition, Barracuda, Wind River, General Motors, CMHC) were not re-filed. In-family Eluta-only results without an accessible employer page are listed under Could not validate."
+   ]
+  },
+  {
+   "heading": "October 15 run — past 48 hours (complete)",
+   "items": [
+    "<b>Pass audit:</b> 10 remote passes (DevOps, Senior DevOps, Staff DevOps, SRE, Senior SRE, Staff SRE, Cloud, DevSecOps, Infrastructure, Senior Infrastructure) each returned 10 cards. City passes for Ottawa, Montréal, Kingston, Brockville and Cornwall used DevOps, SRE, Cloud and Infrastructure Engineer. Zero-result passes rendered normally: Kingston DevOps; Brockville DevOps and Cloud; Cornwall DevOps and Cloud.",
+    "<b>Freshness:</b> Eluta exposes only a last-seen age, not a posting date. I opened every in-family result seen within about 2 days; older last-seen results were not reopened. The Arctiq listing carries an employer date of 2026-10-14 and the GM cache was indexed 2026-09-11 with the employer showing 'Posted Today'.",
+    "<b>Duplicates left unchanged:</b> Tailscale Infrastructure Engineer (Applied), Samsara Senior Software Engineer I/II - Infrastructure (already scored 2 on this report), Smile Cloud Engineer, Automation (already filed 2026-10-14), Tecsys DevOps Engineer (Cloud Infrastructure), and Mozilla Senior Software Engineer, Cloud Engineering (Skipped in the ledger; Eluta now shows it 3 hours old at CAD $95–139k remote Canada — worth deciding whether to reopen it).",
+    "<b>Cache shells:</b> the Arctiq and General Motors cache pages were empty shells; both were recovered through the cache_open structured representation, which carried the employer's full job data."
+   ]
+  },
+  {
+   "heading": "October 14 run — INCOMPLETE (12 of 30 passes; verification page)",
+   "items": [
+    "The 10 remote title passes (DevOps, Senior DevOps, Staff DevOps, SRE, Senior SRE, Staff SRE, Cloud, DevSecOps, Infrastructure, Senior Infrastructure) returned HTTP 200 with 10 cards each over direct HTTP at 9-second spacing, as did Ottawa DevOps Engineer and Ottawa Site Reliability Engineer. Eluta then redirected to its \"User Verification\" page (HTTP 302) on Ottawa Cloud Engineer; the run stopped without bypassing it. The remaining 18 city passes (Ottawa Cloud/Infrastructure, Kingston, Brockville, Cornwall and Montréal × 4 titles) were not run and the same page also blocked the browser tab. Marc needs to clear the check in Chrome before they can be rerun.",
+    "Remote inventory: 95 unique cache IDs across the 10 passes; 27 showed an age of under 3 days. In-family within that window: Smile Cloud Engineer Automation (filed under LinkedIn), Tailscale Infrastructure Engineer (already Applied; read from the employer Greenhouse API), Samsara infrastructure roles (employer API). Cache pages themselves could not be fetched once verification started."
+   ]
+  },
+  {
+   "heading": "October 13 run — past 24 hours (complete)",
+   "items": [
+    "The first 13 passes ran by script at 4 s spacing; Eluta then redirected to its reCAPTCHA sandbox. The run stopped, Marc cleared the verification in his browser, and the remaining 17 city passes were rerun at 9 s spacing with no further block. No verification was bypassed.",
+    "Passes: 10 remote title passes (10 cards each), Ottawa 4 titles, Kingston 4, Brockville 4, Cornwall 4 and Montréal 4 — all returned 200 on the final run; Kingston/Brockville/Cornwall results were mostly non-IT.",
+    "Within 24 hours (card age 'today' or hours): Wind River Senior DevOps Engineer (already InProcess), McKesson platform operations (already Skipped, French copy), plus the three unreadable shells above and several non-family postings. All dated cache pages for in-family remote roles (Practice Better, Mogo/Orion DevOps Staff Platform, CaseWare Staff SRE, Instacart, Tailscale Customer Reliability, Boson AI, ClubRunner, Babylist, Artificial.Agency, AlayaCare) were indexed between 14 Jul and 1 Oct and are outside the 24-hour window."
+   ]
+  },
+  {
+   "heading": "October 12 rerun — city passes (completes the earlier partial run)",
+   "items": [
+    "The user cleared Eluta's reCAPTCHA in Chrome; the 17 blocked city passes (Ottawa Infrastructure, Kingston, Brockville, Cornwall and Montréal x 4) then ran without another challenge.",
+    "<b>Ottawa, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Kingston, ON — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Kingston, ON — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Kingston, ON — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 3 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Kingston, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Brockville, ON — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Brockville, ON — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 4 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Brockville, ON — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Brockville, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 6 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Cornwall, ON — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Cornwall, ON — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 1 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Cornwall, ON — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 0 · Zero results (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Cornwall, ON — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 4 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Montreal, QC — DevOps Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Montreal, QC — Site Reliability Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Montreal, QC — Cloud Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)",
+    "<b>Montreal, QC — Infrastructure Engineer</b> · rerun in the cleared browser session, 7-second spacing · title verified · collected 10 · Complete (Kingston, Brockville and Cornwall results were civil, electrical, environmental or nursing roles — no DevOps/SRE/Platform)"
+   ]
+  },
+  {
+   "heading": "October 12 note on the earlier partial run",
+   "items": [
+    "The previous note on this date recorded 13 of 30 passes. This rerun supersedes it: 30 of 30 passes are now complete."
+   ]
+  },
+  {
+   "heading": "October 12 pass audit (past 48 hours) — INCOMPLETE",
+   "items": [
+    "Eluta shows a posted age on each result; ages up to two days (today, 1–2 days, hours) were treated as in-window. Results with no age shown were checked against the ledger.",
+    "The first 13 searches completed; from Ottawa Infrastructure Engineer onward every request (including cache pages) was redirected to <code>/sandbox</code>, the reCAPTCHA human-verification page. I did not click through. To finish, open Eluta in your own browser, clear the check, and ask me to rerun the city passes with longer spacing.",
+    "Most in-window remote results were already in the ledger (Web.com, Vena, Kinaxis, Coalition, ClubRunner, Huron, CaseWare, Barracuda, commonsku, Bounteous) and were not rescored."
+   ]
+  },
+  {
+   "heading": "October 12 pass list",
+   "items": [
+    "<b>remote — DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25269978,19675816,25432235,25419015,25415266,25411503,25401987,25398046,25003641,25360818",
+    "<b>remote — Senior DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24911233,25475117,25472986,25302403,25269978,25468742,25461583,24572360,25246784,19675816",
+    "<b>remote — Staff DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25480426,25272472,25140775,25460339,25233166,25398046,25190160,25339662,25314173,25416179",
+    "<b>remote — Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25275110,25475117,25246784,25443500,25036861,25338843,25195032,25014231,25190160,25367768",
+    "<b>remote — Senior Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24911233,25475117,24895127,25249854,25246784,25443500,25054806,25190160,25367768,24987206",
+    "<b>remote — Staff Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25480426,25140775,25054806,25051977,25190160,24933437,25149957,25126699,25313663,25347610",
+    "<b>remote — Cloud Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25281029,25302403,25461319,25460339,24572360,25457528,25441873,25054806,25214890,25153505",
+    "<b>remote — DevSecOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24489060,24255525,25413666,25306496,25382128,24521470,25472267,25463370,25449145,25249029",
+    "<b>remote — Infrastructure Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24265467,24056245,25112143,24600871,25407113,25214890,25205566,24592341,25319240,25125923",
+    "<b>remote — Senior Infrastructure Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 24911233,25276585,25279450,25284621,25104227,25104519,25475680,25475117,25472986,25471122",
+    "<b>Ottawa, ON — DevOps Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25446301,25446689,24998229,25131230,25455123,25451622,25321858,24608961,25285466,25410704",
+    "<b>Ottawa, ON — Site Reliability Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25476229,25429702,25427875,25387579,25199330,25321858,25305018,24433655,25396867,25131230",
+    "<b>Ottawa, ON — Cloud Engineer</b> · rendered n/a · collected 10 · Complete · cache IDs: 25476229,25090793,25427875,25404206,25387579,24998226,24998244,25107004,25184831,25107000",
+    "<b>Ottawa, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Kingston, ON — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Kingston, ON — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Kingston, ON — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Kingston, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Brockville, ON — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Brockville, ON — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Brockville, ON — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Brockville, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Cornwall, ON — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Cornwall, ON — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Cornwall, ON — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Cornwall, ON — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Montreal, QC — DevOps Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Montreal, QC — Site Reliability Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Montreal, QC — Cloud Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none",
+    "<b>Montreal, QC — Infrastructure Engineer</b> · rendered n/a · collected 0 · Incomplete - Eluta redirected to its 'User Verification' (reCAPTCHA) page after about 14 searches; not bypassed · cache IDs: none"
+   ]
+  },
+  {
+   "heading": "October 9 pass audit",
+   "items": [
+    "Remote (<code>filter-remote_jobs=only</code>): DevOps Engineer 199 · Senior DevOps Engineer 97 · Staff DevOps Engineer 23 · Site Reliability Engineer 102 · Senior Site Reliability Engineer 50 · Staff Site Reliability Engineer 20 · Cloud Engineer 722 · DevSecOps Engineer 18 · Infrastructure Engineer 755 · Senior Infrastructure Engineer 373 (first 10 collected on each).",
+    "City passes (DevOps / SRE / Cloud / Infrastructure Engineer): Ottawa 71 / 100 / 250 / 528 · Kingston 0 / 12 (collected) / 3 / 66 · Brockville 1 / 4 / 1 / 6 collected · Cornwall 1 / 1 / 1 / 4 collected · Montréal 296 / 351 / 608 / 1617. Several Kingston/Brockville/Cornwall results are civil/industrial matches for 'infrastructure' or 'site' and were set aside as unrelated occupations.",
+    "<b>Method fix:</b> the first pass of city searches hit Eluta's 'User Verification' interstitial after about 13 searches; it was not clicked or bypassed and cleared on its own, after which the interrupted passes were rerun with 3-second spacing.",
+    "<b>Recovery path:</b> Eluta cache pages that are empty shells can be read from <code>https://www.eluta.ca/cache_open?u=&lt;id&gt;:&lt;domain&gt;</code>, which returns the employer's JSON (Workday, BambooHR, Workable, Eightfold). Cache IDs are eight digits — a slicing slip in my first extraction dropped the leading digit, which is why early cache fetches returned 'Page not found'.",
+    "Known rows (already scored 2026-10-07, not rescored): Mogo, Babylist, theScore, Think Research, Degree, Later, Tecsys, SAP Montréal, MMIST (Ottawa on-site), DXC (clearance + on-site) and others in the table below."
+   ]
+  },
+  {
+   "heading": "October 7 pass audit (user cleared one Eluta verification page mid-run)",
+   "items": [
+    "<b>Remote passes (10 of 10 Complete)</b>, <code>filter-remote_jobs=only</code>, first 10 results each: DevOps Engineer · Senior DevOps Engineer · Staff DevOps Engineer · Site Reliability Engineer · Senior Site Reliability Engineer · Staff Site Reliability Engineer · Cloud Engineer · DevSecOps Engineer · Infrastructure Engineer · Senior Infrastructure Engineer — 10 results each.",
+    "<b>City passes (16 of 16 Complete)</b> with the city accepted in the location field and no Remote filter, for DevOps Engineer, Site Reliability Engineer and Infrastructure Engineer: Ottawa 10/10/10 · Kingston 0/10/10 · Brockville 0/4/6 · Cornwall 4 (DevOps)/1 (SRE)/4 (Infrastructure) · Montréal 10/10/10. Kingston and Brockville DevOps pages rendered normally and showed Eluta's broadened fallback or zero hits; the SRE/Infrastructure pages mostly returned civil, electrical, environmental and maintenance roles for those cities.",
+    "<b>Verification event:</b> Eluta displayed its 'are you a human?' page on the Cornwall pass; I stopped without clicking through, you cleared it in your own browser, and the remaining passes and cache fetches ran at 7–9 second spacing without a second block. Cornwall DevOps was rerun afterwards.",
+    "157 unique cache IDs; the rest of the pool is non-engineering (civil, electrical, nursing, maintenance, sales) or software-engineering roles. 56 in-family or ambiguous postings were fetched through the cache path: 31 returned real text and were scored; 23 returned the 712-character shell and are listed under Could not validate; Mist Mobility and Spring Financial were recovered from their BambooHR pages and scored.",
+    "Roles already in the ledger were matched and left alone: StackAdapt (both), Bounteous, Vena, Practice Better, Leap Tools, theScore/Penn, CaseWare, Xsolla (SRE and Platform), Boson AI, Tecsys, Valtech, Kinaxis, Barracuda, CMHC, Empire Life and Cresta."
+   ]
+  },
+  {
+   "heading": "October 5 full-read pass (Marc: open more, do not filter by company)",
+   "items": [
+    "Re-read every Eluta result instead of triaging on title/company. Method: each result’s cached copy (<code>/cache?u=&lt;id&gt;</code>) was fetched, giving full text for 69 remote results and 33 Ottawa/Montréal city results (cache pages for about 8 city results were empty JavaScript shells). Roles were scored on the full description regardless of whether the employer already appears in <code>applications.md</code>; duplicates were matched on employer + role only.",
+    "<b>Five new roles filed:</b> Deloitte Data Platform DevOps Senior Consultant (7), Brain Finance DevOps Engineer (6), Barracuda Cloud SRE II (6), GoMaterials Senior Software Engineer – Data &amp; ML Platform (5), commonsku DevOps Engineer II (5).",
+    "<b>GE Vernova checked on Marc’s hypothesis</b> (a domain-software employer may still need DevOps/SRE): both postings opened in full — the Electricity Markets role is a market-management-system technical lead and the T&amp;D role is grid software consulting; neither has real deployment or reliability scope, so both scored 0.",
+    "Cached copies are Eluta snapshots (indexed dates range from June to October 5) — freshness is not confirmed for older ones."
+   ]
+  },
+  {
+   "heading": "October 5 city-pass retry (after Marc cleared Eluta’s human check)",
+   "items": [
+    "Marc cleared the human-verification page in the browser, then each pass was re-run by navigation (no in-page fetches), one per page load: <b>Montréal DevOps Engineer 10</b> and <b>Montréal Site Reliability Engineer 10</b> results; <b>Kingston, Brockville and Cornwall DevOps Engineer: 0 blocks each</b> (the pages rendered normally — genuine Zero results). The earlier zeros for those cities and Montréal were the verification block, not real. Ottawa was completed earlier. All geography passes are now Complete or Zero results at the DevOps/SRE level.",
+    "Montréal results reviewed from the listing only (Eluta’s cache path was not used): Koïos Intelligence Senior DevOps Engineer scored 4 (GCP/Kubernetes stack, $80–121k estimate); Valtech Site Reliability Expert is the same title already Skipped on 2026-09-19; SAP and Tecsys DevOps/SRE roles are already in the ledger. Brain Finance DevOps Engineer, Unity DevOps, Mannarino DevOps Tools Specialist, Morgan Stanley System Reliability Specialist (hybrid) and Deloitte Data Platform DevOps Senior Consultant were not opened."
+   ]
+  },
+  {
+   "heading": "October 5 pass audit",
+   "items": [
+    "Remote queries (filter-remote_jobs=only, first 10 results each): DevOps Engineer 10 · Senior DevOps Engineer 10 · Staff DevOps Engineer 10 · Site Reliability Engineer 10 · Senior Site Reliability Engineer 10 · Staff Site Reliability Engineer 10 · Cloud Engineer 10 · DevSecOps Engineer 10 · Infrastructure Engineer 10 · Senior Infrastructure Engineer 10 — 69 unique results; 27 matched employers already in applications.md. City passes (DevOps Engineer and Site Reliability Engineer, no remote filter): Ottawa 10/10 · Kingston 0/0 · Brockville 0/0 · Cornwall 0/0 · Montréal 0/0 — the zero returns for Montréal conflict with the 280 results seen on 2026-09-22, so the city value is not being accepted through a direct URL and that pass is Incomplete. Cache-page validation was not attempted this run; four candidates were checked against employer or aggregator copies instead."
+   ]
+  },
+  {
+   "heading": "September 22 pass audit (continuation of 2026-09-21's leftover scope)",
+   "items": [
+    "Remote-only passes completed, first 10 results reviewed each: Staff DevOps Engineer (26 total), Senior Site Reliability Engineer (53 total), Staff Site Reliability Engineer (26 total), Senior Infrastructure Engineer (379 total, only first 10 reviewed — extremely broad term). DevOps Engineer spot-re-verified (191 total) — same top-10 inventory as 2026-09-21, no change, not re-scored.",
+    "City passes: Kingston, ON | DevOps Engineer | Complete — Zero results. Brockville, ON | DevOps Engineer | Complete — Zero results. Cornwall, ON | DevOps Engineer | Complete — 1 result (Xplore Inc., scored Out of scope). Montréal, QC | DevOps Engineer | 280 total results, first 10 reviewed | Complete.",
+    "Eluta's inline \"Show more\" expansion and the cache-link fallback were both unreliable again this run — worked for HostPapa and Baby List, failed for Degree Inc. and Genetec/McKesson/SAP/Tecsys (recovered via WebSearch to each employer's own canonical career page instead, per job_sources.md's employer-canonical-URL convention).",
+    "Ottawa city pass and the 6 remote keywords already completed 2026-09-21 (DevOps Engineer, Senior DevOps Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, Infrastructure Engineer) were not re-run today given same-day inventory turnover is typically low — DevOps Engineer's spot-check above confirms this. Worth a full fresh pass on all 10 remote keywords + Ottawa next time inventory has had more days to turn over.",
+    "No CAPTCHA, sign-in, application, alert subscription, email action or other write-side action occurred."
+   ]
+  },
+  {
+   "heading": "September 21 pass audit",
+   "items": [
+    "Remote-only passes completed, first 10 results reviewed each: DevOps Engineer (190), Senior DevOps Engineer (99), Staff DevOps Engineer (25), Site Reliability Engineer (108), Senior Site Reliability Engineer (52), Staff Site Reliability Engineer (28), Cloud Engineer (698), DevSecOps Engineer (14), Infrastructure Engineer (739), and Senior Infrastructure Engineer (374).",
+    "Ottawa | DevOps Engineer | 61 rendered results; first 10 reviewed | Complete. Montréal | DevOps Engineer | first 10 reviewed | Complete.",
+    "Kingston, Brockville and Cornwall | DevOps Engineer | attempted through the visible city field | Incomplete — the rendered page did not reliably preserve/accept the requested city and returned inconsistent inventory, so these are not claimed as zero-result passes.",
+    "No CAPTCHA, sign-in, application, alert subscription, email action or other write-side action occurred."
+   ]
+  },
+  {
+   "heading": "Correction — same-day scoring error",
+   "items": [
+    "<b>Mogo/Orion Digital \"DevOps Staff Platform Engineer\"</b> was scored 7 and reported as a top new pick earlier today via the BuiltIn run, then resurfaced here on Eluta. It's the exact same posting already logged <code>Rejected</code> in applications.md on 2026-09-16 (score 4) — missed during the BuiltIn dedup check because applications.md recorded the company as \"Orion Digital\" (the legal/parent entity) while BuiltIn and Eluta both show the consumer brand \"Mogo.\" <code>reports/data/builtin.json</code> has been corrected to reflect this as a pipeline match, not a fresh recommendation. Flagging here too since it was reported to Marc as a top pick earlier in the same session."
+   ]
+  },
+  {
+   "heading": "Recurring hard-gate — PLATO",
+   "items": [
+    "<b>PLATO</b> (an Indigenous-owned staffing/recruitment firm — Marc does not qualify per the Indigenous-membership hiring requirement in profile.md's Red Flags) appeared 4 separate times across today's searches under different postings: \"DevOps Engineer (Azure ARO) remote contract\" ($75-100/hr), \"QA Automation Engineer (Salesforce Financial Services Cloud)\", \"DevSecOps\"-adjacent copy on the same ARO posting, and \"Infrastructure Engineer (remote contract)\" ($75-100/hr). All hard-gated, none scored, consistent with the standing profile.md rule."
+   ]
+  },
+  {
+   "heading": "Pipeline matches confirmed this run — not rescored/refiled",
+   "items": [
+    "Already <code>Applied</code>: Case IQ DevOps Engineer, Web.com/Newfold Senior DevOps Engineer AI Platform, Warner Music DevOps Engineer, Jonas/Computrition AI-First DevOps Engineer, Empire Life DevSecOps Engineer (Infrastructure), Cresta Infrastructure Engineer/SRE, Xsolla Platform Engineer (DevOps Engineer), Movable Ink Senior Site Reliability Engineer, Autodesk Senior DevOps Developer, Tailscale Infrastructure Engineer (same company+title as a Manual-filed 2026-07-07 row; this run surfaced full comp, $218,420–$273,360 CAD, worth Marc double-checking it's the same req given the 2.5-month gap).",
+    "Already <code>Rejected</code>: Mogo/Orion Digital DevOps Staff Platform Engineer (see correction above), StackAdapt DevOps Engineer (Kubernetes team), Leap Tools DevOps Engineer, Movable Ink Lead Site Reliability Engineer, BMO Financial Group Senior Cloud Engineer.",
+    "Already <code>New</code>: Xsolla Site Reliability Engineer (Monetization), Valtech Digital Site Reliability Expert, Magnet Forensics Senior Site Reliability Engineer (Cloud Networking & IaC — a different role than the newly-seen \"Director, Cloud Engineering\" at the same company, see below).",
+    "StackAdapt's \"Senior DevOps Engineer (Kubernetes team)\" also resurfaced here — same cross-posted role already covered by today's BuiltIn/LinkedIn correction note (LinkedIn scored it 4, BuiltIn's fuller read scored it 7)."
+   ]
+  },
+  {
+   "heading": "Not opened this run — plausible backlog for next pass",
+   "items": [
+    "Toronto/GTA on-site or hybrid, not validated for cadence: Fullscript \"Director of Engineering, Developer Infrastructure\" (Ottawa-tagged but likely leadership scope), Cerence \"Site Reliability Engineering Team Lead\" (Principal/people-management scope), Magnet Forensics \"Director, Cloud Engineering\" (leadership scope, distinct from the known New SRE role at the same company).",
+    "Genuinely worth a follow-up open next run: Xsolla \"Backend Software Engineer (Infrastructure-Focused)\" ($130-160K, Kubernetes-as-first-class-concern) and Xsolla \"Senior Network/Infrastructure Engineer\" (Montréal QC, $120-160K — a reachable city, not yet validated for office cadence).",
+    "Ottawa-area, not validated for onsite/hybrid/remote cadence: Sander Geophysics \"System Administrator, DevOps and Infrastructure\" (Terraform/OpenTofu, Prometheus/Grafana/Loki, VMware/Proxmox — real overlap), Wind River International ×2 (Kanata — \"Senior DevOps Engineer\" $95-120K and \"Member of Technical Staff - DevOps\" $110-139K), Portage CyberTech \"Spécialiste DevOps / DevOps Specialist\" (Gatineau QC, hybrid — Gatineau is across the river from Ottawa but not on the explicit reachable-city list; worth asking Marc whether to treat it as Ottawa-equivalent before scoring), Mist Mobility DevOps Engineer (Ottawa, on-site, $90-110K — likely below the $100K remote floor's spirit and probably fully on-site, low priority).",
+    "Junior/intern scope, not opened: Kinaxis Co-op/Intern SRE, Vena Solutions Site Reliability Developer 1 (2+ years), Vosyn ×2 Master's-level internships (equity-only, no cash comp).",
+    "Skipped keywords entirely this run: Staff DevOps Engineer, Senior Site Reliability Engineer, Staff Site Reliability Engineer, Senior Infrastructure Engineer (4 of the 10 default remote keywords). Skipped city passes entirely: Kingston, Brockville, Cornwall, Montréal (4 of the 5 default hybrid passes) — Ottawa was the only city pass run this time."
+   ]
+  },
+  {
+   "heading": "Scope exclusions — reviewed and excluded",
+   "items": [
+    "Not target-family center of gravity: ServiceNow Senior Database Engineer, Vancity Senior Integration Engineer, Architecture in Motion Senior Data Engineer (AI LLM Solutions — also offshore-only locations: Pakistan/Mexico/India/Morocco), Infoblox Senior Sales Engineer, Riva Senior Engineering Manager, Roofr Senior Security Engineer, StackAdapt Senior Quality Engineer, Laivly Senior Cloud Engineer (repeat AWS-hard-gate exclusion per job_sources.md history), Clir Cloud Network Engineer (junior, $40-45K), Smile CDR/Smile Digital Health Senior Cloud Security Engineer (security-architecture center of gravity, cross-posted twice), Grantek \"Leader, AI Platform Engineer\" (leadership), Arctic Wolf \"VP, Endpoint Platform Engineering\" (executive), Empire Life Machine Learning Engineer, MEDFAR Cloud Security Specialist (security + a known Quebec-residency flag from prior runs), Cybeats Technical Customer Success Manager ×2, Nesto Senior Security Developer ×2, Ada \"Security and Infrastructure Engineer\" (security-operations center of gravity), Affirm \"Senior Software Engineer, Backend (Batch Infrastructure)\" (reads as an EM-track people-leadership role, not IC), Thumbtack \"Staff Software Engineer, AI/ML Infrastructure\" (ML-infra specialization, not core DevOps/Platform/SRE), Dominion Dynamics \"Senior DevOps/Platform Engineer\" (Ottawa/Toronto, explicitly On-Site, defense/sovereignty-flavored)."
+   ]
+  },
+  {
+   "heading": "Run notes",
+   "items": [
+    "Eluta's result pages now show a real snippet directly in search results (a change from prior runs) and, for most postings, an inline \"Show more\" expansion that reveals the full posting without needing the cache-link workaround — used successfully for Braze and Kinaxis. It did not work reliably for every posting (theScore), consistent with prior runs' documented unreliability; scored from the listing summary in that case per established practice in this repo's history.",
+    "Ran DevOps Engineer, Senior DevOps Engineer, Site Reliability Engineer, Cloud Engineer, DevSecOps Engineer, and Infrastructure Engineer as remote-filtered passes, plus one Ottawa city pass (unfiltered by remote, since hybrid discovery intentionally doesn't use the remote filter). Stopped there given the scope already covered today across 8 other boards — the remaining 4 remote keywords and 4 city passes (Kingston, Brockville, Cornwall, Montréal) are a reasonable next-run target, not run this time.",
+    "\"Cloud Engineer\" and \"Infrastructure Engineer\" are both extremely broad terms on this site (695 and 728 total results respectively) — only the first page of each was reviewed, consistent with the skill's 10-result-per-query boundary.",
+    "No CAPTCHA, verification prompt, or write-side action occurred."
+   ]
+  }
+ ],
+ "method": "<b>October 18 run (COMPLETE, 35 of 35 passes):</b> remote-filter and city passes via curl with 4-second spacing; Eluta cache pages and employer ATS/BambooHR pages used for full descriptions; empty script shells are listed as Could not validate. The run first stopped at 12 of 35 passes on a human-verification page, which the user then cleared. Earlier runs follow. October 14 run: INCOMPLETE, 12 of 30 passes (verification page). Oct 13 (complete, 30 of 30 passes). Oct 12 (COMPLETE, 30 of 30 passes after verification was cleared). Oct 12 (INCOMPLETE, 13 of 30 passes): verification page hit mid-run. October 7, 2026: 26 of 26 Eluta passes completed (one human-verification pause cleared by the user); 157 cache IDs; 31 postings read in full; 23 empty shells unvalidated; 0 filed. 2026-09-22 continuation run: closed out the 4 remote-keyword passes and 4 city passes left incomplete by 2026-09-21's run, plus a spot re-check of the DevOps Engineer keyword (unchanged). 9 passes attempted, 8 complete (zero-result Kingston/Brockville counted as complete), 1 posting (Degree Inc.) could not be validated after both the inline-expansion and cache-link methods failed. 8 new candidate postings reviewed in full; 2 filed to applications.md (McKesson score 7, Genetec score 5) per the automatic-filing policy — both new employers, no existing applications.md row. 2 hard-gated below the filing bar on cost/cadence (SAP BTP 3d/wk onsite at moderate pay, Tecsys AWS-centric ambiguous cadence), 1 AWS hard-gate (Baby List), 1 geographic ineligibility (HostPapa/managed.com excludes Ontario residents), 1 out-of-scope (Xplore telecom RF management). All 18 pipeline matches from 2026-09-21 remain unchanged and were not re-verified this run."
 }
