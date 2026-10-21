@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Case IQ Call Card</title>
+<style>
+:root{--bg:#fff;--fg:#111;--mut:#555;--acc:#1a3c5e;--rule:#d5dde5;--warn:#9a3412;--ok:#166534;--card:#f6f8fa}
+@media(prefers-color-scheme:dark){:root{--bg:#14181d;--fg:#e8ecef;--mut:#9aa6b2;--acc:#7fb2e5;--rule:#2b333b;--warn:#f0a070;--ok:#6fcf8f;--card:#1c2229}}
+*{box-sizing:border-box}
+body{font:16px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:16px;max-width:900px;margin-inline:auto}
+h1{font-size:1.4rem;color:var(--acc);margin:0 0 2px}
+.sub{color:var(--mut);margin:0 0 14px;font-size:.95rem}
+h2{font-size:1.05rem;color:var(--acc);margin:18px 0 6px;border-bottom:1px solid var(--rule);padding-bottom:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:10px 12px}
+ul{margin:4px 0;padding-left:18px}li{margin:3px 0}
+.q{font-weight:600}
+.ok{color:var(--ok)}.no{color:var(--warn)}
+.tag{display:inline-block;font-size:.75rem;border:1px solid var(--rule);border-radius:99px;padding:0 8px;color:var(--mut)}
+</style></head><body>
+<h1>Case IQ — DevOps Engineer</h1>
+<p class="sub">Screen with Amanda Leadbeater, recruiter · Mon 2026-10-19 · Applied 2026-09-15 (LinkedIn) and 2026-10-06 (BuiltIn) · Posting: builtin.com/job/devops-engineer/11187585</p>
+
+<h2>The company</h2>
+<div class="card"><ul>
+<li>B2B SaaS for governance, risk and compliance (GRC): compliance, HR, legal and investigations teams.</li>
+<li>Founded 1999, about 191 employees, HQ in Ottawa. Engineering team spans 7 countries.</li>
+<li>Products named in the posting: Case IQ and Lextegrity suites, which process large transaction volumes for compliance and risk scoring.</li>
+<li>Posting extras: company-paid benefits, professional development budget, RRSP/401k matching.</li>
+</ul></div>
+
+<h2>The role</h2>
+<div class="grid">
+<div class="card"><b>Does</b><ul>
+<li>Run multi-cloud on <b>Azure + AWS</b>: containers, serverless, databases, gateways, monitoring</li>
+<li>CI/CD and IaC with <b>Terraform and CDK</b></li>
+<li>Performance, scalability, observability, security, compliance, cost</li>
+<li>Work with Dev and QA on automated testing and deployments</li>
+<li>Resolve production incidents</li>
+<li>AI-enabled ops: AIOps, agentic SDLC</li></ul></div>
+<div class="card"><b>Asks</b><ul>
+<li>5+ years DevOps, degree or equivalent</li>
+<li>Strong Azure and AWS, with IaC</li>
+<li>Docker; GitHub Actions and Jenkins</li>
+<li>Running SaaS: autoscaling, load balancing, gateways, secrets</li>
+<li>Cloud security, OWASP Top 10</li>
+<li>Multi-cloud is a plus</li></ul></div>
+<div class="card"><b>Logistics</b><ul>
+<li>Remote, hiring in Canada</li>
+<li>Salary not in posting; ledger shows <b>CAD $115–130k</b></li>
+<li>Your remote floor $100k; target $160–175k</li></ul></div>
+</div>
+
+<h2>Ask first</h2>
+<ul>
+<li>Pay range; employee or contract?</li>
+<li>Team size, who the role reports to, is this a new role or a backfill?</li>
+<li>How AWS-heavy vs. Azure-heavy is the daily work?</li>
+<li>Interview steps, languages, timeline, start date.</li>
+</ul>
+
+<h2>60-second pitch</h2>
+<div class="card">Nearly 18 years in DevOps and platform work. At Énergir I standardized CI/CD across nine stacks, 12 teams and 70+ apps with Jenkins and mandatory quality gates, and got adoption without a reporting line through enablement sessions. At Desjardins I used Kubernetes, ArgoCD and GitHub Actions and built a Python/FastAPI monitoring service for about 250 Artifactory repos. Strongest on Azure. Available immediately.</div>
+
+<h2>Likely questions</h2>
+<div class="grid">
+<div class="card"><span class="q">Azure + AWS?</span><br><span class="ok">Azure: Azure DevOps, Terraform provisioning, Key Vault, Storage for TF state.</span><br><span class="no">AWS: shallow. Built a client's EC2, S3, Route 53, VPC environment by hand at Tink; client cancelled before cutover. Never in production.</span></div>
+<div class="card"><span class="q">Terraform / CDK?</span><br>User of automation another team owned; helped migrate Nexus, Jenkins, Vault. <span class="no">Not a module author. No CDK.</span></div>
+<div class="card"><span class="q">Incidents / on-call?</span><br>RCA on critical incidents at Énergir; 24/7 rotation at Tink; Dynatrace, Splunk, ELK dashboards and alerting.</div>
+<div class="card"><span class="q">AIOps / agentic SDLC?</span><br>Introduced AI-assisted practices at Énergir over 6–9 months with scope gates and human validation. Python work done with AI help. <span class="no">Don't name personal projects.</span></div>
+<div class="card"><span class="q">Security / OWASP?</span><br>SonarQube gates in every pipeline, Vault then Key Vault for secrets. Don't claim more.</div>
+<div class="card"><span class="q">Why available?</span><br>Énergir contract ended Sept 30 after five years. Keep it factual.</div>
+</div>
+
+<h2>Salary</h2>
+<div class="card">Ask their range first. If pushed: target $160–175k; remote floor is $100k. Posting range in ledger ($115–130k) is below target; decide before the call whether you'd go there.</div>
+
+<h2>Do not say</h2>
+<ul class="no">
+<li>Production AWS, Terraform authorship, CDK, SLOs, Kubernetes cluster ownership</li>
+<li>"18 years" (say "nearly 18"); any figure not in profile.md</li>
+<li>Brayd, Canopy, birth date, references (none identified)</li>
+</ul>
+
+<h2>After the call</h2>
+<p>Tell Claude: pay signal, next step and date, who interviews next, employee vs contract.</p>
+</body></html>

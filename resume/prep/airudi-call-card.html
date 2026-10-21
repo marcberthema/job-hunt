@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Airudi Call Card</title>
+<style>
+:root{--bg:#fff;--fg:#111;--mut:#555;--acc:#1a3c5e;--rule:#d5dde5;--warn:#9a3412;--ok:#166534;--card:#f6f8fa}
+@media(prefers-color-scheme:dark){:root{--bg:#14181d;--fg:#e8ecef;--mut:#9aa6b2;--acc:#7fb2e5;--rule:#2b333b;--warn:#f0a070;--ok:#6fcf8f;--card:#1c2229}}
+*{box-sizing:border-box}
+body{font:16px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:16px;max-width:900px;margin-inline:auto}
+h1{font-size:1.4rem;color:var(--acc);margin:0 0 2px}
+.sub{color:var(--mut);margin:0 0 14px;font-size:.95rem}
+h2{font-size:1.05rem;color:var(--acc);margin:18px 0 6px;border-bottom:1px solid var(--rule);padding-bottom:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:10px 12px}
+ul{margin:4px 0;padding-left:18px}li{margin:3px 0}
+.q{font-weight:600}.ok{color:var(--ok)}.no{color:var(--warn)}
+.alert{border-left:4px solid var(--warn);padding:8px 12px;background:var(--card);border-radius:4px;margin-bottom:8px}
+</style></head><body>
+<h1>Airudi — Lead Platform Engineer / Ingénieur plateforme principal</h1>
+<p class="sub">Phone screen · Wed 2026-10-21, 1:30–2:00pm · Jonathan Deguire, CRHA, Senior Talent &amp; Culture Advisor (HR) · Applied 2026-10-07 · In French or English: be ready for both</p>
+
+<div class="alert"><b>Just before:</b> ThinkOn cultural interview, 12:30pm. If it runs long, message Jonathan early.</div>
+
+<h2>What this call is</h2>
+<div class="card">An HR screen of 30 minutes. Expect motivation, your story, language level, pay and office days. Deep technical questions come later. Your goals: <b>the pay range</b>, <b>the office-days answer</b>, and <b>the process</b>.</div>
+
+<h2>The company and role</h2>
+<div class="card"><ul>
+<li>Airudi deploys AI where decisions have real consequences (health networks, supply chains, transport, production lines, defence). Predictive and agentic solutions, clients on several continents. Scaling up and building reusable products.</li>
+<li>Senior individual contributor, no people management. Works with the platform architect: you make implementation choices, contribute to structural decisions, own production rollout.</li>
+<li>Duties: shared platform and multi-tenant architecture; self-service and golden paths; policy-as-code and approval gates for AI-proposed actions; LLM gateway and agent runtime; CI/CD for prompts and agents; progressive delivery; SLIs, SLOs, error budgets; DORA metrics; ISO 27001 and SOC 2 readiness.</li>
+<li>Asks: 7+ years backend or platform, 2+ at lead or staff level; mastery of French and English; has led a platform capability used by several teams.</li>
+<li>Office: hybrid, 2 days a week in Mile-Ex, Montréal. Pay not published (to be discussed on this call). 74 applicants.</li>
+</ul></div>
+
+<h2>Ask first</h2>
+<ul>
+<li><b>Pay:</b> what is the salary range for this level? Bonus?</li>
+<li><b>Office days:</b> 2 days a week in Mile-Ex: firm? Flexible for someone outside Montréal? (You live in Smiths Falls.)</li>
+<li><b>Employment type:</b> full-time listed. Contract possible? (light touch)</li>
+<li><b>Process:</b> how many interviews, who (platform architect?), technical exercise, language.</li>
+<li><b>Team:</b> size today? New role or backfill?</li>
+<li><b>Timeline</b> and start date.</li>
+</ul>
+
+<h2>60-second pitch</h2>
+<div class="grid">
+<div class="card"><b>FR</b><br>« Je suis ingénieur DevOps et plateforme depuis près de 18 ans. Chez Énergir, j'ai standardisé le CI/CD pour 12 équipes applicatives et plus de 70 applications, sur neuf technologies, sans lien hiérarchique : l'adoption est venue de séances de formation régulières avec chaque équipe. Chez Desjardins, j'ai construit un service Python/FastAPI qui valide environ 250 dépôts Artifactory et publie les résultats dans Dynatrace. Votre poste est de bâtir la plateforme sur laquelle les autres équipes vont s'appuyer : c'est le travail que je fais, transformer des demandes récurrentes en pipelines et en garde-fous standardisés. »</div>
+<div class="card"><b>EN</b><br>"Nearly 18 years in DevOps and platform engineering. At Énergir I standardized CI/CD across 12 teams and 70+ apps on nine technologies with no reporting line; adoption came from recurring enablement sessions. At Desjardins I built a Python/FastAPI service validating about 250 Artifactory repos and reporting to Dynatrace. This role builds the platform other teams depend on, which is the work I do: turning recurring requests into standard pipelines and guardrails."</div>
+</div>
+
+<h2>Likely questions</h2>
+<div class="grid">
+<div class="card"><span class="q">Why Airudi?</span><br>Build a shared platform that product teams depend on, in a scaling company; AI agents in production need guardrails, permissions and traceability. Énergir ended Sept 30; available now.</div>
+<div class="card"><span class="q">7+ years, 2+ lead?</span><br>Nearly 18 years. <span class="no">No formal lead title: say so.</span> You initiated the shared Jenkins pipelines, were the primary developer contact when things broke, and onboarded new DevOps engineers and developers.</div>
+<div class="card"><span class="q">Led a capability used by several teams?</span><br>Yes: shared Jenkins templates at Énergir, 12 teams and 70+ apps, mandatory quality checks (SonarQube) developers can't skip. <span class="no">Not every app used them.</span></div>
+<div class="card"><span class="q">Leading without authority?</span><br>About 6 enablement sessions a year with each team; failures made self-diagnosing; Salesforce rebuild with no prior experience.</div>
+<div class="card"><span class="q">SLOs, error budgets?</span><br><span class="no">Not implemented.</span> You built groundwork (Salesforce logging into Dynatrace, DML error parsing, dashboards); RCA on critical incidents.</div>
+<div class="card"><span class="q">Progressive delivery, rollbacks?</span><br>MuleSoft: prepare and QA ahead, select by version, rollback redeploys a previous artifact. Build once, deploy many. <span class="no">No canary or blue/green in production.</span></div>
+<div class="card"><span class="q">Kubernetes, Terraform, OpenTelemetry?</span><br>Kubernetes application-level, ArgoCD at Desjardins; <span class="no">no cluster ownership.</span> Terraform as a user on Azure. <span class="no">No OpenTelemetry;</span> your tools are Dynatrace, Splunk, ELK.</div>
+<div class="card"><span class="q">Multi-tenant SaaS, distributed systems?</span><br><span class="no">The biggest gap. Say you haven't designed multi-tenant architecture; you bring delivery, reliability and tooling.</span></div>
+<div class="card"><span class="q">Policy-as-code, LLM gateway, MCP?</span><br><span class="no">Not built.</span> Adjacent: mandatory pipeline gates, Oracle releases without emergency-access approval, Tink inventory traceability (CVEs, Jira refs from Git logs); AI-assisted practices at Énergir with scope gates and human validation.</div>
+<div class="card"><span class="q">Security, SOC 2?</span><br>Vault then Key Vault for secrets. <span class="no">No SOC 2 or ISO 27001 work on record.</span></div>
+</div>
+
+<h2>Salary</h2>
+<div class="card">Ask their range first. If pushed: your target is $160–175k base. You live outside Montréal and would commute 2 days a week, so it has to be worth it. Hard floor for Montréal hybrid: $120k. Don't reveal the floor.</div>
+
+<h2>Honest read</h2>
+<div class="card">Fit 6. Real on CI/CD standardization and enablement; gaps on lead scope, multi-tenant design, SLOs, OpenTelemetry and agentic work. Practical: Compromise at best. If the office days are firm every week and the range tops out below about $140k, don't spend more time on it. A good outcome: a range, a clear office answer, and an interview with the platform architect.</div>
+
+<h2>Do not say</h2>
+<ul class="no">
+<li>A lead or staff title; that every app used the shared pipelines</li>
+<li>SLOs, error budgets, canary or blue/green, OpenTelemetry, multi-tenant design, LLM gateway or MCP</li>
+<li>Kubernetes cluster ownership; Terraform module authorship</li>
+<li>"18 years" (say "nearly 18" / « près de 18 ans »); a Desjardins check interval</li>
+<li>Brayd, Canopy, birth date, references</li>
+</ul>
+
+<h2>After the call</h2>
+<p>Tell Claude: pay range, office days and flexibility, next step and date, who interviews next.</p>
+</body></html>

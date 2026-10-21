@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Case IQ Managers Interview Card</title>
+<style>
+:root{--bg:#fff;--fg:#111;--mut:#555;--acc:#1a3c5e;--rule:#d5dde5;--warn:#9a3412;--ok:#166534;--card:#f6f8fa}
+@media(prefers-color-scheme:dark){:root{--bg:#14181d;--fg:#e8ecef;--mut:#9aa6b2;--acc:#7fb2e5;--rule:#2b333b;--warn:#f0a070;--ok:#6fcf8f;--card:#1c2229}}
+*{box-sizing:border-box}
+body{font:16px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:16px;max-width:900px;margin-inline:auto}
+h1{font-size:1.4rem;color:var(--acc);margin:0 0 2px}
+.sub{color:var(--mut);margin:0 0 14px;font-size:.95rem}
+h2{font-size:1.05rem;color:var(--acc);margin:18px 0 6px;border-bottom:1px solid var(--rule);padding-bottom:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:10px 12px}
+ul{margin:4px 0;padding-left:18px}li{margin:3px 0}
+.q{font-weight:600}.ok{color:var(--ok)}.no{color:var(--warn)}
+.alert{border-left:4px solid var(--warn);padding:8px 12px;background:var(--card);border-radius:4px}
+</style></head><body>
+<h1>Case IQ — DevOps Engineer — managers interview</h1>
+<p class="sub">Thu 2026-10-22, 1:00pm (assume ET) · 1 hour · Allen (Manager of DevOps) and Adam (Manager of DevOps and Architecture) · Recruiter: Amanda Leadbeater</p>
+
+<div class="alert"><b>Same day:</b> Intact Teams discussion at <b>2:30pm</b>. If this runs the full hour you have about 30 minutes in between.</div>
+
+<h2>The company and role</h2>
+<div class="card"><ul>
+<li>B2B SaaS for governance, risk and compliance (compliance, HR, legal, investigations). Founded 1999, about 191 employees, HQ Ottawa. Engineering team across 7 countries. Products: Case IQ and Lextegrity suites.</li>
+<li>Role: manage and optimize multi-cloud on <b>Azure and AWS</b>; CI/CD and IaC with <b>Terraform and CDK</b>; performance, scalability, observability, security, cost; work with Dev and QA; resolve production incidents; AI-enabled ops (AIOps, agentic SDLC).</li>
+<li>Asks: 5+ years DevOps; strong Azure and AWS with IaC; Docker; GitHub Actions and Jenkins; running SaaS (autoscaling, load balancing, gateways, secrets); cloud security and OWASP Top 10; multi-cloud is a plus.</li>
+<li>Pay: not in the BuiltIn posting. Get the range from Amanda's screen notes if you have them; otherwise ask the managers or the recruiter.</li>
+</ul></div>
+
+<h2>The two interviewers</h2>
+<div class="grid">
+<div class="card"><b>Allen, Manager of DevOps</b><br>Probably the day-to-day: team work, pipelines, incidents, how you operate. Expect practical and behavioural questions.</div>
+<div class="card"><b>Adam, Manager of DevOps and Architecture</b><br>Probably architecture and trade-offs: cloud design, IaC, security, cost. Expect "how would you design X" questions.</div>
+</div>
+<p class="sub">Roles inferred from their titles only. I have no other information on either of them.</p>
+
+<h2>Ask early</h2>
+<ul>
+<li>How is the team split between Azure and AWS in the day-to-day work?</li>
+<li>Is the role new or a backfill? How big is the team?</li>
+<li>What is the biggest operational pain right now?</li>
+<li>Pay range, employee vs contract, and the process from here (if the recruiter didn't cover it).</li>
+</ul>
+
+<h2>60-second pitch</h2>
+<div class="card">Nearly 18 years in DevOps and platform work. At Énergir I standardized CI/CD across nine stacks, 12 teams and 70+ apps with Jenkins and mandatory quality gates, and got adoption through enablement sessions. At Desjardins I used Kubernetes, ArgoCD and GitHub Actions and built a Python/FastAPI service validating about 250 Artifactory repos, reporting to Dynatrace. Strongest on Azure. Available immediately.</div>
+
+<h2>Likely questions</h2>
+<div class="grid">
+<div class="card"><span class="q">Azure experience?</span><br><span class="ok">Azure DevOps, Azure delivery, Terraform provisioning of resource groups, networking and VMs; moved Nexus, Jenkins, Vault off manual operations; introduced Azure Storage for TF state and Key Vault.</span></div>
+<div class="card"><span class="q">AWS experience?</span><br><span class="no">Shallow and dated. At Tink you built a client's EC2, S3, Route 53 and VPC environment by hand with no prior AWS experience; roughly 6 months; client cancelled before cutover. Never in production. No Lambda or DynamoDB.</span></div>
+<div class="card"><span class="q">Terraform / CDK?</span><br>User of automation owned by another team. <span class="no">Not a module author; no CDK.</span> Say what you'd do first: read their modules, then extend.</div>
+<div class="card"><span class="q">CI/CD: GitHub Actions and Jenkins</span><br>Jenkins: shared pipeline templates, mandatory SonarQube gates, build once and deploy many, MuleSoft 15-step checklist to a few jobs. GitHub Actions: used at Desjardins.</div>
+<div class="card"><span class="q">Production incidents</span><br>RCA at Énergir; 24/7 on-call at Tink; Elasticsearch auto-restart, page on-call at 5 minutes. Dynatrace, Splunk, ELK.</div>
+<div class="card"><span class="q">Security / OWASP</span><br>SonarQube gates, Vault then Key Vault for secrets, Splunk alerting on out-of-pipeline config changes. <span class="no">Don't claim more.</span></div>
+<div class="card"><span class="q">AIOps / agentic SDLC</span><br>Introduced AI-assisted practices at Énergir over 6–9 months with hard scope gates and human validation before anything reaches production. Python work done with AI help. <span class="no">Don't name personal projects.</span></div>
+<div class="card"><span class="q">Architecture trade-offs</span><br>Pipeline design: build once, deploy many; separating application errors from platform errors in reporting. Cost and scale: be honest that your cost-optimization work isn't documented. <span class="no">Don't invent savings.</span></div>
+<div class="card"><span class="q">Running SaaS: autoscaling, gateways</span><br><span class="no">Not your record. Say your side is delivery, monitoring and incident work; you'd learn their stack.</span></div>
+</div>
+
+<h2>Stories</h2>
+<ul>
+<li><b>Ownership:</b> Salesforce nightlies, escalated, restored in 48h.</li>
+<li><b>Learning fast:</b> Salesforce, Oracle, MuleSoft, ArcGIS with no prior experience.</li>
+<li><b>Enablement:</b> about 6 sessions a year with each of 12 teams.</li>
+<li><b>Initiative:</b> Tink inventory platform (600+ servers, CVEs, EOL, TLS).</li>
+</ul>
+
+<h2>Pay</h2>
+<div class="card">Ask their range first. Your remote floor is $100k and your target is $160–175k. The ledger's $115–130k is not from the posting; don't quote it as theirs.</div>
+
+<h2>Do not say</h2>
+<ul class="no">
+<li>Production AWS, Terraform authorship, CDK, SLOs, Kubernetes cluster ownership</li>
+<li>"18 years" (say "nearly 18"); any figure not in profile.md</li>
+<li>Brayd, Canopy, birth date, references</li>
+</ul>
+
+<h2>After the call</h2>
+<p>Tell Claude: what each manager asked, next step and date, any pay signal.</p>
+</body></html>

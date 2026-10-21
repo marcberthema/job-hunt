@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Barracuda Call Card</title>
+<style>
+:root{--bg:#fff;--fg:#111;--mut:#555;--acc:#1a3c5e;--rule:#d5dde5;--warn:#9a3412;--ok:#166534;--card:#f6f8fa}
+@media(prefers-color-scheme:dark){:root{--bg:#14181d;--fg:#e8ecef;--mut:#9aa6b2;--acc:#7fb2e5;--rule:#2b333b;--warn:#f0a070;--ok:#6fcf8f;--card:#1c2229}}
+*{box-sizing:border-box}
+body{font:16px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:16px;max-width:900px;margin-inline:auto}
+h1{font-size:1.4rem;color:var(--acc);margin:0 0 2px}
+.sub{color:var(--mut);margin:0 0 14px;font-size:.95rem}
+h2{font-size:1.05rem;color:var(--acc);margin:18px 0 6px;border-bottom:1px solid var(--rule);padding-bottom:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:10px 12px}
+ul{margin:4px 0;padding-left:18px}li{margin:3px 0}
+.q{font-weight:600}.ok{color:var(--ok)}.no{color:var(--warn)}
+</style></head><body>
+<h1>Barracuda — Cloud Site Reliability Senior Engineer</h1>
+<p class="sub">Hiring manager call with Marc Coxall · Tue 2026-10-20, 7:30am (assume ET) · Ottawa hybrid, 2 days/week · CAD $110–140k on-target · Applied 2026-10-06</p>
+
+<h2>Recruiter screen notes (Debi Mustafaj, 2026-10-16)</h2>
+<div class="card"><ul>
+<li>Team of 4 including a technical hiring manager; mostly Azure, possible AWS later; uses AKS.</li>
+<li>Wants someone proactive who owns monitoring, observability and alerting.</li>
+<li>No on-call for now. Backfill, as far as Debi knows.</li>
+<li>Pillars: Terraform and Azure. Team provides observability tooling to other engineering teams and coaches them.</li>
+<li>Process: up to 4 more interviews: senior hiring manager (today), technical with future colleagues, engineering team, director of SRE.</li>
+</ul></div>
+
+<h2>Goal for this call</h2>
+<div class="card">Show ownership and initiative on monitoring and alerting. Be honest about Terraform. Find out what the technical round will test.</div>
+
+<h2>Ask him</h2>
+<ul>
+<li>What does the team own today, and what is the first problem you'd want me to take?</li>
+<li>Why is the role open?</li>
+<li>How much Terraform would I write vs. use?</li>
+<li>What does the technical interview cover?</li>
+<li>What does success look like at 6 months?</li>
+<li>How stable is the team after the 2024 headcount drop (about 11.5%)?</li>
+</ul>
+
+<h2>60-second pitch</h2>
+<div class="card">Nearly 18 years in DevOps and platform work. At Énergir I standardized CI/CD across nine stacks, 12 teams and 70+ apps, and got adoption without a reporting line through enablement sessions. At Desjardins I built a Python/FastAPI service validating about 250 Artifactory repos, reporting to Dynatrace, deployed with ArgoCD. I moved Salesforce logging into Dynatrace and built dashboards that surfaced errors nobody could see. That's the ownership you describe: monitoring, alerting, and helping other teams use it.</div>
+
+<h2>Likely questions</h2>
+<div class="grid">
+<div class="card"><span class="q">Observability you owned?</span><br>Salesforce logging at Énergir: Logstash intermediary replaced by direct Dynatrace ingestion, DML error parsing, dashboards. Ran in production several weeks before you left. <span class="no">Logstash still served two other teams; don't say retired.</span> Also Splunk alerting for out-of-pipeline config changes at Desjardins; ELK at Tink.</div>
+<div class="card"><span class="q">Grafana / Loki / Mimir / Tempo?</span><br><span class="no">Not on your record. Say so.</span> Dynatrace, Splunk, ELK; dashboard and alert design carry over.</div>
+<div class="card"><span class="q">SLOs?</span><br><span class="no">Not implemented.</span> Salesforce work was groundwork. No error budgets.</div>
+<div class="card"><span class="q">Terraform (main risk)</span><br>Used it on Azure: resource groups, networking, VMs. Helped move Nexus, Jenkins, Vault to Terraform and Ansible; introduced Azure Storage for state and Key Vault. <span class="no">Not a module author; would read and extend theirs first.</span></div>
+<div class="card"><span class="q">AKS / Kubernetes?</span><br>Application-level at Desjardins with ArgoCD and GitHub Actions. <span class="no">Never owned a production cluster.</span></div>
+<div class="card"><span class="q">Working with other teams?</span><br>Énergir: about 6 enablement sessions a year per team; pipeline failures self-diagnosing (app error vs platform error).</div>
+<div class="card"><span class="q">Incidents / RCA?</span><br>RCA on critical Énergir incidents; 24/7 on-call at Tink; escalated Salesforce deployment risk, nightlies restored within 48h.</div>
+<div class="card"><span class="q">Proactive / initiative?</span><br>Tink inventory platform, built unprompted: 600+ servers, CVEs, end-of-life software, TLS scores. Bitbucket governance initiative (discontinued; say so if asked).</div>
+<div class="card"><span class="q">Why leaving Énergir?</span><br>Contract ended Sept 30. Keep it factual.</div>
+</div>
+
+<h2>Grafana LGTM, in one line each</h2>
+<div class="card"><ul>
+<li><b>Loki</b>: logs (like the log side of ELK or Splunk)</li>
+<li><b>Grafana</b>: dashboards and alerting (like Dynatrace dashboards or Kibana)</li>
+<li><b>Tempo</b>: distributed tracing (least familiar to you)</li>
+<li><b>Mimir</b>: long-term, Prometheus-compatible metrics storage</li>
+</ul><span class="no">You haven't run this stack. Say so; the concepts carry over.</span></div>
+
+<h2>Culture</h2>
+<div class="grid">
+<div class="card"><span class="q">Questions to ask</span><ul>
+<li>How does the team work with the teams it supports: coaching or doing the work for them?</li>
+<li>How are priorities set when several teams want help at once?</li>
+<li>How does the team handle an incident or a mistake? Is there a review process?</li>
+<li>What does a good first 90 days look like?</li>
+<li>How has the team changed in the past year? (stability, gently)</li></ul></div>
+<div class="card"><span class="q">"What culture do you work best in?"</span><br>Ownership end to end, then getting other teams to use the result. Énergir: no reporting line, enablement sessions with each of 12 teams. Blameless reviews: pipeline failures made self-diagnosing so teams knew whose fix it was.</div>
+<div class="card"><span class="q">Conflict / disagreement</span><br>Salesforce nightlies: two weeks of failures with disputed ownership; you escalated to the project director; passing nightlies restored within 48h. Keep it neutral, no blame.</div>
+</div>
+
+<h2>Pay</h2>
+<div class="card">Leave numbers to the recruiter unless asked. Ask their range first. Posting: CAD $110–140k on-target. Your target is $160–175k; Ottawa hybrid floor $100k.</div>
+
+<h2>Do not say</h2>
+<ul class="no">
+<li>Terraform authorship, Kubernetes cluster ownership, SLOs, Grafana stack experience</li>
+<li>Logstash fully retired; a Desjardins check interval</li>
+<li>"18 years" (say "nearly 18")</li>
+<li>Brayd, Canopy, birth date, references</li>
+</ul>
+
+<h2>After the call</h2>
+<p>Tell Claude: what he asked, next step and date, anything on the technical round.</p>
+</body></html>

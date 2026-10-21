@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ThinkOn Cultural Interview Card</title>
+<style>
+:root{--bg:#fff;--fg:#111;--mut:#555;--acc:#1a3c5e;--rule:#d5dde5;--warn:#9a3412;--ok:#166534;--card:#f6f8fa}
+@media(prefers-color-scheme:dark){:root{--bg:#14181d;--fg:#e8ecef;--mut:#9aa6b2;--acc:#7fb2e5;--rule:#2b333b;--warn:#f0a070;--ok:#6fcf8f;--card:#1c2229}}
+*{box-sizing:border-box}
+body{font:16px/1.45 system-ui,sans-serif;background:var(--bg);color:var(--fg);margin:0;padding:16px;max-width:900px;margin-inline:auto}
+h1{font-size:1.4rem;color:var(--acc);margin:0 0 2px}
+.sub{color:var(--mut);margin:0 0 14px;font-size:.95rem}
+h2{font-size:1.05rem;color:var(--acc);margin:18px 0 6px;border-bottom:1px solid var(--rule);padding-bottom:3px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:10px}
+.card{background:var(--card);border:1px solid var(--rule);border-radius:8px;padding:10px 12px}
+ul{margin:4px 0;padding-left:18px}li{margin:3px 0}
+.q{font-weight:600}.ok{color:var(--ok)}.no{color:var(--warn)}
+.alert{border-left:4px solid var(--warn);padding:8px 12px;background:var(--card);border-radius:4px}
+</style></head><body>
+<h1>ThinkOn — Cultural Interview</h1>
+<p class="sub">Cloud Platform &amp; Site Reliability Engineer · Wed 2026-10-21, 12:30pm ET · Teams · about 30 min · <b>RECORDED</b></p>
+
+<div class="alert"><b>Same day:</b> Airudi phone screen with Jonathan Deguire at <b>1:30pm</b>. Keep ThinkOn to about 30 minutes. If it runs long, message Jonathan early.</div>
+
+<h2>Format</h2>
+<div class="card"><ul>
+<li>Six people from across the organization: Jay Johnson, Tarek Rifai, Alex Moskal, Giedrius Stankevicius, Flavio Santos, Robin Calamatta. Roles not known.</li>
+<li>Each asks a couple of questions: technical, behavioural, or things not on your resume. You can ask questions too.</li>
+<li>Recorded and shared with team members who can't attend. Stay professional; nothing negative about Énergir or anyone.</li>
+<li>Plan: 60–90 seconds per answer, so every person gets a turn.</li>
+</ul></div>
+
+<h2>Who is on the call (LinkedIn search snippets, 2026-10-21; titles may be out of date)</h2>
+<div class="grid">
+<div class="card"><b>Tarek Rifai</b><br>Solutions Engineer, Hybrid Cloud &amp; Infrastructure Specialist (Mississauga)<br><span class="q">Ask:</span> What do customers struggle with most when they move to the cloud?</div>
+<div class="card"><b>Alex Moskal</b><br>Solutions Engineer, Public Sector Services (Toronto)<br><span class="q">Ask:</span> What is different about running services for public-sector clients?</div>
+<div class="card"><b>Giedrius Stankevicius</b><br>Director, Service Management &amp; Customer Delivery (Georgia, US)<br><span class="q">Ask:</span> How does the ops team work with customer delivery when something breaks?</div>
+<div class="card"><b>Flavio Santos</b><br>Software Developer Manager (London, ON)<br><span class="q">Ask:</span> How do developers and ops work together on automation and tooling?</div>
+<div class="card"><b>Robin Calamatta</b><br>Listed among ThinkOn's LinkedIn members (Toronto), headline "Head in the Cloud". <span class="no">Title and role not shown.</span><br><span class="q">Ask:</span> What do you enjoy most about working here?</div>
+<div class="card"><b>Jay Johnson</b><br><span class="no">Not confirmed.</span> No "Jay Johnson" in ThinkOn's LinkedIn list. The closest is a "Jason Johnson" (headline "Blazing new trails!", Bowmanville, ON) listed there: possibly the same person, unverified.<br><span class="q">Ask:</span> What does a good first six months look like for the 9th engineer?</div>
+</div>
+<p class="sub">Use the titles to aim your answers. Don't say you looked them up.</p>
+
+<h2>Where you stand</h2>
+<div class="card"><ul>
+<li>Steve Ferguson call Oct 15 (informal, went well). Panel Oct 16 with Sonia Walia and Kiruba Karan: they know the Kubernetes gap and seemed willing to let you learn.</li>
+<li>Steve's team runs day-to-day ops for a large vSphere fleet serving public-sector clients, migrating workloads to Kubernetes on vSphere (Broadcom VKS). You'd be the 9th engineer, reporting to Steve.</li>
+<li>CERTN check completed. Security clearance starts after you sign (Steve: 6–9 months).</li>
+<li>They want someone who can decide: ops issue, architecture issue, or vendor (Broadcom) issue.</li>
+</ul></div>
+
+<h2>30-second intro</h2>
+<div class="card">Nearly 18 years in infrastructure and platform work. At Énergir I standardized CI/CD across 12 teams and 70+ applications. At Tink I monitored and patched a 600+ server Linux fleet, with on-call and incident response. I'm comfortable picking up unfamiliar platforms and making them reliable, and I'd like to bring that to a team running vSphere and moving toward Kubernetes.</div>
+
+<h2>Likely technical questions</h2>
+<div class="grid">
+<div class="card"><span class="q">vSphere / VMware</span><br>vSphere is in your skills (infrastructure and networking, SOVO, Tink: manual VM reset via vSphere when SSH was unavailable). <span class="no">Don't claim to have run a fleet this size.</span></div>
+<div class="card"><span class="q">Linux, patching</span><br>Tink: patching across 600+ servers with Spacewalk and Puppet, staged by environment and role, backend rebooted first, Rocket.Chat status reporting.</div>
+<div class="card"><span class="q">Monitoring and incidents</span><br>PRTG, ELK, Dynatrace, Splunk. RCA on critical incidents at Énergir; 24/7 on-call at Tink.</div>
+<div class="card"><span class="q">Kubernetes</span><br>Application-level at Énergir and Desjardins (ArgoCD, GitHub Actions). <span class="no">Never owned a production cluster. Say so, then say you want to learn it on their platform.</span></div>
+<div class="card"><span class="q">Automation / IaC</span><br>Terraform and Ansible as a user on Azure; Puppet at fleet scale. <span class="no">Not a module author.</span></div>
+</div>
+
+<h2>Behavioural stories (60–90s each)</h2>
+<div class="grid">
+<div class="card"><span class="q">Ownership</span><br>Salesforce nightlies: two weeks of failures with disputed ownership; you escalated to the project director; passing nightlies restored within 48h; project deployed on time.</div>
+<div class="card"><span class="q">Learning something new</span><br>Salesforce, Oracle, MuleSoft, ArcGIS: entered with no prior experience, reverse-engineered, then automated.</div>
+<div class="card"><span class="q">Working across teams</span><br>Énergir: about 6 enablement sessions a year with each of 12 teams; failures made self-diagnosing (app error vs platform error).</div>
+<div class="card"><span class="q">Ops vs architecture vs vendor</span><br>Pipeline failures separated into application-code vs platform errors so the right owner fixed it. Elasticsearch crashes at Tink under a client constraint: automated restart, page on-call at 5 minutes.</div>
+<div class="card"><span class="q">Initiative</span><br>Tink inventory platform, built unprompted: 600+ servers, CVEs, EOL software, TLS scores for product owners.</div>
+<div class="card"><span class="q">Mistake or setback</span><br>Bitbucket governance tooling discontinued when the DevOps lead declined ownership. Say it plainly, no blame.</div>
+</div>
+
+<h2>Questions to ask (a different one per person)</h2>
+<ul>
+<li>What is the biggest operational challenge the team faces right now?</li>
+<li>How do the ops team and the architecture team hand things off in practice?</li>
+<li>What does a Broadcom escalation look like when something breaks?</li>
+<li>What do you like most about working at ThinkOn? What would you change?</li>
+<li>How does the team learn new technology, such as the move to Kubernetes?</li>
+<li>What does a good first six months look like for the 9th engineer?</li>
+</ul>
+
+<h2>Do not say</h2>
+<ul class="no">
+<li>Kubernetes cluster ownership, Terraform authorship, SLOs</li>
+<li>Anything negative about Énergir or colleagues (the call is recorded)</li>
+<li>"18 years" (say "nearly 18"); any figure not in profile.md</li>
+<li>Brayd, Canopy, birth date, references</li>
+<li>Pay or clearance questions (those go to Meg)</li>
+</ul>
+
+<h2>After the call</h2>
+<p>Tell Claude: who asked what, how it felt, and the next step. It goes on the ThinkOn row.</p>
+</body></html>
